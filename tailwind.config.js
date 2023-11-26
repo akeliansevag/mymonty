@@ -23,7 +23,10 @@ module.exports = {
       colors: {
         primary: colors.neutral[900],
         secondary: colors.yellow[600]
-      }
+      },
+      fontFamily: {
+        aeonik: ['var(--font-aeonik)']
+      },
     }
   },
   plugins: [],

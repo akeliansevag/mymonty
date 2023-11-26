@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --header-height: 96px;
+
+    /**COLORS**/
+    --mm-black: #091111;
+
+}
+body{
+    font-size:1.25rem;
+}
+.header-height{
+    height: var(--header-height);
+}
+
+.mm-button{
+    background-color: var(--mm-black);
+    border-radius: 30px;
+    padding: 8px 20px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    font-size: 15px;
+    transition: all 0.1s linear;
+    border:2px solid transparent;
+}
+
+.mm-button:hover{
+    background-color: white;
+    color: var(--mm-black);
+}
+
+.mm-button.white{
+    background-color: white;
+    color: var(--mm-black);
+}
+
+.mm-button.white:hover{
+    border-color:white;
+    background-color: var(--mm-black);
+    color: white;
+}
