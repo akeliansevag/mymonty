@@ -6,7 +6,7 @@ import Image from 'next/image';
 const SectionSix = () => {
     return (
         <section className='pb-14 pt-14 lg:pt-64 lg:pb-20 bg-black relative text-white min-h-screen'>
-            <Image fill={true} src={backgroundImage} className='object-cover w-full h-full absolute top-0 left-0 z-0' alt="Background Image" />
+            <Image fill placeholder='blur' quality={100} sizes='100vw' src={backgroundImage} className='object-cover z-0' alt="Background Image" />
             <div className='flex items-center relative z-10'>
                 <div className='md:flex-1 md:flex justify-end'>
                     <div className='p-4 md:w-2/3'>
