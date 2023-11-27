@@ -6,15 +6,11 @@ import SectionFour from './components/homepage/SectionFour';
 import SectionFive from './components/homepage/SectionFive';
 import SectionSix from './components/homepage/SectionSix';
 import SectionSeven from './components/homepage/SectionSeven';
-import { Suspense } from 'react';
 
 export default function Home() {
   return (
     <main>
-      <Suspense fallback={(<div>Loading...</div>)}>
-        <Banner />
-      </Suspense>
-
+      <Banner />
       <SectionTwo />
       <SectionThree />
       <SectionFour />
