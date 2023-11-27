@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const SectionSix = () => {
     return (
-        <Suspense fallbacl={(<div className='text-white'>Loading...</div>)}>
+        <Suspense fallback={(<div className='text-white'>Loading...</div>)}>
             <section className='pb-14 pt-14 lg:pt-64 lg:pb-20 bg-black relative text-white min-h-screen'>
                 <Image fill={true} src={backgroundImage} className='object-cover w-full h-full absolute top-0 left-0 z-0' alt="Background Image" />
                 <div className='flex items-center relative z-10'>
