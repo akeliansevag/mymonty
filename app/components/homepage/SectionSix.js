@@ -10,7 +10,7 @@ const SectionSix = () => {
             <div className='flex items-center relative z-10'>
                 <div className='md:flex-1 md:flex justify-end'>
                     <div className='p-4 md:w-2/3'>
-                        <h2 className='uppercase font-black text-3xl sm:text-5xl text-[2.875rem] leading-none'>Don't ever miss a payment again</h2>
+                        <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Don't ever miss a payment again</h2>
                         <p className='leading-8 mt-4'>Try our scheduled and recurring payment method and rest your mind</p>
                         <Link href="#" className='mm-button white mt-6 mx-auto'>See how to send</Link>
                     </div>
