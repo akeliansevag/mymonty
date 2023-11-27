@@ -6,10 +6,10 @@ const SectionFive = () => {
             <div className='container'>
                 <div className='flex flex-col-reverse gap-10 md:flex-row md:items-center md:gap-20'>
                     <div className='flex-1'>
-                        <video className='mb-6' width="100%" playsInline autoPlay muted loop controls={false}>
+                        {/* <video className='mb-6' width="100%" playsInline autoPlay muted loop controls={false}>
                             <source src='/rotating-card1.mp4' type="video/mp4" />
                             Your browser does not support the video tag.
-                        </video>
+                        </video> */}
                     </div>
                     <div className='flex-1 flex justify-end'>
                         <div>
