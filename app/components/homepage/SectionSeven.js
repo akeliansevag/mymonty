@@ -1,5 +1,4 @@
 import React from 'react';
-import sectionImage from '@/public/sectionthreeimage.webp';
 import Link from 'next/link';
 
 const SectionSeven = () => {

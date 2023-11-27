@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import backgroundImage from '@/public/sectionsixbg.webp';
 import Link from 'next/link';
 import Image from 'next/image';
