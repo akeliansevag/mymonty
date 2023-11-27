@@ -10,10 +10,10 @@ const Banner = () => {
     return (
         <section className='min-h-screen w-full relative pt-10 flex flex-col'>
             <Image alt='Banner Image' fill={true} src={bannerImage} className='object-cover absolute top-0 left-0 -z-10'
-                priority='false'
+                priority
             />
             <div className='container'>
-                <Image alt='Logo' src={logo} />
+                <Image alt='Logo' src={logo} priority />
             </div>
             <div className='container md:flex md:flex-1 md:gap-10'>
                 <div className='flex-[2] self-center pb-10'>
@@ -27,7 +27,7 @@ const Banner = () => {
                 <div className='flex-1 flex items-end'>
                     <Image alt='Banner Image' src={bannerElement}
                         className=''
-                        priority='false'
+                        priority
                     />
                 </div>
             </div>

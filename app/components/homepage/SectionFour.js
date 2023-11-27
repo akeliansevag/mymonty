@@ -19,7 +19,7 @@ const SectionFour = () => {
 
                 </div>
                 <div className='flex-1 justify-end flex pb-10 md:pb-0'>
-                    <Image src={sectionImage} alt='Section Image' />
+                    <Image src={sectionImage} alt='Section Image' placeholder='blur' />
                 </div>
             </div>
         </section>
