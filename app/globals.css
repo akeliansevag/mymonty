@@ -43,3 +43,7 @@ body{
     background-color: var(--mm-black);
     color: white;
 }
+
+.custom-object-position{
+    object-position: 70% 250px;
+}
