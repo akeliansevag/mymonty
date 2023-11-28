@@ -9,7 +9,7 @@ import React from 'react';
 const Banner = () => {
     return (
         <section className='min-h-screen w-full relative pt-10 flex flex-col'>
-            <Image alt='Banner Image' fill placeholder='blur' quality={100} sizes='100vw' src={bannerImage} className='object-cover -z-10'
+            <Image alt='Banner Image' fill placeholder='blur' quality={100} sizes='100vw' src={bannerImage} className='object-cover object-[70%] md:object-center -z-10'
                 priority
             />
             <div className='container'>
