@@ -17,7 +17,7 @@ const Banner = () => {
                 <Image alt='Logo' src={logo} priority />
             </div>
             <div className='container p-0 flex flex-col flex-1 md:flex-row md:gap-10'>
-                <div className='p-4 md:flex-[2] self-center pb-10'>
+                <div className='p-4 md:flex-[2] self-center pb-0 md:pb-10'>
                     <div>
                         <h1 className='font-black mt-4 md:mt-0 text-3xl sm:text-5xl md:text-6xl lg:text-[5.4rem] leading-none uppercase'>MyMonty will always have your back.</h1>
                         <p className='text-xl mt-5'>Explore our innovative ways to manage your finances.</p>
@@ -26,10 +26,10 @@ const Banner = () => {
 
                 </div>
 
-                <div className='flex-1 md:flex-1 flex items-end flex-col justify-end relative'>
+                <div className='flex-1 md:flex-1 flex items-end flex-col justify-end relative -mt-[50px] md:mt-0'>
                     <Image alt='Banner Image' src={bannerElement}
                         className='z-10 px-4 md:p-0'
-                        priorit
+                        priority
                     />
                     <Image fill quality={100} sizes='100vw' alt='Girl Image' src={girl}
                         className='md:hidden object-cover object-top'
