@@ -9,7 +9,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <section className='min-h-screen w-full relative pt-10 flex flex-col bg-[#DCF4FE] md:bg-transparent'>
+        <section className='min-h-[100dvh] w-full relative pt-10 flex flex-col bg-[#DCF4FE] md:bg-transparent'>
             <Image alt='Banner Image' fill placeholder='blur' quality={100} sizes='100vw' src={bannerImage} className='object-cover custom-object-position md:object-center -z-10'
                 priority
             />
@@ -29,7 +29,7 @@ const Banner = () => {
                 <div className='flex-1 md:flex-1 flex items-end flex-col justify-end relative'>
                     <Image alt='Banner Image' src={bannerElement}
                         className='z-10 px-4 md:p-0'
-                        priority
+                        priorit
                     />
                     <Image fill quality={100} sizes='100vw' alt='Girl Image' src={girl}
                         className='md:hidden object-cover object-top'
