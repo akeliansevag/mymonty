@@ -20,7 +20,7 @@ const Banner = () => {
                 <div className='p-4 md:flex-[2] self-center pb-0 md:pb-10'>
                     <div>
                         <h1 className='font-black mt-4 md:mt-0 text-3xl sm:text-5xl md:text-6xl lg:text-[5.4rem] leading-none uppercase'>MyMonty will always have your back.</h1>
-                        <p className='text-xl mt-5'>Explore our innovative ways to manage your finances.....</p>
+                        <p className='text-xl mt-5'>Explore our innovative ways to manage your finances.</p>
                         <Link className='mm-button mt-5' href="#" target='_blank'>Download app</Link>
                     </div>
 
