@@ -39,7 +39,7 @@ const Aeonik = localFont({
 });
 
 export const metadata = {
-  title: 'MyMonty',
+  title: 'MyMonty - ',
   description: 'MyMonty',
 }
 

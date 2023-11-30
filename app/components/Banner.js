@@ -6,8 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-
-const Banner = () => {
+const Banner = ({data}) => {
     return (
         <section className='min-h-[100dvh] w-full relative pt-10 flex flex-col bg-[#DCF4FE] md:bg-transparent'>
             <Image alt='Banner Image' fill placeholder='blur' quality={100} sizes='100vw' src={bannerImage} className='object-cover custom-object-position md:object-center -z-10'
@@ -19,9 +18,16 @@ const Banner = () => {
             <div className='container p-0 flex flex-col flex-1 md:flex-row md:gap-10'>
                 <div className='p-4 md:flex-[2] self-center pb-0 md:pb-10'>
                     <div>
-                        <h1 className='font-black mt-4 md:mt-0 text-3xl sm:text-5xl md:text-6xl lg:text-[5.4rem] leading-none uppercase'>MyMonty will always have your back.</h1>
-                        <p className='text-xl mt-5'>Explore our innovative ways to manage your finances.</p>
-                        <Link className='mm-button mt-5' href="#" target='_blank'>Download app</Link>
+                        {
+                            data?.subtitle && (
+                                <>
+                                    <h2 className=''>{data.subtitle}</h2>
+                                </>
+                            )
+                        }
+                        <h1 className='font-black mt-4 md:mt-0 text-3xl sm:text-5xl md:text-6xl lg:text-[5.4rem] leading-none uppercase'>{data.title}</h1>
+                        <p className='text-xl mt-5'>{data.desc}</p>
+                        <Link className='mm-button mt-5' href="/about-us">Download app</Link>
                     </div>
 
                 </div>
