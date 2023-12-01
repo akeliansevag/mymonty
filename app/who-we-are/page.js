@@ -18,7 +18,7 @@ const data = {
   image: '',
 }
 
-const AboutUs = () => {
+const WhoWeAre = () => {
   return (
     <div>
       <Banner data={data} />
@@ -55,4 +55,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default WhoWeAre;
