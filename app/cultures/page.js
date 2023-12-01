@@ -22,7 +22,7 @@ const data = {
   image: '',
 }
 
-const AboutUs = () => {
+const Cultures = () => {
   return (
     <div>
       <Banner data={data} />
@@ -85,4 +85,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Cultures;
