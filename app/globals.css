@@ -4,6 +4,7 @@
 
 :root{
     --header-height: 96px;
+    --mobile-header-height: 72px;
 
     /**COLORS**/
     --mm-black: #091111;

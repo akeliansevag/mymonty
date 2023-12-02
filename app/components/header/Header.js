@@ -5,10 +5,12 @@ import Image from 'next/image';
 import Nav from './Nav';
 import Link from 'next/link';
 import styles from './header.module.css';
+import MobileNav from './MobileNav';
 
 const Header = () => {
     const [scrolling, setScrolling] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const [mobileMenuToggle, setMobileMenuToggle] = useState(false);
     useEffect(() => {
         // Function to handle scroll events
         const handleScroll = () => {
@@ -28,11 +30,17 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    let headerClasses = 'flex items-center fixed top-0 left-0 z-10 w-full z-50 transition-[height] ' + styles.header;
+
+    let headerClasses = 'flex items-center fixed top-0 left-0 z-10 w-full z-50 transition-[height] h-[var(--mobile-header-height)] md:h-[var(--header-height)] ' + styles.header;
     headerClasses += scrolling ? ' ' + styles.scrolling + ' scrolling' : '';
-    headerClasses += menuOpen ? ' ' + styles.menuOpen + ' menu-open' : '';
+    headerClasses += menuOpen || mobileMenuToggle ? ' ' + styles.menuOpen + ' menu-open' : '';
+
     const handleMenuOpen = (toggle) => {
         setMenuOpen(toggle);
+    };
+
+    const handleMobileMenuToggle = () => {
+        setMobileMenuToggle(!mobileMenuToggle);
     };
     return (
         <header className={headerClasses}>
@@ -43,13 +51,40 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className='flex-1 flex justify-end gap-3 items-center'>
-                    <Nav handleMenuOpen={handleMenuOpen} />
-                    <Link href='/who-we-are' className='mm-button white'>
-                        Download app
-                    </Link>
+                    <div className='hidden md:block'>
+                        <Nav handleMenuOpen={handleMenuOpen} />
+                    </div>
+                    <div className='hidden md:block'>
+                        <Link href='/who-we-are' className='mm-button white whitespace-nowrap'>
+                            Download app
+                        </Link>
+                    </div>
+
+                    <div className='md:hidden cursor-pointer' onClick={handleMobileMenuToggle}>
+                        {!mobileMenuToggle && (
+                            <div>
+                                <div className='w-[20px] h-[2px] bg-black mb-1'></div>
+                                <div className='w-[20px] h-[2px] bg-black mb-1'></div>
+                                <div className='w-[20px] h-[2px] bg-black mb-0'></div>
+                            </div>
+                        )}
+
+                        {mobileMenuToggle && (
+                            <div>
+                                <div className='w-[20px] h-[2px] bg-black rotate-45 origin-center'></div>
+                                <div className='w-[20px] h-[2px] bg-black -rotate-45 origin-center -mt-[2px]'></div>
+                            </div>
+                        )}
+
+
+                    </div>
                 </div>
 
             </div>
+            <div className='md:hidden'>
+                <MobileNav handleMobileMenuToggle={handleMobileMenuToggle} open={mobileMenuToggle} scrolling={scrolling} />
+            </div>
+
         </header>
     )
 }
