@@ -9,6 +9,7 @@ import innovation  from '@/public/company/innovation.png';
 import dedication  from '@/public/company/dedication-and-loyalty.png';
 import integrity  from '@/public/company/integrity.png';
 import sustainable  from '@/public/company/sustainable-development.png';
+import cultures  from '@/public/company/cultures.png';
 
 export const metadata = {
   title: websiteName + "Cultures",
@@ -16,10 +17,19 @@ export const metadata = {
 };
 
 const data = {
-  title: 'ONE APP FOR ALL MONEY THINGS',
+  title: 'Our Culture, Our Foundation',
   subtitle: 'Culture',
-  desc: 'Manage your money effortlessly from the comfort of one single, intuitive App.',
-  image: '',
+  desc: 'Our devoted, agile, and multicultural team is committed to go the extra mile in digitizing your future and making your life easier',
+  image:{
+    layout: 'half',
+    url: cultures,
+  },
+  cta: {
+    type: 'button',
+    button: {
+      name: 'Download app'
+    }
+  }
 }
 
 const Cultures = () => {
