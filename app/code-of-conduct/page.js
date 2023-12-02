@@ -41,116 +41,135 @@ const CodeOfConduct = () => {
           
           <div className='flex flex-col gap-10 mt-20'>
             <div className='flex flex-col md:flex-row md:items-stretch gap-10 relative'>
-              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 group/item relative group/item'>
-                <div className='px-10 py-14 group/edit visible group-hover/item:invisible group/edit'>
-                  <div className='flex items-center justify-center w-[60px] h-[60px] rounded-full border-2 border-black text-3xl font-bold'>1</div>
-                  <div className='mt-14'>
-                    <h3 className='text-4xl font-bold'>No need for paperwork hassle</h3>
+              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 group/item relative md:group/item'>
+                <div className='px-10 py-14 md:group/edit visible md:group-hover/item:invisible md:group/edit relative z-10'>
+                  <div className='flex items-center justify-center w-[40px] h-[40px] md:w-[60px] md:h-[60px] rounded-full border-2 border-white md:border-black text-white md:text-black text-xl md:text-3xl font-bold'>1</div>
+                  <div className='mt-6 md:mt-14'>
+                    <h3 className='text-3xl md:text-4xl font-bold text-white md:text-black'>Global Integrity</h3>
+                    <p className='block md:hidden text-white text-base mt-10'>Uphold the highest standards of integrity, honesty, and ethical conduct both within and beyond company premises.</p>
                   </div>
                 </div>
-                <div className='group/edit invisible group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
-                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover' alt="Background Image" />
-                  <p className='flex flex-col items-center justify-center h-full relative text-white text-4xl'>Perform duties with honesty, ethical conduct, and unwavering good faith, fostering a culture of excellence.</p>
+                <div className='md:group/edit md:invisible md:group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
+                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover z-1 md:z-0' alt="Background Image" />
+                  
+                  <p className='hidden md:flex flex-col items-center justify-center h-full relative text-white sm:text-2xl lg:text-4xl'>Uphold the highest standards of integrity, honesty, and ethical conduct both within and beyond company premises.</p>
                 </div>
               </div>
 
-              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 relative group/item'>
-                <div className='px-10 py-14 group/edit visible group-hover/item:invisible'>
-                  <div className='flex items-center justify-center w-[60px] h-[60px] rounded-full border-2 border-black text-3xl font-bold'>2</div>
-                  <div className='mt-14'>
-                    <h3 className='text-4xl font-bold'>Collaborative Excellence</h3>
+              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 group/item relative md:group/item'>
+                <div className='px-10 py-14 md:group/edit visible md:group-hover/item:invisible md:group/edit relative z-10'>
+                  <div className='flex items-center justify-center w-[40px] h-[40px] md:w-[60px] md:h-[60px] rounded-full border-2 border-white md:border-black text-white md:text-black text-xl md:text-3xl font-bold'>2</div>
+                  <div className='mt-6 md:mt-14'>
+                    <h3 className='text-3xl md:text-4xl font-bold text-white md:text-black'>Collaborative Excellence</h3>
+                    <p className='block md:hidden text-white text-base mt-10'>Perform duties with honesty, ethical conduct, and unwavering good faith, fostering a culture of excellence.</p>
                   </div>
                 </div>
-                <div className='group/edit invisible group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
-                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover' alt="Background Image" />
-                  <p className='flex flex-col items-center justify-center h-full relative text-white text-4xl'>Demonstrate patience, respect, and consideration, contributing to individual, team, and company success.</p>
+                <div className='md:group/edit md:invisible md:group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
+                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover z-1 md:z-0' alt="Background Image" />
+                  
+                  <p className='hidden md:flex flex-col items-center justify-center h-full relative text-white sm:text-2xl lg:text-4xl'>Perform duties with honesty, ethical conduct, and unwavering good faith, fostering a culture of excellence.</p>
                 </div>
               </div>
               
             </div>
 
             <div className='flex flex-col md:flex-row md:items-stretch gap-10 relative'>
-              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 relative group/item'>
-                <div className='px-10 py-14 group/edit visible group-hover/item:invisible'>
-                  <div className='flex items-center justify-center w-[60px] h-[60px] rounded-full border-2 border-black text-3xl font-bold'>3</div>
-                  <div className='mt-14'>
-                    <h3 className='text-4xl font-bold'>Respectful Engagement</h3>
+              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 group/item relative md:group/item'>
+                <div className='px-10 py-14 md:group/edit visible md:group-hover/item:invisible md:group/edit relative z-10'>
+                  <div className='flex items-center justify-center w-[40px] h-[40px] md:w-[60px] md:h-[60px] rounded-full border-2 border-white md:border-black text-white md:text-black text-xl md:text-3xl font-bold'>3</div>
+                  <div className='mt-6 md:mt-14'>
+                    <h3 className='text-3xl md:text-4xl font-bold text-white md:text-black'>Respectful Engagement</h3>
+                    <p className='block md:hidden text-white text-base mt-10'>Demonstrate patience, respect, and consideration, contributing to individual, team, and company success.</p>
                   </div>
                 </div>
-                <div className='group/edit invisible group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
-                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover' alt="Background Image" />
-                  <p className='flex flex-col items-center justify-center h-full relative text-white text-4xl'>Comply with all relevant laws and regulations, respecting both local laws and cultural norms.</p>
+                <div className='md:group/edit md:invisible md:group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
+                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover z-1 md:z-0' alt="Background Image" />
+                  
+                  <p className='hidden md:flex flex-col items-center justify-center h-full relative text-white sm:text-2xl lg:text-4xl'>Demonstrate patience, respect, and consideration, contributing to individual, team, and company success.</p>
                 </div>
               </div>
 
-              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 relative group/item'>
-                <div className='px-10 py-14 group/edit visible group-hover/item:invisible'>
-                  <div className='flex items-center justify-center w-[60px] h-[60px] rounded-full border-2 border-black text-3xl font-bold'>4</div>
-                  <div className='mt-14'>
-                    <h3 className='text-4xl font-bold'>Legal Adherence</h3>
+              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 group/item relative md:group/item'>
+                <div className='px-10 py-14 md:group/edit visible md:group-hover/item:invisible md:group/edit relative z-10'>
+                  <div className='flex items-center justify-center w-[40px] h-[40px] md:w-[60px] md:h-[60px] rounded-full border-2 border-white md:border-black text-white md:text-black text-xl md:text-3xl font-bold'>4</div>
+                  <div className='mt-6 md:mt-14'>
+                    <h3 className='text-3xl md:text-4xl font-bold text-white md:text-black'>Legal Adherence</h3>
+                    <p className='block md:hidden text-white text-base mt-10'>Comply with all relevant laws and regulations, respecting both local laws and cultural norms.</p>
                   </div>
                 </div>
-                <div className='group/edit invisible group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
-                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover' alt="Background Image" />
-                  <p className='flex flex-col items-center justify-center h-full relative text-white text-4xl'>Respect company rules, announcements, and instructions, maintaining a harmonious balance between personal interests and the collective well-being of the Company.</p>
+                <div className='md:group/edit md:invisible md:group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
+                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover z-1 md:z-0' alt="Background Image" />
+                  
+                  <p className='hidden md:flex flex-col items-center justify-center h-full relative text-white sm:text-2xl lg:text-4xl'>Comply with all relevant laws and regulations, respecting both local laws and cultural norms.</p>
                 </div>
               </div>
+              
             </div>
 
             <div className='flex flex-col md:flex-row md:items-stretch gap-10 relative'>
-              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 relative group/item'>
-                <div className='px-10 py-14 group/edit visible group-hover/item:invisible'>
-                  <div className='flex items-center justify-center w-[60px] h-[60px] rounded-full border-2 border-black text-3xl font-bold'>5</div>
-                  <div className='mt-14'>
-                    <h3 className='text-4xl font-bold'>Loyal Partnership</h3>
+              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 group/item relative md:group/item'>
+                <div className='px-10 py-14 md:group/edit visible md:group-hover/item:invisible md:group/edit relative z-10'>
+                  <div className='flex items-center justify-center w-[40px] h-[40px] md:w-[60px] md:h-[60px] rounded-full border-2 border-white md:border-black text-white md:text-black text-xl md:text-3xl font-bold'>5</div>
+                  <div className='mt-6 md:mt-14'>
+                    <h3 className='text-3xl md:text-4xl font-bold text-white md:text-black'>Loyal Partnership</h3>
+                    <p className='block md:hidden text-white text-base mt-10'>Respect company rules, announcements, and instructions, maintaining a harmonious balance between personal interests and the collective well-being of the Company.</p>
                   </div>
                 </div>
-                <div className='group/edit invisible group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
-                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover' alt="Background Image" />
-                  <p className='flex flex-col items-center justify-center h-full relative text-white text-4xl'>Work with loyalty and unwavering commitment to the company's mission and vision.</p>
+                <div className='md:group/edit md:invisible md:group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
+                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover z-1 md:z-0' alt="Background Image" />
+                  
+                  <p className='hidden md:flex flex-col items-center justify-center h-full relative text-white sm:text-2xl lg:text-4xl'>Respect company rules, announcements, and instructions, maintaining a harmonious balance between personal interests and the collective well-being of the Company.</p>
                 </div>
               </div>
 
-              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 relative group/item'>
-                <div className='px-10 py-14 group/edit visible group-hover/item:invisible'>
-                  <div className='flex items-center justify-center w-[60px] h-[60px] rounded-full border-2 border-black text-3xl font-bold'>6</div>
-                  <div className='mt-14'>
-                    <h3 className='text-4xl font-bold'>Dedicated Commitment</h3>
+              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 group/item relative md:group/item'>
+                <div className='px-10 py-14 md:group/edit visible md:group-hover/item:invisible md:group/edit relative z-10'>
+                  <div className='flex items-center justify-center w-[40px] h-[40px] md:w-[60px] md:h-[60px] rounded-full border-2 border-white md:border-black text-white md:text-black text-xl md:text-3xl font-bold'>6</div>
+                  <div className='mt-6 md:mt-14'>
+                    <h3 className='text-3xl md:text-4xl font-bold text-white md:text-black'>Dedicated Commitment</h3>
+                    <p className='block md:hidden text-white text-base mt-10'>Work with loyalty and unwavering commitment to the company's mission and vision.</p>
                   </div>
                 </div>
-                <div className='group/edit invisible group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
-                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover' alt="Background Image" />
-                  <p className='flex flex-col items-center justify-center h-full relative text-white text-4xl'>Uphold the highest standards of integrity, honesty, and ethical conduct both within and beyond company premises.</p>
+                <div className='md:group/edit md:invisible md:group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
+                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover z-1 md:z-0' alt="Background Image" />
+                  
+                  <p className='hidden md:flex flex-col items-center justify-center h-full relative text-white sm:text-2xl lg:text-4xl'>Work with loyalty and unwavering commitment to the company's mission and vision.</p>
                 </div>
               </div>
+              
             </div>
 
             <div className='flex flex-col md:flex-row md:items-stretch gap-10 relative'>
-              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 relative group/item'>
-                <div className='px-10 py-14 group/edit visible group-hover/item:invisible'>
-                  <div className='flex items-center justify-center w-[60px] h-[60px] rounded-full border-2 border-black text-3xl font-bold'>7</div>
-                  <div className='mt-14'>
-                    <h3 className='text-4xl font-bold'>Professional Etiquette</h3>
+              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 group/item relative md:group/item'>
+                <div className='px-10 py-14 md:group/edit visible md:group-hover/item:invisible md:group/edit relative z-10'>
+                  <div className='flex items-center justify-center w-[40px] h-[40px] md:w-[60px] md:h-[60px] rounded-full border-2 border-white md:border-black text-white md:text-black text-xl md:text-3xl font-bold'>7</div>
+                  <div className='mt-6 md:mt-14'>
+                    <h3 className='text-3xl md:text-4xl font-bold text-white md:text-black'>Professional Etiquette</h3>
+                    <p className='block md:hidden text-white text-base mt-10'>Behave professionally, treating others with respect and dignity in all interactions.</p>
                   </div>
                 </div>
-                <div className='group/edit invisible group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
-                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover' alt="Background Image" />
-                  <p className='flex flex-col items-center justify-center h-full relative text-white text-4xl'>Behave professionally, treating others with respect and dignity in all interactions.</p>
+                <div className='md:group/edit md:invisible md:group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
+                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover z-1 md:z-0' alt="Background Image" />
+                  
+                  <p className='hidden md:flex flex-col items-center justify-center h-full relative text-white sm:text-2xl lg:text-4xl'>Behave professionally, treating others with respect and dignity in all interactions.</p>
                 </div>
               </div>
 
-              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 relative group/item'>
-                <div className='px-10 py-14 group/edit visible group-hover/item:invisible'>
-                  <div className='flex items-center justify-center w-[60px] h-[60px] rounded-full border-2 border-black text-3xl font-bold'>8</div>
-                  <div className='mt-14'>
-                    <h3 className='text-4xl font-bold'>Confidentiality Champions</h3>
+              <div className='aspect-square md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100 group/item relative md:group/item'>
+                <div className='px-10 py-14 md:group/edit visible md:group-hover/item:invisible md:group/edit relative z-10'>
+                  <div className='flex items-center justify-center w-[40px] h-[40px] md:w-[60px] md:h-[60px] rounded-full border-2 border-white md:border-black text-white md:text-black text-xl md:text-3xl font-bold'>8</div>
+                  <div className='mt-6 md:mt-14'>
+                    <h3 className='text-3xl md:text-4xl font-bold text-white md:text-black'>Confidentiality Champions</h3>
+                    <p className='block md:hidden text-white text-base mt-10'>Ensure the confidentiality of company, customer, supplier, or business associate information, refraining from disclosing confidential information to unauthorized individuals.</p>
                   </div>
                 </div>
-                <div className='group/edit invisible group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
-                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover' alt="Background Image" />
-                  <p className='flex flex-col items-center justify-center h-full relative text-white text-4xl'>Ensure the confidentiality of company, customer, supplier, or business associate information, refraining from disclosing confidential information to unauthorized individuals.</p>
+                <div className='md:group/edit md:invisible md:group-hover/item:visible absolute aspect-square top-0 left-0 h-full w-full px-10 py-14'>
+                  <Image fill placeholder='blur' quality={100} sizes='100vw' src={earth} className='object-cover z-1 md:z-0' alt="Background Image" />
+                  
+                  <p className='hidden md:flex flex-col items-center justify-center h-full relative text-white sm:text-2xl lg:text-4xl'>Ensure the confidentiality of company, customer, supplier, or business associate information, refraining from disclosing confidential information to unauthorized individuals.</p>
                 </div>
               </div>
+              
             </div>
           </div>
         </div>

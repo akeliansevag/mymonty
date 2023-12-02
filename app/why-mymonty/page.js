@@ -8,7 +8,7 @@ import eWallet from '@/public/company/e-wallet-account.png';
 import whyMyMonty from '@/public/company/why-mymonty.png';
 
 export const metadata = {
-  title: websiteName + 'Who We Are',
+  title: websiteName + 'Why MyMonty',
   description: '',
 };
 
@@ -70,7 +70,7 @@ const WhyMyMonty = () => {
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
         <div className='container'>
           <h2 className='text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Benefit from an e-wallet account</h2>
-          <p className='text-center text-[#2657D4] text-[1.75rem] font-bold mt-5'>In less than 5 mins</p>
+          <p className='text-center text-[#2657D4] text-[1.75rem] font-bold mt-5'>In just few minutes</p>
           
           <div className='relative flex items-center justify-center w-[280px] h-[280px] md:w-[586px] md:h-[586px] rounded-full border-2 bg-[#2657D4] text-5xl md:text-6xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
             <p className='md:px-40'>Download app</p>
