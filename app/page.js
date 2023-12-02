@@ -1,5 +1,6 @@
 import Banner from './components/Banner';
 import styles from './page.module.css';
+import { websiteName } from '@/app/config';
 import SectionTwo from './homepage/SectionTwo';
 import SectionThree from './homepage/SectionThree';
 import SectionFour from './homepage/SectionFour';
@@ -7,7 +8,7 @@ import SectionFive from './homepage/SectionFive';
 import SectionSix from './homepage/SectionSix';
 import SectionSeven from './homepage/SectionSeven';
 import girl from '@/public/personal/girl.png';
-
+import girlMobile from '@/public/personal/girl-mobile.png';
 
 const data = {
   title: 'MyMonty Better Than a Bank.',
@@ -16,6 +17,7 @@ const data = {
   image:{
     layout: 'full',
     url: girl,
+    urlMobile: girlMobile,
   },
   cta: {
     type: 'button',
@@ -26,7 +28,7 @@ const data = {
 }
 
 export const metadata = {
-  title: 'MyMonty ',
+  title: 'MyMonty',
   description: 'MyMonty',
 }
 
