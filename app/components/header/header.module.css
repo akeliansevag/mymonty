@@ -1,0 +1,13 @@
+.header{
+    height: var(--header-height);
+}
+
+.scrolling{
+    backdrop-filter: blur(16px);
+    background-color: rgba(255,255,255,0.8);
+    height: 72px;
+}
+
+.menuOpen{
+    background-color: #f7f7f7;
+}

@@ -1,0 +1,35 @@
+.nav > ul > li{
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+}
+
+.nav > ul > li > span{
+    transition: all 0.1s linear;
+    padding: 10px 15px;
+    border-radius: 99999px;
+}
+
+.nav > ul > li:hover > span{
+    background-color: black;
+    color:white;
+    cursor:default;
+}
+
+.nav > ul > li:hover > .megaMenu{
+   display: block;
+}
+.megaMenu{
+    background-color: #f7f7f7;
+    width: 100%;
+    position: absolute;
+    left:0;
+    top:100%;
+    display: none;
+}
+
+.column > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+}

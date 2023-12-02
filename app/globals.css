@@ -12,10 +12,6 @@
 body{
     font-size:1.25rem;
 }
-.header-height{
-    height: var(--header-height);
-}
-
 .mm-button{
     background-color: var(--mm-black);
     border-radius: 30px;

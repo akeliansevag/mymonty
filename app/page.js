@@ -12,6 +12,12 @@ const data = {
   title: 'MyMonty will always have your back.',
 }
 
+export const metadata = {
+  title: 'MyMonty ',
+  description: 'MyMonty',
+}
+
+
 export default function Home() {
   return (
     <main>

@@ -6,15 +6,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const Banner = ({data}) => {
+const Banner = ({ data }) => {
     return (
         <section className='min-h-[100dvh] w-full relative pt-10 flex flex-col bg-[#DCF4FE] md:bg-transparent'>
             <Image alt='Banner Image' fill placeholder='blur' quality={100} sizes='100vw' src={bannerImage} className='object-cover custom-object-position md:object-center -z-10'
                 priority
             />
-            <div className='container'>
-                <Image alt='Logo' src={logo} priority />
-            </div>
             <div className='container p-0 flex flex-col flex-1 md:flex-row md:gap-10'>
                 <div className='p-4 md:flex-[2] self-center pb-0 md:pb-10'>
                     <div>

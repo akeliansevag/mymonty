@@ -1,5 +1,6 @@
 import localFont from 'next/font/local';
 import './globals.css'
+import Header from './components/header/Header';
 
 const Aeonik = localFont({
   src: [
@@ -39,14 +40,17 @@ const Aeonik = localFont({
 });
 
 export const metadata = {
-  title: 'MyMonty - ',
+  title: 'MyMonty',
   description: 'MyMonty',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${Aeonik.variable}`}>
-      <body className='font-aeonik'>{children}</body>
+      <body className='font-aeonik'>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
