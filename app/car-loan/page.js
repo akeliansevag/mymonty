@@ -28,7 +28,16 @@ const data = {
   title: 'Drive Your Dreams',
   subtitle: 'Car Loan',
   desc: 'Ready to hit the road in your new car? Apply for your car loan with MyMonty today and experience a hassle-free journey towards owning your dream vehicle!',
-  image: '',
+  image: {
+    layout: 'half',
+    url: carKey,
+  },
+  cta: {
+    type: 'button',
+    button: {
+      name: 'Apply now'
+    }
+  }
 }
 
 const CarLoan = () => {
@@ -49,7 +58,7 @@ const CarLoan = () => {
           </div>
 
           <div className='flex flex-col md:flex-row md:items-stretch gap-10 relative mt-20'>
-            <div className='md:basis-1/2 lg:basis-1/3 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+            <div className='md:basis-1/2 lg:basis-1/3 overflow-hidden rounded-[1.875rem] bg-gray-100'>
               <div className='px-10 py-14'>
                 <div className='mt-14'>
                   <div className='flex items-center justify-center w-[120px] h-[120px] rounded-full border-4 border-black'>
@@ -61,7 +70,7 @@ const CarLoan = () => {
               </div>
             </div>
 
-            <div className='md:basis-1/2 lg:basis-1/3 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+            <div className='md:basis-1/2 lg:basis-1/3 overflow-hidden rounded-[1.875rem] bg-gray-100'>
               <div className='px-10 py-14'>
                 <div className='mt-14'>
                   <div className='flex items-center justify-center w-[120px] h-[120px] rounded-full border-4 border-black'>
@@ -74,7 +83,7 @@ const CarLoan = () => {
               </div>
             </div>
 
-            <div className='md:basis-1/2 lg:basis-1/3 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+            <div className='md:basis-1/2 lg:basis-1/3 overflow-hidden rounded-[1.875rem] bg-gray-100'>
               <div className='px-10 py-14'>
                 <div className='mt-14'>
                   <div className='flex items-center justify-center w-[120px] h-[120px] rounded-full border-4 border-black'>
@@ -107,7 +116,7 @@ const CarLoan = () => {
 
           <div className='flex flex-col gap-10 mt-20'>
             <div className='flex flex-col md:flex-row md:items-stretch gap-10 relative text-center'>
-              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100'>
                 <div className='px-10 py-14'>
                   <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-bold text-white m-auto text-center'>1</div>
                   <h3 className='text-4xl font-bold mt-10'>Explore Loan Options</h3>
@@ -115,7 +124,7 @@ const CarLoan = () => {
                 </div>
               </div>
 
-              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100'>
                 <div className='px-10 py-14'>
                   <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-bold text-white m-auto text-center'>2</div>
 
@@ -126,7 +135,7 @@ const CarLoan = () => {
             </div>
 
             <div className='flex flex-col md:flex-row md:items-stretch gap-10 relative text-center'>
-              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100'>
                 <div className='px-10 py-14'>
                   <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-bold text-white m-auto text-center'>3</div>
 
@@ -135,7 +144,7 @@ const CarLoan = () => {
                 </div>
               </div>
 
-              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100'>
                 <div className='px-10 py-14'>
                   <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-bold text-white m-auto text-center'>4</div>
 

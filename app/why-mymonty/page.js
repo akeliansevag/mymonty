@@ -5,6 +5,7 @@ import Banner from '../components/Banner';
 import Link from 'next/link';
 import Image from 'next/image';
 import eWallet from '@/public/company/e-wallet-account.png';
+import whyMyMonty from '@/public/company/why-mymonty.png';
 
 export const metadata = {
   title: websiteName + 'Who We Are',
@@ -15,7 +16,16 @@ const data = {
   title: 'Lebanese will be able to access all  services',
   subtitle: 'Why MyMonty',
   desc: 'Every Lebanese will be able to have access to financial services',
-  image: '',
+  image:{
+    layout: 'half',
+    url: whyMyMonty,
+  },
+  cta: {
+    type: 'button',
+    button: {
+      name: 'Download app'
+    }
+  }
 }
 
 const WhyMyMonty = () => {
@@ -27,7 +37,7 @@ const WhyMyMonty = () => {
         <div className='container'>
           <h2 className='text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Simple Onboarding</h2>
           <div className='flex flex-col md:flex-row md:items-stretch gap-10 relative mt-20'>
-            <div className='md:basis-1/2 lg:basis-1/3 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+            <div className='md:basis-1/2 lg:basis-1/3 overflow-hidden rounded-[1.875rem] bg-gray-100'>
               <div className='px-10 py-14'>
                 <div className='flex items-center justify-center w-[60px] h-[60px] rounded-full border-2 border-black text-3xl font-bold'>1</div>
                 <div className='mt-14'>
@@ -36,7 +46,7 @@ const WhyMyMonty = () => {
               </div>
             </div>
 
-            <div className='md:basis-1/2 lg:basis-1/3 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+            <div className='md:basis-1/2 lg:basis-1/3 overflow-hidden rounded-[1.875rem] bg-gray-100'>
               <div className='px-10 py-14'>
                 <div className='flex items-center justify-center w-[60px] h-[60px] rounded-full border-2 border-black text-3xl font-bold'>2</div>
                 <div className='mt-14'>
@@ -45,7 +55,7 @@ const WhyMyMonty = () => {
               </div>
             </div>
 
-            <div className='md:basis-1/2 lg:basis-1/3 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+            <div className='md:basis-1/2 lg:basis-1/3 overflow-hidden rounded-[1.875rem] bg-gray-100'>
               <div className='px-10 py-14'>
                 <div className='flex items-center justify-center w-[60px] h-[60px] rounded-full border-2 border-black text-3xl font-bold'>3</div>
                 <div className='mt-14'>
@@ -71,7 +81,7 @@ const WhyMyMonty = () => {
 
           <div className='flex flex-col gap-10 mt-20'>
             <div className='flex flex-col md:flex-row md:items-stretch gap-10 relative '>
-              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100'>
                 <Image className="w-full" src={eWallet} alt='High-End Security' placeholder='blur'/>
                 <div className='px-10 py-14'>
                     <h3 className='text-4xl font-bold'>High-End Security</h3>
@@ -79,7 +89,7 @@ const WhyMyMonty = () => {
                 </div>
               </div>
 
-              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100'>
                 <Image className="w-full" src={eWallet} alt='High-End Security' placeholder='blur'/>
                 <div className='px-10 py-14'>
                   <h3 className='text-4xl font-bold'>One stop shop</h3>
@@ -89,7 +99,7 @@ const WhyMyMonty = () => {
             </div>
 
             <div className='flex flex-col md:flex-row md:items-stretch gap-10 relative '>
-              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100'>
                 <Image className="w-full" src={eWallet} alt='High-End Security' placeholder='blur'/>
                 <div className='px-10 py-14'>
                   <h3 className='text-4xl font-bold'>Friendly Support</h3>
@@ -97,7 +107,7 @@ const WhyMyMonty = () => {
                 </div>
               </div>
 
-              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-200'>
+              <div className='md:basis-1/2 overflow-hidden rounded-[1.875rem] bg-gray-100'>
                 <Image className="w-full" src={eWallet} alt='High-End Security' placeholder='blur'/>
                 <div className='px-10 py-14'>
                   <h3 className='text-4xl font-bold'>No Hidden Fees</h3>

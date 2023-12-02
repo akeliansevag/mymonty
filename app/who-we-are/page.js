@@ -5,6 +5,7 @@ import Banner from "../components/Banner";
 import Link from 'next/link';
 import Image from 'next/image';
 import earthImage from '@/public/company/earth.png';
+import whoWeAre from '@/public/company/who-we-are.png';
 
 export const metadata = {
   title: websiteName + "Who We Are",
@@ -15,7 +16,16 @@ const data = {
   title: 'ONE APP FOR ALL MONEY THINGS',
   subtitle: 'Who we are',
   desc: 'Manage your money effortlessly from the comfort of one single, intuitive App.',
-  image: '',
+  image:{
+    layout: 'half',
+    url: whoWeAre,
+  },
+  cta: {
+    type: 'button',
+    button: {
+      name: 'Download app'
+    }
+  }
 }
 
 const WhoWeAre = () => {
