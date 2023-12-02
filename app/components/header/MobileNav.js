@@ -29,7 +29,7 @@ const MobileNav = ({ open, handleMobileMenuToggle }) => {
                     })}
                 </div>
                 <div className='mb-[30px] mt-[15px]'>
-                    <Link href='/who-we-are' className='w-full top-full mm-button white whitespace-nowrap'>
+                    <Link onClick={handleMobileMenuToggle} href='/who-we-are' className='w-full top-full mm-button white whitespace-nowrap'>
                         Download app
                     </Link>
                 </div>
