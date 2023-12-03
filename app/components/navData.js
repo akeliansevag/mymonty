@@ -9,7 +9,7 @@ export const data = [
                 children: [
                     {
                         title: 'Multicurrency Account',
-                        url: null,
+                        url: '/personal/accounts#multicurrency-account',
                     },
                     {
                         title: 'Top up',

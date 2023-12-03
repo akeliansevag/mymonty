@@ -93,7 +93,7 @@ const accounts = () => {
         <div>
             <Banner data={data} />
             <Section>
-                <div className='container text-center'>
+                <div id="multicurrency-account" className='container text-center'>
                     <TextBlock title="Free Multicurrency Account" description="Get your free multicurrency account in both Fresh USD/LBP whenever you complete the onboarding process." button={true} />
                     <Image className='mx-auto mt-10' alt="Wallets" src={sectionTwoImage} />
                 </div>
