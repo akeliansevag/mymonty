@@ -46,7 +46,7 @@ const Header = () => {
         <header className={headerClasses}>
             <div className='container flex justify-between items-center'>
                 <div className='flex-1'>
-                    <Link href='/'>
+                    <Link onClick={() => { setMenuOpen(false); setMobileMenuToggle(false); }} href='/'>
                         <Image alt="MyMonty Logo" src={logo} />
                     </Link>
                 </div>
