@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import React from 'react';
-import { data } from './navData';
+import { data } from '../navData';
 
 const Nav = ({ handleMenuOpen, menuOpen }) => {
     const handleMouseEnter = () => {

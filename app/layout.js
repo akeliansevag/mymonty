@@ -1,6 +1,7 @@
 import localFont from 'next/font/local';
 import './globals.css'
 import Header from './components/header/Header';
+import Footer from './components/Footer';
 
 const Aeonik = localFont({
   src: [
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
       <body className='font-aeonik'>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

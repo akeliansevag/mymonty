@@ -14,7 +14,7 @@ const data = {
   title: 'MyMonty Better Than a Bank.',
   subtitle: '',
   desc: 'Explore our innovative ways to manage your finances.',
-  image:{
+  image: {
     layout: 'full',
     url: girl,
     urlMobile: girlMobile,
@@ -42,7 +42,6 @@ export default function Home() {
       <SectionFour />
       <SectionFive />
       <SectionSix />
-      <SectionSeven />
     </main>
   )
 }

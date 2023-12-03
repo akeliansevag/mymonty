@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import MobileNavParents from './MobileNavParents';
 import MobileSubMenu from './MobileSubMenu';
-import { data } from './navData';
+import { data } from '../navData';
 import Link from 'next/link';
 
 const MobileNav = ({ open, handleMobileMenuToggle }) => {
