@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Section = ({ children, bgImage }) => {
+const Section = ({ children, bgImage, bgDark }) => {
     return (
-        <section className='py-14 lg:py-28 relative'>
+        <section className={`py-14 lg:py-28 relative ${bgDark ? 'bg-black' : ''}`}>
             {bgImage && (
                 <Image src={bgImage} fill={true} priority placeholder='blur' sizes='100vw' className='object-cover -z-10' />
             )}

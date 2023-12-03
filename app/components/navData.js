@@ -58,7 +58,7 @@ export const data = [
             },
             {
                 title: 'Transfers',
-                url: null,
+                url: '/personal/transfers',
                 children: [
                     {
                         title: 'P2P Remittance',
@@ -96,7 +96,7 @@ export const data = [
             },
             {
                 title: 'Payments',
-                url: null,
+                url: '/personal/payments',
                 children: [
                     {
                         title: 'POS',
@@ -134,7 +134,7 @@ export const data = [
             },
             {
                 title: 'Loans',
-                url: null,
+                url: '/personal/loans',
                 children: [
                     {
                         title: 'Advance on Salary',
@@ -164,7 +164,7 @@ export const data = [
             },
             {
                 title: 'Loyalty',
-                url: null,
+                url: '/personal/loyalty',
                 children: [
                     {
                         title: 'Cashback',

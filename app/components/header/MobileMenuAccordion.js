@@ -15,7 +15,7 @@ const MobileMenuAccordion = ({ data, handleMobileMenuToggle }) => {
                     {data && !data?.url && (
                         data?.title
                     )}
-                    {data && !data.children && data?.url && (
+                    {data && data?.url && (
                         <Link onClick={handleMobileMenuToggle} href={data.url}>{data?.title}</Link>
                     )}
                 </span>
