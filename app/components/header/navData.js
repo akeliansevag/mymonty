@@ -5,11 +5,11 @@ export const data = [
         children: [
             {
                 title: 'Accounts',
-                url: '/accounts',
+                url: null,
                 children: [
                     {
                         title: 'Multicurrency Account',
-                        url: '/who-we-are',
+                        url: null,
                     },
                     {
                         title: 'Top up',
@@ -28,7 +28,7 @@ export const data = [
             },
             {
                 title: 'Cards',
-                url: '/cards',
+                url: null,
                 children: [
                     {
                         title: 'Virtual Card',
@@ -55,12 +55,136 @@ export const data = [
                         url: null
                     }
                 ]
+            },
+            {
+                title: 'Transfers',
+                url: null,
+                children: [
+                    {
+                        title: 'P2P Remittance',
+                        url: null
+                    },
+                    {
+                        title: 'Recurring',
+                        url: null
+                    },
+                    {
+                        title: 'Scheduled',
+                        url: null
+                    },
+                    {
+                        title: 'Send',
+                        url: null
+                    },
+                    {
+                        title: 'Receive',
+                        url: null
+                    },
+                    {
+                        title: 'Request',
+                        url: null
+                    },
+                    {
+                        title: 'Top Up',
+                        url: null
+                    },
+                    {
+                        title: 'Cash out',
+                        url: null
+                    }
+                ]
+            },
+            {
+                title: 'Payments',
+                url: null,
+                children: [
+                    {
+                        title: 'POS',
+                        url: null
+                    },
+                    {
+                        title: 'QR & Link',
+                        url: null
+                    },
+                    {
+                        title: 'Travel eSim',
+                        url: null
+                    },
+                    {
+                        title: 'Bill Payment',
+                        url: null
+                    },
+                    {
+                        title: 'Online Vouchers',
+                        url: null
+                    },
+                    {
+                        title: 'Tuition',
+                        url: null
+                    },
+                    {
+                        title: 'Wedding List',
+                        url: null
+                    },
+                    {
+                        title: 'Notifications & Alerts',
+                        url: null
+                    },
+                ]
+            },
+            {
+                title: 'Loans',
+                url: null,
+                children: [
+                    {
+                        title: 'Advance on Salary',
+                        url: null,
+                    },
+                    {
+                        title: 'BNPL',
+                        url: null,
+                    },
+                    {
+                        title: 'Car Loan',
+                        url: '/car-loan',
+                    },
+                    {
+                        title: 'Housing Loan',
+                        url: null,
+                    },
+                    {
+                        title: 'Plastic Surgery Loan',
+                        url: null,
+                    },
+                    {
+                        title: 'Travel Loan',
+                        url: null,
+                    },
+                ]
+            },
+            {
+                title: 'Loyalty',
+                url: null,
+                children: [
+                    {
+                        title: 'Cashback',
+                        url: null,
+                    },
+                    {
+                        title: 'Referral',
+                        url: null,
+                    },
+                    {
+                        title: 'Loyalty program',
+                        url: null,
+                    }
+                ]
             }
         ]
     },
     {
         title: 'Business',
-        url: '/business',
+        url: null,
         children: null
     },
     {
@@ -69,7 +193,7 @@ export const data = [
         children: [
             {
                 title: 'Culture',
-                url: '/culture',
+                url: '/cultures           ',
                 children: null
 
             },
@@ -79,15 +203,19 @@ export const data = [
             },
             {
                 title: 'Leadership team',
-                url: '/leadership-team'
+                url: null
             },
             {
                 title: 'Contact',
-                url: '/contact'
+                url: '/contact-us'
+            },
+            {
+                title: 'Why MyMonty',
+                url: '/why-mymonty'
             },
             {
                 title: 'Careers',
-                url: '/careers'
+                url: null
             },
             {
                 title: 'Code of Conduct',

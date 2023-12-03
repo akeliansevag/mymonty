@@ -1,9 +1,9 @@
 'use client';
 import Link from 'next/link';
 import React from 'react';
-import styles from './nav.module.css';
+import { data } from './navData';
 
-const Nav = ({ handleMenuOpen }) => {
+const Nav = ({ handleMenuOpen, menuOpen }) => {
     const handleMouseEnter = () => {
         handleMenuOpen(true);
     };
@@ -12,108 +12,52 @@ const Nav = ({ handleMenuOpen }) => {
         handleMenuOpen(false);
     };
     return (
-        <nav className={`${styles.nav} text-[1rem]`}>
-            <ul className={`flex gap-3`}>
-                <li onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter} className='has-children'>
-                    <span>Personal</span>
-                    <div className={`py-10 ${styles.megaMenu}`} >
-                        <div className='container flex justify-between'>
-                            <div className={styles.column}>
-                                <span>
-                                    <Link href="/accounts">Accounts</Link>
-                                </span>
-                                <ul>
-                                    <li>
-                                        <Link href='/accounts'>
-                                            Multicurrency Account
-                                        </Link>
-                                    </li>
-                                    <li>Top up</li>
-                                    <li>Cash in</li>
-                                    <li>Cash Out</li>
-                                </ul>
-                            </div>
+        <nav className='text-[1rem]'>
+            <ul className={`flex`}>
+                {data && data.map((items) => {
+                    return (
+                        <li onMouseLeave={() => items.children ? handleMouseLeave() : false} onMouseEnter={() => items.children ? handleMouseEnter() : false} className='h-[var(--header-height)] flex items-center group'>
+                            <span className='transition-all py-[7px] px-[20px] rounded-full group-hover:bg-black group-hover:text-white group-hover:cursor-default'>
+                                {items?.url ? <Link onClick={() => handleMenuOpen(false)} href={items.url}>{items?.title}</Link> : items.title}
+                            </span>
+                            {items.children && (
+                                <div className={`${menuOpen ? 'group-hover:block' : null} py-10 bg-[#f7f7f7] w-full absolute top-full left-0 hidden`}>
+                                    <div className='container flex gap-10'>
+                                        {items.children.map((child) => {
+                                            return (
+                                                <div>
+                                                    <span className='font-bold block mb-[15px] text-xl'>
+                                                        {child?.url ? <Link onClick={() => handleMenuOpen(false)} href={child.url}>{child.title}</Link> : child.title}
+                                                    </span>
+                                                    {child?.children && (
+                                                        <ul>
+                                                            {child.children.map((c) => {
+                                                                return (
+                                                                    <li>
+                                                                        {c?.url ? <Link onClick={() => handleMenuOpen(false)} href={c.url}>{c?.title}</Link> : c.title}
+                                                                    </li>
 
-                            <div className={styles.column}>
-                                <span>
-                                    Cards
-                                </span>
-                                <ul>
-                                    <li>Virtual Card</li>
-                                    <li>Physical Card</li>
-                                    <li>Card Controls</li>
-                                    <li>Card Withdrawal</li>
-                                    <li>Contactless Payment</li>
-                                    <li>Tap to Pay</li>
-                                </ul>
-                            </div>
+                                                                )
 
-                            <div className={styles.column}>
-                                <span>
-                                    Transfers
-                                </span>
-                                <ul>
-                                    <li>P2P Remittance</li>
-                                    <li>Recurring</li>
-                                    <li>Scheduled</li>
-                                    <li>Send</li>
-                                    <li>Request</li>
-                                    <li>Top Up</li>
-                                    <li>Cash out</li>
-                                </ul>
-                            </div>
+                                                            })}
+                                                        </ul>
+                                                    )}
 
-                            <div className={styles.column}>
-                                <span>
-                                    Payments
-                                </span>
-                                <ul>
-                                    <li>POS</li>
-                                    <li>QR & Link</li>
-                                    <li>Travel eSim</li>
-                                    <li>Bill Payment</li>
-                                    <li>Online Vouchers</li>
-                                    <li>Tuition</li>
-                                    <li>Wedding List</li>
-                                    <li>Notifications & Alerts</li>
-                                </ul>
-                            </div>
+                                                </div>
+                                            )
+                                        })}
 
-                            <div className={styles.column}>
-                                <span>
-                                    Loans
-                                </span>
-                                <ul>
-                                    <li>Advance on Salary</li>
-                                    <li>BNPL</li>
-                                    <li>Car Loan</li>
-                                    <li>Housing Loan</li>
-                                    <li>Plastic Surgery Loan</li>
-                                    <li>Travel Loan</li>
-                                </ul>
-                            </div>
-                            <div className={styles.column}>
-                                <span>
-                                    Loayalty
-                                </span>
-                                <ul>
-                                    <li>Cashback</li>
-                                    <li>Referral</li>
-                                    <li>Loyalty program</li>
-                                </ul>
-                            </div>
+                                    </div>
+                                </div>
+                            )}
 
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <span className='py-5 px-10'>Business</span>
-                </li>
-                <li>
-                    <span className='py-5 px-10'>Company</span>
-                </li>
+                        </li>
+                    )
+
+                })}
+
             </ul>
-        </nav >
+        </nav>
     )
 }
 

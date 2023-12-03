@@ -52,7 +52,7 @@ const Header = () => {
                 </div>
                 <div className='flex-1 flex justify-end gap-3 items-center'>
                     <div className='hidden md:block'>
-                        <Nav handleMenuOpen={handleMenuOpen} />
+                        <Nav menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
                     </div>
                     <div className='hidden md:block'>
                         <Link href='/who-we-are' className='mm-button white whitespace-nowrap'>
