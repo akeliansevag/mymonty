@@ -12,7 +12,7 @@ const MobileMenuAccordion = ({ data, handleMobileMenuToggle }) => {
         <li className='my-3 first:mt-0 last:mb-0'>
             <span className='flex items-center justify-between pb-3 cursor-pointer' onClick={handleToggle}>
                 <span className='font-bold select-none'>
-                    {data && data.children && (
+                    {data && !data?.url && (
                         data?.title
                     )}
                     {data && !data.children && data?.url && (
