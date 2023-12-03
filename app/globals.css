@@ -41,6 +41,12 @@ body{
     color: white;
 }
 
+.mm-button.default{
+    border-color: white;
+    background-color: transparent;
+    color: white;
+}
+
 .custom-object-position{
     object-position: 70% 250px;
 }

@@ -5,7 +5,7 @@ export const data = [
         children: [
             {
                 title: 'Accounts',
-                url: null,
+                url: '/personal/accounts',
                 children: [
                     {
                         title: 'Multicurrency Account',
@@ -28,7 +28,7 @@ export const data = [
             },
             {
                 title: 'Cards',
-                url: null,
+                url: '/personal/cards',
                 children: [
                     {
                         title: 'Virtual Card',
