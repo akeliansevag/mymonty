@@ -9,6 +9,7 @@ import SectionSix from './homepage/SectionSix';
 import SectionSeven from './homepage/SectionSeven';
 import girl from '@/public/personal/girl.png';
 import girlMobile from '@/public/personal/girl-mobile.png';
+import Modal from './components/Modal';
 
 const data = {
   title: 'MyMonty Better Than a Bank.',
@@ -37,6 +38,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
+      <Modal />
       <Banner data={data} />
       <SectionTwo />
       <SectionThree />

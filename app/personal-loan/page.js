@@ -56,7 +56,7 @@ const swiperParams = {
 };
 
 
-const CarLoan = () => {
+const PersonalLoan = () => {
   return (
     <div>
       <Banner data={data} />
@@ -175,4 +175,4 @@ const CarLoan = () => {
   );
 };
 
-export default CarLoan;
+export default PersonalLoan;
