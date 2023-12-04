@@ -47,6 +47,12 @@ body{
     color: white;
 }
 
+.mm-button.blue:hover{
+    background-color: #2657D4;
+    border-color: #2657D4;
+    color:white
+}
+
 .custom-object-position{
     object-position: 70% 250px;
 }

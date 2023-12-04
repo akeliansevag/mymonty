@@ -5,12 +5,15 @@ import React from 'react';
 import banner from '@/public/personal/payments-banner.png';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
-import sectionTwo from '@/public/personal/personal-section-one.png';
-import sectionThree from '@/public/personal/payments-section-three.png';
+import sectionTwo from '@/public/personal/pay-qr.png';
+import sectionThree from '@/public/personal/instant-payment.png';
 import sectionFour from '@/public/personal/payments-swiper-1.jpg';
-import billPayment from '@/public/personal/payments-bill-payment.png';
+import billPayment from '@/public/personal/bill-payment.png';
+import onlineVouchers from '@/public/personal/online-vouchers.png';
+import tuitionPayment from '@/public/personal/tuition-payment.png';
+import weddingList from '@/public/personal/wedding-list.png';
 import paymentTravel from '@/public/personal/payments-travel.jpg';
-import travelImage from '@/public/personal/payments-travel-image.png';
+import travelImage from '@/public/personal/esim-img.png';
 import Image from 'next/image';
 
 export const metadata = {
@@ -50,7 +53,7 @@ const payments = () => {
                     </div>
                     <div className='mt-40 flex flex-col-reverse lg:flex-row gap-10 place-items-center'>
                         <Image src={sectionThree} alt='Section Image' />
-                        <TextBlock title="Pay via QR/Link" description="No need to pay in cash banknotes anymore, just tap on the payment link or scan the payment QR and get your payment done in seconds." button={true} />
+                        <TextBlock title="Instant Payment Notifications" description="With instant payment notifications, you can confirm that your payment has gone through and the amount you were charged." button={true} />
                     </div>
                 </div>
             </Section>
@@ -63,7 +66,13 @@ const payments = () => {
             </section>
             <Section>
                 <div className='container text-center'>
-                    <Image className='mb-10 mx-auto' src={billPayment} alt='Image' />
+                    <div className='flex flex-col md:flex-row gap-10 items-center justify-center mb-10'>
+                        <Image src={billPayment} alt='Image' />
+                        <Image src={onlineVouchers} alt='Image' />
+                        <Image src={tuitionPayment} alt='Image' />
+                        <Image src={weddingList} alt='Image' />
+                    </div>
+
                     <TextBlock title="Bill Payment" description="We are launching a large bundle of services very soon, including group payment, and bill splitting for your convenience." button={true} />
                 </div>
             </Section>

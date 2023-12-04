@@ -5,8 +5,11 @@ import Image from 'next/image';
 import banner from '@/public/personal/loans-banner.png';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
-import sectionTwoImage from '@/public/personal/loans-1.png';
-import bnpl from '@/public/personal/loans-2.png';
+import free from '@/public/personal/free.png';
+import installment from '@/public/personal/installment.png';
+import twopointfive from '@/public/personal/2.5.png';
+
+import bnpl from '@/public/personal/bnpl.png';
 import Carousel from '@/app/components/Carousel';
 
 export const metadata = {
@@ -95,7 +98,12 @@ const loans = () => {
             <Section>
                 <div className='container text-center'>
                     <TextBlock title="Advance on Salary" description="Have you ever faced an urgent payment? Or missed a black Friday for that “insufficient funds in your account” message? With MyMonty early Salary, you will have access to a portion of your next salary in advance to spend and return at your convenience with 3 flexible options." button={true} />
-                    <Image className='mx-auto mt-10' alt="Wallets" src={sectionTwoImage} />
+                    <div className='flex flex-col md:flex-row gap-10 items-center justify-center mt-10'>
+                        <Image alt="Wallets" src={free} />
+                        <Image alt="Wallets" src={installment} />
+                        <Image alt="Wallets" src={twopointfive} />
+                    </div>
+
                 </div>
             </Section>
             <Carousel data={carouselData} />

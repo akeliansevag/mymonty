@@ -31,9 +31,9 @@ const Banner = ({ data }) => {
 
                                         {
                                             data.cta.type === 'link' ? (
-                                                <Link className='mm-button mt-8' href={data.cta.link.url}>{data.cta.link.name}</Link>
+                                                <Link className='mm-button blue mt-8' href={data.cta.link.url}>{data.cta.link.name}</Link>
                                             ) : (
-                                                <button className='mm-button mt-8'>{data.cta.button.name}</button>
+                                                <button className='mm-button blue mt-8'>{data.cta.button.name}</button>
                                             )
                                         }
                                     </div>
@@ -64,9 +64,9 @@ const Banner = ({ data }) => {
 
                                             {
                                                 data.cta.type === 'link' ? (
-                                                    <Link className='mm-button mt-8' href={data.cta.link.url}>{data.cta.link.name}</Link>
+                                                    <Link className='mm-button blue mt-8' href={data.cta.link.url}>{data.cta.link.name}</Link>
                                                 ) : (
-                                                    <button className='mm-button mt-8'>{data.cta.button.name}</button>
+                                                    <button className='mm-button blue mt-8'>{data.cta.button.name}</button>
                                                 )
                                             }
                                         </div>

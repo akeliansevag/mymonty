@@ -33,7 +33,7 @@ const Carousel = ({ data }) => {
                 })
             )
             }
-            <div className='absolute bottom-[50px] w-full overflow-auto'>
+            <div className='absolute bottom-[50px] w-full overflow-auto pb-4'>
                 <div className='container justify-left flex gap-5 md:justify-center'>
                     {data && data?.filters.map((filter, index2) => {
                         let buttonClasses = index2 === selectedIndex ? ' !bg-[#2657D4] !border-[#2657D4]' : '';

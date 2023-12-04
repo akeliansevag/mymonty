@@ -9,7 +9,7 @@ const TextBlock = ({ title, description, button, textColor, buttonColor }) => {
                 {description}
             </p>
             {button && (
-                <Link className={`mm-button mt-4 ${(buttonColor && buttonColor == 'white') ? ' white' : ''}`} href="#">Download app</Link>
+                <Link className={`mm-button mt-4 blue ${(buttonColor && buttonColor == 'white') ? ' white' : ''}`} href="#">Download app</Link>
             )}
         </div>
     )

@@ -2,12 +2,12 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
 import Image from 'next/image';
-import banner from '@/public/personal/cards-banner.png';
+import banner from '@/public/personal/cards-banner-2.png';
 import Section from '@/app/components/Section';
-import sectionTwoImage from '@/public/personal/cards-section-two.png';
+import sectionTwoImage from '@/public/personal/multicurrency-image.png';
 import TextBlock from '@/app/components/TextBlock';
 import Carousel from '@/app/components/Carousel';
-import sectionFourImage from '@/public/personal/section-4-image.png';
+import sectionFourImage from '@/public/personal/lock-img.png';
 import sectionFiveImage from '@/public/personal/cards-section-5-image.png';
 import cardHand from '@/public/personal/card-hand.png';
 import bgImage from '@/public/personal/cards-bg-image.jpg';
@@ -19,7 +19,7 @@ export const metadata = {
 
 const cards = () => {
     const data = {
-        title: 'Loreum Ipsum kdhg jdhd hdggdh',
+        title: 'prepaid MasterCard you can use globally.',
         subtitle: 'Cards',
         desc: 'Contactless prepaid MasterCard you can use globally.',
         image: {
@@ -64,7 +64,7 @@ const cards = () => {
                     text: 'Download app',
                     url: '#'
                 },
-                contentImage: '/personal/cards-carousel-2-content.png',
+                contentImage: '/personal/virtual-card.png',
                 backgroundImage: '/personal/cards-carousel-2.jpg'
             },
             {

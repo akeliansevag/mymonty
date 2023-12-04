@@ -6,8 +6,8 @@ import banner from '@/public/personal/loyalty-banner.png';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
 import sectionTwo from '@/public/personal/loyalty-cards.png';
-import sectionFour from '@/public/personal/loyalty-3.png';
-import sectionFive from '@/public/personal/loyalty-4.png';
+import sectionFour from '@/public/personal/referral.png';
+import sectionFive from '@/public/personal/loyalty-img.png';
 import Image from 'next/image';
 
 export const metadata = {
