@@ -59,8 +59,8 @@ const Footer = () => {
                         Copyright © 2023, All Rights Reserved MyMonty™
                     </p>
                     <div className='justify-center md:justify-end flex gap-7 text-lg underline'>
-                        <Link className='opacity-60 hover:opacity-100' href="/">Terms & Conditions</Link>
-                        <Link className='opacity-60 hover:opacity-100' href="/">Privacy Policy</Link>
+                        <Link className='opacity-60 hover:opacity-100' href="/terms-conditions">Terms & Conditions</Link>
+                        <Link className='opacity-60 hover:opacity-100' href="/privacy-policy">Privacy Policy</Link>
                     </div>
                 </div>
             </div>

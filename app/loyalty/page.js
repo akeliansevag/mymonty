@@ -42,7 +42,7 @@ const loyalty = () => {
             <Section bgDark={true} textColor="white">
                 <div className='container text-center'>
                     <Image src={sectionTwo} alt='Loyalty Cards' className='mb-10 mx-auto' />
-                    <TextBlock textColor="white" title="Cashback" description="While you are enjoying spending and transacting with your MyMonty card, we will reward you with a cashback that will be reflected to your wallet account, so we encourage you to go digital with us." button={true} buttonColor="white" />
+                    <TextBlock center={true} textColor="white" title="Cashback" description="While you are enjoying spending and transacting with your MyMonty card, we will reward you with a cashback that will be reflected to your wallet account, so we encourage you to go digital with us." button={true} buttonColor="white" />
                 </div>
 
             </Section>

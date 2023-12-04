@@ -94,14 +94,14 @@ const accounts = () => {
             <Banner data={data} />
             <Section>
                 <div id="multicurrency-account" className='container text-center'>
-                    <TextBlock title="Free Multicurrency Account" description="Get your free multicurrency account in both Fresh USD/LBP whenever you complete the onboarding process." button={true} />
+                    <TextBlock center={true} title="Free Multicurrency Account" description="Get your free multicurrency account in both Fresh USD/LBP whenever you complete the onboarding process." button={true} />
                     <Image className='mx-auto mt-10' alt="Wallets" src={sectionTwoImage} />
                 </div>
             </Section>
             <Carousel data={carouselData} />
             <Section>
                 <div className='container flex flex-col items-center lg:flex-row gap-10'>
-                    <TextBlock title='Loreum ipsum loreun' description="Get your free multicurrency account in both Fresh USD/LBP whenever you complete the onboarding process." button={true} />
+                    <TextBlock title='Welcome to The New Era of Effortless Payments' description="Experience hassle-free and quick money transactions that are not only efficient, but also enjoyable and highly adaptable." button={true} />
                     <Image src={coins} alt="Coins" />
                 </div>
 
