@@ -73,7 +73,7 @@ const payments = () => {
                         <Image src={weddingList} alt='Image' />
                     </div>
 
-                    <TextBlock title="Bill Payment" description="We are launching a large bundle of services very soon, including group payment, and bill splitting for your convenience." button={true} />
+                    <TextBlock center={true} title="Bill Payment" description="We are launching a large bundle of services very soon, including group payment, and bill splitting for your convenience." button={true} />
                 </div>
             </Section>
             <section className='py-14 md:py-20 relative'>

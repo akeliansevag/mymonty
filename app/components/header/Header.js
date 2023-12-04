@@ -55,7 +55,7 @@ const Header = () => {
                         <Nav menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
                     </div>
                     <div className='hidden md:block'>
-                        <Link href='/who-we-are' className='mm-button white whitespace-nowrap'>
+                        <Link href='/who-we-are' className='mm-button whitespace-nowrap'>
                             Download app
                         </Link>
                     </div>

@@ -20,11 +20,11 @@ const Carousel = ({ data }) => {
                     return (
                         <div key={index} className={`h-full w-full transition-all ${contentClasses}`}>
                             <div className='container text-center relative'>
-                                <TextBlock textColor="white" title={item.title} description={item.description} button={false} />
+                                <TextBlock center={true} textColor="white" title={item.title} description={item.description} button={false} />
                                 {item.button && (
                                     <Link className='mm-button white mt-4' href={item.button?.url}>{item.button.text}</Link>
                                 )}
-                                <img className='my-10 mx-auto' src={item.contentImage} />
+                                <img className='my-10 mx-auto max-w-[250px] md:max-w-[350px]' src={item.contentImage} />
                             </div>
                             <Image priority quality={100} sizes='100vw' fill={true} src={item.backgroundImage} alt="Background Image" className='object-cover -z-10' />
                         </div>
@@ -33,7 +33,7 @@ const Carousel = ({ data }) => {
                 })
             )
             }
-            <div className='absolute bottom-[50px] w-full overflow-auto pb-4'>
+            <div className='absolute bottom-[20px] md:bottom-[50px] w-full overflow-auto pb-4'>
                 <div className='container justify-left flex gap-5 md:justify-center'>
                     {data && data?.filters.map((filter, index2) => {
                         let buttonClasses = index2 === selectedIndex ? ' !bg-[#2657D4] !border-[#2657D4]' : '';
@@ -46,7 +46,6 @@ const Carousel = ({ data }) => {
                     })
                     }
                 </div>
-
             </div>
 
         </section>
