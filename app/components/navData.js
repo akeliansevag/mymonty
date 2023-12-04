@@ -164,6 +164,10 @@ export const data = [
                         title: 'Student Loan',
                         url: 'student-loan',
                     },
+                    {
+                        title: 'Personal Loan',
+                        url: 'personal-loan',
+                    },
                 ]
             },
             {
