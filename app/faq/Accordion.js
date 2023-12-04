@@ -25,7 +25,7 @@ const Accordion = ({ title, items }) => {
                             <div>
                                 {item.title}
                             </div>
-                            <div className='text-[#98A2B3] rounded-full w-[20px] h-[20px] border-[2px] border-[#98A2B3] flex items-center justify-center'>
+                            <div className='text-[#98A2B3] rounded-full w-[20px] h-[20px] border-[2px] border-[#98A2B3] flex shrink-0 items-center justify-center'>
                                 <span className='-mt-1'>
                                     {isOpen ? '-' : '+'}
                                 </span>

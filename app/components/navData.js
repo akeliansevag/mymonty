@@ -5,11 +5,11 @@ export const data = [
         children: [
             {
                 title: 'Accounts',
-                url: '/personal/accounts',
+                url: '/accounts',
                 children: [
                     {
                         title: 'Multicurrency Account',
-                        url: '/personal/accounts#multicurrency-account',
+                        url: '/accounts#multicurrency-account',
                     },
                     {
                         title: 'Top up',
@@ -28,7 +28,7 @@ export const data = [
             },
             {
                 title: 'Cards',
-                url: '/personal/cards',
+                url: '/cards',
                 children: [
                     {
                         title: 'Virtual Card',
@@ -58,7 +58,7 @@ export const data = [
             },
             {
                 title: 'Transfers',
-                url: '/personal/transfers',
+                url: '/transfers',
                 children: [
                     {
                         title: 'P2P Remittance',
@@ -96,7 +96,7 @@ export const data = [
             },
             {
                 title: 'Payments',
-                url: '/personal/payments',
+                url: '/payments',
                 children: [
                     {
                         title: 'POS',
@@ -134,7 +134,7 @@ export const data = [
             },
             {
                 title: 'Loans',
-                url: '/personal/loans',
+                url: '/loans',
                 children: [
                     {
                         title: 'Advance on Salary',
@@ -168,7 +168,7 @@ export const data = [
             },
             {
                 title: 'Loyalty',
-                url: '/personal/loyalty',
+                url: '/loyalty',
                 children: [
                     {
                         title: 'Cashback',

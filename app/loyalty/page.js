@@ -23,6 +23,7 @@ const loyalty = () => {
         subtitle: 'Loyalty',
         desc: 'Enjoy our exclusive offer designed for luxury! Dive into indulgence with our loyalty program\'s special treat',
         image: {
+            inGrid: true,
             layout: 'half',
             url: banner,
         },

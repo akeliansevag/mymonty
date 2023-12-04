@@ -17,6 +17,7 @@ const faq = () => {
         subtitle: 'FAQ',
         desc: 'Our team is always ready to assist you or answer your inquiries. Fill out this form to reach us.',
         image: {
+            inGrid: true,
             layout: 'half',
             url: banner,
         },

@@ -20,6 +20,7 @@ const loans = () => {
         subtitle: 'Loans',
         desc: 'Harness the power of MyMonty for hassle-free salary domiciliation and unlock early salary advances based on your eligibility.',
         image: {
+            inGrid: true,
             layout: 'half',
             url: banner,
         },

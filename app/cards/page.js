@@ -23,6 +23,7 @@ const cards = () => {
         subtitle: 'Cards',
         desc: 'Contactless prepaid MasterCard you can use globally.',
         image: {
+            inGrid: true,
             layout: 'half',
             url: banner,
         },

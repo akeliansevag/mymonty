@@ -1,7 +1,6 @@
 import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
-import Link from 'next/link';
 import Image from 'next/image';
 import banner from '@/public/personal/accounts-banner.png';
 import Section from '@/app/components/Section';
@@ -21,6 +20,7 @@ const accounts = () => {
         subtitle: 'Accounts',
         desc: 'Experience convenience like never before as you unlock your account hassle-free!',
         image: {
+            inGrid: true,
             layout: 'half',
             url: banner,
         },

@@ -23,6 +23,7 @@ const transfers = () => {
         subtitle: 'Transfers',
         desc: 'Bridge the gap between you and your loved ones by sending them funds home.Contactless prepaid MasterCard you can use globally.',
         image: {
+            inGrid: true,
             layout: 'half',
             url: banner,
         },

@@ -26,6 +26,7 @@ const payments = () => {
         subtitle: 'Payments',
         desc: 'Feel the ease and speed of our user-friendly payment solutions. Leave the seamless handling of your transactions to us, while you focus on what truly matters.',
         image: {
+            inGrid: true,
             layout: 'half',
             url: banner,
         },
