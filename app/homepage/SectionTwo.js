@@ -8,7 +8,7 @@ const SectionTwo = () => {
             <div className='container text-center'>
                 <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Prepare yourself, it's time for MyMonty</h2>
                 <div className='lg:w-1/2 mx-auto'>
-                    <p className='leading-8 mt-4'>There's no need to stand in queues or handle stacks of paperwork. Just download the app, create an account, and you can be up and running in a matter of minutes. It's as straightforward as that.</p>
+                    <p className='leading-8 mt-4'>There's no need to stand in queues or handle stacks of paperwork, you can be up and running in a matter of minutes. Just download the App and create an account. It's as straightforward as that.</p>
                 </div>
                 <div className='text-center'>
                     <Image alt="Section Image" src={sectionImage} className='mx-auto mt-14' />

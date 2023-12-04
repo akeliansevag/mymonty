@@ -13,9 +13,8 @@ const SectionFive = () => {
                     </div>
                     <div className='flex-1 flex justify-end'>
                         <div>
-                            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Begin Your Journey at No Cost</h2>
-                            <p className='leading-8 mt-4'>This is not just an ordinary standard account.
-                                Our Standard account is designed to meet your essential daily financial needs.</p>
+                            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Prefer Having Something Tangible in Your Hand?</h2>
+                            <p className='leading-8 mt-4'>Choose between your free Standard card or the Premium card and be ready for the envious looks it attracts.</p>
                         </div>
                     </div>
                 </div>
