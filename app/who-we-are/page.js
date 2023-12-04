@@ -17,6 +17,7 @@ const data = {
   subtitle: 'Who we are',
   desc: 'Manage your money effortlessly from the comfort of one single, intuitive App.',
   image:{
+    inGrid: true, 
     layout: 'half',
     url: whoWeAre,
   },

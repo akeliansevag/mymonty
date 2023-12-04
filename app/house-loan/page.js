@@ -5,9 +5,9 @@ import styles from './page.module.css';
 import Banner from '../components/Banner';
 import Link from 'next/link';
 import Image from 'next/image';
-import carLoan from '@/public/personal/car-loan.png';
-import carLoan2 from '@/public/personal/car-loan2.png';
-import carKey from '@/public/personal/car-key.png';
+import house1 from '@/public/personal/house-loan1.png';
+import house2 from '@/public/personal/house-loan2.png';
+import house3 from '@/public/personal/house-loan3.png';
 import competitiveRates from '@/public/personal/competitive-rates.svg';
 import simpleApplication from '@/public/personal/simple-application.svg';
 import quickApproval from '@/public/personal/quick-approval.svg';
@@ -19,18 +19,18 @@ import 'swiper/css';
 import 'swiper/css/keyboard';
 
 const metadata = {
-  title: websiteName + 'Car Loan',
+  title: websiteName + 'House Loan',
   description: '',
 };
 
 const data = {
-  title: 'Drive Your Dreams',
-  subtitle: 'Car Loan',
-  desc: 'Ready to hit the road in your new car? Apply for your car loan with MyMonty today and experience a hassle-free journey towards owning your dream vehicle!',
+  title: 'Step into Your Dream house',
+  subtitle: 'House Loan',
+  desc: 'Ready to unlock the door to homeownership?',
   image: {
     inGrid: false, 
     layout: 'half',
-    url: carKey,
+    url: house1,
   },
   cta: {
     type: 'button',
@@ -56,7 +56,7 @@ const swiperParams = {
 };
 
 
-const CarLoan = () => {
+const PlasticSurgeryLoan = () => {
   return (
     <div>
       <Banner data={data} />
@@ -65,11 +65,11 @@ const CarLoan = () => {
         <div className='container'>
           <div className='flex flex-col md:flex-row md:items-center gap-10 relative'>
             <div className='md:w-1/2'>
-              <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Why Choose MyMonty for Your Car Loan?</h2>
-              <p className='leading-8 mt-4'>Experience the road to your dream car with MyMonty! Our commitment lies in turning your car ownership aspirations into reality. From hassle-free car loan solutions to unwavering support, we're by your side at every turn as you embark on the journey to owning your ideal vehicle.</p>
+              <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Why MyMonty for Your House Loan?</h2>
+              <p className='leading-8 mt-4'>MyMonty's house loans are crafted to turn your dream of owning a home into a reality, providing the financial foundation for your perfect abode.</p>
             </div>
             <div className='md:w-1/2 justify-end flex'>
-              <Image src={carLoan} alt='Car Loan' placeholder='blur' className='max-md:w-full'/>
+              <Image src={house2} alt='Car Loan' placeholder='blur' className='max-md:w-full'/>
             </div>
           </div>
 
@@ -158,17 +158,16 @@ const CarLoan = () => {
               </div>
           </div>
 
-          <Image className='w-full mt-20' src={carLoan2} alt='Car Loan' placeholder='blur' />
+          <Image className='w-full mt-20' src={house3} alt='Car Loan' placeholder='blur' />
 
           <div className='flex flex-col md:flex-row md:items-center gap-10 relative mt-20'>
             <div className='md:w-1/2'>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Eligibility Criteria</h2>
-              <p className='leading-8 mt-6'>Be a Lebanese over 18 years old.<br />
-                Have a driving license.<br />
-                Have a stable income source.<br />
-                Meet our credit assessment criteria.<br />
-                Be a MyMonty for more than 6 months</p>
-                <button className='mm-button mt-14 !px-20'>Apply Now</button>
+              
+              <p className='leading-8 mt-6'>Meet our credit assessment criteria.<br />
+              Provide necessary documentation related to the property purchase.<br />
+              Be a MyMonty active user for over 6 months.</p>
+              <button className='mm-button mt-14 !px-20'>Apply Now</button>
             </div>
           </div>
         </div>
@@ -177,4 +176,4 @@ const CarLoan = () => {
   );
 };
 
-export default CarLoan;
+export default PlasticSurgeryLoan;

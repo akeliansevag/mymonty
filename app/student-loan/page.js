@@ -5,9 +5,9 @@ import styles from './page.module.css';
 import Banner from '../components/Banner';
 import Link from 'next/link';
 import Image from 'next/image';
-import carLoan from '@/public/personal/car-loan.png';
-import carLoan2 from '@/public/personal/car-loan2.png';
-import carKey from '@/public/personal/car-key.png';
+import student1 from '@/public/personal/student-loan1.png';
+import student2 from '@/public/personal/student-loan2.png';
+import student3 from '@/public/personal/student-loan3.png';
 import competitiveRates from '@/public/personal/competitive-rates.svg';
 import simpleApplication from '@/public/personal/simple-application.svg';
 import quickApproval from '@/public/personal/quick-approval.svg';
@@ -19,18 +19,18 @@ import 'swiper/css';
 import 'swiper/css/keyboard';
 
 const metadata = {
-  title: websiteName + 'Car Loan',
+  title: websiteName + 'Student Loan',
   description: '',
 };
 
 const data = {
-  title: 'Drive Your Dreams',
-  subtitle: 'Car Loan',
-  desc: 'Ready to hit the road in your new car? Apply for your car loan with MyMonty today and experience a hassle-free journey towards owning your dream vehicle!',
+  title: 'Invest in Your Future',
+  subtitle: 'Student Loan',
+  desc: 'At MyMonty, we\'re dedicated to empowering your educational journey. Trust us to support your academic aspirations with our tailored and supportive student loan solutions.',
   image: {
     inGrid: false, 
     layout: 'half',
-    url: carKey,
+    url: student1,
   },
   cta: {
     type: 'button',
@@ -56,7 +56,7 @@ const swiperParams = {
 };
 
 
-const CarLoan = () => {
+const StudentLoan = () => {
   return (
     <div>
       <Banner data={data} />
@@ -65,11 +65,11 @@ const CarLoan = () => {
         <div className='container'>
           <div className='flex flex-col md:flex-row md:items-center gap-10 relative'>
             <div className='md:w-1/2'>
-              <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Why Choose MyMonty for Your Car Loan?</h2>
-              <p className='leading-8 mt-4'>Experience the road to your dream car with MyMonty! Our commitment lies in turning your car ownership aspirations into reality. From hassle-free car loan solutions to unwavering support, we're by your side at every turn as you embark on the journey to owning your ideal vehicle.</p>
+              <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Why Choose MyMonty for Your Student Loan?</h2>
+              <p className='leading-8 mt-4'>At MyMonty, we understand the importance of education in shaping your future. Our student loan options are tailored to support your academic journey, ensuring financial ease and peace of mind as you pursue your educational goals.</p>
             </div>
             <div className='md:w-1/2 justify-end flex'>
-              <Image src={carLoan} alt='Car Loan' placeholder='blur' className='max-md:w-full'/>
+              <Image src={student2} alt='Car Loan' placeholder='blur' className='max-md:w-full'/>
             </div>
           </div>
 
@@ -158,13 +158,14 @@ const CarLoan = () => {
               </div>
           </div>
 
-          <Image className='w-full mt-20' src={carLoan2} alt='Car Loan' placeholder='blur' />
+          <Image className='w-full mt-20' src={student3} alt='Car Loan' placeholder='blur' />
 
           <div className='flex flex-col md:flex-row md:items-center gap-10 relative mt-20'>
             <div className='md:w-1/2'>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Eligibility Criteria</h2>
-              <p className='leading-8 mt-6'>Be a Lebanese over 18 years old.<br />
-                Have a driving license.<br />
+
+              <p className='leading-8 mt-6'>Be enrolled in an accredited educational institution.<br />
+              Provide necessary documentation and meet our credit assessment criteria.<br />
                 Have a stable income source.<br />
                 Meet our credit assessment criteria.<br />
                 Be a MyMonty for more than 6 months</p>
@@ -177,4 +178,4 @@ const CarLoan = () => {
   );
 };
 
-export default CarLoan;
+export default StudentLoan;

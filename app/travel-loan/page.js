@@ -5,9 +5,9 @@ import styles from './page.module.css';
 import Banner from '../components/Banner';
 import Link from 'next/link';
 import Image from 'next/image';
-import carLoan from '@/public/personal/car-loan.png';
-import carLoan2 from '@/public/personal/car-loan2.png';
-import carKey from '@/public/personal/car-key.png';
+import travel1 from '@/public/personal/travel-loan1.png';
+import travel2 from '@/public/personal/travel-loan2.png';
+import travel3 from '@/public/personal/travel-loan3.png';
 import competitiveRates from '@/public/personal/competitive-rates.svg';
 import simpleApplication from '@/public/personal/simple-application.svg';
 import quickApproval from '@/public/personal/quick-approval.svg';
@@ -19,18 +19,18 @@ import 'swiper/css';
 import 'swiper/css/keyboard';
 
 const metadata = {
-  title: websiteName + 'Car Loan',
+  title: websiteName + 'Travel Loan',
   description: '',
 };
 
 const data = {
-  title: 'Drive Your Dreams',
-  subtitle: 'Car Loan',
-  desc: 'Ready to hit the road in your new car? Apply for your car loan with MyMonty today and experience a hassle-free journey towards owning your dream vehicle!',
+  title: 'Explore the World',
+  subtitle: 'Travel Loan',
+  desc: 'Ready to set sail on your dream vacation or explore new destinations? Apply for your travel loan with MyMonty today and begin your journey to fulfilling your travel aspirations!',
   image: {
     inGrid: false, 
     layout: 'half',
-    url: carKey,
+    url: travel1,
   },
   cta: {
     type: 'button',
@@ -56,7 +56,7 @@ const swiperParams = {
 };
 
 
-const CarLoan = () => {
+const TravelLoan = () => {
   return (
     <div>
       <Banner data={data} />
@@ -65,11 +65,11 @@ const CarLoan = () => {
         <div className='container'>
           <div className='flex flex-col md:flex-row md:items-center gap-10 relative'>
             <div className='md:w-1/2'>
-              <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Why Choose MyMonty for Your Car Loan?</h2>
-              <p className='leading-8 mt-4'>Experience the road to your dream car with MyMonty! Our commitment lies in turning your car ownership aspirations into reality. From hassle-free car loan solutions to unwavering support, we're by your side at every turn as you embark on the journey to owning your ideal vehicle.</p>
+              <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Why Choose MyMonty for Your Travel Loan?</h2>
+              <p className='leading-8 mt-4'>Ready to embark on your dream adventure? MyMonty offers travel loans designed to turn your wanderlust into reality, ensuring that your travel dreams are within reach.</p>
             </div>
             <div className='md:w-1/2 justify-end flex'>
-              <Image src={carLoan} alt='Car Loan' placeholder='blur' className='max-md:w-full'/>
+              <Image src={travel2} alt='Car Loan' placeholder='blur' className='max-md:w-full'/>
             </div>
           </div>
 
@@ -158,17 +158,16 @@ const CarLoan = () => {
               </div>
           </div>
 
-          <Image className='w-full mt-20' src={carLoan2} alt='Car Loan' placeholder='blur' />
+          <Image className='w-full mt-20' src={travel3} alt='Car Loan' placeholder='blur' />
 
           <div className='flex flex-col md:flex-row md:items-center gap-10 relative mt-20'>
             <div className='md:w-1/2'>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Eligibility Criteria</h2>
-              <p className='leading-8 mt-6'>Be a Lebanese over 18 years old.<br />
-                Have a driving license.<br />
-                Have a stable income source.<br />
-                Meet our credit assessment criteria.<br />
-                Be a MyMonty for more than 6 months</p>
-                <button className='mm-button mt-14 !px-20'>Apply Now</button>
+
+              <p className='leading-8 mt-6'>Meet our credit assessment criteria.<br />
+              Provide necessary documentation for the loan application.<br />
+              Be a MyMonty for more than 6 months.</p>
+              <button className='mm-button mt-14 !px-20'>Apply Now</button>
             </div>
           </div>
         </div>
@@ -177,4 +176,4 @@ const CarLoan = () => {
   );
 };
 
-export default CarLoan;
+export default TravelLoan;

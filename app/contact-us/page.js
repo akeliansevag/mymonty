@@ -17,13 +17,14 @@ const data = {
   subtitle: 'Contact Us',
   desc: 'Our team is always ready to assist you or answer your inquiries. Fill out this form to reach us.',
   image:{
+    inGrid: true, 
     layout: 'half',
     url: contactUs,
   },
   cta: {
     type: 'button',
     button: {
-      name: 'Download now'
+      name: 'Contact Us'
     }
   }
 }

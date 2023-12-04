@@ -150,15 +150,19 @@ export const data = [
                     },
                     {
                         title: 'Housing Loan',
-                        url: null,
+                        url: 'house-loan',
                     },
                     {
                         title: 'Plastic Surgery Loan',
-                        url: null,
+                        url: 'plastic-surgery-loan',
                     },
                     {
                         title: 'Travel Loan',
-                        url: null,
+                        url: 'travel-loan',
+                    },
+                    {
+                        title: 'Student Loan',
+                        url: 'student-loan',
                     },
                 ]
             },
@@ -184,7 +188,7 @@ export const data = [
     },
     {
         title: 'Business',
-        url: null,
+        url: '/business',
         children: null
     },
     {
@@ -193,9 +197,8 @@ export const data = [
         children: [
             {
                 title: 'Culture',
-                url: '/cultures           ',
+                url: '/cultures',
                 children: null
-
             },
             {
                 title: 'Who we are',
@@ -215,7 +218,7 @@ export const data = [
             },
             {
                 title: 'Careers',
-                url: null
+                url: '/careers'
             },
             {
                 title: 'Code of Conduct',

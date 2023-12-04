@@ -15,6 +15,7 @@ const data = {
   subtitle: '',
   desc: 'Explore our innovative ways to manage your finances.',
   image: {
+    inGrid: true,
     layout: 'full',
     url: girl,
     urlMobile: girlMobile,

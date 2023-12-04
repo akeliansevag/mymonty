@@ -21,6 +21,7 @@ const data = {
   subtitle: 'Culture',
   desc: 'Our devoted, agile, and multicultural team is committed to go the extra mile in digitizing your future and making your life easier',
   image:{
+    inGrid: true, 
     layout: 'half',
     url: cultures,
   },
