@@ -6,7 +6,7 @@ const Banner = ({ data }) => {
     return (
         <section className={`min-h-[100dvh] w-full relative bg-gray-100 ${data.image.layout !== 'full' || !data.image.inGrid ? 'max-md:pb-14' : ''}`}>
             {
-                data.image.layout === 'full' && (
+                data?.image?.layout === 'full' && (
                     <>
                         <Image alt='Girl holding a phone' fill placeholder='blur' quality={100} sizes='100vw' src={data.image.url} className='hidden md:block object-cover custom-object-position md:object-center' priority />
                         <Image alt='Girl holding a phone' fill placeholder='blur' quality={100} sizes='100vw' src={data.image.urlMobile} className='block md:hidden object-cover' priority />
@@ -40,7 +40,7 @@ const Banner = ({ data }) => {
                                 </div>
 
                                 {
-                                    data.image.layout === 'half' && (
+                                    data?.image?.layout === 'half' && (
                                         <div className='w-full md:w-1/2'>
                                             <Image alt='Girl holding a phone' placeholder='blur' quality={100} sizes='100vw' src={data.image.url} className='w-full md:w-2/3 ml-auto' priority />
                                         </div>
@@ -76,7 +76,10 @@ const Banner = ({ data }) => {
 
                             <div className='max-md:container mt-10'>
                                 <div className='md:absolute flex h-full w-full md:w-1/2 top-0 right-[5%] justify-end items-center'>
-                                    <Image alt='Girl holding a phone' placeholder='blur' quality={100} sizes='100vw' src={data.image.url} className='w-full' priority />
+                                    {data?.image?.url && (
+                                        <Image alt='Girl holding a phone' placeholder='blur' quality={100} sizes='100vw' src={data.image?.url} className='w-full' priority />
+                                    )}
+
                                 </div>
                             </div>
                         </>
