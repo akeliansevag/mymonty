@@ -5,8 +5,11 @@ import styles from './page.module.css';
 import Banner from '../components/Banner';
 import Link from 'next/link';
 import Image from 'next/image';
-import eWallet from '@/public/company/e-wallet-account.png';
 import whyMyMonty from '@/public/company/why-mymonty.png';
+import highEnd from '@/public/company/high-end.png';
+import oneStop from '@/public/company/one-stop-shop.png';
+import friendlySupport from '@/public/company/friendly-support.png';
+import noHiddenFees from '@/public/company/no-hidden-fees.png';
 
 const data = {
   title: 'Lebanese will be able to access all  services',
@@ -71,28 +74,28 @@ const WhyMyMonty = () => {
           {/* 280 586 text-4xl md:text-6xl top-[30px] md:top-[70px] ////// w-[50px] h-[50px] md:w-[90px] md:h-[90px]*/}
           <div className='grid grid-cols-2 lg:grid-cols-4'>
             <div className='relative flex items-center justify-center w-[140px] h-[140px] md:w-[280px] md:h-[280px] lg:w-72 lg:h-72 rounded-full border-2 bg-[#2657D4] text-lg md:text-4xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
-              <p className='md:px-40'>Download app</p>
+              <p className='md:px-10'>Download app</p>
               <div className='absolute top-0 md:top-[20px] left-0'>
                 <div className='flex items-center justify-center w-[30px] h-[30px] md:w-[60px] md:h-[60px] rounded-full border-2 md:border-4 bg-[#2657D4] text-md font-bold text-white m-auto text-center'>1</div>
               </div>
             </div>
 
             <div className='relative flex items-center justify-center w-[140px] h-[140px] md:w-[280px] md:h-[280px] lg:w-72 lg:h-72 rounded-full border-2 bg-[#2657D4] text-lg md:text-4xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
-              <p className='md:px-40'>Fill<br />E-KYC</p>
+              <p className='md:px-10'>Fill<br />E-KYC</p>
               <div className='absolute top-0 md:top-[20px] left-0'>
                 <div className='flex items-center justify-center w-[30px] h-[30px] md:w-[60px] md:h-[60px] rounded-full border-2 md:border-4 bg-[#2657D4] text-md font-bold text-white m-auto text-center'>2</div>
               </div>
             </div>
 
             <div className='relative flex items-center justify-center w-[140px] h-[140px] md:w-[280px] md:h-[280px] lg:w-72 lg:h-72 rounded-full border-2 bg-[#2657D4] text-lg md:text-4xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
-              <p className='md:px-40'>Upload ID /passport</p>
+              <p className='md:px-10'>Upload ID /passport</p>
               <div className='absolute top-0 md:top-[20px] left-0'>
                 <div className='flex items-center justify-center w-[30px] h-[30px] md:w-[60px] md:h-[60px] rounded-full border-2 md:border-4 bg-[#2657D4] text-md font-bold text-white m-auto text-center'>3</div>
               </div>
             </div>
 
             <div className='relative flex items-center justify-center w-[140px] h-[140px] md:w-[280px] md:h-[280px] lg:w-72 lg:h-72 rounded-full border-2 bg-[#2657D4] text-lg md:text-4xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
-              <p className='md:px-40'>Sign electronically</p>
+              <p className='md:px-10'>Sign electronically</p>
               <div className='absolute top-0 md:top-[20px] left-0'>
                 <div className='flex items-center justify-center w-[30px] h-[30px] md:w-[60px] md:h-[60px] rounded-full border-2 md:border-4 bg-[#2657D4] text-md font-bold text-white m-auto text-center'>4</div>
               </div>
@@ -101,7 +104,7 @@ const WhyMyMonty = () => {
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-20'>
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
-              <Image className="w-full" src={eWallet} alt='High-End Security' placeholder='blur'/>
+              <Image className="w-full" src={highEnd} alt='High-End Security' placeholder='blur'/>
               <div className='px-10 py-14'>
                   <h3 className='text-4xl font-bold'>High-End Security</h3>
                   <p className='leading-8 mt-4'>Rest assured, your security is our top priority. Our platform is fortified with advanced, state-of-the-art technology designed to offer robust protection against fraud and hacking attempts, ensuring your peace of mind.</p>
@@ -109,7 +112,7 @@ const WhyMyMonty = () => {
             </div>
 
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
-              <Image className="w-full" src={eWallet} alt='High-End Security' placeholder='blur'/>
+              <Image className="w-full" src={oneStop} alt='High-End Security' placeholder='blur'/>
               <div className='px-10 py-14'>
                 <h3 className='text-4xl font-bold'>One stop shop</h3>
                 <p className='leading-8 mt-4'>Experience the convenience of comprehensive financial services - from seamless payments and transfers, international remittances, and flexible lending options - all through a single application.</p>
@@ -117,7 +120,7 @@ const WhyMyMonty = () => {
             </div>
 
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
-              <Image className="w-full" src={eWallet} alt='High-End Security' placeholder='blur'/>
+              <Image className="w-full" src={friendlySupport} alt='High-End Security' placeholder='blur'/>
               <div className='px-10 py-14'>
                 <h3 className='text-4xl font-bold'>Friendly Support</h3>
                 <p className='leading-8 mt-4'>Despite being a digital-first application, we ensure round-the-clock support, with our dedicated team available 24/7 to assist you.</p>
@@ -125,7 +128,7 @@ const WhyMyMonty = () => {
             </div>
 
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
-              <Image className="w-full" src={eWallet} alt='High-End Security' placeholder='blur'/>
+              <Image className="w-full" src={noHiddenFees} alt='High-End Security' placeholder='blur'/>
               <div className='px-10 py-14'>
                 <h3 className='text-4xl font-bold'>No Hidden Fees</h3>
                 <p className='leading-8 mt-4'>We guarantee full transparency with our fees. You will see all transaction costs clearly outlined beforehand, ensuring there are no hidden charges.</p>
