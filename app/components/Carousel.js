@@ -10,7 +10,7 @@ const Carousel = ({ data }) => {
         setSelectedIndex(index);
     };
     return (
-        <section className='relative py-14 lg:py-28 min-h-[calc(100dvh-(var(--mobile-header-height)))]'>
+        <section className='relative py-14 lg:py-28 min-h-[calc(100vh-(var(--mobile-header-height)))]'>
             {data && data?.content && (
                 data.content.map((item, index) => {
                     let contentClasses =
