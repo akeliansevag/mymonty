@@ -9,19 +9,19 @@ export const data = [
                 children: [
                     {
                         title: 'Multicurrency Account',
-                        url: '/accounts#multicurrency-account',
+                        url: '/accounts',
                     },
                     {
                         title: 'Top up',
-                        url: null,
+                        url: '/accounts',
                     },
                     {
                         title: 'Cash in',
-                        url: null,
+                        url: '/accounts',
                     },
                     {
                         title: 'Cash Out',
-                        url: null,
+                        url: '/accounts',
                     },
 
                 ]
@@ -32,27 +32,27 @@ export const data = [
                 children: [
                     {
                         title: 'Virtual Card',
-                        url: null
+                        url: '/cards'
                     },
                     {
                         title: 'Physical Card',
-                        url: null
+                        url: '/cards'
                     },
                     {
                         title: 'Card Controls',
-                        url: null
+                        url: '/cards'
                     },
                     {
                         title: 'Card Withdrawal',
-                        url: null
+                        url: '/cards'
                     },
                     {
                         title: 'Contactless Payment',
-                        url: null
+                        url: '/cards'
                     },
                     {
                         title: 'Tap to Pay',
-                        url: null
+                        url: '/cards'
                     }
                 ]
             },
@@ -62,35 +62,35 @@ export const data = [
                 children: [
                     {
                         title: 'P2P Remittance',
-                        url: null
+                        url: '/transfers'
                     },
                     {
                         title: 'Recurring',
-                        url: null
+                        url: '/transfers'
                     },
                     {
                         title: 'Scheduled',
-                        url: null
+                        url: '/transfers'
                     },
                     {
                         title: 'Send',
-                        url: null
+                        url: '/transfers'
                     },
                     {
                         title: 'Receive',
-                        url: null
+                        url: '/transfers'
                     },
                     {
                         title: 'Request',
-                        url: null
+                        url: '/transfers'
                     },
                     {
                         title: 'Top Up',
-                        url: null
+                        url: '/transfers'
                     },
                     {
                         title: 'Cash out',
-                        url: null
+                        url: '/transfers'
                     }
                 ]
             },
@@ -100,35 +100,35 @@ export const data = [
                 children: [
                     {
                         title: 'POS',
-                        url: null
+                        url: '/payments'
                     },
                     {
                         title: 'QR & Link',
-                        url: null
+                        url: '/payments'
                     },
                     {
                         title: 'Travel eSim',
-                        url: null
+                        url: '/payments'
                     },
                     {
                         title: 'Bill Payment',
-                        url: null
+                        url: '/payments'
                     },
                     {
                         title: 'Online Vouchers',
-                        url: null
+                        url: '/payments'
                     },
                     {
                         title: 'Tuition',
-                        url: null
+                        url: '/payments'
                     },
                     {
                         title: 'Wedding List',
-                        url: null
+                        url: '/payments'
                     },
                     {
                         title: 'Notifications & Alerts',
-                        url: null
+                        url: '/payments'
                     },
                 ]
             },
@@ -138,11 +138,11 @@ export const data = [
                 children: [
                     {
                         title: 'Advance on Salary',
-                        url: null,
+                        url: '/loans',
                     },
                     {
                         title: 'BNPL',
-                        url: null,
+                        url: '/loans',
                     },
                     {
                         title: 'Car Loan',
@@ -176,15 +176,15 @@ export const data = [
                 children: [
                     {
                         title: 'Cashback',
-                        url: null,
+                        url: '/loyalty',
                     },
                     {
                         title: 'Referral',
-                        url: null,
+                        url: '/loyalty',
                     },
                     {
                         title: 'Loyalty program',
-                        url: null,
+                        url: '/loyalty',
                     }
                 ]
             }
