@@ -34,7 +34,7 @@ const Nav = ({ handleMenuOpen, menuOpen }) => {
                                                             {child.children.map((c, index3) => {
                                                                 return (
                                                                     <li className='mb-2' key={index3}>
-                                                                        {c?.url ? <Link onClick={() => handleMenuOpen(false)} href={c.url}>{c?.title}</Link> : c.title}
+                                                                        {c?.url ? <Link scroll={false} onClick={() => handleMenuOpen(false)} href={c.url}>{c?.title}</Link> : c.title}
                                                                     </li>
 
                                                                 )

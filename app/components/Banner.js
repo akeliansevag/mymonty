@@ -2,9 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const Banner = ({ data }) => {
+const Banner = ({ data, theme }) => {
     return (
-        <section className={`min-h-[100dvh] w-full relative bg-gray-100 ${data.image.layout !== 'full' || !data.image.inGrid ? 'max-md:pb-14' : ''}`}>
+        <section className={`min-h-[100dvh] w-full relative ${theme == 'dark' ? 'bg-black' : 'bg-gray-100'} ${data.image.layout !== 'full' || !data.image.inGrid ? 'max-md:pb-14' : ''}`}>
             {
                 data?.image?.layout === 'full' && (
                     <>
@@ -31,9 +31,9 @@ const Banner = ({ data }) => {
 
                                         {
                                             data.cta.type === 'link' ? (
-                                                <Link className='mm-button blue mt-8' href={data.cta.link.url}>{data.cta.link.name}</Link>
+                                                <Link className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`} href={data.cta.link.url}>{data.cta.link.name}</Link>
                                             ) : (
-                                                <button className='mm-button blue mt-8'>{data.cta.button.name}</button>
+                                                <button className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                             )
                                         }
                                     </div>
@@ -64,9 +64,9 @@ const Banner = ({ data }) => {
 
                                             {
                                                 data.cta.type === 'link' ? (
-                                                    <Link className='mm-button blue mt-8' href={data.cta.link.url}>{data.cta.link.name}</Link>
+                                                    <Link className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`} href={data.cta.link.url}>{data.cta.link.name}</Link>
                                                 ) : (
-                                                    <button className='mm-button blue mt-8'>{data.cta.button.name}</button>
+                                                    <button className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                 )
                                             }
                                         </div>

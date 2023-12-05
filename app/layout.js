@@ -2,6 +2,8 @@ import localFont from 'next/font/local';
 import './globals.css'
 import Header from './components/header/Header';
 import Footer from './components/Footer';
+import { NavigationEvents } from './components/navigation-events';
+import { Suspense } from 'react';
 
 const Aeonik = localFont({
   src: [
@@ -49,9 +51,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${Aeonik.variable}`}>
       <body className='font-aeonik'>
+        <Suspense fallback={null}>
+          <NavigationEvents />
+        </Suspense>
         <Header />
         {children}
         <Footer />
+
       </body>
     </html>
   )
