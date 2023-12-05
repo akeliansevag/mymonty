@@ -51,13 +51,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${Aeonik.variable}`}>
       <body className='font-aeonik'>
-        <Suspense fallback={null}>
-          <NavigationEvents />
-        </Suspense>
         <Header />
         {children}
         <Footer />
-
+        <Suspense fallback={null}>
+          <NavigationEvents />
+        </Suspense>
       </body>
     </html>
   )

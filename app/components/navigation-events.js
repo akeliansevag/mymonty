@@ -1,10 +1,11 @@
 'use client'
 
 import { useEffect } from 'react'
-import { usePathname } from 'next/navigation'
+import { usePathname, useSearchParams } from 'next/navigation'
 
 export function NavigationEvents() {
     const pathname = usePathname();
+    const searchParams = useSearchParams();
 
     useEffect(() => {
         if (pathname == '/business') {
@@ -12,37 +13,38 @@ export function NavigationEvents() {
         } else {
             document.body.classList.remove('dark');
         }
-        const hash = window.location.hash;
 
-        const scrollToElement = (hash) => {
-            const element = document.getElementById(hash.substring(1));
+
+
+        const scrollToElement = (id) => {
+            var element = document.getElementById(id);
             if (element) {
-                const elementPosition = element.getBoundingClientRect().top;
+                var headerOffset = 72;
+                var elementPosition = element.getBoundingClientRect().top;
+                var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
                 window.scrollTo({
-                    top: elementPosition - 100,
-                    behavior: 'smooth',
+                    top: offsetPosition,
+                    behavior: "smooth"
                 });
             }
+
         };
 
+        let scrollToId = searchParams.get('s');
+
+
         const timeoutId = setTimeout(() => {
-            if (hash) {
-                scrollToElement(hash);
+            if (scrollToId) {
+                scrollToElement(scrollToId);
             }
         }, 0);
-
-        // Alternatively, you can use DOMContentLoaded event
-        // document.addEventListener('DOMContentLoaded', () => {
-        //     if (hash) {
-        //         scrollToElement(hash);
-        //     }
-        // });
 
         // Cleanup function
         return () => {
             clearTimeout(timeoutId); // Clear the timeout on component unmount
         };
-    }, [pathname]);
+    }, [searchParams]);
 
 
     return null;

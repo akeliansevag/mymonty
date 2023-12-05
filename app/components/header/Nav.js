@@ -27,14 +27,18 @@ const Nav = ({ handleMenuOpen, menuOpen }) => {
                                             return (
                                                 <div key={index2}>
                                                     <span className='font-bold block mb-[15px] text-xl'>
-                                                        {child?.url ? <Link onClick={() => handleMenuOpen(false)} href={child.url}>{child.title}</Link> : child.title}
+                                                        {child?.url ? <Link onClick={(e) => handleMenuOpen(false)} href={child.url}>{child.title}</Link> : child.title}
                                                     </span>
                                                     {child?.children && (
                                                         <ul>
                                                             {child.children.map((c, index3) => {
                                                                 return (
                                                                     <li className='mb-2' key={index3}>
-                                                                        {c?.url ? <Link scroll={false} onClick={() => handleMenuOpen(false)} href={c.url}>{c?.title}</Link> : c.title}
+                                                                        {c?.url ?
+                                                                            <Link scroll={false} onClick={() => handleMenuOpen(false)} href={c.url}>
+                                                                                {c?.title}
+                                                                            </Link>
+                                                                            : c.title}
                                                                     </li>
 
                                                                 )
