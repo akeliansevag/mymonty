@@ -1,6 +1,6 @@
 import React from 'react';
 import backgroundImage from '@/public/sectionfourbg.webp';
-import sectionImage from '@/public/sectionfiveimage.webp';
+import sectionImage from '@/public/cross-border.webp';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -14,7 +14,7 @@ const SectionFour = () => {
                     <div className='p-4 md:p-0 md:w-2/3'>
                         <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Cross-border transfers with MyMonty</h2>
                         <p className='leading-8 mt-4'>Connect globally with your loved ones through MyMonty's expat community.<br />
-                        Enjoy free transfers to 160+ countries. Instantly send and receive money.</p>
+                            Enjoy free transfers to 160+ countries. Instantly send and receive money.</p>
                         <Link href="#" className='mm-button white mt-6 mx-auto mb-10'>Try it out</Link>
                     </div>
 
