@@ -1,6 +1,6 @@
 import React from 'react';
 import backgroundImage from '@/public/sectionfourbg.webp';
-import sectionImage from '@/public/cross-border-1.webp';
+import sectionImage from '@/public/sectionfiveimage-2.webp';
 import Link from 'next/link';
 import Image from 'next/image';
 
