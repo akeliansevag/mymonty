@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '@/app/components/Banner';
 import { websiteName } from '@/app/config';
 import Section from '../components/Section';
+import styles from './page.module.css';
 
 export const metadata = {
     title: websiteName + 'Privacy Policy',
@@ -22,109 +23,93 @@ const terms = () => {
         }
     };
     return (
-        <div>
+        <div className={styles.privacyPolicy}>
             <Banner data={data} />
             <Section>
                 <div className='container'>
-                    <p>PRIVACY POLICY<br />
-                        MyMonty Privacy Policy<br />
-                        MYMONTY SAL<br />
-                        PRIVACY POLICY<br />
-                        MYMONTY SAL PRIVACY POLICY MYMONTY SAL, a joint-stock company validly existing under the laws of the Republic of Lebanon (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo; or &ldquo;MYMONTY&rdquo;), is committed to protecting and respecting your privacy and rights. MYMONTY complies with the Banking Secrecy Law of 3 September 1956 and its amendments ensuring the highest level of confidentiality for your financial information.<br />
-                        This Privacy Policy describes how your personal information is collected, used, and shared when you use and access our website, our application(s), or any services made available by us to our customers from time to time (collectively our &ldquo;Platform&rdquo;) or when you register for any type of account on our Platform (the &ldquo;Privacy Policy&rdquo;). We believe that you should know what personal data we collect and use, as well as understand your rights in respect of your personal data.<br />
-                        We urge you to read this Privacy Policy carefully before accessing or using our Platform. By downloading, accessing, or using any part of our Platform or registering for any type of MYMONTY account (corporate or personal) through it, or by using our services and/or any kind of functionality offered on our Platform (the &ldquo;Services&rdquo;), you are agreeing to be bound by this Privacy Policy. This Privacy Policy applies to natural persons who are our current or prospective customers or are authorised individuals or beneficial owners of legal entities, which are our current or prospective customers. As a user of our Platform, you may be referred to as &ldquo;you&rdquo;, &ldquo;your(s)&rdquo; or &ldquo;User&rdquo;.<br />
-                        Our Platform is not intended for use by minors, and we do not knowingly collect or store data relating to individuals under the age of 18.<br />
-                        For the purposes of the present Privacy Policy, the terms &ldquo;personal data&rdquo;, &ldquo;data&rdquo; and &ldquo;personal information&rdquo; are used to refer to any information relating to you that identifies or may identify you, either directly or indirectly, such as your name, address, occupation, income details, contact details, identification data (e.g. identity card/passport number), device information, payment information, authentication data and any other information that we may deem necessary to render the service sought. Moreover, the term &ldquo;processing&rdquo; is used herein to collectively refer to actions such as the collection, retention, use, disclosure, transfer, deletion or destruction of personal data.<br />
-                        HOW TO CONTACT US<br />
-                        For more information about this Privacy Policy, inquiries regarding our privacy practices, or to exercise any of your rights set out in this Privacy Policy, you may contact us at the following contact details:<br />
-                        Email: contact@MyMonty.com Tel.<br />
-                        No.: +961 (0)1 290 900 or +961 81 484 000<br />
-                        MODIFICATIONS<br />
-                        We reserve the right to modify the terms outlined in this Privacy Policy at any time. In the event of such changes, we will inform you through multiple means via our Platform. Furthermore, if a particular change significantly affects your privacy, we may send you an email notification. This practice ensures that you have the opportunity to review and evaluate the modifications made. To stay up-to-date with any such revisions, we encourage you to periodically revisit this Privacy Policy.<br />
-                        WHAT PERSONAL INFORMATION WE COLLECT AND PROCESS<br />
-                        Type of Personal Data Details<br />
-                        Information you give us<br />
-                        We will collect and process the information you provide through our Platform such as:<br />
-                        Identification Documents and Images, including numbers and copies of your identification documents as well as your image in photo or video form, as part of our Know-Your-Customer (KYC) checks, and any other information we ask you to give to comply with anti-money laundering laws, combat terrorist financing, and assist with fraud monitoring.<br />
-                        Identity and Contact Information, including your name, surname, father&rsquo;s name, mother&rsquo;s name, date of birth, or similar identifier, phone number, email address, residency address, etc. This information is collected to register you on our Platform and provide access to your MYMONTY account and our Services.<br />
-                        Personal Details, including gender, marital status, number of dependents, date of birth, place of birth, country of birth, citizenship, education level.<br />
-                        Authentication Information, including signature, biometric data, usernames and passwords.<br />
-                        Employment and Business Activity Information, including profession, employer&rsquo;s name, job title, and employment address.<br />
-                        Financial Profile Information, including income and expenses, assets and liabilities, financial history, and expected financial activity.<br />
-                        Card details, including details of your debit cards and credit cards including the card number, expiry date and CVC2 (the three digits number on the back of the card).<br />
-                        Information collected from your use of our Platform, our Services and our products<br />
-                        Financial and Transaction Information, including your payment details and transaction information related to activities conducted through our Platform or through our card(s). This includes the date, time, amounts, currencies, exchange rates, beneficiary details, information about the merchants or ATMs involved in the transactions, IP addresses of sender and receiver, device details used for any transaction, and the payment method used. We collet this information to facilitate and process transactions securely and efficiently.<br />
-                        Technical Information, including device identification number, IP address, login data, device type, network/browser data, time zone setting, geolocation, operating system etc. We collect this technical information to fulfil your requests, enhance the functionality of our Services, and ensure the security of our Platform.<br />
-                        Commercial Information about your visit to our Platform, including the links you clicked on, through and from our website or application, services you viewed or searched for, page response times, download errors, length of visits to certain pages, page interaction information (e.g., scrolls, taps and clicks), methods used to navigate away from the page, as well as information for marketing purposes and to use data analytic to improve our Platform and our customer services.<br />
-                        Communication Information, when you communicate with us via email, chat, phone calls, video calls, etc.), more data is created and recorded (e.g. method of communication, date and time, content and outcome of our communication). We retain these records in our system, ensuring that we can provide you with optimum customer service and track customer service enquiries, requests, and comments.<br />
-                        Information collected from third parties and public sources<br />
-                        Third-party information, we gather information from third parties and publicly available sources, which includes the collection of personal data from entities that offer services through our Platform, such as merchants and agents, as well as other entities and partners who collaborate with us to enhance the delivery and security of our Services.<br />
-                        Information you give us<br />
-                        We will collect and process the information you provide through our Platform such as:<br />
-                        Identification Documents and Images, including numbers and copies of your identification documents as well as your image in photo or video form, as part of our Know-Your-Customer (KYC) checks, and any other information we ask you to give to comply with anti-money laundering laws, combat terrorist financing, and assist with fraud monitoring.<br />
-                        Identity and Contact Information, including your name, surname, father&rsquo;s name, mother&rsquo;s name, date of birth, or similar identifier, phone number, email address, residency address, etc. This information is collected to register you on our Platform and provide access to your MYMONTY account and our Services.<br />
-                        Personal Details, including gender, marital status, number of dependents, date of birth, place of birth, country of birth, citizenship, education level.<br />
-                        Authentication Information, including signature, biometric data, usernames and passwords.<br />
-                        Employment and Business Activity Information, including profession, employer&rsquo;s name, job title, and employment address.<br />
-                        Financial Profile Information, including income and expenses, assets and liabilities, financial history, and expected financial activity.<br />
-                        Card details, including details of your debit cards and credit cards including the card number, expiry date and CVC2 (the three digits number on the back of the card).<br />
-                        Information collected from your use of our Platform, our Services and our products<br />
-                        Financial and Transaction Information, including your payment details and transaction information related to activities conducted through our Platform or through our card(s). This includes the date, time, amounts, currencies, exchange rates, beneficiary details, information about the merchants or ATMs involved in the transactions, IP addresses of sender and receiver, device details used for any transaction, and the payment method used. We collet this information to facilitate and process transactions securely and efficiently.<br />
-                        Technical Information, including device identification number, IP address, login data, device type, network/browser data, time zone setting, geolocation, operating system etc. We collect this technical information to fulfil your requests, enhance the functionality of our Services, and ensure the security of our Platform.<br />
-                        Commercial Information about your visit to our Platform, including the links you clicked on, through and from our website or application, services you viewed or searched for, page response times, download errors, length of visits to certain pages, page interaction information (e.g., scrolls, taps and clicks), methods used to navigate away from the page, as well as information for marketing purposes and to use data analytic to improve our Platform and our customer services.<br />
-                        Communication Information, when you communicate with us via email, chat, phone calls, video calls, etc.), more data is created and recorded (e.g. method of communication, date and time, content and outcome of our communication). We retain these records in our system, ensuring that we can provide you with optimum customer service and track customer service enquiries, requests, and comments.<br />
-                        Information collected from third parties and public sources<br />
-                        Third-party information, we gather information from third parties and publicly available sources, which includes the collection of personal data from entities that offer services through our Platform, such as merchants and agents, as well as other entities and partners who collaborate with us to enhance the delivery and security of our Services.<br />
-                        HOW WE USE YOUR PERSONAL INFORMATION<br />
-                        The data we collect will always be handled with the utmost care and respect for your privacy. Our commitment to safeguarding your Personal Data is unwavering, and we will only share it with third parties when required by law or to provide our Services.<br />
-                        We collect and process your Personal Data in compliance with the Applicable Laws, including Law No. 81 dated October 10, 2018, relating to Electronic Transactions and Personal Data, to ensure its proper use for the following purposes:<br />
-                        - Fulfilling our contractual obligations: We will process your Personal Data to honour the agreements and contracts we have with you.<br />
-                        - Marketing and promotional purposes: we may also use your Personal Data for marketing and promotional purposes. This includes providing you with information about our products, services, promotions, special offers, and updates that we believe may be of interest to you. We will not share your Personal Data with third parties for marketing and promotional purposes but only use it within our organization.<br />
-                        - Providing our Services: In order to deliver our Services effectively, there may be instances where we require certain Personal Data without which we would be unable to fulfil your requests.<br />
-                        - Compliance with legal obligations: We are subject to various legal obligations and statutory requirements, as well as requirements of supervisory and/or regulatory authorities, such as the Central Bank of Lebanon (Banque du Liban). We have a legal duty to collect and store your Personal Data, and retain certain information even after you have requested its deletion. However, we will only retain the necessary data to meet our legal or regulatory requirements, resolve disputes, prevent fraud and abuse, or enforce our agreements with you.<br />
-                        - Consent: Where you have provided your consent for the collection of your Personal Data, we will process it in accordance with the scope of your consent.<br />
-                        DISCLOSURE OF YOUR PERSONAL INFORMATION<br />
-                        Your privacy and data protection are of utmost importance to us, and we are dedicated to safeguarding them. In the course of delivering our Services or when required by law, we may collaborate with trusted third parties and share your Personal Data with them. Rest assured that your data will only be shared with third parties who are bound by the same stringent privacy rules and standards that we adhere to.<br />
-                        Your data may be shared with various service providers and suppliers with whom we have contractual agreements. Additionally, we may disclose your personal information to other individuals and/or entities for the reasons described above, where we are legally obligated or otherwise authorized to do so, or when you have given us your explicit consent.<br />
-                        Recipients of your Personal Data include:<br />
-                        - Merchants;<br />
-                        - Agents;<br />
-                        - Financial institutions;<br />
-                        - Public and/or regulatory and/or supervisory authorities, and other public institutions, anti-fraud detection and prevention entities, law enforcement agencies, or courts;<br />
-                        - Technological and analytical service providers;<br />
-                        - Providers of customer support related services;<br />
-                        - Service providers and collaborators related to marketing and publicity, such as advertising agencies, advertising partners or social media outlets;<br />
-                        - Entities we work with for the provision of credit/debit card services (e.g., VISA and MASTERCARD), including the entities with which we cooperate for the issuance of our cards;<br />
-                        - Other third parties when you consent to such sharing.<br />
-                        Furthermore, it is possible that we may enter into transactions such as selling, transferring, or merging parts of our business or assets with third parties. Similarly, we may also consider acquiring other businesses or merging with them. In the event of such changes to our business structure, the new owners may utilize your Personal Data in the same manner as described in this Privacy Policy.<br />
-                        We hold a firm commitment to safeguarding the security and legality of your Personal Data, even when shared with third parties. We require that all third-party service providers respect the confidentiality and integrity of your Personal Data, handling it in strict accordance with the Applicable Laws.<br />
-                        DATA RETENTION PERIOD<br />
-                        We will retain your Personal Data for as long as your MYMONTY account is active or as needed to provide you with our Services and fulfil the purposes for which it was collected and processed. This includes complying with our legal and statutory obligations, as well as accounting and reporting requirements.<br />
-                        We will generally keep your Personal Data for a period of (10) ten years after our contractual relationship with you ends, or for the duration required by Applicable Laws.<br />
-                        To determine the appropriate retention period for your Personal Data, we will consider the amount, nature, and sensitivity of the Personal Data, the potential risk of unauthorized use or disclosure, the purposes of processing, and whether we can achieve those purposes through other means.<br />
-                        In specific situations, such as when handling a complaint or anticipating litigation related to our relationship with you, we may retain your Personal Data for an extended period. Therefore, even after closing your MYMONTY account, we retain certain Personal Data to fulfil these obligations.<br />
-                        Additionally, there may be instances where we anonymize your Personal Data, rendering it no longer identifiable to you. In such cases, we may use the anonymized information indefinitely without further notice to you.<br />
-                        If you would like specific details regarding the retention periods for different aspects of your Personal Data, please contact us, and we will provide the necessary information.<br />
-                        YOUR RIGHTS<br />
-                        We undertake to keep your Personal Data confidential and to use it for the purposes set out in this Privacy Policy as amended from time to time.<br />
-                        In addition, we may offer you the possibility to exercise your rights and setting your privacy preferences when using some of our services or visiting our Platform.<br />
-                        In particular, notwithstanding the purpose or legal basis we use to process your Personal Data, and to the extent provided by law, you are entitled to the following:<br />
-                        - To have access to the Personal Data we collected from you.<br />
-                        - To request us to rectify the Personal Data that we have available. This allows you to request corrections to any incomplete or inaccurate data we have in our records pertaining to you. We may require verification of the accuracy of any new data you provide to us in order to facilitate the necessary corrections. Please bear in mind that you shall be liable for any loss or damage caused to us or to any third party by providing erroneous, inaccurate or incomplete information.<br />
-                        - To request from us the deletion of your Personal Data to the extent that they are no longer necessary for the purpose for which we need to keep processing them, as explained herein, or when we are no longer legally permitted to process them. However, we may not always be able to comply with your request of erasure for specific legal reasons which will be notified to you, if applicable, at the time of your request.<br />
-                        - To object to or restrict the processing of your Personal Data when we rely on legitimate interests (or the legitimate interests of a third party) and there are specific circumstances in which you believe that such processing infringes upon your fundamental rights and freedoms. Additionally, you have the right to object to the processing of your Personal Data for direct marketing purposes. However, it is important to note that there may be cases where we can demonstrate compelling legitimate grounds to continue processing your information. We will assess each objection on a case-by-case basis, taking into account the specific circumstances and applicable legal requirements.<br />
-                        - To withdraw consent, if you have given us your consent to process your Personal Data for any purpose, you also have the right to withdraw such consent at any time.<br />
-                        If you wish to exercise any of the rights set out above, please contact us.<br />
-                        DATA SECURITY<br />
-                        We have implemented comprehensive security measures to protect your Personal Data from accidental loss, unauthorized access, alteration, or disclosure. Moreover, we restrict access to your Personal Data to only those employees, contractors, and third parties who require it for legitimate business purposes. They will handle your Personal Data strictly according to our instructions and are bound by confidentiality obligations.<br />
-                        In the event of any suspected Personal Data breach, we promptly address the situation and, where legally mandated, notify you and the relevant regulatory authorities of the breach. We take our responsibility to uphold data protection seriously and ensure compliance with the Applicable Law.<br />
-                        COOKIES<br />
-                        When browsing our website, we, and the third parties that provide content, functionality, or business services on through our website may use cookies to collect information about your activities. This information is used to provide you with more relevant content and promotional materials and help us understand your interests and improve our website.<br />
-                        It is important to be aware that our website utilizes persistent cookies to retain your confirmation of the Privacy Policy. Nevertheless, your consent will be required before employing cookies. You have the option to decline the use of cookies; however, doing so will result in restricted access to our website.<br />
-                        OPTING OUT<br />
-                        You can ask us to stop sending you marketing messages at any time through our application or by unsubscribing through the emails you receive from us.<br />
-                        CHANGES TO THIS PRIVACY POLICY<br />
-                        If we change the way we use your Personal Data, we will update this Privacy Policy and, if appropriate, let you know by email, through our application or through our website.</p>
+                    <p><strong>Privacy Policy</strong><br />
+                        This policy (together with our Website Terms and Conditions) sets out the basis on which any personal information we collect from you, or that you provide us with, will be processed by us.<br />
+                        This Privacy Policy applies to information we collect when you access or use our products and services (such as our websites, devices, mobile applications, and online services), or when you otherwise interact with us.<br />
+                        Please read the following carefully to understand our views and practices regarding your personal information and how we will treat it. By visiting the Website, you are accepting and consenting to the practices described in this policy.<br />
+                        Our Website may, from time to time, contain links to and from the websites of our partner networks, advertisers and affiliates. If you follow a link to any of these websites, please note that these websites have their own privacy policies and that we do not accept any responsibility or liability for these policies. Please check these policies before you submit any personal data to these websites.<br />
+                        Information we may collect from you<br />
+                        You may be asked to provide your personal information anytime you use our Website or Service.<br />
+                        We process personal data about you as necessary to meet our contractual and legal obligations, provide you with products and services that you request from us or otherwise fulfill the legitimate interests described in the sections below.<br />
+                        We may collect and process the following data about you:<br />
+                        Information you give us: You may give us information about you by filling in forms on our Website or by corresponding with us by phone, e-mail or otherwise. The information you give us includes your name and e-mail address.<br />
+                        Information we collect about you: With regard to each of your visits to our Website we will automatically collect the following information: Technical information, including theInternet protocol (IP) address used to connect your computer to the Internet, your login information (if applicable), browser type and version, time zone setting, browser plug-in types and versions, operating system and platform, information about your visit, including the full Uniform Resource Locators (URL), clickstream to, through and from our Website (including date and time), information you viewed or searched for, page response times, download errors, length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouseovers), methods used to browse away from the page and any information of yours related to contacting our customer service team (e.g. phone number).<br />
+                        Information we receive from other sources: This is information we receive about you from public domain, third parties or other websites we operate or the other services we provide. Third parties we work with include: business partners, sub-contractors in technical, payment and delivery services, advertising networks, analytics providers, search information providers and credit reference agencies.<br />
+                        Uses made of the information<br />
+                        We use information held about you in the following ways:</p>
+
+                    <ul>
+                        <li>To carry out our obligations to provide you with the information, products and services that you request from us;</li>
+                        <li>To provide you, or permit selected third parties to provide you, with information about other goods and services we offer that are similar to those that you have already enquired or purchased;</li>
+                        <li>To communicate with you, directly or through one of our partners, including for customer support, to respond to your requests and for assistance and customer service, to provide you with updates and other information relating to the Service;</li>
+                        <li>To provide you, or permit selected third parties to provide you, with information about goods or services we feel may interest you;</li>
+                        <li>To notify you about changes to our goods and service;</li>
+                        <li>To ensure that content from our Website is presented in the most effective manner for you and for your computer.</li>
+                        <li>For compliance purposes, including enforcing our Terms, or other legal rights, or as may be required by applicable laws and regulations or requested by any judicial process or governmental agency.</li>
+                        <li>To administer our Website and for internal operations, including troubleshooting, data analysis, testing, research, statistical and survey purposes</li>
+                        <li>To improve our Website to ensure that content is presented in the most effective manner for your and for your computer;</li>
+                        <li>To allow you to participate in interactive features of our Service, when you choose to do so;</li>
+                        <li>As part of our efforts to keep our Website safe and secure;</li>
+                        <li>To measure or understand the effectiveness of advertising we serve to you and others, and to deliver relevant advertising to you;</li>
+                        <li>To make suggestions and recommendations to you and other users of our Website about goods or services that may interest you or them.</li>
+                    </ul>
+
+                    <p>We do not:</p>
+
+                    <ul>
+                        <li>Sell or trade your personal data;</li>
+                        <li>Transfer your personal data to a third country or international organization;</li>
+                        <li>Take a decision based solely on automated processing, including profiling.</li>
+                    </ul>
+
+                    <p>Disclosure of your information<br />
+                        We may share your personal information with:</p>
+
+                    <ul>
+                        <li>Any member of our group, including but not limited to our subsidiaries, affiliates, sister companies&hellip;</li>
+                        <li>Selected third parties including but not limited to:</li>
+                        <li>Business partners, suppliers and sub-contractors for the performance of any contract we enter into with them or you;</li>
+                        <li>Analytics and search engine providers that assist us in the improvement and optimization of our Website;</li>
+                        <li>Vendors and service providers for promotional or marketing purposes, and to provide you with information relevant to you such as product announcements, software updates, special offers, or other information.</li>
+                        <li>Fraud and crime prevention agencies for the purpose of assessing the risk of crime, fraud and money laundering.</li>
+                        <li>We will disclose your personal information to third parties:</li>
+                        <li>If we are under a duty to disclose or share your personal information in order to comply with any legal obligation, or in order to enforce or apply our Website Terms and Conditions; or to protect the rights, property, or safety of us, our customers, or others.</li>
+                        <li>In the event that we sell or buy any business or assets, in which case we will disclose your personal information to the prospective seller or buyer of such business or assets.</li>
+                        <li>If the Company, or substantially all of its assets are acquired by a third party, in which case personal information held by it about its customers will be one of the transferred assets.</li>
+                    </ul>
+
+                    <p>Children Privacy<br />
+                        We do not knowingly collect or maintain personal data on our Website from persons under (13) thirteen years of age, and no part of our Website is directed to persons under (13) thirteen years of age. If you are under (13) thirteen years of age, then please do not use or access this Website at any time or in any manner.<br />
+                        We will take appropriate steps to delete any personal data of persons less than (13) thirteen years of age that has been collected on our Website without verified parental consent upon learning of the existence of such personal data.<br />
+                        Length of Storage of Your Information<br />
+                        We store the information we collect about you for as long as is necessary for the purposes for which we originally collected it, unless a longer retention period is required or permitted by applicable law.<br />
+                        Security<br />
+                        We regularly monitor our systems for possible weaknesses and attacks. The technologies we use are designed to provide a level of security appropriate to the risk of processing your personal information. We have proven many times that your data is safe with us.<br />
+                        Unfortunately, the transmission of information via the Internet is not completely secure. Although we will do our best to protect your personal information, we cannot guarantee the security of your data transmitted to our site; any transmission is at your own risk. Once we have received your information, we will use strict procedures and security features to try to prevent unauthorized access. We can only guarantee that we will do our best to keep your data safe.<br />
+                        Your Rights</p>
+
+                    <ul>
+                        <li>Right to access and your personal data. You have the right to obtain from usconfirmation as to whether or not personal data concerning you are being processed, and, where that is the case, access to the personal data.</li>
+                        <li>Right to rectification. You have the right to obtain from us the rectification of inaccurate personal data. Taking into account the purposes of the processing, you also shall have the right to have incomplete personal data completed.</li>
+                        <li>The accuracy of the personal data is contested by you, for a period enabling us to verify the accuracy of the personal data;</li>
+                        <li>The processing is unlawful, and you oppose the erasure of the personal data and request the restriction of their use instead;</li>
+                        <li>We no longer need the personal data for the purposes of the processing, but they are required by you for the establishment, exercise or defense of legal claims;</li>
+                        <li>You have filed a claim to processing data, pending the verification whether ourlegitimate grounds override yours.</li>
+                        <li>Right to take your data. You can ask us for a copy of your personal data and can ask for a copy of personal data you provided in machine readable form.</li>
+                        <li>Right to delete data. You can ask us to erase or delete all or some of your personal data where one of the following grounds applies:</li>
+                        <li>The personal data is no longer necessary in relation to the purposes for which it was collected or otherwise processed;</li>
+                        <li>There is no legal ground for the processing;</li>
+                        <li>Personal data has to be erased for compliance with a legal obligation in law to which we are subject;</li>
+                        <li>The personal data has been collected in relation to the offer of information society services.</li>
+                        <li>Right to lodge a complaint. You have a right to lodge a complaint with the supervisory authority of the country in which you reside.</li>
+                    </ul>
+
+                    <p>Changes to our Privacy Policy<br />
+                        Any changes we make to our privacy policy in the future will be posted on this page and, where appropriate, notified to you by e-mail. Please check back frequently to see any updates or changes to our privacy policy.</p>
 
                 </div>
 
