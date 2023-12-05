@@ -57,6 +57,43 @@ body{
     object-position: 70% 250px;
 }
 
+.relativee * {
+    position: relative;
+}
+.dropdown {
+    -ms-overflow-style: none;
+    background: rgb(243 244 246);
+    border-radius: 20px;
+    box-shadow: 0 8px 10px rgb(243 244 246);
+    /* display: none; */
+    left: 0;
+    max-height: 185px;
+    overflow-y: scroll;
+    position: absolute;
+    scrollbar-width: none;
+    top: calc(100% + 5px);
+    width: 100%;
+    z-index: 1;
+}
+
+.calling_code .select {
+    background: rgb(243 244 246);
+    cursor: pointer;
+    height: 100%;
+    line-height: normal;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 60px;
+}
+
+.dropdown .search-wrapper {
+    background: rgb(243 244 246);
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+
 body.dark header{
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);

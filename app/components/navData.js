@@ -200,10 +200,10 @@ export const data = [
                 title: 'Who we are',
                 url: '/who-we-are'
             },
-            {
-                title: 'Leadership team',
-                url: null
-            },
+            // {
+            //     title: 'Leadership team',
+            //     url: null
+            // },
             {
                 title: 'Contact',
                 url: '/contact-us'

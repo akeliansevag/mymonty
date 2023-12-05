@@ -38,7 +38,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
-      <Modal />
+      {/* <Modal /> */}
       <Banner data={data} />
       <SectionTwo />
       <SectionThree />
