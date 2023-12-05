@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import sectionImage from '@/public/sectionthreeimage.webp';
+import sectionImage from '@/public/sectionthreeimage2.webp';
 import React from 'react';
 import Link from 'next/link';
 
