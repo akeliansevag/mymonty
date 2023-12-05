@@ -13,7 +13,7 @@ const SectionThree = () => {
                     <Link href="#" className='mm-button white mt-6 mx-auto'>Choose your card</Link>
                 </div>
                 <div className='text-center'>
-                    <Image alt="Section Image" src={sectionImage} className='mx-auto mt-14' />
+                    <Image alt="Section Image" src={sectionImage} className='mx-auto mt-14 w-full md:w-2/3' />
                 </div>
 
             </div>
