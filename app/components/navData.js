@@ -12,16 +12,8 @@ export const data = [
                         url: '/accounts?s=multicurrency-account',
                     },
                     {
-                        title: 'Top up',
+                        title: 'Top Up',
                         url: '/accounts?s=top-up',
-                    },
-                    {
-                        title: 'Cash in',
-                        url: '/accounts',
-                    },
-                    {
-                        title: 'Cash Out',
-                        url: '/accounts',
                     },
 
                 ]
@@ -32,27 +24,27 @@ export const data = [
                 children: [
                     {
                         title: 'Virtual Card',
-                        url: '/cards'
+                        url: '/cards?s=virtual-card'
                     },
                     {
                         title: 'Physical Card',
-                        url: '/cards'
+                        url: '/cards?s=physical-card'
                     },
                     {
                         title: 'Card Controls',
-                        url: '/cards'
+                        url: '/cards?s=card-controls'
                     },
                     {
                         title: 'Card Withdrawal',
-                        url: '/cards'
+                        url: '/cards?s=card-withdrawal'
                     },
                     {
                         title: 'Contactless Payment',
-                        url: '/cards'
+                        url: '/cards?s=physical-card'
                     },
                     {
                         title: 'Tap to Pay',
-                        url: '/cards'
+                        url: '/cards?s=physical-card'
                     }
                 ]
             },
@@ -62,35 +54,35 @@ export const data = [
                 children: [
                     {
                         title: 'P2P Remittance',
-                        url: '/transfers'
+                        url: '/transfers?s=p2p-remittance'
                     },
                     {
                         title: 'Recurring',
-                        url: '/transfers'
+                        url: '/transfers?s=recurring'
                     },
                     {
                         title: 'Scheduled',
-                        url: '/transfers'
+                        url: '/transfers?s=recurring'
                     },
                     {
                         title: 'Send',
-                        url: '/transfers'
+                        url: '/transfers?s=send'
                     },
                     {
                         title: 'Receive',
-                        url: '/transfers'
+                        url: '/transfers?s=send'
                     },
                     {
                         title: 'Request',
-                        url: '/transfers'
+                        url: '/transfers?s=send'
                     },
                     {
                         title: 'Top Up',
-                        url: '/transfers'
+                        url: '/transfers?s=top-up'
                     },
                     {
-                        title: 'Cash out',
-                        url: '/transfers'
+                        title: 'Cash Out',
+                        url: '/transfers?s=cash-out'
                     }
                 ]
             },
@@ -100,35 +92,35 @@ export const data = [
                 children: [
                     {
                         title: 'POS',
-                        url: '/payments'
+                        url: '/payments?s=pos'
                     },
                     {
                         title: 'QR & Link',
-                        url: '/payments'
+                        url: '/payments?s=qr-and-link'
                     },
                     {
                         title: 'Travel eSim',
-                        url: '/payments'
+                        url: '/payments?s=travel-esim'
                     },
                     {
                         title: 'Bill Payment',
-                        url: '/payments'
+                        url: '/payments?s=bill-payment'
                     },
                     {
                         title: 'Online Vouchers',
-                        url: '/payments'
+                        url: '/payments?s=bill-payment'
                     },
                     {
                         title: 'Tuition',
-                        url: '/payments'
+                        url: '/payments?s=bill-payment'
                     },
                     {
                         title: 'Wedding List',
-                        url: '/payments'
+                        url: '/payments?s=bill-payment'
                     },
                     {
                         title: 'Notifications & Alerts',
-                        url: '/payments'
+                        url: '/payments?s=notifications-and-alerts'
                     },
                 ]
             },
@@ -138,11 +130,11 @@ export const data = [
                 children: [
                     {
                         title: 'Advance on Salary',
-                        url: '/loans',
+                        url: '/loans?s=advance-on-salary',
                     },
                     {
                         title: 'BNPL',
-                        url: '/loans',
+                        url: '/loans?s=bnpl',
                     },
                     {
                         title: 'Car Loan',
@@ -150,23 +142,23 @@ export const data = [
                     },
                     {
                         title: 'Housing Loan',
-                        url: 'house-loan',
+                        url: '/house-loan',
                     },
                     {
                         title: 'Plastic Surgery Loan',
-                        url: 'plastic-surgery-loan',
+                        url: '/plastic-surgery-loan',
                     },
                     {
                         title: 'Travel Loan',
-                        url: 'travel-loan',
+                        url: '/travel-loan',
                     },
                     {
                         title: 'Student Loan',
-                        url: 'student-loan',
+                        url: '/student-loan',
                     },
                     {
                         title: 'Personal Loan',
-                        url: 'personal-loan',
+                        url: '/personal-loan',
                     },
                 ]
             },
@@ -176,15 +168,15 @@ export const data = [
                 children: [
                     {
                         title: 'Cashback',
-                        url: '/loyalty',
+                        url: '/loyalty?s=cashback',
                     },
                     {
                         title: 'Referral',
-                        url: '/loyalty',
+                        url: '/loyalty?s=referral',
                     },
                     {
-                        title: 'Loyalty program',
-                        url: '/loyalty',
+                        title: 'Loyalty Program',
+                        url: '/loyalty?s=loyalty-program',
                     }
                 ]
             }

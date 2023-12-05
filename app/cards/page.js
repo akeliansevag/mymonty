@@ -82,31 +82,42 @@ const cards = () => {
     return (
         <>
             <Banner data={data} />
+            <div id="virtual-card">
+                <Section>
+                    <div className='container text-center'>
+                        <TextBlock center={true} title="Access your money wherever you are" description="With MyMonty virtual cards, your financial freedom is always within the palm of your hand. You can access the money in your MyMonty virtual prepaid card, online or at cardless ATMs within our network, and you’ll get Mastercard’s great-value exchange rates when spending abroad." button={true} />
+                        <Image className='mx-auto mt-10' alt="Wallets" src={sectionTwoImage} />
+                    </div>
+                </Section>
+            </div>
+            <div id="physical-card">
+                <Carousel data={carouselData} />
+            </div>
+
+            <div id="card-controls">
+                <Section>
+                    <div className='container flex flex-col md:flex-row gap-10 items-center'>
+                        <TextBlock title="Lock and Unlock on the Go" description="Lost your card? Doubting a fraudulent transaction? Keep your prepaid card safe and your money protected by instantly locking your card in-app." button={true} />
+                        <Image src={sectionFourImage} alt='People' />
+                    </div>
+                </Section>
+            </div>
+
             <Section>
                 <div className='container text-center'>
-                    <TextBlock title="Free Multicurrency Account" description="Get your free multicurrency account in both Fresh USD/LBP whenever you complete the onboarding process." button={true} />
-                    <Image className='mx-auto mt-10' alt="Wallets" src={sectionTwoImage} />
-                </div>
-            </Section>
-            <Carousel data={carouselData} />
-            <Section>
-                <div className='container flex flex-col md:flex-row gap-10 items-center'>
-                    <TextBlock title="Lock and Unlock on the Go" description="Lost your card? Doubting a fraudulent transaction? Keep your prepaid card safe and your money protected by instantly locking your card in-app." button={true} />
-                    <Image src={sectionFourImage} alt='People' />
-                </div>
-            </Section>
-            <Section>
-                <div className='container text-center'>
-                    <TextBlock title="Monitor Your Spendings and Check Your Transaction History" description="You can view your card activity at any time and keep your eye on your spendings, we will let you digitally export your card statement and save it to your device." button={true} />
+                    <TextBlock center={true} title="Monitor Your Spendings and Check Your Transaction History" description="You can view your card activity at any time and keep your eye on your spendings, we will let you digitally export your card statement and save it to your device." button={true} />
                     <Image src={sectionFiveImage} alt="Image" className='pt-14 mx-auto' />
                 </div>
             </Section>
-            <Section bgImage={bgImage}>
-                <div className='container text-center'>
-                    <TextBlock title="Withdraw Whenever, Wherever" description="Get cash when you need it. Use your prepaid Mastercard to withdraw from ATMs anywhere in the world with no hidden fees." button={true} />
-                </div>
-                <Image className='mt-20' src={cardHand} alt='Card Hand' />
-            </Section>
+            <div id="card-withdrawal">
+                <Section bgImage={bgImage}>
+                    <div className='container text-center'>
+                        <TextBlock title="Withdraw Whenever, Wherever" description="Get cash when you need it. Use your prepaid Mastercard to withdraw from ATMs anywhere in the world with no hidden fees." button={true} />
+                    </div>
+                    <Image className='mt-20' src={cardHand} alt='Card Hand' />
+                </Section>
+            </div>
+
         </>
     )
 }

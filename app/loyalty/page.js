@@ -38,22 +38,24 @@ const loyalty = () => {
     return (
         <>
             <Banner data={data} />
+            <div id="cashback">
+                <Section bgDark={true} textColor="white">
+                    <div className='container text-center'>
+                        <Image src={sectionTwo} alt='Loyalty Cards' className='mb-10 mx-auto' />
+                        <TextBlock center={true} textColor="white" title="Cashback" description="While you are enjoying spending and transacting with your MyMonty card, we will reward you with a cashback that will be reflected to your wallet account, so we encourage you to go digital with us." button={true} buttonColor="white" />
+                    </div>
 
-            <Section bgDark={true} textColor="white">
-                <div className='container text-center'>
-                    <Image src={sectionTwo} alt='Loyalty Cards' className='mb-10 mx-auto' />
-                    <TextBlock center={true} textColor="white" title="Cashback" description="While you are enjoying spending and transacting with your MyMonty card, we will reward you with a cashback that will be reflected to your wallet account, so we encourage you to go digital with us." button={true} buttonColor="white" />
-                </div>
+                </Section>
+            </div>
 
-            </Section>
             <Section>
                 <div className='container'>
-                    <div className='flex flex-col lg:flex-row items-center gap-20'>
+                    <div id="referral" className='flex flex-col lg:flex-row items-center gap-20'>
                         <TextBlock title="Referral" description="Refer a friend and get rewarded as soon as your invitee gets onboarded and starts using MyMonty." button={true} />
                         <Image src={sectionFour} alt='Image' />
                     </div>
 
-                    <div className='mt-40 flex flex-col-reverse lg:flex-row items-center gap-20'>
+                    <div id="loyalty-program" className='mt-40 flex flex-col-reverse lg:flex-row items-center gap-20'>
                         <Image src={sectionFive} alt='Image' />
                         <TextBlock title="Loyalty points program" description="We are tailoring one of the best loyalty programs in the country to upgrade your experience with us so that you benefit by redeeming your loyalty points." button={true} />
                     </div>

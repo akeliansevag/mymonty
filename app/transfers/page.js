@@ -110,29 +110,36 @@ const transfers = () => {
     return (
         <>
             <Banner data={data} />
+            <div id="p2p-remittance">
+                <section className='pb-0 pt-14 lg:pt-24'>
+                    <div className='container flex-col-reverse flex lg:flex-row gap-10 items-center'>
+                        <Image src={sectionTwo} alt='Image' />
+                        <TextBlock title="Borderless transfers" description="Indulge the seamless and direct transfer of funds between individuals through MyMonty. Initiate transactions using your mobile devices, eliminating the need for traditional intermediaries like banks even for cross-border transfers." button={true} />
+                    </div>
+                </section>
+            </div>
+            <div id="send">
+                <Carousel data={carouselData} />
+            </div>
 
-            <section className='pb-0 pt-14 lg:pt-24'>
-                <div className='container flex-col-reverse flex lg:flex-row gap-10 items-center'>
-                    <Image src={sectionTwo} alt='Image' />
-                    <TextBlock title="Borderless transfers" description="Indulge the seamless and direct transfer of funds between individuals through MyMonty. Initiate transactions using your mobile devices, eliminating the need for traditional intermediaries like banks even for cross-border transfers." button={true} />
-                </div>
-            </section>
-            <Carousel data={carouselData} />
             <Section>
                 <div className='container'>
-                    <div className='flex flex-col lg:flex-row items-center gap-10'>
+                    <div id="top-up" className='flex flex-col lg:flex-row items-center gap-10'>
                         <TextBlock title="Top up or cash out with our partners" description="Top up your wallet account at any OMT agent, the funds will be reflected instantly in your wallet account. You can cash out yourself or send a code for a beneficiary to cash out on your behalf." button={true} />
                         <Image src={sectionFour} alt='Image' />
                     </div>
 
-                    <div className='mt-40 flex flex-col-reverse lg:flex-row items-center gap-10'>
+                    <div id="cash-out" className='mt-40 flex flex-col-reverse lg:flex-row items-center gap-10'>
                         <Image src={sectionFive} alt='Image' />
                         <TextBlock title="Top up or cash out by ATM/bank network" description="Top up your wallet or cash out at our partner bank ATM or bank counter." button={true} />
                     </div>
 
                 </div>
             </Section>
-            <Carousel data={carouselDataTwo} />
+            <div id="recurring">
+                <Carousel data={carouselDataTwo} />
+            </div>
+
         </>
     )
 }

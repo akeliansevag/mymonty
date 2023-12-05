@@ -95,24 +95,30 @@ const loans = () => {
     return (
         <div>
             <Banner data={data} />
-            <Section>
-                <div className='container text-center'>
-                    <TextBlock center={true} title="Advance on Salary" description="Have you ever faced an urgent payment? Or missed a black Friday for that “insufficient funds in your account” message? With MyMonty early Salary, you will have access to a portion of your next salary in advance to spend and return at your convenience with 3 flexible options." button={true} />
-                    <div className='flex flex-col md:flex-row gap-10 items-center justify-center mt-10'>
-                        <Image alt="Wallets" src={free} />
-                        <Image alt="Wallets" src={installment} />
-                        <Image alt="Wallets" src={twopointfive} />
-                    </div>
+            <div id="advance-on-salary">
+                <Section>
+                    <div className='container text-center'>
+                        <TextBlock center={true} title="Advance on Salary" description="Have you ever faced an urgent payment? Or missed a black Friday for that “insufficient funds in your account” message? With MyMonty early Salary, you will have access to a portion of your next salary in advance to spend and return at your convenience with 3 flexible options." button={true} />
+                        <div className='flex flex-col md:flex-row gap-10 items-center justify-center mt-10'>
+                            <Image alt="Wallets" src={free} />
+                            <Image alt="Wallets" src={installment} />
+                            <Image alt="Wallets" src={twopointfive} />
+                        </div>
 
-                </div>
-            </Section>
+                    </div>
+                </Section>
+            </div>
+
             <Carousel data={carouselData} />
-            <Section>
-                <div className='container text-center'>
-                    <TextBlock center={true} title="Buy now pay later" description="More flexible lending options are coming your way, so be prepared for the Buy Now Pay Later option and never miss your favorite brand sale no more." button={true} />
-                    <Image className='mx-auto mt-10' alt="Happy Girl " src={bnpl} />
-                </div>
-            </Section>
+            <div id="bnpl">
+                <Section>
+                    <div className='container text-center'>
+                        <TextBlock center={true} title="Buy now pay later" description="More flexible lending options are coming your way, so be prepared for the Buy Now Pay Later option and never miss your favorite brand sale no more." button={true} />
+                        <Image className='mx-auto mt-10' alt="Happy Girl " src={bnpl} />
+                    </div>
+                </Section>
+            </div>
+
         </div>
     )
 }
