@@ -5,7 +5,7 @@ import Image from 'next/image';
 import banner from '@/public/personal/accounts-banner.png';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
-import sectionTwoImage from '@/public/personal/accounts-cards.png';
+import sectionTwoImage from '@/public/personal/accounts-cards.webp';
 import coins from '@/public/personal/coins.png';
 import Carousel from '@/app/components/Carousel';
 
