@@ -214,7 +214,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                         </Dialog.Title>
                         <form onSubmit={handleSubmit}>
                           <div className='flex flex-col gap-4 md:gap-10 mt-10 md:mt-20 rounded-[1.875rem]'>
-                            <div className='relativee flex flex-col justify-center md:flex-row gap-4 md:gap-10 w-2/3 mx-auto'>
+                            <div className='relativee flex flex-col justify-center md:flex-row gap-4 md:gap-10 w-11/12 md:w-2/3 mx-auto'>
                               <div className='w-full flex flex-col'>
                                 <div className="flex w-full">
                                   <div className="calling_code">
