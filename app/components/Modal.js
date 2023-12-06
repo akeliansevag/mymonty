@@ -3,18 +3,59 @@ import { useCookies } from 'react-cookie';
 import { useEffect, useRef, useState, Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react'
 import Link from 'next/link';
-import getUnicodeFlagIcon from 'country-flag-icons/unicode'
 import { countries } from '@/app/countries';
 
 const Modal = () => {
   const [open, setOpen] = useState(true)
   const [openCountry, setOpenCountry] = useState(false)
+  
   const cancelButtonRef = useRef(null)
 
+  const [searchInput, setSearchInput] = useState('');
+  const [selectedCountry, setSelectedCountry] = useState(null);
+  const [selectedCountryCode, setSelectedCountryCode] = useState('');
+
+  const dropdownRef = useRef(null);
+  
   // Use cookies to track whether the user has accepted the cookie
   const [cookies, setCookie] = useCookies(['cookieAccepted']);
   const hasAcceptedCookie = cookies.cookieAccepted;
 
+  const handleSearchChange = (e) => {
+    setSearchInput(e.target.value);
+  };
+
+  const handleCountryClick = (country) => {
+    setOpenCountry(!openCountry);
+    setSearchInput('');
+    setSelectedCountry(country);
+    
+    // Update the formData state with the selected code
+    setFormData((prevData) => ({
+      ...prevData,
+      code: country.code,
+    }));
+  };
+
+  const filteredCountries = countries.filter((country) =>
+    country.name.toLowerCase().includes(searchInput.toLowerCase())
+  );
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target) && !document.getElementById('calling_code').contains(event.target)) {
+        setOpenCountry(false);
+        setSearchInput('');
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [dropdownRef]);
+  
   // Check if the user has already accepted the cookie
   useEffect(() => {
     if (hasAcceptedCookie) {
@@ -23,6 +64,7 @@ const Modal = () => {
   }, [hasAcceptedCookie]);
 
   const [formData, setFormData] = useState({
+    code: '+961',
     mobile: '',
   });
 
@@ -35,20 +77,13 @@ const Modal = () => {
     const newErrors = {};
 
     // Required fields validation
-    const requiredFields = ['mobile'];
+    const requiredFields = ['code', 'mobile'];
     requiredFields.forEach((field) => {
       if (!formData[field].trim()) {
         newErrors[field] = 'This field is required';
         isValid = false;
       }
     });
-
-    // Email validation
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (formData.email.trim() && !emailPattern.test(formData.email)) {
-      newErrors.email = 'Invalid email address';
-      isValid = false;
-    }
 
     setErrors(newErrors);
     return isValid;
@@ -58,7 +93,7 @@ const Modal = () => {
     const { id, value } = e.target;
 
     // Limit mobile number field to a maximum of 16 characters
-    if (id === 'mobile' && value.length > 16) {
+    if (id === 'mobile' && value.length >= 12) {
       return;
     }
 
@@ -92,21 +127,23 @@ const Modal = () => {
         const data = await response.json();
 
         if (response.ok) {
-          // Successful response from the API
+          setSubmissionStatus('success');
+          setTimeout(() => {
             setOpen(false);
-            setSubmissionStatus('success');
             setCookie('cookieAccepted', true, { path: '/' });
-
             setFormData({
-                first_name: '',
-                last_name: '',
-                mobile: '',
-                email: '',
+              code: '',
+              mobile: '',
             });
+          }, 2000);
         } else {
-          // Error response from the API
           setSubmissionStatus('error');
-          setErrors(data.data || {});
+          if(data.code == 23000){
+            setErrors({mobile : "The mobile you entered is already registered."} || {});
+          }
+          else{
+            setErrors(data.data || {});
+          }
         }
       } catch (error) {
         console.error('Error submitting form:', error);
@@ -147,7 +184,7 @@ const Modal = () => {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
             <div className='container'>
-                <Dialog.Panel className="relative transform overflow-hidden rounded-3xl bg-white text-left shadow-xl transition-all sm:my-8 w-full md:w-2/5 mx-auto">
+                <Dialog.Panel className="relative transform overflow-hidden rounded-3xl bg-white text-left shadow-xl transition-all sm:my-8 w-full md:w-3/4 lg:w-3/5 xl:w-2/5 mx-auto">
 
                     <div className='absolute top-[15px] right-[15px] md:top-[30px] md:right-[30px]' onClick={() => setOpen(false)}>
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,47 +199,75 @@ const Modal = () => {
                                 </Dialog.Title>
                                 <form onSubmit={handleSubmit}>
                                   <div className='flex flex-col gap-4 md:gap-10 mt-10 md:mt-20 rounded-[1.875rem]'>                                  
-                                    <div className='relativee flex flex-col justify-center md:flex-row gap-4 md:gap-10'>
-                                    <div className="flex w-2/3">
-                                      <div className="calling_code">
+                                    <div className='relativee flex flex-col justify-center md:flex-row gap-4 md:gap-10 w-2/3 mx-auto'>
+                                      <div className='w-full flex flex-col'>
+                                      <div className="flex w-full">
+                                        <div className="calling_code">
                                           <div className="flex h-full justify-between items-center">
-                                            <div id="calling_code" onClick={() => setOpenCountry(true)} className="select bg-gray-100 border-gray-300 border-2 border-e-0 px-2.5 py-2.5  rounded-xl rounded-e-none flex justify-between items-center text-gray-100">
-                                              { getUnicodeFlagIcon('LB') }
+                                            <div id="calling_code" onClick={(e) =>{setOpenCountry(!openCountry)}} className="select bg-gray-100 border-gray-300 border-2 border-e-0 p-2.5 rounded-xl rounded-e-none flex justify-between items-center text-gray-100">
+                                              {selectedCountry ? (
+                                                <>
+                                                  {selectedCountry.flag}
+                                                </>
+                                              ) : (
+                                                <>
+                                                  🇱🇧
+                                                </>
+                                              )}
                                               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 9L12 15L18 9" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M6 9L12 15L18 9" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                               </svg>
                                             </div>
                                           </div>
-                                      </div>
-                                      <div id="calling_code-drop" show={openCountry} className="dropdown px-1">
-                                          <div className="search-wrapper sticky top-0 left-0 flex justify-between items-center">
-                                              <input type="text" id="search-country" placeholder="Search" className="search-country outline-0 w-full px-3.5 py-2.5 bg-gray-100 border-0 text-sm"/>
-                                              <i className="fa-solid fa-search px-1"></i>
-                                              <i className="fa-solid fa-circle-xmark px-1 cursor-pointer hidden"></i>
+                                        </div>
+
+                                        <div id="calling_code-drop" className={`dropdown px-1 ${openCountry ? 'visible' : 'hidden'}`} ref={dropdownRef}>
+                                          <div className="search-wrapper !sticky top-0 left-0 flex justify-between items-center">
+                                            <input type="text" id="search-country" placeholder="Search" className="search-country outline-0 w-full px-3.5 py-2.5 bg-gray-100 border-0 text-sm" value={searchInput} onChange={handleSearchChange}/>
+                                            {searchInput && (
+                                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24" className='px-1 cursor-pointer' onClick={() => { setSearchInput(''); }}>
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                                              </svg>
+                                            )}
+                                            {searchInput === '' && (
+                                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-5-5m2-5a8 8 0 1 0-16 0 8 8 0 0 0 16 0z"></path>
+                                              </svg>
+                                            )}
                                           </div>
+
                                           <ul id="country-ul">
-                                            { countries.map((country,index)=>{
-                                              return (
-                                                <li className="my-1 px-1 rounded-md" data-code="93" data-name="Afghanistan" data-iso="afg">
-                                                  <span className='flex items-center'>
-                                                    { getUnicodeFlagIcon(country.iso) }
-                                                    <span className="ms-1 text-sm">{country.name}</span>
-                                                    <span className="ms-1 text-sm">+{country.code}</span>
-                                                  </span>
+                                            {filteredCountries.map((country, index) => (
+                                              <li key={index} className="my-1 rounded-md cursor-pointer px-2.5 hover:bg-gray-300" data-code={country.code} data-name={country.name} data-iso={country.iso2} onClick={() => handleCountryClick(country)}>
+                                                <span className="flex items-center">
+                                                  {country.flag}
+                                                  <span className="ms-1 text-sm">{country.name}</span>
+                                                  <span className="ms-1 text-sm">{country.code}</span>
+                                                </span>
                                               </li>
-                                              )
-                                            })}
+                                            ))}
                                           </ul>
-                                          <div className="no-items p-3 text-center hidden">
-                                              <i className="fa-solid fa-search fs-md"></i>
-                                              <p className="mt-1 fs-md">No items</p>
+
+                                          <div className={`no-items p-3 text-center flex flex-col items-center ${filteredCountries.length === 0 ? 'visible' : 'hidden'}`}>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
+                                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-5-5m2-5a8 8 0 1 0-16 0 8 8 0 0 0 16 0z"></path>
+                                            </svg>
+                                            <p className="mt-1 fs-md">No items</p>
                                           </div>
+                                        </div>
+
+                                        <input type="hidden" name="code" value={selectedCountryCode} className="onboarding-code" />
+                                        <input 
+                                        id="mobile" 
+                                        type="tel" 
+                                        name="mobile" 
+                                        value={formData.mobile}
+                                        onChange={handleChange}
+                                        placeholder="71102066" 
+                                        className={`onboarding-mobile outline-0 w-full bg-gray-100 border-gray-300 border-2 border-s-0 pl-1 pr-3.5 py-2.5 rounded-xl rounded-s-none text-sm ${errors.mobile ? 'border-s-2 border-red-500' : ''}`} />
                                       </div>
-                                       {/* border-2 w-full border-gray-300 rounded-xl border-s-0 */}
-                                      <input type="hidden" name="calling_code" className="onboarding-calling_code" placeholder="961"/>
-                                      <input id="mobile" type="tel" name="mobile" placeholder="71102066" className="onboarding-mobile outline-0 w-full bg-gray-100 border-gray-300 border-2 border-s-0 x-3.5 py-2.5 rounded-xl rounded-s-none text-sm"/>
-                                      <span className='text-red-500'>{errors.mobile}</span>
-                                  </div>
+                                      <span className='text-red-500 text-base'>{errors.mobile}</span>
+                                      </div>
                                     </div>
 
                                     <div className='flex flex-col justify-center md:flex-row gap-4 md:gap-10'>
@@ -217,14 +282,14 @@ const Modal = () => {
                                       </div>
                                     </div>
 
-                                    {loading && <div className='text-gray-600 mt-4'>Submitting...</div>}
+                                    {loading && <div className='text-gray-600 mt-4 text-base'>Submitting...</div>}
 
                                     {submissionStatus === 'success' && (
-                                        <div className='text-green-600 mt-4'>Form submitted successfully!</div>
+                                      <div className='text-green-600 mt-4 text-base'>Form submitted successfully!</div>
                                     )}
 
                                     {submissionStatus === 'error' && (
-                                        <div className='text-red-500 mt-4'>An error occurred while submitting the form.</div>
+                                      <div className='text-red-500 mt-4 text-base'>An error occurred while submitting the form.</div>
                                     )}
                                   </div>
                                 </form>

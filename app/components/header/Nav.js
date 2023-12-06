@@ -17,7 +17,7 @@ const Nav = ({ handleMenuOpen, menuOpen }) => {
                 {data && data.map((items, index) => {
                     return (
                         <li key={index} onMouseLeave={() => items.children ? handleMouseLeave() : false} onMouseEnter={() => items.children ? handleMouseEnter() : false} className='h-[var(--header-height)] flex items-center group'>
-                            <span className='transition-all py-[7px] px-[30px] rounded-full group-hover:bg-black group-hover:text-white group-hover:cursor-default'>
+                            <span className='transition-all py-[7px] px-[30px] rounded-full group-hover:bg-black group-hover:text-white'>
                                 {items?.url ? <Link onClick={() => handleMenuOpen(false)} href={items.url}>{items?.title}</Link> : items.title}
                             </span>
                             {items.children && (
@@ -38,28 +38,23 @@ const Nav = ({ handleMenuOpen, menuOpen }) => {
                                                                             <Link scroll={false} onClick={() => handleMenuOpen(false)} href={c.url}>
                                                                                 {c?.title}
                                                                             </Link>
-                                                                            : c.title}
+                                                                            : c.title
+                                                                        }
                                                                     </li>
-
                                                                 )
 
                                                             })}
                                                         </ul>
                                                     )}
-
                                                 </div>
                                             )
                                         })}
-
                                     </div>
                                 </div>
                             )}
-
                         </li>
                     )
-
                 })}
-
             </ul>
         </nav>
     )
