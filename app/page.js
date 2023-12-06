@@ -7,9 +7,8 @@ import SectionFour from './homepage/SectionFour';
 import SectionFive from './homepage/SectionFive';
 import SectionSix from './homepage/SectionSix';
 import SectionSeven from './homepage/SectionSeven';
-import girl from '@/public/girl.webp';
-import girlMobile from '@/public/personal/girl-mobile.webp';
-import Modal from './components/Modal';
+import girl from '@/public/home-banner-2.webp';
+import girlMobile from '@/public/home-banner-2.webp';
 
 const data = {
   title: 'MyMonty Better Than a Bank.',
