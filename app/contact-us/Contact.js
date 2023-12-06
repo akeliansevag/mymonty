@@ -15,31 +15,12 @@ const Contact = () => {
   const [selectedCountryCode, setSelectedCountryCode] = useState('');
   const dropdownRef = useRef(null);
 
-  useEffect(() => {
-    const fetchUserInfo = async () => {
-      try {
-        const response = await fetch('https://staging.mymonty.com/api/user-ip');
-        if (response.ok) {
-          const data = await response.json();
-          console.log(data)
-          setUserInfo(data);
-        } else {
-          console.error('Error fetching user information:', response.status);
-        }
-      } catch (error) {
-        console.error('Error fetching user information:', error);
-      }
-    };
-
-    fetchUserInfo();
-  }, []);
-
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     company: '',
     profession: '',
-    code: userInfo.calling_code,
+    code: '',
     mobile: '',
     subject: '',
     message: '',
@@ -174,6 +155,31 @@ const Contact = () => {
       setSubmissionStatus(null);
     }
   };
+
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      try {
+        const response = await fetch('https://staging.mymonty.com/api/user-ip');
+        if (response.ok) {
+          const data = await response.json();
+          // console.log(data)
+          setUserInfo(data);
+
+          // Initialize formData with calling_code from user info
+          setFormData((prevData) => ({
+            ...prevData,
+            code: data.calling_code || '', // Use an empty string as a fallback
+          }));
+        } else {
+          // console.error('Error fetching user information:', response.status);
+        }
+      } catch (error) {
+        // console.error('Error fetching user information:', error);
+      }
+    };
+
+    fetchUserInfo();
+  }, []);
 
   return (
     <div>
@@ -323,17 +329,6 @@ const Contact = () => {
                       <span className='text-red-500 text-base'>{errors.mobile}</span>
                     </div>
                   </div>
-                  {/* <input
-                    id='mobile'
-                    name='mobile'
-                    value={formData.mobile}
-                    onChange={handleChange}
-                    placeholder='Mobile Number'
-                    maxLength='16'
-                    className={`px-3.5 py-2.5 border-2 w-full border-gray-300 rounded-xl ${errors.mobile ? 'border-red-500' : ''
-                      }`}
-                  />
-                  <span className='text-red-500'>{errors.mobile}</span> */}
                 </div>
                 <div className='flex flex-col gap-1 w-full'>
                   <label htmlFor='subject'>Subject</label>

@@ -7,7 +7,7 @@ import { countries } from '@/app/countries';
 const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
   //const [open, setOpen] = useState(false)
   const [openCountry, setOpenCountry] = useState(false)
-  const [userInfo, setUserInfo] = useState({});
+  const [userInfo, setUserInfo] = useState({  });
   const cancelButtonRef = useRef(null)
 
   const [searchInput, setSearchInput] = useState('');
@@ -51,27 +51,9 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
     };
   }, [dropdownRef]);
 
-  useEffect(() => {
-    const fetchUserInfo = async () => {
-      try {
-        const response = await fetch('https://staging.mymonty.com/api/user-ip');
-        if (response.ok) {
-          const data = await response.json();
-          console.log(data)
-          setUserInfo(data);
-        } else {
-          console.error('Error fetching user information:', response.status);
-        }
-      } catch (error) {
-        console.error('Error fetching user information:', error);
-      }
-    };
-
-    fetchUserInfo();
-  }, []);
 
   const [formData, setFormData] = useState({
-    code: userInfo.calling_code,
+    code: '',
     mobile: '',
   });
 
@@ -165,7 +147,30 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
     }
   };
 
-  
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      try {
+        const response = await fetch('https://staging.mymonty.com/api/user-ip');
+        if (response.ok) {
+          const data = await response.json();
+          // console.log(data)
+          setUserInfo(data);
+
+           // Initialize formData with calling_code from user info
+           setFormData((prevData) => ({
+            ...prevData,
+            code: data.calling_code || '', // Use an empty string as a fallback
+          }));
+        } else {
+          // console.error('Error fetching user information:', response.status);
+        }
+      } catch (error) {
+        // console.error('Error fetching user information:', error);
+      }
+    };
+
+    fetchUserInfo();
+  }, []);
 
   return (
     <Transition.Root show={isOpen} as={Fragment}>
@@ -217,7 +222,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                       <div id="calling_code" onClick={(e) => { setOpenCountry(!openCountry) }} className="select bg-gray-100 border-gray-300 border-2 border-e-0 p-2.5 rounded-xl rounded-e-none flex justify-between items-center text-gray-400 text-base">
                                         {selectedCountry ? (
                                           <>
-                                            <div className="country_flag text-3xl">
+                                            <div className="text-lg">
                                               {selectedCountry.flag}
                                             </div>
                                             <div>
@@ -226,7 +231,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                           </>
                                         ) : (
                                           <>
-                                            <div className="country_flag text-3xl">
+                                            <div className="text-lg">
                                               {userInfo.country_flag_emoji}
                                             </div>
                                             <div>+{userInfo.calling_code}</div>
@@ -260,7 +265,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                           <span className="flex items-center">
                                             {country.flag}
                                             <span className="ms-1 text-sm">{country.name}</span>
-                                            <span className="ms-1 text-sm">+{country.code}</span>
+                                            <span className="ms-1 text-sm">{country.code}</span>
                                           </span>
                                         </li>
                                       ))}
