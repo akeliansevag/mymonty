@@ -7,7 +7,7 @@ import { countries } from '@/app/countries';
 const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
   //const [open, setOpen] = useState(false)
   const [openCountry, setOpenCountry] = useState(false)
-
+  const [userInfo, setUserInfo] = useState({});
   const cancelButtonRef = useRef(null)
 
   const [searchInput, setSearchInput] = useState('');
@@ -53,7 +53,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
 
 
   const [formData, setFormData] = useState({
-    code: '961',
+    code: userInfo.calling_code,
     mobile: '',
   });
 
@@ -121,7 +121,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
             handleCloseModal();
 
             setFormData({
-              code: '961',
+              code: userInfo.calling_code,
               mobile: '',
             });
             setErrors({});
@@ -146,6 +146,25 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
       setSubmissionStatus(null);
     }
   };
+
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      try {
+        const response = await fetch('https://staging.mymonty.com/api/user-ip');
+        if (response.ok) {
+          const data = await response.json();
+          console.log(data)
+          setUserInfo(data);
+        } else {
+          console.error('Error fetching user information:', response.status);
+        }
+      } catch (error) {
+        console.error('Error fetching user information:', error);
+      }
+    };
+
+    fetchUserInfo();
+  }, []);
 
   return (
     <Transition.Root show={isOpen} as={Fragment}>
@@ -197,7 +216,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                       <div id="calling_code" onClick={(e) => { setOpenCountry(!openCountry) }} className="select bg-gray-100 border-gray-300 border-2 border-e-0 p-2.5 rounded-xl rounded-e-none flex justify-between items-center text-gray-400 text-base">
                                         {selectedCountry ? (
                                           <>
-                                            <div>
+                                            <div className="country_flag text-3xl">
                                               {selectedCountry.flag}
                                             </div>
                                             <div>
@@ -206,10 +225,10 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                           </>
                                         ) : (
                                           <>
-                                            <div>
-                                              🇱🇧
+                                            <div className="country_flag text-3xl">
+                                              {userInfo.country_flag_emoji}
                                             </div>
-                                            <div>+961</div>
+                                            <div>+{userInfo.calling_code}</div>
                                           </>
                                         )}
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -240,7 +259,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                           <span className="flex items-center">
                                             {country.flag}
                                             <span className="ms-1 text-sm">{country.name}</span>
-                                            <span className="ms-1 text-sm">{country.code}</span>
+                                            <span className="ms-1 text-sm">+{country.code}</span>
                                           </span>
                                         </li>
                                       ))}

@@ -64,6 +64,9 @@ button, a, input[type="submit"], header li{
 .relativee * {
     position: relative;
 }
+.country_flag{
+    line-height: 0;
+}
 .dropdown {
     -ms-overflow-style: none;
     background: rgb(243 244 246);
@@ -89,7 +92,7 @@ button, a, input[type="submit"], header li{
     position: relative;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 120px;
+    width: 130px;
 }
 
 .dropdown .search-wrapper {
