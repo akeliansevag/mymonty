@@ -53,7 +53,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
 
 
   const [formData, setFormData] = useState({
-    code: '+961',
+    code: '961',
     mobile: '',
   });
 
