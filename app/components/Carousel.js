@@ -4,13 +4,14 @@ import TextBlock from './TextBlock';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Carousel = ({ data, video, videoMP4URL, videoWEBMURL }) => {
+const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const handleSelect = (index) => {
         setSelectedIndex(index);
     };
     return (
-        <section className='relative py-14 lg:py-28 min-h-[calc(100vh-(var(--mobile-header-height)))]'>
+        <section className={`${center ? 'flex flex-col justify-center' : ''} relative py-14 lg:py-28 min-h-[calc(100vh-(var(--mobile-header-height)))]`
+        }>
             {
                 video && videoMP4URL && videoWEBMURL && (
                     <video className='w-full h-full object-cover absolute top-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>
@@ -20,34 +21,35 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL }) => {
                     </video>
                 )
             }
-            {data && data?.content && (
-                data.content.map((item, index) => {
-                    let contentClasses =
-                        selectedIndex === index
-                            ? 'opacity-1 z-0 transition-opacity'
-                            : 'opacity-0 -z-100 hidden';
-                    return (
-                        <div key={index} className={`h-full w-full transition-all ${contentClasses}`}>
-                            <div className='container text-center relative'>
-                                <TextBlock center={true} textColor="white" title={item.title} description={item.description} button={false} />
-                                {item.button && (
-                                    <Link className='mm-button white mt-4' href={item.button?.url}>{item.button.text}</Link>
-                                )}
-                                <img className='my-10 mx-auto max-w-[250px] md:max-w-[350px]' src={item.contentImage} />
+            {
+                data && data?.content && (
+                    data.content.map((item, index) => {
+                        let contentClasses =
+                            selectedIndex === index
+                                ? 'opacity-1 z-0 transition-opacity'
+                                : 'opacity-0 -z-100 hidden';
+                        return (
+                            <div key={index} className={`h-full w-full transition-all ${contentClasses}`}>
+                                <div className='container text-center relative'>
+                                    <TextBlock center={true} textColor="white" title={item.title} description={item.description} button={false} />
+                                    {item.button && (
+                                        <Link className='mm-button white mt-4' href={item.button?.url}>{item.button.text}</Link>
+                                    )}
+                                    <img className='my-10 mx-auto max-w-[250px] md:max-w-[350px]' src={item.contentImage} />
+                                </div>
+                                {
+                                    item?.backgroundImage && (
+                                        <Image priority quality={100} sizes='100vw' fill={true} src={item.backgroundImage} alt="Background Image" className='object-cover -z-10' />
+                                    )
+                                }
+
+
+
                             </div>
-                            {
-                                item?.backgroundImage && (
-                                    <Image priority quality={100} sizes='100vw' fill={true} src={item.backgroundImage} alt="Background Image" className='object-cover -z-10' />
-                                )
-                            }
 
-
-
-                        </div>
-
-                    )
-                })
-            )
+                        )
+                    })
+                )
             }
             <div className='absolute bottom-[20px] md:bottom-[50px] w-full overflow-auto pb-4'>
                 <div className='container justify-left flex gap-5 md:justify-center'>
@@ -63,7 +65,7 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL }) => {
                     }
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

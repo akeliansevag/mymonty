@@ -94,12 +94,12 @@ const transfers = () => {
         ],
         content: [
             {
-                title: 'Recurring',
-                description: 'Set up recurring payments and stay in control of your financial tasks and obligations. Establish a recurrent schedule for funds to be transferred automatically including starting and end dates and even days of recurrence.',
+                title: 'Seamless Recurring transfers',
+                description: 'Set up recurring transfers and stay in control of your financial tasks and obligations, funds will be transferred automatically including starting and end dates and even days of recurrence.',
             },
             {
-                title: 'Scheduled Transfers',
-                description: 'Set up recurring payments and stay in control of your financial tasks and obligations. Establish a recurrent schedule for funds to be transferred automatically including starting and end dates and even days of recurrence.',
+                title: 'Streamline Transfers',
+                description: 'Set up a schedule for your automated transactions and streamline financial tasks, offering convenience, saving time, and contributing to a more organized and stress-free financial life.',
             }
 
         ]
@@ -135,7 +135,7 @@ const transfers = () => {
                 </div>
             </Section>
             <div id="recurring">
-                <Carousel video={true} videoMP4URL='/falling-coins.mp4' videoWEBMURL='/falling-coins.webm' data={carouselDataTwo} />
+                <Carousel center={true} video={true} videoMP4URL='/falling-coins.mp4' videoWEBMURL='/falling-coins.webm' data={carouselDataTwo} />
             </div>
 
         </>
