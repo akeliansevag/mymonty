@@ -52,7 +52,7 @@ const accounts = () => {
                 description: 'Top up your wallet account using any Fresh USD bank Card, and see the balance updated instantly with no hidden fees, for free from your MyMonty card.',
                 button: {
                     text: 'Choose your card',
-                    url: '#'
+                    url: '/cards'
                 },
                 contentImage: '/personal/accounts-carousel-1-content.png',
                 backgroundImage: '/personal/accounts-carousel-1.jpg'
@@ -62,7 +62,7 @@ const accounts = () => {
                 description: 'Request money from any MyMonty user directly by selecting them from your contact list or via link or QR code.',
                 button: {
                     text: 'Choose your card',
-                    url: '#'
+                    url: '/cards'
                 },
                 contentImage: '/personal/accounts-carousel-2-content.png',
                 backgroundImage: '/personal/accounts-carousel-2.jpg'
@@ -72,7 +72,7 @@ const accounts = () => {
                 description: 'Top up your wallet accounts by depositing money at more than 1400 OMT locations across Lebanon for more convenience. Your money is reflected instantly in your wallet.',
                 button: {
                     text: 'Choose your card',
-                    url: '#'
+                    url: '/cards'
                 },
                 contentImage: '/personal/accounts-carousel-3-content.png',
                 backgroundImage: '/personal/accounts-carousel-3.jpg'
@@ -82,7 +82,7 @@ const accounts = () => {
                 description: 'Top up your wallet accounts by depositing money at any Fransabank or BLC branch or ATM across Lebanon. Your money is reflected instantly in your wallet.',
                 button: {
                     text: 'Choose your card',
-                    url: '#'
+                    url: '/cards'
                 },
                 contentImage: '/personal/accounts-carousel-4-content.png',
                 backgroundImage: '/personal/accounts-carousel-4.jpg'

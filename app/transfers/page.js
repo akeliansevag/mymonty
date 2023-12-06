@@ -54,7 +54,8 @@ const transfers = () => {
                 description: 'Send a payment request, specifying the amount and purpose to the recipient number or share your QR/Link on chatting platforms.',
                 button: {
                     text: 'Download app',
-                    url: '#'
+                    url: '#',
+                    modal: true,
                 },
                 contentImage: '/personal/send-money.webp',
                 backgroundImage: '/personal/send-money-bg.webp'
@@ -64,7 +65,8 @@ const transfers = () => {
                 description: 'Effortlessly receive instant funds through our streamlined digital platform, ensuring hassle-free transactions for seamless money management.',
                 button: {
                     text: 'Download app',
-                    url: '#'
+                    url: '#',
+                    modal: true,
                 },
                 contentImage: '/personal/receive-money.webp',
                 backgroundImage: '/personal/receive-money-bg.webp'
@@ -74,7 +76,8 @@ const transfers = () => {
                 description: 'Easily send money to friends, family, or associates by entering their mobile number, or by tapping on their transfer link or scanning their QR.',
                 button: {
                     text: 'Download app',
-                    url: '#'
+                    url: '#',
+                    modal: true
                 },
                 contentImage: '/personal/request-money.webp',
                 backgroundImage: '/personal/request-money-bg.webp'

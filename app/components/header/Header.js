@@ -6,11 +6,13 @@ import Nav from './Nav';
 import Link from 'next/link';
 import styles from './header.module.css';
 import MobileNav from './MobileNav';
+import { useAppContext } from '@/app/AppContext';
 
 const Header = () => {
     const [scrolling, setScrolling] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const [mobileMenuToggle, setMobileMenuToggle] = useState(false);
+    const { handleOpenModal } = useAppContext();
     useEffect(() => {
         // Function to handle scroll events
         const handleScroll = () => {
@@ -55,9 +57,9 @@ const Header = () => {
                         <Nav menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
                     </div>
                     <div className='hidden md:block'>
-                        <Link href='/who-we-are' className='mm-button whitespace-nowrap'>
+                        <button onClick={handleOpenModal} className='mm-button whitespace-nowrap'>
                             Download app
-                        </Link>
+                        </button>
                     </div>
 
                     <div className='md:hidden cursor-pointer' onClick={handleMobileMenuToggle}>

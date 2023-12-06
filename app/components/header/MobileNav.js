@@ -4,9 +4,12 @@ import MobileNavParents from './MobileNavParents';
 import MobileSubMenu from './MobileSubMenu';
 import { data } from '../navData';
 import Link from 'next/link';
+import { useAppContext } from '@/app/AppContext';
+
 
 const MobileNav = ({ open, handleMobileMenuToggle }) => {
     const [selectedParentIndex, setSelectedParentIndex] = useState(0);
+    const { handleOpenModal } = useAppContext();
     let navStyles = 'h-[calc(100dvh-var(--mobile-header-height))] z-[50] w-full fixed top-[var(--mobile-header-height)] bg-[#f7f7f7] overflow-scroll text-[1rem] transition-all';
     navStyles += ' ';
     navStyles += open ? 'left-0' : '-left-full';
@@ -29,9 +32,9 @@ const MobileNav = ({ open, handleMobileMenuToggle }) => {
                     })}
                 </div>
                 <div className='mb-[30px] mt-[15px]'>
-                    <Link onClick={handleMobileMenuToggle} href='/who-we-are' className='w-full top-full mm-button white whitespace-nowrap'>
+                    <button onClick={handleOpenModal} href='/who-we-are' className='w-full top-full mm-button white whitespace-nowrap'>
                         Download app
-                    </Link>
+                    </button>
                 </div>
 
             </div>

@@ -52,7 +52,8 @@ const cards = () => {
                 description: 'Easy, quick, and secure payments with just a single tap of your physical prepaid card at any contactless terminal.',
                 button: {
                     text: 'Download app',
-                    url: '#'
+                    url: '#',
+                    modal: true
                 },
                 contentImage: '/personal/cards-carousel-1-content.webp',
                 backgroundImage: '/personal/cards-carousel-1.webp'
@@ -62,7 +63,8 @@ const cards = () => {
                 description: 'Pay even safer with your in-app virtual card for an extra layer of security when shopping online.',
                 button: {
                     text: 'Download app',
-                    url: '#'
+                    url: '#',
+                    modal: true,
                 },
                 contentImage: '/personal/cards-carousel-3-content.webp',
                 backgroundImage: '/personal/cards-carousel-2.webp'
@@ -72,7 +74,8 @@ const cards = () => {
                 description: 'Open your camera and scan the QR code on the POS for fast payment.',
                 button: {
                     text: 'Download app',
-                    url: '#'
+                    url: '#',
+                    modal: true
                 },
                 contentImage: '/personal/cards-carousel-3-content.webp',
                 backgroundImage: '/personal/cards-carousel-3.webp'

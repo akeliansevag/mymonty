@@ -3,9 +3,11 @@ import React, { useState } from 'react';
 import TextBlock from './TextBlock';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useAppContext } from '../AppContext';
 
 const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
     const [selectedIndex, setSelectedIndex] = useState(0);
+    const { handleOpenModal } = useAppContext();
     const handleSelect = (index) => {
         setSelectedIndex(index);
     };
@@ -32,8 +34,11 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                             <div key={index} className={`h-full w-full transition-all ${contentClasses}`}>
                                 <div className='container text-center relative'>
                                     <TextBlock center={true} textColor="white" title={item.title} description={item.description} button={false} />
-                                    {item.button && (
+                                    {item.button && !item?.button?.modal && (
                                         <Link className='mm-button white mt-4' href={item.button?.url}>{item.button.text}</Link>
+                                    )}
+                                    {item.button && item?.button?.modal && (
+                                        <button onClick={handleOpenModal} className='mm-button white mt-4' href={item.button?.url}>{item.button.text}</button>
                                     )}
                                     <img className='my-10 mx-auto max-w-[250px] md:max-w-[350px]' src={item.contentImage} />
                                 </div>

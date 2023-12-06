@@ -1,8 +1,12 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { useAppContext } from '../AppContext';
+
 
 const Banner = ({ data, theme }) => {
+    const { handleOpenModal } = useAppContext();
     return (
         <section className={`min-h-[100vh] w-full relative ${theme == 'dark' ? 'bg-black' : 'bg-gray-100'} ${data.image.layout !== 'full' || !data.image.inGrid ? 'max-md:pb-14' : ''}`}>
             {
@@ -33,7 +37,7 @@ const Banner = ({ data, theme }) => {
                                             data.cta.type === 'link' ? (
                                                 <Link className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`} href={data.cta.link.url}>{data.cta.link.name}</Link>
                                             ) : (
-                                                <button className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                <button onClick={handleOpenModal} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                             )
                                         }
                                     </div>

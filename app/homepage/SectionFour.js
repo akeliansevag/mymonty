@@ -15,7 +15,7 @@ const SectionFour = () => {
                         <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Cross-border transfers with MyMonty</h2>
                         <p className='leading-8 mt-4'>Connect globally with your loved ones through MyMonty's expat community.<br />
                             Enjoy free transfers to 160+ countries. Instantly send and receive money.</p>
-                        <Link href="#" className='mm-button white mt-6 mx-auto mb-10'>Try it out</Link>
+                        <Link href="/transfers" className='mm-button white mt-6 mx-auto mb-10'>Try it out</Link>
                     </div>
 
                 </div>

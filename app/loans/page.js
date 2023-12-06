@@ -55,7 +55,8 @@ const loans = () => {
                 description: 'Ready to hit the road in your new car? Apply for your car loan with MyMonty today and experience a hassle-free journey towards owning your dream vehicle!',
                 button: {
                     text: 'Apply now',
-                    url: '/contact-us'
+                    url: '#',
+                    modal: true
                 },
                 contentImage: '/personal/loans-carousel-1-content.webp',
                 backgroundImage: '/personal/loans-carousel-1-image.webp'
@@ -65,7 +66,8 @@ const loans = () => {
                 description: 'MyMonty\'s house loans are crafted to turn your dream of owning a home into a reality, providing the financial foundation for your perfect abode.',
                 button: {
                     text: 'Apply now',
-                    url: '/contact-us'
+                    url: '#',
+                    modal: true
                 },
                 contentImage: '/personal/loans-carousel-2-content.webp',
                 backgroundImage: '/personal/loans-carousel-2.webp'
@@ -75,7 +77,8 @@ const loans = () => {
                 description: 'MyMonty\'s house loans are crafted to turn your dream of owning a home into a reality, providing the financial foundation for your perfect abode.',
                 button: {
                     text: 'Apply now',
-                    url: '/contact-us'
+                    url: '#',
+                    modal: true
                 },
                 contentImage: '/personal/loans-carousel-3-content.webp',
                 backgroundImage: '/personal/loans-carousel-3.webp'
@@ -85,7 +88,8 @@ const loans = () => {
                 description: 'MyMonty\'s house loans are crafted to turn your dream of owning a home into a reality, providing the financial foundation for your perfect abode.',
                 button: {
                     text: 'Apply now',
-                    url: '/contact-us'
+                    url: '#',
+                    modal: true
                 },
                 contentImage: '/personal/loans-carousel-4-content.webp',
                 backgroundImage: '/personal/loans-carousel-4-image.webp'
