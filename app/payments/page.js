@@ -2,18 +2,18 @@ import Banner from '@/app/components/Banner';
 import { websiteName } from '@/app/config';
 
 import React from 'react';
-import banner from '@/public/personal/payments-banner.png';
+import banner from '@/public/personal/payments-banner.webp';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
-import sectionTwo from '@/public/personal/pay-qr.png';
-import sectionThree from '@/public/personal/instant-payment.png';
-import sectionFour from '@/public/personal/payments-swiper-1.jpg';
+import sectionTwo from '@/public/personal/pay-qr.webp';
+import sectionThree from '@/public/personal/instant-payment.webp';
+import sectionFour from '@/public/personal/payments-swiper-1.webp';
 import billPayment from '@/public/personal/bill-payment.png';
 import onlineVouchers from '@/public/personal/online-vouchers.png';
 import tuitionPayment from '@/public/personal/tuition-payment.png';
 import weddingList from '@/public/personal/wedding-list.png';
-import paymentTravel from '@/public/personal/payments-travel.jpg';
-import travelImage from '@/public/personal/esim-img.png';
+import paymentTravel from '@/public/personal/payments-travel.webp';
+import travelImage from '@/public/personal/esim-img.webp';
 import Image from 'next/image';
 
 export const metadata = {
@@ -49,10 +49,10 @@ const payments = () => {
                 <div className='container'>
                     <div id="qr-and-link" className='flex flex-col lg:flex-row gap-10 place-items-center'>
                         <TextBlock title="Pay via QR/Link" description="No need to pay in cash banknotes anymore, just tap on the payment link or scan the payment QR and get your payment done in seconds." button={true} />
-                        <Image src={sectionTwo} alt='Section Image' />
+                        <Image className='md:w-1/2' src={sectionTwo} alt='Section Image' />
                     </div>
                     <div id="notifications-and-alerts" className='mt-40 flex flex-col-reverse lg:flex-row gap-10 place-items-center'>
-                        <Image src={sectionThree} alt='Section Image' />
+                        <Image className='md:w-1/3' src={sectionThree} alt='Section Image' />
                         <TextBlock title="Instant Payment Notifications" description="With instant payment notifications, you can confirm that your payment has gone through and the amount you were charged." button={true} />
                     </div>
                 </div>

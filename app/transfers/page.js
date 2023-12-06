@@ -2,12 +2,12 @@ import Banner from '@/app/components/Banner';
 import { websiteName } from '@/app/config';
 
 import React from 'react';
-import banner from '@/public/personal/transfers-banner.png';
+import banner from '@/public/personal/transfers-banner.webp';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
-import sectionTwo from '@/public/personal/transfers-section-two.png';
-import sectionFour from '@/public/personal/top-up.png';
-import sectionFive from '@/public/personal/top-up-bank.png';
+import sectionTwo from '@/public/personal/transfers-section-two.webp';
+import sectionFour from '@/public/personal/top-up.webp';
+import sectionFive from '@/public/personal/top-up-bank.webp';
 import Image from 'next/image';
 import Carousel from '../components/Carousel';
 
@@ -56,8 +56,8 @@ const transfers = () => {
                     text: 'Download app',
                     url: '#'
                 },
-                contentImage: '/personal/send-money.png',
-                backgroundImage: '/personal/send-money-bg.jpg'
+                contentImage: '/personal/send-money.webp',
+                backgroundImage: '/personal/send-money-bg.webp'
             },
             {
                 title: 'Receive money',
@@ -66,8 +66,8 @@ const transfers = () => {
                     text: 'Download app',
                     url: '#'
                 },
-                contentImage: '/personal/receive-money.png',
-                backgroundImage: '/personal/receive-money-bg.jpg'
+                contentImage: '/personal/receive-money.webp',
+                backgroundImage: '/personal/receive-money-bg.webp'
             },
             {
                 title: 'Request money',
@@ -76,8 +76,8 @@ const transfers = () => {
                     text: 'Download app',
                     url: '#'
                 },
-                contentImage: '/personal/request-money.png',
-                backgroundImage: '/personal/request-money-bg.jpg'
+                contentImage: '/personal/request-money.webp',
+                backgroundImage: '/personal/request-money-bg.webp'
             },
 
         ]
@@ -113,7 +113,7 @@ const transfers = () => {
             <div id="p2p-remittance">
                 <section className='pb-0 pt-14 lg:pt-24'>
                     <div className='container flex-col-reverse flex lg:flex-row gap-10 items-center'>
-                        <Image src={sectionTwo} alt='Image' />
+                        <Image className='md:w-1/2' src={sectionTwo} alt='Image' />
                         <TextBlock title="Borderless transfers" description="Indulge the seamless and direct transfer of funds between individuals through MyMonty. Initiate transactions using your mobile devices, eliminating the need for traditional intermediaries like banks even for cross-border transfers." button={true} />
                     </div>
                 </section>
@@ -126,11 +126,11 @@ const transfers = () => {
                 <div className='container'>
                     <div id="top-up" className='flex flex-col lg:flex-row items-center gap-10'>
                         <TextBlock title="Top up or cash out with our partners" description="Top up your wallet account at any OMT agent, the funds will be reflected instantly in your wallet account. You can cash out yourself or send a code for a beneficiary to cash out on your behalf." button={true} />
-                        <Image src={sectionFour} alt='Image' />
+                        <Image className='md:w-1/3' src={sectionFour} alt='Image' />
                     </div>
 
                     <div id="cash-out" className='mt-40 flex flex-col-reverse lg:flex-row items-center gap-10'>
-                        <Image src={sectionFive} alt='Image' />
+                        <Image className='md:w-1/3' src={sectionFive} alt='Image' />
                         <TextBlock title="Top up or cash out by ATM/bank network" description="Top up your wallet or cash out at our partner bank ATM or bank counter." button={true} />
                     </div>
 

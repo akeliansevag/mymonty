@@ -2,14 +2,14 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
 import Image from 'next/image';
-import banner from '@/public/personal/loans-banner.png';
+import banner from '@/public/personal/loans-banner.webp';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
-import free from '@/public/personal/free.png';
-import installment from '@/public/personal/installment.png';
-import twopointfive from '@/public/personal/2.5.png';
+import free from '@/public/personal/free.webp';
+import installment from '@/public/personal/installment.webp';
+import twopointfive from '@/public/personal/2.5.webp';
 
-import bnpl from '@/public/personal/bnpl.png';
+import bnpl from '@/public/personal/bnpl.webp';
 import Carousel from '@/app/components/Carousel';
 
 export const metadata = {
@@ -57,8 +57,8 @@ const loans = () => {
                     text: 'Apply now',
                     url: '/contact-us'
                 },
-                contentImage: '/personal/loans-carousel-1-image.png',
-                backgroundImage: '/personal/loans-carousel-1.jpg'
+                contentImage: '/personal/loans-carousel-1-content.webp',
+                backgroundImage: '/personal/loans-carousel-1-image.webp'
             },
             {
                 title: 'Step into Your Dream house',
@@ -67,8 +67,8 @@ const loans = () => {
                     text: 'Apply now',
                     url: '/contact-us'
                 },
-                contentImage: '/personal/loans-carousel-2-image.png',
-                backgroundImage: '/personal/loans-carousel-2.jpg'
+                contentImage: '/personal/loans-carousel-2-content.webp',
+                backgroundImage: '/personal/loans-carousel-2.webp'
             },
             {
                 title: 'Step into Your Dream house',
@@ -77,8 +77,8 @@ const loans = () => {
                     text: 'Apply now',
                     url: '/contact-us'
                 },
-                contentImage: '/personal/loans-carousel-3-image.png',
-                backgroundImage: '/personal/loans-carousel-3.jpg'
+                contentImage: '/personal/loans-carousel-3-content.webp',
+                backgroundImage: '/personal/loans-carousel-3.webp'
             },
             {
                 title: 'Step into Your Dream house',
@@ -87,8 +87,8 @@ const loans = () => {
                     text: 'Apply now',
                     url: '/contact-us'
                 },
-                contentImage: '/personal/loans-carousel-4-image.png',
-                backgroundImage: '/personal/loans-carousel-4.jpg'
+                contentImage: '/personal/loans-carousel-4-content.webp',
+                backgroundImage: '/personal/loans-carousel-4-image.webp'
             }
         ]
     };
@@ -97,12 +97,19 @@ const loans = () => {
             <Banner data={data} />
             <div id="advance-on-salary">
                 <Section>
-                    <div className='container text-center'>
+                    <div className='container overflow-hidden text-center'>
                         <TextBlock center={true} title="Advance on Salary" description="Have you ever faced an urgent payment? Or missed a black Friday for that “insufficient funds in your account” message? With MyMonty early Salary, you will have access to a portion of your next salary in advance to spend and return at your convenience with 3 flexible options." button={true} />
                         <div className='flex flex-col md:flex-row gap-10 items-center justify-center mt-10'>
-                            <Image alt="Wallets" src={free} />
-                            <Image alt="Wallets" src={installment} />
-                            <Image alt="Wallets" src={twopointfive} />
+                            <div>
+                                <Image className='' alt="Free" src={free} />
+                            </div>
+                            <div>
+                                <Image className='' alt="Installment" src={installment} />
+                            </div>
+                            <div>
+                                <Image className='' alt="Two Point Five" src={twopointfive} />
+                            </div>
+
                         </div>
 
                     </div>

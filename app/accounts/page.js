@@ -2,11 +2,11 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
 import Image from 'next/image';
-import banner from '@/public/personal/accounts-banner.png';
+import banner from '@/public/personal/accounts-banner.webp';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
 import sectionTwoImage from '@/public/personal/accounts-cards.webp';
-import coins from '@/public/personal/coins.png';
+import coins from '@/public/personal/coins.webp';
 import Carousel from '@/app/components/Carousel';
 
 export const metadata = {
@@ -104,7 +104,7 @@ const accounts = () => {
             <Section>
                 <div className='container flex flex-col items-center lg:flex-row gap-10'>
                     <TextBlock title='Welcome to The New Era of Effortless Payments' description="Experience hassle-free and quick money transactions that are not only efficient, but also enjoyable and highly adaptable." button={true} />
-                    <Image src={coins} alt="Coins" />
+                    <Image className='md:w-1/3' src={coins} alt="Coins" />
                 </div>
 
             </Section>

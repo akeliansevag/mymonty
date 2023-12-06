@@ -7,8 +7,8 @@ import SectionFour from './homepage/SectionFour';
 import SectionFive from './homepage/SectionFive';
 import SectionSix from './homepage/SectionSix';
 import SectionSeven from './homepage/SectionSeven';
-import girl from '@/public/personal/girl.png';
-import girlMobile from '@/public/personal/girl-mobile.png';
+import girl from '@/public/girl.webp';
+import girlMobile from '@/public/personal/girl-mobile.webp';
 import Modal from './components/Modal';
 
 const data = {

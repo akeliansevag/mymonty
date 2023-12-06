@@ -4,11 +4,11 @@ import styles from './page.module.css';
 import Banner from '../components/Banner';
 import Link from 'next/link';
 import Image from 'next/image';
-import business from '@/public/business/business.png';
-import salary from '@/public/business/salary.png';
-import employeeBenefits from '@/public/business/employee-benefits.png';
-import earlySalary from '@/public/business/early-salary.png';
-import earlySalary2 from '@/public/business/early-salary2.png';
+import business from '@/public/business/business.webp';
+import salary from '@/public/business/salary.webp';
+import employeeBenefits from '@/public/business/employee-benefits.webp';
+import earlySalary from '@/public/business/early-salary.webp';
+import earlySalary2 from '@/public/business/early-salary2.webp';
 
 export const metadata = {
   title: websiteName + 'Business',

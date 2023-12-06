@@ -5,18 +5,18 @@ import styles from './page.module.css';
 import Banner from '../components/Banner';
 import Link from 'next/link';
 import Image from 'next/image';
-import whyMyMonty from '@/public/company/why-mymonty.png';
-import highEnd from '@/public/company/high-end.png';
-import oneStop from '@/public/company/one-stop-shop.png';
-import friendlySupport from '@/public/company/friendly-support.png';
-import noHiddenFees from '@/public/company/no-hidden-fees.png';
+import whyMyMonty from '@/public/personal/why-mymonty.webp';
+import highEnd from '@/public/personal/high-end.webp';
+import oneStop from '@/public/personal/one-stop-shop.webp';
+import friendlySupport from '@/public/personal/friendly-support.webp';
+import noHiddenFees from '@/public/personal/no-hidden-fees.webp';
 
 const data = {
   title: 'Lebanese will be able to access all  services',
   subtitle: 'Why MyMonty',
   desc: 'Every Lebanese will be able to have access to financial services',
-  image:{
-    inGrid: true, 
+  image: {
+    inGrid: true,
     layout: 'half',
     url: whyMyMonty,
   },
@@ -104,15 +104,15 @@ const WhyMyMonty = () => {
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-20'>
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
-              <Image className="w-full" src={highEnd} alt='High-End Security' placeholder='blur'/>
+              <Image className="w-full" src={highEnd} alt='High-End Security' placeholder='blur' />
               <div className='px-10 py-14'>
-                  <h3 className='text-4xl font-bold'>High-End Security</h3>
-                  <p className='leading-8 mt-4'>Rest assured, your security is our top priority. Our platform is fortified with advanced, state-of-the-art technology designed to offer robust protection against fraud and hacking attempts, ensuring your peace of mind.</p>
+                <h3 className='text-4xl font-bold'>High-End Security</h3>
+                <p className='leading-8 mt-4'>Rest assured, your security is our top priority. Our platform is fortified with advanced, state-of-the-art technology designed to offer robust protection against fraud and hacking attempts, ensuring your peace of mind.</p>
               </div>
             </div>
 
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
-              <Image className="w-full" src={oneStop} alt='High-End Security' placeholder='blur'/>
+              <Image className="w-full" src={oneStop} alt='High-End Security' placeholder='blur' />
               <div className='px-10 py-14'>
                 <h3 className='text-4xl font-bold'>One stop shop</h3>
                 <p className='leading-8 mt-4'>Experience the convenience of comprehensive financial services - from seamless payments and transfers, international remittances, and flexible lending options - all through a single application.</p>
@@ -120,7 +120,7 @@ const WhyMyMonty = () => {
             </div>
 
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
-              <Image className="w-full" src={friendlySupport} alt='High-End Security' placeholder='blur'/>
+              <Image className="w-full" src={friendlySupport} alt='High-End Security' placeholder='blur' />
               <div className='px-10 py-14'>
                 <h3 className='text-4xl font-bold'>Friendly Support</h3>
                 <p className='leading-8 mt-4'>Despite being a digital-first application, we ensure round-the-clock support, with our dedicated team available 24/7 to assist you.</p>
@@ -128,7 +128,7 @@ const WhyMyMonty = () => {
             </div>
 
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
-              <Image className="w-full" src={noHiddenFees} alt='High-End Security' placeholder='blur'/>
+              <Image className="w-full" src={noHiddenFees} alt='High-End Security' placeholder='blur' />
               <div className='px-10 py-14'>
                 <h3 className='text-4xl font-bold'>No Hidden Fees</h3>
                 <p className='leading-8 mt-4'>We guarantee full transparency with our fees. You will see all transaction costs clearly outlined beforehand, ensuring there are no hidden charges.</p>

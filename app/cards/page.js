@@ -2,15 +2,15 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
 import Image from 'next/image';
-import banner from '@/public/personal/cards-banner-2.png';
+import banner from '@/public/personal/cards-banner-2.webp';
 import Section from '@/app/components/Section';
-import sectionTwoImage from '@/public/personal/multicurrency-image.png';
+import sectionTwoImage from '@/public/personal/multicurrency-image.webp';
 import TextBlock from '@/app/components/TextBlock';
 import Carousel from '@/app/components/Carousel';
-import sectionFourImage from '@/public/personal/lock-img.png';
-import sectionFiveImage from '@/public/personal/cards-section-5-image.png';
-import cardHand from '@/public/personal/card-hand.png';
-import bgImage from '@/public/personal/cards-bg-image.jpg';
+import sectionFourImage from '@/public/personal/lock-img.webp';
+import sectionFiveImage from '@/public/personal/cards-section-5-image.webp';
+import cardHand from '@/public/personal/card-hand.webp';
+import bgImage from '@/public/personal/cards-bg-image.webp';
 
 export const metadata = {
     title: websiteName + 'Cards',
@@ -54,8 +54,8 @@ const cards = () => {
                     text: 'Download app',
                     url: '#'
                 },
-                contentImage: '/personal/cards-carousel-1-content.png',
-                backgroundImage: '/personal/cards-carousel-1.jpg'
+                contentImage: '/personal/cards-carousel-1-content.webp',
+                backgroundImage: '/personal/cards-carousel-1.webp'
             },
             {
                 title: 'Create a Virtual Card',
@@ -64,8 +64,8 @@ const cards = () => {
                     text: 'Download app',
                     url: '#'
                 },
-                contentImage: '/personal/virtual-card.png',
-                backgroundImage: '/personal/cards-carousel-2.jpg'
+                contentImage: '/personal/cards-carousel-3-content.webp',
+                backgroundImage: '/personal/cards-carousel-2.webp'
             },
             {
                 title: 'Pay with Your Phone',
@@ -74,8 +74,8 @@ const cards = () => {
                     text: 'Download app',
                     url: '#'
                 },
-                contentImage: '/personal/cards-carousel-3-content.png',
-                backgroundImage: '/personal/cards-carousel-3.jpg'
+                contentImage: '/personal/cards-carousel-3-content.webp',
+                backgroundImage: '/personal/cards-carousel-3.webp'
             }
         ]
     };
@@ -98,7 +98,7 @@ const cards = () => {
                 <Section>
                     <div className='container flex flex-col md:flex-row gap-10 items-center'>
                         <TextBlock title="Lock and Unlock on the Go" description="Lost your card? Doubting a fraudulent transaction? Keep your prepaid card safe and your money protected by instantly locking your card in-app." button={true} />
-                        <Image src={sectionFourImage} alt='People' />
+                        <Image className='md:w-1/2' src={sectionFourImage} alt='People' />
                     </div>
                 </Section>
             </div>
@@ -112,9 +112,9 @@ const cards = () => {
             <div id="card-withdrawal">
                 <Section bgImage={bgImage}>
                     <div className='container text-center'>
-                        <TextBlock title="Withdraw Whenever, Wherever" description="Get cash when you need it. Use your prepaid Mastercard to withdraw from ATMs anywhere in the world with no hidden fees." button={true} />
+                        <TextBlock center={true} title="Withdraw Whenever, Wherever" description="Get cash when you need it. Use your prepaid Mastercard to withdraw from ATMs anywhere in the world with no hidden fees." button={true} />
                     </div>
-                    <Image className='mt-20' src={cardHand} alt='Card Hand' />
+                    <Image className='mt-20 md:w-1/2' src={cardHand} alt='Card Hand' />
                 </Section>
             </div>
 
