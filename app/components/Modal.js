@@ -194,15 +194,23 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                 <div className="flex w-full">
                                   <div className="calling_code">
                                     <div className="flex h-full justify-between items-center">
-                                      <div id="calling_code" onClick={(e) => { setOpenCountry(!openCountry) }} className="select bg-gray-100 border-gray-300 border-2 border-e-0 p-2.5 rounded-xl rounded-e-none flex justify-between items-center text-gray-100">
+                                      <div id="calling_code" onClick={(e) => { setOpenCountry(!openCountry) }} className="select bg-gray-100 border-gray-300 border-2 border-e-0 p-2.5 rounded-xl rounded-e-none flex justify-between items-center text-gray-400 text-base">
                                         {selectedCountry ? (
-                                          <div>
-                                            {selectedCountry.flag} {selectedCountry.code}
-                                          </div>
+                                           <>
+                                            <div>
+                                              {selectedCountry.flag} 
+                                            </div>
+                                            <div>
+                                              +{selectedCountry.code}
+                                            </div>
+                                          </>
                                         ) : (
-                                          <div>
-                                            🇱🇧 +961
-                                          </div>
+                                          <>
+                                            <div>
+                                              🇱🇧 
+                                            </div>
+                                            <div>+961</div>
+                                          </>
                                         )}
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M6 9L12 15L18 9" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

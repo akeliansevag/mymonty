@@ -89,7 +89,7 @@ button, a, input[type="submit"], header li{
     position: relative;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 60px;
+    width: 120px;
 }
 
 .dropdown .search-wrapper {
