@@ -127,6 +127,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
           }, 2000);
           console.log(response);
         } else {
+          console.log(response);
           setSubmissionStatus('error');
           if (data.code == 23000) {
             setErrors({ mobile: "The mobile you entered is already registered." } || {});
