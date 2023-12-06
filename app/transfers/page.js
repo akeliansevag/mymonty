@@ -86,7 +86,7 @@ const transfers = () => {
     const carouselDataTwo = {
         filters: [
             {
-                title: 'Recurring'
+                title: 'Recurring Transfers'
             },
             {
                 title: 'Scheduled Transfers'
