@@ -15,6 +15,25 @@ const Contact = () => {
   const [selectedCountryCode, setSelectedCountryCode] = useState('');
   const dropdownRef = useRef(null);
 
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      try {
+        const response = await fetch('https://staging.mymonty.com/api/user-ip');
+        if (response.ok) {
+          const data = await response.json();
+          console.log(data)
+          setUserInfo(data);
+        } else {
+          console.error('Error fetching user information:', response.status);
+        }
+      } catch (error) {
+        console.error('Error fetching user information:', error);
+      }
+    };
+
+    fetchUserInfo();
+  }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -155,25 +174,6 @@ const Contact = () => {
       setSubmissionStatus(null);
     }
   };
-
-  useEffect(() => {
-    const fetchUserInfo = async () => {
-      try {
-        const response = await fetch('https://staging.mymonty.com/api/user-ip');
-        if (response.ok) {
-          const data = await response.json();
-          console.log(data)
-          setUserInfo(data);
-        } else {
-          console.error('Error fetching user information:', response.status);
-        }
-      } catch (error) {
-        console.error('Error fetching user information:', error);
-      }
-    };
-
-    fetchUserInfo();
-  }, []);
 
   return (
     <div>

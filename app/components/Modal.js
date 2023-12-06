@@ -51,6 +51,24 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
     };
   }, [dropdownRef]);
 
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      try {
+        const response = await fetch('https://staging.mymonty.com/api/user-ip');
+        if (response.ok) {
+          const data = await response.json();
+          console.log(data)
+          setUserInfo(data);
+        } else {
+          console.error('Error fetching user information:', response.status);
+        }
+      } catch (error) {
+        console.error('Error fetching user information:', error);
+      }
+    };
+
+    fetchUserInfo();
+  }, []);
 
   const [formData, setFormData] = useState({
     code: userInfo.calling_code,
@@ -147,24 +165,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
     }
   };
 
-  useEffect(() => {
-    const fetchUserInfo = async () => {
-      try {
-        const response = await fetch('https://staging.mymonty.com/api/user-ip');
-        if (response.ok) {
-          const data = await response.json();
-          console.log(data)
-          setUserInfo(data);
-        } else {
-          console.error('Error fetching user information:', response.status);
-        }
-      } catch (error) {
-        console.error('Error fetching user information:', error);
-      }
-    };
-
-    fetchUserInfo();
-  }, []);
+  
 
   return (
     <Transition.Root show={isOpen} as={Fragment}>
