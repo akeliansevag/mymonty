@@ -124,10 +124,9 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
               code: '',
               mobile: '',
             });
+            setErrors({});
           }, 2000);
-          console.log(response);
         } else {
-          console.log(response);
           setSubmissionStatus('error');
           if (data.code == 23000) {
             setErrors({ mobile: "The mobile you entered is already registered." } || {});
@@ -137,7 +136,6 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
           }
         }
       } catch (error) {
-        console.error('Error submitting form:', error);
         setSubmissionStatus('error');
         setErrors({ message: 'An error occurred while submitting the form.' });
       } finally {
