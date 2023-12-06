@@ -22,7 +22,6 @@ export const metadata = {
 };
 
 
-
 const payments = () => {
     const data = {
         title: 'Simple and secure payments',

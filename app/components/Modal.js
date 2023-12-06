@@ -125,6 +125,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
               mobile: '',
             });
           }, 2000);
+          console.log(response);
         } else {
           setSubmissionStatus('error');
           if (data.code == 23000) {

@@ -3,7 +3,7 @@ import React from 'react';
 
 const Section = ({ children, bgImage, bgDark }) => {
     return (
-        <section className={`py-14 lg:py-28 relative ${bgDark ? 'bg-black' : ''}`}>
+        <section className={`py-20 lg:py-40 relative ${bgDark ? 'bg-black' : ''}`}>
             {bgImage && (
                 <Image src={bgImage} fill={true} priority placeholder='blur' sizes='100vw' className='object-cover -z-10' />
             )}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const SectionFive = () => {
     return (
-        <section className='pt-14 pb-14 lg:pt-28 lg:pb-20 bg-black text-white'>
+        <section className='pt-14 pb-14 lg:pt-40 lg:pb-40 bg-black text-white'>
             <div className='container'>
                 <div className='flex flex-col-reverse gap-10 md:flex-row md:items-center md:gap-20'>
                     <div className='flex-1'>
