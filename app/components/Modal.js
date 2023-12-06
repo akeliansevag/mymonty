@@ -197,9 +197,9 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                     <div className="flex h-full justify-between items-center">
                                       <div id="calling_code" onClick={(e) => { setOpenCountry(!openCountry) }} className="select bg-gray-100 border-gray-300 border-2 border-e-0 p-2.5 rounded-xl rounded-e-none flex justify-between items-center text-gray-400 text-base">
                                         {selectedCountry ? (
-                                           <>
+                                          <>
                                             <div>
-                                              {selectedCountry.flag} 
+                                              {selectedCountry.flag}
                                             </div>
                                             <div>
                                               +{selectedCountry.code}
@@ -208,7 +208,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                         ) : (
                                           <>
                                             <div>
-                                              🇱🇧 
+                                              🇱🇧
                                             </div>
                                             <div>+961</div>
                                           </>
