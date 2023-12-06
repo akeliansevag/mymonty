@@ -121,10 +121,11 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
             handleCloseModal();
 
             setFormData({
-              code: '',
+              code: '961',
               mobile: '',
             });
             setErrors({});
+            setSubmissionStatus(null); 
           }, 2000);
         } else {
           setSubmissionStatus('error');
@@ -275,7 +276,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
 
                             <div className='flex flex-col justify-center md:flex-row gap-4 md:gap-10'>
                               <div className='flex flex-col gap-1'>
-                                <input type='submit' className='cursor-pointer mm-button !px-20' value='Submit' disabled={loading} />
+                                <input type='submit' className='cursor-pointer mm-button !px-20 mm-button blue' value='Submit' disabled={loading} />
                               </div>
                             </div>
 
