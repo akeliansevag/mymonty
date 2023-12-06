@@ -195,23 +195,23 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                   <div className="calling_code">
                                     <div className="flex h-full justify-between items-center">
                                       <div id="calling_code" onClick={(e) => { setOpenCountry(!openCountry) }} className="select bg-gray-100 border-gray-300 border-2 border-e-0 p-2.5 rounded-xl rounded-e-none flex justify-between items-center text-gray-100">
-                                        {selectedCountry ? (
+                                        {/* {selectedCountry ? (
                                           <>
                                             {selectedCountry.flag}
                                           </>
                                         ) : (
-                                          <>
+                                          <> */}
                                             🇱🇧
-                                          </>
+                                          {/* </>
                                         )}
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M6 9L12 15L18 9" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
+                                        </svg> */}
                                       </div>
                                     </div>
                                   </div>
 
-                                  <div id="calling_code-drop" className={`dropdown px-1 ${openCountry ? 'visible' : 'hidden'}`} ref={dropdownRef}>
+                                  {/* <div id="calling_code-drop" className={`dropdown px-1 ${openCountry ? 'visible' : 'hidden'}`} ref={dropdownRef}>
                                     <div className="search-wrapper !sticky top-0 left-0 flex justify-between items-center">
                                       <input type="text" id="search-country" placeholder="Search" className="search-country outline-0 w-full px-3.5 py-2.5 bg-gray-100 border-0 text-sm" value={searchInput} onChange={handleSearchChange} />
                                       {searchInput && (
@@ -244,7 +244,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                       </svg>
                                       <p className="mt-1 fs-md">No items</p>
                                     </div>
-                                  </div>
+                                  </div> */}
 
                                   <input type="hidden" name="code" value={selectedCountryCode} className="onboarding-code" />
                                   <input
@@ -253,7 +253,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                     name="mobile"
                                     value={formData.mobile}
                                     onChange={handleChange}
-                                    placeholder="71102066"
+                                    placeholder="XXXXXXXX"
                                     className={`onboarding-mobile outline-0 w-full bg-gray-100 border-gray-300 border-2 border-s-0 pl-1 pr-3.5 py-2.5 rounded-xl rounded-s-none text-sm ${errors.mobile ? 'border-s-2 border-red-500' : ''}`} />
                                 </div>
                                 <span className='text-red-500 text-base'>{errors.mobile}</span>
