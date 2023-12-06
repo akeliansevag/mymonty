@@ -2,7 +2,7 @@ import React from "react";
 import { websiteName } from '@/app/config';
 import Banner from '../components/Banner';
 import Image from 'next/image';
-import personal1 from '@/public/personal/personal-loan1.png';
+import personal1 from '@/public/personal-loan-banner.webp';
 import personal2 from '@/public/personal/personal-loan2.webp';
 import personal3 from '@/public/personal/personal-loan3.webp';
 import LoanSlider from "../components/LoanSlider";
@@ -18,7 +18,7 @@ const data = {
   subtitle: 'Personal Loan',
   desc: 'Apply for your personal loan with MyMonty today and embark on a journey to seize every moment! At MyMonty, we\'re committed to empowering your dreams.',
   image: {
-    inGrid: true,
+    inGrid: false,
     layout: 'half',
     url: personal1,
   },

@@ -2,7 +2,7 @@ import React from "react";
 import { websiteName } from '@/app/config';
 import Banner from '../components/Banner';
 import Image from 'next/image';
-import plasticSurgery1 from '@/public/personal/plastic-surgery-loan1.png';
+import plasticSurgery1 from '@/public/plastic-surgery-loan-banner.webp';
 import plasticSurgery2 from '@/public/personal/plastic-surgery-loan2.webp';
 import plasticSurgery3 from '@/public/personal/plastic-surgery-loan3.webp';
 import LoanSlider from "../components/LoanSlider";

@@ -96,12 +96,10 @@ const transfers = () => {
             {
                 title: 'Recurring',
                 description: 'Set up recurring payments and stay in control of your financial tasks and obligations. Establish a recurrent schedule for funds to be transferred automatically including starting and end dates and even days of recurrence.',
-                backgroundImage: '/personal/recurring.jpg'
             },
             {
                 title: 'Scheduled Transfers',
                 description: 'Set up recurring payments and stay in control of your financial tasks and obligations. Establish a recurrent schedule for funds to be transferred automatically including starting and end dates and even days of recurrence.',
-                backgroundImage: '/personal/recurring.jpg'
             }
 
         ]
@@ -137,7 +135,7 @@ const transfers = () => {
                 </div>
             </Section>
             <div id="recurring">
-                <Carousel data={carouselDataTwo} />
+                <Carousel video={true} videoMP4URL='/falling-coins.mp4' videoWEBMURL='/falling-coins.webm' data={carouselDataTwo} />
             </div>
 
         </>

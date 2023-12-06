@@ -2,7 +2,7 @@ import React from "react";
 import { websiteName } from '@/app/config';
 import Banner from '../components/Banner';
 import Image from 'next/image';
-import house1 from '@/public/personal/house-loan1.png';
+import house1 from '@/public/house-loan-banner.webp';
 import house2 from '@/public/personal/house-loan2.webp';
 import house3 from '@/public/personal/house-loan3.webp';
 

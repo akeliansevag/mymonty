@@ -2,7 +2,7 @@ import React from "react";
 import { websiteName } from '@/app/config';
 import Banner from '../components/Banner';
 import Image from 'next/image';
-import travel1 from '@/public/personal/travel-loan1.png';
+import travel1 from '@/public/travel-loan-banner.webp';
 import travel2 from '@/public/personal/travel-loan2.webp';
 import travel3 from '@/public/personal/travel-loan3.webp';
 import LoanSlider from "../components/LoanSlider";
