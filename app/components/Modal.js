@@ -53,6 +53,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
 
 
   const [formData, setFormData] = useState({
+    country: '',
     code: '',
     mobile: '',
   });
@@ -105,7 +106,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
       try {
         setLoading(true);
 
-        const response = await fetch('https://staging.mymonty.com/api/early-access', {
+        const response = await fetch('http://127.0.0.1:8000/api/early-access', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -121,6 +122,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
             handleCloseModal();
 
             setFormData({
+              country: userInfo.country_name,
               code: userInfo.calling_code,
               mobile: '',
             });
