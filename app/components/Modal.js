@@ -29,6 +29,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
     setFormData((prevData) => ({
       ...prevData,
       code: country.code,
+      country_id: country.id, 
     }));
   };
 
@@ -53,7 +54,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
 
 
   const [formData, setFormData] = useState({
-    country: '',
+    country_id: '',
     code: '',
     mobile: '',
   });
@@ -122,7 +123,6 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
             handleCloseModal();
 
             setFormData({
-              country: userInfo.country_name,
               code: userInfo.calling_code,
               mobile: '',
             });
@@ -158,10 +158,13 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
           // console.log(data)
           setUserInfo(data);
 
-           // Initialize formData with calling_code from user info
-           setFormData((prevData) => ({
+          const countryId = countries.find(c => c.code === data.calling_code)?.id;
+          console.log(countryId)
+          // Initialize formData with calling_code from user info
+          setFormData((prevData) => ({
             ...prevData,
             code: data.calling_code || '', // Use an empty string as a fallback
+            country_id: countryId,
           }));
         } else {
           // console.error('Error fetching user information:', response.status);
@@ -263,7 +266,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
 
                                     <ul id="country-ul">
                                       {filteredCountries.map((country, index) => (
-                                        <li key={index} className="my-1 rounded-md cursor-pointer px-2.5 hover:bg-gray-300" data-code={country.code} data-name={country.name} data-iso={country.iso2} onClick={() => handleCountryClick(country)}>
+                                        <li key={index} className="my-1 rounded-md cursor-pointer px-2.5 hover:bg-gray-300" data-id={country.id} data-code={country.code} data-name={country.name} data-iso={country.iso2} onClick={() => handleCountryClick(country)}>
                                           <span className="flex items-center">
                                             {country.flag}
                                             <span className="ms-1 text-sm">{country.name}</span>
