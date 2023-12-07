@@ -107,7 +107,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
       try {
         setLoading(true);
 
-        const response = await fetch('http://127.0.0.1:8000/api/early-access', {
+        const response = await fetch('https://staging.mymonty.com/api/early-access', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
