@@ -107,7 +107,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
       try {
         setLoading(true);
 
-        const response = await fetch('https://staging.mymonty.com/api/early-access', {
+        const response = await fetch('http://127.0.0.1:8000/api/early-access', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -118,11 +118,14 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
         const data = await response.json();
 
         if (response.ok) {
+          const countryId = countries.find(c => c.code === userInfo.calling_code)?.id;
+
           setSubmissionStatus('success');
           setTimeout(() => {
             handleCloseModal();
 
             setFormData({
+              country_id: countryId,
               code: userInfo.calling_code,
               mobile: '',
             });
@@ -159,7 +162,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
           setUserInfo(data);
 
           const countryId = countries.find(c => c.code === data.calling_code)?.id;
-          console.log(countryId)
+
           // Initialize formData with calling_code from user info
           setFormData((prevData) => ({
             ...prevData,
