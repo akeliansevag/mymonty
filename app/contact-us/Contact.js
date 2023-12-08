@@ -3,19 +3,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { countries } from '@/app/countries';
 
 const Contact = () => {
-  const [errors, setErrors] = useState({});
-  const [submissionStatus, setSubmissionStatus] = useState(null); // 'success' or 'error'
-  const [loading, setLoading] = useState(false);
+  
+  const apiUrl = process.env.apiUrl;
 
-  const [openCountry, setOpenCountry] = useState(false)
-  const [userInfo, setUserInfo] = useState({});
-
-  const [searchInput, setSearchInput] = useState('');
-  const [selectedCountry, setSelectedCountry] = useState(null);
-  const [selectedCountryCode, setSelectedCountryCode] = useState('');
-  const dropdownRef = useRef(null);
-
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: '',
     email: '',
     company: '',
@@ -24,22 +15,35 @@ const Contact = () => {
     mobile: '',
     subject: '',
     message: '',
-  });
-
-  const handleSearchChange = (e) => {
-    setSearchInput(e.target.value);
   };
+
+  const initialErrors = {
+    name: '',
+    email: '',
+    mobile: '',
+    subject: '',
+    message: '',
+  };
+
+  const [errors, setErrors] = useState(initialErrors);
+  const [submissionStatus, setSubmissionStatus] = useState(null); // 'success' or 'error'
+  const [loading, setLoading] = useState(false);
+
+  const [openCountry, setOpenCountry] = useState(false);
+  const [userInfo, setUserInfo] = useState({});
+  const [searchInput, setSearchInput] = useState('');
+  const [selectedCountry, setSelectedCountry] = useState(null);
+  const [selectedCountryCode, setSelectedCountryCode] = useState('');
+  const dropdownRef = useRef(null);
+  const [formData, setFormData] = useState(initialFormData);
+
+  const handleSearchChange = (e) => setSearchInput(e.target.value);
 
   const handleCountryClick = (country) => {
     setOpenCountry(!openCountry);
     setSearchInput('');
     setSelectedCountry(country);
-
-    // Update the formData state with the selected code
-    setFormData((prevData) => ({
-      ...prevData,
-      code: country.code,
-    }));
+    setFormData((prevData) => ({ ...prevData, code: country.code }));
   };
 
   const filteredCountries = countries.filter((country) =>
@@ -48,7 +52,11 @@ const Contact = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target) && !document.getElementById('calling_code').contains(event.target)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        !document.getElementById('calling_code').contains(event.target)
+      ) {
         setOpenCountry(false);
         setSearchInput('');
       }
@@ -93,16 +101,10 @@ const Contact = () => {
       return;
     }
 
-    setFormData((prevData) => ({
-      ...prevData,
-      [id]: value,
-    }));
+    setFormData((prevData) => ({ ...prevData, [id]: value }));
 
     // Clear the error message when the user starts typing in a field
-    setErrors((prevErrors) => ({
-      ...prevErrors,
-      [id]: '',
-    }));
+    setErrors((prevErrors) => ({ ...prevErrors, [id]: '' }));
   };
 
   const handleSubmit = async (e) => {
@@ -112,7 +114,7 @@ const Contact = () => {
       try {
         setLoading(true);
 
-        const response = await fetch('https://staging.mymonty.com/api/contact-us', {
+        const response = await fetch(`${apiUrl}/contact-us`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -123,29 +125,17 @@ const Contact = () => {
         const data = await response.json();
 
         if (response.ok) {
-          // Successful response from the API
           setSubmissionStatus('success');
           setTimeout(() => {
-            setFormData({
-              name: '',
-              email: '',
-              company: '',
-              profession: '',
-              code: userInfo.calling_code,
-              mobile: '',
-              subject: '',
-              message: '',
-            });
-            setErrors({});
-            setSubmissionStatus(null); 
+            setFormData({ ...initialFormData, code: userInfo.calling_code || '' });
+            setErrors(initialErrors);
+            setSubmissionStatus(null);
           }, 2000);
         } else {
-          // Error response from the API
           setSubmissionStatus('error');
           setErrors(data.data || {});
         }
       } catch (error) {
-        // console.error('Error submitting form:', error);
         setSubmissionStatus('error');
         setErrors({ message: 'An error occurred while submitting the form.' });
       } finally {
@@ -159,22 +149,16 @@ const Contact = () => {
   useEffect(() => {
     const fetchUserInfo = async () => {
       try {
-        const response = await fetch('https://staging.mymonty.com/api/user-ip');
+        const response = await fetch(`${apiUrl}/user-ip`);
         if (response.ok) {
           const data = await response.json();
-          // console.log(data)
           setUserInfo(data);
-
-          // Initialize formData with calling_code from user info
-          setFormData((prevData) => ({
-            ...prevData,
-            code: data.calling_code || '', // Use an empty string as a fallback
-          }));
+          setFormData((prevData) => ({ ...prevData, code: data.calling_code || '' }));
         } else {
-          // console.error('Error fetching user information:', response.status);
+          // Handle error fetching user information
         }
       } catch (error) {
-        // console.error('Error fetching user information:', error);
+        // Handle error fetching user information
       }
     };
 
@@ -326,7 +310,7 @@ const Contact = () => {
                           placeholder="XXXXXXXX"
                           className={`outline-0 w-full border-gray-300 border-2 border-s-0 pl-1 pr-3.5 py-2.5 rounded-xl rounded-s-none ${errors.mobile ? 'border-s-2 border-red-500' : ''}`} />
                       </div>
-                      <span className='text-red-500 text-base'>{errors.mobile}</span>
+                      <span className='text-red-500'>{errors.mobile}</span>
                     </div>
                   </div>
                 </div>

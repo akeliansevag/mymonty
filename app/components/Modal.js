@@ -5,53 +5,17 @@ import Link from 'next/link';
 import { countries } from '@/app/countries';
 
 const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
-  //const [open, setOpen] = useState(false)
-  const [openCountry, setOpenCountry] = useState(false)
-  const [userInfo, setUserInfo] = useState({  });
-  const cancelButtonRef = useRef(null)
+  
+  const apiUrl = process.env.apiUrl;
+
+  const [openCountry, setOpenCountry] = useState(false);
+  const [userInfo, setUserInfo] = useState({});
+  const cancelButtonRef = useRef(null);
+  const dropdownRef = useRef(null);
 
   const [searchInput, setSearchInput] = useState('');
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [selectedCountryCode, setSelectedCountryCode] = useState('');
-
-  const dropdownRef = useRef(null);
-
-  const handleSearchChange = (e) => {
-    setSearchInput(e.target.value);
-  };
-
-  const handleCountryClick = (country) => {
-    setOpenCountry(!openCountry);
-    setSearchInput('');
-    setSelectedCountry(country);
-
-    // Update the formData state with the selected code
-    setFormData((prevData) => ({
-      ...prevData,
-      code: country.code,
-      country_id: country.id, 
-    }));
-  };
-
-  const filteredCountries = countries.filter((country) =>
-    country.name.toLowerCase().includes(searchInput.toLowerCase())
-  );
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target) && !document.getElementById('calling_code').contains(event.target)) {
-        setOpenCountry(false);
-        setSearchInput('');
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [dropdownRef]);
-
 
   const [formData, setFormData] = useState({
     country_id: '',
@@ -67,7 +31,6 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
     let isValid = true;
     const newErrors = {};
 
-    // Required fields validation
     const requiredFields = ['code', 'mobile'];
     requiredFields.forEach((field) => {
       if (!formData[field].trim()) {
@@ -80,10 +43,46 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
     return isValid;
   };
 
+  const handleSearchChange = (e) => setSearchInput(e.target.value);
+
+  const handleCountryClick = (country) => {
+    setOpenCountry(!openCountry);
+    setSearchInput('');
+    setSelectedCountry(country);
+
+    setFormData((prevData) => ({
+      ...prevData,
+      code: country.code,
+      country_id: country.id,
+    }));
+  };
+
+  const filteredCountries = countries.filter((country) =>
+    country.name.toLowerCase().includes(searchInput.toLowerCase())
+  );
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        !document.getElementById('calling_code').contains(event.target)
+      ) {
+        setOpenCountry(false);
+        setSearchInput('');
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [dropdownRef]);
+
   const handleChange = (e) => {
     const { id, value } = e.target;
 
-    // Limit mobile number field to a maximum of 16 characters
     if (id === 'mobile' && value.length >= 12) {
       return;
     }
@@ -93,7 +92,6 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
       [id]: value,
     }));
 
-    // Clear the error message when the user starts typing in a field
     setErrors((prevErrors) => ({
       ...prevErrors,
       [id]: '',
@@ -107,7 +105,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
       try {
         setLoading(true);
 
-        const response = await fetch('https://staging.mymonty.com/api/early-access', {
+        const response = await fetch(`${apiUrl}/early-access`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -118,7 +116,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
         const data = await response.json();
 
         if (response.ok) {
-          const countryId = countries.find(c => c.code === userInfo.calling_code)?.id;
+          const countryId = countries.find((c) => c.code === userInfo.calling_code)?.id;
 
           setSubmissionStatus('success');
           setTimeout(() => {
@@ -130,14 +128,13 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
               mobile: '',
             });
             setErrors({});
-            setSubmissionStatus(null); 
+            setSubmissionStatus(null);
           }, 2000);
         } else {
           setSubmissionStatus('error');
-          if (data.code == 23000) {
-            setErrors({ mobile: "The mobile you entered is already registered." } || {});
-          }
-          else {
+          if (data.code === '23000') {
+            setErrors({ mobile: 'The mobile you entered is already registered.' } || {});
+          } else {
             setErrors(data.data || {});
           }
         }
@@ -155,25 +152,23 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
   useEffect(() => {
     const fetchUserInfo = async () => {
       try {
-        const response = await fetch('https://staging.mymonty.com/api/user-ip');
+        const response = await fetch(`${apiUrl}/user-ip`);
         if (response.ok) {
           const data = await response.json();
-          // console.log(data)
           setUserInfo(data);
 
-          const countryId = countries.find(c => c.code === data.calling_code)?.id;
+          const countryId = countries.find((c) => c.code === data.calling_code)?.id;
 
-          // Initialize formData with calling_code from user info
           setFormData((prevData) => ({
             ...prevData,
-            code: data.calling_code || '', // Use an empty string as a fallback
+            code: data.calling_code || '',
             country_id: countryId,
           }));
         } else {
-          // console.error('Error fetching user information:', response.status);
+          console.error('Error fetching user information:', response.status);
         }
       } catch (error) {
-        // console.error('Error fetching user information:', error);
+        console.error('Error fetching user information:', error);
       }
     };
 
