@@ -20,7 +20,7 @@ const SectionFour = () => {
 
                 </div>
                 <div className='justify-end flex pb-10 md:pb-0'>
-                    <Image src={sectionImage} alt='Section Image' placeholder='blur' className='w-full md:w-2/3' />
+                    <Image src={sectionImage} alt='Section Image' placeholder='blur' className='w-full md:w-3/4' />
                 </div>
             </div>
         </section>
