@@ -9,8 +9,8 @@ import TextBlock from '@/app/components/TextBlock';
 import Carousel from '@/app/components/Carousel';
 import sectionFourImage from '@/public/personal/lock-img.webp';
 import sectionFiveImage from '@/public/personal/cards-section-5-image.webp';
-import cardHand from '@/public/personal/card-hand.webp';
-import bgImage from '@/public/personal/cards-bg-image.webp';
+
+import CardWithdrawal from './CardWithdrawal';
 
 export const metadata = {
     title: websiteName + 'Cards',
@@ -113,12 +113,7 @@ const cards = () => {
                 </div>
             </Section>
             <div id="card-withdrawal">
-                <Section bgImage={bgImage}>
-                    <div className='container text-center'>
-                        <TextBlock center={true} title="Withdraw Whenever, Wherever" description="Get cash when you need it. Use your prepaid Mastercard to withdraw from ATMs anywhere in the world with no hidden fees." button={true} />
-                    </div>
-                    <Image className='mt-20 md:w-1/2' src={cardHand} alt='Card Hand' />
-                </Section>
+                <CardWithdrawal />
             </div>
 
         </>
