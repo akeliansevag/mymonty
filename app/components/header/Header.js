@@ -49,7 +49,7 @@ const Header = () => {
             <div className='container flex justify-between items-center'>
                 <div className='flex-1'>
                     <Link onClick={() => { setMenuOpen(false); setMobileMenuToggle(false); }} href='/'>
-                        <Image alt="MyMonty Logo" src={logo} />
+                        <Image priority alt="MyMonty Logo" src={logo} />
                     </Link>
                 </div>
                 <div className='flex-1 flex justify-end gap-3 items-center'>

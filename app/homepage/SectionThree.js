@@ -2,6 +2,7 @@ import Image from 'next/image';
 import sectionImage from '@/public/sectionthreeimage2.webp';
 import React from 'react';
 import Link from 'next/link';
+import CardsSlider from './CardsSlider';
 
 const SectionThree = () => {
     return (
@@ -12,11 +13,14 @@ const SectionThree = () => {
                     <p className='leading-8 mt-4'>Pick the color and style that matches your lifestyle and personality. Choose between your free Standard card or the Premium card and be ready for the envious looks it attracts.</p>
                     <Link href="/cards" className='mm-button white mt-6 mx-auto'>Choose your card</Link>
                 </div>
-                <div className='text-center'>
+                {/* <div className='text-center'>
                     <Image alt="Section Image" src={sectionImage} className='mx-auto mt-14 w-full md:w-2/3' />
-                </div>
+                </div> */}
+
+
 
             </div>
+            <CardsSlider />
         </section>
     )
 }

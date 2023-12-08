@@ -54,7 +54,7 @@ body{
 }
 
 .custom-object-position{
-    object-position: 70% 250px;
+    object-position: 65% 25vh; 
 }
 
 button, a, input[type="submit"], header li{
@@ -105,4 +105,21 @@ body.dark header{
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     background-color: rgba(255,255,255,0.8);
+}
+
+swiper-slide{
+    width:500px;
+    height:auto;
+    display:flex;
+    align-items: center;
+}
+
+swiper-slide img{
+    width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    swiper-slide{
+        width: 70%;
+    }
 }
