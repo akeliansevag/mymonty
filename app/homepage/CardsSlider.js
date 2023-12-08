@@ -20,7 +20,7 @@ const CardsSlider = () => {
     return (
         <div className={`mt-10 duration-1000 transition-opacity ${!sliderInitialized ? 'opacity-0' : 'opacity-100'}`}>
             <swiper-container init={false} ref={swiperElRef} effect="creative"
-                //autoplay-delay="750"
+                autoplay-delay="750"
                 autoplay-pause-on-mouse-enter
                 loop
                 centered-slides
