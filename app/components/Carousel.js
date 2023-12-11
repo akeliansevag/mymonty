@@ -10,9 +10,10 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
     const { handleOpenModal } = useAppContext();
     const handleSelect = (index) => {
         setSelectedIndex(index);
+
     };
     return (
-        <section className={`${center ? 'flex flex-col justify-center' : ''} relative py-14 lg:py-28 min-h-[calc(100vh-(var(--mobile-header-height)))]`
+        <section className={`${center ? 'flex flex-col justify-center' : ''} relative  min-h-[calc(100vh-(var(--mobile-header-height)))]`
         }>
             {
                 video && videoMP4URL && videoWEBMURL && (
@@ -28,19 +29,24 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                     data.content.map((item, index) => {
                         let contentClasses =
                             selectedIndex === index
-                                ? 'opacity-1 z-0 transition-opacity'
-                                : 'opacity-0 -z-100 hidden';
+                                ? 'opacity-1'
+                                : 'opacity-0';
                         return (
-                            <div key={index} className={`h-full w-full transition-all ${contentClasses}`}>
-                                <div className='container text-center relative'>
-                                    <TextBlock center={true} textColor="white" title={item.title} description={item.description} button={false} />
-                                    {item.button && !item?.button?.modal && (
-                                        <Link className='mm-button white mt-4' href={item.button?.url}>{item.button.text}</Link>
-                                    )}
-                                    {item.button && item?.button?.modal && (
-                                        <button onClick={handleOpenModal} className='mm-button white mt-4' href={item.button?.url}>{item.button.text}</button>
-                                    )}
-                                    <img className='my-10 mx-auto max-w-[250px] md:max-w-[350px]' src={item.contentImage} />
+                            <div key={index} className={`absolute py-14 lg:py-28 transition-opacity ease-in duration-[400ms] h-full w-full ${contentClasses}`}>
+                                <div className='container gap-10 flex flex-col h-full overflow-hidden text-center relative'>
+                                    <div>
+                                        <TextBlock center={true} textColor="white" title={item.title} description={item.description} button={false} />
+                                        {item.button && !item?.button?.modal && (
+                                            <Link className='mm-button white mt-4' href={item.button?.url}>{item.button.text}</Link>
+                                        )}
+                                        {item.button && item?.button?.modal && (
+                                            <button onClick={handleOpenModal} className='mm-button white mt-4' href={item.button?.url}>{item.button.text}</button>
+                                        )}
+                                    </div>
+                                    <div className='flex-1 relative flex justify-center'>
+                                        <img className='pb-10 max-w-[250px] md:max-w-[350px] object-contain absolute h-full w-full block' src={item.contentImage} />
+                                    </div>
+
                                 </div>
                                 {
                                     item?.backgroundImage && (
