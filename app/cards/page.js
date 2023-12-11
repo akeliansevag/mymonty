@@ -11,6 +11,7 @@ import sectionFourImage from '@/public/personal/lock-img.webp';
 import sectionFiveImage from '@/public/personal/cards-section-5-image.webp';
 
 import CardWithdrawal from './CardWithdrawal';
+import DiverseCards from './DiverseCards';
 
 export const metadata = {
     title: websiteName + 'Cards',
@@ -114,6 +115,10 @@ const cards = () => {
             </Section>
             <div id="card-withdrawal">
                 <CardWithdrawal />
+            </div>
+
+            <div id="diverse-cards">
+                <DiverseCards />
             </div>
 
         </>
