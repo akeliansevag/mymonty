@@ -75,7 +75,7 @@ const DiverseCards = () => {
             delay: 0
         },
         loop: true,
-        speed: 1500,
+        speed: 4000,
         allowTouchMove: false,
         disableOnInteraction: true,
         centeredSlides: true,
