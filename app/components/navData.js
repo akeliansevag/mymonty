@@ -205,7 +205,7 @@ export const data = [
             //     url: null
             // },
             {
-                title: 'Contact',
+                title: 'Contact us',
                 url: '/contact-us'
             },
             {

@@ -24,34 +24,40 @@ const DiverseCards = () => {
         {
             img: c1
         },
-        {
-            img: c3
-        },
-        {
-            img: c2
-        },
+
         {
             img: c8
         },
         {
             img: c4
         },
-        {
-            img: c5
-        },
+
         {
             img: c6
         },
-        {
-            img: c7
-        },
 
-        {
-            img: c9
-        },
         {
             img: c10
         },
+        {
+            img: c1
+        },
+
+        {
+            img: c8
+        },
+        {
+            img: c4
+        },
+
+        {
+            img: c6
+        },
+
+        {
+            img: c10
+        },
+
     ];
     const swiperParams = {
         injectStyles: [
@@ -60,9 +66,11 @@ const DiverseCards = () => {
                     -webkit-transition-timing-function:linear!important;
                     transition-timing-function:linear!important; 
                 }
+                :host .swiper-slide{
+                    width:5px !important;
+                }
             `
         ],
-        spaceBetween: 15,
         autoplay: {
             delay: 0
         },
@@ -71,7 +79,24 @@ const DiverseCards = () => {
         allowTouchMove: false,
         disableOnInteraction: true,
         centeredSlides: true,
-        slidesPerView: 'auto'
+        breakpoints: {
+            320: {
+                spaceBetween: 15,
+                slidesPerView: 2
+            },
+            480: {
+                spaceBetween: 15,
+                slidesPerView: 2
+            },
+            640: {
+                spaceBetween: 30,
+                slidesPerView: 4
+            },
+            992: {
+                spaceBetween: 30,
+                slidesPerView: 6
+            }
+        }
     }
     useEffect(() => {
         register();
@@ -88,7 +113,7 @@ const DiverseCards = () => {
             <div className='container text-center'>
                 <TextBlock center={true} title="Explore Our Diverse Range of Cards" description="Pick the color and style that matches your lifestyle and personality. With MyMonty virtual cards, your financial freedom is always within the palm of your hand. " />
             </div>
-            <div className={`diverse-swiper mt-10 duration-1000 transition-opacity ${!sliderInitialized ? 'opacity-0' : 'opacity-100'}`}>
+            <div className={`diverse-swiper mt-8 md:mt-20 duration-1000 transition-opacity ${!sliderInitialized ? 'opacity-0' : 'opacity-100'}`}>
                 <swiper-container init={false} ref={swiperElRef}>
                     {data.map((item, index) => {
                         return (
