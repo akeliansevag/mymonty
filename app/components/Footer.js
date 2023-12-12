@@ -25,7 +25,7 @@ const Footer = () => {
             <div className='container text-center pt-10 pb-10 lg:pt-20'>
                 <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Download the app now</h2>
                 <div className='md:w-1/2 mx-auto'>
-                    <p className='leading-8 mt-4'>Skip the hustle and bustle and get straight to the money. Request it from anyone across the globe via a link!</p>
+                    <p className='leading-8 mt-8'>Skip the hustle and bustle and get straight to the money. Request it from anyone across the globe via a link!</p>
                     <button onClick={handleOpenModal} className='mm-button white mt-6 mx-auto'>Download app</button>
                 </div>
             </div>
