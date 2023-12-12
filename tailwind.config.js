@@ -14,9 +14,17 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '1rem'
+      padding: '1rem',
+      maxWidth: '1280px'
     },
     extend: {
+      container: {
+        // Set the maximum width of the container for different breakpoints
+        screens: {
+          '2xl': '1280px',
+          '4xl': '1280px', // Override 4xl to also have a max-width of 1280px
+        },
+      },
       screens: {
         '2xl': '1280px',
         '4xl': '2500px',
