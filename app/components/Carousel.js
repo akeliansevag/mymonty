@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import TextBlock from './TextBlock';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,11 +7,24 @@ import { useAppContext } from '../AppContext';
 
 const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
     const [selectedIndex, setSelectedIndex] = useState(0);
+    const [filterClicked, setFilterClicked] = useState(false);
     const { handleOpenModal } = useAppContext();
+
     const handleSelect = (index) => {
         setSelectedIndex(index);
-
+        setFilterClicked(true);
     };
+
+    useEffect(() => {
+        if (!filterClicked) {
+            let i = 1;
+            // setInterval(() => {
+            //     if (i < data.content.length) {
+            //         setSelectedIndex(i++);
+            //     }
+            // }, 1000);
+        }
+    }, [])
     return (
         <section className={`${center ? 'flex flex-col justify-center' : ''} relative  min-h-[calc(100vh-(var(--mobile-header-height)))]`
         }>
@@ -43,9 +56,14 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                                             <button onClick={handleOpenModal} className='mm-button white mt-4' href={item.button?.url}>{item.button.text}</button>
                                         )}
                                     </div>
-                                    <div className='flex-1 relative flex justify-center'>
-                                        <img className='pb-10 max-w-[250px] md:max-w-[350px] object-contain absolute h-full w-full block' src={item.contentImage} />
-                                    </div>
+                                    {
+                                        item?.contentImage && (
+                                            <div className='flex-1 relative flex justify-center'>
+                                                <img className='pb-10 max-w-[250px] md:max-w-[350px] object-contain absolute h-full w-full block' src={item.contentImage} />
+                                            </div>
+                                        )
+                                    }
+
 
                                 </div>
                                 {
