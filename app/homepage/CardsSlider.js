@@ -17,7 +17,7 @@ const CardsSlider = () => {
         swiperElRef.current.initialize();
     }, [swiperElRef])
     return (
-        <div className={`mt-10 duration-1000 transition-opacity ${!sliderInitialized ? 'opacity-0' : 'opacity-100'}`}>
+        <div className={`mt-16 duration-1000 transition-opacity ${!sliderInitialized ? 'opacity-0' : 'opacity-100'}`}>
             <swiper-container init={false} ref={swiperElRef}
                 effect="creative"
                 autoplay-delay="1000"

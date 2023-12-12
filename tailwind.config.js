@@ -18,7 +18,8 @@ module.exports = {
     },
     extend: {
       screens: {
-        '2xl': '1280px'
+        '2xl': '1280px',
+        '4xl': '2500px',
       },
       colors: {
         primary: colors.neutral[900],
