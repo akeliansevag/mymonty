@@ -290,7 +290,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                     value={formData.mobile}
                                     onChange={handleChange}
                                     placeholder="Mobile number"
-                                    className={`onboarding-mobile outline-0 w-full bg-gray-100 border-gray-300 border-2 border-s-0 pl-1 pr-3.5 py-2.5 rounded-xl rounded-s-none text-lg ${errors.mobile ? 'border-s-2 border-red-500' : ''}`} />
+                                    className={`focus:outline-none onboarding-mobile outline-0 w-full bg-gray-100 border-gray-300 border-2 border-s-0 pl-1 pr-3.5 py-2.5 rounded-xl rounded-s-none text-lg ${errors.mobile ? 'border-s-2 border-red-500 selection:' : ''}`} />
                                 </div>
                                 <span className='text-red-500 text-base'>{errors.mobile}</span>
                               </div>
