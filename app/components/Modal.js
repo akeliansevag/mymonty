@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { countries } from '@/app/countries';
 
 const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
-  
+
   const apiUrl = process.env.apiUrl;
 
   const [openCountry, setOpenCountry] = useState(false);
@@ -191,7 +191,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
         </Transition.Child>
 
         <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
-          <div className="flex min-h-full items-end justify-center py-4 text-center sm:items-center sm:px-0 w-full">
+          <div className="flex min-h-full items-center justify-center py-4 text-center sm:items-center sm:px-0 w-full">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -212,23 +212,23 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                   <div className="bg-white gap-10 px-4 md:px-10 py-10 md:py-20" >
                     <div className="flex items-center justify-center w-full">
                       <div className="mt-3 sm:mt-0">
-                        <Dialog.Title as="h2" className="uppercase leading-none font-black text-center text-3xl sm:text-5xl md:text-[2.875rem">
+                        <Dialog.Title as="h2" className="uppercase leading-none font-black text-center text-3xl sm:text-4xl md:text-[2.875rem">
                           Get your early access now
                         </Dialog.Title>
                         <form onSubmit={handleSubmit}>
-                          <div className='flex flex-col gap-4 md:gap-10 mt-10 md:mt-20 rounded-[1.875rem]'>
-                            <div className='relativee flex flex-col justify-center md:flex-row gap-4 md:gap-10 w-11/12 md:w-2/3 mx-auto'>
+                          <div className='flex flex-col gap-4 md:gap-7 mt-10 md:mt-10 rounded-[1.875rem]'>
+                            <div className='w-full relativee flex flex-col justify-center md:flex-row gap-4 md:gap-10 mx-auto'>
                               <div className='w-full flex flex-col'>
                                 <div className="flex w-full">
                                   <div className="calling_code">
                                     <div className="flex h-full justify-between items-center">
-                                      <div id="calling_code" onClick={(e) => { setOpenCountry(!openCountry) }} className="select bg-gray-100 border-gray-300 border-2 border-e-0 p-2.5 rounded-xl rounded-e-none flex justify-between items-center text-gray-400 text-base">
+                                      <div id="calling_code" onClick={(e) => { setOpenCountry(!openCountry) }} className="select bg-gray-100 border-gray-300 border-2 border-e-0 py-2.5 pl-5 pr-2 rounded-xl rounded-e-none flex justify-between items-center text-gray-400 text-base">
                                         {selectedCountry ? (
                                           <>
                                             <div className="text-lg">
                                               {selectedCountry.flag}
                                             </div>
-                                            <div>
+                                            <div className='text-black'>
                                               +{selectedCountry.code}
                                             </div>
                                           </>
@@ -237,7 +237,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                             <div className="text-lg">
                                               {userInfo.country_flag_emoji}
                                             </div>
-                                            <div>+{userInfo.calling_code}</div>
+                                            <div className='text-black'>+{userInfo.calling_code}</div>
                                           </>
                                         )}
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -289,8 +289,8 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
                                     name="mobile"
                                     value={formData.mobile}
                                     onChange={handleChange}
-                                    placeholder="XXXXXXXX"
-                                    className={`onboarding-mobile outline-0 w-full bg-gray-100 border-gray-300 border-2 border-s-0 pl-1 pr-3.5 py-2.5 rounded-xl rounded-s-none text-sm ${errors.mobile ? 'border-s-2 border-red-500' : ''}`} />
+                                    placeholder="Mobile number"
+                                    className={`onboarding-mobile outline-0 w-full bg-gray-100 border-gray-300 border-2 border-s-0 pl-1 pr-3.5 py-2.5 rounded-xl rounded-s-none text-lg ${errors.mobile ? 'border-s-2 border-red-500' : ''}`} />
                                 </div>
                                 <span className='text-red-500 text-base'>{errors.mobile}</span>
                               </div>
