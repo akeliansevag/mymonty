@@ -56,7 +56,7 @@ const cards = () => {
                     url: '#',
                     modal: true
                 },
-                contentImage: '/personal/cards-carousel-1-content.webp',
+                contentImage: '/personal/cards-carousel-1-content-n.webp',
                 backgroundImage: '/personal/cards-carousel-1.webp'
             },
             {
@@ -78,7 +78,7 @@ const cards = () => {
                     url: '#',
                     modal: true
                 },
-                contentImage: '/personal/cards-carousel-3-content.webp',
+                contentImage: '/personal/cards-qr.webp',
                 backgroundImage: '/personal/cards-carousel-3.webp'
             }
         ]
