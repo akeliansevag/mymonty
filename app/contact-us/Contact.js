@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { countries } from '@/app/countries';
 
 const Contact = () => {
-  
+
   const apiUrl = process.env.apiUrl;
 
   const initialFormData = {
@@ -345,8 +345,8 @@ const Contact = () => {
               </div>
 
               <div className='flex flex-col md:flex-row gap-10'>
-                <div className='flex flex-col gap-1'>
-                  <input type='submit' className='cursor-pointer mm-button !px-20' value='Submit' disabled={loading} />
+                <div className='flex flex-row gap-1 w-full justify-center'>
+                  <input type='submit' className='inline-block cursor-pointer mm-button !px-20' value='Submit' disabled={loading} />
                 </div>
               </div>
 
