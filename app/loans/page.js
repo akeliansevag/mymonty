@@ -71,8 +71,8 @@ const loans = () => {
                 backgroundImage: '/personal/loans-carousel-2.webp'
             },
             {
-                title: 'Step into Your Dream house',
-                description: 'MyMonty\'s house loans are crafted to turn your dream of owning a home into a reality, providing the financial foundation for your perfect abode.',
+                title: 'Boost your confidence',
+                description: 'Ready to enhance your confidence and transform your appearance? Apply for your plastic surgery loan with MyMonty today.',
                 button: {
                     text: 'Apply now',
                     url: '/plastic-surgery-loan',
@@ -81,8 +81,8 @@ const loans = () => {
                 backgroundImage: '/personal/loans-carousel-3.webp'
             },
             {
-                title: 'Step into Your Dream house',
-                description: 'MyMonty\'s house loans are crafted to turn your dream of owning a home into a reality, providing the financial foundation for your perfect abode.',
+                title: 'Invest in Your Future',
+                description: 'At MyMonty, we\'re dedicated to empowering your educational journey. Trust us to support your academic aspirations.',
                 button: {
                     text: 'Apply now',
                     url: '/student-loan',
