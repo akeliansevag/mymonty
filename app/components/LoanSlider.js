@@ -16,55 +16,50 @@ const LoanSlider = ({ data }) => {
                 slidesPerView: 2.2,
             },
             1280: {
-                slidesPerView: 3.2,
+                slidesPerView: 4,
             },
         },
-        loop: true,
         slidesPerView: 1.2,
         spaceBetween: 20,
         grabCursor: true,
     };
+    const items = [
+        {
+            icon: competitiveRates,
+            title: 'Competitive Rates',
+            description: 'Benefit from competitive interest rates designed to suit your budget'
+        },
+        {
+            icon: simpleApplication,
+            title: 'Simple Application',
+            description: 'Our easy-to-use online'
+        },
+        {
+            icon: quickApproval,
+            title: 'Quick Approval',
+            description: 'Experience swift approval, so you can get behind the wheel sooner'
+        },
+        {
+            icon: flexibleRepayment,
+            title: 'Flexible Repayment',
+            description: 'We offer flexible repayment plans tailored to your financial situation'
+        }
+    ];
     return (
         <Swiper {...swiperParams} className='flex flex-col md:flex-row md:items-stretch gap-10 relative mt-20'>
-            <SwiperSlide className='aspect-[3/4] overflow-hidden rounded-[1.875rem] bg-gray-100'>
-                <div className='px-10 py-14'>
-                    <div className='flex items-center justify-center w-[60px] h-[60px] lg:w-[120px] lg:h-[120px] rounded-full border-4 border-black'>
-                        <Image src={competitiveRates} className='max-lg:w-[25px] max-lg:h-[25px]' alt='Car Loan' />
-                    </div>
-                    <h3 className='text-2xl md:text-4xl font-bold mt-4 md:mt-10'>Competitive Rates</h3>
-                    <p className='text-xl md:text-2xl mt-4'>Benefit from competitive interest rates designed to suit your budget</p>
-                </div>
-            </SwiperSlide>
-
-            <SwiperSlide className='aspect-[3/4] overflow-hidden rounded-[1.875rem] bg-gray-100'>
-                <div className='px-10 py-14'>
-                    <div className='flex items-center justify-center w-[60px] h-[60px] lg:w-[120px] lg:h-[120px] rounded-full border-4 border-black'>
-                        <Image src={simpleApplication} className='max-lg:w-[25px] max-lg:h-[25px]' alt='Car Loan' />
-                    </div>
-                    <h3 className='text-2xl md:text-4xl font-bold mt-4 md:mt-10'>Simple Application</h3>
-                    <p className='text-xl md:text-2xl mt-4'>Our easy-to-use online </p>
-                </div>
-            </SwiperSlide>
-
-            <SwiperSlide className='aspect-[3/4] overflow-hidden rounded-[1.875rem] bg-gray-100'>
-                <div className='px-10 py-14'>
-                    <div className='flex items-center justify-center w-[60px] h-[60px] lg:w-[120px] lg:h-[120px] rounded-full border-4 border-black'>
-                        <Image src={quickApproval} className='max-lg:w-[25px] max-lg:h-[25px]' alt='Car Loan' />
-                    </div>
-                    <h3 className='text-2xl md:text-4xl font-bold mt-4 md:mt-10'>Quick Approval</h3>
-                    <p className='text-xl md:text-2xl mt-4'>Experience swift approval, so you can get behind the wheel sooner</p>
-                </div>
-            </SwiperSlide>
-
-            <SwiperSlide className='aspect-[3/4] overflow-hidden rounded-[1.875rem] bg-gray-100'>
-                <div className='px-10 py-14'>
-                    <div className='flex items-center justify-center w-[60px] h-[60px] lg:w-[120px] lg:h-[120px] rounded-full border-4 border-black'>
-                        <Image src={flexibleRepayment} className='max-lg:w-[25px] max-lg:h-[25px]' alt='Car Loan' />
-                    </div>
-                    <h3 className='text-2xl md:text-4xl font-bold mt-4 md:mt-10'>Flexible Repayment</h3>
-                    <p className='text-xl md:text-2xl mt-4'>We offer flexible repayment plans tailored to your financial situation</p>
-                </div>
-            </SwiperSlide>
+            {items && items.map((item, key) => {
+                return (
+                    <SwiperSlide className='aspect-[5/5] md:aspect-[2/3] overflow-hidden rounded-[1.875rem] bg-gray-100'>
+                        <div className='px-10 py-14'>
+                            <div className='flex items-center justify-center w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] rounded-full border-2 border-black'>
+                                <Image src={item.icon} className='max-lg:w-[25px] max-lg:h-[25px] w-[45px] h-[45px]' alt='Car Loan' />
+                            </div>
+                            <h3 className='text-2xl md:text-4xl font-black mt-4 md:mt-10'>{item.title}</h3>
+                            <p className='text-xl md:text-xl mt-4'>{item.description}</p>
+                        </div>
+                    </SwiperSlide>
+                )
+            })}
         </Swiper>
     )
 }

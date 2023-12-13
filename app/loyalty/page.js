@@ -59,7 +59,7 @@ const loyalty = () => {
                         <Image className='md:w-1/3' src={sectionFour} alt='Image' />
                     </div>
 
-                    <div id="loyalty-program" className='mt-40 flex flex-col-reverse lg:flex-row items-center gap-20'>
+                    <div id="loyalty-program" className='mt-20 md:mt-40 flex flex-col-reverse lg:flex-row items-center gap-20'>
                         <Image className='md:w-1/3' src={sectionFive} alt='Image' />
                         <TextBlock title="Loyalty points program" description="We are tailoring one of the best loyalty programs in the country to upgrade your experience with us so that you benefit by redeeming your loyalty points." button={true} />
                     </div>

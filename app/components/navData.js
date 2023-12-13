@@ -129,8 +129,8 @@ export const data = [
                 url: '/loans',
                 children: [
                     {
-                        title: 'Advance on Salary',
-                        url: '/loans?s=advance-on-salary',
+                        title: 'Advanced Salary',
+                        url: '/loans?s=advanced-salary',
                     },
                     {
                         title: 'BNPL',

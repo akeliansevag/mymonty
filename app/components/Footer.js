@@ -90,8 +90,8 @@ const Footer = () => {
                         let toggleClasses = isOpen ? 'max-md:max-h-96' : 'max-md:max-h-0'
                         let toggleArrowClasses = isOpen ? 'rotate-180' : 'rotate-0'
                         return (
-                            <div key={index} className='max-lg:basis-1/3 mt-8'>
-                                <span className='mb-2 sm:mb-5 block' >
+                            <div key={index} className='max-lg:basis-1/3 mt-3'>
+                                <span className='mb-0 sm:mb-5 block' >
                                     {item?.url && (
                                         <div className='flex justify-between item cursor-pointer' onClick={() => handleClick(index)}>
                                             <Link href={item.url} className='has-children'>

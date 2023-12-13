@@ -19,7 +19,7 @@ export const metadata = {
 
 const loans = () => {
     const data = {
-        title: 'Receive your Advance on Salary',
+        title: 'Receive your Advanced Salary',
         subtitle: 'Loans',
         desc: 'Harness the power of MyMonty for hassle-free salary domiciliation and unlock early salary advances based on your eligibility.',
         image: {
@@ -55,8 +55,7 @@ const loans = () => {
                 description: 'Ready to hit the road in your new car? Apply for your car loan with MyMonty today and experience a hassle-free journey towards owning your dream vehicle!',
                 button: {
                     text: 'Apply now',
-                    url: '#',
-                    modal: true
+                    url: '/car-loan',
                 },
                 contentImage: '/personal/loans-carousel-1-content.webp',
                 backgroundImage: '/personal/loans-carousel-1-image.webp'
@@ -66,8 +65,7 @@ const loans = () => {
                 description: 'MyMonty\'s house loans are crafted to turn your dream of owning a home into a reality, providing the financial foundation for your perfect abode.',
                 button: {
                     text: 'Apply now',
-                    url: '#',
-                    modal: true
+                    url: '/house-loan',
                 },
                 contentImage: '/personal/loans-carousel-2-content.webp',
                 backgroundImage: '/personal/loans-carousel-2.webp'
@@ -77,8 +75,7 @@ const loans = () => {
                 description: 'MyMonty\'s house loans are crafted to turn your dream of owning a home into a reality, providing the financial foundation for your perfect abode.',
                 button: {
                     text: 'Apply now',
-                    url: '#',
-                    modal: true
+                    url: '/plastic-surgery-loan',
                 },
                 contentImage: '/personal/loans-carousel-3-content.webp',
                 backgroundImage: '/personal/loans-carousel-3.webp'
@@ -88,8 +85,7 @@ const loans = () => {
                 description: 'MyMonty\'s house loans are crafted to turn your dream of owning a home into a reality, providing the financial foundation for your perfect abode.',
                 button: {
                     text: 'Apply now',
-                    url: '#',
-                    modal: true
+                    url: '/student-loan',
                 },
                 contentImage: '/personal/loans-carousel-4-content.webp',
                 backgroundImage: '/personal/loans-carousel-4-image.webp'
@@ -102,7 +98,7 @@ const loans = () => {
             <div id="advance-on-salary">
                 <Section>
                     <div className='container overflow-hidden text-center'>
-                        <TextBlock center={true} title="Advance on Salary" description="Have you ever faced an urgent payment? Or missed a black Friday for that “insufficient funds in your account” message? With MyMonty early Salary, you will have access to a portion of your next salary in advance to spend and return at your convenience with 3 flexible options." button={true} />
+                        <TextBlock center={true} title="Advanced Salary" description="Have you ever faced an urgent payment? Or missed a black Friday for that “insufficient funds in your account” message? With MyMonty early Salary, you will have access to a portion of your next salary in advance to spend and return at your convenience with 3 flexible options." button={true} />
                         <div className='flex flex-col md:flex-row gap-10 items-center justify-center mt-10'>
                             <div>
                                 <Image className='' alt="Free" src={free} />

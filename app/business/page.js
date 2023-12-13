@@ -43,7 +43,7 @@ const Careers = () => {
 
           <p className='leading-8 mt-10 text-center w-full lg:w-2/3 mx-auto'>Setting up salary domiciliation for your company for free will ensure a smooth transition to automated payroll management. Efficiency by centralizing salary payments, cost and time saving, employee convenience of having their salaries deposited directly into their wallet account.</p>
 
-          <Image alt='Growth Oriented Environmemt' fill placeholder='blur' quality={100} sizes='100vw' className='!relative object-cover aspect-[4/7] md:aspect-auto mt-14' src={salary} />
+          <Image className='mt-10' alt='Growth Oriented Environmemt' placeholder='blur' quality={100} src={salary} />
 
           <p className='leading-8 mt-10 text-center w-full lg:w-2/3 mx-auto'>Greater employee retention for timely payments so that they can plan effectively.<br />
             Reduced errors by minimizing the manual intervention and contributing to accuracy in salary disbursements.<br />
@@ -77,7 +77,7 @@ const Careers = () => {
 
             <button className='mm-button !bg-white !text-black w-max mt-5'>Get Started Today!</button>
 
-            <Image alt='Growth Oriented Environmemt' placeholder='blur' quality={100} sizes='100vw' className='!relative object-cover aspect-[4/7] md:aspect-auto mt-14' src={earlySalary} />
+            <Image alt='Growth Oriented Environmemt' placeholder='blur' className='mt-10' src={earlySalary} />
 
             <p className='leading-8 mt-10 text-center w-full lg:w-4/5'>By offering Early Salary, we're not just providing a financial service; we're investing in the well-being and satisfaction of our employees. Join us in empowering our workforce to manage their finances more effectively.</p>
           </div>

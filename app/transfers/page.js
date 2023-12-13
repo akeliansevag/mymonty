@@ -130,7 +130,7 @@ const transfers = () => {
                         <Image className='md:w-1/3' src={sectionFour} alt='Image' />
                     </div>
 
-                    <div id="cash-out" className='mt-40 flex flex-col-reverse lg:flex-row items-center gap-10'>
+                    <div id="cash-out" className='mt-20 md:mt-40 flex flex-col-reverse lg:flex-row items-center gap-10'>
                         <Image className='md:w-1/3' src={sectionFive} alt='Image' />
                         <TextBlock title="Top up or cash out by ATM/bank network" description="Top up your wallet or cash out at our partner bank ATM or bank counter." button={true} />
                     </div>

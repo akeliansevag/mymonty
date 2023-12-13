@@ -60,35 +60,35 @@ const StudentLoan = () => {
           <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-20 text-center'>
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
               <div className='px-10 py-14'>
-                <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-bold text-white m-auto text-center'>1</div>
-                <h3 className='text-4xl font-bold mt-10'>Explore Loan Options</h3>
+                <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-black text-white m-auto text-center'>1</div>
+                <h3 className='text-2xl md:text-4xl font-black mt-10'>Explore Loan Options</h3>
                 <p className='leading-8 mt-4'>Benefit from competitive interest rates designed to suit your budget</p>
               </div>
             </div>
 
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
               <div className='px-10 py-14'>
-                <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-bold text-white m-auto text-center'>2</div>
+                <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-black text-white m-auto text-center'>2</div>
 
-                <h3 className='text-4xl font-bold mt-10'>Apply Online</h3>
+                <h3 className='text-2xl md:text-4xl font-black mt-10'>Apply Online</h3>
                 <p className='leading-8 mt-4'>Complete our straightforward online application with your essential details</p>
               </div>
             </div>
 
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
               <div className='px-10 py-14'>
-                <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-bold text-white m-auto text-center'>3</div>
+                <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-black text-white m-auto text-center'>3</div>
 
-                <h3 className='text-4xl font-bold mt-10'>Review & Approval</h3>
+                <h3 className='text-2xl md:text-4xl font-black mt-10'>Review & Approval</h3>
                 <p className='leading-8 mt-4'>Our team will review your application and inform you of the decision</p>
               </div>
             </div>
 
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
               <div className='px-10 py-14'>
-                <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-bold text-white m-auto text-center'>4</div>
+                <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-black text-white m-auto text-center'>4</div>
 
-                <h3 className='text-4xl font-bold mt-10'>Drive Away</h3>
+                <h3 className='text-2xl md:text-4xl font-black mt-10'>Drive Away</h3>
                 <p className='leading-8 mt-4'>Once approved, funds will be disbursed, putting you on the road towards your dream car</p>
               </div>
             </div>
@@ -105,7 +105,7 @@ const StudentLoan = () => {
                 Have a stable income source.<br />
                 Meet our credit assessment criteria.<br />
                 Be a MyMonty for more than 6 months</p>
-              <button className='mm-button mt-14 !px-20'>Apply Now</button>
+              {/* <button className='mm-button mt-14 !px-20'>Apply Now</button> */}
             </div>
           </div>
         </div>

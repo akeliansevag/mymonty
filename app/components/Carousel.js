@@ -128,7 +128,6 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                                 <div className='z-10 block relative'>
                                     {filter.title}
                                 </div>
-
                             </div>
                         )
                     })

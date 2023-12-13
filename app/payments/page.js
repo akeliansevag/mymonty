@@ -50,13 +50,14 @@ const payments = () => {
                         <TextBlock title="Pay via QR/Link" description="No need to pay in cash banknotes anymore, just tap on the payment link or scan the payment QR and get your payment done in seconds." button={true} />
                         <Image className='md:w-1/2' src={sectionTwo} alt='Section Image' />
                     </div>
-                    <div id="notifications-and-alerts" className='mt-40 flex flex-col-reverse lg:flex-row gap-10 place-items-center'>
+                    <div id="notifications-and-alerts" className='mt-20 md:mt-40 flex flex-col-reverse lg:flex-row gap-16 place-items-center'>
                         <Image className='md:w-1/3' src={sectionThree} alt='Section Image' />
                         <TextBlock title="Instant Payment Notifications" description="With instant payment notifications, you can confirm that your payment has gone through and the amount you were charged." button={true} />
                     </div>
                 </div>
             </Section>
             <section id="pos" className='flex items-end py-14 md:py-20 relative min-h-[calc(100vh-var(--mobile-header-height))]'>
+                <div className="absolute -z-[9] w-full h-full top-0 left-0 bg-black opacity-20"></div>
                 <Image src={sectionFour} fill={true} placeholder='blur' sizes='100vw' className='object-cover -z-10' />
                 <div className='container'>
                     <TextBlock buttonColor="white" textColor="white" title="POS payment" description="Payment made easy with MyMonty at more than 14000 Areeba and Credit Libanais POS and for all their merchants across Lebanon. Contactless wherever supported." button={true} />
@@ -66,17 +67,27 @@ const payments = () => {
             <div id="bill-payment">
                 <Section>
                     <div className='container text-center'>
-                        <div className='flex flex-col md:flex-row gap-10 items-center justify-center mb-10'>
-                            <Image src={billPayment} alt='Image' />
-                            <Image src={onlineVouchers} alt='Image' />
-                            <Image src={tuitionPayment} alt='Image' />
-                            <Image src={weddingList} alt='Image' />
+                        <div className='gap-2 md:gap-1 grid grid-cols-2 md:grid-cols-4 items-center justify-center mb-10'>
+                            <div>
+                                <Image src={onlineVouchers} alt='Image' />
+                            </div>
+                            <div>
+                                <Image src={billPayment} alt='Image' />
+                            </div>
+
+                            <div>
+                                <Image src={tuitionPayment} alt='Image' />
+                            </div>
+                            <div>
+                                <Image src={weddingList} alt='Image' />
+                            </div>
+
                         </div>
 
                         <TextBlock center={true} title="Bill Payment" description="We are launching a large bundle of services very soon, including group payment, and bill splitting for your convenience." button={true} />
                     </div>
-                </Section>
-            </div>
+                </Section >
+            </div >
 
             <section id="travel-esim" className='py-14 md:py-20 relative'>
                 <Image src={paymentTravel} fill={true} placeholder='blur' sizes='100vw' className='object-cover -z-10' />
