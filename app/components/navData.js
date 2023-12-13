@@ -1,7 +1,7 @@
 export const data = [
     {
         title: 'Personal',
-        url: null,
+        url: '/',
         children: [
             {
                 title: 'Accounts',

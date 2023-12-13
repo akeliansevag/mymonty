@@ -20,7 +20,7 @@ const HomeBanner = () => {
                         MYMONTY BETTER THAN A BANK.
                     </h1>
                     <p className='text-xl mt-8'>Explore our innovative ways to manage your finances.</p>
-                    <button onClick={handleOpenModal} className='mm-button mt-8 blue'>Download App</button>
+                    <button onClick={handleOpenModal} className='mm-button mt-8 blue'>Get the app</button>
                 </div>
                 <div className='flex-1 flex items-end'>
                     <Image alt="M Logo" src={bannerM} className='w-full sm:pr-20' />
