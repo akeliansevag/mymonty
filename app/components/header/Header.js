@@ -58,7 +58,7 @@ const Header = () => {
                     </div>
                     <div className='hidden md:block'>
                         <button onClick={handleOpenModal} className='mm-button whitespace-nowrap'>
-                            Download app
+                            Get the app
                         </button>
                     </div>
 

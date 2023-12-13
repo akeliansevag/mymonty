@@ -60,30 +60,30 @@ const accounts = () => {
             {
                 title: 'Top up by request',
                 description: 'Request money from any MyMonty user directly by selecting them from your contact list or via link or QR code.',
-                button: {
-                    text: 'Choose your card',
-                    url: '/cards'
-                },
+                // button: {
+                //     text: 'Choose your card',
+                //     url: '/cards'
+                // },
                 contentImage: '/personal/accounts-carousel-2-content.png',
                 backgroundImage: '/personal/accounts-carousel-2.jpg'
             },
             {
                 title: 'Top up with our partners',
                 description: 'Top up your wallet accounts by depositing money at more than 1400 OMT locations across Lebanon for more convenience. Your money is reflected instantly in your wallet.',
-                button: {
-                    text: 'Choose your card',
-                    url: '/cards'
-                },
+                // button: {
+                //     text: 'Choose your card',
+                //     url: '/cards'
+                // },
                 contentImage: '/personal/accounts-carousel-3-content.png',
                 backgroundImage: '/personal/accounts-carousel-3.jpg'
             },
             {
                 title: 'Top up by ATM',
                 description: 'Top up your wallet accounts by depositing money at any Fransabank or BLC branch or ATM across Lebanon. Your money is reflected instantly in your wallet.',
-                button: {
-                    text: 'Choose your card',
-                    url: '/cards'
-                },
+                // button: {
+                //     text: 'Choose your card',
+                //     url: '/cards'
+                // },
                 contentImage: '/personal/accounts-carousel-4-content.png',
                 backgroundImage: '/personal/accounts-carousel-4.jpg'
             }
@@ -106,7 +106,6 @@ const accounts = () => {
                     <TextBlock title='Welcome to The New Era of Effortless Payments' description="Experience hassle-free and quick money transactions that are not only efficient, but also enjoyable and highly adaptable." button={true} />
                     <Image className='md:w-1/3' src={coins} alt="Coins" />
                 </div>
-
             </Section>
         </div>
     )
