@@ -1,7 +1,6 @@
 'use client';
 import { useEffect, useRef, useState, Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react'
-import Link from 'next/link';
 
 const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
 
@@ -9,23 +8,19 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
 
   const [openCountry, setOpenCountry] = useState(false);
   const [countries, setCountries] = useState([]);
-
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCountry, setSelectedCountry] = useState(null);
-
   const cancelButtonRef = useRef(null);
   const dropdownRef = useRef(null);
-
+  const [errors, setErrors] = useState({});
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
-    code: selectedCountry ? selectedCountry.code : '', // Default code value based on selected country
-    country_id: selectedCountry ? selectedCountry.id : '', // Default country_id value based on selected country
+    code: selectedCountry ? selectedCountry.code : '',
+    country_id: selectedCountry ? selectedCountry.id : '',
     mobile: '',
     phone_number: '',
   });
-
-  const [errors, setErrors] = useState({});
-  const [submissionStatus, setSubmissionStatus] = useState(null); // 'success' or 'error'
-  const [loading, setLoading] = useState(false);
 
   const validateForm = () => {
     let isValid = true;
@@ -172,7 +167,6 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal }) => {
 
     fetchData();
   }, []);
-
 
   const handleCountryClick = (country) => {
     setSelectedCountry(country);

@@ -1,80 +1,38 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
-import { countries } from '@/app/countries';
 
 const Contact = () => {
 
   const apiUrl = process.env.apiUrl;
 
+  const [selectedCountry, setSelectedCountry] = useState(null);
   const initialFormData = {
     name: '',
     email: '',
     company: '',
     profession: '',
-    code: '',
+    code: selectedCountry ? selectedCountry.code : '', // Default code value based on selected country
     mobile: '',
+    country_id: selectedCountry ? selectedCountry.id : '',
     subject: '',
     message: '',
-  };
+  }
 
-  const initialErrors = {
-    name: '',
-    email: '',
-    mobile: '',
-    subject: '',
-    message: '',
-  };
-
-  const [errors, setErrors] = useState(initialErrors);
-  const [submissionStatus, setSubmissionStatus] = useState(null); // 'success' or 'error'
   const [loading, setLoading] = useState(false);
-
   const [openCountry, setOpenCountry] = useState(false);
-  const [userInfo, setUserInfo] = useState({});
-  const [searchInput, setSearchInput] = useState('');
-  const [selectedCountry, setSelectedCountry] = useState(null);
-  const [selectedCountryCode, setSelectedCountryCode] = useState('');
+  const [errors, setErrors] = useState({});
+  const [countries, setCountries] = useState([]);
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
   const dropdownRef = useRef(null);
   const [formData, setFormData] = useState(initialFormData);
-
-  const handleSearchChange = (e) => setSearchInput(e.target.value);
-
-  const handleCountryClick = (country) => {
-    setOpenCountry(!openCountry);
-    setSearchInput('');
-    setSelectedCountry(country);
-    setFormData((prevData) => ({ ...prevData, code: country.code }));
-  };
-
-  const filteredCountries = countries.filter((country) =>
-    country.name.toLowerCase().includes(searchInput.toLowerCase())
-  );
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target) &&
-        !document.getElementById('calling_code').contains(event.target)
-      ) {
-        setOpenCountry(false);
-        setSearchInput('');
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [dropdownRef]);
 
   const validateForm = () => {
     let isValid = true;
     const newErrors = {};
 
     // Required fields validation
-    const requiredFields = ['name', 'email', 'mobile', 'subject', 'message'];
+    const requiredFields = ['name', 'email', 'code', 'mobile', 'subject', 'message'];
     requiredFields.forEach((field) => {
       if (!formData[field].trim()) {
         newErrors[field] = 'This field is required';
@@ -92,6 +50,25 @@ const Contact = () => {
     setErrors(newErrors);
     return isValid;
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target) &&
+        !document.getElementById('calling_code').contains(event.target)
+      ) {
+        setOpenCountry(false);
+        setSearchTerm('')
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [dropdownRef]);
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -127,8 +104,12 @@ const Contact = () => {
         if (response.ok) {
           setSubmissionStatus('success');
           setTimeout(() => {
-            setFormData({ ...initialFormData, code: userInfo.calling_code || '' });
-            setErrors(initialErrors);
+            setFormData({
+              ...initialFormData,
+              code: selectedCountry ? selectedCountry.code : '',
+              country_id: selectedCountry ? selectedCountry.id : '',
+            });
+            setErrors({});
             setSubmissionStatus(null);
           }, 2000);
         } else {
@@ -137,7 +118,8 @@ const Contact = () => {
         }
       } catch (error) {
         setSubmissionStatus('error');
-        setErrors({ message: 'An error occurred while submitting the form.' });
+        setErrors(error || {});
+        // setErrors({ message: 'An error occurred while submitting the form.' });
       } finally {
         setLoading(false);
       }
@@ -147,23 +129,56 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    const fetchUserInfo = async () => {
+    const fetchData = async () => {
       try {
-        const response = await fetch(`${apiUrl}/user-ip`);
-        if (response.ok) {
-          const data = await response.json();
-          setUserInfo(data);
-          setFormData((prevData) => ({ ...prevData, code: data.calling_code || '' }));
-        } else {
-          // Handle error fetching user information
+        // const countriesResponse = await fetch(`${apiUrl}/get-countries`);
+        const userResponse = await fetch(`${apiUrl}/user-ip`);
+
+        if (userResponse.ok) {
+          const userData = await userResponse.json();
+
+          const countriesList = userData.countries
+          const countriesMap = new Map(countriesList.map(country => [country.iso2, country]));
+          setCountries(countriesList);
+
+          const userCountryIso2 = userData?.iso2;
+          const userCountry = countriesMap.get(userCountryIso2);
+
+          if (userCountry) {
+            setSelectedCountry(userCountry);
+
+            setFormData(prevFormData => ({
+              ...prevFormData,
+              code: userCountry.code,
+              country_id: userCountry.id,
+            }));
+          }
         }
       } catch (error) {
-        // Handle error fetching user information
+        console.error('Error fetching data:', error);
       }
     };
 
-    fetchUserInfo();
+    fetchData();
   }, []);
+
+  const handleCountryClick = (country) => {
+    setSelectedCountry(country);
+
+    // Update formData values when a country is selected
+    setFormData(prevFormData => ({
+      ...prevFormData,
+      code: country.code,
+      country_id: country.id,
+    }));
+
+    setOpenCountry(!openCountry);
+    setSearchTerm('');
+  };
+
+  const filteredCountries = countries.filter(country =>
+    country.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div>
@@ -241,21 +256,14 @@ const Contact = () => {
                         <div className="calling_code">
                           <div className="flex h-full justify-between items-center">
                             <div id="calling_code" onClick={(e) => { setOpenCountry(!openCountry) }} className="select bg-gray-100 border-gray-300 border-2 border-e-0 p-2.5 rounded-xl rounded-e-none flex justify-between items-center text-gray-400  ">
-                              {selectedCountry ? (
+                              {selectedCountry && (
                                 <>
-                                  <div className="country_flag text-3xl">
-                                    {selectedCountry.flag}
+                                  <div className="text-lg">
+                                    <img src={`/flags/${selectedCountry.iso2}.svg`} alt={selectedCountry.name} />
                                   </div>
-                                  <div>
+                                  <div className='text-black'>
                                     +{selectedCountry.code}
                                   </div>
-                                </>
-                              ) : (
-                                <>
-                                  <div className="country_flag text-3xl">
-                                    {userInfo.country_flag_emoji}
-                                  </div>
-                                  <div>+{userInfo.calling_code}</div>
                                 </>
                               )}
                               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -267,13 +275,13 @@ const Contact = () => {
 
                         <div id="calling_code-drop" className={`dropdown px-1 ${openCountry ? 'visible' : 'hidden'}`} ref={dropdownRef}>
                           <div className="search-wrapper !sticky top-0 left-0 flex justify-between items-center">
-                            <input type="text" id="search-country" placeholder="Search" className="search-country outline-0 w-full px-3.5 py-2.5 bg-gray-100 border-0 text-sm" value={searchInput} onChange={handleSearchChange} />
-                            {searchInput && (
-                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24" className='px-1 cursor-pointer' onClick={() => { setSearchInput(''); }}>
+                            <input type="text" id="search-country" placeholder="Search" className="search-country outline-0 w-full px-3.5 py-2.5 bg-gray-100 border-0 text-sm" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+                            {searchTerm && (
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24" className='px-1 cursor-pointer' onClick={(e) => { setSearchTerm(''); }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
                               </svg>
                             )}
-                            {searchInput === '' && (
+                            {searchTerm === '' && (
                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-5-5m2-5a8 8 0 1 0-16 0 8 8 0 0 0 16 0z"></path>
                               </svg>
@@ -282,11 +290,11 @@ const Contact = () => {
 
                           <ul id="country-ul">
                             {filteredCountries.map((country, index) => (
-                              <li key={index} className="my-1 rounded-md cursor-pointer px-2.5 hover:bg-gray-300" data-code={country.code} data-name={country.name} data-iso={country.iso2} onClick={() => handleCountryClick(country)}>
+                              <li key={index} className="my-1 rounded-md cursor-pointer py-2 px-2.5 hover:bg-gray-300" onClick={() => handleCountryClick(country)}>
                                 <span className="flex items-center">
-                                  {country.flag}
-                                  <span className="ms-1 text-sm">{country.name}</span>
-                                  <span className="ms-1 text-sm">+{country.code}</span>
+                                  <img src={`/flags/${country.iso2}.svg`} alt={country.name} />
+                                  <span className="ms-4 text-sm">{country.name}</span>
+                                  <span className="ms-4 text-sm">{country.code}</span>
                                 </span>
                               </li>
                             ))}
@@ -300,14 +308,13 @@ const Contact = () => {
                           </div>
                         </div>
 
-                        <input type="hidden" name="code" value={selectedCountryCode} className="onboarding-code" />
                         <input
                           id="mobile"
                           type="tel"
                           name="mobile"
                           value={formData.mobile}
                           onChange={handleChange}
-                          placeholder="XXXXXXXX"
+                          placeholder="Mobile number"
                           className={`outline-0 w-full border-gray-300 border-2 border-s-0 pl-1 pr-3.5 py-2.5 rounded-xl rounded-s-none ${errors.mobile ? 'border-s-2 border-red-500' : ''}`} />
                       </div>
                       <span className='text-red-500'>{errors.mobile}</span>
