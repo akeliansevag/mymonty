@@ -7,8 +7,8 @@ import Image from 'next/image';
 
 const SectionFour = () => {
     return (
-        <section className='pt-14 pb-14 lg:pt-28  lg:pb-20 min-h-[calc(100vh-var(--mobile-header-height))] flex flex-col justify-center  bg-black text-white overflow-x-hidden'>
-            {/* <Image fill placeholder='blur' quality={100} sizes='100vw' src={backgroundImage} className='object-cover w-full h-full z-0' alt="Background Image" /> */}
+        <section className='relative pt-14 pb-14 lg:pt-28  lg:pb-20 min-h-[calc(100vh-var(--mobile-header-height))] flex flex-col justify-center  bg-black text-white overflow-x-hidden'>
+            <Image fill placeholder='blur' quality={100} sizes='100vw' src={backgroundImage} className='object-cover w-full h-full z-0' alt="Background Image" />
             <div className='md:flex md:items-center gap-10 relative z-10'>
                 <div className='flex justify-end 2xl:pl-28'>
                     <div className='p-4 md:p-0 md:w-2/3'>
