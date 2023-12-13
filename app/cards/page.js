@@ -49,7 +49,7 @@ const cards = () => {
         ],
         content: [
             {
-                title: 'Pay with Make Contactless Payments',
+                title: 'Make Contactless Payments',
                 description: 'Easy, quick, and secure payments with just a single tap of your physical prepaid card at any contactless terminal.',
                 button: {
                     text: 'Download app',
