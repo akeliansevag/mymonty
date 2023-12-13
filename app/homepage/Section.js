@@ -20,7 +20,7 @@ const Section = () => {
                         <div className='md:w-2/3'>
                             <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Choose MyMonty for Your House Loan</h2>
                             <p className='leading-8 mt-8'>MyMonty's house loans are crafted to turn your dream of owning a home into a reality, providing the financial foundation for your perfect abode.</p>
-                            <Link href="/loans" className='mm-button white mt-8 mx-auto'>Learn more</Link>
+                            <Link href="/house-loan" className='mm-button white mt-8 mx-auto'>Learn more</Link>
                         </div>
                     </div>
 
