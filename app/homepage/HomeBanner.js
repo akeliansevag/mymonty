@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import banner from '@/public/home-banner-3.webp';
-import bannerM from '@/public/home-banner-m.webp';
+import banner from '@/public/home-banner-girl.webp';
+import bannerM from '@/public/saras-birthday-cake.webp';
 import { useAppContext } from '@/app/AppContext';
 
 const HomeBanner = () => {
