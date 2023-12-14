@@ -49,7 +49,7 @@ const accounts = () => {
         content: [
             {
                 title: 'Top up by Card',
-                description: 'Top up your wallet account using any Fresh USD bank Card, and see the balance updated instantly with no hidden fees, for free from your MyMonty card.',
+                description: 'Top up your wallet account using any Fresh USD bank Card, and see the balance updated instantly with no hidden fees. For free from your MyMonty card.',
                 button: {
                     text: 'Choose your card',
                     url: '/cards'
@@ -59,7 +59,7 @@ const accounts = () => {
             },
             {
                 title: 'Top up by request',
-                description: 'Request money from any MyMonty user directly by selecting them from your contact list or via link or QR code.',
+                description: 'Request money from anyone directly by selecting them from your contact list or via link or QR code.',
                 // button: {
                 //     text: 'Choose your card',
                 //     url: '/cards'
@@ -79,7 +79,7 @@ const accounts = () => {
             },
             {
                 title: 'Top up by ATM',
-                description: 'Top up your wallet accounts by depositing money at any Fransabank or BLC branch or ATM across Lebanon. Your money is reflected instantly in your wallet.',
+                description: 'Top up your wallet accounts by depositing money at any Fransabank or BLC ATMs across Lebanon. Your money is reflected instantly in your wallet.',
                 // button: {
                 //     text: 'Choose your card',
                 //     url: '/cards'
