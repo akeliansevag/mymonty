@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root{
-    --header-height: 96px;
+    --header-height: 72px;
     --mobile-header-height: 72px;
 
     /**COLORS**/
