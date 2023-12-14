@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import banner from '@/public/home-banner-girl.webp';
+import banner from '@/public/home-banner-girl-d.webp';
 import bannerM from '@/public/saras-birthday-cake.webp';
 import { useAppContext } from '@/app/AppContext';
 
