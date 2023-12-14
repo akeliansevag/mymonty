@@ -32,8 +32,8 @@ const Accordion = ({ title, items }) => {
                             </div>
 
                         </h3>
-                        <div className={`text-base overflow-hidden transition-all ${toggleClasses}`}>
-                            <p className='pt-3'>{item.description}</p>
+                        <div className={`faq-content text-base overflow-hidden transition-all ${toggleClasses}`}>
+                            <div className='pt-3' dangerouslySetInnerHTML={{ __html: item.description }} />
                         </div>
                     </div>
                 );

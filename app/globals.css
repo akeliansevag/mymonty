@@ -123,3 +123,8 @@ swiper-slide img{
         width: 70%;
     }
 }
+
+.faq-content ul{
+    list-style-type: disc;
+    margin-left: 30px;
+}
