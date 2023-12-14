@@ -17,11 +17,11 @@ const Accordion = ({ title, items }) => {
 
                 return (
                     <div
-                        onClick={() => handleToggle(index)}
+
                         key={index}
-                        className='bg-[#F9FAFB] mb-5 p-6 rounded-md overflow-hidden cursor-pointer'
+                        className='bg-[#F9FAFB] mb-5 rounded-md overflow-hidden cursor-pointer'
                     >
-                        <h3 className='text-xl flex justify-between items-center'>
+                        <h3 onClick={() => handleToggle(index)} className='p-6 text-xl flex justify-between items-center'>
                             <div>
                                 {item.title}
                             </div>
@@ -33,7 +33,7 @@ const Accordion = ({ title, items }) => {
 
                         </h3>
                         <div className={`html-content text-base overflow-hidden transition-all ${toggleClasses}`}>
-                            <div className='pt-3' dangerouslySetInnerHTML={{ __html: item.description }} />
+                            <div className='px-6 pb-6' dangerouslySetInnerHTML={{ __html: item.description }} />
                         </div>
                     </div>
                 );
