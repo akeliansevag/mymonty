@@ -50,7 +50,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${Aeonik.variable}`}>
-      <body className='font-aeonik'>
+      <body className='font-aeonik pt-[var(--header-height)]'>
         <AppProvider>
           <App children={children} />
         </AppProvider>

@@ -21,7 +21,7 @@ const loans = () => {
     const data = {
         title: 'Receive your Advanced Salary',
         subtitle: 'Loans',
-        desc: 'Harness the power of MyMonty for hassle-free salary domiciliation and unlock early salary advances based on your eligibility.',
+        desc: 'Harness the power of MyMonty for hassle-free salary domiciliation and unlock advanced salary based on your eligibility.',
         image: {
             inGrid: true,
             layout: 'half',
