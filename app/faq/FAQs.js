@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Section from '../components/Section';
 import Accordion from './Accordion';
 import useFetch from '../api/useFetch';

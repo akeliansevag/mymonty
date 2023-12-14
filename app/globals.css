@@ -124,7 +124,11 @@ swiper-slide img{
     }
 }
 
-.faq-content ul{
+.html-content ul{
     list-style-type: disc;
     margin-left: 30px;
+}
+
+.html-content a{
+    color: #2657D4;
 }
