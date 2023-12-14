@@ -8,7 +8,7 @@ import { useAppContext } from '../AppContext';
 const Banner = ({ data, theme }) => {
     const { handleOpenModal } = useAppContext();
     return (
-        <section className={`min-h-[100vh] w-full relative ${theme == 'dark' ? 'bg-black' : 'bg-gray-100'} ${data.image.layout !== 'full' || !data.image.inGrid ? 'max-md:pb-14' : ''}`}>
+        <section className={`py-14 flex flex-col justify-center md:py-20 min-h-[calc(100vh-var(--header-height))] w-full relative ${theme == 'dark' ? 'bg-black' : 'bg-gray-100'} ${data.image.layout !== 'full' || !data.image.inGrid ? 'max-md:pb-14' : ''}`}>
             {
                 data?.image?.layout === 'full' && (
                     <>
@@ -23,7 +23,7 @@ const Banner = ({ data, theme }) => {
                     data.image.inGrid ? (
                         <div className='container'>
                             <div className={`flex flex-col md:flex-row gap-10 md:gap-0 items-center ${data.image.layout !== 'full' ? 'justify-center ' : 'h-[100dvh]'} `}>
-                                <div className={`flex flex-col w-full md:w-1/2 md:h-screen justify-center mt-[130px] md:mt-0 ${data.image.layout !== 'full' ? '' : ''}`}>
+                                <div className={`flex flex-col w-full md:w-1/2 justify-center md:mt-0 ${data.image.layout !== 'full' ? '' : ''}`}>
                                     <div>
                                         {
                                             data?.subtitle && (
@@ -56,7 +56,7 @@ const Banner = ({ data, theme }) => {
                         <>
                             <div className='container'>
                                 <div className={`flex flex-col md:flex-row gap-10 md:gap-0 items-center ${data.image.layout !== 'full' ? 'justify-cente ' : 'h-[100dvh]'} `}>
-                                    <div className={`flex flex-col w-full md:w-1/2 md:h-screen justify-center mt-[130px] md:mt-0 ${data.image.layout !== 'full' ? '' : ''}`}>
+                                    <div className={`flex flex-col w-full md:w-1/2 justify-center md:mt-0 ${data.image.layout !== 'full' ? '' : ''}`}>
                                         <div>
                                             {
                                                 data?.subtitle && (
