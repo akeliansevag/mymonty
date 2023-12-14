@@ -80,7 +80,7 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                         let contentClasses =
                             selectedIndex === index
                                 ? 'opacity-1'
-                                : 'opacity-0';
+                                : 'opacity-0 -z-10';
                         return (
                             <div key={index} className={`absolute py-14 lg:py-28 transition-opacity ease-in duration-[400ms] h-full w-full ${contentClasses}`}>
                                 <div className='container gap-10 flex flex-col h-full overflow-hidden text-center relative'>
