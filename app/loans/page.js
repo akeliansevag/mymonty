@@ -58,7 +58,7 @@ const loans = () => {
                     url: '/car-loan',
                 },
                 contentImage: '/personal/loans-carousel-1-content.webp',
-                backgroundImage: '/personal/loans-carousel-1-image.webp'
+                backgroundImage: '/personal/car-image.webp'
             },
             {
                 title: 'Step into Your Dream house',

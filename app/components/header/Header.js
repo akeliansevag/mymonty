@@ -21,7 +21,9 @@ const Header = () => {
         let lastScrollTop = 0;
         let scrollDirection = null;
         let pixelsScrolledSinceDirectionChange = 0;
-
+        if (window.scrollY > 0) {
+            setScrolling(true);
+        }
         const handleScroll = () => {
             const currentScroll = window.scrollY;
             // Define a scroll threshold based on your requirements
@@ -73,7 +75,6 @@ const Header = () => {
 
         // Attach the event listener when the component mounts
         window.addEventListener('scroll', handleScroll);
-
         // Clean up the event listener when the component unmounts
         return () => {
             window.removeEventListener('scroll', handleScroll);
