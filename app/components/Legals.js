@@ -12,7 +12,7 @@ const Legals = ({ api }) => {
                     data.data?.map((item, index) => {
                         return (
                             <div key={index}>
-                                <div className='html-content' dangerouslySetInnerHTML={{ __html: item.description }} />
+                                <div className='text-base html-content' dangerouslySetInnerHTML={{ __html: item.description }} />
                             </div>
                         )
                     })
