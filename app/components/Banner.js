@@ -34,10 +34,12 @@ const Banner = ({ data, theme }) => {
                                         <p className='text-xl mt-8'>{data.desc}</p>
 
                                         {
-                                            data.cta.type === 'link' ? (
-                                                <Link className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`} href={data.cta.link.url}>{data.cta.link.name}</Link>
-                                            ) : (
-                                                <button onClick={handleOpenModal} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                            data.cta && (
+                                                data.cta.type === 'link' ? (
+                                                    <Link className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`} href={data.cta.link.url}>{data.cta.link.name}</Link>
+                                                ) : (
+                                                    <button onClick={handleOpenModal} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                )
                                             )
                                         }
                                     </div>
@@ -67,10 +69,12 @@ const Banner = ({ data, theme }) => {
                                             <p className='text-xl mt-8'>{data.desc}</p>
 
                                             {
-                                                data.cta.type === 'link' ? (
-                                                    <Link className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`} href={data.cta.link.url}>{data.cta.link.name}</Link>
-                                                ) : (
-                                                    <button className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                data.cta && (
+                                                    data.cta.type === 'link' ? (
+                                                        <Link className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`} href={data.cta.link.url}>{data.cta.link.name}</Link>
+                                                    ) : (
+                                                        <button className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                    )
                                                 )
                                             }
                                         </div>
@@ -83,7 +87,6 @@ const Banner = ({ data, theme }) => {
                                     {data?.image?.url && (
                                         <Image alt='Girl holding a phone' placeholder='blur' quality={100} sizes='100vw' src={data.image?.url} className='w-full' priority />
                                     )}
-
                                 </div>
                             </div>
                         </>
