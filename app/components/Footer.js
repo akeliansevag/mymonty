@@ -144,6 +144,7 @@ const Footer = () => {
                     <div className='justify-center md:justify-end flex gap-7 text-base underline'>
                         <Link className='opacity-60 hover:opacity-100' href="/terms-conditions">Terms & Conditions</Link>
                         <Link className='opacity-60 hover:opacity-100' href="/privacy-policy">Privacy Policy</Link>
+                        <Link className='opacity-60 hover:opacity-100' href="/cookie-policy">Cookie Policy</Link>
                     </div>
                 </div>
             </div>
