@@ -5,7 +5,7 @@ import React from 'react';
 import banner from '@/public/personal/loyalty-banner.webp';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
-import sectionTwo from '@/public/personal/cashback.webp';
+import sectionTwo from '@/public/personal/cashback-n.webp';
 import sectionFour from '@/public/personal/referral.webp';
 import sectionFive from '@/public/personal/loyalty-img.webp';
 import Image from 'next/image';
