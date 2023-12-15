@@ -5,9 +5,9 @@ import Image from 'next/image';
 import banner from '@/public/personal/loans-banner.webp';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
-import free from '@/public/personal/free.webp';
-import installment from '@/public/personal/installment.webp';
-import twopointfive from '@/public/personal/2.5.webp';
+import free from '@/public/personal/option1.webp';
+import installment from '@/public/personal/option2.webp';
+import twopointfive from '@/public/personal/option3.webp';
 
 import bnpl from '@/public/personal/bnpl.webp';
 import Carousel from '@/app/components/Carousel';
