@@ -16,7 +16,7 @@ const HomeBanner = () => {
 
             <div className='flex-1 flex-col sm:flex-row container flex gap-20'>
                 <div className='flex-1 self-center sm:-mt-16'>
-                    <h1 className='font-black text-4xl sm:text-5xl md:text-6xl lg:text-[5.4rem] leading-none uppercase'>
+                    <h1 className='font-black text-[42px]  sm:text-5xl md:text-6xl lg:text-[5.4rem] mt-5 leading-none uppercase'>
                         BETTER THAN A BANK.
                     </h1>
                     <p className='text-xl mt-8'>Explore our innovative ways to manage your&nbsp;finances.</p>
