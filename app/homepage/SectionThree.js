@@ -10,15 +10,12 @@ const SectionThree = () => {
             <div className='container text-center'>
                 <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Explore Our Diverse Range of Cards</h2>
                 <div className='lg:w-1/2 mx-auto'>
-                    <p className='leading-8 mt-8'>Pick the color and style that matches your lifestyle and personality. Choose between your free Standard card or the Premium card and be ready for the envious looks it attracts.</p>
+                    <p className='leading-8 mt-8'>Pick the color and style that matches your lifestyle and personality. Choose the Standard or the Premium card and embrace envy-inducing looks.</p>
                     <Link href="/cards" className='mm-button white mt-8 mx-auto'>Choose your card</Link>
                 </div>
                 {/* <div className='text-center'>
                     <Image alt="Section Image" src={sectionImage} className='mx-auto mt-14 w-full md:w-2/3' />
                 </div> */}
-
-
-
             </div>
             <CardsSlider />
         </section>

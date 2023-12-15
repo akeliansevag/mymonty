@@ -51,7 +51,7 @@ const transfers = () => {
         content: [
             {
                 title: 'Send money',
-                description: 'Send a payment request, specifying the amount and purpose to the recipient number or share your QR/Link on chatting platforms.',
+                description: 'Easily send money to friends, family, or associates by entering their mobile number, or by tapping on their transfer link or scanning their QR.',
                 button: {
                     text: 'Download app',
                     url: '#',
@@ -73,7 +73,7 @@ const transfers = () => {
             },
             {
                 title: 'Request money',
-                description: 'Easily send money to friends, family, or associates by entering their mobile number, or by tapping on their transfer link or scanning their QR.',
+                description: 'Send a payment request, specifying the amount and purpose to the recipient number or share your QR/Link on chatting platforms.',
                 button: {
                     text: 'Download app',
                     url: '#',
@@ -111,7 +111,7 @@ const transfers = () => {
     return (
         <>
             <Banner data={data} />
-            <div id="p2p-remittance">
+            <div id="borderless-transfers">
                 <section className='pb-0 pt-14 lg:pt-24'>
                     <div className='container flex-col-reverse flex lg:flex-row gap-10 items-center'>
                         <Image className='md:w-1/2' src={sectionTwo} alt='Image' />

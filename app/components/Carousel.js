@@ -82,7 +82,7 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                                 ? 'opacity-1'
                                 : 'opacity-0 -z-10';
                         return (
-                            <div key={index} className={`absolute py-14 lg:py-28 transition-opacity ease-in duration-[400ms] h-full w-full ${contentClasses}`}>
+                            <div key={index} className={`absolute py-14 lg:py-10 xl:py-28 transition-opacity ease-in duration-[400ms] h-full w-full ${contentClasses}`}>
                                 <div className='container gap-10 flex flex-col h-full overflow-hidden text-center relative'>
                                     <div>
                                         <TextBlock center={true} textColor="white" title={item.title} description={item.description} button={false} />
@@ -117,7 +117,7 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                     })
                 )
             }
-            <div className='absolute bottom-[20px] md:bottom-[50px] w-full overflow-auto pb-4'>
+            <div className='absolute bottom-[20px] md:bottom-[20px] lg:bottom-[20px] w-full overflow-auto pb-4'>
                 <div className='container justify-left flex gap-5 md:justify-center'>
                     {data && data?.filters.map((filter, index2) => {
                         let buttonClasses = index2 === selectedIndex ? ' !bg-[#2657D4] !border-[#2657D4]' : '';

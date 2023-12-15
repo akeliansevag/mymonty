@@ -12,11 +12,14 @@ const App = ({ children }) => {
         <>
             <Modal isOpen={openModal} handleOpenModal={handleOpenModal} handleCloseModal={handleCloseModal} />
             <Header />
-            {children}
-            <Footer />
-            <Suspense fallback={null}>
-                <NavigationEvents />
-            </Suspense>
+            <div className='-mt-[var(--header-height)]'>
+                {children}
+                <Footer />
+                <Suspense fallback={null}>
+                    <NavigationEvents />
+                </Suspense>
+            </div>
+
         </>
     )
 }

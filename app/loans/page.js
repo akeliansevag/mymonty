@@ -19,9 +19,9 @@ export const metadata = {
 
 const loans = () => {
     const data = {
-        title: 'Receive your Advanced Salary',
+        title: 'Receive your Advance on Salary',
         subtitle: 'Loans',
-        desc: 'Harness the power of MyMonty for hassle-free salary domiciliation and unlock advanced salary based on your eligibility.',
+        desc: 'Harness the power of MyMonty for hassle-free salary domiciliation and unlock an advance on salary based on your eligibility.',
         image: {
             inGrid: true,
             layout: 'half',
@@ -58,7 +58,7 @@ const loans = () => {
                     url: '/car-loan',
                 },
                 contentImage: '/personal/loans-carousel-1-content.webp',
-                backgroundImage: '/personal/loans-carousel-1-image.webp'
+                backgroundImage: '/personal/car-image.webp'
             },
             {
                 title: 'Step into Your Dream house',
@@ -98,7 +98,7 @@ const loans = () => {
             <div id="advance-on-salary">
                 <Section>
                     <div className='container overflow-hidden text-center'>
-                        <TextBlock center={true} title="Advanced Salary" description="Have you ever faced an urgent payment? Or missed a black Friday for that “insufficient funds in your account” message? With MyMonty early Salary, you will have access to a portion of your next salary in advance to spend and return at your convenience with 3 flexible options." button={true} />
+                        <TextBlock center={true} title="Advance on Salary" description="Have you ever faced an urgent payment? Or missed a black Friday for that “insufficient funds in your account” message? With MyMonty Advcance on Salary, you will have access to a portion of your next salary in advance to spend and return at your convenience with 3 flexible options." button={true} />
                         <div className='flex flex-col md:flex-row gap-10 items-center justify-center mt-10'>
                             <div>
                                 <Image className='' alt="Free" src={free} />

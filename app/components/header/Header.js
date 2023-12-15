@@ -7,35 +7,84 @@ import Link from 'next/link';
 import styles from './header.module.css';
 import MobileNav from './MobileNav';
 import { useAppContext } from '@/app/AppContext';
+import { current } from 'tailwindcss/colors';
 
 const Header = () => {
     const [scrolling, setScrolling] = useState(false);
+    const [isScrollingDown, setIsScrollingDown] = useState(false);
+
     const [menuOpen, setMenuOpen] = useState(false);
     const [mobileMenuToggle, setMobileMenuToggle] = useState(false);
     const { handleOpenModal } = useAppContext();
     useEffect(() => {
         // Function to handle scroll events
+        let lastScrollTop = 0;
+        let scrollDirection = null;
+        let pixelsScrolledSinceDirectionChange = 0;
+        if (window.scrollY > 0) {
+            setScrolling(true);
+        }
         const handleScroll = () => {
-            const scrollTop = window.scrollY;
+            const currentScroll = window.scrollY;
             // Define a scroll threshold based on your requirements
-            const scrollThreshold = 1;
+            const scrollThreshold = 0;
 
-            // Check if the user has scrolled past the threshold
-            setScrolling(scrollTop > scrollThreshold);
+            if (currentScroll > scrollThreshold) {
+                setScrolling(true);
+            }
+
+            if (currentScroll <= 0) {
+                setScrolling(false);
+            }
+
+
+
+            // Determine the current scroll direction
+            if (currentScroll > lastScrollTop) {
+                // Scrolling down
+                if (scrollDirection !== 'down') {
+                    scrollDirection = 'down';
+                    pixelsScrolledSinceDirectionChange = 0; // Reset counter
+                }
+            } else {
+                // Scrolling up
+                if (scrollDirection !== 'up') {
+                    scrollDirection = 'up';
+                    pixelsScrolledSinceDirectionChange = 0; // Reset counter
+                }
+            }
+
+            // Increment the scrolled pixels counter
+            pixelsScrolledSinceDirectionChange += Math.abs(currentScroll - lastScrollTop);
+
+            // Perform action every 100px scrolled after direction change
+            if (pixelsScrolledSinceDirectionChange >= 200) {
+                if (scrollDirection == 'down') {
+                    setIsScrollingDown(true);
+                } else {
+                    setIsScrollingDown(false);
+                }
+                // Reset the counter
+                pixelsScrolledSinceDirectionChange = 0;
+            }
+
+
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+
         };
 
         // Attach the event listener when the component mounts
         window.addEventListener('scroll', handleScroll);
-
         // Clean up the event listener when the component unmounts
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
-    let headerClasses = 'flex items-center fixed top-0 left-0 z-10 w-full z-50 transition-[height] h-[var(--mobile-header-height)] md:h-[var(--header-height)] ' + styles.header;
+    let headerClasses = 'flex items-center sticky top-0 left-0 z-10 w-full z-50 transition-all h-[var(--mobile-header-height)] md:h-[var(--header-height)] ' + styles.header;
     headerClasses += scrolling ? ' ' + styles.scrolling + ' scrolling' : '';
     headerClasses += menuOpen || mobileMenuToggle ? ' ' + styles.menuOpen + ' menu-open' : '';
+    headerClasses += isScrollingDown ? ' -translate-y-full' : ' -translate-y-0';
 
     const handleMenuOpen = (toggle) => {
         setMenuOpen(toggle);

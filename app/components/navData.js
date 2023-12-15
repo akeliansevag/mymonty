@@ -53,8 +53,8 @@ export const data = [
                 url: '/transfers',
                 children: [
                     {
-                        title: 'P2P Remittance',
-                        url: '/transfers?s=p2p-remittance'
+                        title: 'Borderless Transfers',
+                        url: '/transfers?s=borderless-transfers'
                     },
                     {
                         title: 'Recurring',
@@ -129,8 +129,8 @@ export const data = [
                 url: '/loans',
                 children: [
                     {
-                        title: 'Advanced Salary',
-                        url: '/loans?s=advanced-salary',
+                        title: 'Advance on Salary',
+                        url: '/loans?s=advance-on-salary',
                     },
                     {
                         title: 'BNPL',
