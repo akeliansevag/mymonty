@@ -7,7 +7,7 @@ import { FAQ_API } from '../api/api';
 import Link from 'next/link';
 
 const FAQs = () => {
-    const { data, loading, error } = useFetch(FAQ_API);
+    //const { data, loading, error } = useFetch(FAQ_API);
     return (
         <Section>
             <div className='container'>
