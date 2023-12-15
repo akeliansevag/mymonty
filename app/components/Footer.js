@@ -138,7 +138,12 @@ const Footer = () => {
             </div>
 
             <div className='container text-sm'>
+                <hr className='h-[1px] border-gray-900 mb-10' />
+
+                <p className='opacity-30 text-base text-cente mb-10'>“MyMonty” is a brand owned by Monty Finance S.A.L., a company registered in Lebanon (Beirut CR No. 73215), Gefinor Center, Clemenceau St., Hamra, Beirut, Lebanon and is authorized by the Central Bank of Lebanon to operate as a financial institution and e-wallet service provider (List of financial institutions No. 23).</p>
+
                 <hr className='h-[1px] border-gray-900' />
+
                 <div className='py-10 text-center md:text-left md:flex md:items-center justify-between'>
                     <p className='opacity-60 text-base'>Copyright © 2023, All Rights Reserved MyMonty™</p>
                     <div className='justify-center md:justify-end flex gap-7 text-base underline'>
