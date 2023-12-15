@@ -8,7 +8,7 @@ import { useAppContext } from '@/app/AppContext';
 const HomeBanner = () => {
     const { handleOpenModal } = useAppContext();
     return (
-        <section className='flex flex-col relative min-h-screen pt-[var(--header-height)]'>
+        <section className='flex flex-col relative min-h-screen pt-[var(--header-height)] overflow-hidden'>
             <div className='absolute w-full h-full top-0 left-0 -z-10 bg-[#DCF4FE]'>
                 <Image quality={100} sizes='100vw' fill priority placeholder='blur' alt='Girl Holding a phone' src={banner} className='custom-object-position md:object-center object-cover -z-9' />
             </div>
@@ -23,7 +23,7 @@ const HomeBanner = () => {
                     <button onClick={handleOpenModal} className='mm-button mt-8 blue'>Get the app</button>
                 </div>
                 <div className='flex-1 flex items-end'>
-                    <Image alt="M Logo" src={bannerM} className='w-full sm:pr-20' />
+                    <Image alt="M Logo" src={bannerM} className='w-full sm:pr-20 -mb-[5px]' />
                 </div>
             </div>
         </section>
