@@ -11,9 +11,7 @@ const Legals = ({ api }) => {
                 {data && (
                     data.data?.map((item, index) => {
                         return (
-                            <div key={index}>
-                                <div className='text-base html-content' dangerouslySetInnerHTML={{ __html: item.description }} />
-                            </div>
+                            <div key={index} className='text-base html-content' dangerouslySetInnerHTML={{ __html: item.description }} />
                         )
                     })
                 )}
