@@ -1,5 +1,6 @@
 import React from 'react';
 import { websiteName } from '@/app/config';
+import Types from './Types';
 
 export const metadata = {
     title: websiteName + 'FAQ',
@@ -10,8 +11,6 @@ const faq = () => {
 
     return (
         <>
-
-
         </>
     )
 }

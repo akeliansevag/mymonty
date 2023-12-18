@@ -3,12 +3,9 @@ import React from 'react'
 import Banner from '@/app/components/Banner';
 import banner from '@/public/personal/code-of-conduct.webp';
 import Section from '../components/Section';
-import Link from 'next/link';
-import { FAQ_API } from '../api/api';
-import useFetch from '../api/useFetch';
+import Types from './Types';
 
 const layout = ({ children }) => {
-    const { data, loading, error } = useFetch(FAQ_API);
     const bannerData = {
         title: 'Frequently Asked Questions',
         subtitle: 'FAQ',
@@ -28,22 +25,13 @@ const layout = ({ children }) => {
     };
     return (
         <>
+
             <Banner data={bannerData} />
             <Section>
                 <div className='container'>
-                    <div className='flex gap-3 justify-center'>
-                        <div className='flex gap-3'>
-                            {data && data.data.map((type, index) => {
-                                return (
-                                    <Link key={index} href={`/faq/${type.title}`}>{type.title}</Link>
-                                )
-                            })}
-                        </div>
-
-                    </div>
+                    <Types />
                     {children}
                 </div>
-
             </Section>
         </>
     )

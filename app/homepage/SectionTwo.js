@@ -1,5 +1,5 @@
 import React from 'react';
-import sectionImage from '@/public/sectiontwoimage.webp';
+import sectionImage from '@/public/sectiontwoimage-new.webp';
 import Image from 'next/image';
 
 const SectionTwo = () => {

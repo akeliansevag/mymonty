@@ -1,13 +1,13 @@
 import React from 'react';
 import { websiteName } from '@/app/config';
 
-// export const metadata = {
-//     title: websiteName + 'FAQ Business',
-//     description: '',
-// };
+let metadata = {
+    title: '',
+    description: ''
+};
 
 const page = ({ params }) => {
-
+    metadata.title = websiteName + 'FAQ ' + params.type;
     return (
         <div>
             {params.type}
@@ -16,3 +16,5 @@ const page = ({ params }) => {
 }
 
 export default page;
+
+export { metadata };
