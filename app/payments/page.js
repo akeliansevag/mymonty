@@ -60,7 +60,7 @@ const payments = () => {
                 <div className="absolute -z-[9] w-full h-full top-0 left-0 bg-black opacity-20"></div>
                 <Image src={sectionFour} fill={true} placeholder='blur' sizes='100vw' className='object-cover -z-10' />
                 <div className='container'>
-                    <TextBlock buttonColor="white" textColor="white" title="POS payment" description="Payment made easy with MyMonty at more than 14000 Areeba and Credit Libanais POS and for all their merchants across Lebanon. Contactless wherever supported." button={true} />
+                    <TextBlock buttonColor="white" textColor="white" title="POS payment" description="Payment made easy with MyMonty at more than 14000 Areeba POSs and for all their merchants across Lebanon. Contactless wherever supported." button={true} />
                 </div>
 
             </section>

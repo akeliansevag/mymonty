@@ -22,7 +22,7 @@ const transfers = () => {
     const data = {
         title: 'Safely transfer money ',
         subtitle: 'Transfers',
-        desc: 'Bridge the gap between you and your loved ones by sending them funds home.Contactless prepaid MasterCard you can use globally.',
+        desc: 'Bridge the gap between you and your loved ones by sending them funds home. Contactless prepaid Mastercard you can use globally.',
         image: {
             inGrid: true,
             layout: 'half',
@@ -115,7 +115,7 @@ const transfers = () => {
                 <section className='pb-0 pt-14 lg:pt-24'>
                     <div className='container flex-col-reverse flex lg:flex-row gap-10 items-center'>
                         <Image className='md:w-1/2' src={sectionTwo} alt='Image' />
-                        <TextBlock title="Borderless transfers" description="Indulge the seamless and direct transfer of funds between individuals through MyMonty. Initiate transactions using your mobile devices, eliminating the need for traditional intermediaries like banks even for cross-border transfers." button={true} />
+                        <TextBlock title="Borderless transfers" description="Indulge the seamless and direct transfer of funds between individuals through MyMonty. Initiate transactions using your mobile device, eliminating the need for traditional intermediaries like banks even for cross-border transfers." button={true} />
                     </div>
                 </section>
             </div>
@@ -132,7 +132,7 @@ const transfers = () => {
 
                     <div id="cash-out" className='mt-20 md:mt-40 flex flex-col-reverse lg:flex-row items-center gap-10'>
                         <Image className='md:w-1/3' src={sectionFive} alt='Image' />
-                        <TextBlock title="Top up or cash out by ATM/bank network" description="Top up your wallet or cash out at our partner bank ATM or bank counter." button={true} />
+                        <TextBlock title="Top up or cash out by ATM/bank network" description="Top up your wallet or cash out at our partner bank ATMs." button={true} />
                     </div>
 
                 </div>

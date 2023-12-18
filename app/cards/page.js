@@ -72,7 +72,7 @@ const cards = () => {
             },
             {
                 title: 'Pay with Your Phone',
-                description: 'Open your camera and scan the QR code on the POS for fast payment.',
+                description: 'Scan the QR code on the POS for fast payment.',
                 button: {
                     text: 'Download app',
                     url: '#',
