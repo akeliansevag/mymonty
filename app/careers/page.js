@@ -22,9 +22,11 @@ const data = {
     url: careers,
   },
   cta: {
-    type: 'button',
-    button: {
-      name: 'Explore Careers'
+    type: 'link',
+    link: {
+      name: 'Explore Careers',
+      url: 'https://www.linkedin.com/company/mymonty-lebanon/jobs',
+      target: '_blank'
     }
   }
 }

@@ -8,8 +8,10 @@ import styles from './header.module.css';
 import MobileNav from './MobileNav';
 import { useAppContext } from '@/app/AppContext';
 import { current } from 'tailwindcss/colors';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
+    const pathname = usePathname();
     const [scrolling, setScrolling] = useState(false);
     const [isScrollingDown, setIsScrollingDown] = useState(false);
 
@@ -106,9 +108,18 @@ const Header = () => {
                         <Nav menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
                     </div>
                     <div className='hidden md:block'>
-                        <button onClick={handleOpenModal} className='mm-button whitespace-nowrap'>
-                            Get the app
-                        </button>
+                        {pathname == '/business' && (
+                            <Link href="https://corporate.mymonty.com/" target='_blank' rel='noopener noreferrer nofollow' className='mm-button whitespace-nowrap'>
+                                Login
+                            </Link>
+                        )}
+
+                        {pathname != '/business' && (
+                            <button onClick={handleOpenModal} className='mm-button whitespace-nowrap'>
+                                Get the app
+                            </button>
+                        )}
+
                     </div>
 
                     <div className='md:hidden cursor-pointer' onClick={handleMobileMenuToggle}>
