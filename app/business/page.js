@@ -25,9 +25,11 @@ const data = {
     url: business,
   },
   cta: {
-    type: 'button',
-    button: {
-      name: 'Download App'
+    type: 'link',
+    link: {
+      name: 'Login',
+      url: 'https://corporate.mymonty.com/',
+      target: '_blank'
     }
   }
 }
