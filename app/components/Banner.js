@@ -4,7 +4,6 @@ import Link from 'next/link';
 import React from 'react';
 import { useAppContext } from '../AppContext';
 
-
 const Banner = ({ data, theme }) => {
     let target = data.cta?.link?.target ? data.cta.link.target : '';
     const { handleOpenModal } = useAppContext();

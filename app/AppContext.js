@@ -13,6 +13,8 @@ export const useAppContext = () => {
 
 export const AppProvider = ({ children }) => {
     const [openModal, setOpenModal] = useState(false);
+    const [formComponent, setFormComponent] = useState('');
+    const [largeWidth, setLargeWidth] = useState(false);
 
     const handleOpenModal = () => {
         setOpenModal(true);
@@ -26,6 +28,10 @@ export const AppProvider = ({ children }) => {
         openModal,
         handleOpenModal,
         handleCloseModal,
+        formComponent,
+        setFormComponent,
+        largeWidth,
+        setLargeWidth,
     };
 
     return (
