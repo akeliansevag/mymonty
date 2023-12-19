@@ -20,9 +20,9 @@ export const metadata = {
 
 const cards = () => {
     const data = {
-        title: 'prepaid MasterCard you can use globally.',
+        title: 'prepaid Mastercard you can use globally.',
         subtitle: 'Cards',
-        desc: 'Contactless prepaid MasterCard you can use globally.',
+        desc: 'Contactless prepaid Mastercard you can use globally.',
         image: {
             inGrid: true,
             layout: 'half',

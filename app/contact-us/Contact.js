@@ -273,9 +273,9 @@ const Contact = () => {
                           </div>
                         </div>
 
-                        <div id="calling_code-drop" className={`dropdown px-1 ${openCountry ? 'visible' : 'hidden'}`} ref={dropdownRef}>
-                          <div className="search-wrapper !sticky top-0 left-0 flex justify-between items-center">
-                            <input type="text" id="search-country" placeholder="Search" className="search-country outline-0 w-full px-3.5 py-2.5 bg-gray-100 border-0 text-sm" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+                        <div id="calling_code-drop" className={`dropdown bg-white px-1 ${openCountry ? 'visible' : 'hidden'}`} ref={dropdownRef}>
+                          <div className="search-wrapper border-b border-gray-100 !sticky top-0 left-0 flex justify-between items-center">
+                            <input type="text" id="search-country" placeholder="Search" className="search-country outline-0 w-full px-3.5 py-2.5 bg-white border-0 text-sm" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
                             {searchTerm && (
                               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24" className='px-1 cursor-pointer' onClick={(e) => { setSearchTerm(''); }}>
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -353,7 +353,7 @@ const Contact = () => {
 
               <div className='flex flex-col md:flex-row gap-10'>
                 <div className='flex flex-row gap-1 w-full justify-center'>
-                  <input type='submit' className='inline-block cursor-pointer mm-button !px-20' value='Submit' disabled={loading} />
+                  <input type='submit' className='inline-block cursor-pointer mm-button !px-20 blue' value='Submit' disabled={loading} />
                 </div>
               </div>
 

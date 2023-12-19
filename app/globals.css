@@ -69,7 +69,6 @@ button, a, input[type="submit"], header li{
 }
 .dropdown {
     -ms-overflow-style: none;
-    background: rgb(243 244 246);
     border-radius: 20px;
     box-shadow: 0 8px 10px rgb(243 244 246);
     /* display: none; */
@@ -96,8 +95,6 @@ button, a, input[type="submit"], header li{
 }
 
 .dropdown .search-wrapper {
-    background: rgb(243 244 246);
-    border-bottom: 1px solid white;
     z-index: 2;
 }
 

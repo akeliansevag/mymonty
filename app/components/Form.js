@@ -213,8 +213,8 @@ const Form = () => {
                                 </div>
                             </div>
 
-                            <div id="calling_code-drop" className={`dropdown px-1 ${openCountry ? 'visible' : 'hidden'}`} ref={dropdownRef}>
-                                <div className="search-wrapper !sticky top-0 left-0 flex justify-between items-center">
+                            <div id="calling_code-drop" className={`dropdown bg-gray-100 px-1 ${openCountry ? 'visible' : 'hidden'}`} ref={dropdownRef}>
+                                <div className="search-wrapper border-b border-white !sticky top-0 left-0 flex justify-between items-center">
                                     <input type="text" id="search-country" placeholder="Search" className="search-country outline-0 w-full px-3.5 py-2.5 bg-gray-100 border-0 text-sm" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
                                     {searchTerm && (
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24" className='px-1 cursor-pointer' onClick={(e) => { setSearchTerm(''); }}>
