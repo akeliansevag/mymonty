@@ -1,18 +1,20 @@
 import React from 'react';
 import { websiteName } from '@/app/config';
-import Types from './Types';
+import Link from 'next/link';
 
 export const metadata = {
-    title: websiteName + 'FAQ',
+    title: websiteName + 'FAQs',
     description: '',
 };
 
-const faq = () => {
+const page = () => {
 
     return (
         <>
+            <Link href="/faq/personal">Personal</Link>
+            <Link href="/faq/business">Business</Link>
         </>
     )
 }
 
-export default faq;
+export default page;

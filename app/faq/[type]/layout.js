@@ -1,21 +1,20 @@
-'use client';
 import React from 'react';
-import { FAQ_API } from '@/app/api/api';
-import useFetch from '@/app/api/useFetch';
-import Link from 'next/link';
+import Topics from './Topics';
 
-
-const layout = ({ children, params }) => {
-    const data = useFetch(`${FAQ_API}/${params.type}`);
+const layout = ({ params, children }) => {
     return (
-        <div>
-            <div className='flex gap-3 justify-center'>
+        <div className="flex gap-8">
+            <div className="flex-1">
+                <h2 className='text-lg font-bold py-2 px-4'>Topics</h2>
+                <Topics params={params} />
             </div>
-            {children}
+            <div className='flex-[3]'>
+                {children}
+            </div>
+
+
         </div>
-
-
     )
-};
+}
 
 export default layout;

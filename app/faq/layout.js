@@ -1,5 +1,4 @@
-"use client";
-import React from 'react'
+import React from 'react';
 import Banner from '@/app/components/Banner';
 import banner from '@/public/personal/code-of-conduct.webp';
 import Section from '../components/Section';
@@ -25,16 +24,18 @@ const layout = ({ children }) => {
     };
     return (
         <>
-
             <Banner data={bannerData} />
             <Section>
-                <div className='container'>
+                <div className='container max-w-5xl'>
                     <Types />
-                    {children}
+                    <div className='mt-10'>
+                        {children}
+                    </div>
+
                 </div>
             </Section>
         </>
     )
 }
 
-export default layout
+export default layout;
