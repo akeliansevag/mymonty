@@ -305,8 +305,12 @@ const Contact = () => {
                     <div className='flex flex-col md:flex-row gap-10'>
                         <div className='flex flex-col gap-1 w-full'>
                             <label htmlFor='employees'>Number of employees</label>
-                            <select name='employees' id='employees' className={`px-3.5 py-2.5 border-2 w-full border-gray-300 rounded-xl ${errors.employees ? 'border-red-500' : ''
-                                }`}>
+                            <select
+                                name='employees'
+                                id='employees'
+                                value={formData.employees}
+                                onChange={handleChange}
+                                className={`px-3.5 py-2.5 border-2 w-full border-gray-300 rounded-xl ${errors.employees ? 'border-red-500' : ''}`}>
                                 <option>Select</option>
                                 <option value='1-9'>1-9</option>
                                 <option value='10-49'>10-49</option>
@@ -317,7 +321,12 @@ const Contact = () => {
                         </div>
                         <div className='flex flex-col gap-1 w-full'>
                             <label htmlFor='industry'>Industry</label>
-                            <select name='industry' id='industry' className={`px-3.5 py-2.5 border-2 w-full border-gray-300 rounded-xl ${errors.industry ? 'border-red-500' : ''}`}>
+                            <select
+                                name='industry'
+                                id='industry'
+                                value={formData.industry}
+                                onChange={handleChange}
+                                className={`px-3.5 py-2.5 border-2 w-full border-gray-300 rounded-xl ${errors.industry ? 'border-red-500' : ''}`}>
                                 <option>Select</option>
                                 <option value="Selling alcoholic beverages, non-cigarettes tobacco products and drugs substance">Selling alcoholic beverages, non-cigarettes tobacco products and drugs substance</option>
                                 <option value="Insurance companies">Insurance companies</option>
