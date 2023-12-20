@@ -5,6 +5,7 @@ import { useAppContext } from '../AppContext';
 const Contact = () => {
 
     const { geoData } = useAppContext();
+    const apiUrl = process.env.apiUrl;
 
     const [selectedCountry, setSelectedCountry] = useState(null);
     const initialFormData = {

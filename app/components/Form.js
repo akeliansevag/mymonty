@@ -4,6 +4,7 @@ import { useAppContext } from '../AppContext';
 
 const Form = () => {
     const { geoData } = useAppContext();
+    const apiUrl = process.env.apiUrl;
 
     const [openCountry, setOpenCountry] = useState(false);
     const [countries, setCountries] = useState([]);
@@ -87,7 +88,6 @@ const Form = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         if (validateForm()) {
             try {
                 setLoading(true);
