@@ -4,10 +4,11 @@ import { websiteName } from '@/app/config';
 import styles from './page.module.css';
 import { TERMS_API } from '../api/api';
 import Legals from '../components/Legals';
+import termsImage from '@/public/personal/terms-and-conditions.webp';
 
 export const metadata = {
     title: websiteName + 'Terms & Conditions',
-    description: '',
+    description: ''
 };
 
 const terms = () => {
@@ -15,7 +16,11 @@ const terms = () => {
         title: 'our terms and conditions',
         subtitle: 'Terms and Conditions',
         desc: 'Continuous Development: At MyMonty, we are dedicated to nurturing the professional',
-        image: false,
+        image: {
+            inGrid: true,
+            layout: 'half',
+            url: termsImage,
+        }
     };
     return (
         <div className={styles.terms}>

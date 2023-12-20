@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner';
-import contactUs from '@/public/personal/code-of-conduct.webp';
+import contactUs from '@/public/personal/contact-us.webp';
 import Contact from './Contact';
 
 const ContactUs = () => {
