@@ -5,6 +5,7 @@ import Section from '../components/Section';
 import styles from './page.module.css';
 import { COOKIE_API } from '../api/api';
 import Legals from '../components/Legals';
+import privacyImage from '@/public/personal/privacy.webp';
 
 export const metadata = {
     title: websiteName + 'Cookie Policy',
@@ -16,7 +17,11 @@ const cookie = () => {
         title: 'our Policy at Mymonty',
         subtitle: 'Privacy Policy',
         desc: 'Continuous Development: At MyMonty, we are dedicated to nurturing the professional',
-        image: false,
+        image: {
+            inGrid: true,
+            layout: 'half',
+            url: privacyImage,
+        },
     };
 
 
