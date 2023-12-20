@@ -1,8 +1,6 @@
 import React from "react";
 import { websiteName } from "@/app/config";
-import styles from "./page.module.css";
 import Banner from "../components/Banner";
-import Link from 'next/link';
 import Image from 'next/image';
 import diversity from '@/public/personal/diversity-and-inclusion.webp';
 import innovation from '@/public/personal/innovation.webp';
