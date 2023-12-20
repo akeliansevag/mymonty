@@ -14,8 +14,6 @@ export function NavigationEvents() {
             document.body.classList.remove('dark');
         }
 
-
-
         const scrollToElement = (id) => {
             var element = document.getElementById(id);
             if (element) {
@@ -32,7 +30,6 @@ export function NavigationEvents() {
         };
 
         let scrollToId = searchParams.get('s');
-
 
         const timeoutId = setTimeout(() => {
             if (scrollToId) {

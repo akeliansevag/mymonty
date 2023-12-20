@@ -1,9 +1,9 @@
 'use client';
 import React, { useEffect, useRef, useState, Fragment } from 'react';
+import { useAppContext } from '../AppContext';
 
 const Form = () => {
-
-    const apiUrl = process.env.apiUrl;
+    const { geoData } = useAppContext();
 
     const [openCountry, setOpenCountry] = useState(false);
     const [countries, setCountries] = useState([]);
@@ -133,38 +133,56 @@ const Form = () => {
     };
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                // const countriesResponse = await fetch(`${apiUrl}/get-countries`);
-                const userResponse = await fetch(`${apiUrl}/user-ip`);
+        const countriesList = geoData.countries;
+        const countriesMap = new Map(countriesList.map(country => [country.iso2, country]));
+        setCountries(countriesList);
 
-                if (userResponse.ok) {
-                    const userData = await userResponse.json();
+        const userCountryIso2 = geoData?.iso2;
+        const userCountry = countriesMap.get(userCountryIso2);
 
-                    const countriesList = userData.countries
-                    const countriesMap = new Map(countriesList.map(country => [country.iso2, country]));
-                    setCountries(countriesList);
+        if (userCountry) {
+            setSelectedCountry(userCountry);
 
-                    const userCountryIso2 = userData?.iso2;
-                    const userCountry = countriesMap.get(userCountryIso2);
+            setFormData(prevFormData => ({
+                ...prevFormData,
+                code: userCountry.code,
+                country_id: userCountry.id,
+            }));
+        }
+    }, [geoData]);
 
-                    if (userCountry) {
-                        setSelectedCountry(userCountry);
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         try {
+    //             const userResponse = await fetch(`${apiUrl}/user-ip`);
 
-                        setFormData(prevFormData => ({
-                            ...prevFormData,
-                            code: userCountry.code,
-                            country_id: userCountry.id,
-                        }));
-                    }
-                }
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
+    //             if (userResponse.ok) {
+    //                 const userData = await userResponse.json();
 
-        fetchData();
-    }, []);
+    //                 const countriesList = userData.countries
+    //                 const countriesMap = new Map(countriesList.map(country => [country.iso2, country]));
+    //                 setCountries(countriesList);
+
+    //                 const userCountryIso2 = userData?.iso2;
+    //                 const userCountry = countriesMap.get(userCountryIso2);
+
+    //                 if (userCountry) {
+    //                     setSelectedCountry(userCountry);
+
+    //                     setFormData(prevFormData => ({
+    //                         ...prevFormData,
+    //                         code: userCountry.code,
+    //                         country_id: userCountry.id,
+    //                     }));
+    //                 }
+    //             }
+    //         } catch (error) {
+    //             console.error('Error fetching data:', error);
+    //         }
+    //     };
+
+    //     fetchData();
+    // }, []);
 
     const handleCountryClick = (country) => {
         setSelectedCountry(country);

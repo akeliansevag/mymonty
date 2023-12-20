@@ -1,5 +1,5 @@
 'use client';
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const AppContext = createContext();
 
@@ -15,6 +15,24 @@ export const AppProvider = ({ children }) => {
     const [openModal, setOpenModal] = useState(false);
     const [formComponent, setFormComponent] = useState('');
     const [largeWidth, setLargeWidth] = useState(false);
+    const [geoData, setGeoData] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const apiUrl = process.env.apiUrl;
+                const userResponse = await fetch(`${apiUrl}/user-ip`);
+                if (userResponse.ok) {
+                    const userData = await userResponse.json();
+                    setGeoData(userData);
+                }
+            } catch (error) {
+                // console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     const handleOpenModal = () => {
         setOpenModal(true);
@@ -32,6 +50,7 @@ export const AppProvider = ({ children }) => {
         setFormComponent,
         largeWidth,
         setLargeWidth,
+        geoData
     };
 
     return (
@@ -40,3 +59,6 @@ export const AppProvider = ({ children }) => {
         </AppContext.Provider>
     );
 };
+
+
+
