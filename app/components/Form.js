@@ -133,56 +133,25 @@ const Form = () => {
     };
 
     useEffect(() => {
-        const countriesList = geoData.countries;
-        const countriesMap = new Map(countriesList.map(country => [country.iso2, country]));
-        setCountries(countriesList);
+        if (geoData && geoData.countries) {
+            const countriesList = geoData.countries;
+            const countriesMap = new Map(countriesList.map(country => [country.iso2, country]));
+            setCountries(countriesList);
 
-        const userCountryIso2 = geoData?.iso2;
-        const userCountry = countriesMap.get(userCountryIso2);
+            const userCountryIso2 = geoData?.iso2;
+            const userCountry = countriesMap.get(userCountryIso2);
 
-        if (userCountry) {
-            setSelectedCountry(userCountry);
+            if (userCountry) {
+                setSelectedCountry(userCountry);
 
-            setFormData(prevFormData => ({
-                ...prevFormData,
-                code: userCountry.code,
-                country_id: userCountry.id,
-            }));
+                setFormData(prevFormData => ({
+                    ...prevFormData,
+                    code: userCountry.code,
+                    country_id: userCountry.id,
+                }));
+            }
         }
     }, [geoData]);
-
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         try {
-    //             const userResponse = await fetch(`${apiUrl}/user-ip`);
-
-    //             if (userResponse.ok) {
-    //                 const userData = await userResponse.json();
-
-    //                 const countriesList = userData.countries
-    //                 const countriesMap = new Map(countriesList.map(country => [country.iso2, country]));
-    //                 setCountries(countriesList);
-
-    //                 const userCountryIso2 = userData?.iso2;
-    //                 const userCountry = countriesMap.get(userCountryIso2);
-
-    //                 if (userCountry) {
-    //                     setSelectedCountry(userCountry);
-
-    //                     setFormData(prevFormData => ({
-    //                         ...prevFormData,
-    //                         code: userCountry.code,
-    //                         country_id: userCountry.id,
-    //                     }));
-    //                 }
-    //             }
-    //         } catch (error) {
-    //             console.error('Error fetching data:', error);
-    //         }
-    //     };
-
-    //     fetchData();
-    // }, []);
 
     const handleCountryClick = (country) => {
         setSelectedCountry(country);
