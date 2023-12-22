@@ -117,7 +117,7 @@ const cards = () => {
                 <CardWithdrawal />
             </div>
 
-            <div id="diverse-cards">
+            <div id="diverse-cards" className='bg-black text-white'>
                 <DiverseCards />
             </div>
 
