@@ -5,8 +5,6 @@ import { AppProvider } from './AppContext';
 
 import App from './App';
 
-import { GoogleAnalytics } from '@next/third-parties/google';
-
 
 
 const Aeonik = localFont({
@@ -59,7 +57,6 @@ export default function RootLayout({ children }) {
           <App children={children} />
         </AppProvider>
       </body>
-      <GoogleAnalytics gaId="G-09G4DF9L4N" />
     </html>
   )
 }
