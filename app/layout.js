@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
         <AppProvider>
           <App children={children} />
         </AppProvider>
-        <GoogleTagManager gtmId="G-XCRKNWYMT3" />
+        <GoogleTagManager gtmId="GTM-PQDWVTGG" />
       </body>
     </html>
   )
