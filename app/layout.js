@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
           <App children={children} />
         </AppProvider>
       </body>
-      <GoogleAnalytics gaId="G-S79FRGY3FC" />
+      <GoogleAnalytics gaId="G-09G4DF9L4N" />
     </html>
   )
 }
