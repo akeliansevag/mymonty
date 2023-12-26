@@ -57,8 +57,10 @@ export default function RootLayout({ children }) {
       <body className='font-aeonik'>
         <AppProvider>
           <App children={children} />
+          <GoogleAnalytics gaId="G-09G4DF9L4N" />
         </AppProvider>
       </body>
+
     </html>
   )
 }
