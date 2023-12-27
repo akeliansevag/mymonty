@@ -4,10 +4,8 @@ import './globals.css';
 import { AppProvider } from './AppContext';
 
 import App from './App';
-import Script from 'next/script';
 
 import { GoogleTagManager } from '@next/third-parties/google';
-
 
 
 const Aeonik = localFont({
@@ -53,18 +51,9 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en" className={`${Aeonik.variable}`}>
-      {/* <Script strategy='afterInteractive' src='https://www.googletagmanager.com/gtag/js?id=G-09G4DF9L4N' />
-      <Script strategy='afterInteractive' id="google-analytics">
-        {
-          `window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-09G4DF9L4N');`
-        }
-      </Script> */}
-
       <body className='font-aeonik'>
         <AppProvider>
           <App children={children} />
