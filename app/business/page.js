@@ -2,7 +2,6 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import styles from './page.module.css';
 import Banner from '../components/Banner';
-import Link from 'next/link';
 import Image from 'next/image';
 import business from '@/public/business/business.webp';
 import employeeBenefits from '@/public/business/employee-benefits.webp';

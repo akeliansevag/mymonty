@@ -1,7 +1,8 @@
 'use client'
 
-import { useEffect } from 'react'
-import { usePathname, useSearchParams } from 'next/navigation'
+import { useEffect } from 'react';
+import { usePathname, useSearchParams } from 'next/navigation';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 export function NavigationEvents() {
     const pathname = usePathname();
@@ -43,6 +44,12 @@ export function NavigationEvents() {
         };
     }, [searchParams]);
 
+    useEffect(() => {
+        sendGTMEvent({
+            event: "page_view",
+            page_path: pathname
+        });
+    }, [pathname])
 
     return null;
 }

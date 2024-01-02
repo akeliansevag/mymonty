@@ -5,6 +5,9 @@ import { AppProvider } from './AppContext';
 
 import App from './App';
 
+import { GoogleTagManager } from '@next/third-parties/google';
+
+
 const Aeonik = localFont({
   src: [
     {
@@ -48,6 +51,7 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en" className={`${Aeonik.variable}`}>
       <body className='font-aeonik'>
@@ -55,6 +59,7 @@ export default function RootLayout({ children }) {
           <App children={children} />
         </AppProvider>
       </body>
+      <GoogleTagManager gtmId="GTM-P934Z29H" />
     </html>
   )
 }

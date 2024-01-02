@@ -11,10 +11,7 @@ const layout = ({ params, children }) => {
             <div className='flex-[3]'>
                 {children}
             </div>
-
-
         </div>
     )
 }
-
 export default layout;

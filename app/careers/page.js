@@ -210,7 +210,7 @@ const Careers = () => {
         </div>
       </section>
 
-      <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
+      {/* <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
         <div className='container'>
           <h2 className='text-center uppercase font-black text-3xl sm:text-5xl lg:text-[2.875rem] leading-none'>Our Departments</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 relative mt-20'>
@@ -230,7 +230,7 @@ const Careers = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
