@@ -83,7 +83,6 @@ button, a, input[type="submit"], header li{
 }
 
 .calling_code .select {
-    background: rgb(243 244 246);
     cursor: pointer;
     height: 100%;
     line-height: normal;

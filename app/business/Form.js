@@ -223,7 +223,7 @@ const Contact = () => {
                                     <div className="flex w-full">
                                         <div className="calling_code">
                                             <div className="flex h-full justify-between items-center">
-                                                <div id="calling_code" onClick={(e) => { setOpenCountry(!openCountry) }} className="select bg-gray-100 border-gray-300 border-2 border-e-0 p-2.5 rounded-xl rounded-e-none flex justify-between items-center text-gray-400  ">
+                                                <div id="calling_code" onClick={(e) => { setOpenCountry(!openCountry) }} className="select bg-white border-gray-300 border-2 border-e-0 p-2.5 rounded-xl rounded-e-none flex justify-between items-center text-gray-400  ">
                                                     {selectedCountry && (
                                                         <>
                                                             <div className="text-lg">
