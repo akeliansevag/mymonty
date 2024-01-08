@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { useAppContext } from '../AppContext';
 import Form from '@/app/business/Form';
+import AppForm from '@/app/components/Form';
 
 const Banner = ({ data, theme, salaryForm }) => {
     let target = data.cta?.link?.target ? data.cta.link.target : '';
@@ -14,6 +15,12 @@ const Banner = ({ data, theme, salaryForm }) => {
     const handleGetClick = () => {
         setFormComponent(<Form />);
         setLargeWidth(true);
+        handleOpenModal();
+    }
+
+    const handleOriginalOpenModal = () => {
+        setFormComponent(<AppForm />);
+        setLargeWidth(false);
         handleOpenModal();
     }
 
@@ -50,7 +57,7 @@ const Banner = ({ data, theme, salaryForm }) => {
                                                 ) : salaryForm ? (
                                                     <button onClick={handleGetClick} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                 ) : (
-                                                    <button onClick={handleOpenModal} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                    <button onClick={handleOriginalOpenModal} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                 )
                                             )
                                         }

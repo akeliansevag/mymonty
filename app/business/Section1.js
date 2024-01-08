@@ -5,19 +5,15 @@ import salary from '@/public/business/salary.webp';
 import { useAppContext } from '@/app/AppContext';
 import Form from './Form';
 
-const Section = () => {
+const Section1 = () => {
     const { handleOpenModal } = useAppContext();
     const { setFormComponent, setLargeWidth } = useAppContext();
 
-    useEffect(() => {
-        // Set the dynamic form component for this page
+    const handleButtonClick = () => {
         setFormComponent(<Form />);
         setLargeWidth(true);
-        return () => {
-            setFormComponent('');
-            setLargeWidth(false);
-        }
-    }, []);
+        handleOpenModal();
+    }
 
     return (
         <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
@@ -26,7 +22,7 @@ const Section = () => {
 
                 <p className='leading-8 mt-10 text-center w-full lg:w-2/3 mx-auto'>Setting up salary domiciliation for your company for free will ensure a smooth transition to automated payroll management. Efficiency by centralizing salary payments, cost and time saving, employee convenience of having their salaries deposited directly into their wallet account.</p>
 
-                <button onClick={handleOpenModal} className='mm-button white mt-8 blue'>Learn more</button>
+                <button onClick={handleButtonClick} className='mm-button white mt-8 blue'>Learn more</button>
 
                 <Image className='mt-10' alt='Growth Oriented Environmemt' placeholder='blur' quality={100} src={salary} />
 
@@ -38,4 +34,4 @@ const Section = () => {
     )
 }
 
-export default Section
+export default Section1

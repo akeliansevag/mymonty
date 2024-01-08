@@ -171,7 +171,7 @@ const Contact = () => {
     return (
         <div className='container'>
             <h2 className='uppercase leading-none font-black text-center text-3xl sm:text-4xl md:text-[2.875rem'>
-                Salary domiciliation
+                Contact Us
             </h2>
             <form onSubmit={handleSubmit}>
                 <div className='flex flex-col gap-10 px-10 py-20 bg-gray-100 mt-20 rounded-[1.875rem]'>
