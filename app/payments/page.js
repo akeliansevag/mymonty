@@ -66,19 +66,19 @@ const payments = () => {
             </section>
             <div id="bill-payment">
                 <Section>
-                    <div className='container text-center'>
-                        <div className='gap-2 md:gap-1 grid grid-cols-2 md:grid-cols-4 items-center justify-center mb-10'>
-                            <div>
+                    <div className='container text-center md:px-20'>
+                        <div className='gap-2 md:gap-1 grid grid-cols-2 md:grid-cols-4 items-center justify-center mb-16'>
+                            <div className='flex justify-center'>
                                 <Image src={onlineVouchers} alt='Image' />
                             </div>
-                            <div>
+                            <div className='flex justify-center'>
                                 <Image src={billPayment} alt='Image' />
                             </div>
 
-                            <div>
+                            <div className='flex justify-center'>
                                 <Image src={tuitionPayment} alt='Image' />
                             </div>
-                            <div>
+                            <div className='flex justify-center'>
                                 <Image src={weddingList} alt='Image' />
                             </div>
 
