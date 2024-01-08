@@ -24,10 +24,9 @@ const data = {
     url: business,
   },
   cta: {
-    type: 'link',
-    link: {
+    type: 'button',
+    button: {
       name: 'Get the app',
-      url: '/business#download-now',
     }
   }
 }
@@ -35,7 +34,7 @@ const data = {
 const Business = () => {
   return (
     <div className='bg-[#091111] text-white'>
-      <Banner data={data} theme="dark" />
+      <Banner data={data} theme="dark" salaryForm={true} />
 
       <Section />
 

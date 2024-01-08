@@ -1,12 +1,22 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useAppContext } from '../AppContext';
+import Form from '@/app/business/Form';
 
-const Banner = ({ data, theme }) => {
+const Banner = ({ data, theme, salaryForm }) => {
     let target = data.cta?.link?.target ? data.cta.link.target : '';
     const { handleOpenModal } = useAppContext();
+
+    const { setFormComponent, setLargeWidth } = useAppContext();
+
+    const handleGetClick = () => {
+        setFormComponent(<Form />);
+        setLargeWidth(true);
+        handleOpenModal();
+    }
+
     return (
         <section className={`py-14 flex flex-col justify-center md:py-20 min-h-[calc(100vh-var(--header-height))] w-full relative ${theme == 'dark' ? 'bg-black' : 'bg-gray-100'} ${data.image.layout !== 'full' || !data.image.inGrid ? 'max-md:pb-14' : ''}`}>
             {
@@ -37,6 +47,8 @@ const Banner = ({ data, theme }) => {
                                             data.cta && (
                                                 data.cta.type === 'link' ? (
                                                     <Link className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`} href={data.cta.link.url} target={target}>{data.cta.link.name}</Link>
+                                                ) : salaryForm ? (
+                                                    <button onClick={handleGetClick} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                 ) : (
                                                     <button onClick={handleOpenModal} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                 )
