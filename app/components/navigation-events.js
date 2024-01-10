@@ -9,6 +9,7 @@ export function NavigationEvents() {
     const searchParams = useSearchParams();
 
     useEffect(() => {
+
         if (pathname == '/business') {
             document.body.classList.add('dark');
         } else {
