@@ -134,3 +134,8 @@ swiper-slide img{
 .html-content a{
     color: #2657D4;
 }
+
+ol{
+    list-style-type: decimal;
+    padding-left:20px;
+}

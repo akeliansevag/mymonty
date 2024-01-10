@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: mymonty-dev:latest
+    ports:
+      - 3000:3000
+    volumes:
+      - node_modules:/frontend/node_modules
+      - next:/frontend/.next
+      - /Users/sevag.akelian/websites/mymonty:/frontend
+volumes:
+  node_modules:
+  next:
+
+
