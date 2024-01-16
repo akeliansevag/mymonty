@@ -8,6 +8,7 @@ import TextBlock from '@/app/components/TextBlock';
 import sectionTwoImage from '@/public/personal/accounts-cards.webp';
 import coins from '@/public/personal/coins.webp';
 import Carousel from '@/app/components/Carousel';
+import AnimatedImage from './AnimatedImage';
 
 export const metadata = {
     title: websiteName + 'Accounts',
@@ -91,7 +92,9 @@ const accounts = () => {
     };
     return (
         <div>
-            <Banner data={data} />
+
+            <Banner data={data} AnimatedImage={AnimatedImage} />
+
             <Section>
                 <div id="multicurrency-wallet" className='container text-center'>
                     <TextBlock center={true} title="Free Multicurrency Wallet" description="Get your free multicurrency wallet in both Fresh USD/LBP whenever you complete the onboarding process." button={true} />

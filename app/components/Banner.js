@@ -6,7 +6,7 @@ import { useAppContext } from '../AppContext';
 import Form from '@/app/business/Form';
 import AppForm from '@/app/components/Form';
 
-const Banner = ({ data, theme, salaryForm }) => {
+const Banner = ({ data, theme, salaryForm, AnimatedImage }) => {
     let target = data.cta?.link?.target ? data.cta.link.target : '';
     const { handleOpenModal } = useAppContext();
 
@@ -65,9 +65,17 @@ const Banner = ({ data, theme, salaryForm }) => {
                                 </div>
 
                                 {
-                                    data?.image?.layout === 'half' && (
+                                    data?.image?.layout === 'half' && !AnimatedImage && (
                                         <div className='w-full md:w-1/2'>
                                             <Image alt='Girl holding a phone' placeholder='blur' quality={100} sizes='100vw' src={data.image.url} className='w-full md:w-2/3 ml-auto' priority />
+                                        </div>
+                                    )
+
+                                }
+                                {
+                                    data?.image?.layout === 'half' && AnimatedImage && (
+                                        <div className='w-full md:w-1/2'>
+                                            <AnimatedImage />
                                         </div>
                                     )
                                 }
