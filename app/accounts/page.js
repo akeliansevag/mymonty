@@ -1,14 +1,12 @@
 import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
-import Image from 'next/image';
 import banner from '@/public/personal/accounts-banner.webp';
-import Section from '@/app/components/Section';
-import TextBlock from '@/app/components/TextBlock';
-import sectionTwoImage from '@/public/personal/accounts-cards.webp';
-import coins from '@/public/personal/coins.webp';
+
 import Carousel from '@/app/components/Carousel';
 import AnimatedImage from './AnimatedImage';
+import SectionOne from './SectionOne';
+import SectionThree from './SectionThree';
 
 export const metadata = {
     title: websiteName + 'Accounts',
@@ -94,22 +92,12 @@ const accounts = () => {
         <div>
 
             <Banner data={data} AnimatedImage={AnimatedImage} />
+            <SectionOne />
 
-            <Section>
-                <div id="multicurrency-wallet" className='container text-center'>
-                    <TextBlock center={true} title="Free Multicurrency Wallet" description="Get your free multicurrency wallet in both Fresh USD/LBP whenever you complete the onboarding process." button={true} />
-                    <Image className='mx-auto mt-10 md:w-2/3' alt="Wallets" src={sectionTwoImage} />
-                </div>
-            </Section>
             <div id="top-up">
                 <Carousel data={carouselData} />
             </div>
-            <Section>
-                <div className='container flex flex-col items-center lg:flex-row gap-10'>
-                    <TextBlock title='Welcome to The New Era of Effortless Payments' description="Experience hassle-free and quick money transactions that are not only efficient, but also enjoyable and highly adaptable." button={true} />
-                    <Image className='md:w-1/3' src={coins} alt="Coins" />
-                </div>
-            </Section>
+            <SectionThree />
         </div>
     )
 }
