@@ -22,7 +22,7 @@ const Section1 = () => {
 
                 <p className='leading-8 mt-10 text-center w-full lg:w-2/3 mx-auto'>Setting up salary domiciliation for your company for free will ensure a smooth transition to automated payroll management. Efficiency by centralizing salary payments, cost and time saving, employee convenience of having their salaries deposited directly into their wallet account.</p>
 
-                <button onClick={handleButtonClick} className='mm-button white mt-8 blue'>Learn more</button>
+                <button onClick={handleButtonClick} className='mm-button white mt-8'>Learn more</button>
 
                 <Image className='mt-10' alt='Growth Oriented Environmemt' placeholder='blur' quality={100} src={salary} />
 

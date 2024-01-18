@@ -342,7 +342,7 @@ const Contact = () => {
 
               <div className='flex flex-col md:flex-row gap-10'>
                 <div className='flex flex-row gap-1 w-full justify-center'>
-                  <input type='submit' className='inline-block cursor-pointer mm-button !px-20 blue' value='Submit' disabled={loading} />
+                  <input type='submit' className='inline-block mm-button !px-20' value='Submit' disabled={loading} />
                 </div>
               </div>
 

@@ -23,23 +23,24 @@ body{
     font-size: 15px;
     transition: all 0.1s linear;
     border:2px solid transparent;
+    cursor: pointer
 }
 
 .mm-button:hover{
-    background-color: white;
-    color: var(--mm-black);
+    background-color: #2657D4 !important;
+    color: #FFFFFF !important;
 }
 
 .mm-button.white{
     background-color: white;
     color: var(--mm-black);
 }
-
+/* 
 .mm-button.white:hover{
     border-color:white;
     background-color: var(--mm-black);
     color: white;
-}
+} */
 
 .mm-button.default{
     border-color: white;
@@ -47,11 +48,11 @@ body{
     color: white;
 }
 
-.mm-button.blue:hover{
+/* .mm-button.blue:hover{
     background-color: #2657D4;
     border-color: #2657D4;
     color:white
-}
+} */
 
 .custom-object-position{
     object-position: 65% 25vh; 
@@ -97,10 +98,43 @@ button, a, input[type="submit"], header li{
     z-index: 2;
 }
 
-body.dark header{
-    -webkit-backdrop-filter: blur(16px);
+body.dark header li span a{
+    /* -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    background-color: rgba(255,255,255,0.8); */
+    color: #FFFFFF;
+}
+body.dark header .logo svg path {
+    fill: #FFFFFF;
+}
+body.dark header .mm-button{
+    background-color: #FFFFFF;
+    color: var(--mm-black);
+}
+body.dark header .mm-button:hover{
+    background-color: #2657D4;
+}
+.scrolling{
     backdrop-filter: blur(16px);
     background-color: rgba(255,255,255,0.8);
+    height: var(--mobile-header-height) !important;
+}
+
+body.dark header.scrolling li span a{
+    color: #000000;
+}
+
+body.dark header.scrolling .logo svg path {
+    fill: #000000;
+}
+
+body.dark header.scrolling .mm-button{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.menuOpen{
+    background-color: #f7f7f7;
 }
 
 swiper-slide{
