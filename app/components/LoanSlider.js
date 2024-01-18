@@ -49,7 +49,7 @@ const LoanSlider = ({ data }) => {
         <Swiper {...swiperParams} className='flex flex-col md:flex-row md:items-stretch gap-10 relative mt-20'>
             {items && items.map((item, key) => {
                 return (
-                    <SwiperSlide className='aspect-[5/5] md:aspect-[2/3] overflow-hidden rounded-[1.875rem] bg-gray-100'>
+                    <SwiperSlide key={key} className='aspect-[5/5] md:aspect-[2/3] overflow-hidden rounded-[1.875rem] bg-gray-100'>
                         <div className='px-10 py-14'>
                             <div className='flex items-center justify-center w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] rounded-full border-2 border-black'>
                                 <Image src={item.icon} className='max-lg:w-[25px] max-lg:h-[25px] w-[45px] h-[45px]' alt='Car Loan' />

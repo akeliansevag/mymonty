@@ -24,7 +24,7 @@ const data = {
   cta: {
     type: 'button',
     button: {
-      name: 'Apply now'
+      name: "I'm interested"
     }
   }
 }
