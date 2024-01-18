@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import TextBlock from './TextBlock';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -96,7 +96,7 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                                     {
                                         item?.contentImage && (
                                             <div className='flex-1 relative flex justify-center'>
-                                                <img className='pb-10 max-w-[250px] md:max-w-[350px] object-contain absolute h-full w-full block' src={item.contentImage} />
+                                                <img className={`scale-0 ${selectedIndex === index ? '!scale-100 ' : ''} pb-10 max-w-[250px] md:max-w-[350px] object-contain absolute h-full w-full block transition-all delay-500`} src={item.contentImage} />
                                             </div>
                                         )
                                     }
