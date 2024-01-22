@@ -16,7 +16,7 @@ export const metadata = {
 };
 
 const data = {
-  title: 'MyMonty Better Than a Bank.',
+  title: 'MyMonty Your Super Digital Wallet.',
   subtitle: '',
   desc: 'Explore our innovative ways to manage your finances.',
   image: {
