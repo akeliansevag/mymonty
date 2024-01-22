@@ -219,6 +219,10 @@ export const data = [
             {
                 title: 'Code of Conduct',
                 url: '/code-of-conduct'
+            },
+            {
+                title: 'FAQ',
+                url: '/faq/personal/onboarding'
             }
 
         ]
