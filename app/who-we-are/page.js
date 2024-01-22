@@ -40,7 +40,7 @@ const WhoWeAre = () => {
       <Banner data={data} />
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
         <div className="container grid sm:grid-cols-2 gap-10">
-          <div className="sm:flex-1 gap-5 flex-col items-center flex bg-[#F7F7F7] rounded-lg p-10 justify-center">
+          <div className="sm:flex-1 gap-5 flex-col items-center flex bg-[#F7F7F7] rounded-lg p-10">
             <div>
               <svg width="118" height="118" viewBox="0 0 118 118" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="59" cy="59" r="57.5" stroke="black" stroke-width="3" />
@@ -50,7 +50,7 @@ const WhoWeAre = () => {
             <h2 className="text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none">MISSION</h2>
             <p className="text-center leading-8">Simplify banking, inspire trust, lead innovation and contribute to financial inclusion.</p>
           </div>
-          <div className="sm:flex-1 gap-5 flex-col items-center flex bg-[#F7F7F7] rounded-lg p-10 justify-center">
+          <div className="sm:flex-1 gap-5 flex-col items-center flex bg-[#F7F7F7] rounded-lg p-10">
             <div>
               <svg width="118" height="118" viewBox="0 0 118 118" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="59" cy="59" r="57.5" stroke="black" stroke-width="3" />
@@ -65,7 +65,7 @@ const WhoWeAre = () => {
 
         </div>
       </section>
-      <section className="py-14">
+      <section className="pt-14 sm:pt-24">
         <div className="container">
           <h2 className="text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none">Our Culture, Our Foundation</h2>
           <p className="md:px-[20vw] text-center leading-8 mt-8">Our devoted, agile, and multicultural team is committed to go the extra mile in digitizing your future and making your life easier</p>
