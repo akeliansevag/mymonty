@@ -78,7 +78,7 @@ const cards = () => {
                     url: '#',
                     modal: true
                 },
-                contentImage: '/personal/cards-qr.webp',
+                contentImage: '/personal/cards-qr-2.webp',
                 backgroundImage: '/personal/cards-carousel-3.webp'
             }
         ]
