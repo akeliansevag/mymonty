@@ -27,7 +27,8 @@ const layout = ({ children }) => {
             <Banner data={bannerData} />
             <Section>
                 <div className='container max-w-5xl'>
-                    <Types />
+                    {/* <Types /> */}
+                    <h1 className='text-center text-3xl'>Personal</h1>
                     <div className='mt-10'>
                         {children}
                     </div>
