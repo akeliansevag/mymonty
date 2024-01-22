@@ -191,11 +191,7 @@ export const data = [
         title: 'Company',
         url: null,
         children: [
-            {
-                title: 'Culture',
-                url: '/cultures',
-                children: null
-            },
+
             {
                 title: 'Who we are',
                 url: '/who-we-are'
