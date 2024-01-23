@@ -82,7 +82,7 @@ const WhoWeAre = () => {
             </div>
           </div>
 
-          <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 mt-40 relative'>
+          <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 mt-20 md:mt-40 relative'>
             <div className='md:w-1/2 order-last md:order-first'>
               <Image src={innovation} alt='Innovation' placeholder='blur' />
             </div>
@@ -92,7 +92,7 @@ const WhoWeAre = () => {
             </div>
           </div>
 
-          <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 mt-40 relative'>
+          <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 mt-20 md:mt-40 relative'>
             <div className='md:w-1/2'>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Dedication & Loyalty</h2>
               <p className='leading-8 mt-4'>We strive to do our duties to the best of our abilities while combining excellence and professionalism. We also never cease exploring the boundaries of what is possible.<br />
@@ -103,7 +103,7 @@ const WhoWeAre = () => {
             </div>
           </div>
 
-          <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 mt-40 relative'>
+          <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 mt-20 md:mt-40 relative'>
             <div className='md:w-1/2 order-last md:order-first'>
               <Image src={integrity} alt='Integrity' placeholder='blur' />
             </div>
@@ -113,7 +113,7 @@ const WhoWeAre = () => {
             </div>
           </div>
 
-          <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 mt-40 relative'>
+          <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 mt-20 md:mt-40 relative'>
             <div className='md:w-1/2'>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Sustainable Development</h2>
               <p className='leading-8 mt-4'>We care about our environment and work to keep natural systems capable of providing the services that are crucial to the economy and society. Because the earth is not ours, we must use resources wisely in order to meet the demands of the present and future generations without compromising the dependability and stability of the natural system.</p>
