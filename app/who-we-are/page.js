@@ -3,13 +3,11 @@ import { websiteName } from "@/app/config";
 import Banner from "../components/Banner";
 import Image from 'next/image';
 import whoWeAre from '@/public/cultures.webp';
-import diversity from '@/public/personal/diversity-and-inclusion.webp';
+import diversity from '@/public/diversity-and-inclusion.webp';
 import innovation from '@/public/personal/innovation.webp';
-import dedication from '@/public/personal/dedication-and-loyalty.webp';
-import integrity from '@/public/personal/integrity.webp';
-import sustainable from '@/public/personal/sustainable-development.webp';
-import Section from "../components/Section";
-import TextBlock from "../components/TextBlock";
+import dedication from '@/public/dedication.webp';
+import integrity from '@/public/integrity.webp';
+import sustainable from '@/public/development.webp';
 
 
 export const metadata = {
