@@ -1,7 +1,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from "gsap";
-import Image from 'next/image';
 
 const AnimatedImage = () => {
     const [isImageLoaded, setImageLoaded] = useState(false);
