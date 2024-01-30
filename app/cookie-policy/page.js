@@ -1,7 +1,6 @@
 import React from 'react';
 import Banner from '@/app/components/Banner';
 import { websiteName } from '@/app/config';
-import Section from '../components/Section';
 import styles from './page.module.css';
 import { COOKIE_API } from '../api/api';
 import Legals from '../components/Legals';
@@ -14,8 +13,8 @@ export const metadata = {
 
 const cookie = () => {
     const data = {
-        title: 'our Policy at Mymonty',
-        subtitle: 'Privacy Policy',
+        title: 'our Cookie Policy at Mymonty',
+        subtitle: 'Cookie Policy',
         desc: 'Continuous Development: At MyMonty, we are dedicated to nurturing the professional',
         image: {
             inGrid: true,
