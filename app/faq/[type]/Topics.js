@@ -13,7 +13,7 @@ const Topics = ({ params }) => {
             {data && data.data.map((item, index) => {
                 return (
                     <li key={index}>
-                        <Link className={`${pathname.startsWith(`/faq/${params.type}/${item.slug}`) ? 'bg-gray-100' : ''} w-full block rounded-full text-base hover:bg-gray-100 py-2 px-4`} href={`/faq/${params.type}/${item.slug}`}>{item.title}</Link>
+                        <Link className={`${pathname.startsWith(`/faq/${params.type}/${item.slug}`) ? 'bg-[#2657D4] text-white' : ''} w-full block rounded-full text-base hover:bg-[#2657D4] hover:text-white py-2 px-4`} href={`/faq/${params.type}/${item.slug}`}>{item.title}</Link>
                     </li>
                 )
             })}

@@ -32,8 +32,6 @@ const Types = () => {
                 {data && data.data.map((type, index) => {
                     return (
                         <div key={index} className='flex-1'>
-                            {/* <Link className={`${pathname.startsWith('/faq/' + type.slug) ? 'bg-white' : ''} rounded-full text-lg py-2 px-10 block leading-none`} key={index} href={`/faq/${type.slug}`}>{type.title}</Link> */}
-
                             <Link onClick={() => handleSelect(index)} className={`relative z-1 rounded-full text-lg py-2 px-10 block leading-none`} href={`/faq/${type.slug}`}>{type.title}</Link>
                         </div>
                     )

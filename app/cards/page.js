@@ -1,17 +1,16 @@
 import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
-import Image from 'next/image';
 import banner from '@/public/personal/cards-banner-2.webp';
-import Section from '@/app/components/Section';
-import sectionTwoImage from '@/public/personal/multicurrency-image.webp';
-import TextBlock from '@/app/components/TextBlock';
+
 import Carousel from '@/app/components/Carousel';
-import sectionFourImage from '@/public/personal/lock-img.webp';
-import sectionFiveImage from '@/public/personal/cards-section-5-image.webp';
 
 import CardWithdrawal from './CardWithdrawal';
 import DiverseCards from './DiverseCards';
+import AnimatedBanner from './AnimatedBanner';
+import VirtualCard from './VirtualCard';
+import CardControls from './CardControls';
+import Monitor from './Monitor';
 
 export const metadata = {
     title: websiteName + 'Cards',
@@ -78,41 +77,22 @@ const cards = () => {
                     url: '#',
                     modal: true
                 },
-                contentImage: '/personal/cards-qr.webp',
+                contentImage: '/personal/cards-qr-2.webp',
                 backgroundImage: '/personal/cards-carousel-3.webp'
             }
         ]
     };
     return (
         <>
-            <Banner data={data} />
-            <div id="virtual-card">
-                <Section>
-                    <div className='container text-center'>
-                        <TextBlock center={true} title="Access your money wherever you are" description="With MyMonty virtual cards, your financial freedom is always within the palm of your hand. You can access the money in your MyMonty virtual prepaid card, online or at cardless ATMs within our network, and you’ll get Mastercard’s great-value exchange rates when spending abroad." button={true} />
-                        <Image className='mx-auto mt-14' alt="Wallets" src={sectionTwoImage} />
-                    </div>
-                </Section>
-            </div>
+            <Banner data={data} AnimatedImage={AnimatedBanner} />
+            <VirtualCard />
             <div id="physical-card">
                 <Carousel data={carouselData} />
             </div>
 
-            <div id="card-controls">
-                <Section>
-                    <div className='container flex flex-col md:flex-row gap-10 items-center'>
-                        <TextBlock title="Lock and Unlock on the Go" description="Lost your card? Doubting a fraudulent transaction? Keep your prepaid card safe and your money protected by instantly locking your card in-app." button={true} />
-                        <Image className='md:w-1/2' src={sectionFourImage} alt='People' />
-                    </div>
-                </Section>
-            </div>
+            <CardControls />
 
-            <Section>
-                <div className='container text-center'>
-                    <TextBlock center={true} title="Monitor Your Spendings and Check Your Transaction History" description="You can view your card activity at any time and keep your eye on your spendings, we will let you digitally export your card statement and save it to your device." button={true} />
-                    <Image src={sectionFiveImage} alt="Image" className='pt-14 mx-auto' />
-                </div>
-            </Section>
+            <Monitor />
             <div id="card-withdrawal">
                 <CardWithdrawal />
             </div>

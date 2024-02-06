@@ -57,7 +57,7 @@ const transfers = () => {
                     url: '#',
                     modal: true,
                 },
-                contentImage: '/personal/send-money.webp',
+                contentImage: '/personal/send-money-2.webp',
                 backgroundImage: '/personal/send-money-bg.webp'
             },
             {

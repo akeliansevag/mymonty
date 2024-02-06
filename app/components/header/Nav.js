@@ -18,7 +18,7 @@ const Nav = ({ handleMenuOpen, menuOpen }) => {
                     return (
                         <li key={index} onMouseLeave={() => items.children ? handleMouseLeave() : false} onMouseEnter={() => items.children ? handleMouseEnter() : false} className='h-[var(--header-height)] flex items-center group'>
                             <span className='transition-all py-[7px] px-[30px] rounded-full group-hover:bg-black group-hover:text-white'>
-                                {items?.url ? <Link onClick={() => handleMenuOpen(false)} href={items.url}>{items?.title}</Link> : items.title}
+                                {items?.url ? <Link scroll={false} onClick={() => handleMenuOpen(false)} href={items.url}>{items?.title}</Link> : items.title}
                             </span>
                             {items.children && (
                                 <div className={`${menuOpen ? 'group-hover:block' : null} min-h-[40vh] shadow py-10 bg-[#f7f7f7] w-full absolute top-full left-0 hidden`}>
@@ -26,8 +26,8 @@ const Nav = ({ handleMenuOpen, menuOpen }) => {
                                         {items.children.map((child, index2) => {
                                             return (
                                                 <div key={index2}>
-                                                    <span className='font-bold block mb-[15px] text-xl'>
-                                                        {child?.url ? <Link onClick={(e) => handleMenuOpen(false)} href={child.url}>{child.title}</Link> : child.title}
+                                                    <span className='font-bold block mb-[15px] text-xl sub-title'>
+                                                        {child?.url ? <Link scroll={false} onClick={(e) => handleMenuOpen(false)} href={child.url}>{child.title}</Link> : child.title}
                                                     </span>
                                                     {child?.children && (
                                                         <ul>

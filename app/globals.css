@@ -98,11 +98,14 @@ button, a, input[type="submit"], header li{
     z-index: 2;
 }
 
-body.dark header li span a{
+body.dark header li span a,body.dark header li span{
     /* -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
     background-color: rgba(255,255,255,0.8); */
     color: #FFFFFF;
+}
+body.dark .sub-title a{
+    color:var(--mm-black);
 }
 body.dark header .logo svg path {
     fill: #FFFFFF;

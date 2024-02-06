@@ -99,8 +99,10 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage }) => {
                                                 data.cta && (
                                                     data.cta.type === 'link' ? (
                                                         <Link className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`} href={data.cta.link.url} target={target}>{data.cta.link.name}</Link>
+                                                    ) : salaryForm ? (
+                                                        <button onClick={handleGetClick} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                     ) : (
-                                                        <button className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                        <button onClick={handleOriginalOpenModal} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                     )
                                                 )
                                             }
