@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useRef, useState, Fragment } from 'react';
 import { useAppContext } from '../AppContext';
+import Image from 'next/image';
 
 const Form = () => {
     const { geoData } = useAppContext();
@@ -173,10 +174,17 @@ const Form = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div className='flex flex-col gap-4 md:gap-7 mt-10 md:mt-10 rounded-[1.875rem]'>
+            <div className='flex flex-col items-center gap-4 md:gap-7 mt-10 md:mt-10 rounded-[1.875rem]'>
                 <h2 className='uppercase leading-none font-black text-center text-3xl sm:text-4xl md:text-[2.875rem'>
-                    Get your early access now
+                    Get the MyMonty app
                 </h2>
+
+                <p>Scan the QR code to download the app</p>
+
+                <img src="/qr-code.svg" className='w-1/2' alt='Car Loan' />
+
+                <p>or get a download link via SMS</p>
+
                 <div className='w-full relativee flex flex-col justify-center md:flex-row gap-4 md:gap-10 mx-auto'>
                     <div className='w-full flex flex-col'>
                         <div className="flex w-full">
@@ -246,12 +254,6 @@ const Form = () => {
                         </div>
                         <span className='text-red-500 text-base'>{errors.mobile}</span>
                         <span className='text-red-500 text-base'>{errors.phone_number}</span>
-                    </div>
-                </div>
-
-                <div className='flex flex-col justify-center md:flex-row gap-4 md:gap-10'>
-                    <div className='flex flex-col gap-1'>
-                        <p className='leading-8 text-center w-full mx-auto'>By hitting submit, you agree on receiving an SMS and being among the first to know when the app is ready.</p>
                     </div>
                 </div>
 
