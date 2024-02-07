@@ -17,7 +17,9 @@ const Header = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
     const [mobileMenuToggle, setMobileMenuToggle] = useState(false);
+    const [regionToggle, setRegionToggle] = useState(false);
     const { handleOpenModal } = useAppContext();
+
     useEffect(() => {
         // Function to handle scroll events
         let lastScrollTop = 0;
@@ -27,6 +29,8 @@ const Header = () => {
             setScrolling(true);
         }
         const handleScroll = () => {
+            setRegionToggle(false);
+
             const currentScroll = window.scrollY;
             // Define a scroll threshold based on your requirements
             const scrollThreshold = 0;
@@ -77,6 +81,7 @@ const Header = () => {
 
         // Attach the event listener when the component mounts
         window.addEventListener('scroll', handleScroll);
+
         // Clean up the event listener when the component unmounts
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -95,14 +100,20 @@ const Header = () => {
     const handleMobileMenuToggle = () => {
         setMobileMenuToggle(!mobileMenuToggle);
     };
+
+    const handleRegionToggle = () => {
+        console.log(regionToggle)
+        setRegionToggle(!regionToggle);
+    };
+
     return (
         <header className={headerClasses}>
-            <div className='container flex justify-between items-center'>
-                <div className='logo flex-1'>
-                    <Link onClick={() => { setMenuOpen(false); setMobileMenuToggle(false); }} href='/'>
+            <div className='container relative flex justify-between items-center'>
+                <div className='flex gap-2 flex-1'>
+                    <Link onClick={() => { setMenuOpen(false); setMobileMenuToggle(false); }} href='/' className='logo'>
                         {/* <Image priority alt="MyMonty Logo" src={logo} /> */}
                         <svg width="133" height="27" viewBox="0 0 133 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_642_4255)">
+                            <g clipPath="url(#clip0_642_4255)">
                                 <path d="M77.618 3.84546C82.2664 3.84546 86.3581 7.19362 86.3581 12.1203C86.3581 17.047 82.2664 20.4284 77.618 20.4284C72.9697 20.4284 68.8779 17.1135 68.8779 12.1203C68.8779 7.12715 72.9987 3.84546 77.618 3.84546ZM77.618 16.4613C79.9111 16.4613 81.8635 14.6003 81.8635 12.1203C81.8635 9.64035 79.9111 7.81257 77.618 7.81257C75.325 7.81257 73.3726 9.64035 73.3726 12.1203C73.3726 14.6003 75.3582 16.4613 77.618 16.4613Z" fill="#0E1414" />
                                 <path d="M87.5713 3.84546H92.1906V6.3545C93.524 4.49349 95.1981 3.84546 97.1214 3.84546C101.587 3.84546 102.796 7.40963 102.796 11.439V20.0878H98.1766V11.5304C98.1766 9.3288 97.3707 7.65472 95.2313 7.65472C93.092 7.65472 92.1947 9.35787 92.1947 11.5595V20.0836H87.5754V3.84546H87.5713Z" fill="#0E1414" />
                                 <path d="M109.504 3.8828H113.908V7.50928H109.504V15.2566C109.504 15.9378 109.783 16.6523 110.684 16.6523C111.586 16.6523 111.893 15.9088 111.893 15.1652C111.893 14.6999 111.768 14.0477 111.677 13.8027H115.337C115.615 14.3925 115.71 15.1361 115.71 15.6927C115.71 18.0481 114.161 20.4367 110.41 20.4367C107.618 20.4367 104.893 19.4438 104.893 14.8246L104.864 0.2854H109.513V3.88696L109.504 3.8828Z" fill="#0E1414" />
@@ -122,6 +133,9 @@ const Header = () => {
                             </defs>
                         </svg>
                     </Link>
+                    <svg onClick={handleRegionToggle} className='cursor-pointer' width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M6 9L12 15L18 9' stroke={pathname == '/business' ? '#FFFFFF' : '#000000'} strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'></path>
+                    </svg>
                 </div>
                 <div className='flex-1 flex justify-end gap-3 items-center'>
                     <div className='hidden md:block'>
@@ -161,12 +175,13 @@ const Header = () => {
 
                     </div>
                 </div>
-
+                {regionToggle && (
+                    <a href="https://mymonty.com/en-EU" target="_blank" className='absolute top-full left-0 p-5 ml-4 w-40 bg-white text-base font-bold rounded-b-[20px] leading-none'>Europe</a>
+                )}
             </div>
             <div className='md:hidden'>
                 <MobileNav handleMobileMenuToggle={handleMobileMenuToggle} open={mobileMenuToggle} scrolling={scrolling} />
             </div>
-
         </header>
     )
 }
