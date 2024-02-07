@@ -108,7 +108,7 @@ const Header = () => {
 
     return (
         <header className={headerClasses}>
-            <div className='container relative flex justify-between items-center'>
+            <div className='container relative h-full flex justify-between items-center'>
                 <div className='flex gap-2 flex-1'>
                     <Link onClick={() => { setMenuOpen(false); setMobileMenuToggle(false); }} href='/' className='logo'>
                         {/* <Image priority alt="MyMonty Logo" src={logo} /> */}
