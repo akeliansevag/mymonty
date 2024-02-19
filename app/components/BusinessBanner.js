@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React, { useEffect } from 'react';
 import { useAppContext } from '../AppContext';
 import AppForm from '@/app/components/Form';
-import business from '@/public/business/business2.webp';
+import business from '@/public/business/business4.webp';
 
 const BusinessBanner = () => {
     const { handleOpenModal } = useAppContext();
