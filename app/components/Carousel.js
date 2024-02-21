@@ -82,8 +82,8 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                                 ? 'opacity-1'
                                 : 'opacity-0 -z-10';
                         return (
-                            <div key={index} className={`absolute py-14 lg:py-10 xl:py-28 transition-opacity ease-in duration-[400ms] h-full w-full ${contentClasses}`}>
-                                <div className='container gap-10 flex flex-col h-full overflow-hidden text-center relative'>
+                            <div key={index} className={`absolute py-14 lg:py-10 xl:py-10 transition-opacity ease-in duration-[400ms] h-full w-full ${contentClasses}`}>
+                                <div className='container gap-6 flex flex-col h-full overflow-hidden text-center relative'>
                                     <div>
                                         <TextBlock center={true} textColor="white" title={item.title} description={item.description} button={false} />
                                         {item.button && !item?.button?.modal && (

@@ -33,7 +33,7 @@ const Modal = ({ isOpen, handleOpenModal, handleCloseModal, formComponent, large
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <div className='container'>
-                <Dialog.Panel className={`relative transform overflow-hidden rounded-3xl bg-white text-left shadow-xl transition-all sm:my-8 w-full ${largeWidth ? 'md:w-3/4 lg:w-3/5 xl:w-3/4' : 'md:w-3/4 lg:w-3/5 xl:w-2/5'}  mx-auto`}>
+                <Dialog.Panel className={`relative transform overflow-hidden rounded-3xl bg-white text-left shadow-xl transition-all sm:my-8 w-full ${largeWidth ? 'md:w-3/4 lg:w-3/5 xl:w-3/4' : 'md:w-3/4 lg:w-3/5 xl:w-3/5'}  mx-auto`}>
 
                   <div className='absolute top-[15px] right-[15px] md:top-[30px] md:right-[30px]' onClick={handleCloseModal}>
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">

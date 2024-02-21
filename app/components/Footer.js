@@ -123,7 +123,7 @@ const Footer = () => {
                                     <ul className={`max-md:overflow-hidden item-wrapper transition-all duration-300 ease-in-out ${toggleClasses} md:block`} >
                                         {item.children.map((child, index2) => {
                                             return (
-                                                <li key={index2} className='mt-4 text-lg opacity-60 hover:opacity-100'>
+                                                <li key={index2} className='mt-4 text-base opacity-60 hover:opacity-100'>
                                                     {child?.url && (
                                                         <Link href={child.url}>{child.title}</Link>
                                                     )}

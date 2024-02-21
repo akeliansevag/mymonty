@@ -18,16 +18,16 @@ module.exports = {
       maxWidth: '1280px'
     },
     extend: {
-      container: {
-        screens: {
-          '2xl': '1200px',
-          '3xl': '1440px',
-        },
-      },
       screens: {
+        '2xl': '1536px',
         '3xl': '1792px',
         '4xl': '2048px',
         '5xl': '2304px',
+        '6xl': '2688px',
+        '7xl': '3072px',
+        '8xl': '3584px',
+        '9xl': '4096px',
+        'fhd': '1920px',
       },
       colors: {
         primary: colors.neutral[900],
