@@ -176,3 +176,18 @@ ol{
     list-style-type: decimal;
     padding-left:20px;
 }
+
+
+.container{
+    max-width: 1000px;
+}
+    
+
+/* For screens larger than or equal to '4xl' breakpoint */
+@media (min-width: 1920px){
+    .container{
+        max-width: 1440px;
+    }
+   
+}
+   

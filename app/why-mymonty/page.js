@@ -6,8 +6,8 @@ import Banner from '../components/Banner';
 import Link from 'next/link';
 import Image from 'next/image';
 import whyMyMonty from '@/public/personal/why-mymonty.webp';
-import highEnd from '@/public/personal/high-end.webp';
-import oneStop from '@/public/personal/one-stop-shop.webp';
+import highEnd from '@/public/personal/one-stop-shop.webp';
+import oneStop from '@/public/personal/high-end.webp';
 import friendlySupport from '@/public/personal/friendly-support.webp';
 import noHiddenFees from '@/public/personal/no-hidden-fees.webp';
 
@@ -114,7 +114,7 @@ const WhyMyMonty = () => {
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
               <Image className="w-full" src={oneStop} alt='High-End Security' placeholder='blur' />
               <div className='px-10 py-14'>
-                <h3 className='text-4xl font-bold'>One stop shop</h3>
+                <h3 className='text-4xl font-bold'>One Stop Shop</h3>
                 <p className='leading-8 mt-4'>Experience the convenience of comprehensive financial services - from seamless payments and transfers, international remittances, and flexible lending options - all through a single application.</p>
               </div>
             </div>

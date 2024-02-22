@@ -14,12 +14,6 @@ const ContactUs = () => {
       layout: 'half',
       url: contactUs,
     },
-    cta: {
-      type: 'button',
-      button: {
-        name: 'Contact Us',
-      },
-    },
   };
 
   return (

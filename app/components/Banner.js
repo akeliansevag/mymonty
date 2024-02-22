@@ -47,7 +47,7 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage }) => {
                                                 <h2>{data.subtitle}</h2>
                                             )
                                         }
-                                        <h1 className={`font-black text-4xl sm:text-5xl md:text-6xl lg:text-[5.4rem] leading-none uppercase ${data.image.layout !== 'full' ? 'mt-6' : ''}`}>{data.title}</h1>
+                                        <h1 className={`font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase ${data.image.layout !== 'full' ? 'mt-6' : ''}`}>{data.title}</h1>
                                         <p className='text-xl mt-8'>{data.desc}</p>
 
                                         {
@@ -92,7 +92,7 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage }) => {
                                                     <h2>{data.subtitle}</h2>
                                                 )
                                             }
-                                            <h1 className={`font-black text-4xl sm:text-5xl md:text-6xl lg:text-[5.4rem] leading-none uppercase ${data.image.layout !== 'full' ? 'mt-6' : ''}`}>{data.title}</h1>
+                                            <h1 className={`font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase ${data.image.layout !== 'full' ? 'mt-6' : ''}`}>{data.title}</h1>
                                             <p className='text-xl mt-8'>{data.desc}</p>
 
                                             {
