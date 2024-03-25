@@ -19,7 +19,7 @@ const HomeBanner = () => {
                     <h1 className='font-black text-[42px]  sm:text-5xl md:text-6xl lg:text-[5.4rem] xl:text-[5rem] mt-6 leading-none uppercase'>
                         YOUR SUPER DIGITAL WALLET.
                     </h1>
-                    <p className='text-xl mt-8'>Explore our innovative ways to manage your&nbsp;finances.</p>
+                    <p className='text-xl mt-8'>Explore innovative ways to manage your&nbsp;finances.</p>
                     <button onClick={handleOpenModal} className='mm-button mt-8'>Get the app</button>
                 </div>
                 <div className='flex-1 flex items-end'>

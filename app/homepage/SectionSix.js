@@ -12,7 +12,7 @@ const SectionSix = () => {
                     <div className='md:flex-1 md:flex'>
                         <div className='md:w-2/3'>
                             <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Don't ever miss a payment again</h2>
-                            <p className='leading-8 mt-8'>Try our scheduled and recurring payment method with peace of mind.</p>
+                            <p className='leading-8 mt-8'>Try our scheduled and recurring payment method for peace of mind.</p>
                             <Link href="/payments" className='mm-button white mt-8 mx-auto'>Try it out</Link>
                         </div>
                     </div>

@@ -28,7 +28,7 @@ const Section3 = () => {
 
                     <Image alt='Growth Oriented Environmemt' placeholder='blur' className='mt-10' src={earlySalary} />
 
-                    <p className='leading-8 mt-10 text-center w-full lg:w-4/5'>By offering Early Salary, we're not just providing a financial service; we're investing in the well-being and satisfaction of our employees. Join us in empowering our workforce to manage their finances more effectively.</p>
+                    <p className='leading-8 mt-10 text-center w-full lg:w-4/5'>By offering Early Salary, we're not just providing a financial service; we're investing in the well-being and satisfaction of your employees. Join us in empowering your workforce to manage their finances more effectively.</p>
                 </div>
             </div>
         </section>

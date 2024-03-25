@@ -50,13 +50,13 @@ const CodeOfConduct = () => {
     },
     {
       image: '/personal/code-5.webp',
-      title: 'Treating Customer Fairly',
-      description: '<ol><li>Our employees shall not show indifference, arrogance, rudeness, and discrimination against customers for reasons such as nationality, ethnics, religion, age, gender, color, disability, and amount of business.</li><li>Our employees shall deal with customers in a fair and transparent manner and take the time to explain the risks and benefits, informing them of any change in these conditions. Employees will also reply with high professionalism, accuracy and speed to any inquiry made by a customer.</li></ol>'
+      title: 'Treating Customers Fairly',
+      description: '<ol><li>Our employees shall not show indifference, arrogance, rudeness, or discrimination against customers based on factors such as nationality, ethnicity, religion, age, gender, color, disability, or amount of business.</li><li>Our employees shall deal with customers fairly and transparently, taking the time to explain the risks and benefits, and informing them of any changes in these conditions. Employees will also respond with high professionalism, accuracy, and speed to any inquiries a customer makes.</li></ol>'
     },
     {
       image: '/personal/code-6.webp',
       title: 'Confidentiality and Data Protection',
-      description: '<ol><li>Our employees are bound by the provisions of Lebanese Law of 3 September 1956 on Banking Secrecy in the interest of its customers.</li><li>Furthermore, Personal data held by or on behalf of us must be used in compliance with data protection laws.</li></ol>'
+      description: '<ol><li>Our employees are bound by the provisions of the Lebanese Law of 3 September 1956 on Banking Secrecy in the interest of its customers.</li><li>Furthermore, Personal data held by or on behalf of us must be used in compliance with data protection laws.</li></ol>'
     },
 
   ];

@@ -18,7 +18,7 @@ export const metadata = {
 const data = {
   title: 'ONE APP FOR ALL MONEY THINGS',
   subtitle: 'Who we are',
-  desc: 'Manage your money effortlessly from the comfort of one single, intuitive App.',
+  desc: 'Manage your money effortlessly from the comfort of one single intuitive App.',
   image: {
     inGrid: true,
     layout: 'half',
@@ -46,7 +46,7 @@ const WhoWeAre = () => {
               </svg>
             </div>
             <h2 className="text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none">MISSION</h2>
-            <p className="text-center leading-8">Simplify banking, inspire trust, lead innovation and contribute to financial inclusion.</p>
+            <p className="text-center leading-8">To streamline banking processes, foster trust, spearhead innovation, and actively promote financial inclusion.</p>
           </div>
           <div className="sm:flex-1 gap-5 flex-col items-center flex bg-[#F7F7F7] rounded-lg p-10">
             <div>
@@ -109,14 +109,14 @@ const WhoWeAre = () => {
             </div>
             <div className='md:w-1/2'>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Integrity</h2>
-              <p className='leading-8 mt-4'>We as a family uphold honesty toward one another and the external stakeholders since trust is the foundation of all successful partnerships. We commit to honesty and consistency. As a result, we always conduct business according to a strong foundation of moral principles and in compliance with ethics.</p>
+              <p className='leading-8 mt-4'>We as a family, uphold honesty toward one another and our external stakeholders, since trust is the foundation of all successful partnerships. We are dedicated to maintaining honesty and consistency in our actions. As a result, we always conduct business according to a strong foundation of moral principles and in compliance with ethical standards.</p>
             </div>
           </div>
 
           <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 mt-20 md:mt-40 relative'>
             <div className='md:w-1/2'>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Sustainable Development</h2>
-              <p className='leading-8 mt-4'>We care about our environment and work to keep natural systems capable of providing the services that are crucial to the economy and society. Because the earth is not ours, we must use resources wisely in order to meet the demands of the present and future generations without compromising the dependability and stability of the natural system.</p>
+              <p className='leading-8 mt-4'>We care about our environment and work to preserve natural systems vital in supporting the economy and society. Acknowledging that the Earth is not solely ours, we embrace the responsibility of using resources wisely to meet the demands of the present and future generations without compromising the dependability and stability of the natural system we depend on.</p>
             </div>
             <div className='md:w-1/2 justify-end flex'>
               <Image src={sustainable} alt='Sustainable Development' placeholder='blur' />

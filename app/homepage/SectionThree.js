@@ -8,9 +8,9 @@ const SectionThree = () => {
     return (
         <section className='pt-14 pb-14 lg:pt-28 lg:pb-20 bg-black text-white'>
             <div className='container text-center'>
-                <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Explore Our Diverse Range of Cards</h2>
+                <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Explore Our Diverse Range of Virtual Cards</h2>
                 <div className='lg:w-1/2 mx-auto'>
-                    <p className='leading-8 mt-8'>Pick the color and style that matches your lifestyle and personality. Choose the Standard or the Premium card and embrace envy-inducing looks.</p>
+                    <p className='leading-8 mt-8'>Pick the color and style that matches your lifestyle and personality, and step into a world of personalized virtual cards designed just for you!</p>
                     <Link href="/cards" className='mm-button white mt-8 mx-auto'>Choose your card</Link>
                 </div>
                 {/* <div className='text-center'>

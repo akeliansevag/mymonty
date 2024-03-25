@@ -18,17 +18,15 @@ const Section1 = () => {
     return (
         <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
             <div className='container text-center'>
-                <h2 className='text-center uppercase font-black text-3xl sm:text-5xl lg:text-[2.875rem] w-full lg:w-2/3 leading-none mx-auto'>Salary domiciliation with a portal for companies</h2>
+                <h2 className='text-center uppercase font-black text-3xl sm:text-5xl lg:text-[2.875rem] w-full lg:w-2/3 leading-none mx-auto'>Employee Salary domiciliation with a portal for companies</h2>
 
-                <p className='leading-8 mt-10 text-center w-full lg:w-2/3 mx-auto'>Setting up salary domiciliation for your company for free will ensure a smooth transition to automated payroll management. Efficiency by centralizing salary payments, cost and time saving, employee convenience of having their salaries deposited directly into their wallet account.</p>
+                <p className='leading-8 mt-10 text-center w-full lg:w-2/3 mx-auto'>Setting up free salary domiciliation for your employees will ensure a smooth transition to automated payroll management. Centralizing salary payments not only increases efficiency but also saves costs and time. Employees will benefit from the convenience of having their salaries deposited directly into their wallet accounts.</p>
 
                 <button onClick={handleButtonClick} className='mm-button white mt-8'>Learn more</button>
 
                 <Image className='mt-10' alt='Growth Oriented Environmemt' placeholder='blur' quality={100} src={salary} />
 
-                <p className='leading-8 mt-10 text-center w-full lg:w-2/3 mx-auto'>Greater employee retention for timely payments so that they can plan effectively.<br />
-                    Reduced errors by minimizing the manual intervention and contributing to accuracy in salary disbursements.<br />
-                    Contribution to better compliance with tax regulations and labor laws while facilitating recordkeeping for both employers and employees.</p>
+                <p className='leading-8 mt-10 text-center w-full lg:w-2/3 mx-auto'>Enhanced employee retention is achieved through timely payments, allowing them to plan effectively. This is coupled with reduced errors, as manual intervention is minimized, contributing to accuracy in salary disbursements. </p>
             </div>
         </section>
     )
