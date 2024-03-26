@@ -113,7 +113,7 @@ const WhoWeAre = () => {
             </div>
           </div>
 
-          <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 mt-20 md:mt-40 relative'>
+          {/* <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 mt-20 md:mt-40 relative'>
             <div className='md:w-1/2'>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Sustainable Development</h2>
               <p className='leading-8 mt-4'>We care about our environment and work to preserve natural systems vital in supporting the economy and society. Acknowledging that the Earth is not solely ours, we embrace the responsibility of using resources wisely to meet the demands of the present and future generations without compromising the dependability and stability of the natural system we depend on.</p>
@@ -121,7 +121,7 @@ const WhoWeAre = () => {
             <div className='md:w-1/2 justify-end flex'>
               <Image src={sustainable} alt='Sustainable Development' placeholder='blur' />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
