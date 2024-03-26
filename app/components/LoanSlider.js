@@ -24,11 +24,11 @@ const LoanSlider = ({ data }) => {
         grabCursor: true,
     };
     const items = [
-        {
-            icon: competitiveRates,
-            title: 'Competitive Rates',
-            description: 'Benefit from competitive interest rates designed to suit your budget'
-        },
+        // {
+        //     icon: competitiveRates,
+        //     title: 'Competitive Rates',
+        //     description: 'Benefit from competitive interest rates designed to suit your budget'
+        // },
         {
             icon: simpleApplication,
             title: 'Simple Application',

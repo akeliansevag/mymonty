@@ -55,7 +55,7 @@ const loyalty = () => {
             <Section>
                 <div className='container'>
                     <div id="referral" className='flex flex-col lg:flex-row items-center gap-20'>
-                        <TextBlock title="Referral" description="Refer a friend and receive your reward as soon as your referral gets onboarded and begins using MyMonty." button={true} />
+                        <TextBlock title="Referral" description="Coming soon! Refer a friend and get rewarded as soon as your invitee gets onboarded and starts using MyMonty. Stay tuned for more details!" button={true} />
                         <Image className='md:w-1/3' src={sectionFour} alt='Image' />
                     </div>
 
