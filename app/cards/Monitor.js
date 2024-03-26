@@ -11,7 +11,7 @@ const Monitor = () => {
     return (
         <Section>
             <div className='container text-center'>
-                <TextBlock center={true} title="Monitor Your Spendings and Check Your Transaction History" description="You can view your card activity at any time and keep your eye on your spendings, we will let you digitally export your card statement and save it to your device." button={true} />
+                <TextBlock center={true} title="Monitor Your Spending and Check Your Transaction History" description="You can view your card activity anytime and keep track of your spending. Additionally, we provide the option to digitally export your card statement and save it to your device." button={true} />
                 <Image ref={anim} src={sectionFiveImage} alt="Image" className='pt-14 mx-auto' />
             </div>
         </Section>

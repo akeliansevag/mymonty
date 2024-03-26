@@ -12,7 +12,7 @@ const VirtualCard = () => {
         <div id="virtual-card">
             <Section>
                 <div className='container text-center'>
-                    <TextBlock center={true} title="Access your money wherever you are" description="With MyMonty virtual cards, your financial freedom is always within the palm of your hand. You can access the money in your MyMonty virtual prepaid card, online or at cardless ATMs within our network, and you’ll get Mastercard’s great-value exchange rates when spending abroad." button={true} />
+                    <TextBlock center={true} title="Access your money wherever you are" description="You can access the money in your MyMonty virtual prepaid card, online or at cordless ATMs within our network, and you’ll get favorable exchange rates when spending abroad." button={true} />
                     <Image ref={anim} className='mx-auto mt-14' alt="Wallets" src={sectionTwoImage} />
                 </div>
             </Section>

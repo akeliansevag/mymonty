@@ -15,7 +15,7 @@ const terms = () => {
     const data = {
         title: 'our terms and conditions',
         subtitle: 'Terms and Conditions',
-        desc: 'Continuous Development: At MyMonty, we are dedicated to nurturing the professional',
+        desc: '',
         image: {
             inGrid: true,
             layout: 'half',

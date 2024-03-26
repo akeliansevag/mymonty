@@ -88,8 +88,8 @@ const StudentLoan = () => {
               <div className='px-10 py-14'>
                 <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-black text-white m-auto text-center'>4</div>
 
-                <h3 className='text-2xl md:text-4xl font-black mt-10'>Drive Away</h3>
-                <p className='leading-8 mt-4'>Once approved, funds will be disbursed, putting you on the road towards your dream car</p>
+                <h3 className='text-2xl md:text-4xl font-black mt-10'>Educational Pursuit</h3>
+                <p className='leading-8 mt-4'>Upon approval, funds will be disbursed, opening the door for you to pursue your academic dreams</p>
               </div>
             </div>
           </div>
@@ -101,10 +101,10 @@ const StudentLoan = () => {
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Eligibility Criteria</h2>
 
               <p className='leading-8 mt-6'>Be enrolled in an accredited educational institution.<br />
-                Provide necessary documentation and meet our credit assessment criteria.<br />
+                Provide necessary documentation.<br />
                 Have a stable income source.<br />
                 Meet our credit assessment criteria.<br />
-                Be a MyMonty for more than 6 months</p>
+                Be an active MyMonty user for over 6 months.</p>
               {/* <button className='mm-button mt-14 !px-20'>Apply Now</button> */}
             </div>
           </div>

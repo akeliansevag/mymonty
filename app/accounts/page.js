@@ -48,7 +48,7 @@ const accounts = () => {
         content: [
             {
                 title: 'Top up by Card',
-                description: 'Top up your wallet account using any Fresh USD / LBP bank card, and see the balance updated instantly with no hidden fees. For free from your MyMonty card.',
+                description: 'Instantly update your wallet account balance with no hidden fees by topping up using any Fresh USD/LBP bank card. It’s free with your MyMonty card.',
                 button: {
                     text: 'Choose your card',
                     url: '/cards'

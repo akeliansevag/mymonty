@@ -22,7 +22,7 @@ const transfers = () => {
     const data = {
         title: 'Safely transfer money ',
         subtitle: 'Transfers',
-        desc: 'Bridge the gap between you and your loved ones by sending them funds home. Contactless prepaid Mastercard you can use globally.',
+        desc: 'Bridge the gap between you and your loved ones by sending them funds home.',
         image: {
             inGrid: true,
             layout: 'half',
@@ -51,7 +51,7 @@ const transfers = () => {
         content: [
             {
                 title: 'Send money',
-                description: 'Easily send money to friends, family, or associates by entering their mobile number, or by tapping on their transfer link or scanning their QR.',
+                description: 'Easily send money to friends, family, or associates by entering their mobile number, or by tapping on their transfer link or scanning their QR code.',
                 button: {
                     text: 'Download app',
                     url: '#',
@@ -73,7 +73,7 @@ const transfers = () => {
             },
             {
                 title: 'Request money',
-                description: 'Send a payment request, specifying the amount and purpose to the recipient number or share your QR/Link on chatting platforms.',
+                description: 'Send a payment request by specifying the amount and purpose to the recipient\'s number or share your QR/link on messaging platforms.',
                 button: {
                     text: 'Download app',
                     url: '#',
@@ -98,7 +98,7 @@ const transfers = () => {
         content: [
             {
                 title: 'Seamless Recurring transfers',
-                description: 'Set up recurring transfers and stay in control of your financial tasks and obligations, funds will be transferred automatically including starting and end dates and even days of recurrence.',
+                description: 'Set up recurring transfers to effortlessly manage your financial tasks and obligations. Funds will be automatically transferred on scheduled dates, as well as the days of recurrence, putting you in complete control.',
             },
             {
                 title: 'Streamline Transfers',
@@ -115,7 +115,7 @@ const transfers = () => {
                 <section className='pb-0 pt-14 lg:pt-24'>
                     <div className='container flex-col-reverse flex lg:flex-row gap-10 items-center'>
                         <Image className='md:w-1/2' src={sectionTwo} alt='Image' />
-                        <TextBlock title="Borderless transfers" description="Indulge the seamless and direct transfer of funds between individuals through MyMonty. Initiate transactions using your mobile device, eliminating the need for traditional intermediaries like banks even for cross-border transfers." button={true} />
+                        <TextBlock title="Borderless transfers" description="Experience swift and direct peer-to-peer (P2P) fund transfers between individuals through MyMonty. Initiate transactions effortlessly using your mobile device, without the delays associated with conventional banking processes, even for cross-border transfers." button={true} />
                     </div>
                 </section>
             </div>
@@ -126,13 +126,13 @@ const transfers = () => {
             <Section>
                 <div className='container'>
                     <div id="top-up" className='flex flex-col lg:flex-row items-center gap-10'>
-                        <TextBlock title="Top up or cash out with our partners" description="Top up your wallet account at any OMT agent, the funds will be reflected instantly in your wallet account. You can cash out yourself or send a code for a beneficiary to cash out on your behalf." button={true} />
+                        <TextBlock title="Top up or cash out with our partners" description="Top up your wallet account at any OMT agent, and the funds will be instantly reflected in your account. You have the option to either cash out personally or send a code for a beneficiary to cash out on your behalf." button={true} />
                         <Image className='md:w-1/3' src={sectionFour} alt='Image' />
                     </div>
 
                     <div id="cash-out" className='mt-20 md:mt-40 flex flex-col-reverse lg:flex-row items-center gap-10'>
                         <Image className='md:w-1/3' src={sectionFive} alt='Image' />
-                        <TextBlock title="Top up or cash out by ATM/bank network" description="Top up your wallet or cash out at our partner bank ATMs." button={true} />
+                        <TextBlock title="TOP UP OR CASH OUT THROUGH OUR ATM/BANK NETWORK" description="Conveniently manage your funds by topping up your wallet with ease or seamlessly withdrawing cash at our partner bank ATMs, providing you with a flexible and accessible financial experience." button={true} />
                     </div>
 
                 </div>

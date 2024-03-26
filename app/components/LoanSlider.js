@@ -32,7 +32,7 @@ const LoanSlider = ({ data }) => {
         {
             icon: simpleApplication,
             title: 'Simple Application',
-            description: 'Our easy-to-use online'
+            description: 'Enjoy a user-friendly online application process, ensuring a straightforward and hassle-free experience.'
         },
         {
             icon: quickApproval,

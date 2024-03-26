@@ -19,9 +19,9 @@ export const metadata = {
 
 const cards = () => {
     const data = {
-        title: 'prepaid Mastercard you can use globally.',
+        title: 'prepaid Card you can use globally.',
         subtitle: 'Cards',
-        desc: 'Contactless prepaid Mastercard you can use globally.',
+        desc: 'Contactless prepaid card you can use globally.',
         image: {
             inGrid: true,
             layout: 'half',
@@ -60,7 +60,7 @@ const cards = () => {
             },
             {
                 title: 'Create a Virtual Card',
-                description: 'Pay even safer with your in-app virtual card for an extra layer of security when shopping online.',
+                description: 'Enhance your online shopping security by paying with your in-app virtual card for an additional layer of safety.',
                 button: {
                     text: 'Download app',
                     url: '#',

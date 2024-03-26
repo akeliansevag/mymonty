@@ -3,8 +3,8 @@ import { websiteName } from '@/app/config';
 import Banner from '../components/Banner';
 import Image from 'next/image';
 import house1 from '@/public/house-loan-banner.webp';
-import house2 from '@/public/personal/house-loan2.webp';
-import house3 from '@/public/personal/house-loan3.webp';
+import house2 from '@/public/personal/house-loan22.webp';
+import house3 from '@/public/personal/house-loan33.webp';
 
 import LoanSlider from "../components/LoanSlider";
 
@@ -91,8 +91,8 @@ const PlasticSurgeryLoan = () => {
               <div className='px-10 py-14'>
                 <div className='flex items-center justify-center w-[50px] h-[50px] md:w-[90px] md:h-[90px] rounded-full border-4 bg-[#2657D4] text-3xl font-black text-white m-auto text-center'>4</div>
 
-                <h3 className='text-2xl md:text-4xl font-black mt-10'>Drive Away</h3>
-                <p className='leading-8 mt-4'>Once approved, funds will be disbursed, putting you on the road towards your dream car</p>
+                <h3 className='text-2xl md:text-4xl font-black mt-10'>Move In</h3>
+                <p className='leading-8 mt-4'>Upon approval, funds will be disbursed, paving the way for you to step into your dream home.</p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ const PlasticSurgeryLoan = () => {
 
               <p className='leading-8 mt-6'>Meet our credit assessment criteria.<br />
                 Provide necessary documentation related to the property purchase.<br />
-                Be a MyMonty active user for over 6 months.</p>
+                Be an active MyMonty user for over 6 months.</p>
               {/* <button className='mm-button mt-14 !px-20'>Apply Now</button> */}
             </div>
           </div>

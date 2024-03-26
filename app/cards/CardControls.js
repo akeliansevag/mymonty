@@ -12,7 +12,7 @@ const CardControls = () => {
         <div id="card-controls">
             <Section>
                 <div className='container flex flex-col md:flex-row gap-10 items-center'>
-                    <TextBlock title="Lock and Unlock on the Go" description="Lost your card? Doubting a fraudulent transaction? Keep your prepaid card safe and your money protected by instantly locking your card in-app." button={true} />
+                    <TextBlock title="Lock and Unlock on the Go" description="Lost your card or suspect a fraudulent transaction? Ensure the safety of your prepaid card and protect your funds by instantly locking your card within the app." button={true} />
                     <Image ref={anim} className='md:w-1/2' src={sectionFourImage} alt='People' />
                 </div>
             </Section>

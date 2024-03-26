@@ -96,11 +96,13 @@ const CarLoan = () => {
           <div className='flex flex-col md:flex-row md:items-center gap-10 relative mt-20'>
             <div className='md:w-1/2'>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Eligibility Criteria</h2>
-              <p className='leading-8 mt-6'>Be a Lebanese over 18 years old.<br />
-                Have a driving license.<br />
+              <p className='leading-8 mt-6'>
+                Be a Lebanese citizen over 18 years old.<br />
+                Possess a valid driving license.<br />
                 Have a stable income source.<br />
                 Meet our credit assessment criteria.<br />
-                Be a MyMonty for more than 6 months</p>
+                Be an active MyMonty user for over 6 months.
+              </p>
               {/* <button className='mm-button mt-14 !px-20'>Apply Now</button> */}
             </div>
           </div>

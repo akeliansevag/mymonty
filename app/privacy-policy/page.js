@@ -15,18 +15,13 @@ const terms = () => {
     const data = {
         title: 'our Policy at Mymonty',
         subtitle: 'Privacy Policy',
-        desc: 'Continuous Development: At MyMonty, we are dedicated to nurturing the professional',
+        desc: '',
         image: {
             inGrid: true,
             layout: 'half',
             url: privacyImage,
         },
-        cta: {
-            type: 'sfsfsdf',
-            button: {
-                name: 'Download app'
-            }
-        }
+        cta: false
     };
     return (
         <div className={styles.privacyPolicy}>
