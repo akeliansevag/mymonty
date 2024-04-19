@@ -23,6 +23,7 @@ const data = {
     layout: 'half',
     url: travel1,
   },
+  comingSoon: true,
   cta: {
     type: 'button',
     button: {

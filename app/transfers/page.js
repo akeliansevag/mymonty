@@ -2,10 +2,10 @@ import Banner from '@/app/components/Banner';
 import { websiteName } from '@/app/config';
 
 import React from 'react';
-import banner from '@/public/personal/transfers-banner.webp';
+import banner from '@/public/personal/transfer-couple-1.webp';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
-import sectionTwo from '@/public/personal/transfers-section-two.webp';
+import sectionTwo from '@/public/personal/borderless-transfers.webp';
 import sectionFour from '@/public/personal/top-up.webp';
 import sectionFive from '@/public/personal/top-up-bank.webp';
 import Image from 'next/image';
@@ -57,7 +57,7 @@ const transfers = () => {
                     url: '#',
                     modal: true,
                 },
-                contentImage: '/personal/send-money-2.webp',
+                contentImage: '/personal/send-coffee.webp',
                 backgroundImage: '/personal/send-money-bg.webp'
             },
             {

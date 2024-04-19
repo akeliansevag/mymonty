@@ -24,6 +24,7 @@ const data = {
     layout: 'half',
     url: house1,
   },
+  comingSoon: true,
   cta: {
     type: 'button',
     button: {

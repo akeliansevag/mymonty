@@ -1,16 +1,25 @@
 version: '3.8'
 
 services:
-  frontend:
+  mymonty-frontend:
     image: mymonty-dev:latest
+    container_name: mymonty-frontend
     ports:
       - 3000:3000
     volumes:
       - node_modules:/frontend/node_modules
       - next:/frontend/.next
       - /Users/sevag.akelian/websites/mymonty:/frontend
+    networks:
+      - mymonty-network
+      - npm
+    restart: unless-stopped
 volumes:
   node_modules:
   next:
-
-
+networks:
+  mymonty-network:
+    driver: bridge
+  npm:
+    external: true
+    name: npm

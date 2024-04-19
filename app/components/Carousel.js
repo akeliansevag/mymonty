@@ -85,6 +85,11 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                             <div key={index} className={`absolute py-14 lg:py-10 xl:py-10 transition-opacity ease-in duration-[400ms] h-full w-full ${contentClasses}`}>
                                 <div className='container gap-6 flex flex-col h-full overflow-hidden text-center relative'>
                                     <div>
+                                        {item.comingSoon && (
+                                            <div className='rounded-xl mb-5 inline-block text-base py-2 px-4 bg-gradient-to-r from-[#E73E3E] to-[#F02CC2] font-bold italic text-white'>
+                                                Coming soon
+                                            </div>
+                                        )}
                                         <TextBlock center={true} textColor="white" title={item.title} description={item.description} button={false} />
                                         {item.button && !item?.button?.modal && (
                                             <Link className='mm-button mt-4' href={item.button?.url}>{item.button.text}</Link>

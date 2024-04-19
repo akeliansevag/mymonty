@@ -57,7 +57,8 @@ const loans = () => {
                     url: '/car-loan',
                 },
                 contentImage: '/personal/loans-carousel-1-content.webp',
-                backgroundImage: '/personal/car-image.webp'
+                backgroundImage: '/personal/car-image-1.webp',
+                comingSoon: true
             },
             {
                 title: 'Step into Your Dream house',
@@ -67,7 +68,8 @@ const loans = () => {
                     url: '/house-loan',
                 },
                 contentImage: '/personal/loans-carousel-2-content.webp',
-                backgroundImage: '/personal/loans-carousel-2.webp'
+                backgroundImage: '/personal/loans-carousel-2.webp',
+                comingSoon: true
             },
             {
                 title: 'Boost your confidence',
@@ -77,7 +79,8 @@ const loans = () => {
                     url: '/plastic-surgery-loan',
                 },
                 contentImage: '/personal/loans-carousel-3-content.webp',
-                backgroundImage: '/personal/loans-carousel-3.webp'
+                backgroundImage: '/personal/loans-carousel-3.webp',
+                comingSoon: true
             },
             {
                 title: 'Invest in Your Future',
@@ -87,7 +90,8 @@ const loans = () => {
                     url: '/student-loan',
                 },
                 contentImage: '/personal/loans-carousel-4-content.webp',
-                backgroundImage: '/personal/loans-carousel-4-image.webp'
+                backgroundImage: '/personal/loans-carousel-4-image.webp',
+                comingSoon: true
             }
         ]
     };

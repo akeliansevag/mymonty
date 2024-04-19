@@ -8,10 +8,6 @@ import TextBlock from '@/app/components/TextBlock';
 import sectionTwo from '@/public/personal/pay-qr.webp';
 import sectionThree from '@/public/personal/instant-payment.webp';
 import sectionFour from '@/public/personal/payments-swiper-1.webp';
-import billPayment from '@/public/personal/bill-payment.png';
-import onlineVouchers from '@/public/personal/online-vouchers.png';
-import tuitionPayment from '@/public/personal/tuition-payment.png';
-import weddingList from '@/public/personal/wedding-list.png';
 import paymentTravel from '@/public/personal/payments-travel.webp';
 import travelImage from '@/public/personal/esim-img.webp';
 import Image from 'next/image';
@@ -40,6 +36,25 @@ const payments = () => {
         }
     };
 
+    const billPayments = [
+        {
+            icon: '/personal/bill-payments.svg',
+            title: 'Bill payments'
+        },
+        {
+            icon: '/personal/online-vouchers.svg',
+            title: 'Online vouchers'
+        },
+        {
+            icon: '/personal/tuition-payments.svg',
+            title: 'Tuition payments'
+        },
+        {
+            icon: '/personal/wedding-list-payments.svg',
+            title: 'Wedding list payments'
+        },
+    ];
+
     return (
         <>
             <Banner data={data} />
@@ -67,21 +82,18 @@ const payments = () => {
             <div id="bill-payment">
                 <Section>
                     <div className='container text-center md:px-20'>
-                        <div className='gap-2 md:gap-1 grid grid-cols-2 md:grid-cols-4 items-center justify-center mb-16'>
-                            <div className='flex justify-center'>
-                                <Image src={onlineVouchers} alt='Image' />
-                            </div>
-                            <div className='flex justify-center'>
-                                <Image src={billPayment} alt='Image' />
-                            </div>
+                        <div className='gap-2 md:gap-6 grid grid-cols-2 md:grid-cols-4 items-center justify-center mb-16'>
+                            {billPayments && billPayments.map((item, index) => {
+                                return (
+                                    <div className='md:min-h-[268px] h-full rounded-3xl flex justify-center items-center text-white bg-black p-10' key={index}>
+                                        <div className='flex gap-4 flex-col items-center justify-center'>
+                                            <img alt="icon" src={item.icon} />
+                                            <h3 className='text-2xl uppercase font-bold'>{item.title}</h3>
+                                        </div>
 
-                            <div className='flex justify-center'>
-                                <Image src={tuitionPayment} alt='Image' />
-                            </div>
-                            <div className='flex justify-center'>
-                                <Image src={weddingList} alt='Image' />
-                            </div>
-
+                                    </div>
+                                )
+                            })}
                         </div>
 
                         <TextBlock center={true} title="Bill Payment" description="We are launching an extensive bundle of services very soon, featuring group payments and bill splitting for your convenience." button={true} />

@@ -8,8 +8,8 @@ export const data = [
                 url: '/accounts',
                 children: [
                     {
-                        title: 'Multicurrency Wallet',
-                        url: '/accounts?s=multicurrency-wallet',
+                        title: 'Dual Currency Wallet',
+                        url: '/accounts?s=dual-currency-wallet',
                     },
                     {
                         title: 'Top Up',

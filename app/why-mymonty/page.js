@@ -12,9 +12,9 @@ import friendlySupport from '@/public/personal/friendly-support.webp';
 import noHiddenFees from '@/public/personal/no-hidden-fees.webp';
 
 const data = {
-  title: 'EMPOWERING EVERY LEBANESE WITH FINANCIAL SERVICES',
+  title: 'EMPOWERING LEBANESE CITIZENS WITH FINANCIAL SERVICES',
   subtitle: 'Why MyMonty',
-  desc: 'All Lebanese citizens will have access to a comprehensive range of financial services.',
+  desc: 'Eligible citizens will have access to a comprehensive range of financial services. T&C Apply.',
   image: {
     inGrid: true,
     layout: 'half',

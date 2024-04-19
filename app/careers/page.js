@@ -187,7 +187,7 @@ const Careers = () => {
               <div className='flex flex-col items-center gap-10'>
                 <h2 className='text-center uppercase font-black text-3xl sm:text-5xl lg:text-[2.875rem] w-full lg:w-2/3 leading-none'>discover a nurturing and growth-oriented environment</h2>
                 <p className='leading-8 mt-4 text-center w-full lg:w-2/3 mx-auto'>Whether you're just starting your career or aiming for the next milestone, discover a nurturing and growth-oriented environment that values your aspirations. We provide the resources needed to turn your career goals into reality.</p>
-                <button className='mm-button !bg-white !text-black w-max mt-5'>Join us now</button>
+                <a href="https://www.linkedin.com/company/mymonty-lebanon/jobs" target='_blank' className='mm-button !bg-white !text-black w-max mt-5'>Join us now</a>
               </div>
             </div>
           </div>

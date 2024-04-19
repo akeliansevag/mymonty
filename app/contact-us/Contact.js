@@ -73,6 +73,9 @@ const Contact = () => {
   }, [dropdownRef]);
 
   const handleChange = (e) => {
+
+    e.target.value = e.target.value.replace(/\D/g, '');
+
     const { id, value } = e.target;
 
     // Limit mobile number field to a maximum of 16 characters

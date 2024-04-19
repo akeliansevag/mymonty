@@ -22,6 +22,7 @@ const data = {
     layout: 'half',
     url: personal1,
   },
+  comingSoon: true,
   cta: {
     type: 'button',
     button: {

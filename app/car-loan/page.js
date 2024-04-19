@@ -21,6 +21,7 @@ const data = {
     layout: 'half',
     url: carKey,
   },
+  comingSoon: true,
   cta: {
     type: 'button',
     button: {

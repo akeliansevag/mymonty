@@ -21,7 +21,7 @@ const cards = () => {
     const data = {
         title: 'prepaid Card you can use globally.',
         subtitle: 'Cards',
-        desc: 'Contactless prepaid card you can use globally.',
+        desc: 'Contactless card for a borderless experience.',
         image: {
             inGrid: true,
             layout: 'half',
@@ -56,7 +56,7 @@ const cards = () => {
                     modal: true
                 },
                 contentImage: '/personal/cards-carousel-1-content-n.webp',
-                backgroundImage: '/personal/cards-carousel-1.webp'
+                backgroundImage: '/personal/cards-carousel-11.webp'
             },
             {
                 title: 'Create a Virtual Card',

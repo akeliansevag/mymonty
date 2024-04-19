@@ -21,6 +21,7 @@ const data = {
     layout: 'half',
     url: plasticSurgery1,
   },
+  comingSoon: true,
   cta: {
     type: 'button',
     button: {

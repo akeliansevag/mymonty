@@ -44,7 +44,14 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage }) => {
                                     <div>
                                         {
                                             data?.subtitle && (
-                                                <h2>{data.subtitle}</h2>
+                                                <div className='flex gap-5 items-center'>
+                                                    <h2>{data.subtitle}</h2>
+                                                    {data?.comingSoon && (
+                                                        <div className='rounded-xl inline-block text-base py-2 px-4 bg-gradient-to-r from-[#E73E3E] to-[#F02CC2] font-bold italic text-white'>
+                                                            Coming soon
+                                                        </div>
+                                                    )}
+                                                </div>
                                             )
                                         }
                                         <h1 className={`font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase ${data.image.layout !== 'full' ? 'mt-6' : ''}`}>{data.title}</h1>
@@ -89,7 +96,15 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage }) => {
                                         <div>
                                             {
                                                 data?.subtitle && (
-                                                    <h2>{data.subtitle}</h2>
+                                                    <div className='flex gap-5 items-center'>
+                                                        <h2>{data.subtitle}</h2>
+                                                        {data?.comingSoon && (
+                                                            <div className='rounded-xl inline-block text-base py-2 px-4 bg-gradient-to-r from-[#E73E3E] to-[#F02CC2] font-bold italic text-white'>
+                                                                Coming soon
+                                                            </div>
+                                                        )}
+                                                    </div>
+
                                                 )
                                             }
                                             <h1 className={`font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase ${data.image.layout !== 'full' ? 'mt-6' : ''}`}>{data.title}</h1>
