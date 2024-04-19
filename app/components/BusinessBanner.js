@@ -28,7 +28,7 @@ const BusinessBanner = () => {
                                 <button onClick={handleOriginalOpenModal} className="mm-button mt-8 white">Get the app</button>
                             </div>
                         </div>
-                        <div className="w-full md:w-1/2">
+                        <div className="w-full md:w-2/3">
                             <Image alt='Girl holding a phone' placeholder='blur' quality={100} sizes='100vw' src={business} className='w-full md:w-2/3 ml-auto' priority />
                         </div>
                     </div>
