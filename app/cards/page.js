@@ -19,7 +19,7 @@ export const metadata = {
 
 const cards = () => {
     const data = {
-        title: 'prepaid Card you can use globally.',
+        title: 'prepaid Card you can use globally',
         subtitle: 'Cards',
         desc: 'Contactless card for a borderless experience.',
         image: {

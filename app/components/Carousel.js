@@ -92,7 +92,7 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                                         )}
                                         <TextBlock center={true} textColor="white" title={item.title} description={item.description} button={false} />
                                         {item.button && !item?.button?.modal && (
-                                            <Link className='mm-button mt-4' href={item.button?.url}>{item.button.text}</Link>
+                                            <Link className='mm-button !bg-white !text-black mt-4' href={item.button?.url}>{item.button.text}</Link>
                                         )}
                                         {item.button && item?.button?.modal && (
                                             <button onClick={handleOpenModal} className='mm-button white mt-4' href={item.button?.url}>{item.button.text}</button>

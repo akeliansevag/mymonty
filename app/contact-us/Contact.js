@@ -74,16 +74,16 @@ const Contact = () => {
 
   const handleChange = (e) => {
 
-    e.target.value = e.target.value.replace(/\D/g, '');
 
     const { id, value } = e.target;
+    const sanitizedValue = id === 'mobile' ? value.replace(/[^\d]/g, '') : value;
 
     // Limit mobile number field to a maximum of 16 characters
-    if (id === 'mobile' && value.length >= 12) {
+    if (id === 'mobile' && sanitizedValue.length >= 12) {
       return;
     }
 
-    setFormData((prevData) => ({ ...prevData, [id]: value }));
+    setFormData((prevData) => ({ ...prevData, [id]: sanitizedValue }));
 
     // Clear the error message when the user starts typing in a field
     setErrors((prevErrors) => ({ ...prevErrors, [id]: '' }));
