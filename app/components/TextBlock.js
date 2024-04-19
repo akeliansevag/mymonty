@@ -12,7 +12,7 @@ const TextBlock = ({ title, description, button, textColor, buttonColor, center 
                 {description}
             </p>
             {button && (
-                <button onClick={handleOpenModal} className='mm-button mt-8' href="#">Download app</button>
+                <button onClick={handleOpenModal} className={`mm-button mt-8 ${buttonColor === 'dark' ? '!bg-black !text-white' : '!bg-white !text-black'}`} href="#">Download app</button>
             )}
         </div>
     )

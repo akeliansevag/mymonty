@@ -23,7 +23,10 @@ body{
     font-size: 15px;
     transition: all 0.1s linear;
     border:2px solid transparent;
-    cursor: pointer
+    cursor: pointer;
+}
+button, input[type="submit"]{
+    cursor: pointer;
 }
 
 .mm-button:hover{
