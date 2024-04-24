@@ -156,7 +156,7 @@ const Header = () => {
 
                     </div>
 
-                    <div className='md:hidden cursor-pointer' onClick={handleMobileMenuToggle}>
+                    <div className='md:hidden mobile-burger cursor-pointer' onClick={handleMobileMenuToggle}>
                         {!mobileMenuToggle && (
                             <div>
                                 <div className='w-[20px] h-[2px] bg-black mb-1'></div>

@@ -101,15 +101,12 @@ button, a, input[type="submit"], header li{
     z-index: 2;
 }
 
-body.dark header li span a,body.dark header li span{
-    /* -webkit-backdrop-filter: blur(16px);
-    backdrop-filter: blur(16px);
-    background-color: rgba(255,255,255,0.8); */
-    color: #FFFFFF;
+body.dark > header nav > ul > li > span{
+    color:white;
 }
-body.dark .sub-title a{
-    color:var(--mm-black);
-}
+
+
+
 body.dark header .logo svg path {
     fill: #FFFFFF;
 }
@@ -120,23 +117,23 @@ body.dark header .mm-button{
 body.dark header .mm-button:hover{
     background-color: #2657D4;
 }
+
+body.dark > header nav > ul > li:hover > span{
+    background-color: white !important;
+    color: black !important;
+}
+body.dark .mobile-burger > div > div{
+    background-color: white;
+}
+
+body.dark header.scrolling{
+    background-color: rgba(0,0,0,0.8);
+}
+
 .scrolling{
     backdrop-filter: blur(16px);
     background-color: rgba(255,255,255,0.8);
     height: var(--mobile-header-height) !important;
-}
-
-body.dark header.scrolling li span a{
-    color: #000000;
-}
-
-body.dark header.scrolling .logo svg path {
-    fill: #000000;
-}
-
-body.dark header.scrolling .mm-button{
-    background-color: #000000;
-    color: #FFFFFF;
 }
 
 .menuOpen{
