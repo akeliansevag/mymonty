@@ -175,7 +175,7 @@ const Form = () => {
     return (
         <form onSubmit={handleSubmit}>
             <div className='flex flex-col items-center gap-4 md:gap-7 mt-10 md:mt-10 rounded-[1.875rem]'>
-                <h2 className='uppercase leading-none font-black text-center text-3xl sm:text-4xl md:text-[2.875rem'>
+                <h2 className='uppercase leading-none font-black text-center text-2xl sm:text-3xl md:text-[2.25rem]'>
                     Get the MyMonty app
                 </h2>
 
