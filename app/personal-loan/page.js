@@ -103,7 +103,6 @@ const PersonalLoan = () => {
               <p className='leading-8 mt-6'>Meet our credit assessment criteria.<br />
                 Provide necessary documentation for the loan application.<br />
                 More than 6 months of activity with MyMonty.</p>
-              <button className='mm-button mt-14 !px-20'>Apply Now</button>
             </div>
           </div>
         </div>
