@@ -9,7 +9,7 @@ import sectionTwo from '@/public/personal/pay-qr.webp';
 import sectionThree from '@/public/personal/instant-payment.webp';
 import sectionFour from '@/public/personal/payments-swiper-1.webp';
 import paymentTravel from '@/public/personal/payments-travel.webp';
-import travelImage from '@/public/personal/esim-img.webp';
+import travelImage from '@/public/personal/esim-img.png';
 import Image from 'next/image';
 
 export const metadata = {
