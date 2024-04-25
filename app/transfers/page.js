@@ -115,7 +115,9 @@ const transfers = () => {
                 <section className='pb-0 pt-14 lg:pt-24'>
                     <div className='container'>
                         <div className='flex-col-reverse flex lg:flex-row gap-10 items-center'>
-                            <Image className='md:w-full' src={sectionTwo} alt='Image' />
+                            <div>
+                                <img className='md:w-full' src="/personal/borderless-transfers.webp" alt='Image' />
+                            </div>
                             <TextBlock buttonColor="dark" title="Borderless transfers" description="Experience swift and direct peer-to-peer (P2P) fund transfers between individuals through MyMonty. Initiate transactions effortlessly using your mobile device, without the delays associated with conventional banking processes, even for cross-border transfers." button={true} />
                         </div>
                     </div>
