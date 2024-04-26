@@ -28,10 +28,10 @@ const CardsSlider = () => {
                 creative-effect='{"limitProgress":1, "prev": {"shadow": false, "translate": [-300, 0, -400]}, "next": {"shadow": false, "translate": [300, 0, -400]}}'
             >
 
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((card, index) => {
+                {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((card, index) => {
                     return (
                         <swiper-slide key={index}>
-                            <img src={`/cards2/card-${card}.webp`} />
+                            <img src={`/diverse/card-${card}.webp`} />
                         </swiper-slide>
                     )
 

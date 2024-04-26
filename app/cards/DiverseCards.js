@@ -24,36 +24,30 @@ const DiverseCards = () => {
         {
             img: c1
         },
-
         {
-            img: c8
+            img: c2
+        },
+        {
+            img: c3
         },
         {
             img: c4
         },
-
+        {
+            img: c5
+        },
         {
             img: c6
         },
-
         {
-            img: c10
+            img: c7
         },
-        {
-            img: c1
-        },
-
         {
             img: c8
         },
         {
-            img: c4
+            img: c9
         },
-
-        {
-            img: c6
-        },
-
         {
             img: c10
         },

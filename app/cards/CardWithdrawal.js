@@ -7,10 +7,7 @@ import bg1 from '@/public/withdrawal/bg-1.webp';
 import bg2 from '@/public/withdrawal/bg-2.webp';
 import bg3 from '@/public/withdrawal/bg-3.webp';
 import bg4 from '@/public/withdrawal/bg-4.webp';
-import hand1 from '@/public/withdrawal/hand-1.webp';
-import hand2 from '@/public/withdrawal/hand-2.webp';
-import hand3 from '@/public/withdrawal/hand-3.webp';
-import hand4 from '@/public/withdrawal/hand-4.webp';
+import hand from '@/public/withdrawal/hand.webp';
 
 const CardWithdrawal = () => {
     const [imageIndex, setImageIndex] = useState(0);
@@ -18,22 +15,22 @@ const CardWithdrawal = () => {
     const data = [
         {
             bg: bg1,
-            hand: hand1,
+            hand: hand,
             dark: false
         },
         {
             bg: bg2,
-            hand: hand2,
+            hand: hand,
             dark: false
         },
         {
             bg: bg3,
-            hand: hand3,
+            hand: hand,
             dark: false
         },
         {
             bg: bg4,
-            hand: hand4,
+            hand: hand,
             dark: true
         },
     ];
