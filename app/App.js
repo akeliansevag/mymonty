@@ -24,7 +24,6 @@ const App = ({ children }) => {
                     <NavigationEvents />
                 </Suspense>
             </div>
-
         </>
     )
 }
