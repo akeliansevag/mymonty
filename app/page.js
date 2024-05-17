@@ -23,8 +23,6 @@ export default function Home() {
       <Section />
       <SectionFive />
       <SectionSix />
-      <img class="hidden sm:block fixed bottom-0 left-0 w-full z-10" src="/banner-big.png" alt="Seamless" width="1056" height="80" />
-      <img class="block sm:hidden fixed bottom-0 left-0 w-full z-10" src="/banner-small.png" alt="Seamless" width="1056" height="80" />
     </main>
   )
 }
