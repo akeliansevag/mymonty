@@ -172,6 +172,12 @@ swiper-slide img{
     color: #2657D4;
 }
 
+.html-content h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 ol{
     list-style-type: decimal;
     padding-left:20px;

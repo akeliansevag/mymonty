@@ -5,6 +5,7 @@ import styles from './page.module.css';
 import { PRIVACY_API } from '../api/api';
 import Legals from '../components/Legals';
 import privacyImage from '@/public/personal/privacy.webp';
+import SmallBanner from '../components/SmallBanner';
 
 export const metadata = {
     title: websiteName + 'Privacy Policy',
@@ -25,7 +26,7 @@ const terms = () => {
     };
     return (
         <div className={styles.privacyPolicy}>
-            <Banner data={data} />
+            <SmallBanner title="Our Policy at MyMonty" />
             <Legals api={PRIVACY_API} />
         </div>
     )

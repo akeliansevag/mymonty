@@ -5,6 +5,7 @@ import styles from './page.module.css';
 import { COOKIE_API } from '../api/api';
 import Legals from '../components/Legals';
 import privacyImage from '@/public/personal/privacy.webp';
+import SmallBanner from '../components/SmallBanner';
 
 export const metadata = {
     title: websiteName + 'Cookie Policy',
@@ -26,7 +27,7 @@ const cookie = () => {
 
     return (
         <div className={styles.privacyPolicy}>
-            <Banner data={data} />
+            <SmallBanner title="our Cookie Policy at Mymonty" />
             <Legals api={COOKIE_API} />
         </div>
     )

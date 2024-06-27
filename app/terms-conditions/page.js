@@ -5,6 +5,7 @@ import styles from './page.module.css';
 import { TERMS_API } from '../api/api';
 import Legals from '../components/Legals';
 import termsImage from '@/public/personal/terms-and-conditions.webp';
+import SmallBanner from '../components/SmallBanner';
 
 export const metadata = {
     title: websiteName + 'Terms & Conditions',
@@ -24,7 +25,7 @@ const terms = () => {
     };
     return (
         <div className={styles.terms}>
-            <Banner data={data} />
+            <SmallBanner title="Our Terms & Conditions" />
             <Legals api={TERMS_API} />
         </div>
     )

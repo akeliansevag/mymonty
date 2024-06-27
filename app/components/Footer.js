@@ -88,8 +88,29 @@ const Footer = () => {
                 </a>
             </div>
 
-            <div className='container pt-10 pb-10 lg:pb-20'>
-                <div className="nav flex flex-wrap flex-col md:flex-row justify-between">
+            <div className='container pt-16 pb-10 lg:pb-10'>
+                <div className="nav grid grid-cols-1 flex-wrap flex-col md:grid-cols-6 md:mb-4 justify-between">
+                    <Link href="/who-we-are" className='has-children mb-3 md:mb-0'>
+                        Who we are
+                    </Link>
+                    <Link href="/business" className='has-children mb-3 md:mb-0'>
+                        MyMonty Business
+                    </Link>
+                    <Link href="/why-mymonty" className='has-children mb-3 md:mb-0'>
+                        Why MyMonty
+                    </Link>
+                    <Link href="/careers" className='has-children mb-3 md:mb-0'>
+                        Careers
+                    </Link>
+                    <Link href="/code-of-conduct" className='has-children mb-3 md:mb-0'>
+                        Code of conduct
+                    </Link>
+
+                    <Link href="/contact-us" className='has-children mb-3 md:mb-0'>
+                        Contact us
+                    </Link>
+                </div>
+                <div className="nav grid grid-cols-1 flex-wrap flex-col md:grid-cols-6 justify-between">
                     {data && data[0].children?.map((item, index) => {
                         const isOpen = openIndexes.includes(index);
                         let toggleClasses = isOpen ? 'max-md:max-h-96' : 'max-md:max-h-0'
@@ -123,7 +144,7 @@ const Footer = () => {
                                     <ul className={`max-md:overflow-hidden item-wrapper transition-all duration-300 ease-in-out ${toggleClasses} md:block`} >
                                         {item.children.map((child, index2) => {
                                             return (
-                                                <li key={index2} className='mt-4 text-base opacity-60 hover:opacity-100'>
+                                                <li key={index2} className='mt-2 text-base opacity-60 hover:opacity-100'>
                                                     {child?.url && (
                                                         <Link href={child.url}>{child.title}</Link>
                                                     )}
@@ -144,20 +165,63 @@ const Footer = () => {
 
             <div className='container text-sm'>
                 <hr className='h-[1px] border-gray-900 mb-10' />
-
-                <p className='opacity-30 text-base text-cente mb-10'>“MyMonty” is a brand owned by Monty Finance S.A.L., a company registered in Lebanon (Beirut CR No. 73215), Gefinor Center, Clemenceau St., Hamra, Beirut, Lebanon and is authorized by the Central Bank of Lebanon to operate as a financial institution and e-wallet service provider (List of financial institutions No. 23).</p>
-
-                <hr className='h-[1px] border-gray-900' />
-
-                <div className='py-10 text-center md:text-left md:flex md:items-center justify-between'>
-                    <p className='opacity-60 text-base'>© Monty Finance SAL 2023.</p>
-                    {/* <p className='opacity-60 text-base'>Copyright © Monty Finance SAL. 2023 All Rights Reserved</p> */}
-                    <div className='justify-center md:justify-end flex gap-7 text-base underline'>
-                        <Link className='opacity-60 hover:opacity-100' href="/terms-conditions">Terms & Conditions</Link>
-                        <Link className='opacity-60 hover:opacity-100' href="/privacy-policy">Privacy Policy</Link>
-                        <Link className='opacity-60 hover:opacity-100' href="/cookie-policy">Cookie Policy</Link>
+                <div className='grid grid-cols-1 md:grid-cols-4'>
+                    <div className='mb-5'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="133" height="27" viewBox="0 0 133 27" fill="none">
+                            <g clip-path="url(#clip0_2755_7061)">
+                                <path d="M77.618 3.56396C82.2664 3.56396 86.3581 6.91212 86.3581 11.8388C86.3581 16.7655 82.2664 20.1469 77.618 20.1469C72.9697 20.1469 68.8779 16.832 68.8779 11.8388C68.8779 6.84566 72.9987 3.56396 77.618 3.56396ZM77.618 16.1798C79.9111 16.1798 81.8635 14.3188 81.8635 11.8388C81.8635 9.35886 79.9111 7.53108 77.618 7.53108C75.325 7.53108 73.3726 9.35886 73.3726 11.8388C73.3726 14.3188 75.3582 16.1798 77.618 16.1798Z" fill="white" />
+                                <path d="M87.5713 3.56396H92.1906V6.07301C93.524 4.212 95.1981 3.56396 97.1214 3.56396C101.587 3.56396 102.796 7.12813 102.796 11.1576V19.8063H98.1766V11.2489C98.1766 9.0473 97.3707 7.37322 95.2313 7.37322C93.092 7.37322 92.1947 9.07638 92.1947 11.278V19.8021H87.5754V3.56396H87.5713Z" fill="white" />
+                                <path d="M109.504 3.6018H113.908V7.22828H109.504V14.9756C109.504 15.6568 109.783 16.3713 110.684 16.3713C111.586 16.3713 111.893 15.6278 111.893 14.8842C111.893 14.4189 111.768 13.7667 111.677 13.5217H115.337C115.615 14.1115 115.71 14.8551 115.71 15.4117C115.71 17.7671 114.161 20.1557 110.41 20.1557C107.618 20.1557 104.893 19.1628 104.893 14.5435L104.864 0.00439453H109.513V3.60595L109.504 3.6018Z" fill="white" />
+                                <path d="M4.6193 3.56396H0V19.8063H4.6193V3.56396Z" fill="white" />
+                                <path d="M18.7555 3.56396C17.2351 3.56396 14.9421 3.9046 13.7332 6.23086C12.9273 4.61909 11.2823 3.56396 8.86469 3.56396C7.78048 3.56396 6.93306 3.89629 6.15625 4.44047V7.60169C6.39718 7.48538 6.76274 7.37738 7.25292 7.37738C9.30086 7.37738 9.91981 9.08053 9.91981 11.2531V19.8104H14.5059V11.2863C14.5059 9.147 15.1248 7.38153 17.1395 7.38153C19.1543 7.38153 19.8064 9.08469 19.8064 11.2573V19.8146H24.4257V11.1659C24.4257 7.13644 23.2169 3.57227 18.7513 3.57227L18.7555 3.56396Z" fill="white" />
+                                <path d="M48.1994 3.56396H43.5801V19.8063H48.1994V3.56396Z" fill="white" />
+                                <path d="M62.3316 3.56396C60.8113 3.56396 58.5182 3.9046 57.3094 6.23086C56.5035 4.61909 54.8585 3.56396 52.4409 3.56396C51.3567 3.56396 50.5092 3.89629 49.7324 4.44047V7.60169C49.9734 7.48538 50.3389 7.37738 50.8291 7.37738C52.877 7.37738 53.496 9.08053 53.496 11.2531V19.8104H58.0821V11.2863C58.0821 9.147 58.701 7.38153 60.7157 7.38153C62.7304 7.38153 63.3826 9.08469 63.3826 11.2573V19.8146H68.0019V11.1659C68.0019 7.13644 66.7931 3.57227 62.3275 3.57227L62.3316 3.56396Z" fill="white" />
+                                <path d="M31.712 10.9582L28.4884 3.56396H23.8691L29.3525 16.267L31.712 10.9582Z" fill="white" />
+                                <path d="M37.2576 3.56396L26.9639 26.7186H31.5956L41.8893 3.56396H37.2576Z" fill="white" />
+                                <path d="M122.822 10.9582L119.599 3.56396H114.979L120.467 16.267L122.822 10.9582Z" fill="white" />
+                                <path d="M128.368 3.56396L118.078 26.7186H122.71L132.999 3.56396H128.368Z" fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2755_7061">
+                                    <rect width="133" height="26.7188" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
                     </div>
+                    <div>
+                        <ul>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/terms-conditions">Website Terms</Link></li>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/privacy-policy">Privacy Policy</Link></li>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/cookie-policy">Cookies</Link></li>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/fees-and-charges">Fees and Charges</Link></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/customer-agreement">Customer Agreement</Link></li>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/customer-rights-and-duties">Customer Rights and Duties</Link></li>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/limits">Limits</Link></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/data-protection">Data Protection</Link></li>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' target='_blank' href="/KeyFactsStatements.pdf">Key Facts Statements</Link></li>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/complaints">Complaints</Link></li>
+                        </ul>
+                    </div>
+
                 </div>
+
+
+                <p className='opacity-30 text-base pb-20 mt-16'>© 2024 Monty Finance SAL <br /><br />
+
+                    mymonty.com.lb provides information about financial and electronic wallet products and services provided by Monty Finance SAL through its mobile application mymonty available on App Store and Google Play.<br /><br />
+
+                    Monty Finance SAL is registered in Lebanon (Beirut Register of Commerce No. 73215), Gefinor Center, Clemenceau St., Hamra, Beirut, Lebanon and is authorized by the Central Bank of Lebanon (“BDL”) to operate as a financial institution (BDL Decision no. 23/6/98 dated 02 February 1998) and e-wallet service provider (BDL Decision no. 30/23/23 dated 21 July 23). Monty Finance SAL is listed on the BDL List of Financial Institutions under no. 23.<br /><br />
+
+                    Information contained on mymonty.com.lb or mymonty app should not be construed as an offer, solicitation, advertisement, or promotion of financial and electronic wallet products and services in any country where such offer, solicitation, advertisement, or promotion is not permitted under applicable local law.</p>
+
             </div>
         </section >
     )
