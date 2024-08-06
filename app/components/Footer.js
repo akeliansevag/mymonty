@@ -191,14 +191,14 @@ const Footer = () => {
                     <div>
                         <ul>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/terms-conditions">Website Terms</Link></li>
-                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/privacy-policy">Privacy Policy</Link></li>
+                            {/* <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/privacy-policy">Privacy Policy</Link></li> */}
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/cookie-policy">Cookies</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/fees-and-charges">Fees and Charges</Link></li>
                         </ul>
                     </div>
                     <div>
                         <ul>
-                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/customer-agreement">Customer Agreement</Link></li>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/legal">Legal</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/customer-rights-and-duties">Customer Rights and Duties</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/limits">Limits</Link></li>
                         </ul>
@@ -206,7 +206,7 @@ const Footer = () => {
                     <div>
                         <ul>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/data-protection">Data Protection</Link></li>
-                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' target='_blank' href="/KeyFactsStatements.pdf">Key Facts Statements</Link></li>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/key-facts-statements">Key Facts Statements</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/complaints">Complaints</Link></li>
                         </ul>
                     </div>
