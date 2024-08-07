@@ -15,7 +15,7 @@ const KeyFactsStatements = () => {
             <SmallBanner title="Legal" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='flex flex-col gap-4'>
-                    <a href='/legal/customer-agreement' className='p-7 bg-gray-100 rounded-xl w-full block text-3xl'>
+                    <a href='/legal/customer-agreement' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                         Customer Agreement
                     </a>
 
