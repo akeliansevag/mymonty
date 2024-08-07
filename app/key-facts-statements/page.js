@@ -18,10 +18,10 @@ const KeyFactsStatements = () => {
                     <a href='/key-facts-statements/personal-ewallet-account' className='p-7 bg-gray-100 rounded-xl w-full block text-3xl'>
                         KFS Personal eWallet Account
                     </a>
-                    <a className='p-7 bg-gray-100 rounded-xl w-full block text-3xl'>
+                    <a href='/key-facts-statements/prepaid-card-physical' className='p-7 bg-gray-100 rounded-xl w-full block text-3xl'>
                         KFS Prepaid Card (Physical)
                     </a>
-                    <a className='p-7 bg-gray-100 rounded-xl w-full block text-3xl'>
+                    <a href='/key-facts-statements/prepaid-card-virtual' className='p-7 bg-gray-100 rounded-xl w-full block text-3xl'>
                         KFS Prepaid Card (Virtual)
                     </a>
                 </div>
