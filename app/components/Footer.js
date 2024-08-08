@@ -199,14 +199,14 @@ const Footer = () => {
                     <div>
                         <ul>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/legal">Legal</Link></li>
-                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/customer-rights-and-duties">Customer Rights and Duties</Link></li>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/data-protection">Data Protection</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/limits">Limits</Link></li>
                         </ul>
                     </div>
                     <div>
                         <ul>
-                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/data-protection">Data Protection</Link></li>
 
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/customer-rights-and-duties">Customer Rights and Duties</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/complaints">Complaints</Link></li>
                         </ul>
                     </div>
