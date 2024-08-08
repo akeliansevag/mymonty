@@ -207,7 +207,6 @@ const Footer = () => {
                         <ul>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/data-protection">Data Protection</Link></li>
 
-                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/prepaid-cards-terms-conditions">Prepaid Cards Terms & Conditions</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/complaints">Complaints</Link></li>
                         </ul>
                     </div>
