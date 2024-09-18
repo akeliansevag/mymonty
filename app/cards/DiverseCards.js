@@ -105,7 +105,7 @@ const DiverseCards = () => {
 
         <Section>
             <div className='container text-center'>
-                <TextBlock center={true} title="Explore Our Diverse Range of Cards" description="Pick the color and style that matches your lifestyle and personality. With MyMonty virtual cards, your financial freedom is always within the palm of your hand. " />
+                <TextBlock center={true} title="EXPLORE OUR DIVERSE RANGE OF CARDS" description="Choose the color that suits your lifestyle. With our virtual cards, financial freedom is at your fingertips. " />
             </div>
             <div className={`diverse-swiper mt-8 md:mt-20 duration-1000 transition-opacity ${!sliderInitialized ? 'opacity-0' : 'opacity-100'}`}>
                 <swiper-container init={false} ref={swiperElRef}>

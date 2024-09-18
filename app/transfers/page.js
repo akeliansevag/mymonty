@@ -22,7 +22,7 @@ const transfers = () => {
     const data = {
         title: 'Safely transfer money ',
         subtitle: 'Transfers',
-        desc: 'Bridge the gap between you and your loved ones by sending them funds home.',
+        desc: 'Stay connected with loved ones by sending them funds effortlessly and securely.',
         image: {
             inGrid: true,
             layout: 'half',
@@ -31,7 +31,7 @@ const transfers = () => {
         cta: {
             type: 'button',
             button: {
-                name: 'Download app'
+                name: 'Download App'
             }
         }
     };
@@ -39,21 +39,21 @@ const transfers = () => {
     const carouselData = {
         filters: [
             {
-                title: 'SEND'
+                title: 'Send Money'
             },
             {
-                title: 'RECEIVE'
+                title: 'Receive Money'
             },
             {
-                title: 'REQUEST'
+                title: 'Request Money'
             }
         ],
         content: [
             {
                 title: 'Send money',
-                description: 'Easily send money to friends, family, or associates by entering their mobile number, or by tapping on their transfer link or scanning their QR code.',
+                description: 'Send money to friends, family, or associates easily by entering their mobile number, tapping their transfer link, or scanning their QR code.',
                 button: {
-                    text: 'Download app',
+                    text: 'Download App',
                     url: '#',
                     modal: true,
                 },
@@ -62,9 +62,9 @@ const transfers = () => {
             },
             {
                 title: 'Receive money',
-                description: 'Effortlessly receive instant funds through our streamlined digital platform, ensuring hassle-free transactions for seamless money management.',
+                description: 'Receive instant funds seamlessly through our streamlined digital platform for hassle-free money management.',
                 button: {
-                    text: 'Download app',
+                    text: 'Download App',
                     url: '#',
                     modal: true,
                 },
@@ -73,9 +73,9 @@ const transfers = () => {
             },
             {
                 title: 'Request money',
-                description: 'Send a payment request by specifying the amount and purpose to the recipient\'s number or share your QR/link on messaging platforms.',
+                description: 'Send a payment request with the amount and purpose to the recipient’s number, or share your QR/link on messaging platforms.',
                 button: {
-                    text: 'Download app',
+                    text: 'Download App',
                     url: '#',
                     modal: true
                 },
@@ -118,7 +118,7 @@ const transfers = () => {
                             <div>
                                 <img className='md:w-full' src="/personal/borderless-transfers.webp" alt='Image' />
                             </div>
-                            <TextBlock buttonColor="dark" title="Borderless transfers" description="Experience swift and direct peer-to-peer (P2P) fund transfers between individuals through MyMonty. Initiate transactions effortlessly using your mobile device, without the delays associated with conventional banking processes, even for cross-border transfers." button={true} />
+                            <TextBlock buttonColor="dark" title="Borderless transfers" description="Swift and direct peer-to-peer (P2P) transfers are just a tap away with MyMonty. Enjoy hassle-free cross-border transactions without the usual banking delays." button={true} />
                         </div>
                     </div>
                 </section>
@@ -130,19 +130,31 @@ const transfers = () => {
             <Section>
                 <div className='container'>
                     <div id="top-up" className='flex flex-col lg:flex-row items-center gap-10'>
-                        <TextBlock buttonColor="dark" title="Top up or cash out with our partners" description="Top up your wallet account at any OMT agent, and the funds will be instantly reflected in your account. You have the option to either cash out personally or send a code for a beneficiary to cash out on your behalf." button={true} />
+                        <TextBlock buttonColor="dark" title="SEAMLESS RECURRING TRANSFERS" description="Effortlessly manage your finances with recurring transfers. Schedule automatic transfers on your chosen dates and stay in control." button={true} />
                         <Image className='md:w-1/3' src={sectionFour} alt='Image' />
                     </div>
 
-                    <div id="cash-out" className='mt-20 md:mt-40 flex flex-col-reverse lg:flex-row items-center gap-10'>
+                    {/* <div id="cash-out" className='mt-20 md:mt-40 flex flex-col-reverse lg:flex-row items-center gap-10'>
                         <Image className='md:w-1/3' src={sectionFive} alt='Image' />
                         <TextBlock buttonColor="dark" title="TOP UP OR CASH OUT THROUGH OUR ATM/BANK NETWORK" description="Conveniently manage your funds by topping up your wallet with ease or seamlessly withdrawing cash at our partner bank ATMs, providing you with a flexible and accessible financial experience." button={true} />
-                    </div>
+                    </div> */}
 
                 </div>
             </Section>
             <div id="recurring">
-                <Carousel center={true} video={true} videoMP4URL='/falling-coins.mp4' videoWEBMURL='/falling-coins.webm' data={carouselDataTwo} />
+                {/* <Carousel center={true} video={true} videoMP4URL='/falling-coins.mp4' videoWEBMURL='/falling-coins.webm' data={carouselDataTwo} /> */}
+            </div>
+
+            <div id="streamline-transfers" className=' min-h-[calc(100vh-(var(--mobile-header-height)))] relative flex items-center justify-center text-center bg-black text-white'>
+                <video className='w-full h-full object-cover absolute top-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>
+                    <source src='/falling-coins.webm' type="video/webm" />
+                    <source src='/falling-coins.mp4' type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <div className='relative z-10 container '>
+                    <TextBlock center={true} title="STREAMLINE TRANSFERS" description="Automate your transactions for a stress-free financial life. Schedule transfers to save time and stay organized." />
+                </div>
+
             </div>
 
         </>

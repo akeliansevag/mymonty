@@ -12,10 +12,9 @@ const SectionFour = () => {
             <div className='4xl:container md:flex md:items-center gap-10 relative z-10'>
                 <div className='flex justify-end 4xl:justify-start 2xl:pl-28 4xl:pl-0'>
                     <div className='p-4 md:p-0 md:w-2/3'>
-                        <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Cross-border transfers with MyMonty</h2>
-                        <p className='leading-8 mt-8'>Connect globally with your loved ones through MyMonty's expat community.<br />
-                            Enjoy free P2P transfers to 160+ countries. Instantly send and receive money.</p>
-                        <Link href="/transfers" className='mm-button white mt-8 mx-auto mb-10'>Try it out</Link>
+                        <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>SEND MONEY ACROSS THE GLOBE WITH EASE</h2>
+                        <p className='leading-8 mt-8'>Join MyMonty's expat community and enjoy free P2P transfers to 160+ countries. Instantly send and receive money; globally, effortlessly.</p>
+                        <Link href="/transfers" className='mm-button white mt-8 mx-auto mb-10'>Try it Out</Link>
                     </div>
 
                 </div>

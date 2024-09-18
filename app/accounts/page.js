@@ -15,9 +15,9 @@ export const metadata = {
 
 const accounts = () => {
     const data = {
-        title: 'Unlocking Your Account the Easiest Way',
+        title: 'ACCOUNT ACCESS MADE SIMPLE',
         subtitle: 'Accounts',
-        desc: 'Experience convenience like never before as you unlock your account hassle-free!',
+        desc: 'Unlock your account with unparalleled ease and say goodbye to hassle!',
         image: {
             inGrid: true,
             layout: 'half',
@@ -26,29 +26,29 @@ const accounts = () => {
         cta: {
             type: 'button',
             button: {
-                name: 'Download app'
+                name: 'Download App'
             }
         }
     };
     const carouselData = {
         filters: [
             {
-                title: 'Top up by card'
+                title: 'Top Up Your Wallet'
             },
             {
-                title: 'Top up by request'
+                title: 'Request a TOP-UP'
             },
             {
-                title: 'Top up with our partners'
+                title: 'Top Up or Cash Out With Our Partners'
             },
             {
-                title: 'Top up by ATM'
+                title: 'Top Up or Cash Out Via Our ATM/BANK Network'
             }
         ],
         content: [
             {
-                title: 'Top up by Card',
-                description: 'Instantly update your wallet account balance with no hidden fees by topping up using any Fresh USD/LBP bank card. It’s free with your MyMonty card.',
+                title: 'TOP UP YOUR WALLET',
+                description: 'Instant Boost with Your Card.Update your wallet balance instantly with no hidden fees using any Fresh USD/LBP bank card. It’s free with your MyMonty card.',
                 button: {
                     text: 'Choose your card',
                     url: '/cards'
@@ -57,8 +57,8 @@ const accounts = () => {
                 backgroundImage: '/personal/accounts-carousel-1.jpg'
             },
             {
-                title: 'Top up by request',
-                description: 'Request money from anyone directly by selecting them from your contact list or via link or QR code.',
+                title: 'REQUEST A TOP-UP',
+                description: 'Get money from anyone by selecting them from your contact list, or via a link or QR code.',
                 // button: {
                 //     text: 'Choose your card',
                 //     url: '/cards'
@@ -67,8 +67,8 @@ const accounts = () => {
                 backgroundImage: '/personal/accounts-carousel-2.jpg'
             },
             {
-                title: 'Top up with our partners',
-                description: 'Top up your wallet accounts by depositing money at more than 1400 OMT locations across Lebanon for more convenience. Your money is reflected instantly in your wallet.',
+                title: 'TOP UP OR CASH OUT WITH OUR PARTNERS',
+                description: '1400+ Locations, Instant Convenience.Deposit money, cash out personally or send a code for someone else to cash out on your behalf at over 1400 OMT locations across Lebanon. Your funds reflect instantly in your wallet for ultimate convenience.',
                 // button: {
                 //     text: 'Choose your card',
                 //     url: '/cards'
@@ -77,8 +77,8 @@ const accounts = () => {
                 backgroundImage: '/personal/accounts-carousel-3.jpg'
             },
             {
-                title: 'Top up by ATM',
-                description: 'Top up your wallet accounts by depositing money at any Fransabank ATMs across Lebanon. Your money is reflected instantly in your wallet.',
+                title: 'TOP UP OR CASH OUT VIA OUR ATM/BANK NETWORK',
+                description: 'Flexible Finances at Your FingertipsTop up your wallet effortlessly or withdraw cash seamlessly at our partner bank ATMs and see it instantly in your wallet. Enjoy a flexible and accessible financial experience.',
                 // button: {
                 //     text: 'Choose your card',
                 //     url: '/cards'

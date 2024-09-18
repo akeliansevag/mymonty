@@ -30,28 +30,28 @@ const cards = () => {
         cta: {
             type: 'button',
             button: {
-                name: 'Download app'
+                name: 'Download App'
             }
         }
     };
     const carouselData = {
         filters: [
             {
-                title: 'Physical Card'
+                title: 'Make Contactless Paymets '
             },
             {
-                title: 'Virtual Card'
+                title: 'Create a Virtual Card'
             },
             {
-                title: 'QR Code'
+                title: 'Pay With Your Phone'
             },
         ],
         content: [
             {
                 title: 'Make Contactless Payments',
-                description: 'Easy, quick, and secure payments with just a single tap of your physical prepaid card at any contactless terminal.',
+                description: 'Tap to pay! Use your physical prepaid card for easy, quick, and secure contactless payments.',
                 button: {
-                    text: 'Download app',
+                    text: 'Download App',
                     url: '#',
                     modal: true
                 },
@@ -60,9 +60,9 @@ const cards = () => {
             },
             {
                 title: 'Create a Virtual Card',
-                description: 'Enhance your online shopping security by paying with your in-app virtual card for an additional layer of safety.',
+                description: 'Boost your online shopping security with an in-app virtual card for safer transactions.',
                 button: {
-                    text: 'Download app',
+                    text: 'Download App',
                     url: '#',
                     modal: true,
                 },
@@ -71,9 +71,9 @@ const cards = () => {
             },
             {
                 title: 'Pay with Your Phone',
-                description: 'Scan the QR code on the POS for fast payment.',
+                description: 'Scan the QR code at the POS for fast and convenient payments.',
                 button: {
-                    text: 'Download app',
+                    text: 'Download App',
                     url: '#',
                     modal: true
                 },

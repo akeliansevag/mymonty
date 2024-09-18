@@ -150,7 +150,7 @@ const Header = () => {
 
                         {pathname != '/business' && (
                             <button onClick={handleOpenModal} className='mm-button whitespace-nowrap'>
-                                Get the app
+                                Download App
                             </button>
                         )}
 

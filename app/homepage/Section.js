@@ -19,9 +19,10 @@ const Section = () => {
 
                     <div className='md:flex-1 md:flex justify-end relative'>
                         <div className='md:w-2/3'>
-                            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Choose MyMonty for Your House Loan</h2>
-                            <p className='leading-8 mt-8'>MyMonty's house loans are crafted to turn your dream of owning a home into a reality, providing the financial foundation for your perfect abode.</p>
-                            <Link href="/house-loan" className='mm-button black mt-8 mx-auto'>Learn more</Link>
+                            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>TURN YOUR DREAM HOME INTO REALITY</h2>
+                            <p className='leading-8 mt-8'>With MyMonty's house loans, your dream of owning a home is within reach.
+                                Get the financial foundation you need for your perfect <strong>HOME.</strong></p>
+                            <Link href="/house-loan" className='mm-button black mt-8 mx-auto'>Learn More</Link>
                         </div>
                     </div>
 

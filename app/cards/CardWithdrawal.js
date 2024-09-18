@@ -51,7 +51,7 @@ const CardWithdrawal = () => {
     return (
         <div className={`relative py-14 md:py-24 ${!darkTheme ? 'text-white' : ''}`}>
             <div className='container text-center'>
-                <TextBlock buttonColor={!darkTheme ? 'white' : ''} center={true} title="Withdraw Whenever, Wherever" description="Get cash when you need it. Use your prepaid Mastercard to withdraw from ATMs anywhere in the world." button={true} />
+                <TextBlock buttonColor={!darkTheme ? 'white' : ''} center={true} title="Withdraw Whenever, Wherever" description="Need cash? Use your prepaid Mastercard to withdraw from ATMs worldwide." button={true} />
             </div>
             {data && data.map((item, index) => {
                 return (

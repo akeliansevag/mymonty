@@ -28,7 +28,7 @@ const Footer = () => {
     return (
         <section className='bg-black text-white'>
             <div className='container text-center pt-10 pb-10 lg:pt-20' id="download-now">
-                <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Download the app now</h2>
+                <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>BANKING IN YOUR POCKET </h2>
                 <div className='md:w-1/2 mx-auto'>
                     <p className='leading-8 mt-8'>Get the MyMonty app now to enjoy a full mobile banking experience. Accessible on both iOS and Android.</p>
                     <button onClick={handleGetClick} className='mm-button white mt-8 mx-auto'>Get MyMonty</button>
