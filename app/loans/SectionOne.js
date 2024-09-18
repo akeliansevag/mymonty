@@ -16,7 +16,7 @@ const SectionOne = () => {
         <div id="advance-on-salary">
             <Section>
                 <div className='container overflow-hidden text-center'>
-                    <TextBlock buttonColor="dark" center={true} title="Advance on Salary" description="Have you ever faced an urgent payment? Or missed out on a Black Friday deal because of that 'insufficient funds in your account' message? With MyMonty's Advance on Salary, you can access a portion of your next salary in advance to spend and repay at your convenience, with three flexible options." button={true} />
+                    <TextBlock buttonColor="dark" center={true} title="Advance on Salary" description="Ever faced an urgent payment or missed out on a Black Friday deal because of insufficient funds? With MyMonty's Advance on Salary, access a portion of your next salary in advance. Spend and repay at your convenience with three flexible options." button={false} />
                     <div className='flex flex-col md:flex-row gap-10 items-center justify-center mt-10'>
                         <div>
                             <Image ref={animRef} className='' alt="Free" src={free} />
@@ -29,6 +29,8 @@ const SectionOne = () => {
                         </div>
 
                     </div>
+
+                    <TextBlock buttonColor="dark" center={true} title="" description="" button={true} />
 
                 </div>
             </Section>

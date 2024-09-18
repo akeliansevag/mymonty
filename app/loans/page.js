@@ -20,7 +20,8 @@ const loans = () => {
     const data = {
         title: 'Receive your Advance on Salary',
         subtitle: 'Loans',
-        desc: 'Harness the power of MyMonty for hassle-free salary domiciliation and unlock an advance on salary based on your eligibility.',
+        comingSoon: true,
+        desc: 'Unlock hassle-free salary domiciliation with MyMonty and get an advance on your salary based on your eligibility.',
         image: {
             inGrid: true,
             layout: 'half',
@@ -29,7 +30,7 @@ const loans = () => {
         cta: {
             type: 'button',
             button: {
-                name: 'Download app'
+                name: 'Download App'
             }
         }
     };
