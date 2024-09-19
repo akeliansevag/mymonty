@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '@/app/components/Banner';
-import banner from '@/public/personal/code-of-conduct.webp';
+import banner from '@/public/faq-banner.webp';
 import Section from '../components/Section';
 import Types from './Types';
 

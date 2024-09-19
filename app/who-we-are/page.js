@@ -27,7 +27,7 @@ const data = {
   cta: {
     type: 'button',
     button: {
-      name: 'Download app'
+      name: 'Download App'
     }
   }
 }
@@ -74,7 +74,7 @@ const WhoWeAre = () => {
         <div className='container'>
           <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 relative'>
             <div className='md:w-1/2'>
-              <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Diversity and Inclusion</h2>
+              <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>DIVERSITY & INCLUSION</h2>
               <p className='leading-8 mt-4'>We sincerely believe in fostering an environment that promotes inclusiveness starting with our employees and moving to the entire financial ecosystem. We are committed to creating a world where nobody is left behind.</p>
             </div>
             <div className='md:w-1/2 justify-end flex'>

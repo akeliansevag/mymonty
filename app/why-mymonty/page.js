@@ -23,7 +23,7 @@ const data = {
   cta: {
     type: 'button',
     button: {
-      name: 'Download app'
+      name: 'Download App'
     }
   }
 }
@@ -70,7 +70,7 @@ const WhyMyMonty = () => {
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
         <div className='container'>
           <h2 className='text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Benefit from an e-wallet account</h2>
-          <p className='text-center text-[#2657D4] text-[1.75rem] font-bold mt-5'>In just a few minutes</p>
+          <p className='text-center text-[#2657D4] text-[1.75rem] font-bold mt-5'>In just a few minutes!</p>
           {/* 280 586 text-4xl md:text-6xl top-[30px] md:top-[70px] ////// w-[50px] h-[50px] md:w-[90px] md:h-[90px]*/}
           <div className='grid grid-cols-2 lg:grid-cols-4'>
             <div className='relative flex items-center justify-center w-[140px] h-[140px] md:w-[280px] md:h-[280px] lg:w-72 lg:h-72 rounded-full border-2 bg-[#2657D4] text-lg md:text-4xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
@@ -106,7 +106,7 @@ const WhyMyMonty = () => {
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
               <Image className="w-full" src={oneStop} alt='High-End Security' placeholder='blur' />
               <div className='px-10 py-14'>
-                <h3 className='text-4xl font-bold'>High-End Security</h3>
+                <h3 className='text-4xl font-bold'>HIGH-END Security</h3>
                 <p className='leading-8 mt-4'>Rest assured, your security is our top priority. Our platform is fortified with advanced, state-of-the-art technology designed to offer robust protection against fraud and hacking attempts, ensuring your peace of mind.</p>
               </div>
             </div>

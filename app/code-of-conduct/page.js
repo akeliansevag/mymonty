@@ -21,7 +21,7 @@ const data = {
   cta: {
     type: 'button',
     button: {
-      name: 'Download app'
+      name: 'Download App'
     }
   }
 }

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import careers from '@/public/personal/careers.webp';
 import growthOriented from '@/public/company/growth-oriented-environment.png';
+import embark from '@/public/embark.webp';
 
 export const metadata = {
   title: websiteName + 'Careers',
@@ -15,7 +16,7 @@ export const metadata = {
 const data = {
   title: 'Join Our Dream Team',
   subtitle: 'Careers',
-  desc: 'Don’t miss your chance! Check out our vacancies on LinkedIn now.',
+  desc: 'Don’t miss your chance! Check out our vacancies on <a class="text-blue-500" href="https://www.linkedin.com/company/mymonty-lebanon/about/?viewAsMember=true" target="_blank">LinkedIn</a> now.',
   image: {
     inGrid: true,
     layout: 'half',
@@ -171,10 +172,17 @@ const Careers = () => {
       <Banner data={data} />
 
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
-        <div className='container'>
-          <h2 className='text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Embark on Your Career Journey with Us</h2>
-          <p className='leading-8 mt-4 text-center w-full md:w-2/3 mx-auto'>Our team is our biggest asset! We are dedicated to recognizing and cultivating talent from within, offering a transparent and well-defined career path for our valuable team members.<br /><br />
-            We heavily invest in employee training programs, workshops, and mentorship initiatives, ensuring our team is not only well-equipped for their current roles but also ready for future challenges.</p>
+        <div className='container flex items-center gap-20 max-lg:flex-col'>
+          <div className='w-1/3'>
+            <Image alt="Handshake" src={embark} />
+          </div>
+          <div className='w-2/3'>
+            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Embark on Your Career Journey with Us</h2>
+            <p className='leading-8 mt-4 w-full md:w-2/3'>Our team is our biggest asset! We are dedicated to recognizing and cultivating talent from within, offering a transparent and well-defined career path for our valuable team members. <br /><br />
+
+              We heavily invest in employee training programs, workshops, and mentorship initiatives, ensuring our team is not only well-equipped for their current roles but also ready for future challenges.</p>
+          </div>
+
         </div>
       </section>
 
@@ -185,9 +193,9 @@ const Careers = () => {
           <div className='absolute top-0 flex flex-col justify-center items-center h-full w-full text-white'>
             <div className='container'>
               <div className='flex flex-col items-center gap-10'>
-                <h2 className='text-center uppercase font-black text-3xl sm:text-5xl lg:text-[2.875rem] w-full lg:w-2/3 leading-none'>discover a nurturing and growth-oriented environment</h2>
+                <h2 className='text-center uppercase font-black text-3xl sm:text-5xl lg:text-[2.875rem] w-full lg:w-2/3 leading-none'>DISCOVER A NURTURING AND GROWTH-ORIENTED ENVIRONMENT</h2>
                 <p className='leading-8 mt-4 text-center w-full lg:w-2/3 mx-auto'>Whether you're just starting your career or aiming for the next milestone, discover a nurturing and growth-oriented environment that values your aspirations. We provide the resources needed to turn your career goals into reality.</p>
-                <a href="https://www.linkedin.com/company/mymonty-lebanon/jobs" target='_blank' className='mm-button !bg-white !text-black w-max mt-5'>Join us now</a>
+                <a href="https://www.linkedin.com/company/mymonty-lebanon/jobs" target='_blank' className='mm-button !bg-white !text-black w-max mt-5'>Join Us Now</a>
               </div>
             </div>
           </div>
