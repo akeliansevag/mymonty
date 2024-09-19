@@ -140,6 +140,22 @@ body.dark header.scrolling{
     background-color: #f7f7f7;
 }
 
+.menu-open{
+    background-color: #f7f7f7;
+}
+
+.dark .menu-open, .dark .submenu{
+    background-color: black;
+    color:white;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(0px);
+    opacity: 1;
+}
+
+body.dark header.scrolling.menu-open{
+    background-color: rgba(0, 0, 0, 1);
+}
+
 swiper-slide{
     width:500px;
     height:auto;

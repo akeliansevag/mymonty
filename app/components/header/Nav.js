@@ -21,7 +21,7 @@ const Nav = ({ handleMenuOpen, menuOpen }) => {
                                 {items?.url ? <Link onClick={() => handleMenuOpen(false)} href={items.url}>{items?.title}</Link> : items.title}
                             </span>
                             {items.children && (
-                                <div className={`${menuOpen ? 'group-hover:block' : null} min-h-[40vh] shadow py-10 bg-[#f7f7f7] w-full absolute top-full left-0 hidden`}>
+                                <div className={`${menuOpen ? 'group-hover:block' : null} min-h-[40vh] submenu fixed py-10 bg-[#f7f7f7] w-full top-full left-0 hidden`}>
                                     <div className='container flex gap-10 justify-between'>
                                         {items.children.map((child, index2) => {
                                             return (

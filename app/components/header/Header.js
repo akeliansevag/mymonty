@@ -1,13 +1,10 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import logo from '@/public/mymontylogo.svg';
-import Image from 'next/image';
 import Nav from './Nav';
 import Link from 'next/link';
 import styles from './header.module.css';
 import MobileNav from './MobileNav';
 import { useAppContext } from '@/app/AppContext';
-import { current } from 'tailwindcss/colors';
 import { usePathname } from 'next/navigation';
 
 const Header = () => {
@@ -88,7 +85,7 @@ const Header = () => {
         };
     }, []);
 
-    let headerClasses = 'flex items-center sticky top-0 left-0 z-10 w-full z-50 transition-all h-[var(--mobile-header-height)] md:h-[var(--header-height)] ' + styles.header;
+    let headerClasses = 'flex items-center sticky top-0 left-0 z-10 w-full z-50 transition-transform  h-[var(--mobile-header-height)] md:h-[var(--header-height)] ' + styles.header;
     headerClasses += scrolling ? ' ' + styles.scrolling + ' scrolling' : '';
     headerClasses += menuOpen || mobileMenuToggle ? ' ' + styles.menuOpen + ' menu-open' : '';
     headerClasses += isScrollingDown ? ' -translate-y-full' : ' -translate-y-0';
