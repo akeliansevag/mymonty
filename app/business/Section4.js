@@ -23,7 +23,7 @@ const Section4 = () => {
                     <div className='absolute top-0 flex flex-col justify-center items-center h-full w-full text-white px-4'>
                         <div className='flex flex-col items-center gap-10'>
                             <p className='leading-8 mt-4 text-center w-full lg:w-2/3 mx-auto'>To learn more about implementing Early Salary with MyMonty, contact our sales department or explore the resources provided on this platform.</p>
-                            <button onClick={handleButtonClick} className='mm-button !bg-white !text-black w-max mt-5'>Contact us now</button>
+                            <button onClick={handleButtonClick} className='mm-button !bg-white !text-black w-max mt-5'>Contact Us Now</button>
                         </div>
                     </div>
                 </div>

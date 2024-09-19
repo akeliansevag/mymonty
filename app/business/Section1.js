@@ -18,15 +18,16 @@ const Section1 = () => {
     return (
         <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
             <div className='container text-center'>
-                <h2 className='text-center uppercase font-black text-3xl sm:text-5xl lg:text-[2.875rem] w-full lg:w-2/3 leading-none mx-auto'>Employee Salary domiciliation with a portal for companies</h2>
+                <h2 className='text-center uppercase font-black text-3xl sm:text-5xl lg:text-[2.875rem] w-full lg:w-2/3 leading-none mx-auto'>EMPLOYEE PAYROLL SERVICES
+                    WITH A PORTAL FOR COMPANIES</h2>
 
-                <p className='leading-8 mt-10 text-center w-full lg:w-2/3 mx-auto'>Setting up free salary domiciliation for your employees will ensure a smooth transition to automated payroll management. Centralizing salary payments not only increases efficiency but also saves costs and time. Employees will benefit from the convenience of having their salaries deposited directly into their wallet accounts.</p>
+                <p className='leading-8 mt-10 text-center w-full lg:w-2/3 mx-auto'>Streamline Payroll Services for your employees and enjoy automated payroll management. Centralizing salary payments boosts efficiency, reduces costs, and saves time. Employees benefit from having their salaries deposited directly into their wallet accounts.</p>
 
-                <button onClick={handleButtonClick} className='mm-button white mt-8'>Learn more</button>
+                <button onClick={handleButtonClick} className='mm-button white mt-8'>Learn More</button>
 
                 <Image className='mt-10' alt='Growth Oriented Environmemt' placeholder='blur' quality={100} src={salary} />
 
-                <p className='leading-8 mt-10 text-center w-full lg:w-2/3 mx-auto'>Enhanced employee retention is achieved through timely payments, allowing them to plan effectively. This is coupled with reduced errors, as manual intervention is minimized, contributing to accuracy in salary disbursements. </p>
+                <p className='leading-8 mt-10 text-center w-full lg:w-2/3 mx-auto'>Enhance employee retention with timely payments, allowing effective planning and reducing errors through minimized manual intervention. Accurate salary disbursements contribute to a more satisfied workforce.</p>
             </div>
         </section>
     )

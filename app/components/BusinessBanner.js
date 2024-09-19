@@ -23,9 +23,9 @@ const BusinessBanner = () => {
                     <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-center  ">
                         <div className="flex flex-col w-full md:w-1/2 justify-center md:mt-0 ">
                             <div>
-                                <h1 className="font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase mt-6">MyMonty Your Super Digital Wallet.</h1>
+                                <h1 className="font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase mt-6">MYMONTY: YOUR SUPER DIGITAL WALLET</h1>
                                 <p className="text-xl mt-8">Explore innovative ways to manage your finances.</p>
-                                <button onClick={handleOriginalOpenModal} className="mm-button mt-8 white">Get the app</button>
+                                <button onClick={handleOriginalOpenModal} className="mm-button mt-8 white">Get The App</button>
                             </div>
                         </div>
                         <div className="w-full md:w-2/3">
