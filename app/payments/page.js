@@ -74,7 +74,7 @@ const payments = () => {
                         <Image className='md:w-1/2' src={sectionTwo} alt='Section Image' />
                     </div>
 
-                    <div id="notifications-and-alerts" className='mt-20 md:mt-40 flex flex-col-reverse lg:flex-row gap-16 place-items-center'>
+                    <div id="online-vouchers" className='mt-20 md:mt-40 flex flex-col-reverse lg:flex-row gap-16 place-items-center'>
                         <Image className='md:w-1/3' src={topUp} alt='Section Image' />
                         <TextBlock buttonColor="dark" title="ONLINE VOUCHERS" description="Discover a world of convenience with our online vouchers. Perfect for gifts, rewards, or personal use, these vouchers offer a seamless way to manage your spending." button={true} />
                     </div>

@@ -127,23 +127,26 @@ const transfers = () => {
                 <Carousel data={carouselData} />
             </div>
 
-            <Section>
-                <div className='container'>
-                    <div id="top-up" className='flex flex-col lg:flex-row items-center gap-10'>
-                        <TextBlock buttonColor="dark" title="SEAMLESS RECURRING TRANSFERS" description="Effortlessly manage your finances with recurring transfers. Schedule automatic transfers on your chosen dates and stay in control." button={true} />
-                        <Image className='md:w-1/3' src={sectionFour} alt='Image' />
-                    </div>
+            <div id="recurring-transfers">
+                <Section>
+                    <div className='container'>
+                        <div id="top-up" className='flex flex-col lg:flex-row items-center gap-10'>
+                            <TextBlock buttonColor="dark" title="SEAMLESS RECURRING TRANSFERS" description="Effortlessly manage your finances with recurring transfers. Schedule automatic transfers on your chosen dates and stay in control." button={true} />
+                            <Image className='md:w-1/3' src={sectionFour} alt='Image' />
+                        </div>
 
-                    {/* <div id="cash-out" className='mt-20 md:mt-40 flex flex-col-reverse lg:flex-row items-center gap-10'>
+                        {/* <div id="cash-out" className='mt-20 md:mt-40 flex flex-col-reverse lg:flex-row items-center gap-10'>
                         <Image className='md:w-1/3' src={sectionFive} alt='Image' />
                         <TextBlock buttonColor="dark" title="TOP UP OR CASH OUT THROUGH OUR ATM/BANK NETWORK" description="Conveniently manage your funds by topping up your wallet with ease or seamlessly withdrawing cash at our partner bank ATMs, providing you with a flexible and accessible financial experience." button={true} />
                     </div> */}
 
-                </div>
-            </Section>
-            <div id="recurring">
-                {/* <Carousel center={true} video={true} videoMP4URL='/falling-coins.mp4' videoWEBMURL='/falling-coins.webm' data={carouselDataTwo} /> */}
+                    </div>
+                </Section>
             </div>
+
+            {/* <div id="recurring">
+                <Carousel center={true} video={true} videoMP4URL='/falling-coins.mp4' videoWEBMURL='/falling-coins.webm' data={carouselDataTwo} />
+            </div> */}
 
             <div id="streamline-transfers" className=' min-h-[calc(100vh-(var(--mobile-header-height)))] relative flex items-center justify-center text-center bg-black text-white'>
                 <video className='w-full h-full object-cover absolute top-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>

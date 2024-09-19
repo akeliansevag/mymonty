@@ -15,6 +15,18 @@ export const data = [
                         title: 'Top Up',
                         url: '/accounts?s=top-up',
                     },
+                    {
+                        title: 'Request Top Up',
+                        url: '/accounts?s=top-up',
+                    },
+                    {
+                        title: 'Cash Out',
+                        url: '/accounts?s=top-up',
+                    },
+                    {
+                        title: 'Cash Out Via ATM/BANK',
+                        url: '/accounts?s=top-up',
+                    },
 
                 ]
             },
@@ -27,7 +39,15 @@ export const data = [
                         url: '/cards?s=virtual-card'
                     },
                     {
-                        title: 'Physical Card',
+                        title: 'Contactless Payment',
+                        url: '/cards?s=physical-card'
+                    },
+                    {
+                        title: 'Create Virtual Card',
+                        url: '/cards?s=physical-card'
+                    },
+                    {
+                        title: 'Tap to Pay',
                         url: '/cards?s=physical-card'
                     },
                     {
@@ -35,17 +55,13 @@ export const data = [
                         url: '/cards?s=card-controls'
                     },
                     {
+                        title: 'Transaction History',
+                        url: '/cards?s=transaction-history'
+                    },
+                    {
                         title: 'Card Withdrawal',
                         url: '/cards?s=card-withdrawal'
                     },
-                    {
-                        title: 'Contactless Payment',
-                        url: '/cards?s=physical-card'
-                    },
-                    {
-                        title: 'Tap to Pay',
-                        url: '/cards?s=physical-card'
-                    }
                 ]
             },
             {
@@ -56,14 +72,7 @@ export const data = [
                         title: 'Borderless Transfers',
                         url: '/transfers?s=borderless-transfers'
                     },
-                    {
-                        title: 'Recurring',
-                        url: '/transfers?s=recurring'
-                    },
-                    {
-                        title: 'Scheduled',
-                        url: '/transfers?s=recurring'
-                    },
+
                     {
                         title: 'Send',
                         url: '/transfers?s=send'
@@ -77,13 +86,13 @@ export const data = [
                         url: '/transfers?s=send'
                     },
                     {
-                        title: 'Top Up',
-                        url: '/transfers?s=top-up'
+                        title: 'Recurring transfers',
+                        url: '/transfers?s=recurring-transfers'
                     },
                     {
-                        title: 'Cash Out',
-                        url: '/transfers?s=cash-out'
-                    }
+                        title: 'Streamline Transfers',
+                        url: '/transfers?s=streamline-transfers'
+                    },
                 ]
             },
             {
@@ -99,29 +108,18 @@ export const data = [
                         url: '/payments?s=qr-and-link'
                     },
                     {
-                        title: 'Travel eSim',
-                        url: '/payments?s=travel-esim'
-                    },
-                    {
-                        title: 'Bill Payment',
-                        url: '/payments?s=bill-payment'
-                    },
-                    {
                         title: 'Online Vouchers',
-                        url: '/payments?s=bill-payment'
-                    },
-                    {
-                        title: 'Tuition',
-                        url: '/payments?s=bill-payment'
-                    },
-                    {
-                        title: 'Wedding List',
-                        url: '/payments?s=bill-payment'
+                        url: '/payments?s=online-vouchers'
                     },
                     {
                         title: 'Notifications & Alerts',
                         url: '/payments?s=notifications-and-alerts'
                     },
+                    {
+                        title: 'Travel eSim',
+                        url: '/payments?s=travel-esim'
+                    },
+
                 ]
             },
             {
@@ -136,50 +134,27 @@ export const data = [
                         title: 'BNPL',
                         url: '/loans?s=bnpl',
                     },
-                    {
-                        title: 'Car Loan',
-                        url: '/car-loan',
-                    },
-                    {
-                        title: 'Housing Loan',
-                        url: '/house-loan',
-                    },
-                    {
-                        title: 'Plastic Surgery Loan',
-                        url: '/plastic-surgery-loan',
-                    },
-                    {
-                        title: 'Travel Loan',
-                        url: '/travel-loan',
-                    },
-                    {
-                        title: 'Student Loan',
-                        url: '/student-loan',
-                    },
-                    {
-                        title: 'Personal Loan',
-                        url: '/personal-loan',
-                    },
+
                 ]
             },
-            {
-                title: 'Loyalty',
-                url: '/loyalty',
-                children: [
-                    {
-                        title: 'Cashback',
-                        url: '/loyalty?s=cashback',
-                    },
-                    {
-                        title: 'Referral',
-                        url: '/loyalty?s=referral',
-                    },
-                    {
-                        title: 'Loyalty Program',
-                        url: '/loyalty?s=loyalty-program',
-                    }
-                ]
-            }
+            // {
+            //     title: 'Loyalty',
+            //     url: '/loyalty',
+            //     children: [
+            //         {
+            //             title: 'Cashback',
+            //             url: '/loyalty?s=cashback',
+            //         },
+            //         {
+            //             title: 'Referral',
+            //             url: '/loyalty?s=referral',
+            //         },
+            //         {
+            //             title: 'Loyalty Program',
+            //             url: '/loyalty?s=loyalty-program',
+            //         }
+            //     ]
+            // }
         ]
     },
     {
@@ -196,14 +171,6 @@ export const data = [
                 title: 'Who we are',
                 url: '/who-we-are'
             },
-            // {
-            //     title: 'Leadership team',
-            //     url: null
-            // },
-            {
-                title: 'Contact us',
-                url: '/contact-us'
-            },
             {
                 title: 'Why MyMonty',
                 url: '/why-mymonty'
@@ -216,6 +183,15 @@ export const data = [
                 title: 'Code of Conduct',
                 url: '/code-of-conduct'
             },
+            // {
+            //     title: 'Leadership team',
+            //     url: null
+            // },
+            {
+                title: 'Contact us',
+                url: '/contact-us'
+            },
+
             {
                 title: 'FAQ',
                 url: '/faq/personal/onboarding'

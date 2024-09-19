@@ -92,7 +92,10 @@ const cards = () => {
 
             <CardControls />
 
-            <Monitor />
+            <div id="transaction-history">
+                <Monitor />
+            </div>
+
             <div id="card-withdrawal">
                 <CardWithdrawal />
             </div>
