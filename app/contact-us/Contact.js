@@ -180,7 +180,7 @@ const Contact = () => {
             Fill out this form to reach us
           </h2>
           <form onSubmit={handleSubmit}>
-            <div className='flex flex-col gap-10 px-10 py-20 bg-gray-100 mt-20 rounded-[1.875rem]'>
+            <div className='flex flex-col gap-10 max-lg:px-5 px-10 py-20 bg-gray-100 mt-20 rounded-[1.875rem]'>
               <div className='flex flex-col md:flex-row gap-10'>
                 <div className='flex flex-col gap-1 w-full'>
                   <label htmlFor='full-name'>Full Name</label>
