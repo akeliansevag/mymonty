@@ -180,8 +180,8 @@ const Contact = () => {
             Fill out this form to reach us
           </h2>
           <form onSubmit={handleSubmit}>
-            <div className='flex flex-col gap-10 max-lg:px-5 px-10 py-20 bg-gray-100 mt-20 rounded-[1.875rem]'>
-              <div className='flex flex-col md:flex-row gap-10'>
+            <div className='flex flex-col max-lg:gap-6 gap-10 max-lg:px-5 px-10 max-lg:mt-10 max-lg:py-10 py-20 bg-gray-100 mt-20 rounded-[1.875rem]'>
+              <div className='flex flex-col md:flex-row gap-10 max-lg:gap-6'>
                 <div className='flex flex-col gap-1 w-full'>
                   <label htmlFor='full-name'>Full Name</label>
                   <input
@@ -210,7 +210,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className='flex flex-col md:flex-row gap-10'>
+              <div className='flex flex-col md:flex-row max-lg:gap-6 gap-10'>
                 <div className='flex flex-col gap-1 w-full'>
                   <label htmlFor='company-name'>Company Name <span className='text-gray-500'>(Optional)</span></label>
                   <input
@@ -239,7 +239,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className='flex flex-col md:flex-row gap-10'>
+              <div className='flex flex-col md:flex-row max-lg:gap-6 gap-10'>
                 <div className='flex flex-col gap-1 w-full'>
                   <label htmlFor='mobile-number'>Mobile Number</label>
                   <div className='relativee flex flex-col justify-center md:flex-row'>
@@ -327,7 +327,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className='flex flex-col md:flex-row gap-10'>
+              <div className='flex flex-col md:flex-row max-lg:gap-6 gap-10'>
                 <div className='flex flex-col gap-1 w-full'>
                   <label htmlFor='message'>Your Message</label>
                   <textarea
@@ -343,7 +343,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className='flex flex-col md:flex-row gap-10'>
+              <div className='flex flex-col md:flex-row max-lg:gap-6 gap-10'>
                 <div className='flex flex-row gap-1 w-full justify-center'>
                   <input type='submit' className='inline-block mm-button !px-20' value='Submit' disabled={loading} />
                 </div>
