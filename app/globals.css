@@ -251,7 +251,7 @@ ol{
     
 
 /* For screens larger than or equal to '4xl' breakpoint */
-@media (min-width: 1920px){
+@media (min-width: 1600px){
     .container{
         max-width: 1440px;
     }
