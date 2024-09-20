@@ -78,7 +78,7 @@ const payments = () => {
                         <Image className='md:w-1/3' src={topUp} alt='Section Image' />
                         <TextBlock buttonColor="dark" title="ONLINE VOUCHERS" description="Discover a world of convenience with our online vouchers. Perfect for gifts, rewards, or personal use, these vouchers offer a seamless way to manage your spending." button={true} />
                     </div>
-                    <div id="notifications-and-alerts" className='mt-20 md:mt-40 flex lg:flex-row gap-16 place-items-center'>
+                    <div id="notifications-and-alerts" className='mt-20 md:mt-40 flex flex-col lg:flex-row gap-16 place-items-center'>
 
                         <TextBlock buttonColor="dark" title="Instant Payment Notifications" description="Stay in the loop with instant notifications confirming the successful processing of your payments and the corresponding charges." button={true} />
                         <Image className='md:w-1/3' src={sectionThree} alt='Section Image' />

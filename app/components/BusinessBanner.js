@@ -17,7 +17,7 @@ const BusinessBanner = () => {
     }
 
     return (
-        <section className="pt-14 flex flex-col md:pt-20  w-full relative bg-black max-md:pt-14">
+        <section className="pb-14 md:py-20 max-md:pt-[calc(var(--header-height)+20px)] flex flex-col w-full relative bg-black">
             <div className="relative z-1">
                 <div className="container">
                     <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-center  ">

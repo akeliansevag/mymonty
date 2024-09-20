@@ -25,7 +25,7 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage }) => {
     }
 
     return (
-        <section className={`py-14 flex flex-col justify-center md:py-20 min-h-[calc(100vh-var(--header-height))] w-full relative ${theme == 'dark' ? 'bg-black' : 'bg-gray-100'} ${data.image.layout !== 'full' || !data.image.inGrid ? 'max-md:pb-14' : ''}`}>
+        <section className={`pb-14 md:pb-20 max-md:pt-[calc(var(--header-height)+20px)] flex flex-col justify-center min-h-[calc(100vh-var(--header-height))] w-full relative ${theme == 'dark' ? 'bg-black' : 'bg-gray-100'} ${data.image.layout !== 'full' || !data.image.inGrid ? 'max-md:pb-14' : ''}`}>
             {
                 data?.image?.layout === 'full' && (
                     <>

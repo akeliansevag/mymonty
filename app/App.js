@@ -18,7 +18,7 @@ const App = ({ children }) => {
         <>
             <Modal formComponent={formComponent || dynamicFormComponent} isOpen={openModal} handleOpenModal={handleOpenModal} handleCloseModal={handleCloseModal} largeWidth={largeWidth} />
             <Header />
-            <div className='-mt-[var(--header-height)]'>
+            <div>
                 {children}
                 <OldFooter />
                 {/* <Footer /> */}

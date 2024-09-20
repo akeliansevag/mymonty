@@ -85,7 +85,7 @@ const Header = () => {
         };
     }, []);
 
-    let headerClasses = 'flex items-center sticky top-0 left-0 z-10 w-full z-50 transition-transform  h-[var(--mobile-header-height)] md:h-[var(--header-height)] ' + styles.header;
+    let headerClasses = 'flex items-center fixed top-0 left-0 z-10 w-full z-50 transition-transform  h-[var(--mobile-header-height)] md:h-[var(--header-height)] ' + styles.header;
     headerClasses += scrolling ? ' ' + styles.scrolling + ' scrolling' : '';
     headerClasses += menuOpen || mobileMenuToggle ? ' ' + styles.menuOpen + ' menu-open' : '';
     headerClasses += isScrollingDown ? ' -translate-y-full' : ' -translate-y-0';
