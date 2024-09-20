@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './components/header/Header';
 import Footer from './components/Footer';
+import OldFooter from './components/OldFooter';
 import { NavigationEvents } from './components/navigation-events';
 import { Suspense } from 'react';
 import Modal from './components/Modal';
@@ -19,7 +20,8 @@ const App = ({ children }) => {
             <Header />
             <div className='-mt-[var(--header-height)]'>
                 {children}
-                <Footer />
+                <OldFooter />
+                {/* <Footer /> */}
                 <Suspense fallback={null}>
                     <NavigationEvents />
                 </Suspense>
