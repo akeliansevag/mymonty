@@ -71,37 +71,40 @@ const WhyMyMonty = () => {
         <div className='container'>
           <h2 className='text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Benefit from an e-wallet account</h2>
           <p className='text-center text-[#2657D4] text-[1.75rem] font-bold mt-5'>In just a few minutes!</p>
+        </div>
+        <div className='container !max-w-[1000px]'>
           {/* 280 586 text-4xl md:text-6xl top-[30px] md:top-[70px] ////// w-[50px] h-[50px] md:w-[90px] md:h-[90px]*/}
           <div className='grid grid-cols-2 lg:grid-cols-4'>
-            <div className='relative flex items-center justify-center w-[140px] h-[140px] md:w-[280px] md:h-[280px] lg:w-72 lg:h-72 rounded-full border-2 bg-[#2657D4] text-lg md:text-4xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
+            <div className='relative flex items-center justify-center w-[200px] h-[200px] md:w-[280px] md:h-[280px] lg:w-72 lg:h-72 rounded-full border-2 bg-[#2657D4] text-lg md:text-2xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
               <p className='md:px-10'>Download app</p>
               <div className='absolute top-0 md:top-[20px] left-0'>
                 <div className='flex items-center justify-center w-[30px] h-[30px] md:w-[60px] md:h-[60px] rounded-full border-2 md:border-4 bg-[#2657D4] text-md font-bold text-white m-auto text-center'>1</div>
               </div>
             </div>
 
-            <div className='relative flex items-center justify-center w-[140px] h-[140px] md:w-[280px] md:h-[280px] lg:w-72 lg:h-72 rounded-full border-2 bg-[#2657D4] text-lg md:text-4xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
+            <div className='relative flex items-center justify-center w-[200px] h-[200px] md:w-[280px] md:h-[280px] lg:w-72 lg:h-72 rounded-full border-2 bg-[#2657D4] text-lg md:text-2xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
               <p className='md:px-10'>Fill<br />e-KYC</p>
               <div className='absolute top-0 md:top-[20px] left-0'>
                 <div className='flex items-center justify-center w-[30px] h-[30px] md:w-[60px] md:h-[60px] rounded-full border-2 md:border-4 bg-[#2657D4] text-md font-bold text-white m-auto text-center'>2</div>
               </div>
             </div>
 
-            <div className='relative flex items-center justify-center w-[140px] h-[140px] md:w-[280px] md:h-[280px] lg:w-72 lg:h-72 rounded-full border-2 bg-[#2657D4] text-lg md:text-4xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
+            <div className='relative flex items-center justify-center w-[200px] h-[200px] md:w-[280px] md:h-[280px] lg:w-72 lg:h-72 rounded-full border-2 bg-[#2657D4] text-lg md:text-2xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
               <p className='md:px-10'>Upload ID /passport</p>
               <div className='absolute top-0 md:top-[20px] left-0'>
                 <div className='flex items-center justify-center w-[30px] h-[30px] md:w-[60px] md:h-[60px] rounded-full border-2 md:border-4 bg-[#2657D4] text-md font-bold text-white m-auto text-center'>3</div>
               </div>
             </div>
 
-            <div className='relative flex items-center justify-center w-[140px] h-[140px] md:w-[280px] md:h-[280px] lg:w-72 lg:h-72 rounded-full border-2 bg-[#2657D4] text-lg md:text-4xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
+            <div className='relative flex items-center justify-center w-[200px] h-[200px] md:w-[280px] md:h-[280px] lg:w-72 lg:h-72 rounded-full border-2 bg-[#2657D4] text-lg md:text-2xl font-bold text-white m-auto mt-14 md:mt-28 text-center'>
               <p className='md:px-10'>Sign electronically</p>
               <div className='absolute top-0 md:top-[20px] left-0'>
                 <div className='flex items-center justify-center w-[30px] h-[30px] md:w-[60px] md:h-[60px] rounded-full border-2 md:border-4 bg-[#2657D4] text-md font-bold text-white m-auto text-center'>4</div>
               </div>
             </div>
           </div>
-
+        </div>
+        <div className='container'>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-20'>
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
               <Image className="w-full" src={oneStop} alt='High-End Security' placeholder='blur' />
