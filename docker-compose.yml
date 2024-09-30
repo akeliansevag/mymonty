@@ -1,6 +1,8 @@
 services:
   mymonty-frontend:
-    image: mymonty-dev:latest
+    build:
+      dockerfile: dockerfile
+      context: .
     container_name: mymonty-frontend
     # ports:
     #   - 3000:3000
@@ -11,7 +13,7 @@ services:
     networks:
       - mymonty-network
       - npm
-    restart: unless-stopped
+    restart: always
 volumes:
   node_modules:
   next:
