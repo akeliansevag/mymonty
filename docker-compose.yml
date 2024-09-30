@@ -1,7 +1,7 @@
 services:
   mymonty-frontend:
     build:
-      dockerfile: dockerfile
+      dockerfile: Dockerfile
       context: .
     container_name: mymonty-frontend
     # ports:
