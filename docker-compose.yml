@@ -9,7 +9,7 @@ services:
     volumes:
       - node_modules:/frontend/node_modules
       - next:/frontend/.next
-      - /Users/sevag.akelian/websites/mymonty:/frontend
+      - ./:/frontend
     networks:
       - mymonty-network
       - npm
