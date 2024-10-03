@@ -150,7 +150,7 @@ const Footer = () => {
 
                 <hr className='h-[1px] border-gray-900' />
 
-                <div className='py-10 text-center md:text-left md:flex md:items-center justify-between'>
+                <div className='pt-10 pb-[150px] text-center md:text-left md:flex md:items-center justify-between'>
                     <p className='opacity-60 text-base'>© Monty Finance SAL 2023.</p>
                     {/* <p className='opacity-60 text-base'>Copyright © Monty Finance SAL. 2023 All Rights Reserved</p> */}
                     <div className='justify-center md:justify-end flex gap-7 text-base underline'>
