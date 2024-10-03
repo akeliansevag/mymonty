@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import feesMobile from '@/public/0fees-mobile-1.webp';
+import feesMobile from '@/public/0fees-mobile-2.webp';
 import fees from '@/public/0fees-desktop.webp';
 
 
