@@ -35,7 +35,7 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage }) => {
                 )
             }
 
-            <div className='relative z-1 md:mt-[100px]'>
+            <div className='relative z-1 md:mt-[80px]'>
                 {
                     data.image.inGrid ? (
                         <div className='container'>
