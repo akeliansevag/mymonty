@@ -2,41 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --header-height: 72px;
-    --mobile-header-height: 72px;
+:root {
+  --header-height: 72px;
+  --mobile-header-height: 72px;
 
-    /**COLORS**/
-    --mm-black: #091111;
-
+  /**COLORS**/
+  --mm-black: #091111;
+  --mm-blue: #2657d4;
 }
-body{
-    font-size:1.25rem;
+body {
+  font-size: 1.25rem;
 }
-.mm-button{
-    background-color: var(--mm-black);
-    border-radius: 30px;
-    padding: 8px 20px;
-    text-align: center;
-    color: white;
-    display: inline-block;
-    font-size: 15px;
-    transition: all 0.1s linear;
-    border:2px solid transparent;
-    cursor: pointer;
+.mm-button {
+  background-color: var(--mm-black);
+  border-radius: 30px;
+  padding: 8px 20px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  transition: all 0.1s linear;
+  border: 2px solid transparent;
+  cursor: pointer;
 }
-button, input[type="submit"]{
-    cursor: pointer;
-}
-
-.mm-button:hover{
-    background-color: #2657D4 !important;
-    color: #FFFFFF !important;
+button,
+input[type="submit"] {
+  cursor: pointer;
 }
 
-.mm-button.white{
-    background-color: white;
-    color: var(--mm-black);
+.mm-button:hover {
+  background-color: #2657d4 !important;
+  color: #ffffff !important;
+}
+
+.mm-button.white {
+  background-color: white;
+  color: var(--mm-black);
 }
 /* 
 .mm-button.white:hover{
@@ -45,10 +46,18 @@ button, input[type="submit"]{
     color: white;
 } */
 
-.mm-button.default{
-    border-color: white;
-    background-color: transparent;
-    color: white;
+.mm-button.default {
+  border-color: white;
+  background-color: transparent;
+  color: white;
+}
+
+.mm-button.blue {
+  background-color: var(--mm-blue);
+}
+
+.mm-button.blue:hover {
+  background-color: var(--mm-black) !important;
 }
 
 /* .mm-button.blue:hover{
@@ -57,210 +66,216 @@ button, input[type="submit"]{
     color:white
 } */
 
-.custom-object-position{
-    object-position: 65% 25vh; 
+.mm-button .custom-object-position {
+  object-position: 65% 25vh;
 }
 
-button, a, input[type="submit"], header li{
-    cursor: pointer;
+button,
+a,
+input[type="submit"],
+header li {
+  cursor: pointer;
 }
 
 .relativee * {
-    position: relative;
+  position: relative;
 }
-.country_flag{
-    line-height: 0;
+.country_flag {
+  line-height: 0;
 }
 .dropdown {
-    -ms-overflow-style: none;
-    border-radius: 20px;
-    box-shadow: 0 8px 10px rgb(243 244 246);
-    /* display: none; */
-    left: 0;
-    max-height: 185px;
-    overflow-y: scroll;
-    position: absolute;
-    scrollbar-width: none;
-    top: calc(100% + 5px);
-    width: 100%;
-    z-index: 1;
+  -ms-overflow-style: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 10px rgb(243 244 246);
+  /* display: none; */
+  left: 0;
+  max-height: 185px;
+  overflow-y: scroll;
+  position: absolute;
+  scrollbar-width: none;
+  top: calc(100% + 5px);
+  width: 100%;
+  z-index: 1;
 }
 
 .calling_code .select {
-    cursor: pointer;
-    height: 100%;
-    line-height: normal;
-    overflow: hidden;
-    position: relative;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 130px;
+  cursor: pointer;
+  height: 100%;
+  line-height: normal;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 130px;
 }
 
 .dropdown .search-wrapper {
-    z-index: 2;
+  z-index: 2;
 }
 
-body.dark > header nav > ul > li > span{
-    color:white;
+body.dark > header nav > ul > li > span {
+  color: white;
 }
-
-
 
 body.dark header .logo svg path {
-    fill: #FFFFFF;
+  fill: #ffffff;
 }
-body.dark header .mm-button{
-    background-color: #FFFFFF;
-    color: var(--mm-black);
+body.dark header .mm-button {
+  background-color: #ffffff;
+  color: var(--mm-black);
 }
-body.dark header .mm-button:hover{
-    background-color: #2657D4;
-}
-
-body.dark > header nav > ul > li:hover > span{
-    background-color: white !important;
-    color: black !important;
-}
-body.dark .mobile-burger > div > div{
-    background-color: white;
+body.dark header .mm-button:hover {
+  background-color: #2657d4;
 }
 
-body.dark header.scrolling{
-    background-color: rgba(0,0,0,0.8);
+body.dark > header nav > ul > li:hover > span {
+  background-color: white !important;
+  color: black !important;
+}
+body.dark .mobile-burger > div > div {
+  background-color: white;
 }
 
-.scrolling{
-    backdrop-filter: blur(16px);
-    background-color: rgba(255,255,255,0.8);
-    height: var(--mobile-header-height) !important;
+body.dark header.scrolling {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.menuOpen{
-    background-color: #f7f7f7;
+.scrolling {
+  backdrop-filter: blur(16px);
+  background-color: rgba(255, 255, 255, 0.8);
+  height: var(--mobile-header-height) !important;
 }
 
-.menu-open{
-    background-color: #f7f7f7;
+.menuOpen {
+  background-color: #f7f7f7;
 }
 
-.dark .menu-open, .dark .submenu{
-    background-color: black;
-    color:white;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    backdrop-filter: blur(0px);
-    opacity: 1;
+.menu-open {
+  background-color: #f7f7f7;
 }
 
-body.dark header.scrolling.menu-open{
-    background-color: rgba(0, 0, 0, 1);
+.dark .menu-open,
+.dark .submenu {
+  background-color: black;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0px);
+  opacity: 1;
 }
 
-swiper-slide{
-    width:500px;
-    height:auto;
-    display:flex;
-    align-items: center;
+body.dark header.scrolling.menu-open {
+  background-color: rgba(0, 0, 0, 1);
 }
 
-swiper-slide img{
-    width: 100%;
+swiper-slide {
+  width: 500px;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
-.terms ul{
-    list-style-type: disc;
-    margin-left:30px;
-}
-.table-wrapper h2{
-    font-weight: bold;
-    font-size: 28px;
-}
-.mm-table{
-    width: 100%;
-    margin-top:30px;
-    margin-bottom: 50px;
+swiper-slide img {
+  width: 100%;
 }
 
-.mm-table, .mm-table th,.mm-table td {
-    border: 1px solid black;
-    border-collapse: collapse;
+.terms ul {
+  list-style-type: disc;
+  margin-left: 30px;
+}
+.table-wrapper h2 {
+  font-weight: bold;
+  font-size: 28px;
+}
+.mm-table {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
-.mm-table td{
-    padding:15px;
+.mm-table,
+.mm-table th,
+.mm-table td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
-.table-heading{
-    background-color: rgb(243 244 246);
-    font-weight: bold;
+.mm-table td {
+  padding: 15px;
 }
 
-.download-pdf{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap:5px;
-    color:white;
-    background-color: black;
-    border-radius: 30px;
-    padding:5px 15px;
-    margin-top:25px;
-    font-size: 16px;
-}
-.download-pdf:hover{
-    background-color: #2657D4;
+.table-heading {
+  background-color: rgb(243 244 246);
+  font-weight: bold;
 }
 
-@media screen and (max-width:576px) {
-    swiper-slide{
-        width: 70%;
-    }
+.download-pdf {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  padding: 5px 15px;
+  margin-top: 25px;
+  font-size: 16px;
+}
+.download-pdf:hover {
+  background-color: #2657d4;
 }
 
-.html-content ul{
-    list-style-type: disc;
-    margin-left: 30px;
+@media screen and (max-width: 576px) {
+  swiper-slide {
+    width: 70%;
+  }
 }
 
-.html-content ol{
-    list-style-type:decimal;
-    margin-left: 30px;
+.html-content ul {
+  list-style-type: disc;
+  margin-left: 30px;
 }
 
-
-.html-content a{
-    color: #2657D4;
+.html-content ol {
+  list-style-type: decimal;
+  margin-left: 30px;
 }
 
-.html-content h2{
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 10px;
+.html-content a {
+  color: #2657d4;
 }
 
-
-ol{
-    list-style-type: decimal;
-    padding-left:20px;
+.html-content h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-
-.container{
-    max-width: 1200px;
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
 }
-    
+
+.container {
+  max-width: 1200px;
+}
 
 /* For screens larger than or equal to '4xl' breakpoint */
-@media (min-width: 1920px){
-    .container{
-        max-width: 1440px;
-    }
-   
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1440px;
+  }
 }
-   
-@media (max-width: 992px){
-    body{
-        /* padding-top:100px; */
-    }
-   
+
+@media (max-width: 992px) {
+  body {
+    /* padding-top:100px; */
+  }
+}
+
+.smaller-title {
+  @apply text-3xl font-bold mb-3;
+}
+
+.hole {
+  clip-path: circle(13.6% at 100% 50%);
 }
