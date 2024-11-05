@@ -7,6 +7,9 @@ import AnimatedBanner from './AnimatedBanner';
 import VirtualCard from './VirtualCard';
 import TextBlock from '../components/TextBlock';
 import Promo from './Promo';
+import TravelIcon from './TravelIcon';
+import LifestyleIcon from './LifestyleIcon';
+import PeaceofmindIcon from './PeaceofmindIcon';
 
 
 export const metadata = {
@@ -122,6 +125,24 @@ const cards = () => {
         }
     ]
 
+    const lingokids = [
+        {
+            title: '2 months of Lingokids for free for new users'
+        },
+        {
+            title: '30% off monthly subscriptions for new and existing users'
+        },
+    ]
+
+    const purchase_protection = [
+        {
+            title: 'Protected in case of theft or accidental damage for up to 180 days from the date of purchase'
+        },
+        {
+            title: 'Covered for up to USD 2,000 per claim and a maximum of USD 5,000 over 12 months'
+        }
+    ]
+
 
     return (
         <>
@@ -134,8 +155,27 @@ const cards = () => {
                 
                 <div className="container py-10 lg:py-20">
                     <div className="flex gap-x-5">
-                        <div className="bg-white sticky top-[calc(var(--header-height)+30px)] w-[15%] rounded-xl p-5 self-start flex-none">
+                        <div className="bg-white sticky top-[calc(var(--header-height)+30px)] w-[15%] rounded-xl p-5 self-start flex-none flex flex-col gap-7">
+                            <div className="text-center flex flex-col items-center">
+                                <div className="p-6 bg-[#E9EEFB] rounded-2xl">
+                                    <TravelIcon active={false}/>
+                                </div>
+                                <span className={"mt-2 text-[#2657D4] font-bold"}>Travel</span>
+                            </div>
 
+                            <div className="text-center flex flex-col items-center">
+                                <div className="p-6 rounded-2xl">
+                                    <LifestyleIcon active={false}/>
+                                </div>
+                                <span className="mt-2 font-bold">Lifestyle</span>
+                            </div>
+
+                            <div className="text-center flex flex-col items-center">
+                                <div className="p-6 rounded-2xl">
+                                  <PeaceofmindIcon active={false}/>  
+                                </div>
+                                <span className="mt-2 font-bold">Peace of Mind</span>
+                            </div>
                         </div>
                         <div className="flex flex-col gap-28">
                             <div className="bg-white rounded-xl p-8">
@@ -372,11 +412,12 @@ const cards = () => {
                                 <h2 className="smaller-title">Fiit</h2>
                                 <p>Get a 25% discount on your first Fiit subscription payment after a 14-day free trial with your Mastercard and enjoy:</p>
                                </div>
-                               <div className="flex gap-5 mt-8 items-center">
-                                 <div className="w-1/2">
-                                    <img src="/fiit.webp" alt="Fiit" />
+                               <div className="gap-5 mt-8 items-center grid grid-cols-2">
+                                 <div className="relative h-full rounded-3xl overflow-hidden">
+                                    <img className="object-cover absolute w-full h-full top-0" src="/fiit.webp" alt="Fiit" />
+                                    <a target="_blank" className="absolute bottom-6 left-1/2 -translate-x-1/2 mm-button blue" href="">Subscribe Now</a>
                                  </div>
-                                 <div className="w-1/2">
+                                 <div className="">
                                     <ul className="flex flex-col gap-5">
                                         {
                                             fiit.map((item,index)=>(
@@ -391,6 +432,63 @@ const cards = () => {
                                </div>
                             </div>
                             
+                            <div>
+                               <div className="text-center">
+                                <h2 className="smaller-title">Lingokids</h2>
+                                <p>Have your child learn through play, and develop skills like creativity, collaboration, critical thinking, and communication. Join the adventure and enjoy: </p>
+                               </div>
+                               <div className="gap-5 mt-8 items-center flex">
+                                  <div className="w-1/3">
+                                    <div className="flex justify-center">
+                                        <Promo code="MASTERCARDMEA" />
+                                    </div>
+                                    
+                                    <ul className="flex flex-col gap-5">
+                                        {
+                                            lingokids.map((item,index)=>(
+                                                <li key={index} className="bg-white p-5 rounded-xl">
+                                                    {item.title}
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                    
+                                 </div>
+                                 <div className="w-2/3">
+                                    <img src="/lingokids.webp" alt="Fiit" />
+                                    
+                                 </div>
+                                 
+                               </div>
+                               <p className="text-center mt-5">Visit their <a href="https://lingokids.com/mastercardmea" className="text-[var(--mm-blue)]" target="_blank">website</a> and use promo code at checkout.</p>
+                            </div>
+                            
+                            <div className="flex items-center gap-5">
+                                <div className="w-1/3">
+                                    <img src="/purchase-protection.webp" alt="Purchase Protection" />
+                                </div>
+                                <div className="w-2/3 bg-white rounded-3xl p-5">
+                                    <h2 className="smaller-title">Purchase Protection</h2>
+                                    <p>Shop with confidence, knowing that the purchases you make with your Mastercard are:</p>
+                                    <ul className="pl-2 mt-7">
+                                        {
+                                            purchase_protection.map((item, index) => 
+                                                    (
+                                                        <li key={index+1} className="flex items-center gap-3 mb-3">
+                                                            <span className="bg-[#f7f7f7] w-[30px] h-[30px] grow-0 shrink-0 rounded-full flex items-center justify-center">{index+1}</span> 
+                                                            <span>{item.title}</span>
+                                                        </li>
+                                                    )
+                                                    
+                                            )
+                                        }
+                                    </ul>
+                                    <p className="mt-8">
+                                    In case of damage, you can either get a new item to replace the damaged one or receive compensation for the item’s total value, as per the store receipt. <br />
+                                    Simply visit their <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com/">website</a> to file a claim.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
