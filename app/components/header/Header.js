@@ -85,13 +85,30 @@ const Header = () => {
         };
     }, []);
 
+    useEffect(() => {
+        // Access the document object only after the component has mounted
+        const bodyElem = document.getElementsByTagName("body")[0];
+        
+        // Add or remove class based on isScrollingDown state
+        if (isScrollingDown) {
+          bodyElem.classList.add('menu-hidden');
+          bodyElem.classList.remove('a');
+        } else {
+          bodyElem.classList.add('a');
+          bodyElem.classList.remove('menu-hidden');
+        }
+    
+        // Optional: cleanup to remove the classes on unmount
+        return () => {
+          bodyElem.classList.remove('menu-hidden', 'a');
+        };
+      }, [isScrollingDown]); // This effect runs whenever isScrollingDown changes
+
     let headerClasses = 'flex items-center fixed top-0 left-0 z-10 w-full z-50 transition-transform  h-[var(--mobile-header-height)] md:h-[var(--header-height)] ' + styles.header;
     headerClasses += scrolling ? ' ' + styles.scrolling + ' scrolling' : '';
     headerClasses += menuOpen || mobileMenuToggle ? ' ' + styles.menuOpen + ' menu-open' : '';
     headerClasses += isScrollingDown ? ' -translate-y-full' : ' -translate-y-0';
-    const bodyElem = document.getElementsByTagName("body")[0];
-    bodyElem.classList.add(isScrollingDown ? 'menu-hidden' : 'a');
-    bodyElem.classList.remove(!isScrollingDown ? 'menu-hidden' : 'a');
+    
     const handleMenuOpen = (toggle) => {
         setMenuOpen(toggle);
     };
