@@ -226,7 +226,7 @@ const Content = () => {
                         </div>
                         <div className="overflow-hidden aspect-[16/7] relative flex justify-end">
                             <img className="absolute object-cover w-full h-full top-0" src="/booking-com.webp" alt="booking" />
-                            <div className="z-1 relative pr-10 pt-10">
+                            <div className="z-1 relative pr-10 lg:pt-10">
                                 <Promo code="MCBKG"/>
                             </div>
                             
