@@ -3,28 +3,28 @@ import TravelIcon from './TravelIcon'
 import LifestyleIcon from './LifestyleIcon'
 import PeaceofmindIcon from './PeaceofmindIcon'
 
-const Sidebar = () => {
+const Sidebar = ({divInView}) => {
   return (
-    <div className="bg-white sticky top-[calc(var(--header-height)+30px)] w-[15%] rounded-xl p-5 self-start flex-none flex flex-col gap-7">
+    <div className="sticky-filters">
         <div className="text-center flex flex-col items-center">
-            <div className="p-6 bg-[#E9EEFB] rounded-2xl">
-                <TravelIcon active={true}/>
+            <div className={`max-md:p-2 p-6  rounded-2xl ${divInView=="travel" ? "bg-[#E9EEFB]" : ""}`}>
+                <TravelIcon active={divInView=="travel" ? true : false}/>
             </div>
-            <span className={"mt-2 text-[#2657D4] font-bold"}>Travel</span>
+            <span className={`max-md:mt-0 max-md:text-base mt-2 font-bold ${divInView === "travel" ? "text-[#2657D4]" : ""}`}>Travel</span>
         </div>
 
         <div className="text-center flex flex-col items-center">
-            <div className="p-6 rounded-2xl">
-                <LifestyleIcon active={false}/>
+            <div className={`max-md:p-2 p-6  rounded-2xl ${divInView=="lifestyle" ? "bg-[#E9EEFB]" : ""}`}>
+                <LifestyleIcon active={divInView=="lifestyle" ? true : false}/>
             </div>
-            <span className="mt-2 font-bold">Lifestyle</span>
+            <span className={`max-md:mt-0 max-md:text-base mt-2 font-bold ${divInView === "lifestyle" ? "text-[#2657D4]" : ""}`}>Lifestyle</span>
         </div>
 
         <div className="text-center flex flex-col items-center">
-            <div className="p-6 rounded-2xl">
-                <PeaceofmindIcon active={false}/>  
+            <div className={`max-md:p-2 p-6  rounded-2xl ${divInView=="peace" ? "bg-[#E9EEFB]" : ""}`}>
+                <PeaceofmindIcon active={divInView=="peace" ? true : false}/>  
             </div>
-            <span className="mt-2 font-bold">Peace of Mind</span>
+            <span className={`max-md:mt-0 max-md:text-base mt-2 font-bold ${divInView === "peace" ? "text-[#2657D4]" : ""}`}>Peace of Mind</span>
         </div>
     </div>
   )

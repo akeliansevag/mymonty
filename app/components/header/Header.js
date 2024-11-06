@@ -89,7 +89,9 @@ const Header = () => {
     headerClasses += scrolling ? ' ' + styles.scrolling + ' scrolling' : '';
     headerClasses += menuOpen || mobileMenuToggle ? ' ' + styles.menuOpen + ' menu-open' : '';
     headerClasses += isScrollingDown ? ' -translate-y-full' : ' -translate-y-0';
-
+    const bodyElem = document.getElementsByTagName("body")[0];
+    bodyElem.classList.add(isScrollingDown ? 'menu-hidden' : 'a');
+    bodyElem.classList.remove(!isScrollingDown ? 'menu-hidden' : 'a');
     const handleMenuOpen = (toggle) => {
         setMenuOpen(toggle);
     };

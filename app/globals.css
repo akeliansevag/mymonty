@@ -279,3 +279,11 @@ ol {
 .hole {
   clip-path: circle(13.6% at 100% 50%);
 }
+
+.sticky-filters {
+  @apply bg-white z-10 sticky top-[calc(var(--header-height)+30px)] w-full md:w-[15%] rounded-xl p-5 self-start flex-none flex  md:flex-col gap-7 max-md:mb-10 max-md:justify-between max-md:p-2 transition-all max-md:top-[calc(var(--header-height)+15px)] max-md:shadow-md max-md:w-[90%] max-md:mx-auto;
+}
+
+body.menu-hidden .sticky-filters {
+  @apply top-[15px];
+}

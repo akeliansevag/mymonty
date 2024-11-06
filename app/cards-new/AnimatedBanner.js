@@ -12,7 +12,7 @@ const AnimatedBanner = () => {
         tl.to(blue.current, { scale: 1, duration: 0.4 }, "-=0.3");
     }, [])
     return (
-        <div className='flex md:justify-end'>
+        <div className='flex md:justify-end mr-10'>
             <div className='h-[500px] bg-black w-[300px] md:w-[360px] rounded-[30px] flex flex-col justify-end relative'>
                 <video className='mb-6' width="100%" playsInline autoPlay muted loop controls={false}>
                     <source src='/rotating-card-2.mp4' type="video/mp4" />
