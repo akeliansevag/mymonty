@@ -155,14 +155,14 @@ const Content = () => {
                         <button className="mm-button blue mt-4">Download App Now</button>
                         
                         <div className="flex lg:items-center max-lg:flex-col lg:-mt-10">
-                            <div className="w-5/6">
+                            <div className="lg:w-5/6">
                                 <h3 className="font-bold mb-3 max-lg:mt-10">HOW TO USE:</h3>
                                 <ul className="pl-2">
                                     {
                                         howToUse.map((item, index) => 
                                                 (
                                                     <li key={index+1} className="flex items-center gap-3 mb-3">
-                                                        <span className="bg-[#f7f7f7] w-[30px] h-[30px] rounded-full flex items-center justify-center">{index+1}</span> 
+                                                        <span className="bg-[#f7f7f7] shrink-0 w-[30px] h-[30px] rounded-full flex items-center justify-center">{index+1}</span> 
                                                         <span>{item.title}</span>
                                                     </li>
                                                 )
@@ -270,10 +270,10 @@ const Content = () => {
                     </div>
 
                     <div>
-                        <div className="min-h-[50vh] flex items-center relative rounded-3xl p-10 overflow-hidden">
-                            <img className="z-0 object-cover w-full h-full absolute top-0 left-0" src="/priceless-cities.webp" />
+                        <div className="lg:aspect-[145/63] flex max-lg:flex-col lg:items-center relative rounded-3xl lg:p-10 lg:overflow-hidden">
+                            <img className="max-lg:pb-3 z-0 lg:object-cover w-full h-full lg:absolute top-0 left-0" src="/priceless-cities.webp" />
                             <div className="relative z-1">
-                                <div className='text-white lg:w-1/2'>
+                                <div className='text-white max-lg:text-black lg:w-1/2'>
                                     <h4 className="font-bold text-4xl">Priceless Cities</h4>
                                     <p>Enjoy exclusive access to dining, travel, 
                                     and entertainment experiences in over 40 cities and countries through <a href="https://priceless.com" target="_blank" className="underline">Priceless.com.</a></p>
@@ -344,9 +344,9 @@ const Content = () => {
                             <h2 className="smaller-title">Farfetch</h2>
                             <p>Enjoy <strong>10% off</strong> incredible fashion at Farfetch when spending $200 or above.</p>
                         </div>
-                        <div className="aspect-[87/32] overflow-hidden relative flex justify-end">
-                            <img className="absolute object-cover w-full top-0" src="/farfetch.webp" alt="booking" />
-                            <div className="z-1 relative pr-10 pt-10">
+                        <div className="lg:aspect-[87/32] lg:overflow-hidden relative lg:flex justify-end">
+                            <img className="lg:absolute object-cover w-full top-0" src="/farfetch.webp" alt="booking" />
+                            <div className="z-1 relative lg:pr-10 max-lg:flex max-lg:justify-center lg:pt-10">
                                 <Promo code="MCMEAFF10"/>
                             </div>
                         </div>
