@@ -36,7 +36,7 @@ const VirtualMastercard = () => {
     const items = [
         {
             title:'Instant Access',
-            description: 'Get your virtual card up and running and start using it right away.',
+            description: 'Get your virtual card up and running and use it right away.',
             image: '/vcb-1.webp',
             classes: ''
         },

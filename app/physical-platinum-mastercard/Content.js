@@ -254,12 +254,15 @@ const Content = () => {
                     </div>
 
                     <div className="flex max-lg:flex-col gap-10">
-                        <div className="bg-white rounded-3xl p-6">
+                        <div className="bg-white rounded-3xl p-6 lg:w-1/2">
                             <h2 className="smaller-title">Rentalcars.com</h2>
                             <p>Enjoy 10% off car rentals when booking through <a target="_blank" className="text-[var(--mm-blue)]" href="https://rentalcars.com">Rentalcars.com</a>.</p>
-                            <img className="mt-8" src="/rental-cars.webp" alt="RentalCars" />
+                            <div className="mt-8 relative aspect-[361/187] rounded-[40px] overflow-hidden">
+                                <img className="absolute w-full h-full object-cover top-0" src="/rental-cars.webp" alt="RentalCars" />
+                            </div>
+                            
                         </div>
-                        <div className="bg-white rounded-3xl p-6">
+                        <div className="bg-white rounded-3xl p-6 lg:w-1/2">
                             <h2 className="smaller-title">Budget Truck & Car Rental</h2>
                             <p>Get <strong>up to 10%</strong> off on your next car or truck rental with Budget through their <a className="text-[var(--mm-blue)]" target="_blank" href="https://one.budgetinternational.com/en_GB/Budget-MastercardMEA/">website</a>. </p>
                             <img className="mt-8" src="/budget-truck.webp" alt="RentalCars" />
@@ -282,6 +285,36 @@ const Content = () => {
                     
                     <div className="w-full h-[1px] bg-[#dfdfdf] max-lg:mb-14 mb-28"></div>
                 </div>
+
+                <div ref={peaceRef} data-name="peace" className="flex flex-col max-lg:gap-14 gap-28">
+                    <div className="flex items-center max-lg:flex-col-reverse gap-5">
+                        <div className="lg:w-1/3">
+                            <img src="/purchase-protection.webp" alt="Purchase Protection" />
+                        </div>
+                        <div className="lg:w-2/3 bg-white rounded-3xl p-5">
+                            <h2 className="smaller-title">Purchase Protection</h2>
+                            <p>Shop with confidence, knowing that the purchases you make with your Mastercard are:</p>
+                            <ul className="pl-2 mt-7">
+                                {
+                                    purchase_protection.map((item, index) => 
+                                            (
+                                                <li key={index+1} className="flex items-center gap-3 mb-3">
+                                                    <span className="bg-[#f7f7f7] w-[30px] h-[30px] grow-0 shrink-0 rounded-full flex items-center justify-center">{index+1}</span> 
+                                                    <span>{item.title}</span>
+                                                </li>
+                                            )
+                                            
+                                    )
+                                }
+                            </ul>
+                            <p className="mt-8">
+                            In case of damage, you can either get a new item to replace the damaged one or receive compensation for the item’s total value, as per the store receipt. <br />
+                            Simply visit their <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com/">website</a> to file a claim.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="w-full h-[1px] bg-[#dfdfdf] max-lg:mb-14 mb-28"></div>
+                </div>
                 
                 <div ref={lifestyleRef} data-name="lifestyle" className="flex flex-col max-lg:gap-14 gap-28">
                     <div className="flex max-lg:flex-col gap-8">
@@ -290,10 +323,10 @@ const Content = () => {
                             <p>Shop luxury in style with VIP discounts at the Bicester Village Shopping Collection across Europe:</p>
                             <ul className="flex flex-col gap-4 mt-8">
                                 {
-                                bicester.map((item,index) => (
-                                <li key={index} className="rounded-xl bg-[#f7f7f7] p-6">
-                                    {item.title}
-                                </li>
+                                    bicester.map((item,index) => (
+                                    <li key={index} className="rounded-xl bg-[#f7f7f7] p-6">
+                                        {item.title}
+                                    </li>
                                 ))
                                 }
                             </ul>
@@ -301,8 +334,8 @@ const Content = () => {
                                 Visit their <a target="_blank" className="text-[var(--mm-blue)]" href="https://www.thebicestercollection.com/en/destinations">website</a> to avail these offers.
                             </p>
                         </div>
-                        <div className="lg:w-1/3 rounded-3xl relative overflow-hidden">
-                            <img src="/bicester.webp" alt="Bicester" className="absolute object-cover top-[-100px]"/>
+                        <div className="bg-white lg:w-1/3 rounded-3xl relative overflow-hidden">
+                            <img src="/bicester.webp" alt="Bicester" className="absolute h-full w-full object-cover"/>
                         </div>
                     </div>
 
@@ -438,39 +471,12 @@ const Content = () => {
                         <p className="text-center mt-5">Visit their <a href="https://lingokids.com/mastercardmea" className="text-[var(--mm-blue)]" target="_blank">website</a> and use promo code at checkout.</p>
                     </div>
 
-                    <div className="w-full h-[1px] bg-[#dfdfdf] max-lg:mb-14 mb-28"></div>
+                   
                 </div>
 
                 
 
-                <div ref={peaceRef} data-name="peace" className="flex flex-col max-lg:gap-14 gap-28">
-                    <div className="flex items-center max-lg:flex-col-reverse gap-5">
-                        <div className="lg:w-1/3">
-                            <img src="/purchase-protection.webp" alt="Purchase Protection" />
-                        </div>
-                        <div className="lg:w-2/3 bg-white rounded-3xl p-5">
-                            <h2 className="smaller-title">Purchase Protection</h2>
-                            <p>Shop with confidence, knowing that the purchases you make with your Mastercard are:</p>
-                            <ul className="pl-2 mt-7">
-                                {
-                                    purchase_protection.map((item, index) => 
-                                            (
-                                                <li key={index+1} className="flex items-center gap-3 mb-3">
-                                                    <span className="bg-[#f7f7f7] w-[30px] h-[30px] grow-0 shrink-0 rounded-full flex items-center justify-center">{index+1}</span> 
-                                                    <span>{item.title}</span>
-                                                </li>
-                                            )
-                                            
-                                    )
-                                }
-                            </ul>
-                            <p className="mt-8">
-                            In case of damage, you can either get a new item to replace the damaged one or receive compensation for the item’s total value, as per the store receipt. <br />
-                            Simply visit their <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com/">website</a> to file a claim.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
         
