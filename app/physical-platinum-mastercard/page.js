@@ -42,7 +42,7 @@ const cards = () => {
             <VirtualCard />
             <div className="bg-gray-100 py-10 lg:py-20">
                 <div className="container text-center">
-                    <TextBlock center={true} title="Physical Platinum Mastercard Benefits" description="i need text here i need text herei need text herei need text herei need text herei need text herei need text herei need text herei need text here" />
+                    <TextBlock center={true} title="Physical Platinum Mastercard Benefits" description="" />
                 </div>
                 
                 <Content />

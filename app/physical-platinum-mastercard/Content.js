@@ -145,7 +145,7 @@ const Content = () => {
   return (
     <div className="container py-10 lg:py-20">
         <div className="flex max-md:flex-col gap-x-5">
-            <Sidebar divInView={currentInView}/>
+            <Sidebar travelRef={travelRef} lifestyleRef={lifestyleRef} peaceRef={peaceRef} divInView={currentInView}/>
             
             <div className="">
                 <div ref={travelRef} data-name="travel" className="flex flex-col max-lg:gap-14 gap-28">
