@@ -32,36 +32,17 @@ export const data = [
             },
             {
                 title: 'Cards',
-                url: '/cards',
+                url: null,
                 children: [
                     {
-                        title: 'Virtual Card',
-                        url: '/cards?s=virtual-card'
+                        title: 'Physical Platinum Mastercard',
+                        url: '/physical-platinum-mastercard'
                     },
                     {
-                        title: 'Contactless Payment',
-                        url: '/cards?s=physical-card'
+                        title: 'Virtual Mastercard',
+                        url: '/virtual-mastercard'
                     },
-                    {
-                        title: 'Create Virtual Card',
-                        url: '/cards?s=physical-card'
-                    },
-                    {
-                        title: 'Tap to Pay',
-                        url: '/cards?s=physical-card'
-                    },
-                    {
-                        title: 'Card Controls',
-                        url: '/cards?s=card-controls'
-                    },
-                    {
-                        title: 'Transaction History',
-                        url: '/cards?s=transaction-history'
-                    },
-                    {
-                        title: 'Card Withdrawal',
-                        url: '/cards?s=card-withdrawal'
-                    },
+                    
                 ]
             },
             {
