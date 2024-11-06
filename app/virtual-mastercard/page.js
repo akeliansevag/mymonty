@@ -62,13 +62,13 @@ const VirtualMastercard = () => {
             title:'Top-Up for Exact Purchases',
             description: 'Load only what you need, then keep it at a zero balance for added security.',
             image: '/vcb-5.webp',
-            classes: 'col-span-2'
+            classes: 'lg:col-span-2'
         },
         {
             title:'Ideal for Managing Online Spending and Budgets',
             description: 'Keep full control of your online purchases.',
             image: '/vcb-6.webp',
-            classes: 'col-span-2'
+            classes: 'lg:col-span-2'
         },
         
     ]
