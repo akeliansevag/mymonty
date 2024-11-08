@@ -140,6 +140,51 @@ body.dark header.scrolling {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+body.white-header > header nav > ul > li > span {
+  color: white;
+}
+
+body.white-header > header.menu-open nav > ul > li > span,
+body.white-header > header.scrolling nav > ul > li > span {
+  color: black;
+}
+
+body.white-header header .logo svg path {
+  fill: #ffffff;
+}
+
+body.white-header header .dropdown-logo path {
+  stroke: #ffffff;
+}
+
+body.white-header header.scrolling .logo svg path,
+body.white-header header.menu-open .logo svg path {
+  fill: #000000;
+}
+
+body.white-header header.scrolling .dropdown-logo path,
+body.white-header header.menu-open .dropdown-logo path {
+  stroke: #000000;
+}
+
+body.white-header header .mm-button {
+  background-color: white;
+  color: black;
+}
+
+body.white-header header.scrolling .mm-button {
+  background-color: black;
+  color: white;
+}
+
+body.white-header .mobile-burger div div {
+  background-color: white;
+}
+
+body.white-header header.menu-open .mobile-burger div div {
+  background-color: black;
+}
+
 .scrolling {
   backdrop-filter: blur(16px);
   background-color: rgba(255, 255, 255, 0.8);

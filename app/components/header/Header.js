@@ -149,7 +149,7 @@ const Header = () => {
                             </defs>
                         </svg>
                     </Link>
-                    <svg onClick={handleRegionToggle} className='cursor-pointer' width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                    <svg onClick={handleRegionToggle} className='cursor-pointer dropdown-logo' width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
                         <path d='M6 9L12 15L18 9' stroke={pathname == '/business' ? '#FFFFFF' : '#000000'} strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'></path>
                     </svg>
                 </div>

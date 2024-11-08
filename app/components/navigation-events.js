@@ -15,6 +15,12 @@ export function NavigationEvents() {
             document.body.classList.remove('dark');
         }
 
+        if(pathname == '/payroll-services'){
+            document.body.classList.add('white-header');
+        } else {
+            document.body.classList.remove('white-header');
+        }
+
         const scrollToElement = (id) => {
             var element = document.getElementById(id);
             if (element) {
