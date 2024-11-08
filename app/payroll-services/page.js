@@ -2,9 +2,11 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Image from 'next/image';
 import banner from '@/public/payroll-services.webp';
+import bannerMobile from '@/public/payroll-services-mobile.webp';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
-
+import { faqData } from './data';
+import Accordion from './Accordion';
 
 import bnpl from '@/public/personal/bnpl.webp';
 import Carousel from '@/app/components/Carousel';
@@ -68,8 +70,9 @@ const loans = () => {
     };
     return (
         <div>
-            <section className="flex items-center relative min-h-[calc(100vh-var(--header-height))] w-full bg-blue-500">
-                <Image alt='Coins' fill placeholder='blur' quality={100} sizes='100vw' src={banner} className='object-cover w-full h-full' priority />
+            <section className="flex items-center relative min-h-[calc(100vh-var(--header-height))] w-full bg-[#1965a8]">
+                <Image alt='Coins' fill placeholder='blur' quality={100} sizes='100vw' src={banner} className='max-md:hidden object-cover w-full h-full' priority />
+                <Image alt='Coins' fill placeholder='blur' quality={100} sizes='100vw' src={bannerMobile} className='md:hidden object-cover w-full h-full' priority />
                 <div className="container flex relative z-10">
                     <div className="md:w-2/3">
                         <h1 className="text-white font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase">Subscribe to our payroll services &  
@@ -83,7 +86,24 @@ const loans = () => {
                 </div>
             </section>
             <SectionOne />
-
+            <section className="mb-20">
+                <div className='container'>
+                    <div className="text-center">
+                        <TextBlock title="Frequently Asked questions" center={true}/>
+                    </div>
+                        <div className="mt-20">
+                            {faqData && (
+                                faqData.map((item, index) => {
+                                    return (
+                                        <Accordion key={index} items={item.children} title={item.title} />
+                                    )
+                                })
+                            )}
+                        </div>
+                        
+                </div>
+            </section>
+                
             <Carousel data={carouselData} />
             <div id="bnpl">
                 <Section>
