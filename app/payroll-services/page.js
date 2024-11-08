@@ -13,7 +13,7 @@ import Carousel from '@/app/components/Carousel';
 import SectionOne from './SectionOne';
 
 export const metadata = {
-    title: websiteName + 'Loans',
+    title: websiteName + 'Payroll Services',
     description: '',
 };
 
