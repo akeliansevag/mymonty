@@ -318,7 +318,7 @@ ol {
 }
 
 .smaller-title {
-  @apply text-3xl font-bold mb-3;
+  @apply text-3xl font-bold mb-7;
 }
 
 .hole {
