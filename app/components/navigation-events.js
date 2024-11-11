@@ -15,7 +15,7 @@ export function NavigationEvents() {
             document.body.classList.remove('dark');
         }
 
-        if(pathname == '/payroll-services'){
+        if(pathname == '/payroll-services' || pathname == '/atm-receipt'){
             document.body.classList.add('white-header');
         } else {
             document.body.classList.remove('white-header');

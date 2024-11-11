@@ -332,3 +332,12 @@ ol {
 body.menu-hidden .sticky-filters {
   @apply top-[15px];
 }
+
+.gradient-bg {
+  background: linear-gradient(
+    246.96deg,
+    #000000 53.72%,
+    #2b3131 89.4%,
+    #288c99 117.38%
+  );
+}
