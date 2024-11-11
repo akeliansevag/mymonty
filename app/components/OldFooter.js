@@ -114,7 +114,7 @@ const Footer = () => {
                                     {!item.url && (
                                         <h6 className="flex justify-between item has-children cursor-pointer" onClick={() => handleClick(index)}>
                                             <span>{item.title}</span>
-                                            <svg className={`${toggleArrowClasses} transition-all duration-300 ease-in-out`} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg className={`${toggleArrowClasses} md:hidden transition-all duration-300 ease-in-out`} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M6 9L12 15L18 9" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                         </h6>
