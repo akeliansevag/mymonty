@@ -78,7 +78,7 @@ const VirtualMastercard = () => {
             <Banner data={data} />
             <section className="bg-white text-center py-28 max-lg:py-14">
                 <div className="container flex flex-col gap-8">
-                    <TextBlock buttonColor="dark" center={true} button={true} description="Spice up your digital lifestyle and make secure online purchases with ease. Your virtual card is ready whenever you are—no need to wait!" />
+                    <TextBlock buttonColor="dark" title="no need to wait!" center={true} button={true} description="Spice up your digital lifestyle and make secure online purchases with ease. Your virtual card is ready whenever you are." />
                     
                     <div className="relative">
                         <Image src={img2} alt="Girls Looking at the phone"/>

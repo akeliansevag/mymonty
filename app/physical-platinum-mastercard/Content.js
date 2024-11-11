@@ -187,10 +187,10 @@ const Content = () => {
                                 </div>
                                 <div className='text-white text-center'>
                                     <h4 className="font-bold text-4xl">GET 8% OFF</h4>
-                                    <p>through Cleartrip’s <a className="underline text-blue-800" target="_blank" href="https://www.cleartrip.ae/offers/uae/choose-your-country">website</a>
+                                    <p>through Cleartrip’s <a className="underline" target="_blank" href="https://www.cleartrip.ae/offers/uae/choose-your-country">website</a>
                                     </p>
-                                    <p>or app from <a className="underline text-blue-800" target="_blank" href="https://apps.apple.com/us/app/cleartrip-flights-hotels-bus/id531324961">App Store</a></p>
-                                    <p>or <a className="underline text-blue-800" target="_blank" href="https://play.google.com/store/apps/details?id=com.cleartrip.android&hl=en&gl=US&pli=1">Google Play</a></p>
+                                    <p>or app from <a className="underline" target="_blank" href="https://apps.apple.com/us/app/cleartrip-flights-hotels-bus/id531324961">App Store</a></p>
+                                    <p>or <a className="underline" target="_blank" href="https://play.google.com/store/apps/details?id=com.cleartrip.android&hl=en&gl=US&pli=1">Google Play</a></p>
                                     <Promo code="MCPLATINUM"/>
                                 </div>
                             </div>
