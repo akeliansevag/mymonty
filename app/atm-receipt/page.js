@@ -34,7 +34,7 @@ const ATMReceipt = () => {
                  <Image alt='Phone' fill placeholder='blur' quality={100} sizes='100vw' src={bannerMobile} className='md:hidden object-cover w-full h-full' priority />
                 <div className="container max-md:mt-[calc(var(--header-height)+30px)] flex relative z-10">
                     <div className="md:w-[55%]">
-                        <h1 className="text-white font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase">Touch Postpaid Bill Payments   
+                        <h1 className="text-white font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase">Touch Postpaid Bill Payments <br />
                             <span className="text-[#009FB4]"> Made Easy!</span></h1>
                         <div className="text-white mt-4">
                             <p>MONTY FINANCE SAL</p>
