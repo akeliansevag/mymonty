@@ -36,7 +36,7 @@ const ATMReceipt = () => {
                     <div className="md:w-[55%]">
                         <h1 className="text-white font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase">Touch Postpaid Bill Payments <br />
                             <span className="text-[#009FB4]"> Made Easy!</span></h1>
-                        <div className="text-white mt-4">
+                        <div className="text-white max-lg:mt-10 lg:mt-28">
                             <p>MONTY FINANCE SAL</p>
                             <p>TERMS & CONDITIONS APPLY</p>
                         </div>
