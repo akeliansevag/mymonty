@@ -41,7 +41,7 @@ const ATMReceipt = () => {
                     </div>
                     
                 </div>
-                <div className="text-white w-full max-lg:mt-10 text-[12px] absolute max-md:bottom-9 bottom-20 lg:mt-20">
+                <div className="text-white w-full max-lg:mt-10 max-md:text-[12px] text-[14px] absolute max-md:bottom-9 bottom-20 lg:mt-20">
                     <div className="container">
                         <p>MONTY FINANCE SAL</p>
                         <p>TERMS & CONDITIONS APPLY</p>
