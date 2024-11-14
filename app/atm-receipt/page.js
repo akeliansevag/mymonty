@@ -8,7 +8,7 @@ import Section from '../components/Section';
 
 import image2 from '@/public/instant-payment-access.webp';
 import image3 from '@/public/mymonty-iphone.webp';
-import image4 from '@/public/atm-girl.webp';
+import image4 from '@/public/fees-section.webp';
 import image5 from '@/public/mymonty-bills.webp';
 export const metadata = {
     title: websiteName + 'ATM Receipt',
@@ -32,15 +32,19 @@ const ATMReceipt = () => {
             <section className="bg-black relative min-h-screen flex md:items-center">
                  <Image alt='Phone' fill placeholder='blur' quality={100} sizes='100vw' src={banner} className='max-md:hidden object-cover w-full h-full' priority />
                  <Image alt='Phone' fill placeholder='blur' quality={100} sizes='100vw' src={bannerMobile} className='md:hidden object-cover w-full h-full' priority />
-                <div className="container max-md:mt-[calc(var(--header-height)+30px)] flex relative z-10">
+                <div className="container h-full max-md:mt-[calc(var(--header-height)+30px)] flex relative z-10">
                     <div className="md:w-[50%]">
                         <h1 className="text-white font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[4.2rem] leading-none uppercase">Touch Postpaid Bill Payments <br />
                             <span className="text-[#009FB4]"> Made Easy!</span></h1>
-                        <div className="text-white max-lg:mt-10 text-lg lg:mt-20">
-                            <p>MONTY FINANCE SAL</p>
-                            <p>TERMS & CONDITIONS APPLY</p>
-                        </div>
+                        <p className="text-white max-md:mt-3 max-md:text-base mt-6 md:pr-52">Settle your Touch postpaid bills in a snap, directly from your MyMonty wallet</p>
                         
+                    </div>
+                    
+                </div>
+                <div className="text-white w-full max-lg:mt-10 text-[12px] absolute max-md:bottom-9 bottom-20 lg:mt-20">
+                    <div className="container">
+                        <p>MONTY FINANCE SAL</p>
+                        <p>TERMS & CONDITIONS APPLY</p>
                     </div>
                 </div>
             </section> 
