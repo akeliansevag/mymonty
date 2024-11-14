@@ -94,7 +94,7 @@ const ATMReceipt = () => {
                                 </div>
                                 <div className="bg-[#f7f7f7] rounded-2xl p-8 mt-6">
                                     <h2 className="uppercase font-[900] text-2xl mb-3">simple tracking</h2>
-                                    <p>Manage multiple bills, view your history, and stay on top of your payments all </p>
+                                    <p>Manage multiple bills, view your history, and stay on top of your payments all in one place.</p>
                                 </div>
                             </div>
                         </div>
