@@ -90,7 +90,7 @@ const VirtualMastercard = () => {
 
             <section className="bg-gray-100 py-28 max-lg:py-14 text-center">
                 <div className="container">
-                    <TextBlock center={true} title="Virtual Card Benefits" description="Enjoy exclusive perks and secure global access with our Platinum Mastercard. Shop, dine, and travel with peace of mind. Like carrying convenience in your wallet!" />
+                    <TextBlock center={true} title="Virtual Card Benefits" description="Enjoy instant access and seamless online payments with our Virtual Card. Shop, subscribe, and transact securely. It’s all just a few taps away!" />
 
                     <div className="grid max-lg:grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
                         {
