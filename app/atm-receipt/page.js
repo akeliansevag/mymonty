@@ -64,7 +64,7 @@ const ATMReceipt = () => {
                                     <div className="absolute bg-[#378A95] w-[68px] h-[68px] rounded-full text-center flex items-center justify-center text-[41px] left-0 top-[20px] -translate-x-1/2 max-lg:left-1/2 max-lg:top-0 max-lg:-translate-y-1/2">{index+1}</div>
                                     <h4 className="italic mb-4 text-[#c9c9c9] max-lg:mt-4">Option {index+1}</h4>
                                     <h2 className="smaller-title uppercase">{item.title}</h2>
-                                    <p>{item.description}</p>
+                                    <p>{item.description}</p> 
                                 </div>
                             ))
                         }
