@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import banner from '@/public/fees-banner-4.webp';
-import mobileBanner from '@/public/fees-banner-4-mobile.webp';
+import banner from '@/public/fees-banner-3.webp';
+import mobileBanner from '@/public/fees-banner-3-mobile.webp';
 
 const landing = () => {
   return (
