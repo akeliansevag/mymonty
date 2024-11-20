@@ -2,8 +2,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import feesMobile from '@/public/0fees-mobile-3.webp';
-import fees from '@/public/0fees-desktop-3.webp';
+import feesMobile from '@/public/0fees-mobile-4.webp';
+import fees from '@/public/0fees-desktop-4.webp';
 
 
 const ZeroFees = () => {
