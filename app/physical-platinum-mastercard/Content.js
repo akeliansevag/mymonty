@@ -37,10 +37,10 @@ const Content = () => {
     }, []);
     const howToUse = [
         {
-            title: 'Download Mastercard Travel Pass App'
+            title: 'Download <a style="color:#2657d4" href="https://apps.apple.com/lb/app/mastercard-travel-pass/id1493489553" target="_blank">Mastercard Travel Pass App</a>'
         },
         {
-            title: 'Use the app to locate lounges near you'
+            title: 'Use the app to locate lounges near you.'
         },
         {
             title: 'Present the app QR code to the lounge receptionist'
@@ -76,10 +76,13 @@ const Content = () => {
             title: '30% off shipping for the first month following registration'
         },
         {
+            title: 'Free account setup (a $20 value)'
+        },
+        {
             title: 'Free Premium Membership for 2 years (a $120 value)'
         },
         {
-            title: '20% off shipping for the remainder of the 2-year membership'
+            title: '30% off shipping for the remainder of the 2-year membership'
         }
     ]
 
@@ -150,9 +153,9 @@ const Content = () => {
             <div className="">
                 <div ref={travelRef} data-name="travel" className="flex flex-col max-lg:gap-14 gap-28">
                     <div className="bg-white rounded-xl p-8">
-                        <h2 className="smaller-title">Middle East and Levant Platinum Mastercard Lounge Program</h2>
+                        <h2 className="smaller-title">Middle East & Levant Platinum Mastercard Lounge Program</h2>
                         <p>Enjoy FREE unlimited access to over 25 regional and international DragonPass lounges, business facilities, complimentary refreshments, and snacks mentioned in the MasterCard Travel Pass app.</p>
-                        <button className="mm-button blue mt-4">Download App Now</button>
+                        <a href="https://apps.apple.com/lb/app/mastercard-travel-pass/id1493489553" target="_blank" className="mm-button blue mt-4">Download App Now</a>
                         
                         <div className="flex lg:items-center max-lg:flex-col lg:-mt-10">
                             <div className="lg:w-5/6">
@@ -163,7 +166,7 @@ const Content = () => {
                                                 (
                                                     <li key={index+1} className="flex items-center gap-3 mb-3">
                                                         <span className="bg-[#f7f7f7] shrink-0 w-[30px] h-[30px] rounded-full flex items-center justify-center">{index+1}</span> 
-                                                        <span>{item.title}</span>
+                                                        <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
                                                     </li>
                                                 )
                                                 
@@ -178,7 +181,7 @@ const Content = () => {
                     </div>
 
                     <div>
-                        <h2 className="smaller-title text-center">Cleartrip Flights and Hotel Bookings</h2>
+                        <h2 className="smaller-title text-center">Cleartrip Flight & Hotel Bookings</h2>
                         <div className="min-h-[30vh] relative rounded-3xl p-10 overflow-hidden">
                             <img className="z-0 object-cover w-full h-full absolute top-0 left-0" src="/cleartrip.webp" />
                             <div className="flex max-lg:flex-col max-lg:gap-8 lg:justify-between relative z-1">
@@ -222,7 +225,8 @@ const Content = () => {
                     <div className="flex flex-col gap-5">
                         <div className="text-center">
                             <h2 className="smaller-title">Booking.com</h2>
-                            <p>Get <strong>10% money back</strong> on your next stay through <a href="https://booking.com" target="_blank" className="text-[--mm-blue]">Booking.com</a>, click on “Unlock Deals” and use the promo code below.</p>
+                            <p>Get <strong>10% money back</strong> on your next stay through <a href="https://booking.com" target="_blank" className="text-[--mm-blue]">Booking.com</a>!</p>
+                            <p className="md:px-10">Use your Platinum Mastercard at checkout, and your cashback will be credited to your Booking.com wallet within 70 days after your stay.</p>
                         </div>
                         <div className="overflow-hidden aspect-[16/7] relative flex justify-end">
                             <img className="absolute object-cover w-full h-full top-0" src="/booking-com.webp" alt="booking" />
@@ -342,17 +346,18 @@ const Content = () => {
                     <div className="flex flex-col gap-5">
                         <div className="text-center">
                             <h2 className="smaller-title">Farfetch</h2>
-                            <p>Enjoy <strong>10% off</strong> incredible fashion at Farfetch when spending $200 or above.</p>
+                            <p>Enjoy <strong>10% off</strong> incredible fashion at Farfetch when spending $300 or above with promo code: MCFF.</p>
+                            <p>You can also download the app from the <a className="blue-text" target="_blank" href="https://apps.apple.com/us/app/farfetch-shop-luxury-fashion/id906698760">App Store</a> or <a className="blue-text" target="_blank" href="https://play.google.com/store/search?q=farfetch&c=apps">Google Play</a>.</p>
                         </div>
                         <div className="lg:aspect-[87/32] lg:overflow-hidden relative lg:flex justify-end">
                             <img className="lg:absolute object-cover w-full top-0" src="/farfetch.webp" alt="booking" />
                             <div className="z-1 relative lg:pr-10 max-lg:flex max-lg:justify-center lg:pt-10">
-                                <Promo code="MCMEAFF10"/>
+                                <Promo code="MCFF"/>
                             </div>
                         </div>
                         <div className="text-center">
                             <p>
-                                Check out the <a target="_blank" className="text-[--mm-blue]" href="https://www.farfetch.com/lb/mastercard/privileges/evergreen/terms-and-conditions.aspx?clickref=1011lzRV4NqX&utm_source=mastercard_privileges&utm_medium=partnerships&utm_campaign=PHPAR&pid=performancehorizon_int&c=PHPAR&clickid=1011lzRV4NqX&af_siteid=mastercard_privileges&af_cost_model=CPA&af_channel=partnerships&is_retargeting=true">Terms & Conditions</a> for clarification on the excluded brands.
+                                Check out the <a target="_blank" className="text-[--mm-blue]" href="https://www.farfetch.com/lb/mastercard/privileges/evergreen/terms-and-conditions.aspx?clickref=1011lzRV4NqX&utm_source=mastercard_privileges&utm_medium=partnerships&utm_campaign=PHPAR&pid=performancehorizon_int&c=PHPAR&clickid=1011lzRV4NqX&af_siteid=mastercard_privileges&af_cost_model=CPA&af_channel=partnerships&is_retargeting=true">Terms & Conditions</a> for clarification on excluded brands & items.
                             </p>
                         </div>
                     </div>
@@ -443,7 +448,7 @@ const Content = () => {
                     <div>
                         <div className="text-center">
                         <h2 className="smaller-title">Lingokids</h2>
-                        <p>Have your child learn through play, and develop skills like creativity, collaboration, critical thinking, and communication. Join the adventure and enjoy: </p>
+                        <p>Let your child learn through play and build skills like creativity, collaboration, critical thinking, and communication. Join the adventure and enjoy: </p>
                         </div>
                         <div className="gap-5 mt-8 items-center flex max-lg:flex-col">
                             <div className="lg:w-1/3">

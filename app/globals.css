@@ -341,3 +341,7 @@ body.menu-hidden .sticky-filters {
     #288c99 117.38%
   );
 }
+
+.blue-text {
+  color: var(--mm-blue);
+}

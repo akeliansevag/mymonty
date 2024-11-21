@@ -18,7 +18,7 @@ const VirtualMastercard = () => {
     const data = {
         title: 'Virtual MasterCard',
         subtitle: 'Cards',
-        desc: 'Your Digital Wallet’s Best Friend—The Virtual Mastercard!',
+        desc: 'Your Digital Wallet’s Best Friend',
         image: {
             inGrid: true,
             layout: 'half',
@@ -66,7 +66,7 @@ const VirtualMastercard = () => {
         },
         {
             title:'Ideal for Managing Online Spending and Budgets',
-            description: 'Keep full control of your online purchases.',
+            description: 'Take full control and stay on top of your online purchases.',
             image: '/vcb-6.webp',
             classes: 'lg:col-span-2'
         },
@@ -78,7 +78,7 @@ const VirtualMastercard = () => {
             <Banner data={data} />
             <section className="bg-white text-center py-28 max-lg:py-14">
                 <div className="container flex flex-col gap-8">
-                    <TextBlock buttonColor="dark" title="no need to wait!" center={true} button={true} description="Spice up your digital lifestyle and make secure online purchases with ease. Your virtual card is ready whenever you are." />
+                    <TextBlock buttonColor="dark" title="no need to wait!" center={true} button={true} description="Spice up your digital lifestyle and make secure online purchases with ease. Your virtual card is ready whenever you are — no need to wait!" />
                     
                     <div className="relative">
                         <Image src={img2} alt="Girls Looking at the phone"/>
