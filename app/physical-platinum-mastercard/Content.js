@@ -145,6 +145,18 @@ const Content = () => {
             title: 'Covered for up to USD 2,000 per claim and a maximum of USD 5,000 over 12 months'
         }
     ]
+
+    const howToUseCosta = [
+        {
+            title: 'Download the <strong>Mastercard Travel Pass</strong> App from the <a target="_blank" href="https://apps.apple.com/lb/app/mastercard-travel-pass/id1493489553" style="color:#2657d4">App Store</a> or <a target="_blank" href="https://play.google.com/store/apps/details?id=com.dragonpass.en.mcmea&hl=en_US" style="color:#2657d4">Google Play</a>, and register your Platinum Mastercard'
+        },
+        {
+            title: 'Enter your Dubai Airport location to find the Costa offer.'
+        },
+        {
+            title: 'Redeem one item from the predetermined list, and show the QR code with your boarding pass to Costa staff.'
+        }
+    ];
   return (
     <div className="container py-10 lg:py-20">
         <div className="flex max-md:flex-col gap-x-5">
@@ -285,6 +297,48 @@ const Content = () => {
                             </div>
                         </div>
                         
+                    </div>
+
+                    <div>
+                        <div className="text-center">
+                            <h2 className="smaller-title">Costa Coffee</h2>
+                            <p>Get a free food or drink item at Costa in Dubai Airports!</p>
+                        </div>
+                        
+                        <div className="flex max-md:flex-col gap-8 mt-10">
+                            <div className="bg-white w-full md:w-1/3 rounded-xl relative overflow-hidden">
+                               <img src='/costa.webp' className="md:absolute object-cover w-full h-full" alt="Costa Coffee"/>
+                            </div>
+                            <div className="bg-white rounded-xl p-8 w-full md:w-2/3">
+                                <h3 className="font-bold mb-3 max-md:mt-10">HOW TO USE:</h3>
+                                <ul className="pl-2">
+                                    {
+                                        howToUseCosta.map((item, index) => 
+                                                (
+                                                    <li key={index+1} className="flex gap-3 mb-3">
+                                                        <span className="bg-[#f7f7f7] mt-1 shrink-0 w-[30px] h-[30px] rounded-full flex items-center justify-center">{index+1}</span> 
+                                                        <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
+                                                    </li>
+                                                )
+                                                
+                                        )
+                                    }
+                                </ul>
+                                     
+                                <div className="pt-5">
+                                    <div className="flex items-center gap-3 mb-2">
+                                        <h3 className="font-bold">
+                                         Just a heads up 
+                                        </h3>
+                                        <span>
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 9.5V6M11 13H11.01M8.9 18.2L10.36 20.1467C10.5771 20.4362 10.6857 20.5809 10.8188 20.6327C10.9353 20.678 11.0647 20.678 11.1812 20.6327C11.3143 20.5809 11.4229 20.4362 11.64 20.1467L13.1 18.2C13.3931 17.8091 13.5397 17.6137 13.7185 17.4645C13.9569 17.2656 14.2383 17.1248 14.5405 17.0535C14.7671 17 15.0114 17 15.5 17C16.8978 17 17.5967 17 18.1481 16.7716C18.8831 16.4672 19.4672 15.8831 19.7716 15.1481C20 14.5967 20 13.8978 20 12.5V6.8C20 5.11984 20 4.27976 19.673 3.63803C19.3854 3.07354 18.9265 2.6146 18.362 2.32698C17.7202 2 16.8802 2 15.2 2H6.8C5.11984 2 4.27976 2 3.63803 2.32698C3.07354 2.6146 2.6146 3.07354 2.32698 3.63803C2 4.27976 2 5.11984 2 6.8V12.5C2 13.8978 2 14.5967 2.22836 15.1481C2.53284 15.8831 3.11687 16.4672 3.85195 16.7716C4.40326 17 5.10218 17 6.5 17C6.98858 17 7.23287 17 7.45951 17.0535C7.76169 17.1248 8.04312 17.2656 8.2815 17.4645C8.46028 17.6137 8.60685 17.8091 8.9 18.2Z" stroke="black" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </span>
+                                    </div> 
+                                    <p>After redeeming your Costa offer, lounge access will be temporarily unavailable for 2 hours and vice versa.</p>
+                                </div>
+                            </div>
+                           
+                        </div>    
                     </div>
                     
                     <div className="w-full h-[1px] bg-[#dfdfdf] max-lg:mb-14 mb-28"></div>
