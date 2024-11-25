@@ -126,16 +126,7 @@ const Content = () => {
         {
             title: 'Multiple disciplines: Barre, HIIT, strength, yoga & more'
         }
-    ]
-
-    const lingokids = [
-        {
-            title: '2 months of Lingokids for free for new users'
-        },
-        {
-            title: '30% off monthly subscriptions for new and existing users'
-        },
-    ]
+    ];
 
     const purchase_protection = [
         {
@@ -156,6 +147,19 @@ const Content = () => {
         {
             title: 'Redeem one item from the predetermined list, and show the QR code with your boarding pass to Costa staff.'
         }
+    ];
+
+    const howToRedeem = [
+        {
+            title: 'Visit the <a target="_blank" href="https://lingokids.com/mastercardmea" style="color:#2657d4">Lingokids Mastercard page</a>, enter the promo code, and click <strong>Redeem</strong>.'
+        },
+        {
+            title: 'Enter your email and complete payment.'
+        },
+        {
+            title: 'Download the Lingokids app, log in with your email, and select <strong>I have an account</strong>.'
+        }
+        
     ];
   return (
     <div className="container py-10 lg:py-20">
@@ -500,34 +504,48 @@ const Content = () => {
                     </div>
                     
                     <div>
-                        <div className="text-center">
-                        <h2 className="smaller-title">Lingokids</h2>
-                        <p>Let your child learn through play and build skills like creativity, collaboration, critical thinking, and communication. Join the adventure and enjoy: </p>
+                        <div className="bg-white rounded-xl p-8">
+                            <div className="flex max-md:flex-col gap-32 max-md:gap-7">
+                                <div className="md:w-1/2">
+                                    <h2 className="smaller-title">Lingokids</h2>
+                                    <p>Let your child learn through play and build skills like creativity, collaboration, critical thinking, and communication. Join the adventure and enjoy:</p>
+                                    <div className="flex flex-col gap-5 mt-5">
+                                        <div className="bg-[#f7f7f7] p-4 rounded-xl text-lg">
+                                            50% off on all future monthly subscriptions 
+                                            for new and existing users
+                                        </div>
+
+                                        <div className="bg-[#f7f7f7] p-4 rounded-xl text-lg">
+                                            1 week of complimentary Lingokids Plus membership
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="md:w-1/2">
+                                    <h3 className="font-bold mb-3">HOW TO REDEEM:</h3>
+                                    <ul className="pl-2">
+                                        {
+                                            howToRedeem.map((item, index) => 
+                                                    (
+                                                        <li key={index+1} className="flex gap-3 mb-3">
+                                                            <span className="bg-[#f7f7f7] mt-1 shrink-0 w-[30px] h-[30px] rounded-full flex items-center justify-center">{index+1}</span> 
+                                                            <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
+                                                        </li>
+                                                    )
+                                                    
+                                            )
+                                        }
+                                    </ul>
+                                    <div className="pl-3 mt-4">
+                                        <Promo code="MASTERCARD50" black={true} full={true}/>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="mt-5">
+                                <img className="w-full" src="/lingo.webp" alt="Lingo Kids" />
+                            </div>
                         </div>
-                        <div className="gap-5 mt-8 items-center flex max-lg:flex-col">
-                            <div className="lg:w-1/3">
-                            <div className="flex justify-center">
-                                <Promo code="MASTERCARDMEA" />
-                            </div>
-                            
-                            <ul className="flex flex-col gap-5">
-                                {
-                                    lingokids.map((item,index)=>(
-                                        <li key={index} className="bg-white p-5 rounded-xl">
-                                            {item.title}
-                                        </li>
-                                    ))
-                                }
-                            </ul>
-                            
-                            </div>
-                            <div className="lg:w-2/3">
-                                <img src="/lingokids.webp" alt="Fiit" />
-                            
-                            </div>
-                            
-                        </div>
-                        <p className="text-center mt-5">Visit their <a href="https://lingokids.com/mastercardmea" className="text-[var(--mm-blue)]" target="_blank">website</a> and use promo code at checkout.</p>
+                       
                     </div>
 
                    
