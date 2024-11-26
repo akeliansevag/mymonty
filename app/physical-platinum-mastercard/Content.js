@@ -461,14 +461,14 @@ const Content = () => {
                         </p>
                     </div>
 
-                    <div className="flex max-lg:flex-col gap-10 items-center">
+                    <div className="flex max-lg:flex-col gap-10">
                         <div className="lg:w-1/3">
                                 <img src="/medical-tourism-concierge.webp" alt="MyUS" />
                         </div>
                         <div className="lg:w-2/3">
                             <h2 className="smaller-title">Medical Tourism Concierge</h2>
                             <p>Get treatments with the best medical experts, hospitals, and clinics in India, Turkey, UAE, Germany, and Thailand. With this service, you can get:</p>
-                            <div className="grid lg:grid-cols-2 gap-6 mt-5 mb-5">
+                            <div className="grid lg:grid-cols-2 gap-3 mt-5 mb-5">
                                 {
                                     treatments.map((item,index)=> (
                                         <div key={index} className="bg-white rounded-2xl p-5">
@@ -539,7 +539,7 @@ const Content = () => {
                                             )
                                         }
                                     </ul>
-                                    <div className="pl-3 mt-4">
+                                    <div className="px-5 mt-4">
                                         <Promo code="MASTERCARD50" black={true} full={true}/>
                                     </div>
                                 </div>
