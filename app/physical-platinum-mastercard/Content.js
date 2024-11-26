@@ -19,7 +19,11 @@ const Content = () => {
                 }
               });
             },
-            { threshold: 0.1 } // Adjust threshold for desired visibility
+           {
+            root: null, 
+            rootMargin: '-15% 0% -15% 0%',
+            //threshold: 0.5, 
+           } // Adjust threshold for desired visibility
         );
 
        // Observe each ref
@@ -550,9 +554,6 @@ const Content = () => {
 
                    
                 </div>
-
-                
-
                 
             </div>
         </div>

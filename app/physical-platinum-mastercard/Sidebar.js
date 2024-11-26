@@ -1,7 +1,4 @@
 import React from 'react'
-import TravelIcon from './TravelIcon'
-import LifestyleIcon from './LifestyleIcon'
-import PeaceofmindIcon from './PeaceofmindIcon'
 import Icon from './Icon'
 
 const Sidebar = ({divInView,travelRef,lifestyleRef,peaceRef}) => {
