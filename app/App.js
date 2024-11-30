@@ -20,9 +20,9 @@ const App = ({ children }) => {
     const pathname = usePathname();
     return (
         <>  
-            {pathname != '/zero-fees' && (
+            {/* {pathname != '/zero-fees' && (
                 <ZeroFees />
-            )}
+            )} */}
             
             <Modal formComponent={formComponent || dynamicFormComponent} isOpen={openModal} handleOpenModal={handleOpenModal} handleCloseModal={handleCloseModal} largeWidth={largeWidth} />
             <Header />
