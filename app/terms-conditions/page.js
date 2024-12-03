@@ -4,7 +4,7 @@ import termsImage from '@/public/personal/terms-and-conditions.webp';
 import FooterBanner from '../components/FooterBanner';
 
 export const metadata = {
-    title: websiteName + 'Customer Agreement',
+    title: websiteName + 'Terms & Conditions',
     description: ''
 };
 

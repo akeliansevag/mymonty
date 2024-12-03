@@ -4,8 +4,8 @@ import { websiteName } from '@/app/config';
 import banner from '@/public/khoury-home-banner.webp';
 import bannerMobile from '@/public/khoury-banner-mobile.webp';
 import TextBlock from '../components/TextBlock';
-import Section from '../components/Section';
-import image2 from '@/public/santa.webp';
+import santa1 from '@/public/santa-1.webp';
+import santa2 from '@/public/santa-2.webp';
 import whiteCard from '@/public/white-card.webp';
 import plexiQR from '@/public/plexi-qr.webp';
 import christmasBG from '@/public/christmas-bg.webp';
@@ -22,15 +22,27 @@ const KhouryHome = () => {
   
     return (
         <>
-            <section className="bg-black relative">
+            <section className="bg-black relative text-white">
                 <Image className="w-full max-md:hidden" alt="Santa" src={banner} placeholder='blur' quality={100} />
                 <Image className="w-full md:hidden" alt="Santa" src={bannerMobile} placeholder='blur' quality={100} />
+                <div className="absolute bottom-6 w-full max-md:px-4 px-12 flex justify-between items-center gap-2 max-md:text-xs text-base">
+                    <div>
+                        <p>* <a className="underline underline-offset-4" href="/khoury-home/terms-and-conditions">Terms and conditions</a> apply</p>
+                    </div>
+                    <div>
+                     <p>Monty Finance S.A.L.</p>
+                    </div>
+                </div>
             </section> 
             <section className="max-lg:py-10 py-24">
                 <div className="container text-center">
                     <TextBlock title="The ultimate Christmas offer" description='This holiday season, MyMonty and Khoury Home are here to bring you an unbeatable Christmas shopping experience with up to 20% OFF your favorite products!' center={true}/>
-                    <p className="mt-5">*<a href="/terms-conditions" className="underline blue-text">Terms and conditions</a> apply.</p>
-                    <Image className="max-w-[720px] mx-auto mt-8 w-full" alt="Girl Atm" src={image2} placeholder='blur' quality={100} />
+                    <p className="mt-5">*<a href="/khoury-home/terms-and-conditions" className="underline blue-text">Terms and conditions</a> apply.</p>
+                    <div className="mt-8 grid grid-cols-2 max-lg:gap-4 lg:gap-8 max-w-[720px] mx-auto">
+                        <Image alt="Santa" src={santa1} placeholder='blur' quality={100} />
+                        <Image alt="Santa" src={santa2} placeholder='blur' quality={100} />
+                    </div>
+                    
                 </div>
             </section>
             
@@ -89,7 +101,7 @@ const KhouryHome = () => {
                     <div className="grid lg:grid-cols-2 items-center gap-10">
                         <div>
                             <TextBlock title="Don’t miss out!" description="Get up to 20% OFF with MyMonty and make this holiday season unforgettable for you and your loved ones!" buttonColor="dark" button={true}/>
-                            <p className="mt-10 max-lg:mb-10">*<a href="/terms-conditions" className="underline blue-text">Terms and conditions</a> apply.</p>
+                            <p className="mt-10 max-lg:mb-10">*<a href="/khoury-home/terms-and-conditions" className="underline blue-text">Terms and conditions</a> apply.</p>
                         </div>
                         <div>
                             <Image className="max-lg:mx-auto" alt="Santa" src={santa} placeholder='blur' quality={100} />
