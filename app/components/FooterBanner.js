@@ -1,6 +1,12 @@
+'use client'
+
 import React from 'react';
+import Link from 'next/link';
+import { usePathname, useSearchParams } from 'next/navigation';
 
 function FooterBanner({ subtitle, title, downloadURL }) {
+    const pathname = usePathname()
+    console.log(pathname)
     return (
         <section className='py-32 flex flex-col justify-center w-full relative bg-gray-100'>
             <div className='container'>
@@ -8,7 +14,16 @@ function FooterBanner({ subtitle, title, downloadURL }) {
                     <div class="flex flex-col w-full md:w-2/3 justify-center md:mt-0 ">
                         <div>
                             {subtitle && (
-                                <h2 className="font-bold opacity-60">{subtitle}</h2>
+                                <div className="flex items-center gap-4">
+                                    { pathname == '/khoury-home/terms-and-conditions' && (
+                                        <Link href="/khoury-home">
+                                            <svg className="opacity-60" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15 8H1M1 8L8 15M1 8L8 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </Link>
+                                    )}
+                                    <h2 className="font-bold opacity-60">{subtitle}</h2>
+                                </div>
                             )}
                             <h1 class="font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase mt-6">
                                 {title}

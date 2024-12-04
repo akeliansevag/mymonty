@@ -13,21 +13,24 @@ const khterms = () => {
             <FooterBanner subtitle="Terms and Conditions" title="MYMONTY x KHOURY HOME DISCOUNTS PROMOTION" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content'>
-                <h2>What is this promotion about?</h2>
-                <p>Monty Finance S.A.L. is offering its personal customers who have successfully onboarded to MyMonty application (the “<strong>MyMonty Customers</strong>”) the opportunity to benefit from the MyMonty x Khoury Home Discounts Promotion (the “<strong>Promotion”</strong>). <br />
-                The Promotion runs from 10 AM on December 7, 2024 to 7 PM on December 31, 2024 (the “<strong>Promotion Period</strong>”). <br />
-                The Promotion allows exclusive discounts (the “<strong>Discounts”</strong>) for all MyMonty Customers on products purchased at Khoury Home and La Maison Khoury Home points of sale (“<strong>KH POS</strong>”) in all the Lebanese territory. The Promotion applies for purchases made in LBP and USD. <br /> 
-                These Promotion terms and conditions (the “<strong>Promotion Terms</strong>”) outline the rules that govern this Promotion. By taking part in this Promotion, you agree to comply with both these Promotion Terms and the terms and conditions of your MyMonty Customer Agreement.</p>
+                    <h2>What is this promotion about?</h2>
+
+                    <p>Monty Finance S.A.L. is offering its personal customers who have successfully onboarded to MyMonty application (the “<strong>MyMonty Customers</strong>”) the opportunity to benefit from the MyMonty x Khoury Home Discounts Promotion (the “<strong>Promotion”</strong>). <br />
+                    The Promotion runs from 10 AM on December 7, 2024 to 7 PM on December 31, 2024 (the “<strong>Promotion Period</strong>”). <br />
+                    The Promotion allows exclusive discounts (the “<strong>Discounts”</strong>) for all MyMonty Customers on products purchased at Khoury Home and La Maison Khoury Home points of sale (“<strong>KH POS</strong>”) in all the Lebanese territory. The Promotion applies for purchases made in LBP and USD. <br /> 
+                    These Promotion terms and conditions (the “<strong>Promotion Terms</strong>”) outline the rules that govern this Promotion. By taking part in this Promotion, you agree to comply with both these Promotion Terms and the terms and conditions of your MyMonty Customer Agreement.</p>
 
 
-                <h2 className="mt-10">Who is eligible for the promotion?</h2>
-                <p>To be eligible for this Promotion, you must have an active MyMonty personal eWallet account (not suspended, closed or restricted).</p>
+                    <h2 className="mt-10">Who is eligible for the promotion?</h2>
+                    <p>To be eligible for this Promotion, you must have an active MyMonty personal eWallet account (not suspended, closed or restricted).</p>
 
 
-                <h2 className="mt-10">How do I benefit from discounts?</h2>
-                <p>
-                    <strong>MyMonty Customers discounts</strong><br />
-                    If you are a MyMonty Customer, you will receive the following discounts on purchases you make with your physical MyMonty prepaid card or MyMonty eWallet (via QR) at KH POS during the Promotion Period:</p>
+                    <h2 className="mt-10">How do I benefit from discounts?</h2>
+                    <p>
+                        <strong>MyMonty Customers discounts</strong><br />
+                        If you are a MyMonty Customer, you will receive the following discounts on purchases you make with your physical MyMonty prepaid card or MyMonty eWallet (via QR) at KH POS during the Promotion Period:
+                    </p>
+                    
                     <ul>
                         <li>10% of Khoury Home products (excluding mobile phones and products on sale); and</li>
                         <li>20% of La Maison Khoury Home products (excluding products on sale).</li>
@@ -35,7 +38,7 @@ const khterms = () => {
                 
 
 
-                <h2 className="mt-10">What other legal information should I know?</h2>
+                    <h2 className="mt-10">What other legal information should I know?</h2>
                     <ol>
                         <li>This Promotion is offered by Monty Finance S.A.L. in collaboration with Khoury Home Appliances S.A.L.</li>
                         <li>We may suspend or end the Promotion at any time before the end of the Promotion Period, if, in our reasonable opinion, the Promotion is being abused or may negatively affect our goodwill, reputation or commercial interests.</li>
