@@ -184,7 +184,9 @@ body.white-header .mobile-burger div div {
 body.white-header header.menu-open .mobile-burger div div {
   background-color: black;
 }
-
+.gradient-christmas {
+  background: linear-gradient(345deg, rgba(135,2,16,1) 0%, rgba(193,14,36,1) 70%);
+}
 .scrolling {
   backdrop-filter: blur(16px);
   background-color: rgba(255, 255, 255, 0.8);

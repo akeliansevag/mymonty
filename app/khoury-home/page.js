@@ -76,8 +76,8 @@ const KhouryHome = () => {
                 </div>
             </section>
            
-            <section className="relative w-full pt-14 bg-red-800">
-                <Image className="absolute w-full h-full object-cover top-0 left-0 z-0" alt="Virtual Card" src={christmasBG} placeholder='blur' quality={100} />
+            <section className="gradient-christmas relative w-full pt-14">
+                <Image className="hidden md:block absolute w-full h-full object-cover top-0 left-0 z-0" alt="Virtual Card" src={christmasBG} placeholder='blur' quality={100} />
                 <div className="container relative z-10">
                     <svg width="111" height="109" viewBox="0 0 111 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M11 21.32C11 14.5158 16.5159 9 23.32 9H88.68C95.4842 9 101 14.5159 101 21.32V86.68C101 93.4842 95.4841 99 88.68 99H23.32C16.5158 99 11 93.4841 11 86.68V21.32ZM40.0232 36H30V71.2436H40.0232V36ZM59.7965 41.7868C62.4194 36.7391 67.395 36 70.694 36L70.685 36.018C80.3747 36.018 82.9977 43.7518 82.9977 52.4951V71.2616H72.9745V52.6934C72.9745 47.9792 71.5593 44.2836 67.1877 44.2836C62.816 44.2836 61.473 48.1144 61.473 52.7565V71.2526H51.5219V52.6844C51.5219 47.9702 50.1788 44.2746 45.7351 44.2746C44.6715 44.2746 43.8783 44.5089 43.3555 44.7613V37.9019C45.041 36.7211 46.8798 36 49.2324 36C54.4784 36 58.0478 38.2895 59.7965 41.7868Z" fill="white"/>
