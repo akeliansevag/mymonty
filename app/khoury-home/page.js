@@ -61,15 +61,15 @@ const KhouryHome = () => {
 
                         <div className="grid lg:grid-cols-3 gap-10 mt-8">
                             <div className="md:pr-20">
-                                <TextBlock title="IF you’re a mymonty user" description="Pay using MyMonty card or the QR code and get 10% discount on Khoury Home products and 20% discount on La Maison products." />
+                                <TextBlock title="IF you’re a mymonty user" description="Pay using your MyMonty card or the QR code and get a 10% discount on Khoury Home products and a 20% discount on La Maison products." />
                             </div>
                             <div className="bg-[#E8A600] bg-opacity-[8%] rounded-[30px] max-md:px-8 px-14 py-16">
                                 <Image className="mx-auto" alt="Physical Card" src={physicalCard} placeholder='blur' quality={100} />
-                                <h4 className="uppercase font-[900] text-center text-[20px] mt-6">Pay using mymonty card</h4>
+                                <h4 className="uppercase font-[900] text-center text-[20px] mt-6">Pay with your mymonty card</h4>
                             </div>
                             <div className="bg-[#F37E69] bg-opacity-[8%] rounded-[30px] max-md:px-12 px-28 py-16">
                                 <Image className="mx-auto" alt="Plexi QR" src={plexiQR} placeholder='blur' quality={100} />
-                                <h4 className="uppercase font-[900] text-center text-[20px] mt-6">Pay by scanning qr code</h4>
+                                <h4 className="uppercase font-[900] text-center text-[20px] mt-6">Pay by scanning the qr code</h4>
                             </div>
                         </div>
                     </div>
@@ -86,7 +86,7 @@ const KhouryHome = () => {
                     </svg>
                     <div className="grid lg:grid-cols-2 mt-8 max-lg:gap-10 gap-36">
                         <div className="text-white">
-                            <TextBlock title="IF you’re Not a mymonty user" description="Visit MyMonty booth at Khoury Home Dora or Ghazir, and MyMonty team will help you download the app and set up an account to benefit from the offer. <br /><br /> In other branches where our staff is not present, you can reach MyMonty’s 24/7 customer support team by calling <a style='text-decoration:underline;' href='tel:+9611734020'>01-734020</a> or via WhatsApp at <a style='text-decoration:underline;' href='tel:+96171871871'>71-871871</a>, Monday to Friday from 9 AM to 5 PM." />
+                            <TextBlock title="IF you’re Not a mymonty user" description="Visit our MyMonty booth at Khoury Home Dora or Ghazir, and the MyMonty team will help you download the app and set up an account to benefit from the offer. <br /><br /> In other branches where our staff is not present, you can reach MyMonty’s 24/7 customer support team by calling <a style='text-decoration:underline;' href='tel:+9611734020'>01-734020</a> or via WhatsApp at <a style='text-decoration:underline;' href='tel:+96171871871'>71-871871</a>, Monday to Friday from 9 AM to 5 PM." />
                         </div>
                         <div>
                             <Image className="max-lg:mx-auto" alt="Plexi QR" src={mobile} placeholder='blur' quality={100} />
