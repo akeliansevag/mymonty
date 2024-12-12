@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import khouryhome from '@/public/khouryhomeaddesktop.webp';
+import khouryhome from '@/public/khouryhomedesktop2.webp';
 import khouryhomemobile from '@/public/khouryhomeadmobile.webp';
 
 
