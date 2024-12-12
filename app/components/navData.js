@@ -39,6 +39,10 @@ export const data = [
                         url: '/physical-platinum-mastercard'
                     },
                     {
+                        title: 'Platinum Credit Card',
+                        url: '/platinum-credit-card'
+                    },
+                    {
                         title: 'Virtual Mastercard',
                         url: '/virtual-mastercard'
                     },

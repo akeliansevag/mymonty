@@ -19,7 +19,7 @@ const cards = () => {
     const data = {
         title: 'Platinum credit card',
         subtitle: 'Cards',
-        desc: 'Your personal sidekick. Always by your side!',
+        desc: '<strong>1% Cashback</strong> on any amount spent using the MyMonty Credit Card at Points of Sale or online.',
         image: {
             inGrid: true,
             layout: 'half',
