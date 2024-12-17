@@ -13,9 +13,9 @@ const AnimatedBanner = () => {
     }, [])
     return (
         <div className='flex md:justify-end mr-10'>
-            <div className='h-[500px] bg-black w-[300px] md:w-[360px] rounded-[30px] flex flex-col justify-end relative'>
+            <div className='h-[500px] bg- w-[300px] md:w-[360px] rounded-[30px] flex flex-col justify-end relative'>
                 <video className='mb-6' width="100%" playsInline autoPlay muted loop controls={false}>
-                    <source src='/rotating-cards-4.mp4' type="video/mp4" />
+                    <source src='/rotating-cards-5.mp4' type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             
