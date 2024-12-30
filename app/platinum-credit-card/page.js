@@ -38,7 +38,7 @@ const cards = () => {
 
     return (
         <>
-            <Banner data={data} AnimatedImage={AnimatedBanner}/>
+            <Banner terms={true} data={data} AnimatedImage={AnimatedBanner}/>
             <VirtualCard />
             <div className="bg-gray-100 py-10 lg:py-20">
                 <div className="container text-center">

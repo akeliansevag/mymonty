@@ -6,7 +6,7 @@ import { useAppContext } from '../AppContext';
 import Form from '@/app/business/Form';
 import AppForm from '@/app/components/Form';
 
-const Banner = ({ data, theme, salaryForm, AnimatedImage }) => {
+const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
     let target = data.cta?.link?.target ? data.cta.link.target : '';
     const { handleOpenModal } = useAppContext();
 
@@ -137,6 +137,16 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage }) => {
                     )
                 }
             </div>
+            
+            {
+                terms && (
+                    <div className='container text-base underline text-[#2657D4] mt-10'>
+                        <a className='uppercase' href='/credit-cards-terms-and-conditions.pdf' target='_blank'>TERMS & CONDITIONS APPLY</a> <br />
+                        <a className='uppercase' href='/credit-cards-kfs.pdf' target='_blank'>Key Facts Statement (KFS)</a>
+                    </div>
+                )
+            }
+           
         </section>
     )
 }
