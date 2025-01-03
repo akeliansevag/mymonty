@@ -21,9 +21,9 @@ const App = ({ children }) => {
     const pathname = usePathname();
     return (
         <>  
-            {pathname != '/khoury-home' && (
+            {/* {pathname != '/khoury-home' && (
                 <KhouryHome />
-            )}
+            )} */}
             
             <Modal formComponent={formComponent || dynamicFormComponent} isOpen={openModal} handleOpenModal={handleOpenModal} handleCloseModal={handleCloseModal} largeWidth={largeWidth} />
             <Header />
