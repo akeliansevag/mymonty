@@ -8,8 +8,8 @@ import privacyImage from '@/public/personal/privacy.webp';
 import SmallBanner from '../components/SmallBanner';
 
 export const metadata = {
-    title: websiteName + 'Privacy Policy',
-    description: '',
+    title: websiteName + 'Privacy Policy - Data Protection',
+    description: 'Learn more about our privacy policy at My Monty as we are committed to handling your personal data in a fair, secure, and transparent manner.',
 };
 
 const terms = () => {

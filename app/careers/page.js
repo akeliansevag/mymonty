@@ -9,8 +9,8 @@ import growthOriented from '@/public/company/growth-oriented-environment.png';
 import embark from '@/public/embark.webp';
 
 export const metadata = {
-  title: websiteName + 'Careers',
-  description: '',
+  title: websiteName + 'Explore Different Careers',
+  description: 'Explore the diverse range of career opportunities at My Monty and join a team that values your growth and aspirations. Check out our vacancies on LinkedIn now!',
 };
 
 const data = {

@@ -14,8 +14,8 @@ import topUp from '@/public/top-up.webp';
 import Image from 'next/image';
 
 export const metadata = {
-    title: websiteName + 'Payments',
-    description: '',
+    title: websiteName + 'Online Payment Apps',
+    description: 'Download the My Monty app today and feel the ease and speed of simple and secure payments guaranteed to provide you with a seamless banking experience.',
 };
 
 

@@ -10,8 +10,8 @@ import LoanSlider from "../components/LoanSlider";
 
 
 export const metadata = {
-  title: websiteName + 'Travel Loan',
-  description: '',
+  title: websiteName + 'Travel Loan - Apply Online',
+  description: 'Apply for your travel loan with MyMonty today and begin your journey to fulfilling your travel aspirations! Download the app and get ready to explore the world!',
 };
 
 const data = {

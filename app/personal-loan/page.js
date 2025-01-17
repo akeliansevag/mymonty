@@ -9,8 +9,8 @@ import LoanSlider from "../components/LoanSlider";
 
 
 export const metadata = {
-  title: websiteName + 'Personal Loan',
-  description: '',
+  title: websiteName + 'Personal Loan - Apply Online',
+  description: 'Apply for your personal loan with MyMonty today and embark on a journey to seize every moment! At MyMonty, we\'re committed to empowering your dreams.',
 };
 
 const data = {

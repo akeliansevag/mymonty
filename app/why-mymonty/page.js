@@ -1,4 +1,3 @@
-'use client'
 import React from 'react';
 import { websiteName } from '@/app/config';
 import styles from './page.module.css';
@@ -10,6 +9,11 @@ import highEnd from '@/public/personal/one-stop-shop.webp';
 import oneStop from '@/public/personal/high-end.webp';
 import friendlySupport from '@/public/personal/friendly-support.webp';
 import noHiddenFees from '@/public/personal/no-hidden-fees.webp';
+
+export const metadata = {
+  title: websiteName + 'Monty Club Onboarding Process',
+  description: 'Download the My Monty app today to gain access to a comprehensive range of financial services and benefit from an E-Wallet account in just a few minutes.',
+};
 
 const data = {
   title: 'EMPOWERING LEBANESE CITIZENS WITH FINANCIAL SERVICES',

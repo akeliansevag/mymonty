@@ -8,8 +8,8 @@ import carKey from '@/public/personal/car-loan-banner-2.webp';
 import LoanSlider from "../components/LoanSlider";
 
 export const metadata = {
-  title: websiteName + 'Car Loan',
-  description: '',
+  title: websiteName + 'Car Loan - Apply Online',
+  description: 'Download the My Monty app today and apply online for a car loan to experience a hassle-free journey towards owning your dream vehicle!',
 };
 
 const data = {

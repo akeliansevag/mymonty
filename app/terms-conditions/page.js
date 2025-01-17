@@ -4,8 +4,8 @@ import termsImage from '@/public/personal/terms-and-conditions.webp';
 import FooterBanner from '../components/FooterBanner';
 
 export const metadata = {
-    title: websiteName + 'Terms & Conditions',
-    description: ''
+    title: websiteName + 'Terms and Conditions',
+    description: 'Read My Monty\'s terms and conditions along with our privacy and cookie policy carefully before accessing any information and services from our website.'
 };
 
 const terms = () => {
