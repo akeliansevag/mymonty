@@ -11,15 +11,15 @@ import Content from '../components/cards/Content';
 
 
 export const metadata = {
-    title: websiteName + 'Cards',
+    title: websiteName + 'Platinum Credit Card',
     description: '',
 };
 
 const cards = () => {
     const data = {
-        title: 'Physical PLATINUM mastercard',
+        title: 'Platinum credit card',
         subtitle: 'Cards',
-        desc: 'World-class. Unique. Boundless.',
+        desc: '<strong>1% Cashback</strong> on any amount spent using the MyMonty Credit Card at Points of Sale or online.',
         image: {
             inGrid: true,
             layout: 'half',
@@ -38,11 +38,11 @@ const cards = () => {
 
     return (
         <>
-            <Banner data={data} AnimatedImage={AnimatedBanner} />
+            <Banner terms={true} data={data} AnimatedImage={AnimatedBanner}/>
             <VirtualCard />
             <div className="bg-gray-100 py-10 lg:py-20">
                 <div className="container text-center">
-                    <TextBlock center={true} title="Physical Platinum Mastercard Benefits" description="" />
+                    <TextBlock center={true} title="Platinum credit card Benefits" description="" />
                 </div>
                 
                 <Content />

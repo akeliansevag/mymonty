@@ -456,6 +456,9 @@ const Content = () => {
                                 ))
                             }
                         </div>
+                        <div className="mb-7">
+                            <img src="/go-gamers.webp" alt="Go Gamers image" />
+                        </div>
                         <p>
                             Sign up or log in to <a target="_blank" className="text-[var(--mm-blue)]" href="https://gogamers.tech/">Go Gamers Gaming Community</a> and use your Mastercard to purchase “Mastercard Premium Membership” to get started.
                         </p>
