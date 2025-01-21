@@ -2,9 +2,14 @@ import React from 'react';
 import Banner from '../components/Banner';
 import contactUs from '@/public/personal/contact-us.webp';
 import Contact from './Contact';
+import { websiteName } from '@/app/config';
+
+export const metadata = {
+  title: websiteName + 'Contact Us',
+  description: '',
+};
 
 const ContactUs = () => {
-
   const data = {
     title: 'Do you have questions?',
     subtitle: 'Contact Us',
