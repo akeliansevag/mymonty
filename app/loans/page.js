@@ -12,8 +12,8 @@ import Carousel from '@/app/components/Carousel';
 import SectionOne from './SectionOne';
 
 export const metadata = {
-    title: websiteName + 'Loans',
-    description: '',
+    title: websiteName + 'Personal Loans Online',
+    description: 'Download the My Monty app today and apply for personal loans that allows you to spend and repay at your convenience, with three flexible options.',
 };
 
 const loans = () => {

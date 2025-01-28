@@ -12,7 +12,7 @@ import LoanSlider from "../components/LoanSlider";
 
 export const metadata = {
   title: websiteName + 'House Loan',
-  description: '',
+  description: 'Download the My Monty app and apply for a house loan to turn your dream of owning a home into reality providing the financial foundation for your perfect abode.',
 };
 
 const data = {

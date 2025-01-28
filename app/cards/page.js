@@ -13,8 +13,8 @@ import CardControls from './CardControls';
 import Monitor from './Monitor';
 
 export const metadata = {
-    title: websiteName + 'Cards',
-    description: '',
+    title: websiteName + 'Prepaid Card you can use Globally',
+    description: 'Download the My Monty app today and access your money wherever you are whenever you want with the virtual prepaid card for easy, quick, and secure payments.',
 };
 
 const cards = () => {

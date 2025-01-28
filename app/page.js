@@ -8,8 +8,8 @@ import HomeBanner from './homepage/HomeBanner';
 
 
 export const metadata = {
-  title: 'MyMonty',
-  description: 'MyMonty',
+  title: 'YOUR SUPER DIGITAL WALLET',
+  description: 'Explore innovative to manage your finances with My Monty, your super digital wallet. Get the app now to enjoy a full mobile banking experience!',
 }
 
 

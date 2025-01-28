@@ -14,7 +14,6 @@ const page = () => {
             <Link href="/faq/personal">Personal</Link>
             <Link href="/faq/business">Business</Link>
             {/* <Link href="/faq/business">Business</Link> */}
-
         </>
     )
 }
