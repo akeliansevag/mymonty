@@ -217,7 +217,7 @@ const Footer = () => {
                 </div>
 
 
-                <p className='opacity-30 text-base pb-20 mt-16'>© 2024 Monty Finance SAL <br /><br />
+                <p className='opacity-30 text-base pb-20 mt-16'>© {new Date().getFullYear()} Monty Finance SAL <br /><br />
 
                     mymonty.com.lb provides information about financial and electronic wallet products and services provided by Monty Finance SAL through its mobile application mymonty available on App Store and Google Play.<br /><br />
 
