@@ -5,6 +5,7 @@ import React from 'react';
 
 const Answer = ({ params }) => {
     const { data } = useFetch(`${FAQ_API}/${params.type}/${params.topic}/${params.question}`);
+
     return (
         <div>
             {data && (
