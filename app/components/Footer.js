@@ -89,27 +89,6 @@ const Footer = () => {
             </div>
 
             <div className='container pt-16 pb-10 lg:pb-10'>
-                {/* <div className="nav grid grid-cols-1 flex-wrap flex-col md:grid-cols-6 md:mb-4 justify-between">
-                    <Link href="/who-we-are" className='has-children mb-3 md:mb-0'>
-                        Who we are
-                    </Link>
-                    <Link href="/business" className='has-children mb-3 md:mb-0'>
-                        MyMonty Business
-                    </Link>
-                    <Link href="/why-mymonty" className='has-children mb-3 md:mb-0'>
-                        Why MyMonty
-                    </Link>
-                    <Link href="/careers" className='has-children mb-3 md:mb-0'>
-                        Careers
-                    </Link>
-                    <Link href="/code-of-conduct" className='has-children mb-3 md:mb-0'>
-                        Code of conduct
-                    </Link>
-
-                    <Link href="/contact-us" className='has-children mb-3 md:mb-0'>
-                        Contact us
-                    </Link>
-                </div> */}
                 <div className="nav grid grid-cols-1 flex-wrap flex-col md:grid-cols-6 justify-between">
                     {data && data[0].children?.map((item, index) => {
                         const isOpen = openIndexes.includes(index);
