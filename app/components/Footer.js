@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { data } from './navData';
+import { data } from './footerNavData';
 import Link from 'next/link';
 import Form from './Form';
 
@@ -89,7 +89,7 @@ const Footer = () => {
             </div>
 
             <div className='container pt-16 pb-10 lg:pb-10'>
-                <div className="nav grid grid-cols-1 flex-wrap flex-col md:grid-cols-6 md:mb-4 justify-between">
+                {/* <div className="nav grid grid-cols-1 flex-wrap flex-col md:grid-cols-6 md:mb-4 justify-between">
                     <Link href="/who-we-are" className='has-children mb-3 md:mb-0'>
                         Who we are
                     </Link>
@@ -109,7 +109,7 @@ const Footer = () => {
                     <Link href="/contact-us" className='has-children mb-3 md:mb-0'>
                         Contact us
                     </Link>
-                </div>
+                </div> */}
                 <div className="nav grid grid-cols-1 flex-wrap flex-col md:grid-cols-6 justify-between">
                     {data && data[0].children?.map((item, index) => {
                         const isOpen = openIndexes.includes(index);
@@ -193,7 +193,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <ul>
-                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/terms-conditions">Website Terms</Link></li>
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/terms-conditions">Website Terms and Conditions</Link></li>
                             {/* <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/privacy-policy">Privacy Policy</Link></li> */}
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/key-facts-statements">Key Facts Statements</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/fees-and-charges">Fees and Charges</Link></li>

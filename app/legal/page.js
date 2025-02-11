@@ -19,8 +19,12 @@ const KeyFactsStatements = () => {
                         Customer Agreement
                     </a>
 
-                    <a href='/legal/prepaid-cards-terms-conditions' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
-                        Prepaid Cards Terms And Conditions
+                    <a href='/legal/prepaid-credit-cards-terms-conditions' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                        Prepaid Credit Cards Terms and Conditions
+                    </a>
+
+                    <a target='_blank' href='/credit-cards-terms-and-conditions.pdf' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                        Platinum Credit Card Terms And Conditions
                     </a>
 
                 </div>

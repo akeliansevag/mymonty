@@ -44,8 +44,8 @@ const methods = {
 
 const Complaints = () => {
   const data = {
-    title: 'Complaints policy',
-    subtitle: 'Terms and Policies',
+    title: 'Complaints',
+    // subtitle: 'Terms and Policies',
     image: {
       inGrid: true,
       layout: 'half',
@@ -61,7 +61,7 @@ const Complaints = () => {
 
   return (
     <div>
-      <section className='py-14 flex flex-col justify-center md:py-20 min-h-[calc(100vh-var(--header-height))] w-full relative bg-gray-100 max-md:pb-14'>
+      <section className='py-14 flex flex-col justify-center md:py-20 min-h-[calc(70vh-var(--header-height))] w-full relative bg-gray-100 max-md:pb-14'>
 
         <div className='relative z-1'>
 
@@ -69,9 +69,9 @@ const Complaints = () => {
             <div className='flex flex-col md:flex-row gap-10 md:gap-0 items-center'>
               <div className='flex flex-col w-full md:w-1/2 justify-center md:mt-0 ${data.image.layout'>
                 <div>
-                  <div className='flex gap-5 items-center'>
+                  {/* <div className='flex gap-5 items-center'>
                     <h2>{data.subtitle}</h2>
-                  </div>
+                  </div> */}
                   <h1 className='font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase'>{data.title}</h1>
                   <div className='flex items-center'>
                     <a href='#complaintsForm' className='mm-button mt-8 blue'>{data.cta.button.name}</a>

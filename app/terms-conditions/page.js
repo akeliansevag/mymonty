@@ -24,7 +24,7 @@ const terms = () => {
 
     return (
         <div>
-            <FooterBanner downloadURL="/WebsiteTermsAndConditions.pdf" title="Website Terms" />
+            <FooterBanner downloadURL="/WebsiteTermsAndConditions.pdf" title="Website Terms & Conditions" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content' dangerouslySetInnerHTML={{ __html: htmlData }} />
             </div>
