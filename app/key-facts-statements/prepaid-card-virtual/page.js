@@ -12,11 +12,11 @@ const pea = () => {
 
     return (
         <div>
-            <FooterBanner downloadURL="/KFSPrepaidCardVirtual.pdf" title="Prepaid Card (Physical)" />
+            <FooterBanner downloadURL="/KFS - Prepaid Virtual Card" title="Prepaid Card (Physical)" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PREPAID CARD (VIRTUAL) - KEY FACTS STATEMENT  <br />
-                        (V.1.1 – 6 Aug 2024)</strong> </p>
+                    (V.1.1 – 31 April 2024)</strong> </p>
 
                 <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Virtual Prepaid Card offered by Monty Finance SAL (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the Prepaid Cards Terms and Conditions of which it forms an integral part. </p>
 
@@ -90,7 +90,7 @@ const pea = () => {
                                 </td>
                             </tr>
                             <tr>
-                                <td colSpan={2}><strong>Foreign currency conversion fee (if the Card is used for purchases or withdrawals in a currency other than USD)
+                                <td colSpan={2}><strong>Foreign currency conversion fee (if the Card is used for purchases in a currency other than USD)
                                 </strong></td>
                                 <td colSpan={2}>4% of the transaction amount
                                 </td>
@@ -196,18 +196,10 @@ const pea = () => {
                         <tbody>
                             <tr>
                                 <td>
-                                    <strong>Withdrawing money in cash from your Card in Lebanon at Integrated ATMs</strong>
-                                </td>
-                                <td>
-                                    You can withdraw money in cash at any Fransabank SAL or BLC Bank SAL’s ATM in Lebanon.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
                                     <strong>Amendment</strong>
                                 </td>
                                 <td>
-                                    We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website www.mymonty.com.lb or App.
+                                We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website <a href="https://mymonty.com.lb" className='text-blue-500 hover:underline'  target='_blank'>www.mymonty.com.lb</a> or App.
                                 </td>
                             </tr>
 

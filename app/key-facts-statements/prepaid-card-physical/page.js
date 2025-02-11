@@ -12,17 +12,17 @@ const pea = () => {
 
     return (
         <div>
-            <FooterBanner downloadURL="/KFSPrepaidCardPhysical.pdf" title="Prepaid Card (Physical)" />
+            <FooterBanner downloadURL="/KFS Physical card.pdf" title="Prepaid Card (Physical)" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PLATINUM PREPAID CARD (PHYSICAL) - KEY FACTS STATEMENT  <br />
-                        (V.1.1 – 6 Aug 2024)</strong> </p>
+                    (V.1.2 – 1 February 2025)</strong> </p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Platinum Physical Prepaid Card offered by Monty Finance SAL (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the Prepaid Cards Terms and Conditions of which it forms an integral part.</p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Platinum Physical Prepaid Card offered by Monty Finance SAL (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the Prepaid Cards Terms and Conditions of which it forms an integral part. </p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
-                    <p>The Card is a physical reloadable Mastercard prepaid card linked to your MyMonty eWallet Account on the MyMonty App. Money must be loaded to the Card before the Card is used. You can top-up the Card from your MyMonty eWallet only. The Card allows cash withdrawals at ATM’s and purchases to be made wherever Mastercard Prepaid Cards are accepted if a sufficient available balance exists for the amount of the transaction. The Card is not a credit or a debit Card, and the Card balance does not earn any interest.</p>
+                    <p>The Card is a physical reloadable Mastercard prepaid card linked to your MyMonty eWallet Account on MyMonty App. You can top up the Card from your MyMonty eWallet only. If your Card doesn’t have enough balance to pay for a transaction, it will automatically be loaded from your eWallet, as long as there are enough money in your eWallet. The Card allows cash withdrawals at ATM’s and purchases to be made wherever Mastercard Prepaid Cards are accepted. The Card is not a credit or a debit Card, and the Card balance does not earn any interest.  </p>
                     <table className='mm-table'>
                         <tbody>
                             <tr>
@@ -95,7 +95,7 @@ const pea = () => {
                                 </td>
                             </tr>
                             <tr>
-                                <td colSpan={2}><strong>Foreign currency conversion fee (if the Card is used for purchases or withdrawals in a currency other than USD)
+                                <td colSpan={2}><strong>Foreign currency conversion fee (if the Card is used for purchases in a currency other than USD)
                                 </strong></td>
                                 <td colSpan={2}>4% of the transaction amount
                                 </td>
@@ -288,7 +288,7 @@ const pea = () => {
                                     <strong>Amendment</strong>
                                 </td>
                                 <td>
-                                    We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website www.mymonty.com.lb or App.
+                                We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website <a href="https://mymonty.com.lb" className='text-blue-500 hover:underline' target='_blank'>www.mymonty.com.lb</a> or App.
                                 </td>
                             </tr>
 
