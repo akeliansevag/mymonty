@@ -173,7 +173,7 @@ const Footer = () => {
                     <div>
                         <ul>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/terms-conditions">Website Terms and Conditions</Link></li>
-                            {/* <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/privacy-policy">Privacy Policy</Link></li> */}
+                            
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/key-facts-statements">Key Facts Statements</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/fees-and-charges">Fees and Charges</Link></li>
                         </ul>
@@ -187,7 +187,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <ul>
-
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/cookie-policy">Cookies Policy</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/customer-rights-and-duties">Customer Rights and Duties</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/complaints">Complaints</Link></li>
                         </ul>
