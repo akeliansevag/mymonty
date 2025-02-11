@@ -12,7 +12,7 @@ const pea = () => {
 
     return (
         <div>
-            <FooterBanner downloadURL="/KFSPersonaleWalletAccount.pdf" title="Personal eWallet Account" />
+            <FooterBanner downloadURL="/KFS - Personal eWallet Account.pdf" title="Personal eWallet Account" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>PERSONAL MYMONTY eWALLET ACCOUNT - KEY FACTS STATEMENT  <br />
