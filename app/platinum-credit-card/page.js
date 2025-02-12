@@ -34,11 +34,14 @@ const cards = () => {
     };
 
     
-
+    const terms = {
+        termsAndConditions: '/credit-cards-terms-and-conditions.pdf', 
+        kfs: '/platinum-credit-card-kfs.pdf'
+    }
 
     return (
         <>
-            <Banner terms={true} data={data} AnimatedImage={AnimatedBanner}/>
+            <Banner terms={terms} data={data} AnimatedImage={AnimatedBanner}/>
             <VirtualCard />
             <div className="bg-gray-100 py-10 lg:py-20">
                 <div className="container text-center">

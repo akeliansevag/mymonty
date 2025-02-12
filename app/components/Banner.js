@@ -141,8 +141,17 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
             {
                 terms && (
                     <div className='container text-base underline text-[#2657D4] mt-10'>
-                        <a className='uppercase' href='/credit-cards-terms-and-conditions.pdf' target='_blank'>TERMS & CONDITIONS APPLY</a> <br />
-                        <a className='uppercase' href='/platinum-credit-card-kfs.pdf' target='_blank'>Key Facts Statement (KFS)</a>
+                        {terms.termsAndConditions && (
+                            <div>
+                                 <a className='uppercase' href={terms.termsAndConditions} target='_blank'>TERMS & CONDITIONS APPLY</a>
+                            </div>
+                        )}
+                        {terms.kfs && (
+                            <div>
+                                 <a className='uppercase' href={terms.kfs} target='_blank'>Key Facts Statement (KFS)</a>
+                            </div>
+                        )}
+                        
                     </div>
                 )
             }
