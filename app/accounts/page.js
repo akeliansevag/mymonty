@@ -7,6 +7,7 @@ import Carousel from '@/app/components/Carousel';
 import AnimatedImage from './AnimatedImage';
 import SectionOne from './SectionOne';
 import SectionThree from './SectionThree';
+import SectionForex from './SectionForex';
 
 export const metadata = {
     title: websiteName + 'Accounts',
@@ -97,6 +98,7 @@ const accounts = () => {
             <div id="top-up">
                 <Carousel data={carouselData} />
             </div>
+            <SectionForex />
             <SectionThree />
         </div>
     )
