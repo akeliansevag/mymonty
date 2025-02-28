@@ -20,15 +20,7 @@ const nextConfig = {
             },
         ]
     },
-    images: {
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'staging.mymonty.com',
-                pathname: '/**', // Allow all paths
-            },
-        ],
-    },
+   
 
 }
 
