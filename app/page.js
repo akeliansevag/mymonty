@@ -19,8 +19,6 @@ export default function Home() {
       <HomeBanner />
       <SectionTwo />
       <SectionThree />
-      <SectionFour />
-      <Section />
       <SectionFive />
       <SectionSix />
     </main>
