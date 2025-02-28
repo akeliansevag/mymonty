@@ -1,12 +1,13 @@
 import React from 'react';
 import backgroundImage from '@/public/sectionsixbg.webp';
+import backgroundImage1 from '@/public/sectionsixbg1.webp';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Section = () => {
     return (
         <section className='flex items-center pb-14 pt-14 lg:pt-20 lg:pb-20 bg-black relative text-black min-h-[calc(100vh-var(--mobile-header-height))] 2xl:min-h-[70vh]'>
-            <Image fill placeholder='blur' quality={100} sizes='100vw' src={backgroundImage} className='object-cover z-0' alt="Background Image" />
+            <Image fill placeholder='blur' quality={100} sizes='100vw' src={backgroundImage1} className='object-cover z-0' alt="Background Image" />
             {/* <video className='w-full h-full object-cover absolute top-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>
                 <source src='/house-loan.webm' type="video/webm" />
                 <source src='/house-loan.mp4' type="video/mp4" />
