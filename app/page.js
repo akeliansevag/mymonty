@@ -20,7 +20,7 @@ export default function Home() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
-      {/* <Section /> */}
+      <Section />
       <SectionFive />
       <SectionSix />
     </main>
