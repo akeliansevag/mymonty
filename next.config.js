@@ -3,7 +3,7 @@ const nextConfig = {
     env: {
         apiUrl: process.env.NEXT_PUBLIC_NODE_ENV === 'production'
             ? 'https://staging.mymonty.com/api'
-            : 'http://127.0.0.1:8000/api',
+            : 'http://mymonty.localhost/api',
     },
     reactStrictMode: false,
     async redirects() {
@@ -20,6 +20,16 @@ const nextConfig = {
             },
         ]
     },
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'staging.mymonty.com',
+                pathname: '/**', // Allow all paths
+            },
+        ],
+    },
+
 }
 
 module.exports = nextConfig

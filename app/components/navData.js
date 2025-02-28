@@ -168,10 +168,14 @@ export const data = [
                 title: 'Code of Conduct',
                 url: '/code-of-conduct'
             },
-            // {
-            //     title: 'Leadership team',
-            //     url: null
-            // },
+            {
+                title: 'News',
+                url: '/news'
+            },
+            {
+                title: 'Blogs',
+                url: 'blogs'
+            },
             {
                 title: 'Contact us',
                 url: '/contact-us'

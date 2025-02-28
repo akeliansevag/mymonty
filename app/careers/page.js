@@ -16,7 +16,7 @@ export const metadata = {
 const data = {
   title: 'Join Our Dream Team',
   subtitle: 'Careers',
-  desc: 'Don’t miss your chance! Check out our vacancies on <a class="text-blue-500" href="https://www.linkedin.com/company/mymonty-lebanon/about/?viewAsMember=true" target="_blank">LinkedIn</a> now.',
+  desc: 'Don’t miss your chance! Check out our vacancies on <a className="text-blue-500" href="https://www.linkedin.com/company/mymonty-lebanon/about/?viewAsMember=true" target="_blank">LinkedIn</a> now.',
   image: {
     inGrid: true,
     layout: 'half',

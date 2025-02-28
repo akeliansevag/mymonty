@@ -113,7 +113,7 @@ const Footer = () => {
                                     {!item.url && (
                                         <h6 className="flex justify-between item has-children cursor-pointer" onClick={() => handleClick(index)}>
                                             <span>{item.title}</span>
-                                            <div class="md:hidden">
+                                            <div className="md:hidden">
                                                 <svg className={`${toggleArrowClasses} transition-all duration-300 ease-in-out`} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M6 9L12 15L18 9" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
@@ -150,7 +150,7 @@ const Footer = () => {
                 <div className='grid grid-cols-1 md:grid-cols-4'>
                     <div className='mb-5'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="133" height="27" viewBox="0 0 133 27" fill="none">
-                            <g clip-path="url(#clip0_2755_7061)">
+                            <g clipPath="url(#clip0_2755_7061)">
                                 <path d="M77.618 3.56396C82.2664 3.56396 86.3581 6.91212 86.3581 11.8388C86.3581 16.7655 82.2664 20.1469 77.618 20.1469C72.9697 20.1469 68.8779 16.832 68.8779 11.8388C68.8779 6.84566 72.9987 3.56396 77.618 3.56396ZM77.618 16.1798C79.9111 16.1798 81.8635 14.3188 81.8635 11.8388C81.8635 9.35886 79.9111 7.53108 77.618 7.53108C75.325 7.53108 73.3726 9.35886 73.3726 11.8388C73.3726 14.3188 75.3582 16.1798 77.618 16.1798Z" fill="white" />
                                 <path d="M87.5713 3.56396H92.1906V6.07301C93.524 4.212 95.1981 3.56396 97.1214 3.56396C101.587 3.56396 102.796 7.12813 102.796 11.1576V19.8063H98.1766V11.2489C98.1766 9.0473 97.3707 7.37322 95.2313 7.37322C93.092 7.37322 92.1947 9.07638 92.1947 11.278V19.8021H87.5754V3.56396H87.5713Z" fill="white" />
                                 <path d="M109.504 3.6018H113.908V7.22828H109.504V14.9756C109.504 15.6568 109.783 16.3713 110.684 16.3713C111.586 16.3713 111.893 15.6278 111.893 14.8842C111.893 14.4189 111.768 13.7667 111.677 13.5217H115.337C115.615 14.1115 115.71 14.8551 115.71 15.4117C115.71 17.7671 114.161 20.1557 110.41 20.1557C107.618 20.1557 104.893 19.1628 104.893 14.5435L104.864 0.00439453H109.513V3.60595L109.504 3.6018Z" fill="white" />

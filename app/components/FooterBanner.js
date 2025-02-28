@@ -10,8 +10,8 @@ function FooterBanner({ subtitle, title, downloadURL }) {
     return (
         <section className='py-32 flex flex-col justify-center w-full relative bg-gray-100'>
             <div className='container'>
-                <div class="flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-center  ">
-                    <div class="flex flex-col w-full md:w-2/3 justify-center md:mt-0 ">
+                <div className="flex flex-col md:flex-row gap-10 md:gap-0 items-center justify-center  ">
+                    <div className="flex flex-col w-full md:w-2/3 justify-center md:mt-0 ">
                         <div>
                             {subtitle && (
                                 <div className="flex items-center gap-4">
@@ -25,13 +25,13 @@ function FooterBanner({ subtitle, title, downloadURL }) {
                                     <h2 className="font-bold opacity-60">{subtitle}</h2>
                                 </div>
                             )}
-                            <h1 class="font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase mt-6">
+                            <h1 className="font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase mt-6">
                                 {title}
                             </h1>
                             {downloadURL && (
                                 <a className='download-pdf' href={downloadURL} target='_blank'>
                                     <span><svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
-                                        <g clip-path="url(#clip0_2906_7287)">
+                                        <g clipPath="url(#clip0_2906_7287)">
                                             <path d="M3.95833 2.0835C3.08386 2.0835 2.375 2.796 2.375 3.66683V10.0002V13.1668V17.9168C2.375 18.7877 3.08386 19.5002 3.95833 19.5002H15.0417C15.9165 19.5002 16.625 18.7877 16.625 17.9168V13.1668V10.0002V6.8335L11.875 2.0835H3.95833Z" fill="#C0392B" />
                                             <path d="M3.95833 1.29175C3.08386 1.29175 2.375 2.00425 2.375 2.87508V9.20841V12.3751V17.1251C2.375 17.9959 3.08386 18.7084 3.95833 18.7084H15.0417C15.9165 18.7084 16.625 17.9959 16.625 17.1251V12.3751V9.20841V6.04175L11.875 1.29175H3.95833Z" fill="#E74C3C" />
                                             <path d="M16.625 6.04175L11.875 1.29175V4.45841C11.875 5.32925 12.5835 6.04175 13.4583 6.04175H16.625Z" fill="#C0392B" />
@@ -49,7 +49,7 @@ function FooterBanner({ subtitle, title, downloadURL }) {
 
                         </div>
                     </div>
-                    <div class="w-full md:w-1/3"></div>
+                    <div className="w-full md:w-1/3"></div>
                 </div>
             </div>
         </section >
