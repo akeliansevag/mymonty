@@ -12,13 +12,13 @@ const pea = () => {
 
     return (
         <div>
-            <FooterBanner downloadURL="/KFS - Personal eWallet Account.pdf" title="Personal eWallet Account" />
+            <FooterBanner downloadURL="/KFS - Personal eWallet Account (006).pdf" title="Personal eWallet Account" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>PERSONAL MYMONTY eWALLET ACCOUNT - KEY FACTS STATEMENT  <br />
-                    (V.1.2 – 01 December 2024)</strong> </p>
-
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the personal MyMonty eWallet Account offered by Monty Finance SAL to individual clients (“eWallet Account”). This KFS does not contain all the terms and conditions governing the eWallet Account and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Customer Agreement</a> of which it forms an integral part.</p>
+                    (V.1.3 – 01 February 2025)</strong> </p>
+                    
+                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the personal MyMonty eWallet Account offered by Monty Finance SAL to individual clients (“eWallet Account”). This KFS does not contain all the terms and conditions governing the eWallet Account and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Customer Agreement </a> of which it forms an integral part.</p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
@@ -26,7 +26,7 @@ const pea = () => {
                         <tbody>
                             <tr>
                                 <td className='w-1/5'>Payment Account</td>
-                                <td><p>The eWallet Account is a payment account for your payments needs. It is not a deposit nor a savings account and does not entitle you to interest.  </p></td>
+                                <td><p>The eWallet Account is a payment account for your payments needs. It is not a deposit nor a savings account and does not entitle you to interest. </p></td>
                             </tr>
                             <tr>
                                 <td>Account Currency</td>
@@ -34,7 +34,7 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td>No Currency Exchange</td>
-                                <td><p>The eWallet Account does not support currency exchange. Currency exchange between the LBP balance and USD balance is not available. You cannot top-up your account in USD to make payments in LBP, or vice versa. Transactions are limited to the respective currencies. You can only use the LBP balance to make LBP transactions and the USD balance to make USD transactions.</p></td>
+                                <td><p>The eWallet Account supports currency exchange between the LBP and USD balances. However, transactions are limited to the respective currencies: LBP transactions can only be made using the LBP balance, and USD transactions can only be made using the USD balance.</p></td>
                             </tr>
                             <tr>
                                 <td>Eligibility</td>
@@ -218,7 +218,7 @@ const pea = () => {
                                         <li>
                                         USD- Any amount as long as the balance in the USD balance does not exceed USD 3,000. 
                                         </li>
-                                        <li>LBP- Any amount as long as your LBP balance does not exceed LBP 150,000,000. (subject to ATM transaction limit)</li>
+                                        <li>LBP- Any amount as long as your LBP balance does not exceed LBP 150,000,000.(subject to ATM transaction limit)</li>
                                     </ul>
                                 </td>
                             </tr>
@@ -285,7 +285,7 @@ const pea = () => {
                                 </td>
                                 <td>
                                 We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website <a className='text-blue-500 hover:underline' href="https://mymonty.com.lb" target='_blank'>
-                                  www.mymonty.com.lb  </a>  or App.
+                                www.mymonty.com.lb  </a>  or App.
                                 </td>
                             </tr>
                         </tbody>

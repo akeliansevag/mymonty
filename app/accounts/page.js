@@ -31,6 +31,11 @@ const accounts = () => {
             }
         }
     };
+
+    const terms = {
+        termsAndConditions: false, 
+        kfs: 'KFS - Personal eWallet Account (006).pdf'
+    }
     const carouselData = {
         filters: [
             {
@@ -92,7 +97,7 @@ const accounts = () => {
     return (
         <div>
 
-            <Banner data={data} AnimatedImage={AnimatedImage} />
+            <Banner terms={terms} data={data} AnimatedImage={AnimatedImage} />
             <SectionOne />
 
             <div id="top-up">
