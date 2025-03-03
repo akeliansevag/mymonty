@@ -16,7 +16,7 @@ const News = () => {
                 data.data.map((newsItem, index) => (
                 <div key={index} className="overflow-hidden rounded-[1.875rem] bg-gray-100">
                     <div className='aspect-video w-full relative'>
-                      <Image className="w-full h-full absolute object-cover top-0 left-0" src={newsItem.image} alt={newsItem.title} width={1200} height={900} />
+                      <Image className="w-full h-full object-cover" src={newsItem.image} alt={newsItem.title} width={1200} height={900} />
                     </div>
                     <div className="flex flex-col gap-4 px-10 py-14">
                       <p className="text-xl">
