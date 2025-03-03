@@ -34,7 +34,7 @@ const accounts = () => {
 
     const terms = {
         termsAndConditions: false, 
-        kfs: 'KFS - Personal eWallet Account (006).pdf'
+        kfs: 'KFS - Personal eWallet Account (006)2.pdf'
     }
     const carouselData = {
         filters: [
