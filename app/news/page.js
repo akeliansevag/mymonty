@@ -11,7 +11,7 @@ export const metadata = {
 
 const data = {
   title: 'What’s Happening at Mymonty?',
-  subtitle: 'Code of Conduct',
+  subtitle: 'News',
   desc: 'We\'re committed to revolutionizing the global approach to money – to simplify, enhance, and enrich the experience for everyone.',
   image: {
     inGrid: true,

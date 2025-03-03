@@ -168,10 +168,10 @@ export const data = [
                 title: 'Code of Conduct',
                 url: '/code-of-conduct'
             },
-            {
-                title: 'News',
-                url: '/news'
-            },
+            // {
+            //     title: 'News',
+            //     url: '/news'
+            // },
             // {
             //     title: 'Blogs',
             //     url: 'blogs'
