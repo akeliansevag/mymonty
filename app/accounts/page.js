@@ -103,7 +103,7 @@ const accounts = () => {
             <div id="top-up">
                 <Carousel data={carouselData} />
             </div>
-            <SectionForex />
+            {/* <SectionForex /> */}
             <SectionThree />
         </div>
     )

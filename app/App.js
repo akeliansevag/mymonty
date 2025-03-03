@@ -29,8 +29,8 @@ const App = ({ children }) => {
             <Header />
             <div>
                 {children}
-                {/* <OldFooter /> */}
-                <Footer />
+                <OldFooter />
+                {/* <Footer /> */}
                 <Suspense fallback={null}>
                     <NavigationEvents />
                 </Suspense>
