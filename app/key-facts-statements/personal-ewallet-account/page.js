@@ -12,7 +12,7 @@ const pea = () => {
 
     return (
         <div>
-            <FooterBanner downloadURL="/KFS - Personal eWallet Account (006).pdf" title="Personal eWallet Account" />
+            <FooterBanner downloadURL="/KFS - Personal eWallet Account (006)2.pdf" title="Personal eWallet Account" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>PERSONAL MYMONTY eWALLET ACCOUNT - KEY FACTS STATEMENT  <br />
@@ -123,11 +123,11 @@ const pea = () => {
                                     Foreign currency card: 3%
                                 </td>
 
-                                <td><strong>Withdraw Money through our integrated ATMs
+                                <td><strong>Withdraw Money through our integrated ATMs (cardless transactions)
 
                                 </strong></td>
-                                <td>Cash USD: 1% / Minimum USD 1 <br />
-                                    Cash LBP: 1% / Minimum LBP 100,000
+                                <td>Cash USD: 0.75% / Minimum USD 1 <br />
+                                Cash LBP: 0.75% / Minimum LBP 100,000
 
                                 </td>
                             </tr>
