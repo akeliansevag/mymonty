@@ -192,7 +192,7 @@ const Header = () => {
                     </div>
                 </div>
                 {regionToggle && (
-                    <a href="https://mymonty.com" target="_blank" className='absolute top-full left-0 p-5 ml-4 w-40 bg-white text-base font-bold rounded-b-[20px] leading-none'>Europe</a>
+                    <a href="https://mymonty.com/en-EU" target="_blank" className='absolute top-full left-0 p-5 ml-4 w-40 bg-white text-base font-bold rounded-b-[20px] leading-none'>Europe</a>
                 )}
             </div>
             <div className='md:hidden'>
