@@ -27,6 +27,10 @@ export const data = [
                         title: 'Cash Out Via ATM/BANK',
                         url: '/accounts?s=top-up',
                     },
+                    {
+                        title: 'Forex',
+                        url: '/accounts?s=forex',
+                    },
 
                 ]
             },
