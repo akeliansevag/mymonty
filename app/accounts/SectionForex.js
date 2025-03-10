@@ -97,7 +97,7 @@ const SectionForex = () => {
                         </div>
                     </div>
                     
-                    <div className="my-10 py-10">
+                    {/* <div className="my-10 py-10">
                         <div className="flex max-lg:flex-col gap-4 bg-white rounded-[1.875rem] overflow-hidden lg:max-h-[500px]">
                             <div className="lg:w-1/2 flex flex-col justify-center gap-4 p-10">
                                 <svg width="199" height="106" viewBox="0 0 199 106" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +110,7 @@ const SectionForex = () => {
                                 <img className="h-full w-full object-cover" alt="Forex" src='/personal/whats-next.webp' />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="my-10 text-center">
                         <div className="flex flex-col gap-4 px-4 lg:px-10 py-10 items-center bg-[#007AFF] rounded-[1.875rem] text-white overflow-hidden">
