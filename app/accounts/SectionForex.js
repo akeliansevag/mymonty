@@ -74,7 +74,7 @@ const SectionForex = () => {
                         <TextBlock buttonColor="dark" center={true} subTitle="Getting Started Is Easy" title="How It Works" button={false} />
                         <div className='max-w-[950px] mx-auto relative mt-16'>
                             <>
-                                <div className='max-lg:hidden border-t-[2px] left-1/2 -translate-x-1/2 h-[1px] border-dashed absolute top-[43px] w-[80%]'></div>
+                                <div className='max-lg:hidden border-t-[2px] left-1/2 -translate-x-1/2 h-[1px] absolute top-[43px] w-[80%]'></div>
                                 <div className='relative flex max-lg:flex-col max-lg:items-center max-lg:gap-10 text-center w-full'>
                                     {
                                         howItWorks.map((item,index)=>{
