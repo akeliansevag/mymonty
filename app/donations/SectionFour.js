@@ -96,7 +96,7 @@ const SectionFour = () => {
                         spaceBetween={25}
                         breakpoints={{
                             320: {
-                                slidesPerView: "1.5",
+                                slidesPerView: "1.1",
                                 centeredSlides: false,
                                 autoplay: false
                             },
@@ -120,13 +120,16 @@ const SectionFour = () => {
                                     <div className='text-white overflow-hidden relative flex flex-col gap-5 rounded-3xl p-6 bg-black w-full'>
                                         <div className='absolute z-10 inset-0 bg-[linear-gradient(246.5deg,rgba(0,0,0,0.4)_4.01%,rgba(0,0,0,0.8)_65.23%),linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2))]'></div>
                                         <img className='absolute top-0 left-0 w-full h-full object-cover' src={card.image}/>
-                                        <div className='flex max-lg:flex-col lg:justify-between lg:items-center relative gap-5 z-20'>
+                                        <div className='flex max-lg:items-center max-lg:flex-col lg:justify-between lg:items-center relative gap-5 z-20'>
                                             <div>
                                                 <img className='max-lg:w-[100px] max-lg:mx-auto' src={card.logo} />
                                             </div>
-                                            <a target='_blank' className='hover:bg-white text-center hover:text-black rounded-full text-base p-2 leading-none text-nowrap text-white border border-white' href={card.url}>
-                                                Visit Website
-                                            </a>
+                                            <div>
+                                                <a target='_blank' className='hover:bg-white text-center hover:text-black rounded-full text-base py-2 px-3 leading-none text-nowrap text-white border border-white' href={card.url}>
+                                                    Visit Website
+                                                </a>
+                                            </div>
+                                           
                                         </div>
                                         <div className='relative z-20 max-lg:text-center'>
                                             <h4 className='text-2xl font-bold mb-2'>{card.title}</h4>
