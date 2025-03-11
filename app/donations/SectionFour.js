@@ -117,7 +117,7 @@ const SectionFour = () => {
                                    
                                     key={index}
                                 >
-                                    <div className='text-white overflow-hidden relative flex flex-col gap-5 rounded-3xl p-6 bg-black w-full'>
+                                    <div className='text-white overflow-hidden relative flex flex-col gap-5 rounded-3xl p-6 bg-black w-full h-full'>
                                         <div className='absolute z-10 inset-0 bg-[linear-gradient(246.5deg,rgba(0,0,0,0.4)_4.01%,rgba(0,0,0,0.8)_65.23%),linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2))]'></div>
                                         <img className='absolute top-0 left-0 w-full h-full object-cover' src={card.image}/>
                                         <div className='flex max-lg:items-center max-lg:flex-col lg:justify-between lg:items-center relative gap-5 z-20'>
