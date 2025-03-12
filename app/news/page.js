@@ -12,7 +12,7 @@ export const metadata = {
 const data = {
   title: 'What’s Happening at Mymonty?',
   subtitle: 'News',
-  desc: 'Stay updated with the latest news, innovations, and milestones from MyMonty—your go-to source for everything shaping our fintech world',
+  desc: 'Stay updated with the latest news, innovations, and milestones from MyMonty - your go-to source for everything shaping our fintech world',
   image: {
     inGrid: true,
     layout: 'half',
