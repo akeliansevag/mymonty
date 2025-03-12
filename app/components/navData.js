@@ -108,6 +108,10 @@ export const data = [
                         title: 'Travel eSim',
                         url: '/payments?s=travel-esim'
                     },
+                    {
+                        title: 'Donations',
+                        url: '/donations'
+                    },
 
                 ]
             },

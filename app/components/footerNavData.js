@@ -104,6 +104,10 @@ export const data = [
                         title: 'Travel eSim',
                         url: '/payments?s=travel-esim'
                     },
+                    {
+                        title: 'Donations',
+                        url: '/donations'
+                    },
 
                 ]
             },
@@ -147,6 +151,10 @@ export const data = [
                     //     title: 'Leadership team',
                     //     url: null
                     // },
+                    {
+                        title: 'News',
+                        url: '/news'
+                    },
                     {
                         title: 'Contact us',
                         url: '/contact-us'
