@@ -27,7 +27,7 @@ const SectionOne = () => {
                      <TextBlock buttonColor="dark" center={true} title="No Postponing, Just Post-paying!" button={false} />
                 </div>
                 <div className='flex flex-col max-lg:gap-10 lg:gap-10 lg:mt-24 max-lg:mt-10'>
-                    <div className='bg-[#f7f7f7] rounded-3xl px-8 py-14'>
+                    <div className='bg-[#f7f7f7] rounded-3xl lg:px-24 max-lg:px-10 py-14'>
                         <div className='flex max-lg:flex-col lg:items-center max-lg:gap-10 lg:gap-32'>
                             <div className="lg:w-1/2 flex flex-col gap-5">
                                 <h3 className='uppercase font-black max-lg:text-2xl lg:text-3xl text-balance'><span className='text-[#009FB4]'>Touch</span> Postpaid Bill Payment</h3>
@@ -63,7 +63,7 @@ const SectionOne = () => {
                     </div>
                 
                     
-                    <div className='bg-[#f7f7f7] rounded-3xl px-8 py-14'>
+                    <div className='bg-[#f7f7f7] rounded-3xl py-14 lg:px-24 max-lg:px-10'>
                         <div className='flex max-lg:flex-col lg:items-center max-lg:gap-10 lg:gap-32'>
                             
                             <div className="lg:w-1/2 flex flex-col gap-5">

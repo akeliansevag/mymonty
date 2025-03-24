@@ -411,3 +411,11 @@ body.menu-hidden .sticky-filters {
 .item-icon svg {
   @apply max-lg:w-[40px];
 }
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate3d(0, 0, 0);
+}

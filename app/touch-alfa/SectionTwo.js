@@ -20,25 +20,21 @@ const SectionTwo = () => {
     }
   ];
   return (
-    <section className="lg:py-24 max-lg:py-10 relative">
-        <img src='/billing-better.webp' className='w-full h-full absolute top-0 left-0 object-cover -z-10'/>
+    <section className="lg:py-24 max-lg:py-10 relative bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('/billing-better.webp')", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
         <div className='container'>
             <div className='text-center'>
                 <TextBlock buttonColor="dark" center={true} title="Billing, but Better" button={false} />
             </div>
             <div className='grid lg:grid-cols-3 max-lg:grid-cols-1 gap-5 mt-14'>
-                {items.map((item)=>{
-                    return (
-                        <div className='text-white bg-black/70 rounded-2xl p-8 flex flex-col gap-4'>
-                            <div dangerouslySetInnerHTML={{ __html: item.icon }}></div>
-                            <h4 className='text-balance font-bold text-2xl'>{item.title}</h4>
-                            <p>{item.description}</p>
-                        </div>
-                    )
-                })}
+                {items.map((item) => (
+                    <div className='text-white bg-black/70 rounded-2xl p-8 flex flex-col gap-4'>
+                        <div dangerouslySetInnerHTML={{ __html: item.icon }}></div>
+                        <h4 className='text-balance font-bold text-2xl'>{item.title}</h4>
+                        <p>{item.description}</p>
+                    </div>
+                ))}
             </div>
         </div>
-        
     </section>
   )
 }
