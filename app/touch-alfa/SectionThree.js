@@ -24,21 +24,18 @@ const SectionThree = () => {
                 <div className='lg:w-2/3 flex lg:justify-between gap-10'>
                     {items.map((item)=>{
                         return (
-                            <div className='w-1/2 flex flex-col lg:items-center gap-3'>
-                                <div className='flex items-center gap-4'>
+                            <div className='w-1/2 flex flex-col lg:items-center gap-3 max-lg:text-center'>
+                                <div className='flex items-center gap-4 max-lg:justify-center'>
                                     <div className='item-icon' dangerouslySetInnerHTML={{ __html: item.icon }}></div>
                                     <h4 className='font-bold text-2xl'>{item.currency}</h4>
                                 </div>
-                                <div className='lg:max-w-[200px] max-lg:max-w-[150px] w-full h-[1px] bg-white'></div>
-                                <p className='mt-4'>{item.price}</p>
+                                <div className='lg:max-w-[200px] mx-auto max-lg:max-w-[150px] w-full h-[1px] bg-white'></div>
+                                <p className='mt-4 max-lg:mt-2'>{item.price}</p>
                             </div>
                         )
                     })}
-                </div>
-                
-                
+                </div>        
             </div>
-            
         </div>
     </section>
   )
