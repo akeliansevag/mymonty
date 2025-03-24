@@ -405,7 +405,7 @@ const Content = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-5">
+                    {/* <div className="flex flex-col gap-5">
                         <div className="text-center">
                             <h2 className="smaller-title">Farfetch</h2>
                             <p>Enjoy <strong>10% off</strong> incredible fashion at Farfetch when spending $300 or above with promo code: MCFF.</p>
@@ -422,7 +422,7 @@ const Content = () => {
                                 Check out the <a target="_blank" className="text-[--mm-blue]" href="https://www.farfetch.com/lb/mastercard/privileges/evergreen/terms-and-conditions.aspx?clickref=1011lzRV4NqX&utm_source=mastercard_privileges&utm_medium=partnerships&utm_campaign=PHPAR&pid=performancehorizon_int&c=PHPAR&clickid=1011lzRV4NqX&af_siteid=mastercard_privileges&af_cost_model=CPA&af_channel=partnerships&is_retargeting=true">Terms & Conditions</a> for clarification on excluded brands & items.
                             </p>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="flex max-lg:flex-col gap-10 items-center">
                         <div className="lg:w-2/3">
