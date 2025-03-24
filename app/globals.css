@@ -407,3 +407,7 @@ body.menu-hidden .sticky-filters {
 .swiper-slide {
   height: 100%;
 }
+
+.item-icon svg {
+  @apply max-lg:w-[40px];
+}

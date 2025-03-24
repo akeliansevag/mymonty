@@ -60,7 +60,7 @@ const SectionOne = () => {
                         </div>
                     </div>
 
-                    <div className='flex max-lg:flex-col lg:items-center max-lg:gap-10 lg:gap-32'>
+                    <div className='flex max-lg:flex-col lg:items-center max-lg:gap-10 max-lg:mt-10 lg:gap-32'>
                         <div className="lg:w-1/2">
                             <img src='/alfa.webp' className='w-full'/>
                         </div>
@@ -76,13 +76,13 @@ const SectionOne = () => {
                 </div>
                 
                 <div>
-                    <div className='relative  text-center text-black'>
+                    <div className='relative  lg:text-center text-black'>
                         <div className='relative'>
                             <div className="flex lg:justify-between max-lg:flex-col lg:gap-0 max-lg:gap-8 lg:mt-16 max-lg:mt-10">
                                 {items.map((item,index)=> (
-                                    <div key={index} className='lg:w-1/4 flex flex-col items-center gap-4 relative px-5'>
+                                    <div key={index} className='lg:w-1/4 flex flex-col items-center max-lg:items-start gap-4 relative lg:px-5'>
                                         <div className={`max-lg:hidden absolute w-[calc(90%-70px)] h-[1px] bg-black top-[35px] left-[calc(55%+35px)] ${index===(items.length-1) ? 'hidden' : 'max-lg:block'}`}></div>
-                                        <div className='rounded-full border  border-black w-[70px] h-[70px] flex items-center justify-center font-bold relative'>{index+1}
+                                        <div className='rounded-full border-[2px] text-2xl  border-black w-[60px] h-[60px] flex items-center justify-center font-bold relative'>{index+1}
                                         
                                         </div>
                                         <div dangerouslySetInnerHTML={{ __html: item.description }}></div>
