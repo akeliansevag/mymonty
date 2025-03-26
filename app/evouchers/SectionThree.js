@@ -35,7 +35,7 @@ const SectionThree = () => {
             </div>
             <div className='lg:w-[40%]'>
                 <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>How to Get Your Voucher </h2>
-                <h3 className='uppercase font-black text-3xl'>(Simple as 1-2-3)</h3>
+                <h3 className='uppercase font-black lg:text-3xl'>(Simple as 1-2-3)</h3>
                 <div className='flex flex-col gap-8 mt-10'>
                     {items.map((item,index)=>{
                         return (
