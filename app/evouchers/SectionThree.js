@@ -22,8 +22,8 @@ const SectionThree = () => {
   return (
     <section className='bg-white lg:py-24 max-lg:py-10'>
       <div className='container'>
-        <div className='flex max-lg:flex-col max-lg:gap-10 lg:gap-12'>
-            <div className='lg:w-1/2'>
+        <div className='flex max-lg:flex-col max-lg:gap-10 lg:gap-12 lg:items-center'>
+            <div className='lg:w-[60%]'>
                 <video
                     src="/proto.webm"
                     poster="/proto.webp"
@@ -33,7 +33,7 @@ const SectionThree = () => {
                     playsInline
                 />
             </div>
-            <div className='lg:w-1/2'>
+            <div className='lg:w-[40%]'>
                 <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>How to Get Your Voucher </h2>
                 <h3 className='uppercase font-black text-3xl'>(Simple as 1-2-3)</h3>
                 <div className='flex flex-col gap-8 mt-10'>
