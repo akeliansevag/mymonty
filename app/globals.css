@@ -419,3 +419,7 @@ body.menu-hidden .sticky-filters {
   background-size: cover;
   transform: translate3d(0, 0, 0);
 }
+
+#logos-slider .swiper-wrapper {
+  transition-timing-function: linear;
+}
