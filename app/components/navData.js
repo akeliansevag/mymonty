@@ -112,6 +112,14 @@ export const data = [
                         title: 'Donations',
                         url: '/donations'
                     },
+                    {
+                        title: 'eVouchers',
+                        url: '/evouchers'
+                    },
+                    {
+                        title: 'Touch - Alfa',
+                        url: '/touch-alfa'
+                    },
 
                 ]
             },
