@@ -89,24 +89,8 @@ export const data = [
                 url: '/payments',
                 children: [
                     {
-                        title: 'POS',
-                        url: '/payments?s=pos'
-                    },
-                    {
-                        title: 'QR & Link',
-                        url: '/payments?s=qr-and-link'
-                    },
-                    {
-                        title: 'Online Vouchers',
-                        url: '/payments?s=online-vouchers'
-                    },
-                    {
-                        title: 'Notifications & Alerts',
-                        url: '/payments?s=notifications-and-alerts'
-                    },
-                    {
-                        title: 'Travel eSim',
-                        url: '/payments?s=travel-esim'
+                        title: 'Payments',
+                        url: '/payments'
                     },
                     {
                         title: 'Donations',
