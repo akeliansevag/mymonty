@@ -20,7 +20,7 @@ const SectionTwo = () => {
     }
   ];
   return (
-    <section className="lg:py-24 max-lg:py-10 relative bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('/billing-better.webp')", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+    <section className="lg:py-24 max-lg:py-10 relative lg:bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('/billing-better.webp')", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
         <div className='container'>
             <div className='text-center'>
                 <TextBlock buttonColor="dark" center={true} title="Billing, but Better" button={false} />
