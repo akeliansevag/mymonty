@@ -33,9 +33,9 @@ const SectionTwo = () => {
           </div>
           <div className='lg:w-1/2'>
             <h3 className='uppercase font-black text-4xl max-lg:text-center'>TransactioN fee</h3>
-            <div className='flex justify-self-center items-center gap-5'>
+            <div className='flex max-lg:justify-self-center items-center gap-5'>
               <div className='font-black text-9xl'>1%</div>
-              <h5 className='font-bold text-balance text-3xl max-w-[200px]'>of the transaction amount</h5>
+              <h5 className='font-bold text-balance text-3xl'>of the <br /> transaction <br /> amount</h5>
             </div>
           </div>
         </div>
