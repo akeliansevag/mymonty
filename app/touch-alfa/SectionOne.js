@@ -79,11 +79,14 @@ const SectionOne = () => {
                         </div>
                         <div className='relative  lg:text-center text-black'>
                             <div className='relative'>
-                                <div className="flex lg:justify-between max-lg:flex-col lg:gap-0 max-lg:gap-8 lg:mt-16 max-lg:mt-10">
+                                <div className="flex lg:justify-between max-lg:flex-col max-lg:gap-y-16 lg:gap-0 max-lg:gap-8 lg:mt-16 max-lg:mt-10">
                                     {items.map((item,index)=> (
-                                        <div key={index} className='lg:w-1/4 flex flex-col items-center max-lg:items-start gap-4 relative lg:px-5'>
-                                            <div className={`max-lg:hidden absolute w-[calc(90%-70px)] h-[1px] bg-black top-[35px] left-[calc(55%+35px)] ${index===(items.length-1) ? 'hidden' : 'max-lg:block'}`}></div>
-                                            <div className='rounded-full border-[2px] text-2xl  border-black w-[60px] h-[60px] flex items-center justify-center font-bold relative'>{index+1}
+                                        <div key={index} className='lg:w-1/4 flex lg:flex-col lg:items-center gap-4 relative lg:px-5'>
+                                            <div className={`max-lg:hidden absolute w-[calc(90%-70px)] h-[1px] bg-black top-[30px] left-[calc(55%+35px)] ${index===(items.length-1) ? 'hidden' : 'max-lg:block'}`}></div>
+
+                                            <div className={`lg:hidden absolute w-[1px] h-[calc(100%+3px)] left-[30px] top-[60px] bg-black ${index===(items.length-1) ? 'hidden' : 'max-lg:block'}`}></div>
+                                            
+                                            <div className='rounded-full shrink-0 border-[2px] text-2xl  border-black w-[60px] h-[60px] flex items-center justify-center font-bold relative'>{index+1}
                                             
                                             </div>
                                             <div dangerouslySetInnerHTML={{ __html: item.description }}></div>

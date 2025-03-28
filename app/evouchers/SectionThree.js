@@ -4,7 +4,7 @@ const SectionThree = () => {
   const items = [
     {
         title: 'Browse & Choose',
-        description: 'Open the app, head to the "E-services" tab, and browse through categories like gaming, gifts, media, and fashion.'
+        description: 'Open the app, head to the <span class="whitespace-nowrap">"E-services"</span> tab, and browse through categories like gaming, gifts, media, and fashion.'
     },
     {
         title: 'Pick Your Merchant',
@@ -44,7 +44,7 @@ const SectionThree = () => {
                                     <div className='font-bold w-[40px] h-[40px] flex items-center justify-center border-black text-base border-[2px] rounded-full'>{index+1}</div>
                                     <h4 className='font-black'>{item.title}</h4>
                                 </div>
-                                <p>{item.description}</p>
+                                <div dangerouslySetInnerHTML={{ __html: item.description }}></div>
                             </div>
                         )
                     })}
