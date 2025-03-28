@@ -5,7 +5,7 @@ const SectionFour = () => {
   return (
     <section className='lg:py-24 max-lg:py-10 bg-white'>
         <div className='container'>
-            <div className='flex max-lg:flex-col lg:items-center justify-between gap-10'>
+            <div className='flex max-w-[1000px] mx-auto max-lg:flex-col lg:items-center justify-between gap-10'>
                 <div className='lg:w-1/2'>
                     <img src='/never-miss.webp' />
                 </div>

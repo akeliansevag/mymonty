@@ -2,7 +2,7 @@ import React from 'react';
 
 const Ticket = ({index,title}) => {
   return (
-    <div className="bg-white relative text-black h-[125px] my-4 px-4 flex text-center items-center justify-center shadow-2xl">
+    <div className="bg-white relative text-black h-[125px] my-4 px-4 flex lg:text-center items-center lg:justify-center shadow-2xl">
       <div className="absolute left-0 -translate-x-full">
       <svg width="17" height="125" viewBox="0 0 17 125" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_4814_8382)">
