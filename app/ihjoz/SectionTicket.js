@@ -56,7 +56,7 @@ const SectionTicket = () => {
       <div className='container'>
         <div className='flex flex-col lg:gap-24 max-lg:gap-14'>
           <div className="flex max-lg:flex-col lg:justify-between lg:items-center max-lg:gap-10 lg:gap-24">
-            <div className='lg:w-1/2'>
+            <div className='lg:w-1/3'>
               <TextBlock title="Get Your Ticket in a Snap" button={true} buttonColor="dark" />
             </div>
             <div className="lg:w-1/2">
@@ -67,6 +67,19 @@ const SectionTicket = () => {
                   <Ticket index={selectedIndex + 1} title={items[selectedIndex]} />
                 </div>          
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='flex max-lg:flex-col lg:items-center gap-10 max-lg:mt-10 lg:mt-32 max-w-[1000px] mx-auto'>
+          <div className='lg:w-1/2'>
+            <img src='/transaction-fee.webp' />
+          </div>
+          <div className='lg:w-1/2'>
+            <h3 className='uppercase font-black text-4xl max-lg:text-center'>TransactioN fee</h3>
+            <div className='flex max-lg:justify-self-center items-center gap-5'>
+              <div className='font-black text-9xl'>1%</div>
+              <h5 className='font-bold text-balance text-3xl'>of the <br /> transaction <br /> amount</h5>
             </div>
           </div>
         </div>
