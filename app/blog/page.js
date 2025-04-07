@@ -5,7 +5,7 @@ import news from '@/public/news.webp';
 import News from './News';
 
 export const metadata = {
-  title: websiteName + 'News',
+  title: websiteName + 'Blog',
   description: '',
 };
 

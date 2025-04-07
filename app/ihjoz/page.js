@@ -5,7 +5,7 @@ import banner from '@/public/ihjoz-banner.webp';
 import SectionOne from './SectionOne';
 import SectionThree from './SectionThree';
 import SectionFour from './SectionFour';
-import SectionTwo from './SectionTwo';
+import SectionTicket from './SectionTicket';
 
 
 export const metadata = {
@@ -34,7 +34,7 @@ const accounts = () => {
         <div>
             <Banner data={data} />
             <SectionOne />
-            <SectionTwo />
+            <SectionTicket />
             <SectionThree />
             <SectionFour />
         </div>
