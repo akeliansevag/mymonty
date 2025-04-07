@@ -56,10 +56,10 @@ const SectionTicket = () => {
       <div className='container'>
         <div className='flex flex-col lg:gap-24 max-lg:gap-14'>
           <div className="flex max-lg:flex-col lg:justify-between lg:items-center max-lg:gap-10 lg:gap-24">
-            <div className='lg:w-2/5'>
+            <div className='lg:w-1/2'>
               <TextBlock title="Get Your Ticket in a Snap" button={true} buttonColor="dark" />
             </div>
-            <div className="lg:w-3/5">
+            <div className="lg:w-1/2">
               <div className='overflow-hidden rounded-3xl relative aspect-video flex items-center justify-center'>
                 <div className='absolute w-full h-full bg-[#D6104EB2] top-0 left-0 z-10'></div>
                 <img className='absolute object-cover w-full h-full top-0 left-0' src='/get-your-ticket-in-a-snap.webp' />
