@@ -100,6 +100,10 @@ export const data = [
                         title: 'Touch - Alfa',
                         url: '/touch-alfa'
                     },
+                    {
+                        title: 'Ihjoz',
+                        url: '/ihjoz'
+                    },
 
                 ]
             },
