@@ -105,7 +105,7 @@ export const data = [
                         url: '/touch-alfa'
                     },
                     {
-                        title: 'Ihjoz',
+                        title: 'ihjoz',
                         url: '/ihjoz'
                     },
 

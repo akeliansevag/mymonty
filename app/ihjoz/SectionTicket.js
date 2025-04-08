@@ -10,7 +10,7 @@ const SectionTicket = () => {
 
   const items = [
     'Open MyMonty and go to "E-Services"',
-    'Enter your Ihjoz order number',
+    'Enter your ihjoz order number',
     'Review the payment details displayed automatically',
     'Confirm and pay directly from your wallet'
   ];

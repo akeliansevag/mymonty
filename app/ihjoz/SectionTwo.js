@@ -4,7 +4,7 @@ import Ticket from './Ticket';
 
 const SectionTwo = () => {
   const items = [
-    'Open MyMonty and go to "E-Services"', 'Enter your Ihjoz order number', 'Review the payment details displayed automatically', 'Confirm and pay directly from your wallet'
+    'Open MyMonty and go to "E-Services"', 'Enter your ihjoz order number', 'Review the payment details displayed automatically', 'Confirm and pay directly from your wallet'
   ];
   return (
     <section className='max-lg:py-10 lg:py-24 bg-white'>

@@ -12,7 +12,7 @@ import noHiddenFees from '@/public/personal/no-hidden-fees.webp';
 
 export const metadata = {
   title: websiteName + 'Monty Club Onboarding Process',
-  description: 'Download the My Monty app today to gain access to a comprehensive range of financial services and benefit from an E-Wallet account in just a few minutes.',
+  description: 'Download the My Monty app today to gain access to a comprehensive range of financial services and benefit from an eWallet account in just a few minutes.',
 };
 
 const data = {
@@ -73,7 +73,7 @@ const WhyMyMonty = () => {
 
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
         <div className='container'>
-          <h2 className='text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Benefit from an e-wallet account</h2>
+          <h2 className='text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Benefit from an eWallet account</h2>
           <p className='text-center text-[#2657D4] text-[1.75rem] font-bold mt-5'>In just a few minutes!</p>
         </div>
         <div className='container !max-w-[1000px]'>

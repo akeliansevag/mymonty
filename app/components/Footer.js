@@ -200,7 +200,7 @@ const Footer = () => {
 
                     mymonty.com.lb provides information about financial and electronic wallet products and services provided by Monty Finance SAL through its mobile application mymonty available on App Store and Google Play.<br /><br />
 
-                    Monty Finance SAL is registered in Lebanon (Beirut Register of Commerce No. 73215), Gefinor Center, Clemenceau St., Hamra, Beirut, Lebanon and is authorized by the Central Bank of Lebanon (“BDL”) to operate as a financial institution (BDL Decision no. 23/6/98 dated 02 February 1998) and e-wallet service provider (BDL Decision no. 30/23/23 dated 21 July 23). Monty Finance SAL is listed on the BDL List of Financial Institutions under no. 23.<br /><br />
+                    Monty Finance SAL is registered in Lebanon (Beirut Register of Commerce No. 73215), Gefinor Center, Clemenceau St., Hamra, Beirut, Lebanon and is authorized by the Central Bank of Lebanon (“BDL”) to operate as a financial institution (BDL Decision no. 23/6/98 dated 02 February 1998) and eWallet service provider (BDL Decision no. 30/23/23 dated 21 July 23). Monty Finance SAL is listed on the BDL List of Financial Institutions under no. 23.<br /><br />
 
                     Information contained on mymonty.com.lb or mymonty app should not be construed as an offer, solicitation, advertisement, or promotion of financial and electronic wallet products and services in any country where such offer, solicitation, advertisement, or promotion is not permitted under applicable local law.</p>
 

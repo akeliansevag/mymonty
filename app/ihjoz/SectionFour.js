@@ -10,7 +10,7 @@ const SectionFour = () => {
                     <img src='/never-miss.webp' />
                 </div>
                 <div className='lg:w-1/2 max-lg:text-center'>
-                    <TextBlock title="Never miss out on the fun with Ihjoz and Mymonty!" />
+                    <TextBlock title="Never miss out on the fun with ihjoz and Mymonty!" />
                 </div>
             </div>
         </div>

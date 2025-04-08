@@ -10,15 +10,15 @@ import SectionTwo from './SectionTwo';
 
 
 export const metadata = {
-    title: websiteName + 'Ihjoz',
+    title: websiteName + 'ihjoz',
     description: '',
 };
 
 const accounts = () => {
     const data = {
-        title: 'Ihjoz with MyMonty',
+        title: 'ihjoz with MyMonty',
         subtitle: 'Payments',
-        desc: 'With MyMonty, you\'ll never run out of things to do! Paying for your tickets on Ihjoz just got easier and quicker!',
+        desc: 'With MyMonty, you\'ll never run out of things to do! Paying for your tickets on ihjoz just got easier and quicker!',
         image: {
             inGrid: true,
             layout: 'half',
