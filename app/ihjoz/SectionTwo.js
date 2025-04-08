@@ -9,11 +9,12 @@ const SectionTwo = () => {
   return (
     <section className='max-lg:py-10 lg:py-24 bg-white'>
       <div className='container'>
-        <div className='text-center'>
-          <TextBlock title="Get Your Ticket in a Snap" description="Whether your gifting others or yourself, choose from platforms like <strong>Google Play, iTunes, eBay, Amazon</strong> and more. The best gifts are the ones that are easy to give (and fun to receive)." button={true} buttonColor="dark" center={true} />
-        </div>
-        <div className='bg-[#f7f7f7] rounded-2xl py-4 px-12 my-10'>
-          <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-x-14'>
+        
+        <div className='bg-[#f7f7f7] rounded-2xl max-lg:py-12 lg:py-24 px-12'>
+          <div className='text-center'>
+            <TextBlock title="Get Your Ticket in a Snap" button={true} buttonColor="dark" center={true} />
+          </div>
+          <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-x-14 mt-10 max-w-[1000px] mx-auto'>
             {
               items.map((item,index)=>{
                 return (
@@ -27,7 +28,7 @@ const SectionTwo = () => {
           </div>
           
         </div>
-        <div className='flex max-lg:flex-col lg:items-center gap-10 mt-16 max-w-[1000px] mx-auto'>
+        <div className='flex max-lg:flex-col lg:items-center gap-10 max-lg:mt-10 lg:mt-24 max-w-[1000px] mx-auto'>
           <div className='lg:w-1/2'>
             <img src='/transaction-fee.webp' />
           </div>

@@ -3,7 +3,7 @@ import TextBlock from '../components/TextBlock';
 
 const SectionOne = () => {
   return (
-    <section className='bg-white lg:py-24 max-lg:py-10'>
+    <section className='bg-white lg:pt-24 max-lg:pt-10'>
         <div className='container'>
             <div className='flex flex-col lg:gap-24 max-lg:gap-14'>
                 <div className="flex max-lg:flex-col lg:justify-between lg:items-center max-lg:gap-10 lg:gap-24">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Ticket = ({index,title}) => {
   return (
-    <div className="bg-white relative text-black h-[125px] my-4 px-6 flex lg:text-center items-center lg:justify-center shadow-2xl">
+    <div className="bg-white relative text-black h-[125px] my-4 px-6 flex items-center lg:justify-center shadow-2xl">
       <div className="absolute left-[1px] -translate-x-full">
         <svg width="17" height="125" viewBox="0 0 17 125" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_4814_8382)">
@@ -19,7 +19,7 @@ const Ticket = ({index,title}) => {
         <div className='flex justify-between items-center gap-5'>
             <div className='font-black text-2xl'>{index}</div>
             <div className='w-[2px] h-20 border-right border border-[#09111133] border-dashed'></div>
-            <div className='leading-tight text-[18px] font-bold'>{title}</div>
+            <div className='leading-tight text-[18px]'>{title}</div>
         </div>
 
         <div className="absolute right-[1px] translate-x-full">
