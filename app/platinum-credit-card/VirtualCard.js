@@ -3,7 +3,7 @@ import React from 'react';
 import Section from '@/app/components/Section';
 import TextBlock from '../components/TextBlock';
 import Image from 'next/image';
-import sectionTwoImage from '@/public/platinum-credit-card-banner.webp';
+import sectionTwoImage from '@/public/platinum-credit-card-banner2.webp';
 import useGlobalAnimation from '../hooks/useGlobalAnimation';
 
 const VirtualCard = () => {

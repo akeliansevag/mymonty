@@ -5,7 +5,6 @@ import banner from '@/public/ihjoz-banner.webp';
 import SectionOne from './SectionOne';
 import SectionThree from './SectionThree';
 import SectionFour from './SectionFour';
-import SectionTicket from './SectionTicket';
 import SectionTwo from './SectionTwo';
 
 

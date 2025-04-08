@@ -12,7 +12,7 @@ const Sidebar = ({divInView,travelRef,lifestyleRef,peaceRef}) => {
     });
   };
   return (
-    <div className="sticky-filters">
+    <div className="sticky-filters bg-gray-100">
         <div onClick={()=> scrollToSection(travelRef)} className="cursor-pointer text-center flex flex-col items-center">
               <Icon title="Travel" color="#E8A600" active={divInView=="travel" ? true : false} image={divInView=="travel" ? '/travel-active.webp' : '/travel.webp'}/>
         </div>
