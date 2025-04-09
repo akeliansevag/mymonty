@@ -4,7 +4,7 @@ import Ticket from './Ticket';
 
 const SectionTwo = () => {
   const items = [
-    'Open MyMonty and go to "E-Services"', 'Enter your ihjoz order number', 'Review the payment details displayed automatically', 'Confirm and pay directly from your wallet'
+    'Open MyMonty and go to <span class="whitespace-nowrap">"E-Services"</span>', 'Enter your ihjoz order number', 'Review the payment details displayed automatically', 'Confirm and pay directly from your wallet'
   ];
   return (
     <section className='max-lg:py-10 lg:py-24 bg-white'>
@@ -12,7 +12,7 @@ const SectionTwo = () => {
         
         <div className='bg-[#f7f7f7] rounded-2xl max-lg:py-12 lg:py-24 px-12'>
           <div className='text-center'>
-            <TextBlock title="Get Your Ticket in a Snap" button={true} buttonColor="dark" center={true} />
+            <TextBlock title="Get Your Ticket in a Snap" button={false} center={true} />
           </div>
           <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-x-14 mt-10 max-w-[1000px] mx-auto'>
             {
@@ -26,7 +26,10 @@ const SectionTwo = () => {
               })
             }
           </div>
-          
+          <div className='text-center'>
+            <TextBlock button={true} buttonColor="dark" center={true} />
+          </div>
+         
         </div>
         <div className='flex max-lg:flex-col lg:items-center gap-10 max-lg:mt-10 lg:mt-24 max-w-[1000px] mx-auto'>
           <div className='lg:w-1/2'>
