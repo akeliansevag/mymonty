@@ -324,7 +324,7 @@ ol {
 }
 
 .smaller-title {
-  @apply text-3xl font-bold mb-7;
+  @apply text-3xl font-bold mb-3 text-balance;
 }
 
 .hole {
@@ -332,7 +332,7 @@ ol {
 }
 
 .sticky-filters {
-  @apply bg-white z-10 sticky top-[calc(var(--header-height)+30px)] w-full md:w-[15%] rounded-xl p-5 self-start flex-none flex  md:flex-col gap-7 max-md:mb-10 max-md:justify-between max-md:p-2 transition-all max-md:top-[calc(var(--header-height)+15px)] max-md:shadow-md max-md:w-[90%] max-md:mx-auto;
+  @apply bg-gray-100 z-10 sticky top-[calc(var(--header-height)+30px)] w-full md:w-[15%] rounded-3xl lg:rounded-e-none p-5 self-start flex-none flex  md:flex-col gap-7 max-md:mb-10 max-md:justify-between max-md:p-2 transition-all max-md:top-[calc(var(--header-height)+15px)] max-md:shadow-md max-md:w-[90%] max-md:mx-auto;
 }
 
 body.menu-hidden .sticky-filters {
@@ -422,4 +422,8 @@ body.menu-hidden .sticky-filters {
 
 #logos-slider .swiper-wrapper {
   transition-timing-function: linear;
+}
+
+.content-category > div {
+  @apply border-b border-b-[#dfdfdf] max-lg:py-10 lg:py-20;
 }
