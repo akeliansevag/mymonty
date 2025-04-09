@@ -170,9 +170,9 @@ const Content = () => {
         <div className="flex max-md:flex-col gap-x-5">
             <Sidebar travelRef={travelRef} lifestyleRef={lifestyleRef} peaceRef={peaceRef} divInView={currentInView}/>
             
-            <div className="">
+            <div className="bg-gray-100 rounded-3xl rounded-l-none p-8">
                 <div ref={travelRef} data-name="travel" className="flex flex-col max-lg:gap-14 gap-28">
-                    <div className="bg-white rounded-xl p-8">
+                    <div className="">
                         <h2 className="smaller-title">Middle East & Levant Platinum Mastercard Lounge Program</h2>
                         <p>Enjoy FREE unlimited access to over 25 regional and international DragonPass lounges, business facilities, complimentary refreshments, and snacks mentioned in the MasterCard Travel Pass app.</p>
                         <a href="https://apps.apple.com/lb/app/mastercard-travel-pass/id1493489553" target="_blank" className="mm-button blue mt-4">Download App Now</a>
@@ -278,7 +278,7 @@ const Content = () => {
                     </div>
 
                     <div className="flex max-lg:flex-col gap-10">
-                        <div className="bg-white rounded-3xl p-6 lg:w-1/2">
+                        <div className=" rounded-3xl p-6 lg:w-1/2">
                             <h2 className="smaller-title">Rentalcars.com</h2>
                             <p>Enjoy 10% off car rentals when booking through <a target="_blank" className="text-[var(--mm-blue)]" href="https://rentalcars.com">Rentalcars.com</a>.</p>
                             <div className="mt-8 relative aspect-[361/187] rounded-[40px] overflow-hidden">
@@ -286,7 +286,7 @@ const Content = () => {
                             </div>
                             
                         </div>
-                        <div className="bg-white rounded-3xl p-6 lg:w-1/2">
+                        <div className=" rounded-3xl p-6 lg:w-1/2">
                             <h2 className="smaller-title">Budget Truck & Car Rental</h2>
                             <p>Get <strong>up to 10%</strong> off on your next car or truck rental with Budget through their <a className="text-[var(--mm-blue)]" target="_blank" href="https://one.budgetinternational.com/en_GB/Budget-MastercardMEA/">website</a>. </p>
                             <img className="mt-8" src="/budget-truck.webp" alt="RentalCars" />
@@ -314,10 +314,10 @@ const Content = () => {
                         </div>
                         
                         <div className="flex max-md:flex-col gap-8 mt-10">
-                            <div className="bg-white w-full md:w-1/3 rounded-xl relative overflow-hidden">
+                            <div className=" w-full md:w-1/3 rounded-xl relative overflow-hidden">
                                <img src='/costa.webp' className="md:absolute object-cover w-full h-full" alt="Costa Coffee"/>
                             </div>
-                            <div className="bg-white rounded-xl p-8 w-full md:w-2/3">
+                            <div className=" rounded-xl p-8 w-full md:w-2/3">
                                 <h3 className="font-bold mb-3 max-md:mt-10">HOW TO USE:</h3>
                                 <ul className="pl-2">
                                     {
@@ -357,7 +357,7 @@ const Content = () => {
                         <div className="lg:w-1/3">
                             <img src="/purchase-protection.webp" alt="Purchase Protection" />
                         </div>
-                        <div className="lg:w-2/3 bg-white rounded-3xl p-5">
+                        <div className="lg:w-2/3  rounded-3xl p-5">
                             <h2 className="smaller-title">Purchase Protection</h2>
                             <p>Shop with confidence, knowing that the purchases you make with your Mastercard are:</p>
                             <ul className="pl-2 mt-7">
@@ -384,7 +384,7 @@ const Content = () => {
                 
                 <div ref={lifestyleRef} data-name="lifestyle" className="flex flex-col max-lg:gap-14 gap-28">
                     <div className="flex max-lg:flex-col gap-8">
-                        <div className="lg:w-2/3 bg-white rounded-3xl p-8">
+                        <div className="lg:w-2/3  rounded-3xl p-8">
                             <h2 className="smaller-title">Bicester Village Shopping Collection</h2>
                             <p>Shop luxury in style with VIP discounts at the Bicester Village Shopping Collection across Europe:</p>
                             <ul className="flex flex-col gap-4 mt-8">
@@ -400,7 +400,7 @@ const Content = () => {
                                 Visit their <a target="_blank" className="text-[var(--mm-blue)]" href="https://www.thebicestercollection.com/en/destinations">website</a> to avail these offers.
                             </p>
                         </div>
-                        <div className="bg-white lg:w-1/3 rounded-3xl relative overflow-hidden">
+                        <div className=" lg:w-1/3 rounded-3xl relative overflow-hidden">
                             <img src="/bicester.webp" alt="Bicester" className="absolute h-full w-full object-cover"/>
                         </div>
                     </div>
@@ -431,7 +431,7 @@ const Content = () => {
                             <div className="grid lg:grid-cols-2 gap-6 mt-5 mb-5">
                                 {
                                     my_us.map((item,index)=> (
-                                        <div key={index} className="bg-white rounded-2xl p-5">
+                                        <div key={index} className=" rounded-2xl p-5">
                                             {item.title}
                                         </div>
                                     ))
@@ -444,7 +444,7 @@ const Content = () => {
                         </div>
                     </div>
 
-                    <div className="text-center bg-white rounded-3xl p-8">
+                    <div className="text-center  rounded-3xl p-8">
                         <h2 className="smaller-title">Mastercard Gamer Pass With Go Gamers</h2>
                         <p>Get your Mastercard Gamer Pass to participate in one of the biggest online gaming communities consisting of online coaching sessions & tournaments for your favorite games & win prizes:</p>
                         <div className="grid lg:grid-cols-3 gap-5 mt-5 mb-5">
@@ -474,7 +474,7 @@ const Content = () => {
                             <div className="grid lg:grid-cols-2 gap-3 mt-5 mb-5">
                                 {
                                     treatments.map((item,index)=> (
-                                        <div key={index} className="bg-white rounded-2xl p-5">
+                                        <div key={index} className=" rounded-2xl p-5">
                                             {item.title}
                                         </div>
                                     ))
@@ -499,7 +499,7 @@ const Content = () => {
                             <ul className="flex flex-col gap-5">
                                 {
                                     fiit.map((item,index)=>(
-                                        <li key={index} className="bg-white p-5 rounded-xl">
+                                        <li key={index} className=" p-5 rounded-xl">
                                             {item.title}
                                         </li>
                                     ))
@@ -511,7 +511,7 @@ const Content = () => {
                     </div>
                     
                     <div>
-                        <div className="bg-white rounded-xl p-8">
+                        <div className=" rounded-xl p-8">
                             <div className="flex max-md:flex-col gap-32 max-md:gap-7">
                                 <div className="md:w-1/2">
                                     <h2 className="smaller-title">Lingokids</h2>

@@ -19,7 +19,7 @@ const Ticket = ({index,title}) => {
         <div className='flex justify-between items-center gap-5'>
             <div className='font-black text-2xl'>{index}</div>
             <div className='w-[2px] h-20 border-right border border-[#09111133] border-dashed'></div>
-            <div className='leading-tight text-[18px]'>{title}</div>
+            <div className="leading-tight text-[18px]" dangerouslySetInnerHTML={{ __html: title }} />
         </div>
 
         <div className="absolute right-[1px] translate-x-full">

@@ -18,11 +18,11 @@ const Sidebar = ({divInView,travelRef,lifestyleRef,peaceRef}) => {
         </div>
 
         <div onClick={()=> scrollToSection(peaceRef)} className="cursor-pointer text-center flex flex-col items-center">
-          <Icon title="Peace of Mind" color="#1380E9" active={divInView=="peace" ? true : false} image={divInView=="peace" ? '/peace-of-mind-active.webp' : '/peace-of-mind.webp'}/>
+              <Icon title="Peace of Mind" color="#1380E9" active={divInView=="peace" ? true : false} image={divInView=="peace" ? '/peace-of-mind-active.webp' : '/peace-of-mind.webp'}/>
         </div>
 
         <div onClick={()=> scrollToSection(lifestyleRef)} className="cursor-pointer text-center flex flex-col items-center">
-         <Icon title="lifestyle" color="#04886B" active={divInView=="lifestyle" ? true : false} image={divInView=="lifestyle" ? '/lifestyle-active.webp' : '/lifestyle.webp'}/>  
+              <Icon title="lifestyle" color="#04886B" active={divInView=="lifestyle" ? true : false} image={divInView=="lifestyle" ? '/lifestyle-active.webp' : '/lifestyle.webp'}/>  
         </div>
 
         

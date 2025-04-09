@@ -44,7 +44,7 @@ const cards = () => {
         <>
             <Banner terms={terms} data={data} AnimatedImage={AnimatedBanner} />
             <VirtualCard />
-            <div className="bg-gray-100 py-10 lg:py-20">
+            <div className="py-10 lg:py-20">
                 <div className="container text-center">
                     <TextBlock center={true} title="Physical Platinum Mastercard Benefits" description="" />
                 </div>
