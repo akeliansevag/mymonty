@@ -7,12 +7,18 @@ import Image from 'next/image';
 
 const SectionFour = () => {
     return (
-        <section className='relative pt-14 pb-14 lg:pt-28 lg:pb-20 min-h-[calc(100vh-var(--mobile-header-height))] flex flex-col justify-center  bg-black text-white overflow-x-hidden'>
+        <section className='relative pt-14 pb-14 lg:pt-28 lg:pb-20 min-h-[calc(130vh-var(--mobile-header-height))] lg:min-h-[calc(100vh-var(--mobile-header-height))] flex flex-col lg:justify-center  bg-black text-white overflow-x-hidden'>
             {/* <Image fill placeholder='blur' quality={100} sizes='100vw' src={backgroundImage} className='object-cover w-full h-full z-0' alt="Background Image" /> */}
-            <video className='w-full h-full object-cover absolute top-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>
+            <video className='hidden lg:block w-full h-full objectcover absolute top-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>
                 <source src='/sectionfourvideo.mp4' type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
+
+            <video className='block lg:hidden w-full absolute bottom-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>
+                <source src='/sectionfourvideo-mobile.mp4' type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+
             <div className='container md:flex md:items-center gap-10 relative z-10'>
                 <div className='flex justify-start'>
                     <div className='p-4 md:p-0 md:w-[45%]'>
