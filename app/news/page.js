@@ -5,14 +5,14 @@ import news from '@/public/news.webp';
 import News from './News';
 
 export const metadata = {
-  title: websiteName + 'Code of Conduct',
+  title: websiteName + 'News',
   description: '',
 };
 
 const data = {
   title: 'What’s Happening at Mymonty?',
   subtitle: 'News',
-  desc: 'We\'re committed to revolutionizing the global approach to money – to simplify, enhance, and enrich the experience for everyone.',
+  desc: 'Stay updated with the latest news, innovations, and milestones from MyMonty - your go-to source for everything shaping our fintech world',
   image: {
     inGrid: true,
     layout: 'half',

@@ -731,12 +731,12 @@ const PayrollForm = () => {
 												type="radio"
 												id="payment_method-through-ewallet"
 												name="payment_method"
-												value="Through E-Wallet"
-												checked={formData.payment_method === 'Through E-Wallet'}
+												value="Through eWallet"
+												checked={formData.payment_method === 'Through eWallet'}
 												onChange={handleChange}
 												className={`mr-2 ${errors.payment_method ? 'border-red-500' : ''}`}
 											/>
-											Through E-Wallet
+											Through eWallet
 										</label>
 									</div>
 									<span className='text-red-500'>{errors.payment_method}</span>

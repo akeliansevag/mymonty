@@ -89,24 +89,24 @@ export const data = [
                 url: '/payments',
                 children: [
                     {
-                        title: 'POS',
-                        url: '/payments?s=pos'
+                        title: 'Payments',
+                        url: '/payments'
                     },
                     {
-                        title: 'QR & Link',
-                        url: '/payments?s=qr-and-link'
+                        title: 'Donations',
+                        url: '/donations'
                     },
                     {
-                        title: 'Online Vouchers',
-                        url: '/payments?s=online-vouchers'
+                        title: 'eVouchers',
+                        url: '/evouchers'
                     },
                     {
-                        title: 'Notifications & Alerts',
-                        url: '/payments?s=notifications-and-alerts'
+                        title: 'Touch - Alfa',
+                        url: '/touch-alfa'
                     },
                     {
-                        title: 'Travel eSim',
-                        url: '/payments?s=travel-esim'
+                        title: 'ihjoz',
+                        url: '/ihjoz'
                     },
 
                 ]
@@ -172,10 +172,10 @@ export const data = [
                 title: 'Code of Conduct',
                 url: '/code-of-conduct'
             },
-            // {
-            //     title: 'News',
-            //     url: '/news'
-            // },
+            {
+                title: 'News',
+                url: '/news'
+            },
             // {
             //     title: 'Blogs',
             //     url: 'blogs'

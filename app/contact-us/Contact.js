@@ -427,7 +427,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <iframe className="w-full h-96 lg:w-full lg:h-full rounded-[1.875rem]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d587.147155212771!2d35.48664895411466!3d33.89796187508457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f17f8b3f2f191%3A0x62f62de8b111dd99!2sMonty%20Mobile%20Lebanon!5e0!3m2!1sen!2slb!4v1741610691774!5m2!1sen!2slb" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe className="w-full h-96 lg:w-full lg:h-full rounded-[1.875rem]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d587.147155212771!2d35.48664895411466!3d33.89796187508457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f17f8b3f2f191%3A0x62f62de8b111dd99!2sMonty%20Mobile%20Lebanon!5e0!3m2!1sen!2slb!4v1741610691774!5m2!1sen!2slb" allowFullScreen="" loading="lazy"></iframe>
             {/* <iframe className="w-full h-96 lg:w-full lg:h-full rounded-[1.875rem]" src="https://www.google.com/maps/d/embed?mid=1jxiB6ebKG7OaUCbnS791g07APxzhT5I&ehbc=2E312F&noprof=1"></iframe> */}
           </div>
         </div>
