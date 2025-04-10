@@ -6,7 +6,7 @@ import codeOfConduct from '@/public/personal/code-of-conduct-new.webp';
 
 export const metadata = {
   title: websiteName + 'Code of Conduct',
-  description: '',
+  description: 'Learn more about the code of conduct rules at My Monty and how we\'re committed to revolutionizing the global approach to money and enrich everyone\'s experience.',
 };
 
 const data = {

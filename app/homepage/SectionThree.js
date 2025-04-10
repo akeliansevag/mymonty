@@ -6,7 +6,7 @@ import CardsSlider from './CardsSlider';
 
 const SectionThree = () => {
     return (
-        <section className='pt-14 pb-14 lg:pt-28 lg:pb-20 bg-black text-white'>
+        <section className='pt-14 pb-14 lg:pt-28 lg:pb-20 bg-black text-white min-h-[calc(100vh-var(--mobile-header-height))] flex flex-col justify-center overflow-x-hidden'>
             <div className='container text-center'>
                 <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>DISCOVER OUR VIRTUAL CARD COLLECTION</h2>
                 <div className='lg:w-1/2 mx-auto'>

@@ -13,6 +13,15 @@
 body {
   font-size: 1.25rem;
 }
+
+p {
+  /* text-wrap: pretty; */
+}
+
+h1, h2, h3, h4, h5, h6{
+  text-wrap: balance;
+}
+
 .mm-button {
   background-color: var(--mm-black);
   border-radius: 30px;
@@ -350,4 +359,15 @@ body.menu-hidden .sticky-filters {
 
 .blog-content h1,.blog-content h2, .blog-content h3, .blog-content h4, .blog-content h5, .blog-content h6 {
   @apply font-bold text-3xl;
+}
+
+.section-video:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: linear-gradient(180deg, rgba(255,255,255, 0) 0%, rgb(0, 0, 0, 0.2a) 100%);
 }
