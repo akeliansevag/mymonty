@@ -19,11 +19,11 @@ const Content = () => {
                 }
               });
             },
-           {
-            root: null, 
-            rootMargin: '-15% 0% -15% 0%',
-            //threshold: 0.5, 
-           } // Adjust threshold for desired visibility
+            {
+                root: null,
+                rootMargin: '-85% 0% -15% 0%',
+                threshold: 0
+            }
         );
 
        // Observe each ref
@@ -366,7 +366,35 @@ const Content = () => {
                         </div>    
                     </div>
                 </div>      
-                
+                <div ref={peaceRef} data-name="peace" className="content-category">
+                    <div className="flex max-lg:flex-col gap-10 lg:justify-between">
+                        <div className="lg:w-2/5">
+                                <h2 className="smaller-title">Purchase Protection</h2>
+                                <p>Shop with confidence, knowing that the purchases you make with your Mastercard are:</p>
+                                <ul className="pl-2 mt-7">
+                                    {
+                                        purchase_protection.map((item, index) => 
+                                                (
+                                                    <li key={index+1} className="flex gap-4 mb-3 text-lg">
+                                                        <span>{index+1}</span> 
+                                                        <span>{item.title}</span>
+                                                    </li>
+                                                )
+                                                
+                                        )
+                                    }
+                                </ul>
+                                <p className="mt-8">
+                                In case of damage, you can either get a new item to replace the damaged one or receive compensation for the item’s total value, as per the store receipt. <br />
+                                Simply visit their <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com/">website</a> to file a claim.
+                                </p>
+                        </div>
+                        <div className="lg:w-2/5">
+                            <img src="/purchase-protection.webp" alt="Purchase Protection" />
+                        </div>
+                        
+                    </div>
+                </div>
                 <div ref={lifestyleRef} data-name="lifestyle" className="content-category">
                     <div className="flex max-lg:flex-col gap-10 lg:justify-between">
                         <div className="lg:w-2/5">
@@ -537,7 +565,7 @@ const Content = () => {
                         
                     </div>
                                       
-                    <div className='flex max-lg:flex-col gap-10 lg:justify-between'>
+                    <div className='!pb-0 !border-b-0 flex max-lg:flex-col gap-10 lg:justify-between'>
                         <div className="lg:w-2/5">
                             <div>
                                 <h2 className="smaller-title">Lingokids</h2>
@@ -596,38 +624,6 @@ const Content = () => {
                         </div>
                     </div>
                 </div>
-
-
-                <div ref={peaceRef} data-name="peace" className="content-category">
-                    <div className="flex max-lg:flex-col gap-10 !border-b-0 !pb-0 lg:justify-between">
-                        <div className="lg:w-2/5">
-                                <h2 className="smaller-title">Purchase Protection</h2>
-                                <p>Shop with confidence, knowing that the purchases you make with your Mastercard are:</p>
-                                <ul className="pl-2 mt-7">
-                                    {
-                                        purchase_protection.map((item, index) => 
-                                                (
-                                                    <li key={index+1} className="flex gap-4 mb-3 text-lg">
-                                                        <span>{index+1}</span> 
-                                                        <span>{item.title}</span>
-                                                    </li>
-                                                )
-                                                
-                                        )
-                                    }
-                                </ul>
-                                <p className="mt-8">
-                                In case of damage, you can either get a new item to replace the damaged one or receive compensation for the item’s total value, as per the store receipt. <br />
-                                Simply visit their <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com/">website</a> to file a claim.
-                                </p>
-                        </div>
-                        <div className="lg:w-2/5">
-                            <img src="/purchase-protection.webp" alt="Purchase Protection" />
-                        </div>
-                        
-                    </div>
-                </div>
-                
             </div>
         </div>
         
@@ -635,4 +631,4 @@ const Content = () => {
   )
 }
 
-export default Content
+export default Content;
