@@ -180,12 +180,12 @@ const Content = () => {
                         <div className="flex lg:items-center max-lg:flex-col lg:justify-between lg:-mt-10 gap-10">
                             <div className="lg:w-3/5">
                                 <h3 className="font-bold mb-3 max-lg:mt-10">HOW TO USE:</h3>
-                                <ul className="pl-2">
+                                <ul className="">
                                     {
                                         howToUse.map((item, index) => 
                                                 (
-                                                    <li key={index+1} className="flex items-center gap-3 mb-3">
-                                                        <span className="bg-transparent shrink-0 w-[30px] h-[30px] rounded-full flex items-center justify-center">{index+1}</span> 
+                                                    <li key={index+1} className="flex gap-3 mb-3 text-lg">
+                                                        <span className="bg-transparent">{index+1}</span> 
                                                         <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
                                                     </li>
                                                 )
@@ -334,12 +334,12 @@ const Content = () => {
                                     <h2 className="smaller-title">Costa Coffee</h2>
                                     <p>Get a free food or drink item at Costa in Dubai Airports!</p>
                                     <h3 className="mt-5 font-bold mb-3 max-md:mt-10">HOW TO USE:</h3>
-                                    <ul className="pl-2">
+                                    <ul className="">
                                         {
                                             howToUseCosta.map((item, index) => 
                                                     (
-                                                        <li key={index+1} className="flex gap-3 mb-3">
-                                                            <span className="bg-[#f7f7f7] mt-1 shrink-0 w-[30px] h-[30px] rounded-full flex items-center justify-center">{index+1}</span> 
+                                                        <li key={index+1} className="flex gap-3 mb-3 text-lg">
+                                                            <span className="flex">{index+1}</span> 
                                                             <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
                                                         </li>
                                                     )
@@ -371,7 +371,7 @@ const Content = () => {
                         <div className="lg:w-2/5">
                                 <h2 className="smaller-title">Purchase Protection</h2>
                                 <p>Shop with confidence, knowing that the purchases you make with your Mastercard are:</p>
-                                <ul className="pl-2 mt-7">
+                                <ul className="mt-7">
                                     {
                                         purchase_protection.map((item, index) => 
                                                 (
@@ -403,7 +403,7 @@ const Content = () => {
                             <ul className="flex flex-col gap-4 mt-8">
                                 {
                                     bicester.map((item,index) => (
-                                    <li key={index} className="flex gap-3">
+                                    <li key={index} className="flex gap-3 text-lg">
                                         <span>
                                             <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1.75 5.31309C1.75 3.77294 1.75 3.00287 2.04973 2.41461C2.31338 1.89717 2.73408 1.47647 3.25153 1.21282C3.83978 0.913086 4.60986 0.913086 6.15 0.913086H13.85C15.3901 0.913086 16.1602 0.913086 16.7485 1.21282C17.2659 1.47647 17.6866 1.89717 17.9503 2.41461C18.25 3.00287 18.25 3.77294 18.25 5.31309V13.0131C18.25 14.5532 18.25 15.3233 17.9503 15.9116C17.6866 16.429 17.2659 16.8497 16.7485 17.1134C16.1602 17.4131 15.3901 17.4131 13.85 17.4131H6.15C4.60986 17.4131 3.83978 17.4131 3.25153 17.1134C2.73408 16.8497 2.31338 16.429 2.04973 15.9116C1.75 15.3233 1.75 14.5532 1.75 13.0131V5.31309Z" stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -454,7 +454,7 @@ const Content = () => {
                             <div className="flex flex-col gap-5 mt-5 mb-5">
                                 {
                                     my_us.map((item,index)=> (
-                                        <div key={index} className="flex gap-3">
+                                        <div key={index} className="flex gap-3 text-lg">
                                             <span>
                                             <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1.75 5.31309C1.75 3.77294 1.75 3.00287 2.04973 2.41461C2.31338 1.89717 2.73408 1.47647 3.25153 1.21282C3.83978 0.913086 4.60986 0.913086 6.15 0.913086H13.85C15.3901 0.913086 16.1602 0.913086 16.7485 1.21282C17.2659 1.47647 17.6866 1.89717 17.9503 2.41461C18.25 3.00287 18.25 3.77294 18.25 5.31309V13.0131C18.25 14.5532 18.25 15.3233 17.9503 15.9116C17.6866 16.429 17.2659 16.8497 16.7485 17.1134C16.1602 17.4131 15.3901 17.4131 13.85 17.4131H6.15C4.60986 17.4131 3.83978 17.4131 3.25153 17.1134C2.73408 16.8497 2.31338 16.429 2.04973 15.9116C1.75 15.3233 1.75 14.5532 1.75 13.0131V5.31309Z" stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -481,7 +481,7 @@ const Content = () => {
                             <div className="flex flex-col gap-4 mt-5 mb-5">
                                 {
                                     go_gamers.map((item, index)=>(
-                                        <div key={index} className="flex gap-3">
+                                        <div key={index} className="flex gap-3 text-lg">
                                             <span>
                                                 <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1.75 5.31309C1.75 3.77294 1.75 3.00287 2.04973 2.41461C2.31338 1.89717 2.73408 1.47647 3.25153 1.21282C3.83978 0.913086 4.60986 0.913086 6.15 0.913086H13.85C15.3901 0.913086 16.1602 0.913086 16.7485 1.21282C17.2659 1.47647 17.6866 1.89717 17.9503 2.41461C18.25 3.00287 18.25 3.77294 18.25 5.31309V13.0131C18.25 14.5532 18.25 15.3233 17.9503 15.9116C17.6866 16.429 17.2659 16.8497 16.7485 17.1134C16.1602 17.4131 15.3901 17.4131 13.85 17.4131H6.15C4.60986 17.4131 3.83978 17.4131 3.25153 17.1134C2.73408 16.8497 2.31338 16.429 2.04973 15.9116C1.75 15.3233 1.75 14.5532 1.75 13.0131V5.31309Z" stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -512,7 +512,7 @@ const Content = () => {
                             <div className="flex flex-col gap-4 mt-5 mb-5">
                                 {
                                     treatments.map((item,index)=> (
-                                        <div key={index} className="flex gap-3">
+                                        <div key={index} className="flex gap-3 text-lg">
                                             <span>
                                                 <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1.75 5.31309C1.75 3.77294 1.75 3.00287 2.04973 2.41461C2.31338 1.89717 2.73408 1.47647 3.25153 1.21282C3.83978 0.913086 4.60986 0.913086 6.15 0.913086H13.85C15.3901 0.913086 16.1602 0.913086 16.7485 1.21282C17.2659 1.47647 17.6866 1.89717 17.9503 2.41461C18.25 3.00287 18.25 3.77294 18.25 5.31309V13.0131C18.25 14.5532 18.25 15.3233 17.9503 15.9116C17.6866 16.429 17.2659 16.8497 16.7485 17.1134C16.1602 17.4131 15.3901 17.4131 13.85 17.4131H6.15C4.60986 17.4131 3.83978 17.4131 3.25153 17.1134C2.73408 16.8497 2.31338 16.429 2.04973 15.9116C1.75 15.3233 1.75 14.5532 1.75 13.0131V5.31309Z" stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -541,7 +541,7 @@ const Content = () => {
                             <div className="flex flex-col gap-4 mt-5 mb-5">
                                 {
                                     fiit.map((item,index)=> (
-                                        <div key={index} className="flex gap-3">
+                                        <div key={index} className="flex gap-3 text-lg">
                                             <span>
                                                 <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1.75 5.31309C1.75 3.77294 1.75 3.00287 2.04973 2.41461C2.31338 1.89717 2.73408 1.47647 3.25153 1.21282C3.83978 0.913086 4.60986 0.913086 6.15 0.913086H13.85C15.3901 0.913086 16.1602 0.913086 16.7485 1.21282C17.2659 1.47647 17.6866 1.89717 17.9503 2.41461C18.25 3.00287 18.25 3.77294 18.25 5.31309V13.0131C18.25 14.5532 18.25 15.3233 17.9503 15.9116C17.6866 16.429 17.2659 16.8497 16.7485 17.1134C16.1602 17.4131 15.3901 17.4131 13.85 17.4131H6.15C4.60986 17.4131 3.83978 17.4131 3.25153 17.1134C2.73408 16.8497 2.31338 16.429 2.04973 15.9116C1.75 15.3233 1.75 14.5532 1.75 13.0131V5.31309Z" stroke="black" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -554,13 +554,12 @@ const Content = () => {
                                     ))
                                 }
                             </div>
+                            <a href="https://www.vaidam.com/mastercard-offers" target='_blank' className='mm-button blue'>Subscribe Now</a>
                         </div>
                         
                         <div className="lg:w-2/5 relative aspect-[5/4] rounded-[40px] overflow-hidden">
                             <img src="/fiit2.webp" alt="Go Gamers image" className='absolute w-full h-full object-cover left-0 top-0' />
-                            <div className='text-center absolute bottom-10 left-1/2 -translate-x-1/2'>
-                                <a href="https://www.vaidam.com/mastercard-offers" target='_blank' className='mm-button blue'>Subscribe Now</a>
-                            </div>
+                            
                         </div>
                         
                     </div>
@@ -599,7 +598,7 @@ const Content = () => {
                             </div>
                             <div>
                                 <h3 className="font-bold mb-3 mt-5">HOW TO REDEEM:</h3>
-                                <ul className="pl-2">
+                                <ul className="">
                                     {
                                         howToRedeem.map((item, index) => 
                                                 (
