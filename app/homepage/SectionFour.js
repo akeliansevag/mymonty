@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const SectionFour = () => {
     return (
-        <section className='relative pt-14 pb-14 lg:pt-28 lg:pb-20 min-h-[calc(130vh-var(--mobile-header-height))] lg:min-h-[calc(100vh-var(--mobile-header-height))] flex flex-col lg:justify-center  bg-black text-white overflow-x-hidden'>
+        <section className='relative pt-14 pb-14 lg:pt-28 lg:pb-20 min-h-[calc(100vh-var(--mobile-header-height))] lg:min-h-[calc(100vh-var(--mobile-header-height))] flex flex-col lg:justify-center  bg-black text-white overflow-x-hidden'>
             {/* <Image fill placeholder='blur' quality={100} sizes='100vw' src={backgroundImage} className='object-cover w-full h-full z-0' alt="Background Image" /> */}
             <video className='hidden lg:block w-full h-full objectcover absolute top-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>
                 <source src='/sectionfourvideo.mp4' type="video/mp4" />
