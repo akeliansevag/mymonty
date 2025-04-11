@@ -1,39 +1,69 @@
-import React from 'react';
-import backgroundImage from '@/public/homepage-crossborder.webp';
-import sectionImage from '@/public/homepage-crossborder.webp';
-import Link from 'next/link';
-import Image from 'next/image';
+'use client';
 
+import React, { useEffect, useState } from 'react';
+import backgroundImage from '@/public/dream-home.webp';
+import Link from 'next/link';
 
 const SectionFive = () => {
+    const [offsetY, setOffsetY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            const section = document.getElementById('section-five');
+            if (!section) return;
+
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            // Only trigger parallax effect when scrolling in this section's range
+            if (scrollY >= sectionTop - window.innerHeight && scrollY <= sectionTop + sectionHeight) {
+                setOffsetY((scrollY - sectionTop) * 0.1); // Adjusted for subtle movement
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <section className='relative pt-14 pb-14 lg:pt-28 lg:pb-20 min-h-[calc(130vh-var(--mobile-header-height))] lg:min-h-[calc(100vh-var(--mobile-header-height))] flex flex-col lg:justify-center  bg-black text-white overflow-x-hidden'>
-            {/* <Image fill placeholder='blur' quality={100} sizes='100vw' src={backgroundImage} className='object-cover w-full h-full z-0' alt="Background Image" /> */}
-            <video className='hidden lg:block w-full h-full objectcover absolute top-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>
-                <source src='/sectionfourvideo.mp4' type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-
-            <video className='block lg:hidden w-full absolute bottom-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>
-                <source src='/sectionfourvideo-mobile.mp4' type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-
-            <div className='container md:flex md:items-center gap-10 relative z-10'>
-                <div className='flex justify-start'>
-                    <div className='p-4 md:p-0 md:w-[45%]'>
-                        <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>SEND MONEY ACROSS THE GLOBE WITH EASE</h2>
-                        <p className='leading-8 mt-8'>Join MyMonty's expat community and enjoy free P2P transfers to 160+ countries. Instantly send and receive money; globally, effortlessly.</p>
-                        <Link href="/transfers" className='mm-button white mt-8 mx-auto mb-10'>Try it Out</Link>
-                    </div>
-
+        <section
+            id="section-five"
+            className="bg-white pt-14 pb-14 lg:pt-28 lg:pb-20"
+        >
+            {/* Content */}
+            <div className="relative z-10 text-center px-4 h-full">
+                <div className='lg:w-1/2 mx-auto'>
+                    <h2 className="uppercase text-black font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none">
+                    TURN YOUR DREAM HOME INTO REALITY
+                    </h2>
+                    <p className="leading-8 mt-8 text-black">
+                    With MyMonty's house loans, your dream of owning a home is within reach. 
+                    Get the financial foundation you need for your perfect <span class="font-bold">HOME</span>.
+                    </p>
+                    <Link href="/loans" className="mm-button mt-8 mx-auto">
+                        Learn More
+                    </Link>
                 </div>
-                {/* <div className='justify-end flex pb-10 md:pb-0'>
-                    <Image src={sectionImage} alt='Section Image' placeholder='blur' className='w-full md:w-4/4 translate-x-[20%] 4xl:translate-x-0' />
-                </div> */}
+                <div className='container'>
+                    <div class="relative bg-black h-[500px] overflow-hidden rounded-3xl mt-12">
+                        <div
+                            className="absolute w-full h-[130%] bg-bottom z-0 will-change-transform"
+                            style={{
+                                backgroundImage: `url(${backgroundImage.src})`,
+                                transform: `translateY(${offsetY}px) scale(1.2)`,  // Parallax movement
+                                transition: 'transform 0.1s ease-out',
+                            }}
+                        ></div>
+
+                        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[300px]">
+                            <img src='/sectionfive.webp' alt='Section Six Image' />
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default SectionFive;

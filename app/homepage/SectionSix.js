@@ -1,28 +1,22 @@
 import React from 'react';
-import backgroundImage from '@/public/sectionsixbg.webp';
-import backgroundImage1 from '@/public/sectionsixbg1.webp';
-import Link from 'next/link';
-import Image from 'next/image';
 
 const SectionSix = () => {
     return (
-        <section className='flex items-center pb-14 pt-14 lg:pt-20 lg:pb-20 bg-black relative text-black min-h-[calc(100vh-var(--mobile-header-height))]'>
-            {/* <Image fill placeholder='blur' quality={100} sizes='100vw' src={backgroundImage1} className='object-cover z-0' alt="Background Image" /> */}
-            <video className='w-full h-full object-cover absolute top-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>
-                <source src='/house-loan.mp4' type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+        <section className='pt-14 pb-14 lg:pt-40 lg:pb-40 bg-black text-white'>
             <div className='container'>
-                <div className='flex items-center relative z-10'>
-                    <div className='md:flex-1 md:flex relative text-center'>
-                        <div className='md:w-1/2 mx-auto'>
-                            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>TURN YOUR DREAM HOME INTO REALITY</h2>
-                            <p className='leading-8 mt-8'>With MyMonty's house loans, your dream of owning a home is within reach.<br />
-                                Get the financial foundation you need for your perfect <strong>HOME.</strong></p>
-                            <Link href="/house-loan" className='mm-button black mt-8 mx-auto'>Learn More</Link>
+                <div className='flex flex-col-reverse gap-10 md:flex-row md:items-center md:gap-20'>
+                    <div className='relative section-video flex-1'>
+                        <video className=' mb-6' width="100%" playsInline autoPlay muted loop controls={false}>
+                            <source src='/rotating-card-2.mp4' type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div className='flex-1 flex justify-end'>
+                        <div>
+                            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>HOLDING IT DOWN WITH OUR PREMIUM CARD?</h2>
+                            <p className='leading-8 mt-8'>Opt for our Premium Mastercard to elevate your style with a sleek design and exclusive benefits. Turn heads and add sophistication to your wallet experience.</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
