@@ -3,9 +3,9 @@ import SectionThree from './homepage/SectionThree';
 import SectionFour from './homepage/SectionFour';
 import SectionFive from './homepage/SectionFive';
 import SectionSix from './homepage/SectionSix';
-import Section from './homepage/Section';
+import SectionSeven from './homepage/SectionSeven';
+import SectionEight from './homepage/SectionEight';
 import HomeBanner from './homepage/HomeBanner';
-
 
 export const metadata = {
   title: 'YOUR SUPER DIGITAL WALLET',
@@ -20,9 +20,10 @@ export default function Home() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
-      <Section />
       <SectionFive />
       <SectionSix />
+      <SectionSeven />
+      <SectionEight />
     </main>
   )
 }

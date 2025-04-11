@@ -1,23 +1,36 @@
 import React from 'react';
+import backgroundImage from '@/public/homepage-crossborder.webp';
+import sectionImage from '@/public/homepage-crossborder.webp';
+import Link from 'next/link';
+import Image from 'next/image';
+
 
 const SectionFive = () => {
     return (
-        <section className='pt-14 pb-14 lg:pt-40 lg:pb-40 bg-black text-white'>
-            <div className='container'>
-                <div className='flex flex-col-reverse gap-10 md:flex-row md:items-center md:gap-20'>
-                    <div className='relative section-video flex-1'>
-                        <video className=' mb-6' width="100%" playsInline autoPlay muted loop controls={false}>
-                            <source src='/rotating-card-2.mp4' type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+        <section className='relative pt-14 pb-14 lg:pt-28 lg:pb-20 min-h-[calc(130vh-var(--mobile-header-height))] lg:min-h-[calc(100vh-var(--mobile-header-height))] flex flex-col lg:justify-center  bg-black text-white overflow-x-hidden'>
+            {/* <Image fill placeholder='blur' quality={100} sizes='100vw' src={backgroundImage} className='object-cover w-full h-full z-0' alt="Background Image" /> */}
+            <video className='hidden lg:block w-full h-full objectcover absolute top-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>
+                <source src='/sectionfourvideo.mp4' type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+
+            <video className='block lg:hidden w-full absolute bottom-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>
+                <source src='/sectionfourvideo-mobile.mp4' type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+
+            <div className='container md:flex md:items-center gap-10 relative z-10'>
+                <div className='flex justify-start'>
+                    <div className='p-4 md:p-0 md:w-[45%]'>
+                        <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>SEND MONEY ACROSS THE GLOBE WITH EASE</h2>
+                        <p className='leading-8 mt-8'>Join MyMonty's expat community and enjoy free P2P transfers to 160+ countries. Instantly send and receive money; globally, effortlessly.</p>
+                        <Link href="/transfers" className='mm-button white mt-8 mx-auto mb-10'>Try it Out</Link>
                     </div>
-                    <div className='flex-1 flex justify-end'>
-                        <div>
-                            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>HOLDING IT DOWN WITH OUR PREMIUM CARD?</h2>
-                            <p className='leading-8 mt-8'>Opt for our Premium Mastercard to elevate your style with a sleek design and exclusive benefits. Turn heads and add sophistication to your wallet experience.</p>
-                        </div>
-                    </div>
+
                 </div>
+                {/* <div className='justify-end flex pb-10 md:pb-0'>
+                    <Image src={sectionImage} alt='Section Image' placeholder='blur' className='w-full md:w-4/4 translate-x-[20%] 4xl:translate-x-0' />
+                </div> */}
             </div>
         </section>
     )
