@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import backgroundImage from '@/public/sectionsixbg2.webp';
+import backgroundImageMobile from '@/public/sectionsixbg2-mobile.webp';
 import image1 from '@/public/sectionsix.webp';
 import Link from 'next/link';
 
@@ -34,16 +35,24 @@ const SectionSeven = () => {
         >
             {/* Parallax Background Image */}
             <div
-                className="absolute top-0 left-0 w-full h-[120%] bg-cover bg-center z-0 will-change-transform"
+                className="hidden lg:block absolute top-0 left-0 w-full h-[100%] bg-cover bg-center z-0 will-change-transform"
                 style={{
                     backgroundImage: `url(${backgroundImage.src})`,
                     transform: `translateY(${offsetY}px)`,  // Parallax movement
                     transition: 'transform 0.1s ease-out',
                 }}
             />
+            <div
+                className="block lg:hidden absolute top-0 left-0 w-full h-[120%] bg-cover bg-center z-0 will-change-transform"
+                style={{
+                    backgroundImage: `url(${backgroundImageMobile.src})`,
+                    transform: `translateY(${offsetY}px)`,  // Parallax movement
+                    transition: 'transform 0.1s ease-out',
+                }}
+            />
 
             {/* Content */}
-            <div className="pt-8 container relative z-10 text-center px-4">
+            <div className="pt-8 lg:pt-16 container relative z-10 text-center px-4">
                 <div className='lg:w-1/2 mx-auto'>
                     <h2 className="uppercase text-black font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none">
                         SET IT AND FORGET IT: PAYMENTS MADE EASY
