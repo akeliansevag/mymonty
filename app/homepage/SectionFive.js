@@ -39,14 +39,14 @@ const SectionFive = () => {
                     </h2>
                     <p className="leading-8 mt-8 text-black">
                     With MyMonty's house loans, your dream of owning a home is within reach. 
-                    Get the financial foundation you need for your perfect <span class="font-bold">HOME</span>.
+                    Get the financial foundation you need for your perfect <span className="font-bold">HOME</span>.
                     </p>
                     <Link href="/loans" className="mm-button mt-8 mx-auto">
                         Learn More
                     </Link>
                 </div>
                 <div className='container'>
-                    <div class="relative bg-black h-[500px] overflow-hidden rounded-3xl mt-12">
+                    <div className="relative bg-black h-[500px] overflow-hidden rounded-3xl mt-12">
                         <div
                             className="absolute w-full h-[130%] bg-bottom z-0 will-change-transform"
                             style={{

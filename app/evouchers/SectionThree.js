@@ -4,7 +4,7 @@ const SectionThree = () => {
   const items = [
     {
         title: 'Browse & Choose',
-        description: 'Open the app, head to the <span class="whitespace-nowrap">"E-services"</span> tab, and browse through categories like gaming, gifts, media, and fashion.'
+        description: 'Open the app, head to the <span className="whitespace-nowrap">"E-services"</span> tab, and browse through categories like gaming, gifts, media, and fashion.'
     },
     {
         title: 'Pick Your Merchant',

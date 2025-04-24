@@ -39,12 +39,16 @@ export const data = [
                 url: null,
                 children: [
                     {
+                        title: 'Platinum Credit Card',
+                        url: '/platinum-credit-card'
+                    },
+                    {
                         title: 'Physical Platinum Mastercard',
                         url: '/physical-platinum-mastercard'
                     },
                     {
-                        title: 'Platinum Credit Card',
-                        url: '/platinum-credit-card'
+                        title: 'World Elite Credit Card',
+                        url: '/world-elite-credit-card'
                     },
                     {
                         title: 'Virtual Mastercard',

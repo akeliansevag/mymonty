@@ -11,16 +11,16 @@ import Link from 'next/link';
 const SectionForex = () => {
     const howItWorks = [
         {
-            title: 'Head to the <span class="font-bold">More</span> tab in the MyMonty app',
+            title: 'Head to the <span className="font-bold">More</span> tab in the MyMonty app',
         },
         {
-            title: 'Tap <span class="font-bold">Exchange</span> and pick your currencies',
+            title: 'Tap <span className="font-bold">Exchange</span> and pick your currencies',
         },
         {
-            title: 'Enter the <span class="font-bold">amount</span> you want to convert',
+            title: 'Enter the <span className="font-bold">amount</span> you want to convert',
         },
         {
-            title: '<span class="font-bold">Confirm</span>, and you are all set!',
+            title: '<span className="font-bold">Confirm</span>, and you are all set!',
         }
     ];
     return (
@@ -118,13 +118,13 @@ const SectionForex = () => {
                             <div className="w-full flex max-md:lex-col justify-center items-center text-center gap-8">
                                 <div className="flex max-md:flex-col gap-4 items-center">
                                     <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.8337 9.2333V9.99997C17.8326 11.797 17.2507 13.5455 16.1748 14.9848C15.0988 16.4241 13.5864 17.477 11.8631 17.9866C10.1399 18.4961 8.29804 18.4349 6.61238 17.8121C4.92673 17.1894 3.48754 16.0384 2.50946 14.5309C1.53138 13.0233 1.06682 11.24 1.18506 9.4469C1.30329 7.65377 1.998 5.94691 3.16556 4.58086C4.33312 3.21482 5.91098 2.26279 7.66382 1.86676C9.41665 1.47073 11.2505 1.65192 12.892 2.3833M17.8337 3.3333L9.50033 11.675L7.00033 9.17497" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                                        <path d="M17.8337 9.2333V9.99997C17.8326 11.797 17.2507 13.5455 16.1748 14.9848C15.0988 16.4241 13.5864 17.477 11.8631 17.9866C10.1399 18.4961 8.29804 18.4349 6.61238 17.8121C4.92673 17.1894 3.48754 16.0384 2.50946 14.5309C1.53138 13.0233 1.06682 11.24 1.18506 9.4469C1.30329 7.65377 1.998 5.94691 3.16556 4.58086C4.33312 3.21482 5.91098 2.26279 7.66382 1.86676C9.41665 1.47073 11.2505 1.65192 12.892 2.3833M17.8337 3.3333L9.50033 11.675L7.00033 9.17497" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                     </svg>
                                     <h2 className="text-base font-[700] uppercase">Zero Commissions</h2>
                                 </div>
                                 <div className="flex max-md:flex-col gap-4 items-center">
                                     <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17.8337 9.2333V9.99997C17.8326 11.797 17.2507 13.5455 16.1748 14.9848C15.0988 16.4241 13.5864 17.477 11.8631 17.9866C10.1399 18.4961 8.29804 18.4349 6.61238 17.8121C4.92673 17.1894 3.48754 16.0384 2.50946 14.5309C1.53138 13.0233 1.06682 11.24 1.18506 9.4469C1.30329 7.65377 1.998 5.94691 3.16556 4.58086C4.33312 3.21482 5.91098 2.26279 7.66382 1.86676C9.41665 1.47073 11.2505 1.65192 12.892 2.3833M17.8337 3.3333L9.50033 11.675L7.00033 9.17497" stroke="white" stroke-width="1.5" stroke-linecap="round" strokeLinejoin="round"/>
+                                        <path d="M17.8337 9.2333V9.99997C17.8326 11.797 17.2507 13.5455 16.1748 14.9848C15.0988 16.4241 13.5864 17.477 11.8631 17.9866C10.1399 18.4961 8.29804 18.4349 6.61238 17.8121C4.92673 17.1894 3.48754 16.0384 2.50946 14.5309C1.53138 13.0233 1.06682 11.24 1.18506 9.4469C1.30329 7.65377 1.998 5.94691 3.16556 4.58086C4.33312 3.21482 5.91098 2.26279 7.66382 1.86676C9.41665 1.47073 11.2505 1.65192 12.892 2.3833M17.8337 3.3333L9.50033 11.675L7.00033 9.17497" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                                     </svg>
                                     <h2 className="text-base font-[700] uppercase">Zero Deposit Fees</h2>
                                 </div>

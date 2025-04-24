@@ -17,7 +17,12 @@ const SectionThree = () => {
                     <Image alt="Section Image" src={sectionImage} className='mx-auto mt-14 w-full md:w-2/3' />
                 </div> */}
             </div>
-            <CardsSlider />
+            {/* <CardsSlider /> */}
+
+            <video width="100%" className='w-1/2 mx-auto mt-8' playsInline autoPlay muted loop controls={false}>
+                <source src='/virtual-cards-1.mp4' type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
         </section>
     )
 }

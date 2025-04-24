@@ -18,7 +18,7 @@ function FooterBanner({ subtitle, title, downloadURL }) {
                                     { pathname == '/khoury-home/terms-and-conditions' && (
                                         <Link href="/khoury-home">
                                             <svg className="opacity-60" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M15 8H1M1 8L8 15M1 8L8 1" stroke="black" stroke-width="2" stroke-linecap="round" strokeLinejoin="round"/>
+                                                <path d="M15 8H1M1 8L8 15M1 8L8 1" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                             </svg>
                                         </Link>
                                     )}
