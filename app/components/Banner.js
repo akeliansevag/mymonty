@@ -140,8 +140,8 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
             
             {
                 terms && (
-                    <div className='relative h-full container'>
-                        <div className='absolute top-10 left-0 text-base underline text-[#2657D4] mt-1'>
+                    <div className='relative container'>
+                        <div className='md:absolute md:top-10 md:left-0 text-base underline text-[#2657D4] mt-10'>
                             {terms.termsAndConditions && (
                                 <div>
                                     <a className='uppercase' href={terms.termsAndConditions} target='_blank'>TERMS & CONDITIONS APPLY</a>
