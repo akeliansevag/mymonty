@@ -322,10 +322,10 @@ const Contact = () => {
                       }`}
                   >
                     <option>Select</option>
-                    <option value='1'>Select Company1</option>
-                    <option value='2'>Select Company2</option>
-                    <option value='3'>Select Company3</option>
-                    <option value='4'>Select Company4</option>
+                    <option value='5,000 - 7,000'>5,000 - 7,000</option>
+                    <option value='7,000 - 9,000'>7,000 - 9,000</option>
+                    <option value='9,000 - 11,000'>9,000 - 11,000</option>
+                    <option value='+11,000'>+11,000</option>
                   </select>
                   <span className='text-red-500'>{errors.salary}</span>
                 </div>
