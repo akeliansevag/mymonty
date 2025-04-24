@@ -27,6 +27,15 @@ h6 {
   text-wrap: balance;
 }
 
+select{
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #FFFFFF url('../public/chevron-down-black.svg') center no-repeat;
+  background-position-x: 97%;
+  background-size: 15px 15px;
+}
+
 .mm-button {
   background-color: var(--mm-black);
   border-radius: 30px;

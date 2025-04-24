@@ -74,7 +74,7 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
                                 {
                                     data?.image?.layout === 'half' && !AnimatedImage && (
                                         <div className='w-full md:w-1/2'>
-                                            <Image alt='Girl holding a phone' placeholder='blur' quality={100} sizes='100vw' src={data.image.url} className='w-full md:w-[60%] ml-auto' priority />
+                                            <Image alt='Girl holding a phone' placeholder='blur' quality={100} sizes='100vw' src={data.image.url} className='w-full md:w-[50%] 4xl:w-[60%] ml-auto' priority />
                                         </div>
                                     )
 
@@ -140,18 +140,20 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
             
             {
                 terms && (
-                    <div className='container text-base underline text-[#2657D4] mt-10'>
-                        {terms.termsAndConditions && (
-                            <div>
-                                <a className='uppercase' href={terms.termsAndConditions} target='_blank'>TERMS & CONDITIONS APPLY</a>
-                            </div>
-                        )}
-                        {terms.kfs && (
-                            <div>
-                                <a className='uppercase' href={terms.kfs} target='_blank'>Key Facts Statement (KFS)</a>
-                            </div>
-                        )}
-                        
+                    <div className='relative h-full container'>
+                        <div className='absolute top-10 left-0 text-base underline text-[#2657D4] mt-1'>
+                            {terms.termsAndConditions && (
+                                <div>
+                                    <a className='uppercase' href={terms.termsAndConditions} target='_blank'>TERMS & CONDITIONS APPLY</a>
+                                </div>
+                            )}
+                            {terms.kfs && (
+                                <div>
+                                    <a className='uppercase' href={terms.kfs} target='_blank'>Key Facts Statement (KFS)</a>
+                                </div>
+                            )}
+                            
+                        </div>
                     </div>
                 )
             }
