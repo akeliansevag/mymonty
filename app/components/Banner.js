@@ -74,7 +74,7 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
                                 {
                                     data?.image?.layout === 'half' && !AnimatedImage && (
                                         <div className='w-full md:w-1/2'>
-                                            <Image alt='Girl holding a phone' placeholder='blur' quality={100} sizes='100vw' src={data.image.url} className='w-full md:w-2/3 ml-auto' priority />
+                                            <Image alt='Girl holding a phone' placeholder='blur' quality={100} sizes='100vw' src={data.image.url} className='w-full md:w-[60%] ml-auto' priority />
                                         </div>
                                     )
 
