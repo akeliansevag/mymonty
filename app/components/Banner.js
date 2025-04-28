@@ -140,19 +140,17 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
             
             {
                 terms && (
-                    <div className='relative container'>
-                        <div className='md:absolute md:top-10 md:left-0 text-base underline text-[#2657D4] mt-10'>
-                            {terms.termsAndConditions && (
-                                <div>
-                                    <a className='uppercase' href={terms.termsAndConditions} target='_blank'>TERMS & CONDITIONS APPLY</a>
-                                </div>
-                            )}
-                            {terms.kfs && (
-                                <div>
-                                    <a className='uppercase' href={terms.kfs} target='_blank'>Key Facts Statement (KFS)</a>
-                                </div>
-                            )}
-                            
+                    <div className='container'>
+                        <div className='relative'>
+                            <div className='md:absolute md:top-10 md:left-0 text-base underline text-[#2657D4] mt-10'>
+                                {terms.termsAndConditions && (
+                                    <a className='block uppercase' href={terms.termsAndConditions} target='_blank'>TERMS & CONDITIONS APPLY</a>
+                                )}
+                                {terms.kfs && (
+                                    <a className='block uppercase' href={terms.kfs} target='_blank'>Key Facts Statement (KFS)</a>
+                                )}
+                                
+                            </div>
                         </div>
                     </div>
                 )
