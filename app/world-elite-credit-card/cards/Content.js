@@ -337,7 +337,7 @@ const Content = () => {
                     <div className="flex max-lg:flex-col gap-10 lg:justify-between">
                         <div className="lg:w-2/5">
                             <h2 className="smaller-title">Medical Insurance</h2>
-                            <p>Travel with peace of mind! your Mastercard® covers you automatically.<br />Get up to USD 500,000 in medical, accident, and emergency evacuation insurance.<br />Visit <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com/[TIER]">mcpeaceofmind.com/[TIER]</a> to learn more and travel confidently!</p>
+                            <p>Travel with peace of mind! your Mastercard® covers you automatically.<br />Get up to USD 500,000 in medical, accident, and emergency evacuation insurance.<br />Visit <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com">mcpeaceofmind.com</a> to learn more and travel confidently!</p>
                         </div>
                         <div className="lg:w-2/5">
                             <img src="/medical-insurance.webp" alt="Medical Insurance" />
@@ -347,7 +347,7 @@ const Content = () => {
                     <div className="flex max-lg:flex-col gap-10 lg:justify-between">
                         <div className="lg:w-2/5">
                             <h2 className="smaller-title">Travel Inconvenience Insurance</h2>
-                            <p>Travel disruptions? World Elite Mastercard® has you covered. Get up to USD 7,500 for trip cancellations, baggage delays, and more.<br />Visit <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com/[TIER]">mcpeaceofmind.com/[TIER]</a> to file a claim</p>
+                            <p>Travel disruptions? World Elite Mastercard® has you covered. Get up to USD 7,500 for trip cancellations, baggage delays, and more.<br />Visit <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com">mcpeaceofmind.com</a> to file a claim</p>
                         </div>
                         <div className="lg:w-2/5">
                             <img src="/travel-insurance-inconvenience.webp" alt="Travel Inconvenience Insurance" />
