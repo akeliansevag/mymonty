@@ -92,7 +92,7 @@ const Contact = () => {
       try {
         setLoading(true);
 
-        const response = await fetch(`${apiUrl}/world-elite`, {
+        const response = await fetch(`${apiUrl}/credit-card`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
