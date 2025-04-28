@@ -71,8 +71,6 @@ const Contact = () => {
   }, [dropdownRef]);
 
   const handleChange = (e) => {
-
-
     const { id, value } = e.target;
     const sanitizedValue = id === 'mobile' ? value.replace(/[^\d]/g, '') : value;
 
@@ -181,7 +179,7 @@ const Contact = () => {
                 <div className='flex flex-col gap-1 w-full'>
                   <label htmlFor='first-name'>First Name</label>
                   <input
-                    id='first-name'
+                    id='first_name'
                     name='first_name'
                     value={formData.first_name}
                     onChange={handleChange}
@@ -194,7 +192,7 @@ const Contact = () => {
                 <div className='flex flex-col gap-1 w-full'>
                   <label htmlFor='last-name'>Last Name</label>
                   <input
-                    id='last-name'
+                    id='last_name'
                     name='last_name'
                     value={formData.last_name}
                     onChange={handleChange}
