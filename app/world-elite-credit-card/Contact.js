@@ -171,7 +171,7 @@ const Contact = () => {
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
         <div className='container'>
           <h2 className='text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>
-            Fill out this form to reach us
+          Kindly share your information & our team will contact you.
           </h2>
           <form onSubmit={handleSubmit}>
             <div className='flex flex-col max-lg:gap-6 gap-10 max-lg:px-5 px-10 max-lg:mt-10 max-lg:py-10 py-20 bg-gray-100 mt-20 rounded-[1.875rem]'>
