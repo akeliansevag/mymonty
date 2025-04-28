@@ -18,7 +18,7 @@ const worldEliteCards = () => {
     const data = {
         title: 'World Elite Credit Card',
         subtitle: 'Cards',
-        desc: 'Live Big. Travel Like Royalty. <span className="font-bold">APR 26.68% (Variable)<span>',
+        desc: 'Live Big. Travel Like Royalty. <br /><span className="font-bold">APR 26.68% (Variable)<span>',
         image: {
             inGrid: true,
             layout: 'half',
