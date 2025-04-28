@@ -33,8 +33,8 @@ const worldEliteCards = () => {
     };
 
     const terms = {
-        termsAndConditions: 'credit-cards-terms-and-conditions-world-elite-credit-card-v1-15.04.2025', 
-        kfs: 'world-elite-kfs-v.01'
+        termsAndConditions: 'credit-cards-terms-and-conditions-world-elite-credit-card-v1-15.04.2025.pdf', 
+        kfs: 'world-elite-kfs-v.01.pdf'
     }
 
     return (
