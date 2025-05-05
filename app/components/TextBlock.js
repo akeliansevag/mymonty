@@ -3,7 +3,7 @@ import React from 'react';
 import { useAppContext } from '../AppContext';
 
 
-const TextBlock = ({noMaxWidth, subTitle, title, description, button, textColor, buttonColor, center }) => {
+const TextBlock = ({noMaxWidth, subTitle, title, description, button, textColor, buttonColor, center, bold }) => {
     const { handleOpenModal } = useAppContext();
     return (
         <div className={`md:max-w-full ${!noMaxWidth ? 'lg:max-w-[60vw] fhd:max-w-[45vw]' : ''} ${center ? 'mx-auto' : ''} ${textColor ? 'text-' + textColor : ''}`}>
@@ -15,7 +15,7 @@ const TextBlock = ({noMaxWidth, subTitle, title, description, button, textColor,
             }
             {
                description && (
-                    <p dangerouslySetInnerHTML={{ __html: description }} className='leading-8 mt-8'></p>
+                    <p dangerouslySetInnerHTML={{ __html: description }} className={`leading-8 mt-8 ${bold ? 'font-bold' : ''}`}></p>
                ) 
             }
             {

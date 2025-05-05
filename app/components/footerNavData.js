@@ -43,6 +43,10 @@ export const data = [
                         url: '/platinum-credit-card'
                     },
                     {
+                        title: 'World Elite Credit Card',
+                        url: '/world-elite-credit-card'
+                    },
+                    {
                         title: 'Virtual Mastercard',
                         url: '/virtual-mastercard'
                     },

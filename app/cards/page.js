@@ -1,111 +1,129 @@
 import React from 'react';
+import Image from 'next/image';
 import { websiteName } from '@/app/config';
-import Banner from '@/app/components/Banner';
-import banner from '@/public/personal/cards-banner-2.webp';
+import TextBlock from '../components/TextBlock';
+import PlatinumCardRed from '@/public/platinum-card-red.webp';
+import PlatinumCardWhiteLuckyEye from '@/public/platinum-card-white-lucky-eye.webp';
+import PlatinumCardGreen from '@/public/platinum-card-green.webp';
 
-import Carousel from '@/app/components/Carousel';
+import PhysicalPlatinumCardBlack from '@/public/physical-platinum-card-black.webp';
+import PhysicalPlatinumCardBlueLuckyEye from '@/public/physical-platinum-card-blue-lucky-eye.webp';
 
-import CardWithdrawal from './CardWithdrawal';
-import DiverseCards from './DiverseCards';
-import AnimatedBanner from './AnimatedBanner';
-import VirtualCard from './VirtualCard';
-import CardControls from './CardControls';
-import Monitor from './Monitor';
+import WorldEliteCardBlack from '@/public/world-elite-card-black.webp';
+import WorldEliteCardCredit from '@/public/world-elite-card-credit.webp';
+
+import EuroCardGreen from '@/public/euro-card-green.webp';
+
+import Link from 'next/link';
 
 export const metadata = {
-    title: websiteName + 'Prepaid Card you can use Globally',
-    description: 'Download the My Monty app today and access your money wherever you are whenever you want with the virtual prepaid card for easy, quick, and secure payments.',
+    title: websiteName + 'MyMonty\'s Cards',
+    description: '',
 };
 
-const cards = () => {
-    const data = {
-        title: 'prepaid Card you can use globally',
-        subtitle: 'Cards',
-        desc: 'Contactless card for a borderless experience.',
-        image: {
-            inGrid: true,
-            layout: 'half',
-            url: banner,
-        },
-        cta: {
-            type: 'button',
-            button: {
-                name: 'Download App'
-            }
-        }
-    };
-    const carouselData = {
-        filters: [
+// Combined card data
+const allCards = [
+    {
+        sectionTitle: 'Platinum credit card',
+        cards: [
             {
-                title: 'Make Contactless Paymets '
+                title: 'Platinum Card',
+                color: 'Red',
+                image: PlatinumCardRed,
+                link: '/platinum-credit-card',
             },
             {
-                title: 'Create a Virtual Card'
+                title: 'Platinum Card',
+                color: 'White Lucky Eye',
+                image: PlatinumCardWhiteLuckyEye,
+                link: '/platinum-credit-card',
             },
             {
-                title: 'Pay With Your Phone'
+                title: 'Platinum Card',
+                color: 'Green',
+                image: PlatinumCardGreen,
+                link: '/platinum-credit-card',
             },
         ],
-        content: [
+    },
+    {
+        sectionTitle: 'Physical Platinum Mastercard',
+        cards: [
             {
-                title: 'Make Contactless Payments',
-                description: 'Tap to pay! Use your physical prepaid card for easy, quick, and secure contactless payments.',
-                button: {
-                    text: 'Download App',
-                    url: '#',
-                    modal: true
-                },
-                contentImage: '/personal/cards-carousel-1-content-n.webp',
-                backgroundImage: '/personal/cards-carousel-11.webp'
+                title: 'Physical Platinum Card',
+                color: 'Black',
+                image: PhysicalPlatinumCardBlack,
+                link: '/physical-platinum-mastercard',
             },
             {
-                title: 'Create a Virtual Card',
-                description: 'Boost your online shopping security with an in-app virtual card for safer transactions.',
-                button: {
-                    text: 'Download App',
-                    url: '#',
-                    modal: true,
-                },
-                contentImage: '/personal/cards-carousel-3-content.webp',
-                backgroundImage: '/personal/cards-carousel-2.webp'
+                title: 'Physical Platinum Card',
+                color: 'Blue Lucky Eye',
+                image: PhysicalPlatinumCardBlueLuckyEye,
+                link: '/physical-platinum-mastercard',
+            },
+        ],
+    },
+    {
+        sectionTitle: 'World Elite Card',
+        cards: [
+            {
+                title: 'World Elite Card',
+                color: 'Black',
+                image: WorldEliteCardBlack,
+                link: '/cards',
             },
             {
-                title: 'Pay with Your Phone',
-                description: 'Scan the QR code at the POS for fast and convenient payments.',
-                button: {
-                    text: 'Download App',
-                    url: '#',
-                    modal: true
-                },
-                contentImage: '/personal/cards-qr-2.webp',
-                backgroundImage: '/personal/cards-carousel-3.webp'
-            }
-        ]
-    };
+                title: 'World Elite Card',
+                color: 'Credit',
+                image: WorldEliteCardCredit,
+                link: '/cards',
+            },
+        ],
+    },
+    {
+        sectionTitle: 'MyMonty Euro Card',
+        cards: [
+            {
+                title: 'Euro Card',
+                color: 'Green',
+                image: EuroCardGreen,
+                link: '/cards',
+            },
+        ],
+    },
+]
+
+const Cards = () => {
     return (
-        <>
-            <Banner data={data} AnimatedImage={AnimatedBanner} />
-            <VirtualCard />
-            <div id="physical-card">
-                <Carousel data={carouselData} />
+        <section className='bg-[#F7F7F7] pt-14 pb-14 lg:mt-28 lg:pt-20 lg:pb-20'> 
+            <div className='container text-center'>
+                <h2>MyMonty's Cards</h2>
+                <h1 className="font-black text-xl sm:text-2xl md:text-4xl fhd:text-5xl leading-none uppercase mt-4">All You Need to Know About Your Card</h1>
+
+                {allCards.map((section, index) => (
+                    <div key={index}>
+                        <h3 className='text-xl mt-32 uppercase font-black'>{section.sectionTitle}</h3>
+                        <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-10'>
+                            {section.cards.map((card, idx) => (
+                                <div key={idx} className='flex flex-col gap-4'>
+                                    <Image src={card.image} alt={`${card.title} ${card.color}`} />
+                                    <div className='flex justify-between items-center text-start gap-4'>
+                                        <div className='flex flex-col mt-4'>
+                                            <h4 className='text-base font-bold'>{card.title}</h4>
+                                            <p className='text-base'>{card.color}</p>
+                                        </div>
+                                        <Link className='mm-button mt-8 !text-[12px]' href={card.link}>
+                                            Read More
+                                        </Link>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                ))}
             </div>
-
-            <CardControls />
-
-            <div id="transaction-history">
-                <Monitor />
-            </div>
-
-            <div id="card-withdrawal">
-                <CardWithdrawal />
-            </div>
-
-            <div id="diverse-cards" className='bg-black text-white'>
-                <DiverseCards />
-            </div>
-
-        </>
+        </section>
     )
 }
 
-export default cards;
+export default Cards  ;

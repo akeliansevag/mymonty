@@ -402,7 +402,7 @@ const Content = () => {
                     <div className="flex max-lg:flex-col gap-10 items-center lg:justify-between">
                         <div className="lg:w-3/5">
                             <h2 className="smaller-title">MyUS Premium Membership</h2>
-                            <p>MyUS Premium Membership Shop from top U.S. brands and ship worldwide with MyUS.<br />Get 2 years of free Premium Membership, <strong>up to 30% off</strong> shipping, and more.<br />Simply use your Mastercard at checkout: <a className="text-[var(--mm-blue)]" target="_blank" href="https://www.myus.com/welcome/mastercardpremium/">myus.com/welcome/Mastercardpremium</a>.</p>
+                            <p>MyUS Premium Membership Shop from top U.S. brands and ship worldwide with MyUS.<br />Get 2 years of free Premium Membership, <strong>up to 30% off</strong> shipping, and more.<br />Simply use your Mastercard at checkout: <a className="text-[var(--mm-blue)]" target="_blank" class="break-all" href="https://www.myus.com/welcome/mastercardpremium/">myus.com/welcome/Mastercardpremium</a>.</p>
                         </div>
                         <div className="lg:w-2/5">
                             <img src="/myus3.webp" alt="MyUS" />

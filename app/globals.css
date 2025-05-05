@@ -465,3 +465,8 @@ body.menu-hidden .sticky-filters {
 .content-category > div {
   @apply border-b border-b-[#dfdfdf] max-lg:py-10 lg:py-14;
 }
+.features-shadow{
+  backdrop-filter: blur(40.2641487121582px);
+  box-shadow: 0px 1px 5px 0px #0000001A;
+}
+
