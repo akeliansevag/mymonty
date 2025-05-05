@@ -15,7 +15,7 @@ import image3 from '@/public/dreaming-of-your-next-vacation-3.webp';
 import image4 from '@/public/why-you-will-love-it.webp';
 import image5 from '@/public/card-features.webp';
 import image6 from '@/public/already-booked-with-nakhal.webp';
-import Documents from './documents';
+import Documents from './Documents';
 
 export const metadata = {
     title: websiteName + 'MyMonty X Nakhal',
