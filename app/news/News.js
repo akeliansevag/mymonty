@@ -26,7 +26,7 @@ const News = () => {
                           year: 'numeric'
                         }).format(new Date(newsItem.date))}
                       </p>
-                      <Link href={`/news/${newsItem.slug}`}><h3 className="text-4xl font-bold">{newsItem.title}</h3></Link>
+                      <Link href={`/news/${newsItem.slug}`}><h3 className="text-4xl font-bold line-clamp-2">{newsItem.title}</h3></Link>
                       <div className="leading-8 line-clamp-2" dangerouslySetInnerHTML={{ __html: newsItem.description }}></div>
                       <div>
                         <Link href={`/news/${newsItem.slug}`} className='mm-button mt-8'>Read More</Link>
