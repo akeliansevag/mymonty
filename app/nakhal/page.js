@@ -22,7 +22,6 @@ export const metadata = {
     description: '',
 };
 
-
 const nakhal = () => {
     const whyYouWillLoveIt = [
         {
