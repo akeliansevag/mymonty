@@ -5,7 +5,7 @@ import mymontyLogo from '@/public/mymonty-logo.svg';
 import nakhalLogo from '@/public/nakhal-logo.svg';
 import xmark from '@/public/x.svg';
 import banner from '@/public/nakhal-bg.webp';
-import bannerMobile from '@/public/nakhal-bg.webp';
+import bannerMobile from '@/public/nakhal-bg-mobile.webp';
 import TextBlock from '../components/TextBlock';
 import Section from '../components/Section';
 
@@ -115,19 +115,27 @@ const nakhal = () => {
             <section className="bg-black relative min-h-screen flex md:items-center">
                 <Image alt='Airplane' fill placeholder='blur' quality={100} sizes='100vw' src={banner} className='max-md:hidden object-cover w-full h-full' priority />
                 <Image alt='Airplane' fill placeholder='blur' quality={100} sizes='100vw' src={bannerMobile} className='md:hidden object-cover w-full h-full' priority />
+                
                 <div className="container h-full max-md:mt-[calc(var(--header-height)+30px)] flex relative z-10">
-                    <div className="md:w-[50%]">
+                    <div className="md:w-2/3 lg:w-1/2">
                         <div className="flex items-start gap-8">
-                            <Image alt='MyMonty Logo' quality={100} src={mymontyLogo} priority />
-                            <Image alt='X' quality={100} src={xmark} priority />
-                            <Image alt='Nakhal Logo' quality={100} src={nakhalLogo} priority />
+                            <div>
+                                <img alt='MyMonty Logo' src="mymonty-logo.svg" />
+                            </div>
+                            <div>
+                                <img alt='X' src="x.svg" />
+                            </div>
+                            <div>
+                                <img alt='Nakhal Logo' src="nakhal-logo.svg" />
+                            </div>
                         </div>  
                         <h1 className="mt-10 text-[#273D6B] font-black text-4xl sm:text-5xl md:text-7xl fhd:text-[4.2rem] leading-none uppercase">Travel Now <br /> Pay Later</h1>
                         <p className="text-white max-md:mt-3 max-md:text-base text-4xl font-medium mt-6 md:pr-52">Free Platinum Credit Card to pay for your trip</p>
                     </div>
                 </div>
                 <div className="text-white w-full max-lg:mt-10 max-md:text-[12px] text-[14px] absolute max-md:bottom-9 bottom-20 lg:mt-20">
-                    <div className="container">
+                    <div className="container"> 
+                        <p>APR 26.68% (Variable)</p>
                         <p>MONTY FINANCE SAL</p>
                         <p>TERMS & CONDITIONS APPLY</p>
                     </div>
