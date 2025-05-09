@@ -131,7 +131,7 @@ const nakhal = () => {
                     <div className="container"> 
                         <p>APR 26.68% (Variable)</p>
                         <p>MONTY FINANCE SAL</p>
-                        <a target='_blank' href="/nakhal-terms-and-conditions.pdf">TERMS & CONDITIONS APPLY</a>
+                        <a target='_blank' href="/nakhal-terms-and-conditions.pdf" className='blue-text'>TERMS & CONDITIONS APPLY</a>
                     </div>
                 </div>
             </section> 
