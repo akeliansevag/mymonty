@@ -1,13 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import { websiteName } from '@/app/config';
-import mymontyLogo from '@/public/mymonty-logo.svg';
-import nakhalLogo from '@/public/nakhal-logo.svg';
-import xmark from '@/public/x.svg';
 import banner from '@/public/nakhal-bg.webp';
 import bannerMobile from '@/public/nakhal-bg-mobile.webp';
 import TextBlock from '../components/TextBlock';
 import Section from '../components/Section';
+import Documents from './Documents';
 
 import image1 from '@/public/dreaming-of-your-next-vacation-1.webp';
 import image2 from '@/public/dreaming-of-your-next-vacation-2.webp';
@@ -15,7 +13,6 @@ import image3 from '@/public/dreaming-of-your-next-vacation-3.webp';
 import image4 from '@/public/why-you-will-love-it.webp';
 import image5 from '@/public/card-features.webp';
 import image6 from '@/public/already-booked-with-nakhal.webp';
-import Documents from './Documents';
 
 export const metadata = {
     title: websiteName + 'MyMonty X Nakhal',
@@ -31,16 +28,13 @@ const nakhal = () => {
             title: 'Quick approval process',
         },
         {
-            title: 'Track spending via the MyMonty App',
-        },
-        {
             title: 'Flexible monthly installments',
         },
         {
             title: 'Exclusive offers from Nakhal',
         },
         {
-            title: '1% cashback on every purchase (POS and online)',
+            title: '1% cashback on every purchase transaction (POS and online)',
         }
     ];
 
@@ -94,7 +88,7 @@ const nakhal = () => {
         },
         {
             title: 'APR: 26.68%',
-            description: '(may vary)',
+            description: '(variable)',
         },
         {
             title: 'Grace Period:',
@@ -137,7 +131,7 @@ const nakhal = () => {
                     <div className="container"> 
                         <p>APR 26.68% (Variable)</p>
                         <p>MONTY FINANCE SAL</p>
-                        <p>TERMS & CONDITIONS APPLY</p>
+                        <a target='_blank' href="/nakhal-terms-and-conditions.pdf">TERMS & CONDITIONS APPLY</a>
                     </div>
                 </div>
             </section> 
