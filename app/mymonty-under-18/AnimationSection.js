@@ -39,7 +39,7 @@ export default function AnimationSection() {
     ];
 
     return (
-        <section className="h-[80vh] lg:h-[100vh] flex flex-col lg:justify-center relative pt-20 pb-20 bg-[#FF7300] text-white overflow-hidden" ref={sectionRef}>
+        <section className="h-[100vh] lg:h-[100vh] flex flex-col lg:justify-center relative pt-20 pb-20 bg-[#FF7300] text-white overflow-hidden" ref={sectionRef}>
             <img src="/shape-11.svg" alt="Shape" className="absolute top-0 left-0 w-full z-10" />
             <img src="/shape-12.svg" alt="Shape" className="absolute top-0 left-0" />
             <div className="container relative">
@@ -62,19 +62,14 @@ export default function AnimationSection() {
 
                     {/* Right section with cards */}
                     <div className="lg:w-2/3 relative">
-                        <img src="/browser.svg" alt="Browser" className="absolute -top-20 left-32" />
+                        <img src="/browser.svg" alt="Browser" className="absolute lg:-top-20 lg:left-32 w-full" />
 
                         {cards.map((card, i) => (
                             <div
                                 key={i}
                                 ref={(el) => (cardRefs.current[i] = el)}
-                                className="tca-card flex items-center justify-center"
+                                className="tca-card flex items-center justify-center mb-8 max-lg:mt-10 absolute top-0 left-0 lg:left-1/2 lg:-translate-x-1/2"
                                 style={{
-                                    marginBottom: "20px",
-                                    position: "absolute",
-                                    top: `0px`,
-                                    left: "50%",
-                                    transform: "translateX(-50%)",
                                     rotate: `${
                                         i % 4 === 0 ? -5 :
                                         i % 4 === 1 ? 5 :
@@ -83,7 +78,7 @@ export default function AnimationSection() {
                                     }deg`,
                                 }}
                             >
-                                <img src={`/${card.image}.webp`} alt="Shape" className="w-full h-full" />
+                                <img src={`/${card.image}.webp`} alt="Shape" className="w-2/3 lg:w-full lg:h-full" />
                             </div>
                         ))}
                     </div>

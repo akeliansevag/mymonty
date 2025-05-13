@@ -508,7 +508,7 @@ body.menu-hidden .sticky-filters {
 
 @keyframes marquee {
   to{
-    translate: calc(-9 * 5rem)
+    translate: calc(-9 * 7rem)
   }
 }
 

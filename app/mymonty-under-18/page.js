@@ -27,7 +27,7 @@ const Under18 = () => {
             </section>
 
             <div className="marquee overflow-hidden relative z-20 -top-10 ">
-                <div className="relative wrapper grid grid-flow-col auto-cols-[5rem] lg:auto-cols-[10rem] justify-items-center items-center animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
+                <div className="relative wrapper grid grid-flow-col auto-cols-[7rem] lg:auto-cols-[10rem] justify-items-center items-center animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
                     {Array.from({ length: 9 }).map((_, innerIndex) => (
                         <img
                             key={`inner-${innerIndex}`}
@@ -62,8 +62,8 @@ const Under18 = () => {
             </div>
 
             <section className='relative pt-7 pb-7 bg-gradient-to-b from-white to-[#F8F4EE] from-0% to-20% z-0'>
-                <img src='/shape-10.svg' alt='Shape' className='absolute top-20 left-0 -z-10' />
-                <div className='container h-full text-center mt-40'>
+                <img src='/shape-10.svg' alt='Shape' className='absolute top-64 lg:top-20 left-0 -z-10' />
+                <div className='container h-full text-center lg:mt-40'>
                     <h1 className='font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase'>Take Control of Your Money with <span className="blue-text">MyMonty &lt;18</span></h1>
                     <p className='text-xl mt-8'>Start your journey toward financial independence with MyMonty &lt;18. Manage your money, make smart choices, and have the freedom to spend and save, all on your phone.</p>
                     <button className='mm-button !bg-[#EED793] !text-black mt-8'>Get The App</button>
