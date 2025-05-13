@@ -470,3 +470,57 @@ body.menu-hidden .sticky-filters {
   box-shadow: 0px 1px 5px 0px #0000001A;
 }
 
+.marquee-item{
+  @apply px-4;
+}
+.marquee-item:nth-child(2n+1) { 
+  animation: rotate 10s linear 0s infinite;
+}
+
+.marquee-item:nth-child(2n) { 
+  animation: rotatetwo 1s linear 0s infinite;
+}
+
+.marquee-item:nth-child(3n) { 
+  animation: rotate 5s linear 0s infinite reverse;
+}
+
+@keyframes rotatetwo {
+  0%{
+    transform: rotate(0deg)
+  }
+  50%{
+    transform: rotate(-45deg)
+  }
+  100%{
+    transform: rotate(0deg)
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes marquee {
+  to{
+    translate: calc(-9 * 5rem)
+  }
+}
+
+@keyframes marqueelg {
+  to {
+    translate: calc(-9 * 10rem)
+  }
+}
+
+ .tca-card-content, .tca-parent-section, .tca-card {
+
+
+        transition: none !important;
+
+    }
