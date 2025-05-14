@@ -150,7 +150,7 @@ const Under18 = () => {
                 </div>
                 <div className='container h-full text-center'>
                     <div className='lg:w-3/5 mx-auto'>
-                        <h1 className='font-black text-[#2657D4] text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase'>Fill out the form to reach&nbsp;us</h1>
+                        <h1 className='font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase'>Fill out the form to <span className="text-[#2657D4]">reach&nbsp;us</span></h1>
 
                         <div className="p-4 bg-white rounded-3xl mt-20 youth-form">
                             <Contact />
