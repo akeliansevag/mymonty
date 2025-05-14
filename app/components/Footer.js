@@ -3,10 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { data } from './footerNavData';
 import Link from 'next/link';
 import Form from './Form';
+import { usePathname } from 'next/navigation';
 
 import { useAppContext } from '../AppContext';
 
 const Footer = () => {
+    const pathname = usePathname();
+
     const [openIndexes, setOpenIndexes] = useState([]);
     const { handleOpenModal, setFormComponent, setLargeWidth } = useAppContext();
     const handleClick = (index) => {
@@ -25,10 +28,17 @@ const Footer = () => {
         setLargeWidth(false);
         handleOpenModal();
     }
+
+    let headingText = 'YOUR WALLET MADE DIGITAL';
+    
+    if (pathname === '/mymonty-under-18') {
+        headingText = 'Kids Learn Money, You Relax!';
+    }
+
     return (
         <section className='bg-black text-white'>
             <div className='container text-center pt-10 pb-10 lg:pt-20' id="download-now">
-                <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>YOUR WALLET MADE DIGITAL</h2>
+                <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>{headingText}</h2>
                 <div className='md:w-1/2 mx-auto'>
                     <p className='leading-8 mt-8'>Download the MyMonty app now for smarter financial management. Available on both iOS and Android.</p>
                     <button onClick={handleGetClick} className='mm-button white mt-8 mx-auto'>Get MyMonty</button>
