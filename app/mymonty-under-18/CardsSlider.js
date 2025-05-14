@@ -44,11 +44,6 @@ const CardsSlider = () => {
                         priority={key === 0}  // Prioritize the first image for faster load
                         className="w-full"
                     />
-                    <img
-                        src="/shape-14.svg"
-                        alt="Shape Decoration"
-                        className="absolute -bottom-0 -left-0 animate-[rotate_10s_linear_infinite]"
-                    />
                 </SwiperSlide>
             ))}
         </Swiper>

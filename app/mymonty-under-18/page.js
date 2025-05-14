@@ -139,6 +139,11 @@ const Under18 = () => {
                         </div>
                         <div className='w-full lg:w-1/2 relative max-lg:mt-10'>
                             <CardsSlider />
+                            <img
+                                src="/shape-14.svg"
+                                alt="Shape Decoration"
+                                className="absolute -bottom-14 -left-14 animate-[rotate_10s_linear_infinite] z-10"
+                            />
                         </div>
                     </div>
                 </div>
