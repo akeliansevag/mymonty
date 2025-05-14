@@ -33,7 +33,7 @@ const Under18 = () => {
             <section className='flex flex-col relative lg:min-h-[100dvh] pt-[var(--header-height)] overflow-hidden max-lg:pb-32'>
                 <img src='/youth-banner.webp' alt='Youth Card' className='absolute top-0 left-0 object-cover object-bottom w-full h-full -z-10' />
 
-                <div className='container h-full text-center mt-20 lg:mt-40'>
+                <div className='container h-full text-center mt-20 lg:mt-20 xl:mt-40'>
                     <h1 className='font-black text-[42px] ssm:text-5xl md:text-6xl lg:text-[5.4rem] xl:text-[5.4rem] mt-6 leading-none uppercase'>Be life ready</h1>
                     <p className='text-xl mt-8'>Your money. Your rules. Your Card.</p>
                     <button className='mm-button !bg-white !text-black mt-8'>Download The App</button>
