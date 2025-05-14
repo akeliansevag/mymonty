@@ -473,6 +473,7 @@ body.menu-hidden .sticky-filters {
 .marquee-item{
   @apply px-4;
 }
+
 .marquee-item:nth-child(2n+1) { 
   animation: rotate 10s linear 0s infinite;
 }
@@ -506,6 +507,20 @@ body.menu-hidden .sticky-filters {
   }
 }
 
+
+@keyframes marquee1 {
+  to{
+    translate: calc(-6 * 18rem)
+  }
+}
+
+@keyframes marqueelg1 {
+  to {
+    translate: calc(-6 * 18rem)
+  }
+}
+
+
 @keyframes marquee {
   to{
     translate: calc(-9 * 7rem)
@@ -524,3 +539,11 @@ body.menu-hidden .sticky-filters {
         transition: none !important;
 
     }
+
+.marquee-shadow{
+  box-shadow: 0px 3.93px 5.19px 0px #00000033;
+}
+
+.youth-form{
+  box-shadow: 0px 3.97px 3.97px 0px #0000001A;
+}

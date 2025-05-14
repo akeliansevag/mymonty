@@ -32,14 +32,14 @@ export default function AnimationSection() {
 
     // Card data
     const cards = [
-        { image: "for-teens-1", color: "#ff6347", text: "Card 1" },
-        { image: "for-teens-2", color: "#4682b4", text: "Card 2" },
-        { image: "for-teens-3", color: "#32cd32", text: "Card 3" },
-        { image: "for-teens-4", color: "#ffcc00", text: "Card 4" },
+        { image: "for-teens-1" },
+        { image: "for-teens-2" },
+        { image: "for-teens-3" },
+        { image: "for-teens-4" },
     ];
 
     return (
-        <section className="h-[100vh] lg:h-[100vh] flex flex-col lg:justify-center relative pt-20 pb-20 bg-[#FF7300] text-white overflow-hidden" ref={sectionRef}>
+        <section className="h-[100vh] lg:h-[100vh] flex flex-col lg:justify-center relative pt-40 lg:pt-20 lg:pb-20 bg-[#FF7300] text-white overflow-hidden" ref={sectionRef}>
             <img src="/shape-11.svg" alt="Shape" className="absolute top-0 left-0 w-full z-10" />
             <img src="/shape-12.svg" alt="Shape" className="absolute top-0 left-0" />
             <div className="container relative">
@@ -62,7 +62,7 @@ export default function AnimationSection() {
 
                     {/* Right section with cards */}
                     <div className="lg:w-2/3 relative">
-                        <img src="/browser.svg" alt="Browser" className="absolute lg:-top-20 lg:left-32 w-full" />
+                        <img src="/browser.svg" alt="Browser" className="absolute lg:-top-20 lg:left-32 max-lg:w-full" />
 
                         {cards.map((card, i) => (
                             <div
