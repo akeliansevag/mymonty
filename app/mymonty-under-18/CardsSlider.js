@@ -21,8 +21,9 @@ const CardsSlider = () => {
         spaceBetween: 20,
         grabCursor: true,
         autoplay: {
-            delay: 2000,  // This will be too fast, likely not what you want
+            delay: 1000,  // This will be too fast, likely not what you want
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
         },
         effect: 'fade',
         fadeEffect: {
