@@ -1,8 +1,8 @@
 import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '../components/Banner';
-import news from '@/public/news.webp';
-import News from './News';
+import blogs from '@/public/news.webp';
+import Blogs from './Blogs';
 
 export const metadata = {
   title: websiteName + 'Blog',
@@ -11,12 +11,12 @@ export const metadata = {
 
 const data = {
   title: 'What’s Happening at Mymonty?',
-  subtitle: 'News',
-  desc: 'Stay updated with the latest news, innovations, and milestones from MyMonty - your go-to source for everything shaping our fintech world',
+  subtitle: 'Blogs',
+  desc: 'Stay updated with the latest blogs, innovations, and milestones from MyMonty - your go-to source for everything shaping our fintech world',
   image: {
     inGrid: true,
     layout: 'half',
-    url: news,
+    url: blogs,
   },
   cta: {
     type: 'button',
@@ -32,7 +32,7 @@ const page = () => {
     <div>
       <Banner data={data} />
 
-      <News />
+      <Blogs />
     </div>
   );
 };

@@ -149,7 +149,7 @@ const Under18 = () => {
                 </div>
             </section>
 
-            <section className='relative py-28'>
+            <section className='relative py-14'>
                 <div className="absolute bottom-0 left-0 w-full h-full -z-10">
                     <img src='/shape-13.svg' alt='Shape' className='w-full h-full object-cover' />
                 </div>

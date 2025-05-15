@@ -26,7 +26,7 @@ const NewsDetails = ({params}) => {
                                     year: 'numeric'
                                 }).format(new Date(data.data[0].date))}
                             </p>
-                            <h1 className='text-pretty text-5xl font-bold mt-4 uppercase font-bold'>{data.data[0].title}</h1>
+                            <h1 className='text-pretty text-5xl font-bold mt-4 uppercase'>{data.data[0].title}</h1>
                             <div className='blog-content mt-4' dangerouslySetInnerHTML={{ __html: data.data[0].description }}></div>
                         </div>
                     </div>

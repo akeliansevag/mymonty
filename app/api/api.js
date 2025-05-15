@@ -6,4 +6,4 @@ export const TERMS_API = `${BASE_URL}/get-legals/terms`;
 export const PRIVACY_API = `${BASE_URL}/get-legals/privacy`;
 export const COOKIE_API = `${BASE_URL}/get-legals/cookie`;
 export const NEWS_API = `${BASE_URL}/get-news`;
-
+export const BLOGS_API = `${BASE_URL}/get-blogs`;
