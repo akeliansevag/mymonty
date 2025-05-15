@@ -10,25 +10,34 @@ export default function AnimationSection() {
     const sectionRef = useRef(null); // Only one sectionRef here
     const cardRefs = useRef([]);
 
-    // useEffect(() => {
-    //     // Make sure cards are available in the ref before initializing animation
-    //     if (cardRefs.current.length) {
-    //         gsap.from(cardRefs.current, {
-    //             scrollTrigger: {
-    //                 trigger: sectionRef.current,
-    //                 start: "top top", // Pin from the start of the section
-    //                 end: "+=100%", // Set scrollable range to 100% of the section height
-    //                 scrub: true,
-    //                 // pin: true, // Pin the section while scrolling
-    //                 anticipatePin: 1, // Smooth pinning behavior
-    //             },
-    //             x: "300%", // Cards enter from the right (off-screen)
-    //             rotation: (index) => (index % 2 === 0 ? -5 : 5), // Slight rotation for each card
-    //             opacity: 1,
-    //             stagger: 0.3,
-    //         });
-    //     }
-    // }, []);
+    useEffect(() => {
+        const handleResize = () => {
+            const isLargeScreen = window.matchMedia("(min-width: 1024px)").matches;
+            // Make sure cards are available in the ref before initializing animation
+            if (isLargeScreen && cardRefs.current.length) {
+                gsap.from(cardRefs.current, {
+                    scrollTrigger: {
+                        trigger: sectionRef.current,
+                        start: "top top", // Pin from the start of the section
+                        end: "+=100%", // Set scrollable range to 100% of the section height
+                        scrub: true,
+                        pin: true, // Pin the section while scrolling
+                        anticipatePin: 1, // Smooth pinning behavior
+                    },
+                    x: "300%", // Cards enter from the right (off-screen)
+                    rotation: (index) => (index % 2 === 0 ? -5 : 5), // Slight rotation for each card
+                    opacity: 1,
+                    stagger: 0.3,
+                });
+            }
+        }
+
+        // Run on mount and whenever the window resizes
+        handleResize();
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     // Card data
     const cards = [
@@ -68,7 +77,7 @@ export default function AnimationSection() {
                             <div
                                 key={i}
                                 ref={(el) => (cardRefs.current[i] = el)}
-                                className="tca-card flex max-lg:flex-col items-center justify-center mb-8 max-lg:mt-10 lg:absolute lg:top-0 lg:left-0 lg:left-1/2 lg:-translate-x-1/2"
+                                className="tca-card flex max-lg:flex-col items-center justify-center mb-8 max-lg:mt-10 lg:absolute lg:top-0 lg:left-1/2 lg:-translate-x-1/2"
                                 style={{
                                     rotate: `${
                                         i % 4 === 0 ? -5 :
