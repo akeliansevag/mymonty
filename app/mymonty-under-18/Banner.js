@@ -8,7 +8,8 @@ function Banner() {
 
     const [opacity, setOpacity] = useState(0);
     const [scale, setScale] = useState(1);
-    const [bannerOpacity, setBannerOpacity] = useState(1);
+    // const [bannerOpacity, setBannerOpacity] = useState(1);
+    const [bannerBlur, setBannerBlur] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -16,10 +17,12 @@ function Banner() {
             const windowHeight = window.innerHeight;
             const maxOpacityScroll = windowHeight * 0.2;
             const newOpacity = Math.min(1, scrollPosition / maxOpacityScroll);
-            const newBannerOpacity = Math.max(0, 1 - scrollPosition / (windowHeight * 0.4)); // Slower fade for banner
+            // const newBannerOpacity = Math.max(0, 1 - scrollPosition / (windowHeight * 0.4)); // Slower fade for banner
+            const newBannerBlur = Math.min(20, (scrollPosition / (windowHeight * 0.8)) * 10);
             const newScale = 1 + Math.min(0.1, scrollPosition / (windowHeight * 0.8) * 0.2);  // Scales up to 1.1
             setOpacity(newOpacity);
-            setBannerOpacity(newBannerOpacity);
+            setBannerBlur(newBannerBlur);
+            // setBannerOpacity(newBannerOpacity);
             setScale(newScale);
         };
 
@@ -29,7 +32,7 @@ function Banner() {
     
     return (
         <section className='flex flex-col relative lg:min-h-[100dvh] pt-[var(--header-height)] overflow-hidden max-lg:pb-32'>
-            <img src='/youth-banner.webp' alt='Youth Card' className='absolute top-0 left-0 object-cover object-bottom w-full h-full -z-10' style={{ opacity: bannerOpacity, transition: 'opacity 0.1s linear' }}/>
+            <img src='/youth-banner.webp' alt='Youth Card' className='absolute top-0 left-0 object-cover object-bottom w-full h-full -z-10' style={{ filter: `blur(${bannerBlur}px)`, transition: 'filter 0.1s linear' }} />
             <div className='container h-full text-center mt-20 2xl:mt-40'>
                 <h1 className='font-black text-[42px] sm:text-5xl md:text-6xl lg:text-[5.4rem] xl:text-[5.4rem] mt-6 leading-none uppercase'>Be life ready</h1>
                 <p className='text-xl mt-8'>Your money. Your rules. Your Card.</p>
