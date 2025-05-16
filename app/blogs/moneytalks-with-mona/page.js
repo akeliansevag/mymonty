@@ -34,23 +34,122 @@ const page = () => {
 						<p>Picture this: You just finished your daily jog on the Beirut Corniche, enjoying the sea breeze. You crave a chicken shawarma sandwich, so you head to the nearest snack, reach for your wallet… and BAM!!! you left it at home. <br /> No cash, no cards, just your phone. After the crisis, Lebanon became an increasingly cash-heavy country, but let’s be real—who actually enjoys dealing with cash? Long ATM lines, no change at supermarkets, and that awkward moment when a cashier sighs because you handed them a pile of large bills. Well, what if your phone could handle it all? Welcome to the world of digital wallets—fast, secure, and always within reach.</p>
 					</div>
 
-					<hr className='mt-12' />
+					<hr className='my-12' />
 
-					<div className='flex max-lg:flex-col gap-24 mt-12'>
+					<div className='flex max-lg:flex-col gap-24'>
 						<div className='lg:w-1/2 flex flex-col gap-4'>
 							<h2 className='text-pretty text-3xl font-bold uppercase'>What is a Digital Wallet?</h2>
-							<p>MoneyTalks by Mona is your go-to voice on all things digital finance in Lebanon. <br /> Powered by fintech insights and local flair, Mona breaks down complex money topics into bite-sized, relatable tips you can actually use. Smart, witty and always on your side, Mona is here to help you make confident, secure and savvy financial choices, one tap at a time.</p>
+							<ul className='list-disc pl-6'>
+								<li>Store money & make payments – No more fumbling for change.</li>
+								<li>Send & receive money instantly –No awkward "I owe you" moments.</li>
+								<li>Shop online with ease – No more borrowing someone’s card for subscriptions</li>
+								<li>Request virtual or physical prepaid cards – Spend smart whether you're shopping from Beirut, Istanbul or Barcelona.</li>
+								<li>Top up anytime – Use your debit/ credit/ prepaid card to load cash when needed.</li>
+								<li>Access financial services without a traditional bank – Get the tools you need, minus the bank hassle.</li>
+							</ul>
 						</div>
 						<div className='lg:w-1/2'>
-							<Image className='w-full' src={image3} width="" height="" />
-							<hr className='mt-6' />
-							<div className='flex flex-col gap-4 mt-6'>
-								<h2 className='text-pretty text-3xl font-bold uppercase'>Mona’s Tip:</h2>
+							<Image className='w-full aspect-video object-cover' src={image3} width="" height="" />
+							<hr className='my-6' />
+							<div className='flex flex-col gap-4'>
+								<h2 className='text-pretty text-3xl font-bold'>Mona’s Tip:</h2>
 								<p>“If your digital wallet could talk, it’d say: <br /> ‘I got you.’”</p>
 							</div>
 						</div>
 					</div>
+
+					<hr className='my-12' />
+
+					<div className='flex flex-col gap-4'>
+						<h2 className='text-pretty text-3xl font-bold uppercase'>How Does a Digital Wallet Work?</h2>
+						<p className='font-bold'>Digital wallets give you instant access to your money and let you pay in just a few taps.</p>
+						<div className='flex flex-col gap-2'>
+							<p>💳  <span className='font-bold'>Tap-to-pay (NFC)</span> – Just hold your card near a POS card terminal. Voilà —done</p>
+							<p>📲  <span className='font-bold'>QR Code Payments</span> – Scan, confirm, pay. Easy.</p>
+							<p>💻  <span className='font-bold'>Online Transactions </span> – Skip typing in your card details for the millionth time.                           </p>
+							<p>🎮  <span className='font-bold'>Games & Subscriptions</span> – Pay for Netflix, Shahid, mobile games, and more—all in a tap </p>
+							<p>🧾  <span className='font-bold'>Pay bills in one place </span>– Mobile, internet … it’s your one-stop payment shop.</p>
+							<p>🤝  <span className='font-bold'> P2P Transfers </span> – Send or receive money from friends and family in seconds — no cash, no stress.</p>
+						</div>
 					</div>
+
+					<hr className='my-12' />
+
+					<div>
+						<h2 className='lg:w-1/2 text-pretty text-3xl font-bold uppercase'>Why Are Digital Wallets Taking Over?</h2>
+						<div className='flex max-lg:flex-col gap-6 lg:gap-24 mt-6'>
+							<div className='lg:w-1/2 flex flex-col gap-6'>
+								<div className='flex flex-col'>
+									<p className='font-bold'>📡 Convenience</p>
+									<ul className='list-disc pl-6'>
+										<li>Pay bills, buy groceries, shop online, split dinner — all from your phone.</li>
+										<li>Superfast transactions — no more ATM visits.</li>
+										<li>Contactless payments — less germs (if you know what I mean!), more speed.</li>
+										<li>Skip the paperwork. Get onboarded with a Lebanese ID or a Lebanese Residence Permit in less than 5 minutes.</li>
+									</ul>
+								</div>
+								<div className='flex flex-col'>
+									<p className='font-bold'>🔑 Security</p>
+									<p>Two-factor authentication, real-time fraud alerts, Face ID or PIN protection — plus encryption and tokenization of your card data — digital wallets are like Fort Knox, but friendlier.</p>
+								</div>
+							</div>
+
+							<div className='lg:w-1/2 flex flex-col gap-6'>
+								<div className='flex flex-col'>
+									<p className='font-bold'>💳 Access to Services</p>
+									<p>Digital wallets and prepaid cards let you access apps, subscriptions, international payments, and more — without linking your main debit card that holds your life savings. Just load what you need, and you're good to go.</p>
+								</div>
+								<div className='flex flex-col'>
+									<p className='font-bold'>🧮 Better financial control</p>
+									<p>Track your spending in real time, down to the last lira. No surprises, no stress.</p>
+								</div>
+								<div className='flex flex-col'>
+									<p className='font-bold'>🌐 Global Friendly</p>
+									<p>Whether you’re in Beirut or Berlin, your money travels with you.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<hr className='my-12' />
+
+					<div className='flex'>
+						<p class="text-8xl">💡</p>
+						<div className='lg:w-1/3 flex flex-col gap-4'>
+							<h2 className='text-pretty text-3xl font-bold uppercase'>Mona’s Reality Check: </h2>
+							<p>“Lebanon is moving fast. If you don’t want to be left behind, it’s time to go digital!”</p>
+						</div>
+					</div>
+
+					<hr className='my-12' />
+
+					<div className='flex max-lg:flex-col gap-24'>
+						<div className='lg:w-1/2 flex flex-col gap-4'>
+							<h2 className='text-pretty text-3xl font-bold uppercase'>The Risks of Sticking to Cash</h2>
+							<div className='flex flex-col'>
+								<p className='font-bold'>⚠️ Cash Gets Lost or Stolen</p>
+								<p>Your mattress isn’t a vault. Fires, theft, or one bad decision can wipe out your savings.</p>
+							</div>
+							<div className='flex flex-col'>
+								<p className='font-bold'>⚠️ No Transaction History</p>
+								<p>With cash, you never really know where your money went. With digital tools, you can track every lira.</p>
+							</div>
+							<div className='flex flex-col'>
+								<p className='font-bold'>⚠️ Not Future-Proof</p>
+								<p>Cash limits your access to the global economy. Want to freelance internationally? Pay for online courses? Shop global? Good luck without a digital payment method.</p>
+							</div>
+						</div>
+						<div className='lg:w-1/2'>
+							<Image className='w-full aspect-video object-cover' src={image3} width="" height="" />
+							<hr className='my-6' />
+							<div className='flex flex-col gap-4'>
+								<h2 className='text-pretty text-3xl font-bold'>💡 Mona's Reality Check: </h2>
+								<p>“Cash might feel safe, but it’s actually fragile. Digital is the upgrade your money deserves.”</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
 			</div>
 		</section>
   	)
