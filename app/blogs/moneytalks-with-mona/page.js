@@ -14,11 +14,11 @@ const page = () => {
 
 				<Link href={`/blogs`} className='mm-button mt-8'>Back to Blogs</Link>
 
-				<Image className='w-full mt-12' src={image1} width="" height="" />
+				<Image className='w-full mt-12' src={image1} width="" height="" alt="Banner" />
 				
 				<div className='flex max-lg:flex-col gap-12 px-10 py-14 bg-[#F7F7F7] rounded-3xl mt-12'>
 					<div className='lg:w-1/4 order-1 lg:order-0'>
-						<Image className='w-full' src={image2} width="" height="" />
+						<Image className='w-full' src={image2} width="" height="" alt="About MoneyTalks by Mona" />
 					</div>
 					<div className='lg:w-3/4 order-0 lg:order-1 flex flex-col gap-4'>
 						<h3 className='text-pretty text-2xl font-bold'>About MoneyTalks by Mona</h3>
@@ -26,7 +26,7 @@ const page = () => {
 					</div>
 				</div>
 
-				<div className='px-8'>
+				<div className='lg:px-8'>
 					<div className='flex flex-col gap-4'>
 						<p className='mt-12'>May 09, 2025</p>
 						<h1 className='text-pretty text-5xl font-bold uppercase'>MoneyTalks with Mona</h1>
@@ -36,7 +36,7 @@ const page = () => {
 
 					<hr className='my-12' />
 
-					<div className='flex max-lg:flex-col gap-24'>
+					<div className='flex max-lg:flex-col gap-12 lg:gap-24'>
 						<div className='lg:w-1/2 flex flex-col gap-4'>
 							<h2 className='text-pretty text-3xl font-bold uppercase'>What is a Digital Wallet?</h2>
 							<ul className='list-disc pl-6'>
@@ -49,7 +49,7 @@ const page = () => {
 							</ul>
 						</div>
 						<div className='lg:w-1/2'>
-							<Image className='w-full aspect-video object-cover' src={image3} width="" height="" />
+							<Image className='w-full aspect-video object-cover' src={image3} width="" height="" alt="What is a Digital Wallet?" />
 							<hr className='my-6' />
 							<div className='flex flex-col gap-4'>
 								<h2 className='text-pretty text-3xl font-bold'>Mona’s Tip:</h2>
@@ -114,7 +114,7 @@ const page = () => {
 					<hr className='my-12' />
 
 					<div className='flex'>
-						<p class="text-8xl">💡</p>
+						<p className="text-8xl">💡</p>
 						<div className='lg:w-1/3 flex flex-col gap-4'>
 							<h2 className='text-pretty text-3xl font-bold uppercase'>Mona’s Reality Check: </h2>
 							<p>“Lebanon is moving fast. If you don’t want to be left behind, it’s time to go digital!”</p>
@@ -123,7 +123,7 @@ const page = () => {
 
 					<hr className='my-12' />
 
-					<div className='flex max-lg:flex-col gap-24'>
+					<div className='flex max-lg:flex-col gap-12 lg:gap-24'>
 						<div className='lg:w-1/2 flex flex-col gap-4'>
 							<h2 className='text-pretty text-3xl font-bold uppercase'>The Risks of Sticking to Cash</h2>
 							<div className='flex flex-col'>
@@ -140,7 +140,7 @@ const page = () => {
 							</div>
 						</div>
 						<div className='lg:w-1/2'>
-							<Image className='w-full aspect-video object-cover' src={image3} width="" height="" />
+							<Image className='w-full aspect-video object-cover' src={image3} width="" height="" alt="The Risks of Sticking to Cash" />
 							<hr className='my-6' />
 							<div className='flex flex-col gap-4'>
 								<h2 className='text-pretty text-3xl font-bold'>💡 Mona's Reality Check: </h2>
@@ -149,6 +149,37 @@ const page = () => {
 						</div>
 					</div>
 
+					<hr className='my-12' />
+
+					<div className='flex flex-col gap-4'>
+						<h2 className='text-pretty text-3xl font-bold uppercase'>But Can You Really Trust a Digital Wallet?</h2>
+						<p className='font-bold'>💬 Mona’s Reality Check for the Trust-Issues Club:</p>
+						<p>“I get it. After what the 2019 financial crisis put us through, trusting anyone with your money feels like dating after a bad breakup. But here’s the truth: digital wallets like MyMonty are tools. You load only what you want, use it how you want, and you stay in control. No one’s locking up your savings, and no one’s charging you for breathing. It’s freedom, not a risk. Plus, Monty Finance is licensed by Banque du Liban and follows rigorous compliance standards. Oh, and the cards? Backed by Mastercard, they’re globally recognized and built on the same level of trust and protection you expect — minus the paperwork.”</p>
+					</div>
+
+					<hr className='my-12' />
+
+					<div className='flex max-lg:flex-col gap-12'>
+						<div className='lg:w-1/2 order-1 lg:order-0'>
+							<Image className='w-full' src={image5} width="" height="" alt="What Can You Do Now?" />
+						</div>
+						<div className='lg:w-1/2 order-0 lg:order-1 flex flex-col gap-4'>
+							<h2 className='text-pretty text-3xl font-bold uppercase'>So, What Can You Do Now?</h2>
+							<p className='mt-4'>✔ Download a digital wallet (Hi, MyMonty!)</p>
+							<p>✔ Get a prepaid card to shop, travel, and subscribe without paperwork drama</p>
+							<p>✔ Set spending limits and stay in control — load only what you need, no surprises</p>
+							<p>✔ Start tracking your spending in real time</p>
+							<p>✔ Bank-level encryption and biometric logins</p>
+							<p>✔ No hidden fees, no long-term ties</p>
+						</div>
+					</div>
+				</div>
+
+				<div className='flex flex-col gap-2 px-10 py-10 bg-[#F7F7F7] rounded-3xl mt-12 text-center'>
+					<h2 className='text-pretty text-3xl font-bold uppercase'>Ready to ditch the cash chaos?</h2>
+					<p>MyMonty makes digital finance simple, secure, and stress-free.</p>
+					<p className='font-bold'>Join the fintech wave today.</p>
+						<Link href={`/blogs`} className='w-max mx-auto mm-button mt-4'>Download App</Link>
 				</div>
 			</div>
 		</section>
