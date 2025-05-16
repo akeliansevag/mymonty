@@ -175,9 +175,11 @@ const Content = () => {
                     <div className='!pt-0'>
                         <h2 className="smaller-title">Middle East & Levant Platinum Mastercard Lounge Program</h2>
                         <p>Enjoy FREE unlimited access to over 25 regional and international DragonPass lounges, business facilities, complimentary refreshments, and snacks mentioned in the MasterCard Travel Pass app.</p>
+                        
+                        
                         <a href="https://apps.apple.com/lb/app/mastercard-travel-pass/id1493489553" target="_blank" className="mm-button blue mt-4">Download App Now</a>
                         
-                        <div className="flex lg:items-center max-lg:flex-col lg:justify-between lg:-mt-10 gap-10">
+                        <div className="flex lg:items-center max-lg:flex-col lg:justify-between gap-10">
                             <div className="lg:w-3/5">
                                 <h3 className="font-bold mb-3 max-lg:mt-10">HOW TO USE:</h3>
                                 <ul className="">
