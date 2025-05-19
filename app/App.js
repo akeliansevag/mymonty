@@ -11,7 +11,7 @@ import Form from './components/Form';
 import ZeroFees from './components/ZeroFees';
 import { usePathname } from 'next/navigation';
 import KhouryHome from './components/KhouryHome';
-
+import NakhalBannerAd from './components/NakhalBannerAd';
 
 
 const App = ({ children }) => {
@@ -20,11 +20,15 @@ const App = ({ children }) => {
     const dynamicFormComponent = <Form />;
     const pathname = usePathname();
     return (
-        <>  
+        <>
             {/* {pathname != '/khoury-home' && (
                 <KhouryHome />
             )} */}
-            
+
+            {pathname != '/nakhal' && (
+                <NakhalBannerAd />
+            )}
+
             <Modal formComponent={formComponent || dynamicFormComponent} isOpen={openModal} handleOpenModal={handleOpenModal} handleCloseModal={handleCloseModal} largeWidth={largeWidth} />
             <Header />
             <div>

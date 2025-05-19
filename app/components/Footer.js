@@ -30,13 +30,13 @@ const Footer = () => {
     }
 
     let headingText = 'YOUR WALLET MADE DIGITAL';
-    
+
     if (pathname === '/mymonty-under-18') {
         headingText = 'Kids Learn Money, You Relax!';
     }
 
     return (
-        <section className='bg-black text-white'>
+        <section className='bg-black text-white max-lg:pb-10 lg:pb-20'>
             <div className='container text-center pt-10 pb-10 lg:pt-20' id="download-now">
                 <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>{headingText}</h2>
                 <div className='md:w-1/2 mx-auto'>
@@ -128,7 +128,7 @@ const Footer = () => {
                                                     <path d="M6 9L12 15L18 9" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                             </div>
-                                           
+
                                         </h6>
                                     )}
                                 </span>
@@ -183,7 +183,7 @@ const Footer = () => {
                     <div>
                         <ul>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/terms-conditions">Website Terms and Conditions</Link></li>
-                            
+
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/key-facts-statements">Key Facts Statements</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/fees-and-charges">Fees and Charges</Link></li>
                         </ul>
