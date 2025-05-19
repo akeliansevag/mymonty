@@ -48,7 +48,7 @@ const CardsSlider = () => {
                         quality={100}
                         sizes="100vw"
                         priority={key === 0}  // Prioritize the first image for faster load
-                        className="w-full"
+                        className="w-2/3 2xl:w-full mx-auto"
                     />
                 </SwiperSlide>
             ))}

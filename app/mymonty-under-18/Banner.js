@@ -33,6 +33,9 @@ function Banner() {
     return (
         <section className='flex flex-col relative lg:min-h-[100dvh] pt-[var(--header-height)] overflow-hidden max-lg:pb-32'>
             <img src='/youth-banner.webp' alt='Youth Card' className='absolute top-0 left-0 object-cover object-bottom w-full h-full -z-10' style={{ filter: `blur(${bannerBlur}px)`, transition: 'filter 0.1s linear' }} />
+            {/* <video className='absolute top-0 left-0 object-cover object-bottom w-full h-full -z-10' width="100%" playsInline autoPlay muted loop controls={false}>
+                <source src='/under-18-banner.mp4' type="video/mp4" />
+            </video> */}
             <div className='container h-full text-center mt-20 2xl:mt-40'>
                 <h1 className='font-black text-[42px] sm:text-5xl md:text-6xl lg:text-[5.4rem] xl:text-[5.4rem] mt-6 leading-none uppercase'>Be life ready</h1>
                 <p className='text-xl mt-8'>Your money. Your rules. Your Card.</p>
