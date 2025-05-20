@@ -16,12 +16,12 @@ const pea = () => {
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PLATINUM CREDIT CARD - KEY FACTS STATEMENT  <br />
-                    (V.1.3 – 10 January 2025)</strong> </p>
+                        (V.1.5 – 15 April 2025)</strong> </p>
 
                 <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty
-Mastercard Platinum Credit Card offered by Monty Finance S.A.L. (“Card”). This KFS does not contain all the terms and conditions
-governing the Card and it should be read along with the Credit Cards Terms and Conditions and the Credit Card Application Form of
-which it forms an integral part. </p>
+                    Mastercard Platinum Credit Card offered by Monty Finance S.A.L. (“Card”). This KFS does not contain all the terms and conditions
+                    governing the Card and it should be read along with the Credit Cards Terms and Conditions and the Credit Card Application Form of
+                    which it forms an integral part. </p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
@@ -36,18 +36,18 @@ which it forms an integral part. </p>
                             </tr>
                             <tr>
                                 <td><strong>Validity</strong></td>
-                                <td colSpan={3}><p>The Card is valid until the expiry date shown on it (which is 1 year from the issuance date)</p></td>
+                                <td colSpan={3}><p>The Card is valid until the expiry date shown on it (which is 5 years from the issuance date)</p></td>
                             </tr>
                             <tr>
                                 <td><strong>Grace Period </strong></td>
                                 <td colSpan={3}><p>A period of up to 35 days from the transaction date during which the cardholder does not incur interest on the purchases.
-                                The grace period does not apply to cash withdrawal transactions.</p></td>
+                                    The grace period does not apply to cash withdrawal transactions.</p></td>
                             </tr>
 
                             <tr>
                                 <td><strong>Monthly Repayment </strong></td>
                                 <td colSpan={3}><p>Minimum 10% of the outstanding balance or USD50, whichever is greater <br />
-                                Maximum: 100% of the outstanding balance</p></td>
+                                    Maximum: 100% of the outstanding balance</p></td>
                             </tr>
 
                             <tr>
@@ -56,7 +56,7 @@ which it forms an integral part. </p>
                             </tr>
                             <tr>
                                 <td><strong>Method of Repayment</strong></td>
-                                <td colSpan={3}><p>In cash (Fresh USD) at MyMonty Locations, Door to Door service or by using your MyMonty eWallet account</p></td>
+                                <td colSpan={3}><p>In cash (Fresh USD) at MyMonty Locations</p></td>
                             </tr>
                         </tbody>
 
@@ -76,7 +76,7 @@ which it forms an integral part. </p>
                             </tr>
                             <tr>
                                 <td><strong>Minimum period at current
-                                Work</strong></td>
+                                    Work</strong></td>
                                 <td>
                                     <ul>
                                         <li>Employee: 1 year </li>
@@ -91,11 +91,11 @@ which it forms an integral part. </p>
                                 <td colSpan={3}>
                                     <ul>
                                         <li>
-                                        Applicants must be enrolled in MyMonty app for at least 6 months and apply for a credit card with a specific limit through
-                                        the app.
+                                            Applicants must be enrolled in MyMonty app for at least 6 months and apply for a credit card with a specific limit through
+                                            the app.
                                         </li>
                                         <li>
-                                        The wallet turnover for purchase transactions must reach a minimum of USD 750 per month over six consecutive months.
+                                            The wallet turnover for purchase transactions must reach a minimum of USD 750 per month over six consecutive months.
                                         </li>
                                     </ul>
                                 </td>
@@ -113,22 +113,22 @@ which it forms an integral part. </p>
                                 <td colSpan={4} className='table-heading'>Card Issuance, Delivery, Replacement and Cancellation</td>
                             </tr>
                             <tr>
-                                <td><strong>Card Issuance Fee</strong></td>
+                                <td><strong>Primary Card Annual Fee</strong></td>
                                 <td>USD 150</td>
                                 <td><strong>Card Delivery (local)</strong></td>
                                 <td>Free of Charge</td>
                             </tr>
 
                             <tr>
-                                <td><strong>Replacement Card Fee (damaged, lost or stolen)</strong></td>
-                                <td>USD 150</td>
+                                <td><strong>Supplementary Card Annual Fee</strong></td>
+                                <td>USD 100</td>
                                 <td><strong>Card Delivery (international)</strong></td>
                                 <td>Pass-Through Cost</td>
                             </tr>
 
                             <tr>
-                                <td><strong>Supplementary Card issuance Fee (or replacement) </strong></td>
-                                <td>USD 100</td>
+                                <td><strong>Replacement Card Fee (lost, stolen, fraud, or damaged)</strong></td>
+                                <td>USD 20</td>
                                 <td><strong>Card Cancellation</strong></td>
                                 <td>Free of Charge</td>
                             </tr>
@@ -149,7 +149,7 @@ which it forms an integral part. </p>
                                             ATMs transactions*: 2.5%
                                             <p className='text-sm'>* Interest Rate is applicable as from the transaction date</p>
                                         </li>
-                                        
+
                                     </ul>
                                 </td>
                             </tr>
@@ -184,7 +184,7 @@ which it forms an integral part. </p>
 
                             <tr>
                                 <td><strong>Cross border fee (if the Card is used for USD purchases with any merchant located outside Lebanon)</strong></td>
-                                <td colSpan={3}>2.5% with a minimum of USD 2 per transaction</td>
+                                <td colSpan={3}>1.5% with a minimum of USD 0.5 per transaction</td>
                             </tr>
 
                             <tr>
@@ -230,7 +230,7 @@ which it forms an integral part. </p>
                             <tr>
                                 <td><strong>Physical Statement of Account</strong></td>
                                 <td colSpan={3}>Local delivery: USD 5 / International delivery: USD 2 + Pass-through
-                                Cost</td>
+                                    Cost</td>
                             </tr>
 
                             <tr>
@@ -299,7 +299,7 @@ which it forms an integral part. </p>
                                 </td>
                             </tr>
 
-                            
+
                         </tbody>
 
                     </table>
@@ -309,26 +309,25 @@ which it forms an integral part. </p>
                     <h2>5. USEFUL INFORMATION</h2>
                     <table className='mm-table'>
                         <tbody>
-                            
+
                             <tr>
                                 <td><strong>Withdrawing money in cash from your Card in Lebanon at Integrated
-                                ATMs</strong></td>
+                                    ATMs</strong></td>
                                 <td colSpan={3}>You can withdraw money in cash at any Fransabank SAL s ATM in Lebanon.</td>
                             </tr>
-                           
+                            <tr>
+                                <td><strong>Withdrawing money in cash from your Card in Lebanon at Local ATMs</strong></td>
+                                <td colSpan={3}>You can withdraw money in cash at any BLC SAL’s ATM in Lebanon.</td>
+                            </tr>
                             <tr>
                                 <td><strong>Reward Program </strong></td>
                                 <td colSpan={3}>1% Cashback on any amount spent at Points of Sale or Online</td>
                             </tr>
 
-                            <tr>
-                                <td><strong>Door to Door Service </strong></td>
-                                <td colSpan={3}>Collection of credit card dues in cash (Fresh USD) directly from the customer's
-                                location.</td>
-                            </tr>
-                            
 
-                            
+
+
+
                         </tbody>
 
                     </table>

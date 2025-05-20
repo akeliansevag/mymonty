@@ -16,7 +16,7 @@ const pea = () => {
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PREPAID CARD (VIRTUAL) - KEY FACTS STATEMENT  <br />
-                    (V.1.1 – 31 April 2024)</strong> </p>
+                        (V.1.2 – 2 April 2025)</strong> </p>
 
                 <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Virtual Prepaid Card offered by Monty Finance SAL (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the Prepaid Cards Terms and Conditions of which it forms an integral part. </p>
 
@@ -31,11 +31,11 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td><strong>Validity</strong></td>
-                                <td><p>The Card is valid until the expiry date shown on it (which is 1 year from the issuance date).</p></td>
+                                <td><p>The Card is valid until the expiry date shown on it (which is 5 years from the issuance date).</p></td>
                             </tr>
                             <tr>
                                 <td><strong>Eligibility</strong></td>
-                                <td><p>To be eligible for the Card you must have and maintain an eWallet Account with MyMonty.	</p></td>
+                                <td><p>To be eligible for the Card you must have and maintain an eWallet Account with MyMonty.</p></td>
                             </tr>
 
                         </tbody>
@@ -52,15 +52,15 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td><strong>Card Issuance Fee</strong></td>
-                                <td>USD 5</td>
-                                <td><strong>Annual Fee</strong></td>
+                                <td>Free of Charge</td>
+                                <td><strong>Annual Renewal Fee</strong></td>
                                 <td>Free of Charge</td>
                             </tr>
 
                             <tr>
                                 <td><strong>Replacement Card Fee</strong></td>
-                                <td>USD 5</td>
-                                <td><strong>Card Cancellation</strong></td>
+                                <td>Free of Charge</td>
+                                <td><strong>Card Termination</strong></td>
                                 <td>Free of charge</td>
                             </tr>
                             <tr>
@@ -98,7 +98,7 @@ const pea = () => {
                             <tr>
                                 <td colSpan={2}><strong>Cross border fee (if the Card is used for USD purchases with any merchant located outside Lebanon)
                                 </strong></td>
-                                <td colSpan={2}>1% of the transaction amount + USD 0.5
+                                <td colSpan={2}>1.5% with a minimum of USD 0.50 per transaction
                                 </td>
                             </tr>
 
@@ -199,7 +199,7 @@ const pea = () => {
                                     <strong>Amendment</strong>
                                 </td>
                                 <td>
-                                We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website <a href="https://mymonty.com.lb" className='text-blue-500 hover:underline'  target='_blank'>www.mymonty.com.lb</a> or App.
+                                    We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website <a href="https://mymonty.com.lb" className='text-blue-500 hover:underline' target='_blank'>www.mymonty.com.lb</a> or App.
                                 </td>
                             </tr>
 

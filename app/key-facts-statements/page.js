@@ -16,7 +16,7 @@ const KeyFactsStatements = () => {
             <div className='container py-10 lg:py-20 relative'>
                 <div className='flex flex-col gap-4'>
                     <a href='/key-facts-statements/personal-ewallet-account' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
-                        KFS Personal eWallet Account
+                        KFS Individual eWallet Account
                     </a>
                     <a href='/key-facts-statements/prepaid-card-physical' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                         KFS Prepaid Card (Physical)
@@ -27,6 +27,10 @@ const KeyFactsStatements = () => {
 
                     <a href='/key-facts-statements/platinum-credit-card' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                         KFS Platinum Credit Card
+                    </a>
+
+                    <a href='/key-facts-statements/world-elite-credit-card' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                        KFS World Elite Credit Card
                     </a>
                 </div>
 

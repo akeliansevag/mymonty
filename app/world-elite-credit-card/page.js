@@ -33,8 +33,8 @@ const worldEliteCards = () => {
     };
 
     const terms = {
-        termsAndConditions: 'credit-cards-terms-and-conditions-world-elite-credit-card-v1-15.04.2025.pdf', 
-        kfs: 'world-elite-kfs-v.01.pdf'
+        termsAndConditions: 'credit-cards-terms-and-conditions-world-elite-credit-card-v1-15.04.2025.pdf',
+        kfs: 'world-elite-kfs.pdf'
     }
 
     return (
@@ -45,7 +45,7 @@ const worldEliteCards = () => {
                 <div className="container text-center">
                     <TextBlock center={true} title="World elite credit card Benefits" description="" />
                 </div>
-                
+
                 <Content />
             </div>
 
