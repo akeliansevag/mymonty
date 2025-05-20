@@ -9,7 +9,7 @@ const Blogs = () => {
   const { data } = useFetch(`${BLOGS_API}`);
  
   return (
-    <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
+    <section className='pt-14 pb-14'>
         <div className='container'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-20'>
             {data &&

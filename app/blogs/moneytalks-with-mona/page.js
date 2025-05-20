@@ -17,7 +17,7 @@ const page = () => {
 
 				<Image className='w-full mt-12' src={image1} width="" height="" alt="Banner" />
 				
-				<div className='flex max-lg:flex-col gap-12 px-10 py-14 bg-[#F7F7F7] rounded-3xl mt-12'>
+				<div className='flex max-lg:flex-col gap-12 px-10 py-8 bg-[#F7F7F7] rounded-3xl mt-12'>
 					<div className='lg:w-1/4 order-1 lg:order-0'>
 						<Image className='w-full' src={image2} width="" height="" alt="About MoneyTalks by Mona" />
 					</div>
@@ -88,7 +88,7 @@ const page = () => {
 						<div className='flex max-lg:flex-col gap-6 lg:gap-24 mt-6'>
 							<div className='lg:w-1/2 flex flex-col gap-6'>
 								<div className='flex flex-col'>
-									<p className='font-bold'>📡 Convenience</p>
+									<p className='font-bold'>Convenience</p>
 									<ul className='list-disc pl-6'>
 										<li>Pay bills, buy groceries, shop online, split dinner — all from your phone.</li>
 										<li>Superfast transactions — no more ATM visits.</li>
@@ -97,22 +97,22 @@ const page = () => {
 									</ul>
 								</div>
 								<div className='flex flex-col'>
-									<p className='font-bold'>🔑 Security</p>
+									<p className='font-bold'>Security</p>
 									<p>Two-factor authentication, real-time fraud alerts, Face ID or PIN protection — plus encryption and tokenization of your card data — digital wallets are like Fort Knox, but friendlier.</p>
 								</div>
 							</div>
 
 							<div className='lg:w-1/2 flex flex-col gap-6'>
 								<div className='flex flex-col'>
-									<p className='font-bold'>💳 Access to Services</p>
+									<p className='font-bold'>Access to Services</p>
 									<p>Digital wallets and prepaid cards let you access apps, subscriptions, international payments, and more — without linking your main debit card that holds your life savings. Just load what you need, and you're good to go.</p>
 								</div>
 								<div className='flex flex-col'>
-									<p className='font-bold'>🧮 Better financial control</p>
+									<p className='font-bold'>Better financial control</p>
 									<p>Track your spending in real time, down to the last lira. No surprises, no stress.</p>
 								</div>
 								<div className='flex flex-col'>
-									<p className='font-bold'>🌐 Global Friendly</p>
+									<p className='font-bold'>Global Friendly</p>
 									<p>Whether you’re in Beirut or Berlin, your money travels with you.</p>
 								</div>
 							</div>
@@ -135,15 +135,15 @@ const page = () => {
 						<div className='lg:w-1/2 flex flex-col gap-4'>
 							<h2 className='text-pretty text-3xl font-bold uppercase'>The Risks of Sticking to Cash</h2>
 							<div className='flex flex-col gap-2'>
-								<p className='font-bold'>⚠️ Cash Gets Lost or Stolen</p>
+								<p className='font-bold'>Cash Gets Lost or Stolen</p>
 								<p>Your mattress isn’t a vault. Fires, theft, or one bad decision can wipe out your savings.</p>
 							</div>
 							<div className='flex flex-col gap-2'>
-								<p className='font-bold'>⚠️ No Transaction History</p>
+								<p className='font-bold'>No Transaction History</p>
 								<p>With cash, you never really know where your money went. With digital tools, you can track every lira.</p>
 							</div>
 							<div className='flex flex-col gap-2'>
-								<p className='font-bold'>⚠️ Not Future-Proof</p>
+								<p className='font-bold'>Not Future-Proof</p>
 								<p>Cash limits your access to the global economy. Want to freelance internationally? Pay for online courses? Shop global? Good luck without a digital payment method.</p>
 							</div>
 						</div>
@@ -173,12 +173,14 @@ const page = () => {
 						</div>
 						<div className='lg:w-1/2 order-0 lg:order-1 flex flex-col gap-4'>
 							<h2 className='text-pretty text-3xl font-bold uppercase'>So, What Can You Do Now?</h2>
-							<p className='mt-4'>✔ Download a digital wallet (Hi, MyMonty!)</p>
-							<p>✔ Get a prepaid card to shop, travel, and subscribe without paperwork drama</p>
-							<p>✔ Set spending limits and stay in control — load only what you need, no surprises</p>
-							<p>✔ Start tracking your spending in real time</p>
-							<p>✔ Bank-level encryption and biometric logins</p>
-							<p>✔ No hidden fees, no long-term ties</p>
+							<ul className='flex flex-col gap-2 list-disc pl-6'>
+								<li>Download a digital wallet (Hi, MyMonty!)</li>
+								<li>Get a prepaid card to shop, travel, and subscribe without paperwork drama</li>
+								<li>Set spending limits and stay in control — load only what you need, no surprises</li>
+								<li>Start tracking your spending in real time</li>
+								<li>Bank-level encryption and biometric logins</li>
+								<li>No hidden fees, no long-term ties</li>
+							</ul>
 						</div>
 					</div>
 				</div>

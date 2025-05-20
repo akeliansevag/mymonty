@@ -36,7 +36,7 @@ export const data = [
             },
             {
                 title: 'Cards',
-                url: null,
+                url: '/cards',
                 children: [
                     {
                         title: 'Platinum Credit Card',

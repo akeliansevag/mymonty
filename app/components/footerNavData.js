@@ -32,7 +32,7 @@ export const data = [
             },
             {
                 title: 'Cards',
-                url: null,
+                url: '/cards',
                 children: [
                     {
                         title: 'Physical Platinum Mastercard',
@@ -154,6 +154,10 @@ export const data = [
                     {
                         title: 'News',
                         url: '/news'
+                    },
+                    {
+                        title: 'Blogs',
+                        url: '/blogs'
                     },
                     {
                         title: 'Contact us',
