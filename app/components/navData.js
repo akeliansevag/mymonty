@@ -180,10 +180,10 @@ export const data = [
                 title: 'News',
                 url: '/news'
             },
-            // {
-            //     title: 'Blogs',
-            //     url: 'blogs'
-            // },
+            {
+                title: 'Blogs',
+                url: 'blogs'
+            },
             {
                 title: 'Contact us',
                 url: '/contact-us'

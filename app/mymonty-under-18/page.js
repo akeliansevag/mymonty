@@ -133,7 +133,7 @@ const Under18 = () => {
                             <img
                                 src="/shape-14.svg"
                                 alt="Shape Decoration"
-                                className="absolute -bottom-14 -left-14 animate-[rotate_10s_linear_infinite] z-10"
+                                className="absolute -bottom-24 left-10 2xl:-bottom-14 2xl:-left-14 animate-[rotate_10s_linear_infinite] z-10"
                             />
                         </div>
                     </div>
