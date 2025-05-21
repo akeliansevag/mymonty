@@ -17,7 +17,7 @@ export const metadata = {
 };
 
 const Under18 = () => {
-    
+
     const marqueeItems = [
         { text: 'E-Wallet LBP/USD', color: '#E95942' },
         { text: 'Vouchers', color: '#47A58B' },
@@ -31,7 +31,7 @@ const Under18 = () => {
         <>
 
             <Banner />
-            
+
             <div className="marquee overflow-hidden relative z-20 -top-10 ">
                 <div className="relative wrapper grid grid-flow-col auto-cols-[7rem] lg:auto-cols-[10rem] justify-items-center items-center animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
                     {Array.from({ length: 9 }).map((_, innerIndex) => (
@@ -74,8 +74,13 @@ const Under18 = () => {
                     <p className='text-xl mt-8'>Start your journey toward financial independence with MyMonty &lt;18. Manage your money, make smart choices, and have the freedom to spend and save, all on your phone.</p>
                     <button className='mm-button !bg-[#EED793] !text-black mt-8'>Get The App</button>
                     <div className='flex max-lg:flex-col items-center gap-8 mt-10'>
-                        <Image quality={100} sizes='100vw' priority placeholder='blur' alt='control you money' src={controlYourMoney1} />
-                        <Image quality={100} sizes='100vw' priority placeholder='blur' alt='control you money' src={controlYourMoney2} />
+                        <div>
+                            <img alt='control you money' src="/control-your-money-1.webp" />
+                        </div>
+                        <div>
+                            <img alt='control you money' src="/control-your-money-2.webp" />
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -86,19 +91,19 @@ const Under18 = () => {
                 <div className="relative wrapper grid grid-flow-col auto-cols-[18rem] lg:auto-cols-[18rem] justify-items-center items-center animate-[marquee1_20s_linear_infinite] lg:animate-[marqueelg1_20s_linear_infinite]">
                     {marqueeItems.map((marquee, i) => (
                         <div key={i} className={`marquee-shadow border-4 bg-white rounded-full flex items-center justify-center gap-2 py-2 px-6 w-[250px]`} style={{ borderColor: marquee.color }}>
-                            <span className='w-2 h-2 rounded-full' style={{ backgroundColor: marquee.color}}></span>
+                            <span className='w-2 h-2 rounded-full' style={{ backgroundColor: marquee.color }}></span>
                             <h3 style={{ color: marquee.color }}>{marquee.text}</h3>
                         </div>
                     ))}
                     {marqueeItems.map((marquee, i) => (
                         <div key={i} className={`marquee-shadow border-4 bg-white rounded-full flex items-center justify-center gap-2 py-2 px-6 w-[250px]`} style={{ borderColor: marquee.color }}>
-                            <span className='w-2 h-2 rounded-full' style={{ backgroundColor: marquee.color}}></span>
+                            <span className='w-2 h-2 rounded-full' style={{ backgroundColor: marquee.color }}></span>
                             <h3 style={{ color: marquee.color }}>{marquee.text}</h3>
                         </div>
                     ))}
                     {marqueeItems.map((marquee, i) => (
                         <div key={i} className={`marquee-shadow border-4 bg-white rounded-full flex items-center justify-center gap-2 py-2 px-6 w-[250px]`} style={{ borderColor: marquee.color }}>
-                            <span className='w-2 h-2 rounded-full' style={{ backgroundColor: marquee.color}}></span>
+                            <span className='w-2 h-2 rounded-full' style={{ backgroundColor: marquee.color }}></span>
                             <h3 style={{ color: marquee.color }}>{marquee.text}</h3>
                         </div>
                     ))}
@@ -113,8 +118,8 @@ const Under18 = () => {
 
                     <div className='relative max-lg:mt-10'>
                         <Image quality={100} sizes='100vw' priority placeholder='blur' alt='For Parents' src={forParents} />
-                        <img  src='/shape-15.svg' alt='Shape' className='absolute max-sm:bottom-10 max-md:bottom-12 max-lg:bottom-24 lg:bottom-24 right-0 max-sm:w-[50px] max-md:w-[100px] max-lg:w-[150px] animate-[rotate_10s_linear_infinite]' />
-                     </div>
+                        <img src='/shape-15.svg' alt='Shape' className='absolute max-sm:bottom-10 max-md:bottom-12 max-lg:bottom-24 lg:bottom-24 right-0 max-sm:w-[50px] max-md:w-[100px] max-lg:w-[150px] animate-[rotate_10s_linear_infinite]' />
+                    </div>
                 </div>
             </section>
 
