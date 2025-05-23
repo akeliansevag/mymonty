@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import nakhaldesktop from '@/public/nakhal-desktop.webp';
+import nakhaldesktop from '@/public/nakhal-desktop1.webp';
 import nakhalmobile from '@/public/nakhal-mobile.webp';
 
 
