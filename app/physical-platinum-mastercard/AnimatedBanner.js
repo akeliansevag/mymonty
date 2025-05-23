@@ -13,11 +13,16 @@ const AnimatedBanner = () => {
     }, [])
     return (
         <div className='flex md:justify-end mr-10'>
-            <div className='h-[500px] bg-black w-[300px] md:w-[360px] rounded-[30px] flex flex-col justify-end relative'>
+            <div className='h-[500px] bg-black lg:w-[300px] md:w-[360px] rounded-[30px] flex flex-col justify-end relative'>
                 <video className='mb-6' width="100%" playsInline autoPlay muted loop controls={false}>
                     <source src='/rotating-cards-4.mp4' type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
+
+                <div className='absolute top-10 -right-10 lg:-left-20'>
+                    <img src='cachback-0.5.svg' alt='0.5% Cachback' />
+                </div>
+
                 <div className='absolute right-0 translate-x-2/4 flex flex-col gap-3 bottom-1/4 translate-y-1/2'>
                     <div ref={pink} className='scale-0 w-[68px] h-[68px] rounded-full bg-[#D25788] flex items-center justify-center'>
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
