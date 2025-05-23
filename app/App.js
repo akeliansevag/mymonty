@@ -2,15 +2,12 @@
 import React from 'react';
 import Header from './components/header/Header';
 import Footer from './components/Footer';
-import OldFooter from './components/OldFooter';
 import { NavigationEvents } from './components/navigation-events';
 import { Suspense } from 'react';
 import Modal from './components/Modal';
 import { useAppContext } from './AppContext';
 import Form from './components/Form';
-import ZeroFees from './components/ZeroFees';
 import { usePathname } from 'next/navigation';
-import KhouryHome from './components/KhouryHome';
 import NakhalBannerAd from './components/NakhalBannerAd';
 
 
