@@ -5,22 +5,33 @@ import { gsap } from "gsap";
 const AnimatedBanner = () => {
 
     useEffect(() => {
-        import('@splinetool/viewer').then(() => {
-            const viewer = document.querySelector('spline-viewer');
+    // Ensure <spline-viewer> is registered
+    import('@splinetool/viewer').then(() => {
+      const tryAccessCanvas = () => {
+        const viewer = document.querySelector('spline-viewer');
 
-            // Wait a bit to ensure it's rendered
-            setTimeout(() => {
-                if (viewer && viewer.shadowRoot) {
-                    const canvas = viewer.shadowRoot.querySelector('canvas');
-                    if (canvas) {
-                        canvas.style.width = '100%';
-                        canvas.style.height = '100%';
-                        canvas.style.cursor = 'default';
-                    }
-                }
-            }, 500);
-            });
-    }, []);
+        if (viewer && viewer.shadowRoot) {
+          const canvas = viewer.shadowRoot.querySelector('canvas');
+          if (canvas) {
+            canvas.style.width = '100%';
+            canvas.style.height = '100%';
+            canvas.style.cursor = 'default';
+            console.log('[Spline] canvas styled');
+            return true;
+          }
+        }
+
+        return false;
+      };
+
+      // Poll until canvas is ready
+      const interval = setInterval(() => {
+        if (tryAccessCanvas()) {
+          clearInterval(interval);
+        }
+      }, 200);
+    });
+  }, []);
     
     const pink = useRef();
     const blue = useRef();
@@ -40,7 +51,7 @@ const AnimatedBanner = () => {
                 </video> */}
 
                 <div className='relative bg-black/10 rounded-3xl w-full lg:w-4/5 mx-auto'>
-                    <spline-viewer url="https://prod.spline.design/cZWZvza1oLXg56d7/scene.splinecode"></spline-viewer>
+                    <spline-viewer url="https://prod.spline.design/cZWZvza1oLXg56d7/scene.splinecode" style={{ width: '100%', height: '100%', display: 'block' }} />
 
                     <div className='absolute top-10 -right-10 lg:-left-20'>
                         <img src='cachback-0.5.svg' alt='0.5% Cachback' />
