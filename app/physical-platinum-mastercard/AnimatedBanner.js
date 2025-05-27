@@ -18,7 +18,7 @@ const AnimatedBanner = () => {
                 canvas.style.cursor = 'default';
             }
             }
-        }, 100);
+        }, 300);
         });
     }, []);
     
