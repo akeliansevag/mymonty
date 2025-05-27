@@ -547,3 +547,14 @@ body.menu-hidden .sticky-filters {
 .youth-form{
   box-shadow: 0px 3.97px 3.97px 0px #0000001A;
 }
+
+spline-viewer {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+spline-viewer canvas {
+  width: 140% !important;
+  height: 140% !important;
+}

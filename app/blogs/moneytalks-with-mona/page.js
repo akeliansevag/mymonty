@@ -16,7 +16,7 @@ const page = () => {
 				<Link href={`/blogs`} className='mm-button'>Back to Blogs</Link>
 
 				<Image className='w-full mt-12' src={image1} width="" height="" alt="Image 6 Alt tag: Contactless digital wallet payment with phone at POS machine — fast and secure mobile transactions replacing cash payments." />
-				
+	
 				<div className='flex max-lg:flex-col gap-12 px-10 py-8 bg-[#F7F7F7] rounded-3xl mt-12'>
 					<div className='lg:w-1/4 order-1 lg:order-0'>
 						<Image className='w-full' src={image2} width="" height="" alt="Modern Lebanese woman representing Mona — a fintech digital persona offering expert guidance on digital wallets and money tips." />
