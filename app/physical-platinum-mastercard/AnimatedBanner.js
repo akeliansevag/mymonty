@@ -6,20 +6,20 @@ const AnimatedBanner = () => {
 
     useEffect(() => {
         import('@splinetool/viewer').then(() => {
-        const viewer = document.querySelector('spline-viewer');
+            const viewer = document.querySelector('spline-viewer');
 
-        // Wait a bit to ensure it's rendered
-        setTimeout(() => {
-            if (viewer && viewer.shadowRoot) {
-            const canvas = viewer.shadowRoot.querySelector('canvas');
-            if (canvas) {
-                canvas.style.width = '100%';
-                canvas.style.height = '100%';
-                canvas.style.cursor = 'default';
-            }
-            }
-        }, 300);
-        });
+            // Wait a bit to ensure it's rendered
+            setTimeout(() => {
+                if (viewer && viewer.shadowRoot) {
+                    const canvas = viewer.shadowRoot.querySelector('canvas');
+                    if (canvas) {
+                        canvas.style.width = '100%';
+                        canvas.style.height = '100%';
+                        canvas.style.cursor = 'default';
+                    }
+                }
+            }, 300);
+            });
     }, []);
     
     const pink = useRef();
@@ -39,7 +39,7 @@ const AnimatedBanner = () => {
                     Your browser does not support the video tag.
                 </video> */}
 
-                <div className='relative bg-black/30 rounded-3xl w-full lg:w-4/5 mx-auto'>
+                <div className='relative bg-black/10 rounded-3xl w-full lg:w-4/5 mx-auto'>
                     <spline-viewer url="https://prod.spline.design/cZWZvza1oLXg56d7/scene.splinecode"></spline-viewer>
 
                     <div className='absolute top-10 -right-10 lg:-left-20'>
