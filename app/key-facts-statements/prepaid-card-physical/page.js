@@ -16,9 +16,9 @@ const pea = () => {
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PLATINUM PREPAID CARD (PHYSICAL) - KEY FACTS STATEMENT  <br />
-                        (V.1.4 – 9 May 2025)</strong> </p>
+                        (V.1.5 – 23 May 2025)</strong> </p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Platinum Physical Prepaid Card offered by Monty Finance SAL (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the Prepaid Cards Terms and Conditions of which it forms an integral part. </p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Platinum Physical Prepaid Card offered by Monty Finance SAL (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the Prepaid Cards Terms and Conditions. </p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>

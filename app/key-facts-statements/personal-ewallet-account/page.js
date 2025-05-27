@@ -16,9 +16,9 @@ const pea = () => {
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>INDIVIDUAL MYMONTY eWALLET ACCOUNT - KEY FACTS STATEMENT  <br />
-                        (V.1.5 – 22 April 2025)</strong> </p>
+                        (V.1.7 – 23 May 2025)</strong> </p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the individual MyMonty eWallet Account offered by Monty Finance SAL to individual clients (“eWallet Account”). This KFS does not contain all the terms and conditions governing the eWallet Account and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Customer Agreement </a> of which it forms an integral part.</p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the individual MyMonty eWallet Account offered by Monty Finance SAL to individual clients (“eWallet Account”). This KFS does not contain all the terms and conditions governing the eWallet Account and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Customer Agreement </a>.</p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
@@ -166,6 +166,23 @@ const pea = () => {
                                 <td colSpan={3}>Free of charge</td>
                             </tr>
 
+                            <tr>
+                                <td><strong>Touch Postpaid</strong></td>
+                                <td>Transaction Fee: LBP 50,000 / USD 0.7</td>
+                                <td><strong>Alfa Postpaid</strong></td>
+                                <td>Transaction Fee: LBP 50,000</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>IHJOZ</strong></td>
+                                <td>Transaction Fee: 1% of the transaction amount</td>
+                                <td colSpan={2}><strong>All other available e-services are provided with no transaction fees.</strong></td>
+                            </tr>
+                            <tr>
+                                <td colSpan={3}><strong>Currency Exchange: </strong>Through our partnered exchange house and based on the real market rate adopted at the time of conversion between LBP and USD balances. </td>
+                                <td>Free of charge</td>
+                            </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -280,106 +297,22 @@ const pea = () => {
                                 </td>
                             </tr>
 
+                            <tr>
+                                <td><strong>E-Services</strong></td>
+                                <td>
+                                    Up to the available balance in your account.
+                                </td>
+                            </tr>
+
 
                         </tbody>
                     </table>
                 </div>
+
+       
 
                 <div className='table-wrapper'>
                     <h2>4. USEFUL INFORMATION</h2>
-                    <table className='mm-table'>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Currency Exchange</strong>
-                                </td>
-                                <td colSpan={3}>
-                                    Through our partnered exchange house and based on the real market rate adopted at the time of conversion between LBP and USD balances.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <strong>Travel e-SIM</strong>
-                                </td>
-                                <td>
-                                    Access and manage digital SIM cards for travel.
-                                </td>
-                                <td>
-                                    <strong>Telecom</strong>
-                                </td>
-                                <td>
-                                    Manage mobile and internet services.
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <strong>Gift Vouchers</strong>
-                                </td>
-                                <td>
-                                    Purchase and redeem vouchers for various retailers.
-                                </td>
-                                <td>
-                                    <strong>Touch Postpaid </strong>
-                                </td>
-                                <td>
-                                    Settle your postpaid bill directly from your eWallet
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td>
-                                    <strong>Games</strong>
-                                </td>
-                                <td>
-                                    Access and purchase digital games or vouchers.
-                                </td>
-                                <td>
-                                    <strong>Alfa Postpaid</strong>
-                                </td>
-                                <td>
-                                    Settle your postpaid bill directly from your eWallet
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <strong>Media</strong>
-                                </td>
-                                <td>
-                                    Stream or access digital content.
-                                </td>
-                                <td>
-                                    <strong>IHJOZ</strong>
-                                </td>
-                                <td>
-                                    Access and book events, concerts, and shows.
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <strong>Fashion</strong>
-                                </td>
-                                <td>
-                                    Shop for fashion items and accessories.
-                                </td>
-                                <td>
-                                    <strong>Donations</strong>
-                                </td>
-                                <td>
-                                    Make charitable donations directly.
-                                </td>
-                            </tr>
-
-
-                        </tbody>
-                    </table>
-                </div>
-
-                <div className='table-wrapper'>
-                    <h2>5. USEFUL INFORMATION</h2>
                     <table className='mm-table'>
                         <tbody>
                             <tr>
