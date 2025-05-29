@@ -435,7 +435,7 @@ const Content = () => {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-5">
+                        {/* <div className="flex flex-col gap-5">
                             <div className="text-center">
                                 <h2 className="smaller-title">Farfetch</h2>
                                 <p>Enjoy <strong>10% off</strong> incredible fashion at <a className="blue-text" href="https://www.farfetch.com/lb/shopping/women/sale/all/items.aspx?utm_source=google&utm_medium=cpc&utm_keywordid=26798745&isbrand=yes&pid=google_search&af_channel=Search&c=703495184&af_c_id=703495184&af_siteid=&af_keywords=kwd-533010193&af_adset_id=36605822557&af_ad_id=591351217847&af_sub1=26798745&is_retargeting=true&gad_source=1&gclid=Cj0KCQiA0fu5BhDQARIsAMXUBOL1E-xbQSps1LXLwYT9gBx2Kj1NMzlA9osX8zCmCKW0ghXCeEOu2v8aAgNSEALw_wcB">Farfetch</a> when spending $300 or above.</p>
@@ -453,7 +453,7 @@ const Content = () => {
                                     Check out the <a target="_blank" className="text-[--mm-blue]" href="https://www.farfetch.com/lb/mastercard/privileges/evergreen/terms-and-conditions.aspx?clickref=1011lzRV4NqX&utm_source=mastercard_privileges&utm_medium=partnerships&utm_campaign=PHPAR&pid=performancehorizon_int&c=PHPAR&clickid=1011lzRV4NqX&af_siteid=mastercard_privileges&af_cost_model=CPA&af_channel=partnerships&is_retargeting=true">Terms & Conditions</a> for clarification on excluded brands & items.
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="flex max-lg:flex-col gap-10 items-center lg:justify-between">
                             <div className="lg:w-3/5">
