@@ -17,8 +17,8 @@ const VirtualCard = () => {
                 <div className='max-w-[1060px] mx-auto w-full'>
                     <div className='container text-center'>
                         <div className="md:max-w-full lg:max-w-[60vw] fhd:max-w-[45vw] mx-auto">
-                            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>Experience the World with MyMonty Platinum Mastercard</h2>
-                            <p className="leading-8 mt-8">Enjoy exclusive perks and secure global access with our Platinum Mastercard. Shop, dine, and travel with peace of mind. Like carrying convenience in your wallet!</p>
+                            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>Experience the World With MyMonty Mastercard Platinum Prepaid Card</h2>
+                            <p className="leading-8 mt-8">Enjoy exclusive perks and secure global access with MyMonty Platinum Prepaid Card. Shop, dine, and travel with peace of mind. Like carrying convenience in your wallet!</p>
                             <div className="flex justify-between items-center gap-4 w-max mx-auto text-white rounded-full bg-black p-2 pr-6 mt-8">
                                 <svg width="56" height="53" viewBox="0 0 56 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <ellipse cx="27.7874" cy="26.7766" rx="27.2327" ry="26.2212" fill="white"/>

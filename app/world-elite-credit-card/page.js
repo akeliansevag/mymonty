@@ -43,7 +43,7 @@ const worldEliteCards = () => {
             <VirtualCard />
             <div className="py-10 lg:py-20">
                 <div className="container text-center">
-                    <TextBlock center={true} title="World elite credit card Benefits" description="" />
+                    <TextBlock center={true} title="Mastercard World Elite Credit Card Benefits" description="" />
                 </div>
 
                 <Content />

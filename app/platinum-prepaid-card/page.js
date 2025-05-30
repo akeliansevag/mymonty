@@ -11,13 +11,13 @@ import Content from '../components/cards/Content';
 
 
 export const metadata = {
-    title: websiteName + 'Cards',
+    title: websiteName + 'Platinum Prepaid Card',
     description: '',
 };
 
 const cards = () => {
     const data = {
-        title: 'Physical PLATINUM mastercard',
+        title: 'Platinum Prepaid Card',
         subtitle: 'Cards',
         desc: 'World-class. Unique. Boundless.',
         image: {
@@ -46,7 +46,7 @@ const cards = () => {
             <VirtualCard />
             <div className="py-10 lg:py-20">
                 <div className="container text-center">
-                    <TextBlock center={true} title="Physical Platinum Mastercard Benefits" description="" />
+                    <TextBlock center={true} title="Mastercard Platinum Prepaid Card Benefits" description="" />
                 </div>
                 
                 <Content />

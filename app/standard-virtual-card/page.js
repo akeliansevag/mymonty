@@ -9,14 +9,14 @@ import img2 from '@/public/virtual-mastercard-2.webp';
 import TextBlock from '../components/TextBlock';
 
 export const metadata = {
-    title: websiteName + 'Payments',
+    title: websiteName + 'Standard Virtual Card',
     description: '',
 };
 
 
 const VirtualMastercard = () => {
     const data = {
-        title: 'Virtual MasterCard',
+        title: 'Standard Virtual Card',
         subtitle: 'Cards',
         desc: 'Your Digital Wallet’s Best Friend',
         image: {
@@ -81,7 +81,7 @@ const VirtualMastercard = () => {
             <Banner terms={terms} data={data} />
             <section className="bg-white text-center py-28 max-lg:py-14">
                 <div className="container flex flex-col gap-8">
-                    <TextBlock buttonColor="dark" title="no need to wait!" center={true} button={true} description="Spice up your digital lifestyle and make secure online purchases with ease. Your virtual card is ready whenever you are — no need to wait!" />
+                    <TextBlock buttonColor="dark" title="no need to wait!" center={true} button={true} description="Spice up your digital lifestyle and make secure online purchases with ease. Your MyMonty Mastercard Standard Virtual Card is ready whenever you are — no need to wait!" />
                     
                     <div className="relative">
                         <Image src={img2} alt="Girls Looking at the phone"/>
@@ -93,7 +93,7 @@ const VirtualMastercard = () => {
 
             <section className="bg-gray-100 py-28 max-lg:py-14 text-center">
                 <div className="container">
-                    <TextBlock center={true} title="Virtual Card Benefits" description="Enjoy instant access and seamless online payments with our Virtual Card. Shop, subscribe, and transact securely. It’s all just a few taps away!" />
+                    <TextBlock center={true} title="Mastercard Standard Virtual Card Benefits" description="Enjoy instant access and seamless online payments with our Virtual Card. Shop, subscribe, and transact securely. It’s all just a few taps away!" />
 
                     <div className="grid max-lg:grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
                         {

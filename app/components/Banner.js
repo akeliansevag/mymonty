@@ -54,7 +54,7 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
                                                 </div>
                                             )
                                         }
-                                        <h1 className={`font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase ${data.image.layout !== 'full' ? 'mt-6' : ''}`}>{data.title}</h1>
+                                        <h1 className={`text-balance font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase ${data.image.layout !== 'full' ? 'mt-6' : ''}`}>{data.title}</h1>
                                         <p dangerouslySetInnerHTML={{ __html: data.desc }} className='text-xl mt-8'></p>
 
                                         {

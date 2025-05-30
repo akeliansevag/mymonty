@@ -18,6 +18,16 @@ const nextConfig = {
                 destination: '/faq/personal/onboarding',
                 permanent: true, // Set to `false` if it's a temporary redirect
             },
+            {
+                source: '/virtual-mastercard',
+                destination: '/standard-virtual-card',
+                permanent: true, // Set to `false` if it's a temporary redirect
+            },
+            {
+                source: '/physical-platinum-mastercard',
+                destination: '/platinum-prepaid-card',
+                permanent: true, // Set to `false` if it's a temporary redirect
+            },
         ]
     },
     images: {

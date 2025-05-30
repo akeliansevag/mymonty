@@ -35,8 +35,14 @@ export const data = [
                 url: '/cards',
                 children: [
                     {
-                        title: 'Physical Platinum Mastercard',
-                        url: '/physical-platinum-mastercard'
+                        title: 'Standard Virtual Card',
+                        // url: '/virtual-mastercard'
+                        url: '/standard-virtual-card'
+                    },
+                    {
+                        title: 'Platinum Prepaid Card',
+                        // url: '/physical-platinum-mastercard'
+                        url: '/platinum-prepaid-card'
                     },
                     {
                         title: 'Platinum Credit Card',
@@ -46,11 +52,6 @@ export const data = [
                         title: 'World Elite Credit Card',
                         url: '/world-elite-credit-card'
                     },
-                    {
-                        title: 'Virtual Mastercard',
-                        url: '/virtual-mastercard'
-                    },
-                    
                 ]
             },
             {
