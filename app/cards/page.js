@@ -66,12 +66,12 @@ const allCards = [
     {
         sectionTitle: 'World Elite Card',
         cards: [
-            {
-                title: 'World Elite Card',
-                color: 'Black',
-                image: WorldEliteCardBlack,
-                link: '/world-elite-credit-card',
-            },
+            // {
+            //     title: 'World Elite Card',
+            //     color: 'Black',
+            //     image: WorldEliteCardBlack,
+            //     link: '/world-elite-credit-card',
+            // },
             {
                 title: 'World Elite Card',
                 color: 'Credit',
