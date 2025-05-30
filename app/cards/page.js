@@ -24,47 +24,53 @@ export const metadata = {
 // Combined card data
 const allCards = [
     {
-        sectionTitle: 'Platinum credit card',
+        sectionTitle: 'Mastercard Platinum credit card',
         cards: [
             {
-                title: 'Platinum Card',
+                title: 'Platinum Credit Card',
                 color: 'Red',
                 image: PlatinumCardRed,
                 link: '/platinum-credit-card',
             },
             {
-                title: 'Platinum Card',
-                color: 'White Lucky Eye',
+                title: 'Platinum Credit Card',
+                color: 'Lucky Eye',
                 image: PlatinumCardWhiteLuckyEye,
                 link: '/platinum-credit-card',
             },
             {
-                title: 'Platinum Card',
+                title: 'Platinum Credit Card',
                 color: 'Green',
                 image: PlatinumCardGreen,
                 link: '/platinum-credit-card',
             },
+            {
+                title: 'Euro Credit Card',
+                color: 'Green',
+                image: EuroCardGreen,
+                link: '/cards',
+            },
         ],
     },
     {
-        sectionTitle: 'Physical Platinum Mastercard',
+        sectionTitle: 'Mastercard Platinum Prepaid Card',
         cards: [
             {
-                title: 'Physical Platinum Card',
+                title: 'Platinum Prepaid Card',
                 color: 'Black',
                 image: PhysicalPlatinumCardBlack,
-                link: '/platinum-prepaid-card',
+                link: '/physical-platinum-mastercard',
             },
             {
-                title: 'Physical Platinum Card',
-                color: 'Blue Lucky Eye',
+                title: 'Platinum Prepaid Card',
+                color: 'Lucky Eye',
                 image: PhysicalPlatinumCardBlueLuckyEye,
-                link: '/platinum-prepaid-card',
+                link: '/physical-platinum-mastercard',
             },
-        ],
+        ]
     },
     {
-        sectionTitle: 'World Elite Card',
+        sectionTitle: 'Mastercard World Elite Credit Card',
         cards: [
             // {
             //     title: 'World Elite Card',
@@ -73,21 +79,10 @@ const allCards = [
             //     link: '/world-elite-credit-card',
             // },
             {
-                title: 'World Elite Card',
+                title: 'World Elite Credit Card',
                 color: 'Credit',
                 image: WorldEliteCardCredit,
                 link: '/world-elite-credit-card',
-            },
-        ],
-    },
-    {
-        sectionTitle: 'MyMonty Euro Card',
-        cards: [
-            {
-                title: 'Euro Card',
-                color: 'Green',
-                image: EuroCardGreen,
-                link: '/cards',
             },
         ],
     },
@@ -107,7 +102,7 @@ const Cards = () => {
                             {section.cards.map((card, idx) => (
                                 <div key={idx} className='flex flex-col gap-4'>
                                     <Image src={card.image} alt={`${card.title} ${card.color}`} />
-                                    <div className='flex justify-between items-center text-start gap-4'>
+                                    <div className='w-full lg:w-4/5 mx-auto flex justify-between items-center text-start gap-4'>
                                         <div className='flex flex-col mt-4'>
                                             <h4 className='text-base font-bold'>{card.title}</h4>
                                             <p className='text-base'>{card.color}</p>
