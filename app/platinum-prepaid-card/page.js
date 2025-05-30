@@ -5,6 +5,7 @@ import Banner from '@/app/components/Banner';
 import banner from '@/public/personal/cards-banner-2.webp';
 
 import AnimatedBanner from './AnimatedBanner';
+import AnimatedBannerOld from './AnimatedBannerOld';
 import VirtualCard from './VirtualCard';
 import TextBlock from '../components/TextBlock';
 import Content from '../components/cards/Content';
