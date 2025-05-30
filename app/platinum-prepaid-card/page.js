@@ -43,7 +43,7 @@ const cards = () => {
 
     return (
         <>
-            <Banner terms={terms} data={data} AnimatedImage={AnimatedBanner} />
+            <Banner terms={terms} data={data} AnimatedImage={AnimatedBannerOld} />
             <VirtualCard />
             <div className="py-10 lg:py-20">
                 <div className="container text-center">
