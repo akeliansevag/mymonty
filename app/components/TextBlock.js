@@ -7,7 +7,7 @@ const TextBlock = ({noMaxWidth, subTitle, title, description, button, textColor,
     const { handleOpenModal } = useAppContext();
     return (
         <div className={`md:max-w-full ${!noMaxWidth ? 'lg:max-w-[60vw] fhd:max-w-[45vw]' : ''} ${center ? 'mx-auto' : ''} ${textColor ? 'text-' + textColor : ''}`}>
-            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>{title}</h2>
+            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance' dangerouslySetInnerHTML={{ __html: title }}></h2>
             {
                 subTitle && (
                     <h3 className='uppercase font-black text-2xl mt-2'>{subTitle}</h3>

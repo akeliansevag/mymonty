@@ -10,6 +10,7 @@ import AnimationSection from './AnimationSection';
 import Contact from './Contact';
 import CardsSlider from './CardsSlider';
 import Banner from './Banner';
+import SplineAnimation from './SplineAnimation';
 
 export const metadata = {
     title: websiteName + 'Under 18',
@@ -80,7 +81,6 @@ const Under18 = () => {
                         <div>
                             <img alt='control you money' src="/control-your-money-2.webp" />
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -123,23 +123,20 @@ const Under18 = () => {
                 </div>
             </section>
 
-            <section className='relative pt-36 pb-36 mt-20'>
+            <SplineAnimation />
+            
+            <section className='relative pt-36'>
                 <div className="absolute bottom-0 left-0 w-full h-full -z-10">
                     <img src='/how-to-get-mymonty-under-18-bg.webp' alt='How to get MyMonty <18' className='w-full h-full object-cover' />
                 </div>
-                <div className='container h-full'>
+                <div className='ml-container-align h-full'>
                     <div className='flex max-lg:flex-col justify-between items-center'>
-                        <div className="w-full lg:w-1/2">
+                        <div className="w-full lg:w-1/3">
                             <h1 className='font-black text-white text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase'>How to Get MyMonty <span className="text-[#FFE401]">&lt;18</span></h1>
                             <button className='mm-button !bg-[#FFE401] !text-black mt-8'>Get The App</button>
                         </div>
-                        <div className='w-full lg:w-1/2 relative max-lg:mt-10'>
+                        <div className='w-full lg:w-2/3 relative max-lg:mt-10'>
                             <CardsSlider />
-                            <img
-                                src="/shape-14.svg"
-                                alt="Shape Decoration"
-                                className="absolute -bottom-24 left-10 2xl:-bottom-14 2xl:-left-14 animate-[rotate_10s_linear_infinite] z-10"
-                            />
                         </div>
                     </div>
                 </div>

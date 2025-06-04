@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 
 const AnimatedBanner = () => {
 
-    useEffect(() => {
+  useEffect(() => {
     // Ensure <spline-viewer> is registered
     import('@splinetool/viewer').then(() => {
       const tryAccessCanvas = () => {
@@ -16,7 +16,7 @@ const AnimatedBanner = () => {
             canvas.style.width = '100%';
             canvas.style.height = '100%';
             canvas.style.cursor = 'default';
-            console.log('[Spline] canvas styled');
+            // console.log('[Spline] canvas styled');
             return true;
           }
         }

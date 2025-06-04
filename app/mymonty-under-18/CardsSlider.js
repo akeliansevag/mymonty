@@ -16,18 +16,14 @@ import Image from 'next/image';
 
 const CardsSlider = () => {
     const swiperParams = {
-        modules:[EffectFade, Autoplay],
-        slidesPerView: 1,
+        modules:[Autoplay],
+        slidesPerView: 2,
         spaceBetween: 20,
         grabCursor: true,
         autoplay: {
             delay: 1000,  // This will be too fast, likely not what you want
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
-        },
-        effect: 'fade',
-        fadeEffect: {
-            crossFade: true,
         },
     };
 
@@ -48,7 +44,7 @@ const CardsSlider = () => {
                         quality={100}
                         sizes="100vw"
                         priority={key === 0}  // Prioritize the first image for faster load
-                        className="w-2/3 2xl:w-full mx-auto"
+                        className="lg:w-2/3 2xl:w-full mx-auto"
                     />
                 </SwiperSlide>
             ))}

@@ -173,6 +173,7 @@ const Content = () => {
     ];
     return (
         <div className="container py-10 lg:py-20">
+            
             <div className="flex max-md:flex-col gap-x-5">
                 <Sidebar travelRef={travelRef} lifestyleRef={lifestyleRef} peaceRef={peaceRef} divInView={currentInView} />
 
