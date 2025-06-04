@@ -44,23 +44,23 @@ function SplineAnimation() {
   }, [ready]);
 
   return (
-      <section className='relative pt-24 pb-24 bg-black mt-20 text-white'>
-          <div className='container'>
-              <div className='flex max-lg:flex-col items-center gap-8 mt-10'>
-                  <div className="lg:w-1/2">
-                    <div ref={containerRef} style={{ width: '100%', height: '100%', position: 'relative' }}>
-                      {ready && (
-                        <spline-viewer url="https://prod.spline.design/YjilrVqHEgRC0AGl/scene.splinecode" style={{ width: '100%', height: '100%', display: 'block' }} />
-                      )}
-                    </div>
-                  </div>
-                  <div className="lg:w-1/2">
-                      <h1 className='font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase'>Personalized Cards</h1>
-                      <p className='text-xl mt-8'>Discover our dope collection!<br />Choose the color and style that suits your vibe. Step into a world of personalized virtual cards made just for you!</p>
-                  </div>
-              </div>
+    <section className='relative pt-24 pb-24 bg-black mt-20 text-white'>
+      <div className='container'>
+        <div className='flex max-lg:flex-col items-center gap-8 mt-10'>
+          <div className="lg:w-1/2">
+            <div ref={containerRef} style={{ width: '100%', height: '100%', position: 'relative' }}>
+              {ready && (
+                <spline-viewer url="https://prod.spline.design/YjilrVqHEgRC0AGl/scene.splinecode" style={{ width: '100%', height: '100%', display: 'block' }} />
+              )}
+            </div>
           </div>
-      </section>
+          <div className="lg:w-1/2">
+            <h1 className='font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase'>Personalized Cards</h1>
+            <p className='text-xl mt-8'>Discover our dope collection!<br />Choose the color and style that suits your vibe. Step into a world of personalized virtual cards made just for you!</p>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 
