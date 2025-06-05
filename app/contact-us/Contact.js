@@ -387,6 +387,11 @@ const Contact = () => {
                 <p className='font-bold leading-none'>Bloc E – Level LG</p>
                 <p className='leading-none'>Monday to Friday 9:30 am – 4:00 pm (Excluding Holidays)</p>
               </div>
+              <div className='flex flex-col gap-2'>
+                <p className='uppercase font-bold leading-none'>ABC Verdun</p>
+                <p className='font-bold leading-none'>Level LG</p>
+                <p className='leading-none'>Monday to Sunday 10:00 am – 10:00 pm</p>
+              </div>
             </div>
           </div>
           <div className='grid lg:grid-cols-2 gap-8 mt-8'>

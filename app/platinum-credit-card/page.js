@@ -54,16 +54,7 @@ const cards = () => {
                         <div className='container text-center'>
                             <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>Travel, shop, and pay in <span className='text-[#6BA8B1]'>Euros</span></h2>
                             <p className='leading-8 mt-8'>The MyMonty Euro Platinum Credit Card is the first and only euro credit card offered by an eWallet in Lebanon, designed exclusively for travelers and frequent spenders in Europe.</p>
-
-                            <div className='flex max-lg:flex-col justify-between gap-8 mt-12'>
-                                <div className='lg:w-2/3 flex'>
-                                    <Image className='w-full object-cover rounded-3xl' alt="Girls Eating Ice Cream" src={image1} />
-                                </div>
-                                <div className='lg:w-1/3'>
-                                    <Image className='w-full' alt="Wallet Balance" src={image2} />
-                                    <Image className='w-full mt-6' alt="Mastercard Platinum Credit Card" src={image3} />
-                                </div>
-                            </div>
+                            <Image className='w-full mt-16' alt="Girls Eating Ice Cream" src={image1} />
                         </div>
                     </div>
                     
