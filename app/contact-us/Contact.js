@@ -377,15 +377,15 @@ const Contact = () => {
             </div>
             <div className='flex flex-col gap-8'>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.5rem] leading-none'>Address</h2>
+               <div className='flex flex-col gap-2'>
+                <p className='uppercase font-bold leading-none'>Gefinor Center</p>
+                <p className='font-bold leading-none'>Bloc E – Level LG</p>
+                <p className='leading-none'>Monday to Friday 9:30 am – 4:00 pm (Excluding Holidays)</p>
+              </div>
               <div className='flex flex-col gap-2'>
                 <p className='uppercase font-bold leading-none'>ABC Dbayeh</p>
                 <p className='font-bold leading-none'>Level L1</p>
                 <p className='leading-none'>Monday to Sunday 10:00 am – 10:00 pm</p>
-              </div>
-              <div className='flex flex-col gap-2'>
-                <p className='uppercase font-bold leading-none'>Gefinor Center</p>
-                <p className='font-bold leading-none'>Bloc E – Level LG</p>
-                <p className='leading-none'>Monday to Friday 9:30 am – 4:00 pm (Excluding Holidays)</p>
               </div>
               <div className='flex flex-col gap-2'>
                 <p className='uppercase font-bold leading-none'>ABC Verdun</p>
