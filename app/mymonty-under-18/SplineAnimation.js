@@ -55,7 +55,7 @@ function SplineAnimation() {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <h1 className='font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase'>Personalized Cards</h1>
+            <h1 className='font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase'>Personalized Mastercard prepaid cards</h1>
             <p className='text-xl mt-8'>Discover our dope collection!<br />Choose the color and style that suits your vibe. Step into a world of personalized virtual cards made just for you!</p>
           </div>
         </div>
