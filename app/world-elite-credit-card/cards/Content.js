@@ -78,8 +78,44 @@ const Content = () => {
         <div className="flex max-md:flex-col gap-x-5">
             <Sidebar travelRef={travelRef} lifestyleRef={lifestyleRef} peaceRef={peaceRef} divInView={currentInView}/>
             
-            <div className="bg-gray-100 rounded-3xl lg:rounded-l-none p-8">
+            <div className="bg-gray-100 rounded-3xl lg:rounded-l-none p-6">
                 <div ref={travelRef} data-name="travel" className="content-category">
+                    {/* <div className='!pt-0 flex flex-col gap-10'>
+                        <div>
+                            <h2 className="smaller-title uppercase">World Elite Mastercard® Lounge Program</h2>
+                            <p>Enjoy FREE unlimited access with one guest to over 1,200 airport lounges in 450+ cities across 135+ countries through DragonPass, including business amenities, Wi-Fi, and complimentary refreshments.</p>
+                            
+                        </div>
+                        
+                        <div className='lg:h-[300px] relative w-full overflow-hidden rounded-2xl flex max-lg:flex-col lg:justify-between lg:items-end max-lg:items-center gap-10 p-5'>
+                            <img src='/word-elite-mastercard-lounge-program.webp' className='absolute top-0 left-0 w-full h-full object-cover'/>
+                            <div className='z-10'>
+                                <a href="https://apps.apple.com/lb/app/mastercard-travel-pass/id1493489553" target="_blank" className="mm-button blue mt-4">Download App Now</a>
+                            </div>
+                            <div className='z-10 h-full'>
+                                <img className='h-full' src='/mastercard-app.webp' />
+                            </div>
+                        </div>
+
+                        <div className="flex lg:items-center max-lg:flex-col lg:justify-between gap-10">
+                            <div>
+                                <h3 className="font-bold mb-3 max-lg:mt-10">HOW TO USE:</h3>
+                                <ul className="lg:columns-2">
+                                    {
+                                        howToUse.map((item, index) => 
+                                            (
+                                                <li key={index+1} className="flex gap-3 mb-3 text-lg">
+                                                    <span className="bg-transparent">{index+1}</span> 
+                                                    <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
+                                                </li>
+                                            )
+                                        )
+                                    }
+                                </ul>
+                            </div>
+                        </div>     
+                    </div>        */}
+
                     <div className='!pt-0'>
                         <h2 className="smaller-title">World Elite Mastercard® Lounge Program</h2>
                         <p>Enjoy FREE unlimited access with one guest to over 1,200 airport lounges in 450+ cities across 135+ countries through DragonPass, including business amenities, Wi-Fi, and complimentary refreshments.</p>
@@ -402,7 +438,7 @@ const Content = () => {
                     <div className="flex max-lg:flex-col gap-10 items-center lg:justify-between">
                         <div className="lg:w-3/5">
                             <h2 className="smaller-title">MyUS Premium Membership</h2>
-                            <p>MyUS Premium Membership Shop from top U.S. brands and ship worldwide with MyUS.<br />Get 2 years of free Premium Membership, <strong>up to 30% off</strong> shipping, and more.<br />Simply use your Mastercard at checkout: <a className="text-[var(--mm-blue)]" target="_blank" class="break-all" href="https://www.myus.com/welcome/mastercardpremium/">myus.com/welcome/Mastercardpremium</a>.</p>
+                            <p>MyUS Premium Membership Shop from top U.S. brands and ship worldwide with MyUS.<br />Get 2 years of free Premium Membership, <strong>up to 30% off</strong> shipping, and more.<br />Simply use your Mastercard at checkout: <a className="text-[var(--mm-blue)] break-all" target="_blank" href="https://www.myus.com/welcome/mastercardpremium/">myus.com/welcome/Mastercardpremium</a>.</p>
                         </div>
                         <div className="lg:w-2/5">
                             <img src="/myus3.webp" alt="MyUS" />
@@ -464,7 +500,7 @@ const Content = () => {
                         <div>
                             <h2 className="smaller-title">Get All the Drama for Half the Price</h2>
                             <p><strong>Get 50% Off Shahid VIP with Your MyMonty Card.</strong> Your favorite shows just got more affordable. <strong>Enjoy 50% off your Shahid VIP monthly plan</strong> when you use an eligible <strong>MyMonty Mastercard®.</strong></p>
-                            <p class="text-lg mt-5">Offer is valid for newly registered MyMonty Mastercard cards on the Shahid platform only.</p>
+                            <p className="text-lg mt-5">Offer is valid for newly registered MyMonty Mastercard cards on the Shahid platform only.</p>
                         </div>
                         <div className='flex max-lg:flex-col items-center gap-10 mt-10'>
                             <div className="lg:w-3/5">                                             

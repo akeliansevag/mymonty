@@ -181,7 +181,7 @@ const Content = () => {
                     <div ref={travelRef} data-name="travel" className="content-category">
                         <div className='!pt-0'>
                             <h2 className="smaller-title">Middle East & Levant Platinum Mastercard Lounge Program</h2>
-                            <p>Enjoy FREE unlimited access to over 25 regional and international DragonPass lounges, business facilities, complimentary refreshments, and snacks mentioned in the MasterCard Travel Pass app.</p>
+                            <p>Enjoy FREE access to over 25 regional and international DragonPass lounges, business facilities, complimentary refreshments, and snacks mentioned in the MasterCard Travel Pass app.</p>
 
 
                             <a href="https://apps.apple.com/lb/app/mastercard-travel-pass/id1493489553" target="_blank" className="mm-button blue mt-4">Download App Now</a>
@@ -577,7 +577,7 @@ const Content = () => {
                             <div>
                                 <h2 className="smaller-title">Get All the Drama for Half the Price</h2>
                                 <p><strong>Get 50% Off Shahid VIP with Your MyMonty Card.</strong> Your favorite shows just got more affordable. <strong>Enjoy 50% off your Shahid VIP monthly plan</strong> when you use an eligible <strong>MyMonty Mastercard®.</strong></p>
-                                <p class="text-lg mt-5">Offer is valid for newly registered MyMonty Mastercard cards on the Shahid platform only.</p>
+                                <p className="text-lg mt-5">Offer is valid for newly registered MyMonty Mastercard cards on the Shahid platform only.</p>
                             </div>
                             <div className='flex max-lg:flex-col items-center gap-10 mt-10'>
                                 <div className="lg:w-3/5">                                             
