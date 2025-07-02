@@ -2,7 +2,7 @@
 const nextConfig = {
     env: {
         apiUrl: process.env.NEXT_PUBLIC_NODE_ENV === 'production'
-            ? 'https://staging.mymonty.com/api'
+            ? 'https://leb-backend.mymonty.com/api'
             : 'http://mymonty.localhost/api',
     },
     reactStrictMode: false,
@@ -34,7 +34,7 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'staging.mymonty.com',
+                hostname: 'leb-backend.mymonty.com',
                 pathname: '/**', // Allow all paths
             },
         ],

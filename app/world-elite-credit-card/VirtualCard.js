@@ -18,7 +18,6 @@ const VirtualCard = () => {
                         <Image ref={anim} className='mx-auto mt-14' alt="Wallets" src={sectionTwoImage} />
                     </div>
                 </div>
-                
             </Section>
         </div>
     )
