@@ -139,7 +139,7 @@ const nakhal = () => {
                 <div className="container text-center">
                     <TextBlock title="Dreaming of your next vacation?"  description='Monty Finance S.A.L. and Nakhal & Cie S.A.L. are joining forces to bring you a limited-time travel promotion, book your next getaway with Nakhal and pay later using the MyMonty Platinum Credit Card.' center={true}/>
                     <TextBlock className="mt-10" description='Apply now through Nakhal to enjoy flexible payment terms that make travel more affordable.' bold={true} center={true}/>
-                    <div class="flex items-center gap-8 relative mt-8">
+                    <div className="flex items-center gap-8 relative mt-8">
                         <Image className="" alt="Girl Atm" src={image2} placeholder='blur' quality={100} />
                         <Image className="max-md:hidden w-full" alt="Girl Atm" src={image1} placeholder='blur' quality={100} />
                         <Image className="absolute md:top-1/2 md:-translate-y-1/2 md:left-[27%] max-md:bottom-0 max-md:translate-y-1/2 max-md:left-1/2 max-md:-translate-x-1/2 max-w-[250px]" alt="Girl Atm" src={image3} placeholder='blur' quality={100} />

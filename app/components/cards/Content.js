@@ -181,7 +181,7 @@ const Content = () => {
                     <div ref={travelRef} data-name="travel" className="content-category">
                         <div className='!pt-0'>
                             <h2 className="smaller-title">Middle East & Levant Platinum Mastercard Lounge Program</h2>
-                            <p>Enjoy FREE unlimited access to over 25 regional and international DragonPass lounges, business facilities, complimentary refreshments, and snacks mentioned in the MasterCard Travel Pass app.</p>
+                            <p>Enjoy FREE access to over 25 regional and international DragonPass lounges, business facilities, complimentary refreshments, and snacks mentioned in the MasterCard Travel Pass app.</p>
 
 
                             <a href="https://apps.apple.com/lb/app/mastercard-travel-pass/id1493489553" target="_blank" className="mm-button blue mt-4">Download App Now</a>
@@ -571,6 +571,43 @@ const Content = () => {
 
                             </div>
 
+                        </div>
+
+                        <div>
+                            <div>
+                                <h2 className="smaller-title">Get All the Drama for Half the Price</h2>
+                                <p><strong>Get 50% Off Shahid VIP with Your MyMonty Card.</strong> Your favorite shows just got more affordable. <strong>Enjoy 50% off your Shahid VIP monthly plan</strong> when you use an eligible <strong>MyMonty Mastercard®.</strong></p>
+                                <p className="text-lg mt-5">Offer is valid for newly registered MyMonty Mastercard cards on the Shahid platform only.</p>
+                            </div>
+                            <div className='flex max-lg:flex-col items-center gap-10 mt-10'>
+                                <div className="lg:w-3/5">                                             
+                                    <h3 className="mt-5 font-bold mb-3 max-md:mt-1 uppercase">to get your discount:</h3>
+                                    <ul className="">
+                                        <li className="flex gap-3 mb-3 text-lg">
+                                            <span className="flex">1</span> 
+                                            <span>Go to www.shahid.net/Mastercard</span>
+                                        </li>
+                                        <li className="flex gap-3 mb-3 text-lg">
+                                            <span className="flex">2</span> 
+                                            <span>Login or sign up for a Shahid account</span>
+                                        </li> 
+                                        <li className="flex gap-3 mb-3 text-lg">
+                                            <span className="flex">3</span> 
+                                            <span>Add your eligible MyMonty Mastercard® details</span>
+                                        </li> 
+                                        <li className="flex gap-3 mb-3 text-lg">
+                                            <span className="flex">4</span> 
+                                            <span>Redeem and enjoy streaming at half the price!</span>
+                                        </li> 
+                                    </ul>
+
+                                    <h3 className="mt-5 font-bold mb-3 max-md:mt-10 uppercase">terms & conditions</h3>
+                                    <a href="/Shahid-T&Cs - May 2025.pdf" target="_blank" className="mm-button blue mt-1">View Full Terms & Conditions</a>
+                                </div>
+                                <div className="lg:w-2/5 aspect-[5/4] rounded-[40px] relative overflow-hidden">
+                                    <img src='/shahed.webp' className="absolute object-cover w-full h-full" alt="Shahed"/>
+                                </div>                                       
+                            </div>
                         </div>
 
                         <div className='!pb-0 !border-b-0 flex max-lg:flex-col gap-10 lg:justify-between'>

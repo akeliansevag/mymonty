@@ -23,7 +23,7 @@ const page = () => {
 					</div>
 					<div className='lg:w-3/4 order-0 lg:order-1 flex flex-col gap-4'>
 						<h3 className='text-pretty text-2xl font-bold'>About MoneyTalks by Mona</h3>
-						<p class="text-lg !leading-6">MoneyTalks by Mona is your go-to voice on all things digital finance in Lebanon. <br /> Powered by fintech insights and local flair, Mona breaks down complex money topics into bite-sized, relatable tips you can actually use. Smart, witty and always on your side, Mona is here to help you make confident, secure and savvy financial choices, one tap at a time.</p>
+						<p className="text-lg !leading-6">MoneyTalks by Mona is your go-to voice on all things digital finance in Lebanon. <br /> Powered by fintech insights and local flair, Mona breaks down complex money topics into bite-sized, relatable tips you can actually use. Smart, witty and always on your side, Mona is here to help you make confident, secure and savvy financial choices, one tap at a time.</p>
 					</div>
 				</div>
 
