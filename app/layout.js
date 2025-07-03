@@ -76,6 +76,8 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
+        <Script src="https://analytics.ahrefs.com/analytics.js" data-key="3X26HJzNYSURzYfp+MSXKw" async></Script>
+
         <noscript>
           <img
             height="1"
