@@ -496,7 +496,7 @@ const Content = () => {
                         </div>
                     </div>
 
-                    <div className="!pb-0 !border-b-0 ">
+                    <div id="shahid" className="!pb-0 !border-b-0 ">
                         <div>
                             <h2 className="smaller-title">Get All the Drama for Half the Price</h2>
                             <p><strong>Get 50% Off Shahid VIP with Your MyMonty Card.</strong> Your favorite shows just got more affordable. <strong>Enjoy 50% off your Shahid VIP monthly plan</strong> when you use an eligible <strong>MyMonty Mastercard®.</strong></p>
