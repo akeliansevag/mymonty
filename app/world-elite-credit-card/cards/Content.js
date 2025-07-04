@@ -485,6 +485,17 @@ const Content = () => {
                         </div>
                     </div>
                     
+                    <div className='flex max-lg:flex-col gap-10 lg:justify-between'>
+                        <div className='lg:w-2/5'>
+                            <h2 className="smaller-title">Fiit</h2>
+                            <p>Crush your fitness goals with Fiit. <br />Get a 14-day free trial and <strong>25% off</strong> your first payment. Visit <a target="_blank" className="text-[var(--mm-blue)]" href="https://getfiit.tv/mastercard">getfiit.tv/mastercard</a>, choose your plan & pay with your Mastercard to unlock your benefits.</p>
+                        </div>
+                        
+                        <div className="lg:w-2/5 relative aspect-[5/4] rounded-[40px] overflow-hidden">
+                            <img src="/fiit2.webp" alt="Go Gamers image" className='absolute w-full h-full object-cover left-0 top-0' />
+                        </div>
+                    </div>
+
                     <div id="shahid" className="!pb-0 !border-b-0 ">
                         <div>
                             <h2 className="smaller-title">Get All the Drama for Half the Price</h2>
@@ -524,19 +535,6 @@ const Content = () => {
                         
                                                             
                     </div> 
-
-                    <div className='flex max-lg:flex-col gap-10 lg:justify-between'>
-                        <div className='lg:w-2/5'>
-                            <h2 className="smaller-title">Fiit</h2>
-                            <p>Crush your fitness goals with Fiit. <br />Get a 14-day free trial and <strong>25% off</strong> your first payment. Visit <a target="_blank" className="text-[var(--mm-blue)]" href="https://getfiit.tv/mastercard">getfiit.tv/mastercard</a>, choose your plan & pay with your Mastercard to unlock your benefits.</p>
-                        </div>
-                        
-                        <div className="lg:w-2/5 relative aspect-[5/4] rounded-[40px] overflow-hidden">
-                            <img src="/fiit2.webp" alt="Go Gamers image" className='absolute w-full h-full object-cover left-0 top-0' />
-                        </div>
-                    </div>
-
-                    
                 </div>
             </div>
         </div>
