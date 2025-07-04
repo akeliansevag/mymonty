@@ -18,7 +18,7 @@ const worldEliteCards = () => {
     const data = {
         title: 'World Elite Credit Card',
         subtitle: 'Cards',
-        desc: 'Live Big. Travel Like Royalty. <br /><strong>APR 26.68% (Variable)<strong>',
+        desc: 'Live Big. Travel Like Royalty. <br /><strong>APR 26.68% (Variable)</strong>',
         image: {
             inGrid: true,
             layout: 'half',
@@ -31,10 +31,9 @@ const worldEliteCards = () => {
             }
         }
     };
-
     const terms = {
-        termsAndConditions: 'credit-cards-terms-and-conditions-world-elite-credit-card-v1-15.04.2025.pdf',
-        kfs: 'world-elite-kfs.pdf'
+        termsAndConditions: '/credit-cards-terms-and-conditions-world-elite-credit-card-v1-15.04.2025.pdf',
+        kfs: '/world-elite-kfs.pdf'
     }
 
     return (
