@@ -2,6 +2,7 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import SmallBanner from '@/app/components/SmallBanner';
 import FooterBanner from '@/app/components/FooterBanner';
+import Head from 'next/head';
 
 export const metadata = {
     title: websiteName + 'World Elite Credit Card',
@@ -12,6 +13,9 @@ const pea = () => {
 
     return (
         <div>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/key-facts-statements/world-elite-credit-card/" />
+            </Head>
             <FooterBanner downloadURL="/world-elite-kfs.pdf" title="World Elite Credit Card" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>

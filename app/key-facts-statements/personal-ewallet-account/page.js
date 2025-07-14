@@ -2,6 +2,7 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import SmallBanner from '@/app/components/SmallBanner';
 import FooterBanner from '@/app/components/FooterBanner';
+import Head from 'next/head';
 
 export const metadata = {
     title: websiteName + 'Individual eWallet Account',
@@ -12,6 +13,10 @@ const pea = () => {
 
     return (
         <div>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/key-facts-statements/personal-ewallet-account" />
+            </Head>
+            
             <FooterBanner downloadURL="/KFS - Personal eWallet Account (006)2.pdf" title="Individual eWallet Account" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>

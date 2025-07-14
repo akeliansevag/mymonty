@@ -2,6 +2,7 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import SmallBanner from '@/app/components/SmallBanner';
 import FooterBanner from '@/app/components/FooterBanner';
+import Head from 'next/head';
 
 export const metadata = {
     title: websiteName + 'Personal eWallet Account',
@@ -12,6 +13,9 @@ const pea = () => {
 
     return (
         <div>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/key-facts-statements/prepaid-card-virtual/" />
+            </Head>
             <FooterBanner downloadURL="/KFS - Prepaid Virtual Card.pdf" title="Prepaid Card (Physical)" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>

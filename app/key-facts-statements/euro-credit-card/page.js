@@ -16,24 +16,21 @@ const pea = () => {
             <Head>
                 <link rel="canonical" href="https://mymonty.com.lb/key-facts-statements/platinum-credit-card/" />
             </Head>
-            <FooterBanner downloadURL="/platinum-credit-card-kfs.pdf" title="Platinum Credit Card" />
+            <FooterBanner downloadURL="/Euro Credit Card KFS 2.7.25.pdf" title="Euro PLATINUM Credit Card" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
-                    <strong>MYMONTY MC PLATINUM CREDIT CARD - KEY FACTS STATEMENT  <br />
-                        (V.1.6 – 23 May 2025)</strong> </p>
+                    <strong>MYMONTY MC EURO PLATINUM CREDIT CARD - KEY FACTS STATEMENT  <br /> (V.1.2 – 02 July 2025)</strong> </p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty
-                    Mastercard Platinum Credit Card offered by Monty Finance S.A.L. (“Card”). This KFS does not contain all the terms and conditions
-                    governing the Card and it should be read along with the Credit Cards Terms and Conditions and the Credit Card Application Form. </p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Euro Platinum Credit Card offered by Monty Finance S.A.L. (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the Credit Cards Terms and Conditions and the Credit Card Application Form.</p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
-                    <p>The Card is a physical Mastercard Platinum Credit Card.  </p>
+                    <p>The Card is a physical Mastercard Platinum Credit Card.</p>
                     <table className='mm-table'>
                         <tbody>
                             <tr>
                                 <td className='w-1/5'><strong>Card Currency</strong></td>
-                                <td><p>Fresh Funds USD.</p></td>
+                                <td><p>Fresh Funds Euro.</p></td>
                                 <td className='w-1/5'><strong>Card Category</strong></td>
                                 <td><p>Revolving</p></td>
                             </tr>
@@ -43,13 +40,12 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td><strong>Grace Period </strong></td>
-                                <td colSpan={3}><p>A period of up to 35 days from the transaction date during which the cardholder does not incur interest on the purchases.
-                                    The grace period does not apply to cash withdrawal transactions.</p></td>
+                                <td colSpan={3}><p>A period of up to 35 days from the transaction date during which the cardholder does not incur interest on the purchases. The grace period does not apply to cash withdrawal transactions.</p></td>
                             </tr>
 
                             <tr>
                                 <td><strong>Monthly Repayment </strong></td>
-                                <td colSpan={3}><p>Minimum 10% of the outstanding balance or USD50, whichever is greater <br />
+                                <td colSpan={3}><p>Minimum 10% of the outstanding balance or EUR50, whichever is greater <br />
                                     Maximum: 100% of the outstanding balance</p></td>
                             </tr>
 
@@ -59,7 +55,7 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td><strong>Method of Repayment</strong></td>
-                                <td colSpan={3}><p>In cash (Fresh USD) at MyMonty Locations</p></td>
+                                <td colSpan={3}><p>In cash (Fresh EUR) at MyMonty Locations</p></td>
                             </tr>
                         </tbody>
 
@@ -86,15 +82,14 @@ const pea = () => {
                                     </ul>
                                 </td>
                                 <td><strong>Minimum monthly income</strong></td>
-                                <td><p>Fresh USD 1,000</p></td>
+                                <td><p>Equivalent to Fresh USD 1,000</p></td>
                             </tr>
                             <tr>
                                 <td><strong>MyMonty user</strong></td>
                                 <td colSpan={3}>
                                     <ul>
                                         <li>
-                                            Applicants must be enrolled in MyMonty app for at least 6 months and apply for a credit card with a specific limit through
-                                            the app.
+                                            Applicants must be enrolled in MyMonty app for at least 6 months and apply for a credit card with a specific limit through the app
                                         </li>
                                         <li>
                                             The wallet turnover for purchase transactions must reach a minimum of USD 750 per month over six consecutive months.
@@ -116,21 +111,21 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td><strong>Primary Card Annual Fee</strong></td>
-                                <td>USD 150</td>
+                                <td>EUR 75</td>
                                 <td><strong>Card Delivery (local)</strong></td>
                                 <td>Free of Charge</td>
                             </tr>
 
                             <tr>
                                 <td><strong>Supplementary Card Annual Fee</strong></td>
-                                <td>USD 100</td>
+                                <td>EUR 50</td>
                                 <td><strong>Card Delivery (international)</strong></td>
                                 <td>Pass-Through Cost</td>
                             </tr>
 
                             <tr>
                                 <td><strong>Replacement Card Fee (lost, stolen, fraud, or damaged)</strong></td>
-                                <td>USD 20</td>
+                                <td>EUR 20</td>
                                 <td><strong>Card Cancellation</strong></td>
                                 <td>Free of Charge</td>
                             </tr>
@@ -140,7 +135,7 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td><strong>Late Payment Fee </strong></td>
-                                <td colSpan={3}>USD 10</td>
+                                <td colSpan={3}>EUR 10</td>
                             </tr>
                             <tr>
                                 <td><strong>Monthly Interest Rate on outstanding balance </strong></td>
@@ -167,7 +162,7 @@ const pea = () => {
                             <tr>
                                 <td><strong>Overlimit Fee</strong></td>
                                 <td colSpan={3}>
-                                    USD 10
+                                    EUR 10
                                 </td>
                             </tr>
 
@@ -180,33 +175,29 @@ const pea = () => {
                             </tr>
 
                             <tr>
-                                <td><strong>Foreign currency conversion fee (if the Card is used for purchases in a currency other than USD)</strong></td>
-                                <td colSpan={3}>4% of the transaction amount</td>
+                                <td><strong>Foreign currency conversion fee (if the Card is used for purchases in a currency other than EUR)</strong></td>
+                                <td colSpan={3}>4.8% of the transaction amount</td>
                             </tr>
 
                             <tr>
-                                <td><strong>Cross border fee (if the Card is used for USD purchases with any merchant located outside Lebanon)</strong></td>
-                                <td colSpan={3}>1.5% with a minimum of USD 0.5 per transaction</td>
+                                <td><strong>Cross border fee (if the Card is used for EUR purchases with any merchant located outside Lebanon)</strong></td>
+                                <td colSpan={3}>1.5% with a minimum of EUR 0.5 per transaction</td>
                             </tr>
 
                             <tr>
                                 <td colSpan={4} className='table-heading'>ATM Withdrawals</td>
                             </tr>
                             <tr>
-                                <td><strong>ATM Withdrawal (when using Integrated ATMs)</strong></td>
-                                <td colSpan={3}>USD 7 per transaction</td>
+                                <td><strong>ATM Withdrawal (when using an ATM inside Lebanon)</strong></td>
+                                <td colSpan={3}>N/A (The card doesn't support ATM cash withdrawals in Lebanon)</td>
                             </tr>
                             <tr>
-                                <td><strong>ATM Withdrawal (when using other Local ATMs) </strong></td>
-                                <td colSpan={3}>USD 10 per transaction</td>
+                                <td><strong>ATM Withdrawal (when using an ATM outside Lebanon)</strong></td>
+                                <td colSpan={3}>EUR 10 per transaction (some banks may apply additional fees)</td>
                             </tr>
                             <tr>
-                                <td><strong>ATM Withdrawal (when using an ATM outside Lebanon) </strong></td>
-                                <td colSpan={3}>USD 10 per transaction (some banks may apply additional fees)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Foreign currency conversion fee (if the Card is used for withdrawals in any currency other than USD)</strong></td>
-                                <td colSpan={3}>4% of the transaction amount</td>
+                                <td><strong>Foreign currency conversion fee (if the Card is used for withdrawals in any currency other than EUR)</strong></td>
+                                <td colSpan={3}>4.8% of the transaction amount</td>
                             </tr>
 
                             <tr>
@@ -222,7 +213,7 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td><strong>Monthly Maintenance Fee </strong></td>
-                                <td colSpan={3}>USD 3</td>
+                                <td colSpan={3}>EUR 3</td>
                             </tr>
                             <tr>
                                 <td><strong>E-Statement of Account</strong></td>
@@ -231,8 +222,7 @@ const pea = () => {
 
                             <tr>
                                 <td><strong>Physical Statement of Account</strong></td>
-                                <td colSpan={3}>Local delivery: USD 5 / International delivery: USD 2 + Pass-through
-                                    Cost</td>
+                                <td colSpan={3}>Local delivery: USD 5 / International delivery: USD 2 + Pass-through Cost</td>
                             </tr>
 
                             <tr>
@@ -242,7 +232,7 @@ const pea = () => {
 
                             <tr>
                                 <td><strong>Chargeback Fee </strong></td>
-                                <td colSpan={3}>USD 10</td>
+                                <td colSpan={3}>EUR 10</td>
                             </tr>
 
                         </tbody>
@@ -282,21 +272,15 @@ const pea = () => {
                                 <td><strong>Maximum Withdrawal Limit</strong></td>
                                 <td>
                                     <ul>
-                                        <li>Credit Limit up to USD 2,000</li>
-                                        <li>USD 500 Monthly </li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>Credit Limit: {'>'} USD 2,000 ≤ USD 5,000</li>
-                                        <li>USD 1,000 Monthly </li>
+                                        <li>Credit Limit: ≥ EUR 500 ≤ EUR 2,000</li>
+                                        <li>EUR 500 Monthly </li>
                                     </ul>
                                 </td>
 
                                 <td>
                                     <ul>
-                                        <li>Credit Limit greater than USD 5,000</li>
-                                        <li>USD 2,000 Monthly</li>
+                                        <li>Credit Limit: {'>'} EUR 2,000 ≤ EUR 5,000</li>
+                                        <li>EUR 1,000 Monthly </li>
                                     </ul>
                                 </td>
                             </tr>
@@ -311,25 +295,10 @@ const pea = () => {
                     <h2>5. USEFUL INFORMATION</h2>
                     <table className='mm-table'>
                         <tbody>
-
-                            <tr>
-                                <td><strong>Withdrawing money in cash from your Card in Lebanon at Integrated
-                                    ATMs</strong></td>
-                                <td colSpan={3}>You can withdraw money in cash at any Fransabank SAL s ATM in Lebanon.</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Withdrawing money in cash from your Card in Lebanon at Local ATMs</strong></td>
-                                <td colSpan={3}>You can withdraw money in cash at any BLC SAL’s ATM in Lebanon.</td>
-                            </tr>
                             <tr>
                                 <td><strong>Reward Program </strong></td>
                                 <td colSpan={3}>1% Cashback on any amount spent at Points of Sale or Online</td>
                             </tr>
-
-
-
-
-
                         </tbody>
 
                     </table>
