@@ -217,7 +217,7 @@ const Content = () => {
                                     <p>through Cleartrip’s <a className="underline" target="_blank" href="https://www.cleartrip.ae/offers/uae/choose-your-country">website</a> or app from <a className="underline" target="_blank" href="https://apps.apple.com/us/app/cleartrip-flights-hotels-bus/id531324961">App Store</a> or <a className="underline" target="_blank" href="https://play.google.com/store/apps/details?id=com.cleartrip.android&hl=en&gl=US&pli=1">Google Play</a>
                                     </p>
                                     <div className='bg-black inline-block rounded-xl mt-6'>
-                                        <img src="/cleartrip-logo.webp" alt="ClearTrip Logo" />
+                                        <img src="/cleartrip-logo.webp" alt="ClearTrip Logo" width="187" height="59" />
                                     </div>
                                 </div>
                             </div>
@@ -317,7 +317,7 @@ const Content = () => {
 
                             </div>
                             <div className='lg:w-2/5'>
-                                <img src="/budget-truck.webp" alt="RentalCars" />
+                                <img src="/budget-truck.webp" alt="RentalCars" width="722" height="374" />
                             </div>
                         </div>
 

@@ -5,6 +5,7 @@ import { websiteName } from '@/app/config';
 import controlYourMoney1 from '@/public/control-your-money-1.webp';
 import controlYourMoney2 from '@/public/control-your-money-2.webp';
 import forParents from '@/public/for-parents.webp';
+import Head from 'next/head';
 
 import AnimationSection from './AnimationSection';
 import Contact from './Contact';
@@ -30,6 +31,10 @@ const Under18 = () => {
 
     return (
         <>
+
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/mymonty-under-18/" />
+            </Head>
 
             <Banner />
 

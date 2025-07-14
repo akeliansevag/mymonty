@@ -19,7 +19,7 @@ const AnimatedBanner = () => {
                     Your browser does not support the video tag.
                 </video>
                 <div className='absolute top-10 -right-10 lg:-left-20'>
-                    <img src='cachback-1.svg' alt='1% Cachback' />
+                    <img src='cachback-1.svg' alt='1% Cachback' width="124" height="124" />
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import banner from '@/public/personal/loans-banner.webp';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
+import Head from 'next/head';
 
 
 import bnpl from '@/public/personal/bnpl.webp';
@@ -86,6 +87,11 @@ const loans = () => {
     };
     return (
         <div>
+
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/loans/" />
+            </Head>
+
             <Banner data={data} />
             <SectionOne />
 

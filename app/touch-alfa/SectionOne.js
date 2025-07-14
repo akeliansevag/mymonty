@@ -40,7 +40,7 @@ const SectionOne = () => {
                                 </div>
                             </div>
                             <div className="lg:w-1/2">
-                                <img src='/touch.webp' className='w-full'/>
+                                <img src='/touch.webp' className='w-full' width="1066" height="700" />
                             </div>
                         </div>
 
@@ -74,7 +74,7 @@ const SectionOne = () => {
                                 </div>
                             </div>
                             <div className="lg:w-1/2">
-                                <img src='/alfa.webp' className='w-full'/>
+                                <img src='/alfa.webp' className='w-full' width="1058" height="700" />
                             </div>                            
                         </div>
                         <div className='relative  lg:text-center text-black'>

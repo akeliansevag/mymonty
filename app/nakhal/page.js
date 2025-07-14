@@ -6,6 +6,7 @@ import bannerMobile from '@/public/nakhal-bg-mobile.webp';
 import TextBlock from '../components/TextBlock';
 import Section from '../components/Section';
 import Documents from './Documents';
+import Head from 'next/head';
 
 import image1 from '@/public/dreaming-of-your-next-vacation-1.webp';
 import image2 from '@/public/dreaming-of-your-next-vacation-2.webp';
@@ -106,6 +107,10 @@ const nakhal = () => {
 
     return (
         <>
+
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/nakhal/" />
+            </Head>
             <section className="bg-black relative min-h-screen flex md:items-center">
                 <Image alt='Airplane' fill placeholder='blur' quality={100} sizes='100vw' src={banner} className='max-md:hidden object-cover w-full h-full' priority />
                 <Image alt='Airplane' fill placeholder='blur' quality={100} sizes='100vw' src={bannerMobile} className='md:hidden object-cover w-full h-full' priority />

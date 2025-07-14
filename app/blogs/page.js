@@ -3,7 +3,7 @@ import { websiteName } from '@/app/config';
 import Banner from '../components/Banner';
 import blogs from '@/public/news.webp';
 import Blogs from './Blogs';
-
+import Head from 'next/head';
 export const metadata = {
   title: websiteName + 'Blog',
   description: '',
@@ -30,6 +30,9 @@ const page = () => {
  
   return (
     <div>
+      <Head>
+        <link rel="canonical" href="https://mymonty.com.lb/moneytalks-with-mona/" />
+      </Head>
       <Banner data={data} />
 
       <Blogs />

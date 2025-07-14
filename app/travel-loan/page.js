@@ -7,6 +7,7 @@ import travel2 from '@/public/personal/travel-loan2.webp';
 import travel3 from '@/public/personal/travel-loan3.webp';
 import LoanSlider from "../components/LoanSlider";
 
+import Head from 'next/head';
 
 
 export const metadata = {
@@ -37,6 +38,10 @@ const data = {
 const TravelLoan = () => {
   return (
     <div>
+      <Head>
+        <link rel="canonical" href="https://mymonty.com.lb/travel-loan/" />
+      </Head>
+      
       <Banner data={data} />
 
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>

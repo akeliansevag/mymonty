@@ -101,7 +101,7 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                                     {
                                         item?.contentImage && (
                                             <div className='flex-1 relative flex justify-center'>
-                                                <img className={`scale-0 ${selectedIndex === index ? '!scale-100 ' : ''} pb-10 max-w-[250px] md:max-w-[350px] object-contain absolute h-full w-full block transition-all delay-500`} src={item.contentImage} />
+                                                <img className={`scale-0 ${selectedIndex === index ? '!scale-100 ' : ''} pb-10 max-w-[250px] md:max-w-[350px] object-contain absolute h-full w-full block transition-all delay-500`} src={item.contentImage} width="536" height="656" />
                                             </div>
                                         )
                                     }
@@ -110,7 +110,7 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                                 </div>
                                 {
                                     item?.backgroundImage && (
-                                        <Image priority quality={100} sizes='100vw' fill={true} src={item.backgroundImage} alt="Background Image" className='object-cover -z-10' />
+                                        <Image priority quality={100} sizes='100vw' src={item.backgroundImage} alt="Background Image" className='absolute top-0 object-cover -z-10 w-full h-full' width="3456" height="1932" />
                                     )
                                 }
 

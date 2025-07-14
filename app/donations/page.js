@@ -2,7 +2,7 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
 import banner from '@/public/personal/accounts-banner.webp';
-
+import Head from 'next/head';
 import AnimatedImage from './AnimatedImage';
 import SectionOne from './SectionOne';
 import SectionThree from './SectionThree';
@@ -34,6 +34,10 @@ const accounts = () => {
     };
     return (
         <div>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/donations/" />
+            </Head>
+
             <Banner data={data} AnimatedImage={AnimatedImage} />
             <SectionOne />
             <SectionTwo />

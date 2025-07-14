@@ -63,7 +63,7 @@ const SectionSeven = () => {
                     <Link href="/payments" className="mm-button mt-8 mx-auto">
                         Try It Out
                     </Link>
-                    <img className='w-1/2 mt-24 mx-auto' src='/sectionsix.webp' alt='Section Six Image' />
+                    <img className='w-1/2 mt-24 mx-auto' src='/sectionsix.webp' alt='Section Six Image' width="536" height="656" />
                 </div>
                 
             </div>

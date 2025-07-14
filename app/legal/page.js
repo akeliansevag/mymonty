@@ -2,6 +2,7 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import styles from './page.module.css';
 import SmallBanner from '../components/SmallBanner';
+import Head from 'next/head';
 
 export const metadata = {
     title: websiteName + 'Key Facts Statements',
@@ -12,6 +13,9 @@ const KeyFactsStatements = () => {
 
     return (
         <div className={styles.terms}>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/legal/" />
+            </Head>
             <SmallBanner title="Legal" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='flex flex-col gap-4'>

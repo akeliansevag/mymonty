@@ -138,7 +138,7 @@ const Content = () => {
                                 </ul>
                             </div>
                             <div className="relative lg:w-2/5 overflow-hidden">
-                                <img alt="2 mobile phones" src='/how-to-use-2.webp' />
+                                <img alt="2 mobile phones" src='/how-to-use-2.webp' width="680" height="534" />
                             </div>
                         </div>    
                     </div>       
@@ -151,12 +151,12 @@ const Content = () => {
                                 <p>through Cleartrip’s <a className="underline" target="_blank" href="https://www.cleartrip.ae/offers/uae/choose-your-country">website</a> or app from <a className="underline" target="_blank" href="https://apps.apple.com/us/app/cleartrip-flights-hotels-bus/id531324961">App Store</a> or <a className="underline" target="_blank" href="https://play.google.com/store/apps/details?id=com.cleartrip.android&hl=en&gl=US&pli=1">Google Play</a>
                                 </p>
                                 <div className='bg-black inline-block rounded-xl mt-6'>
-                                    <img src="/cleartrip-logo.webp" alt="ClearTrip Logo" />
+                                    <img src="/cleartrip-logo.webp" alt="ClearTrip Logo" width="187" height="59" />
                                 </div>                          
                             </div>
                         </div>
                         <div className='lg:w-2/5 aspect-[5/4] relative w-full overflow-hidden rounded-[40px] flex justify-center items-end p-5'>
-                            <img className='absolute w-full h-full object-cover top-0 left-0' src='/cleartrip2.webp' />
+                            <img className='absolute w-full h-full object-cover top-0 left-0' src='/cleartrip2.webp' width="1000" height="666"  />
                             <Promo code="MCWORLDELITE"/>
                         </div>
                     </div>
@@ -180,7 +180,7 @@ const Content = () => {
                             </ul>
                         </div>
                         <div className="lg:w-2/5 aspect-[5/4] rounded-[40px] relative overflow-hidden">
-                            <img src='/costa.webp' className="absolute object-cover w-full h-full" alt="Costa Coffee"/>
+                            <img src='/costa.webp' className="absolute object-cover w-full h-full" alt="Costa Coffee" width="800" height="800" />
                         </div>                                        
                     </div> 
 
@@ -191,7 +191,7 @@ const Content = () => {
                             
                         </div>
                         <div className="">
-                            <img src="/gha-discovery.webp" alt="Global Hotel Alliance Titanium Membership" />
+                            <img src="/gha-discovery.webp" alt="Global Hotel Alliance Titanium Membership" width="1640" height="534" />
                         </div>
                         <div className="text-center">
                         <p>To activate, call World Elite Mastercard® Concierge to enroll, then create an account 
@@ -207,7 +207,7 @@ const Content = () => {
                             <p>When booking through their <a target="_blank" className="text-[var(--mm-blue)]" href="https://www.ihg.com/hotels/gb/en/reservation?fromRedirect=true&qSrt=sAV&setPMCookies=true&dp=true&gclid=CjwKCAjwpbi4BhByEiwAMC8JnSKGU1pK2JvmPQGdy6dYXU-Avkms3WDYhqMkwPW7uCt-9_Vm0x6O3RoCHf0QAvD_BwE&cm_mmc=PDSEA-_-G_F-IMEA_FS-MEA_H-IMEA_HS-MEA_6C_BSF_EXM_CORE-IHG_EN&srb_u=1">website</a>, you get a <strong>15% discount</strong> and exclusive offers on IHG Hotels & Resorts across Europe, Maldives, India, the Middle East & Africa. </p>
                         </div>
                         <div className="lg:w-2/5">
-                            <img src="/hotel-resorts2.webp" alt="Hotel Bookings" />
+                            <img src="/hotel-resorts2.webp" alt="Hotel Bookings" width="680" height="534" />
                         </div>
                         
                     </div>
@@ -219,7 +219,7 @@ const Content = () => {
                             
                         </div>
                         <div className="lg:aspect-[16/5] max-lg:aspect-[16/12] relative flex items-end justify-end">
-                            <img className="absolute rounded-3xl object-cover w-full h-full top-0" src="/booking-com-2.webp" alt="booking" />
+                            <img className="absolute rounded-3xl object-cover w-full h-full top-0" src="/booking-com-2.webp" alt="booking" width="1200" height="799" />
                             <div className='absolute right-9 -top-6'>
                                 <svg width="98" height="96" viewBox="0 0 98 96" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_4972_8653)">
@@ -253,7 +253,7 @@ const Content = () => {
                             <p>Enjoy <strong>35% off</strong> your next car rental and a complimentary upgrade with Avis through their <a target="_blank" className="text-[var(--mm-blue)]" href="https://avisworld.com/">website</a>.</p>
                         </div>
                         <div>
-                            <img src="/avis.webp" alt="booking" />
+                            <img src="/avis.webp" alt="booking" width="1740" height="814" />
                         </div>
                     </div>
 
@@ -265,7 +265,7 @@ const Content = () => {
                         </div>
 
                         <div className="lg:w-2/5 relative aspect-video rounded-[40px] overflow-hidden">
-                            <img className="absolute w-full h-full object-cover top-0" src="/hertz.webp" alt="Hertz" />
+                            <img className="absolute w-full h-full object-cover top-0" src="/hertz.webp" alt="Hertz" width="680" height="620" />
                         </div>
                     </div>
 
@@ -276,7 +276,7 @@ const Content = () => {
                             
                         </div>
                         <div className='lg:w-2/5'>
-                            <img src="/budget-truck.webp" alt="RentalCars" />
+                            <img src="/budget-truck.webp" alt="RentalCars" width="722" height="374" />
                         </div>
                     </div>
 
@@ -287,7 +287,7 @@ const Content = () => {
                         </div>
                         
                         <div>
-                            <img src="/global-blue-vip-services.webp" alt="Global Blue VIP Services" />
+                            <img src="/global-blue-vip-services.webp" alt="Global Blue VIP Services" width="1640" height="535" />
                         </div>
                     </div>
 
@@ -299,7 +299,7 @@ const Content = () => {
                             
                         </div>
                         <div className='lg:w-2/5'>
-                            <img src="/flexiroam.webp" alt="Flexiroam" />
+                            <img src="/flexiroam.webp" alt="Flexiroam" width="680" height="535" />
                         </div>
                     </div>
 
@@ -310,7 +310,7 @@ const Content = () => {
                             
                         </div>
                         <div className='lg:w-2/5'>
-                            <img src="/rental-cars.webp" alt="RentalCars" />
+                            <img src="/rental-cars.webp" alt="RentalCars" width="722" height="530" />
                         </div>
                     </div>
 
@@ -321,11 +321,11 @@ const Content = () => {
                                     <p>Enjoy exclusive access to dining, travel, 
                                     and entertainment experiences in over 40 cities and countries through <a href="https://priceless.com" target="_blank" className="text-[var(--mm-blue)]">Priceless.com.</a>
                                     </p>
-                                <img className='mt-3' src='/mastercard-logo.webp' />
+                                <img className='mt-3' src='/mastercard-logo.webp' width="100" height="66" />
                             </div>
                         </div>
                         <div className='lg:w-2/5 aspect-video relative overflow-hidden rounded-[40px]'> 
-                            <img className='absolute top-0 left-0 w-full h-full object-cover' src="/priceless-cities2.webp" />    
+                            <img className='absolute top-0 left-0 w-full h-full object-cover' src="/priceless-cities2.webp" width="1000" height="666" />    
                         </div>            
                     </div>
 
@@ -363,7 +363,7 @@ const Content = () => {
                                     </div>
                             </div>
                             <div className="lg:w-2/5 aspect-[5/4] rounded-[40px] relative overflow-hidden">
-                                <img src='/costa.webp' className="absolute object-cover w-full h-full" alt="Costa Coffee"/>
+                                <img src='/costa.webp' className="absolute object-cover w-full h-full" alt="Costa Coffee" width="" height="" />
                             </div>                                        
                         </div>    
                     </div>
@@ -376,7 +376,7 @@ const Content = () => {
                             <p>Travel with peace of mind! your Mastercard® covers you automatically.<br />Get up to USD 500,000 in medical, accident, and emergency evacuation insurance.<br />Visit <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com">mcpeaceofmind.com</a> to learn more and travel confidently!</p>
                         </div>
                         <div className="lg:w-2/5">
-                            <img src="/medical-insurance.webp" alt="Medical Insurance" />
+                            <img src="/medical-insurance.webp" alt="Medical Insurance" width="800" height="800" />
                         </div>
                         
                     </div>
@@ -386,7 +386,7 @@ const Content = () => {
                             <p>Travel disruptions? World Elite Mastercard® has you covered. Get up to USD 7,500 for trip cancellations, baggage delays, and more.<br />Visit <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com">mcpeaceofmind.com</a> to file a claim</p>
                         </div>
                         <div className="lg:w-2/5">
-                            <img src="/travel-insurance-inconvenience.webp" alt="Travel Inconvenience Insurance" />
+                            <img src="/travel-insurance-inconvenience.webp" alt="Travel Inconvenience Insurance" width="" height="" />
                         </div>
                         
                     </div>
@@ -397,7 +397,7 @@ const Content = () => {
                             <p>Get up to USD 50,000 for physical damage, theft, and more.<br />Visit <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com/worldelite">mcpeaceofmind.com/worldelite</a> or call Concierge to file a claim.</p>
                         </div>
                         <div className="lg:w-2/5">
-                            <img src="/rental-collision-and-loss-damage-waiver.webp" alt="Rental Collision and Loss Damage Waiver" />
+                            <img src="/rental-collision-and-loss-damage-waiver.webp" alt="Rental Collision and Loss Damage Waiver" width="680" height="501" />
                         </div>
                         
                     </div>
@@ -408,7 +408,7 @@ const Content = () => {
                             <p>Get your official Travel Insurance Confirmation Letter with World Elite Mastercard®.<br />Ensure visa requirements are met with coverage for parents and children.<br />Visit <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com/worldelite">asd</a> to generate your letter effortlessly!</p>
                         </div>
                         <div className="lg:w-2/5">
-                            <img src="/travel-insurance-confirmation-letter.webp" alt="Travel Insurance Confirmation Letter" />
+                            <img src="/travel-insurance-confirmation-letter.webp" alt="Travel Insurance Confirmation Letter" width="680" height="501" />
                         </div>
                         
                     </div>
@@ -421,7 +421,7 @@ const Content = () => {
                             <p>Access 24/7 VIP service with your World Elite Mastercard®. From booking travel to finding last-minute reservations, help is always a call or a message away.<br /><br />Chat anytime on WhatsApp or call your dedicated concierge number.<br /><br />For Arabic: +44 7418 368707<br />For English: +44 7418 368708</p>
                         </div>
                         <div className="lg:w-2/5 rounded-[40px] relative overflow-hidden">
-                            <img src="/mastercard-concierge.webp" alt="Mastercard Concierge" />
+                            <img src="/mastercard-concierge.webp" alt="Mastercard Concierge" width="680" height="689" />
                         </div>
                     </div>
 
@@ -431,7 +431,7 @@ const Content = () => {
                             <p>Up to <strong>15% off</strong> shopping packages, transfers, and more at Europe’s top designer outlets.<br />Get an extra 10% off with your VIP Card when you pay with your eligible Mastercard®. Unlock your benefits <a href="https://thebicestervillageshoppingcollection.com/mastercard-mea" target="_blank" className="text-[var(--mm-blue)]">here</a>.</p>
                         </div>
                         <div className="lg:w-2/5 rounded-[40px] relative overflow-hidden">
-                            <img src="/european-shopping-collection.webp" alt="European Shopping Collection" />
+                            <img src="/european-shopping-collection.webp" alt="European Shopping Collection" width="680" height="575" />
                         </div>
                     </div>
 
@@ -441,7 +441,7 @@ const Content = () => {
                             <p>MyUS Premium Membership Shop from top U.S. brands and ship worldwide with MyUS.<br />Get 2 years of free Premium Membership, <strong>up to 30% off</strong> shipping, and more.<br />Simply use your Mastercard at checkout: <a className="text-[var(--mm-blue)] break-all" target="_blank" href="https://www.myus.com/welcome/mastercardpremium/">myus.com/welcome/Mastercardpremium</a>.</p>
                         </div>
                         <div className="lg:w-2/5">
-                            <img src="/myus3.webp" alt="MyUS" />
+                            <img src="/myus3.webp" alt="MyUS" width="680" height="623" />
                         </div>
                     </div>
 
@@ -452,7 +452,7 @@ const Content = () => {
                         </div>
                         
                         <div className="lg:w-2/5">
-                            <img src="/go-gamers3.webp" alt="Go Gamers image" />
+                            <img src="/go-gamers3.webp" alt="Go Gamers image" width="680" height="641" />
                         </div>
                         
                     </div>
@@ -464,7 +464,7 @@ const Content = () => {
                         </div>
                         
                         <div className="lg:w-2/5">
-                            <img src="/vaidam.webp" alt="Vaidam" />
+                            <img src="/vaidam.webp" alt="Vaidam" width="680" height="641" />
                         </div>
                         
                     </div>
@@ -478,7 +478,7 @@ const Content = () => {
                         </div>
                         
                         <div className='lg:w-2/5 relative rounded-[40px] overflow-hidden'>
-                            <img className="w-full h-full absolute object-cover" src="/lingo3.webp" alt="Lingo Kids" />
+                            <img className="w-full h-full absolute object-cover" src="/lingo3.webp" alt="Lingo Kids" width="680" height="599" />
                             <div className="px-5 mt-4 flex items-end justify-center pb-10 h-full">
                                 <Promo code="MASTERCARD50" />
                             </div>
@@ -492,7 +492,7 @@ const Content = () => {
                         </div>
                         
                         <div className="lg:w-2/5 relative aspect-[5/4] rounded-[40px] overflow-hidden">
-                            <img src="/fiit2.webp" alt="Go Gamers image" className='absolute w-full h-full object-cover left-0 top-0' />
+                            <img src="/fiit2.webp" alt="Go Gamers image" className='absolute w-full h-full object-cover left-0 top-0' width="1000" height="666" />
                         </div>
                     </div>
 
@@ -529,11 +529,9 @@ const Content = () => {
                                 <a href="/Shahid-T&Cs - May 2025.pdf" target="_blank" className="mm-button blue mt-1">View Full Terms & Conditions</a>
                             </div>
                             <div className="lg:w-2/5 aspect-[5/4] rounded-[40px] relative overflow-hidden">
-                                <img src='/shahed.webp' className="absolute object-cover w-full h-full" alt="Shahed"/>
+                                <img src='/shahed.webp' className="absolute object-cover w-full h-full" alt="Shahed" width="666" height="590" />
                             </div>    
-                        </div>
-                        
-                                                            
+                        </div>                            
                     </div> 
                 </div>
             </div>

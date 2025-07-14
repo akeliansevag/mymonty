@@ -1,5 +1,6 @@
 import Banner from '@/app/components/Banner';
 import { websiteName } from '@/app/config';
+import Head from 'next/head';
 
 import React from 'react';
 import banner from '@/public/personal/transfer-couple-1.webp';
@@ -110,13 +111,17 @@ const transfers = () => {
 
     return (
         <>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/tansfers/" />
+            </Head>
+
             <Banner data={data} />
             <div id="borderless-transfers">
                 <section className='pb-0 pt-14 lg:pt-24'>
                     <div className='container'>
                         <div className='flex-col-reverse flex lg:flex-row gap-10 items-center'>
                             <div>
-                                <img className='md:w-full' src="/personal/borderless-transfers.webp" alt='Image' />
+                                <img className='md:w-full' src="/personal/borderless-transfers.webp" alt='Image' width="1044" height="1441" />
                             </div>
                             <TextBlock buttonColor="dark" title="Borderless transfers" description="Swift and direct peer-to-peer (P2P) transfers are just a tap away with MyMonty. Enjoy hassle-free cross-border transactions without the usual banking delays." button={true} />
                         </div>
@@ -132,7 +137,7 @@ const transfers = () => {
                     <div className='container'>
                         <div id="top-up" className='flex flex-col lg:flex-row items-center gap-10'>
                             <TextBlock buttonColor="dark" title="SEAMLESS RECURRING TRANSFERS" description="Effortlessly manage your finances with recurring transfers. Schedule automatic transfers on your chosen dates and stay in control." button={true} />
-                            <Image className='md:w-1/3' src={sectionFour} alt='Image' />
+                            <Image className='md:w-1/3' src={sectionFour} alt='Image' width="920" height="1252" />
                         </div>
 
                         {/* <div id="cash-out" className='mt-20 md:mt-40 flex flex-col-reverse lg:flex-row items-center gap-10'>

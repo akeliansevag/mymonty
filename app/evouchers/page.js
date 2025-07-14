@@ -6,6 +6,7 @@ import SectionOne from './SectionOne';
 import SectionTwo from './SectionTwo';
 import SectionThree from './SectionThree';
 import SectionFour from './SectionFour';
+import Head from 'next/head';
 
 
 export const metadata = {
@@ -32,6 +33,9 @@ const accounts = () => {
     };
     return (
         <div>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/evouchers/" />
+            </Head>
             <Banner data={data} />
             <SectionOne />
             <SectionTwo />

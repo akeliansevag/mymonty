@@ -2,6 +2,7 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import termsImage from '@/public/personal/terms-and-conditions.webp';
 import FooterBanner from '../components/FooterBanner';
+import Head from 'next/head';
 
 export const metadata = {
     title: websiteName + 'Terms and Conditions',
@@ -24,6 +25,10 @@ const terms = () => {
 
     return (
         <div>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/terms-conditions/" />
+            </Head>
+
             <FooterBanner downloadURL="/WebsiteTermsAndConditions.pdf" title="Website Terms & Conditions" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content' dangerouslySetInnerHTML={{ __html: htmlData }} />

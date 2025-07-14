@@ -5,7 +5,7 @@ import banner from '@/public/atm-bg.webp';
 import bannerMobile from '@/public/atm-receipt-mobile.webp';
 import TextBlock from '../components/TextBlock';
 import Section from '../components/Section';
-
+import Head from 'next/head';
 import image2 from '@/public/instant-payment-access.webp';
 import image3 from '@/public/mymonty-iphone.webp';
 import image4 from '@/public/fees-section.webp';
@@ -29,9 +29,13 @@ const ATMReceipt = () => {
     ];
     return (
         <>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/atm-receipt/" />
+            </Head>
+
             <section className="bg-black relative min-h-screen flex md:items-center">
-                 <Image alt='Phone' fill placeholder='blur' quality={100} sizes='100vw' src={banner} className='max-md:hidden object-cover w-full h-full' priority />
-                 <Image alt='Phone' fill placeholder='blur' quality={100} sizes='100vw' src={bannerMobile} className='md:hidden object-cover w-full h-full' priority />
+                <Image alt='Phone' fill placeholder='blur' quality={100} sizes='100vw' src={banner} className='max-md:hidden object-cover w-full h-full' priority />
+                <Image alt='Phone' fill placeholder='blur' quality={100} sizes='100vw' src={bannerMobile} className='md:hidden object-cover w-full h-full' priority />
                 <div className="container h-full max-md:mt-[calc(var(--header-height)+30px)] flex relative z-10">
                     <div className="md:w-[50%]">
                         <h1 className="text-white font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[4.2rem] leading-none uppercase">Touch Postpaid Bill Payments <br />

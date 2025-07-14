@@ -3,6 +3,7 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
 import banner from '@/public/world-elite-credit-card-banner.webp';
+import Head from 'next/head';
 
 import VirtualCard from './VirtualCard';
 import TextBlock from '../components/TextBlock';
@@ -38,6 +39,10 @@ const worldEliteCards = () => {
 
     return (
         <>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/world-elite-credit-card/" />
+            </Head>
+
             <Banner terms={terms} data={data} />
             <VirtualCard />
             <div className="py-10 lg:py-20">

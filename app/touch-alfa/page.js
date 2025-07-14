@@ -2,6 +2,7 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
 import banner from '@/public/touch-alfa.webp';
+import Head from 'next/head';
 
 import SectionOne from './SectionOne';
 import SectionTwo from './SectionTwo';
@@ -34,6 +35,9 @@ const accounts = () => {
     };
     return (
         <div>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/touch-alfs/" />
+            </Head>
             <Banner data={data} />
             <SectionOne />
             <SectionTwo />

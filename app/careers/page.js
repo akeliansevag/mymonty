@@ -7,7 +7,7 @@ import Image from 'next/image';
 import careers from '@/public/personal/careers.webp';
 import growthOriented from '@/public/company/growth-oriented-environment.png';
 import embark from '@/public/embark.webp';
-
+import Head from 'next/head';
 export const metadata = {
   title: websiteName + 'Explore Different Careers',
   description: 'Explore the diverse range of career opportunities at My Monty and join a team that values your growth and aspirations. Check out our vacancies on LinkedIn now!',
@@ -169,6 +169,11 @@ const positions = {
 const Careers = () => {
   return (
     <div>
+
+      <Head>
+        <link rel="canonical" href="https://mymonty.com.lb/careers/" />
+      </Head>
+      
       <Banner data={data} />
 
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
@@ -188,7 +193,7 @@ const Careers = () => {
 
       <section className='pt-14 lg:pt-28'>
         <div className='relative'>
-          <Image alt='Growth Oriented Environmemt' fill placeholder='blur' quality={100} sizes='100vw' className='!relative object-cover aspect-[4/7] md:aspect-auto' src={growthOriented} />
+          <Image alt='Growth Oriented Environmemt' placeholder='blur' quality={100} sizes='100vw' className='!relative object-cover aspect-[4/7] md:aspect-auto' src={growthOriented} width="1728" height="863" />
 
           <div className='absolute top-0 flex flex-col justify-center items-center h-full w-full text-white'>
             <div className='container'>

@@ -46,7 +46,7 @@ const SectionThree = () => {
                         </div>
                     </div>
                     <div className='lg:w-1/2'>
-                        <img className='w-full rounded-3xl' src='/who-can-donate.webp'/>
+                        <img className='w-full rounded-3xl' src='/who-can-donate.webp' width="1000" height="666" />
                     </div>
                     
                 </div>

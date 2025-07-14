@@ -9,6 +9,7 @@ import dedication from '@/public/dedication.webp';
 import integrity from '@/public/integrity.webp';
 import sustainable from '@/public/development.webp';
 
+import Head from 'next/head';
 
 export const metadata = {
   title: websiteName + "Who We Are",
@@ -35,6 +36,10 @@ const data = {
 const WhoWeAre = () => {
   return (
     <div>
+      <Head>
+        <link rel="canonical" href="https://mymonty.com.lb/who-we-are/" />
+      </Head>
+      
       <Banner data={data} />
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
         <div className="container grid sm:grid-cols-2 gap-10">

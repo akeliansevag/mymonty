@@ -9,6 +9,7 @@ import highEnd from '@/public/personal/one-stop-shop.webp';
 import oneStop from '@/public/personal/high-end.webp';
 import friendlySupport from '@/public/personal/friendly-support.webp';
 import noHiddenFees from '@/public/personal/no-hidden-fees.webp';
+import Head from 'next/head';
 
 export const metadata = {
   title: websiteName + 'Monty Club Onboarding Process',
@@ -35,6 +36,10 @@ const data = {
 const WhyMyMonty = () => {
   return (
     <div>
+      <Head>
+        <link rel="canonical" href="https://mymonty.com.lb/why-mymonty/" />
+      </Head>
+      
       <Banner data={data} />
 
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>

@@ -4,7 +4,7 @@ import { websiteName } from '@/app/config';
 import styles from './page.module.css';
 import termsImage from '@/public/personal/terms-and-conditions.webp';
 import SmallBanner from '../components/SmallBanner';
-
+import Head from 'next/head';
 export const metadata = {
     title: websiteName + 'Customer Agreement',
     description: ''
@@ -26,6 +26,10 @@ const terms = () => {
 
     return (
         <div className={styles.terms}>
+
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/customer-agreement/" />
+            </Head>
             <SmallBanner title="Customer Agreement" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content' dangerouslySetInnerHTML={{ __html: htmlData }} />

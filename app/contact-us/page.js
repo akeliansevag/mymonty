@@ -3,7 +3,7 @@ import Banner from '../components/Banner';
 import contactUs from '@/public/personal/contact-us.webp';
 import Contact from './Contact';
 import { websiteName } from '@/app/config';
-
+import Head from 'next/head';
 export const metadata = {
   title: websiteName + 'Contact Us',
   description: '',
@@ -23,6 +23,9 @@ const ContactUs = () => {
 
   return (
     <div>
+      <Head>
+        <link rel="canonical" href="https://mymonty.com.lb/contact-us/" />
+      </Head>
       <Banner data={data} />
       <Contact />
     </div>

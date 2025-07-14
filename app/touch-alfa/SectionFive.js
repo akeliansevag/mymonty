@@ -8,7 +8,7 @@ const SectionFive = () => {
         <div className='container relative z-10'>
             <div className='flex max-lg:flex-col-reverse gap-10 lg:items-end'>
                 <div className='lg:w-1/3'>
-                    <img src='/start-paying-smarter.webp' className='max-lg:max-w-[300px] max-lg:mx-auto w-full' />
+                    <img src='/start-paying-smarter.webp' className='max-lg:max-w-[300px] max-lg:mx-auto w-full' width="844" height="1012" alt="" />
                 </div>
                 <div className='lg:mb-14 lg:w-2/3 max-lg:mt-10'>
                     <TextBlock noMaxWidth={true} title="start paying smarter!" description="Not on MyMonty yet? <strong>Download</strong> the app and get started!" button={true} buttonColor='dark' />

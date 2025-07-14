@@ -5,6 +5,7 @@ import Image from 'next/image';
 import house1 from '@/public/house-loan-banner.webp';
 import house2 from '@/public/personal/house-loan22.webp';
 import house3 from '@/public/personal/house-loan33.webp';
+import Head from 'next/head';
 
 import LoanSlider from "../components/LoanSlider";
 
@@ -38,6 +39,9 @@ const PlasticSurgeryLoan = () => {
 
   return (
     <div>
+      <Head>
+        <link rel="canonical" href="https://mymonty.com.lb/house-loan/" />
+      </Head>
       <Banner data={data} />
 
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>

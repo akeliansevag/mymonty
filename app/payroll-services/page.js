@@ -7,6 +7,7 @@ import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
 import { faqData } from './data';
 import Accordion from './Accordion';
+import Head from 'next/head';
 
 import bnpl from '@/public/personal/bnpl.webp';
 import Carousel from '@/app/components/Carousel';
@@ -70,6 +71,9 @@ const loans = () => {
     };
     return (
         <div>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/payroll-services/" />
+            </Head>
             <section className="flex items-center relative min-h-[calc(100vh-var(--header-height))] w-full bg-[#1965a8]">
                 <Image alt='Coins' fill placeholder='blur' quality={100} sizes='100vw' src={banner} className='max-md:hidden object-cover w-full h-full' priority />
                 <Image alt='Coins' fill placeholder='blur' quality={100} sizes='100vw' src={bannerMobile} className='md:hidden object-cover w-full h-full' priority />

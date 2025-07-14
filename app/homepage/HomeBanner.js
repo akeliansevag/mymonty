@@ -10,7 +10,7 @@ const HomeBanner = () => {
     return (
         <section className='flex flex-col relative min-h-[100dvh] pt-[var(--header-height)] overflow-hidden'>
             <div className='absolute w-full h-full top-0 left-0 -z-10 bg-[#d8f1fb]'>
-                <Image quality={100} sizes='100vw' fill priority placeholder='blur' alt='Girl Holding a phone' src={banner} className='custom-object-position md:object-center object-cover -z-9' />
+                <Image quality={100} sizes='100vw' priority placeholder='blur' alt='Girl Holding a phone' src={banner} className='custom-object-position md:object-center object-cover -z-9 w-full h-full' width="3456" height="1864" />
             </div>
 
 

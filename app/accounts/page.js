@@ -2,7 +2,7 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
 import banner from '@/public/personal/accounts-banner.webp';
-
+import Head from 'next/head';
 import Carousel from '@/app/components/Carousel';
 import AnimatedImage from './AnimatedImage';
 import SectionOne from './SectionOne';
@@ -96,6 +96,10 @@ const accounts = () => {
     };
     return (
         <div>
+            
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/accounts/" />
+            </Head>
 
             <Banner terms={terms} data={data} AnimatedImage={AnimatedImage} />
             <SectionOne />

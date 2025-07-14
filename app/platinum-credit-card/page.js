@@ -14,6 +14,7 @@ import Content from '../components/cards/Content';
 import Section from '@/app/components/Section';
 import Image from 'next/image';
 
+import Head from 'next/head';
 
 export const metadata = {
     title: websiteName + 'Platinum Credit Card',
@@ -46,6 +47,9 @@ const cards = () => {
 
     return (
         <>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/platinum-credit-card/" />
+            </Head>
             <Banner terms={terms} data={data} AnimatedImage={AnimatedBanner}/>
             <VirtualCard />
             <div className="py-10 lg:py-20">

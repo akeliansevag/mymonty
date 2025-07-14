@@ -1,5 +1,6 @@
 import Banner from '@/app/components/Banner';
 import { websiteName } from '@/app/config';
+import Head from 'next/head';
 
 import React from 'react';
 import banner from '@/public/personal/payments-banner.webp';
@@ -58,10 +59,14 @@ const payments = () => {
 
     return (
         <>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/payments/" />
+            </Head>
+
             <Banner data={data} />
             <section id="pos" className='flex items-end py-14 md:py-20 relative min-h-[calc(100vh-var(--mobile-header-height))]'>
                 <div className="absolute -z-[9] w-full h-full top-0 left-0 bg-black opacity-20"></div>
-                <Image src={sectionFour} fill={true} placeholder='blur' sizes='100vw' className='object-cover -z-10' />
+                <Image src={sectionFour} placeholder='blur' sizes='100vw' className='absolute top-0 object-cover -z-10 w-full h-full' width="3456" height="1932" />
                 <div className='container'>
                     <TextBlock buttonColor="white" textColor="white" title="POS payment" description="Pay effortlessly with MyMonty at over 14,000 areeba, Pay Xpress & MontyPay POS locations and merchants across Lebanon. Enjoy contactless payments wherever supported." button={true} />
                 </div>
@@ -109,7 +114,7 @@ const payments = () => {
             </div > */}
 
             <section id="travel-esim" className='py-14 md:py-20 relative'>
-                <Image src={paymentTravel} fill={true} placeholder='blur' sizes='100vw' className='object-cover -z-10' />
+                <Image src={paymentTravel} placeholder='blur' sizes='100vw' className='absolute top-0 object-cover -z-10 w-full h-full' width="3456" height="2378" />
                 <div className='container'>
                     <div className='w-full lg:w-1/2'>
                         <TextBlock buttonColor="dark" title="Travel eSim" description="Explore the world fully connected with MyMonty’s travel eSIM. Enjoy super-fast 4G+ data bundles in 190+ countries, ensuring you're always connected no matter where your journey takes you. Easily pay for your data bundle directly from your MyMonty account for added convenience." button={true} />

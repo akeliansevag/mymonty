@@ -3,6 +3,7 @@ import { websiteName } from '@/app/config';
 
 import React from 'react';
 import banner from '@/public/virtual-mastercard.webp';
+import Head from 'next/head';
 
 import Image from 'next/image';
 import img2 from '@/public/virtual-mastercard-2.webp';
@@ -78,6 +79,10 @@ const VirtualMastercard = () => {
     }
     return (
         <>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/standard-virtual-card/" />
+            </Head>
+
             <Banner terms={terms} data={data} />
             <section className="bg-white text-center py-28 max-lg:py-14">
                 <div className="container flex flex-col gap-8">

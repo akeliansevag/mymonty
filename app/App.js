@@ -10,7 +10,6 @@ import Form from './components/Form';
 import { usePathname } from 'next/navigation';
 import NakhalBannerAd from './components/NakhalBannerAd';
 
-
 const App = ({ children }) => {
     const { handleOpenModal, handleCloseModal, openModal, setFormComponent, formComponent, largeWidth, setLargeWidth } = useAppContext();
 

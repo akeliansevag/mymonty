@@ -5,6 +5,7 @@ import SectionFive from './homepage/SectionFive';
 import SectionSix from './homepage/SectionSix';
 import SectionSeven from './homepage/SectionSeven';
 import HomeBanner from './homepage/HomeBanner';
+import Head from 'next/head';
 
 export const metadata = {
   title: 'YOUR SUPER DIGITAL WALLET',
@@ -15,6 +16,9 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
+      <Head>
+        <link rel="canonical" href="https://mymonty.com.lb/" />
+      </Head>
       <HomeBanner />
       <SectionTwo />
       <SectionThree />

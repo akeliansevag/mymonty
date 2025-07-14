@@ -1,5 +1,6 @@
 import Banner from '@/app/components/Banner';
 import { websiteName } from '@/app/config';
+import Head from 'next/head';
 
 import React from 'react';
 import banner from '@/public/personal/loyalty-banner.webp';
@@ -37,12 +38,15 @@ const loyalty = () => {
 
     return (
         <>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/loyalty/" />
+            </Head>
             <Banner data={data} />
             <div id="cashback">
                 <section className='bg-black text-white pt-14 md:pt-28'>
                     <div className='container'>
                         <div>
-                            <TextBlock buttonColor="light" textColor="white" title="Cashback" description="Prepare to indulge in the convenience of digital transactions with your MyMonty card, as we'll soon be introducing a rewarding cashback feature. Your earnings will be seamlessly reflected in your wallet account. Stay tuned to embrace the upcoming digital experience with us!" button={true} buttonColor="white" />
+                            <TextBlock buttonColor="light" textColor="white" title="Cashback" description="Prepare to indulge in the convenience of digital transactions with your MyMonty card, as we'll soon be introducing a rewarding cashback feature. Your earnings will be seamlessly reflected in your wallet account. Stay tuned to embrace the upcoming digital experience with us!" button={true} />
                         </div>
                     </div>
 

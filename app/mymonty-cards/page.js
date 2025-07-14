@@ -2,6 +2,7 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
 import banner from '@/public/personal/cards-banner-2.webp';
+import Head from 'next/head';
 
 import Carousel from '@/app/components/Carousel';
 
@@ -84,6 +85,10 @@ const MyMontyCards = () => {
     };
     return (
         <>
+            <Head>
+                <link rel="canonical" href="https://mymonty.com.lb/mymonty-cards/" />
+            </Head>
+
             <Banner data={data} AnimatedImage={AnimatedBanner} />
             <VirtualCard />
             <div id="physical-card">
