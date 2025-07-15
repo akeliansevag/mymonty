@@ -183,7 +183,7 @@ export const data = [
             },
             {
                 title: 'Blogs',
-                url: 'blogs'
+                url: '/blogs'
             },
             {
                 title: 'Contact us',
