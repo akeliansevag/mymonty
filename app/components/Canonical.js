@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 
 export default function Canonical() {
   const pathname = usePathname();
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mymonty.com.lb';
+  const baseUrl = 'https://mymonty.com.lb' || 'https://mymonty.com.lb';
 
   useEffect(() => {
     const fullUrl = baseUrl + (pathname.endsWith('/') ? pathname : pathname + '/');
