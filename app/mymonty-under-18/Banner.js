@@ -38,7 +38,7 @@ function Banner() {
             </video> */}
             <div className='container h-full text-center mt-20 2xl:mt-40'>
                 <h1 className='font-black text-[42px] sm:text-5xl md:text-6xl lg:text-[5.4rem] xl:text-[5.4rem] mt-6 leading-none uppercase'>Be life ready</h1>
-                <p className='text-xl mt-8'>Your money. Your rules. Your Card.</p>
+                <p className='text-xl mt-8'>Take control. Spend smart. Own your cash.</p>
                 <button className='mm-button !bg-white !text-black mt-8'>Download The App</button>
                 <Image 
                     quality={100} 

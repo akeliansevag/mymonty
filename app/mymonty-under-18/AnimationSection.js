@@ -49,8 +49,8 @@ export default function AnimationSection() {
 
     return (
         <section className="lg:h-[100vh] flex flex-col lg:justify-center relative py-20 bg-[#FF7300] text-white overflow-hidden" ref={sectionRef}>
-            <img src="/shape-11.svg" alt="Shape" className="absolute top-0 left-0 w-full z-10" />
-            <img src="/shape-12.svg" alt="Shape" className="absolute top-0 left-0" />
+            <img src="/shape-11.svg" alt="Shape" className="absolute top-0 left-0 w-full z-10" width="1728" height="177" />
+            <img src="/shape-12.svg" alt="Shape" className="absolute top-0 left-0" width="687" height="949" />
             <div className="container relative">
                 <div className="flex max-lg:flex-col lg:justify-center gap-8">
                     {/* Left section with text */}
@@ -71,7 +71,7 @@ export default function AnimationSection() {
 
                     {/* Right section with cards */}
                     <div className="lg:w-2/3 relative">
-                        <img src="/browser.svg" alt="Browser" className="absolute top-0 xl:-top-20 lg:left-32 max-lg:w-full" />
+                        <img src="/browser.svg" alt="Browser" className="absolute top-0 xl:-top-20 lg:left-32 max-lg:w-full" width="327" height="209" />
 
                         {cards.map((card, i) => (
                             <div
@@ -87,7 +87,7 @@ export default function AnimationSection() {
                                     }deg`,
                                 }}
                             >
-                                <img src={`/${card.image}.webp`} alt="Shape" className="w-2/3 lg:w-full lg:h-full" />
+                                <img src={`/${card.image}.webp`} alt="Shape" className="w-2/3 lg:w-full lg:h-full" width="930" height="1046" />
                             </div>
                         ))}
                     </div>

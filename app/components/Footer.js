@@ -32,7 +32,7 @@ const Footer = () => {
     let headingText = 'YOUR WALLET MADE DIGITAL';
 
     if (pathname === '/mymonty-under-18') {
-        headingText = 'Kids Learn Money, You Relax!';
+        headingText = 'Take your first step towards financial independence.';
     }
 
     return (

@@ -38,7 +38,7 @@ const Under18 = () => {
 
             <Banner />
 
-            <div className="marquee overflow-hidden relative z-20 -top-10 ">
+            {/* <div className="marquee overflow-hidden relative z-20 -top-10 ">
                 <div className="relative wrapper grid grid-flow-col auto-cols-[7rem] lg:auto-cols-[10rem] justify-items-center items-center animate-[marquee_20s_linear_infinite] lg:animate-[marqueelg_20s_linear_infinite]">
                     {Array.from({ length: 9 }).map((_, innerIndex) => (
                         <img
@@ -71,7 +71,7 @@ const Under18 = () => {
                         />
                     ))}
                 </div>
-            </div>
+            </div> */}
 
             <section className='relative pt-7 pb-7 bg-gradient-to-b from-white to-[#F8F4EE] from-0% to-20% z-0'>
                 <img src='/shape-10.svg' alt='Shape' className='absolute top-64 lg:top-20 left-0 -z-10' />
