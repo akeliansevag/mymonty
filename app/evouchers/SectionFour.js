@@ -111,9 +111,9 @@ const SectionFour = () => {
                 }}
             >
                 
-                {logos.map((logo)=>{
+                {logos.map((logo, index)=>{
                     return (
-                        <SwiperSlide>
+                        <SwiperSlide key={index}>
                             <div className='aspect-square rounded-xl bg-[#091111] shrink-0 grow-0 flex items-center justify-center'>
                                 <img className='w-1/2 mx-auto' src={logo.logo} width='100%' height='100%' />
                             </div>

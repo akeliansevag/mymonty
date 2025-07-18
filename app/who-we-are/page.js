@@ -83,13 +83,13 @@ const WhoWeAre = () => {
               <p className='leading-8 mt-4'>We sincerely believe in fostering an environment that promotes inclusiveness starting with our employees and moving to the entire financial ecosystem. We are committed to creating a world where nobody is left behind.</p>
             </div>
             <div className='md:w-1/2 justify-end flex'>
-              <Image src={diversity} alt='Diversity and Inclusion' placeholder='blur' />
+              <Image src={diversity} alt='Diversity and Inclusion' placeholder='blur' width='1040' height='1364' />
             </div>
           </div>
 
           <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 mt-20 md:mt-40 relative'>
             <div className='md:w-1/2 order-last md:order-first'>
-              <Image src={innovation} alt='Innovation' placeholder='blur' />
+              <Image src={innovation} alt='Innovation' placeholder='blur' width='1040' height='1232' />
             </div>
             <div className='md:w-1/2'>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Innovation</h2>
@@ -104,13 +104,13 @@ const WhoWeAre = () => {
                 What genuinely makes us happy is seeing our team grow as a result of their enthusiasm for what they do, and motivating others by being dependable, consistent, and honest with them.</p>
             </div>
             <div className='md:w-1/2 justify-end flex'>
-              <Image src={dedication} alt='Dedication & Loyalty' placeholder='blur' />
+              <Image src={dedication} alt='Dedication & Loyalty' placeholder='blur' width='1040' height='1364' />
             </div>
           </div>
 
           <div className='flex flex-col md:flex-row md:items-center gap-10 md:gap-60 mt-20 md:mt-40 relative'>
             <div className='md:w-1/2 order-last md:order-first'>
-              <Image src={integrity} alt='Integrity' placeholder='blur' />
+              <Image src={integrity} alt='Integrity' placeholder='blur' width='1040' height='1232' />
             </div>
             <div className='md:w-1/2'>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Integrity</h2>

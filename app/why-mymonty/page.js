@@ -116,7 +116,7 @@ const WhyMyMonty = () => {
         <div className='container'>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-20'>
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
-              <Image className="w-full" src={oneStop} alt='High-End Security' placeholder='blur' />
+              <Image className="w-full" src={oneStop} alt='High-End Security' placeholder='blur' width='1040' height='586' />
               <div className='px-10 py-14'>
                 <h3 className='text-4xl font-bold'>HIGH-END Security</h3>
                 <p className='leading-8 mt-4'>Rest assured, your security is our top priority. Our platform is fortified with advanced, state-of-the-art technology designed to offer robust protection against fraud and hacking attempts, ensuring your peace of mind.</p>
@@ -124,7 +124,7 @@ const WhyMyMonty = () => {
             </div>
 
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
-              <Image className="w-full" src={friendlySupport} alt='High-End Security' placeholder='blur' />
+              <Image className="w-full" src={friendlySupport} alt='High-End Security' placeholder='blur' width='1040' height='586' />
               <div className='px-10 py-14'>
                 <h3 className='text-4xl font-bold'>One-Stop Shop</h3>
                 <p className='leading-8 mt-4'>Experience the convenience of comprehensive financial services - from seamless payments and transfers, international remittances, and flexible lending options - all through a single application.</p>
@@ -132,7 +132,7 @@ const WhyMyMonty = () => {
             </div>
 
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
-              <Image className="w-full" src={highEnd} alt='High-End Security' placeholder='blur' />
+              <Image className="w-full" src={highEnd} alt='High-End Security' placeholder='blur' width='1040' height='586' />
               <div className='px-10 py-14'>
                 <h3 className='text-4xl font-bold'>Friendly Support</h3>
                 <p className='leading-8 mt-4'>Despite being a digital-first application, we ensure round-the-clock support, with our dedicated team available 24/7 to assist you.</p>
@@ -140,7 +140,7 @@ const WhyMyMonty = () => {
             </div>
 
             <div className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
-              <Image className="w-full" src={noHiddenFees} alt='High-End Security' placeholder='blur' />
+              <Image className="w-full" src={noHiddenFees} alt='High-End Security' placeholder='blur' width='1036' height='584' />
               <div className='px-10 py-14'>
                 <h3 className='text-4xl font-bold'>No Hidden Fees</h3>
                 <p className='leading-8 mt-4'>We guarantee full transparency with our fees. You will see all transaction costs clearly outlined beforehand, ensuring there are no hidden charges.</p>

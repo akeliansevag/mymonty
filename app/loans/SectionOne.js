@@ -18,13 +18,13 @@ const SectionOne = () => {
                 <div className='container overflow-hidden text-center'>
                     <TextBlock buttonColor="dark" center={true} title="Advance on Salary" description="Ever faced an urgent payment or missed out on a Black Friday deal because of insufficient funds? With MyMonty's Advance on Salary, access a portion of your next salary in advance. Spend and repay at your convenience with three flexible options." button={false} />
                     <div className='flex flex-col md:flex-row gap-10 items-center justify-center mt-10'>
-                        <div class="w-full">
+                        <div className="w-full">
                             <Image ref={animRef} className='' alt="Free" src={free} width="2120" height="838" />
                         </div>
-                        <div class="w-full">
+                        <div className="w-full">
                             <Image ref={animRef2} className='' alt="Installment" src={installment} width="680" height="826" />
                         </div>
-                        <div class="w-full">
+                        <div className="w-full">
                             <Image ref={animRef3} className='' alt="Two Point Five" src={twopointfive} width="680" height="826" />
                         </div>
 

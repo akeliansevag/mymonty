@@ -89,7 +89,7 @@ const VirtualMastercard = () => {
                     <TextBlock buttonColor="dark" title="no need to wait!" center={true} button={true} description="Spice up your digital lifestyle and make secure online purchases with ease. Your MyMonty Mastercard Standard Virtual Card is ready whenever you are — no need to wait!" />
                     
                     <div className="relative">
-                        <Image src={img2} alt="Girls Looking at the phone"/>
+                        <Image src={img2} alt="Girls Looking at the phone" width="2120" height="982" />
                     </div>
                     
                 </div>
@@ -106,7 +106,7 @@ const VirtualMastercard = () => {
                                 <div key={index} className={`text-center bg-white rounded-3xl p-5 ${item.classes}`}>
                                     <h2 className="smaller-title">{item.title}</h2>
                                     <p>{item.description}</p>
-                                    <img className="w-full mt-4" src={item.image} alt="Virtual Card Benefit image" />
+                                    <img className="w-full mt-4" src={item.image} alt="Virtual Card Benefit image" width="100%" height="100%" />
                                 </div>
                             ))
                         }

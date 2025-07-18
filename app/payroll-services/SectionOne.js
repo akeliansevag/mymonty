@@ -19,13 +19,13 @@ const SectionOne = () => {
                     <TextBlock buttonColor="dark" center={true} title="receive your ADVANCE ON SALARY" description="Ever faced an urgent payment or missed out on a Black Friday deal because of insufficient funds? With MyMonty's Advance on Salary, access a portion of your next salary in advance. Spend and repay at your convenience with three flexible options." button={false} />
                     <div className='flex flex-col md:flex-row gap-10 items-center justify-center mt-10'>
                         <div>
-                            <Image ref={animRef} className='' alt="Free" src={free} />
+                            <Image ref={animRef} className='' alt="Free" src={free} width='680' height='826' />
                         </div>
                         <div>
-                            <Image ref={animRef2} className='' alt="Installment" src={installment} />
+                            <Image ref={animRef2} className='' alt="Installment" src={installment} width='680' height='826' />
                         </div>
                         <div>
-                            <Image ref={animRef3} className='' alt="Two Point Five" src={twopointfive} />
+                            <Image ref={animRef3} className='' alt="Two Point Five" src={twopointfive} width='680' height='826' />
                         </div>
 
                     </div>

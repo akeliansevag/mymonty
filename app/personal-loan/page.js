@@ -51,7 +51,7 @@ const PersonalLoan = () => {
               <p className='leading-8 mt-4'>Life is filled with opportunities, and MyMonty is here to help you seize them! Our personalized personal loans are tailored to fit your needs, ensuring that life's ambitions are within reach.</p>
             </div>
             <div className='md:w-1/2 justify-end flex'>
-              <Image src={personal2} alt='Car Loan' placeholder='blur' className='max-md:w-full' />
+              <Image src={personal2} alt='Car Loan' placeholder='blur' className='max-md:w-full' width='700' height='732' />
             </div>
           </div>
 
@@ -100,7 +100,7 @@ const PersonalLoan = () => {
             </div>
           </div>
 
-          <Image className='w-full mt-20' src={personal3} alt='Car Loan' placeholder='blur' />
+          <Image className='w-full mt-20' src={personal3} alt='Car Loan' placeholder='blur' width='2120' height='896' />
 
           <div className='flex flex-col md:flex-row md:items-center gap-10 relative mt-20'>
             <div className='md:w-1/2'>

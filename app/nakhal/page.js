@@ -112,20 +112,20 @@ const nakhal = () => {
                 <link rel="canonical" href="https://mymonty.com.lb/nakhal/" />
             </Head>
             <section className="bg-black relative min-h-screen flex md:items-center">
-                <Image alt='Airplane' fill placeholder='blur' quality={100} sizes='100vw' src={banner} className='max-md:hidden object-cover w-full h-full' priority />
-                <Image alt='Airplane' fill placeholder='blur' quality={100} sizes='100vw' src={bannerMobile} className='md:hidden object-cover w-full h-full' priority />
+                <Image alt='Airplane' placeholder='blur' quality={100} sizes='100vw' src={banner} className='absolute top-0 max-md:hidden object-cover w-full h-full' priority width='3456' height='1780' />
+                <Image alt='Airplane' placeholder='blur' quality={100} sizes='100vw' src={bannerMobile} className='absolute top-0 md:hidden object-cover w-full h-full' priority width='780' height='1240'  />
                 
                 <div className="container h-full max-md:mt-[calc(var(--header-height)+30px)] flex relative z-10">
                     <div className="md:w-2/3 lg:w-1/2">
                         <div className="flex items-start gap-8">
                             <div>
-                                <img alt='MyMonty Logo' src="mymonty-logo.svg" />
+                                <img alt='MyMonty Logo' src="mymonty-logo.svg" width="266" height="53"  />
                             </div>
                             <div>
-                                <img alt='X' src="x.svg" />
+                                <img alt='X' src="x.svg" width="35" height="35"  />
                             </div>
                             <div>
-                                <img alt='Nakhal Logo' src="nakhal-logo.svg" />
+                                <img alt='Nakhal Logo' src="nakhal-logo.svg" width="247" height="64"  />
                             </div>
                         </div>  
                         <h1 className="mt-10 text-[#273D6B] font-black text-4xl sm:text-5xl md:text-7xl fhd:text-[4.2rem] leading-none uppercase">Travel Now <br /> Pay Later</h1>
@@ -145,9 +145,9 @@ const nakhal = () => {
                     <TextBlock title="Dreaming of your next vacation?"  description='Monty Finance S.A.L. and Nakhal & Cie S.A.L. are joining forces to bring you a limited-time travel promotion, book your next getaway with Nakhal and pay later using the MyMonty Platinum Credit Card.' center={true}/>
                     <TextBlock className="mt-10" description='Apply now through Nakhal to enjoy flexible payment terms that make travel more affordable.' bold={true} center={true}/>
                     <div className="flex items-center gap-8 relative mt-8">
-                        <Image className="" alt="Girl Atm" src={image2} placeholder='blur' quality={100} />
-                        <Image className="max-md:hidden w-full" alt="Girl Atm" src={image1} placeholder='blur' quality={100} />
-                        <Image className="absolute md:top-1/2 md:-translate-y-1/2 md:left-[27%] max-md:bottom-0 max-md:translate-y-1/2 max-md:left-1/2 max-md:-translate-x-1/2 max-w-[250px]" alt="Girl Atm" src={image3} placeholder='blur' quality={100} />
+                        <Image className="" alt="Girl Atm" src={image2} placeholder='blur' quality={100} width='729' height='652' />
+                        <Image className="max-md:hidden w-full" alt="Girl Atm" src={image1} placeholder='blur' quality={100} width='1142' height='770' />
+                        <Image className="absolute md:top-1/2 md:-translate-y-1/2 md:left-[27%] max-md:bottom-0 max-md:translate-y-1/2 max-md:left-1/2 max-md:-translate-x-1/2 max-w-[250px]" alt="Girl Atm" src={image3} placeholder='blur' quality={100} width='388' height='344' />
                     </div>
                 </div>
             </Section>
@@ -162,7 +162,7 @@ const nakhal = () => {
                                 {
                                     whyYouWillLoveIt.map((item, index)=>(
                                         <div className="flex gap-4">
-                                            <img className="w-[30px] h-[30px] flex-shrink-0" alt="Check" src='rounded-check.svg' />
+                                            <img className="w-[30px] h-[30px] flex-shrink-0" alt="Check" src='rounded-check.svg' width="24" height="26" />
                                             <h3 className="font-[700]">{ item.title }</h3>
                                         </div>
                                     ))
@@ -170,7 +170,7 @@ const nakhal = () => {
                             </div>
                         </div>
                         <div className="md:w-1/2">
-                            <Image className="w-full" alt="Bills" src={image4} placeholder='blur' quality={100} />
+                            <Image className="w-full" alt="Bills" src={image4} placeholder='blur' quality={100} width='1040' height='746' />
                         </div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@ const nakhal = () => {
                         {
                             eligibility.map((item,index)=>(
                                 <div className="flex items-center gap-10 p-8 bg-white rounded-3xl relative">
-                                    <img className="flex-shrink-0" alt="" src={`${item.icon}.svg`} width="64" height="64" />
+                                    <img className="flex-shrink-0" alt="eligibility" src={`${item.icon}.svg`} width="64" height="64" />
                                     <p className="text-xl font-[700]" dangerouslySetInnerHTML={{ __html: item.description }}></p>
                                 </div>
                             ))
@@ -206,7 +206,7 @@ const nakhal = () => {
                     <TextBlock title="Card Features" />
                     <div className="flex max-lg:flex-col gap-10 mt-10">
                         <div className="md:w-1/3">
-                            <Image className="w-full" alt="Card Features" src={image5} placeholder='blur' quality={100} />
+                            <Image className="w-full" alt="Card Features" src={image5} placeholder='blur' quality={100} width='698' height='1434' />
                         </div>
 
                         <div className="md:w-2/3">
@@ -231,7 +231,7 @@ const nakhal = () => {
                         <TextBlock title="Already Booked with Nakhal?" description="Apply Now through Nakhal to Fund Your Trip!" button={true} buttonColor="dark"/>
                     </div>
                     <div className="md:w-1/2">
-                        <Image className="w-full" alt="Bills" src={image6} placeholder='blur' quality={100} />
+                        <Image className="w-full" alt="Bills" src={image6} placeholder='blur' quality={100} width='1030' height='792' />
                     </div>
                 </div>
             </div>

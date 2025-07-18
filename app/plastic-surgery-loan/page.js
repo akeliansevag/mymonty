@@ -48,7 +48,7 @@ const PlasticSurgeryLoan = () => {
               <p className='leading-8 mt-4'>At MyMonty, we understand the importance of feeling confident in your own skin. Our plastic surgery loans are tailored to support your journey towards self-confidence and empowerment.</p>
             </div>
             <div className='md:w-1/2 justify-end flex'>
-              <Image src={plasticSurgery2} alt='Car Loan' placeholder='blur' className='max-md:w-full' />
+              <Image src={plasticSurgery2} alt='Car Loan' placeholder='blur' className='max-md:w-full' width='700' height='732' />
             </div>
           </div>
           <LoanSlider />
@@ -97,7 +97,7 @@ const PlasticSurgeryLoan = () => {
             </div>
           </div>
 
-          <Image className='w-full mt-20' src={plasticSurgery3} alt='Car Loan' placeholder='blur' />
+          <Image className='w-full mt-20' src={plasticSurgery3} alt='Car Loan' placeholder='blur' width='2120' height='896' />
 
           <div className='flex flex-col md:flex-row md:items-center gap-10 relative mt-20'>
             <div className='md:w-1/2'>

@@ -66,7 +66,7 @@ const payments = () => {
             <Banner data={data} />
             <section id="pos" className='flex items-end py-14 md:py-20 relative min-h-[calc(100vh-var(--mobile-header-height))]'>
                 <div className="absolute -z-[9] w-full h-full top-0 left-0 bg-black opacity-20"></div>
-                <Image src={sectionFour} placeholder='blur' sizes='100vw' className='absolute top-0 object-cover -z-10 w-full h-full' width="3456" height="1932" />
+                <Image src={sectionFour} alt='Pay effortlessly' placeholder='blur' sizes='100vw' className='absolute top-0 object-cover -z-10 w-full h-full' width="3456" height="1932" />
                 <div className='container'>
                     <TextBlock buttonColor="white" textColor="white" title="POS payment" description="Pay effortlessly with MyMonty at over 14,000 areeba, Pay Xpress & MontyPay POS locations and merchants across Lebanon. Enjoy contactless payments wherever supported." button={true} />
                 </div>
@@ -76,17 +76,16 @@ const payments = () => {
                 <div className='container'>
                     <div id="qr-and-link" className='flex flex-col lg:flex-row gap-10 place-items-center'>
                         <TextBlock buttonColor="dark" title="PAY VIA LINK/QR CODE" description="Ditch the cash. Complete your transactions in seconds by tapping the payment link or scanning the QR code." button={true} />
-                        <Image className='md:w-1/2' src={sectionTwo} alt='Section Image' />
+                        <Image className='md:w-1/2' src={sectionTwo} alt='Section Image' width="1040" height="732" />
                     </div>
 
                     <div id="online-vouchers" className='mt-20 md:mt-40 flex flex-col-reverse lg:flex-row gap-16 place-items-center'>
-                        <Image className='md:w-1/3' src={topUp} alt='Section Image' />
+                        <Image className='md:w-1/3' src={topUp} alt='Section Image' width="920" height="1350" />
                         <TextBlock buttonColor="dark" title="ONLINE VOUCHERS" description="Discover a world of convenience with our online vouchers. Perfect for gifts, rewards, or personal use, these vouchers offer a seamless way to manage your spending." button={true} />
                     </div>
                     <div id="notifications-and-alerts" className='mt-20 md:mt-40 flex flex-col lg:flex-row gap-16 place-items-center'>
-
                         <TextBlock buttonColor="dark" title="Instant Payment Notifications" description="Stay in the loop with instant notifications confirming the successful processing of your payments and the corresponding charges." button={true} />
-                        <Image className='md:w-1/3' src={sectionThree} alt='Section Image' />
+                        <Image className='md:w-1/3' src={sectionThree} alt='Section Image' width="900" height="786" />
                     </div>
                 </div>
             </Section>
@@ -114,13 +113,13 @@ const payments = () => {
             </div > */}
 
             <section id="travel-esim" className='py-14 md:py-20 relative'>
-                <Image src={paymentTravel} placeholder='blur' sizes='100vw' className='absolute top-0 object-cover -z-10 w-full h-full' width="3456" height="2378" />
+                <Image src={paymentTravel} alt='Explore the world' placeholder='blur' sizes='100vw' className='absolute top-0 object-cover -z-10 w-full h-full' width="3456" height="2378" />
                 <div className='container'>
                     <div className='w-full lg:w-1/2'>
                         <TextBlock buttonColor="dark" title="Travel eSim" description="Explore the world fully connected with MyMonty’s travel eSIM. Enjoy super-fast 4G+ data bundles in 190+ countries, ensuring you're always connected no matter where your journey takes you. Easily pay for your data bundle directly from your MyMonty account for added convenience." button={true} />
                     </div>
 
-                    <Image src={travelImage} alt='Image' className='mt-10 w-full lg:w-1/3' />
+                    <Image src={travelImage} alt='Image' className='mt-10 w-full lg:w-1/3' width="780" height="974" />
                 </div>
             </section>
         </>

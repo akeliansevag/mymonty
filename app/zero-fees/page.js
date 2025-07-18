@@ -12,8 +12,8 @@ const landing = () => {
       </Head>
       <section className='pt-[var(--header-height)] mt-10 mb-20'>
           <div className='container'>
-            <Image className='max-sm:hidden w-full' quality={100} sizes='100vw' priority placeholder='blur' alt='Fees Banner' src={banner} />
-            <Image className='sm:hidden w-full' quality={100} sizes='100vw' priority placeholder='blur' alt='Fees Banner' src={mobileBanner} />
+            <Image className='max-sm:hidden w-full' quality={100} sizes='100vw' priority placeholder='blur' alt='Fees Banner' src={banner} width='2000' height='1078' />
+            <Image className='sm:hidden w-full' quality={100} sizes='100vw' priority placeholder='blur' alt='Fees Banner' src={mobileBanner} width='2000' height='3388' />
           </div>
           
       </section>

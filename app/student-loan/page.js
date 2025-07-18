@@ -51,7 +51,7 @@ const StudentLoan = () => {
               <p className='leading-8 mt-4'>At MyMonty, we understand the importance of education in shaping your future. Our student loan options are tailored to support your academic journey, ensuring financial ease and peace of mind as you pursue your educational goals.</p>
             </div>
             <div className='md:w-1/2 justify-end flex'>
-              <Image src={student2} alt='Car Loan' placeholder='blur' className='max-md:w-full' />
+              <Image src={student2} alt='Car Loan' placeholder='blur' className='max-md:w-full' width='700' height='732' />
             </div>
           </div>
 
@@ -100,7 +100,7 @@ const StudentLoan = () => {
             </div>
           </div>
 
-          <Image className='w-full mt-20' src={student3} alt='Car Loan' placeholder='blur' />
+          <Image className='w-full mt-20' src={student3} alt='Car Loan' placeholder='blur' width='2120' height='896' />
 
           <div className='flex flex-col md:flex-row md:items-center gap-10 relative mt-20'>
             <div className='md:w-1/2'>

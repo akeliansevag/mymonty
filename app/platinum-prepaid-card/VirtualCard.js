@@ -29,7 +29,7 @@ const VirtualCard = () => {
                             <button onClick={handleOpenModal} className="mm-button mt-8 !bg-black !text-white" href="#">Download App</button>
                         </div >
         
-                        <Image ref={anim} className='mx-auto mt-14' alt="Wallets" src={sectionTwoImage} />
+                        <Image ref={anim} className='mx-auto mt-14' alt="Wallets" src={sectionTwoImage} width='2120' height='860' />
                     </div>
                 </div>
             </Section>
