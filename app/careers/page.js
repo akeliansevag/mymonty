@@ -179,7 +179,7 @@ const Careers = () => {
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
         <div className='container flex items-center gap-20 max-lg:flex-col'>
           <div className='w-1/3'>
-            <Image alt="Handshake" src={embark} />
+            <Image alt="Handshake" src={embark} width="794" height="814" />
           </div>
           <div className='w-2/3'>
             <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Embark on Your Career Journey with Us</h2>
@@ -193,7 +193,7 @@ const Careers = () => {
 
       <section className='pt-14 lg:pt-28'>
         <div className='relative'>
-          <Image alt='Growth Oriented Environmemt' placeholder='blur' quality={100} sizes='100vw' className='!relative object-cover aspect-[4/7] md:aspect-auto' src={growthOriented} width="1728" height="863" />
+          <Image alt='Growth Oriented Environmemt' placeholder='blur' quality={100} sizes='100vw' className='!relative object-cover aspect-[4/7] md:aspect-auto w-full h-full' src={growthOriented} width="1728" height="863" />
 
           <div className='absolute top-0 flex flex-col justify-center items-center h-full w-full text-white'>
             <div className='container'>

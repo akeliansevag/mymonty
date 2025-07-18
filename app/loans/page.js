@@ -100,7 +100,7 @@ const loans = () => {
                 <Section>
                     <div className='container text-center'>
                         <TextBlock buttonColor="dark" center={true} title="Buy Now Pay Later (BNPL)" description="More flexible lending options are coming your way, so be prepared for the Buy Now Pay Later option and never miss your favorite brand sales again." button={true} />
-                        <Image className='mx-auto mt-10' alt="Happy Girl " src={bnpl} />
+                        <Image className='mx-auto mt-10' alt="Happy Girl " src={bnpl} width="2120" height="838" />
                     </div>
                 </Section>
             </div>

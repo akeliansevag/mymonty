@@ -52,7 +52,7 @@ const PlasticSurgeryLoan = () => {
               <p className='leading-8 mt-4'>MyMonty's house loans are crafted to turn your dream of owning a home into a reality, providing the financial foundation for your perfect abode.</p>
             </div>
             <div className='md:w-1/2 justify-end flex'>
-              <Image src={house2} alt='Car Loan' placeholder='blur' className='max-md:w-full' />
+              <Image src={house2} alt='Car Loan' placeholder='blur' className='max-md:w-full' width="700" height="732" />
             </div>
           </div>
 
@@ -102,7 +102,7 @@ const PlasticSurgeryLoan = () => {
             </div>
           </div>
 
-          <Image className='w-full mt-20' src={house3} alt='Car Loan' placeholder='blur' />
+          <Image className='w-full mt-20' src={house3} alt='Car Loan' placeholder='blur' width="2120" height="896" />
 
           <div className='flex flex-col md:flex-row md:items-center gap-10 relative mt-20'>
             <div className='md:w-1/2'>

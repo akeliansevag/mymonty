@@ -18,7 +18,7 @@ const Section2 = () => {
     return (
         <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
             <div className='relative'>
-                <Image alt='Growth Oriented Environmemt' fill placeholder='blur' quality={100} sizes='100vw' className='!relative object-cover aspect-[4/7] md:aspect-auto' src={employeeBenefits} />
+                <Image alt='Growth Oriented Environmemt' placeholder='blur' quality={100} sizes='100vw' className='!relative object-cover aspect-[4/7] md:aspect-auto w-full h-full' src={employeeBenefits} width="1662" height="846" />
 
                 <div className='absolute top-0 flex flex-col justify-center items-center h-full w-full text-white'>
                     <div className='container'>

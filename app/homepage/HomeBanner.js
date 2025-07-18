@@ -23,7 +23,7 @@ const HomeBanner = () => {
                     <button onClick={handleOpenModal} className='mm-button mt-8'>Get The App</button>
                 </div>
                 <div className='flex-1 flex items-end'>
-                    <Image alt="M Logo" src={bannerM} className='w-full sm:pr-20 -mb-[5px]' />
+                    <Image alt="M Logo" src={bannerM} className='w-full sm:pr-20 -mb-[5px]' width="956" height="638" />
                 </div>
             </div>
         </section>

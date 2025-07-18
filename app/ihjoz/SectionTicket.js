@@ -62,7 +62,7 @@ const SectionTicket = () => {
             <div className="lg:w-1/2">
               <div className='overflow-hidden rounded-3xl relative aspect-video flex items-center justify-center'>
                 <div className='absolute w-full h-full bg-[#D6104EB2] top-0 left-0 z-10'></div>
-                <img className='absolute object-cover w-full h-full top-0 left-0' src='/get-your-ticket-in-a-snap.webp' />
+                <img className='absolute object-cover w-full h-full top-0 left-0' src='/get-your-ticket-in-a-snap.webp' width='1000' height='666' alt='Grapes' />
                 <div className='relative z-10 w-full max-w-[300px] mx-auto'>
                   <Ticket index={selectedIndex + 1} title={items[selectedIndex]} />
                 </div>          
@@ -73,7 +73,7 @@ const SectionTicket = () => {
 
         <div className='flex max-lg:flex-col lg:items-center gap-10 max-lg:mt-10 lg:mt-32 max-w-[1000px] mx-auto'>
           <div className='lg:w-1/2'>
-            <img src='/transaction-fee.webp' />
+            <img src='/transaction-fee.webp' width='930' height='514' alt='A person using his phone' />
           </div>
           <div className='lg:w-1/2'>
             <h3 className='uppercase font-black text-4xl max-lg:text-center'>TransactioN fee</h3>

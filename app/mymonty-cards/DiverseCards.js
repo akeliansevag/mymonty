@@ -112,9 +112,8 @@ const DiverseCards = () => {
                     {data.map((item, index) => {
                         return (
                             <swiper-slide key={index} >
-                                <img src={item.img.src} alt="Card" />
+                                <img src={item.img.src} alt="Card" width="766" height="483" />
                             </swiper-slide>
-
                         )
                     })}
                 </swiper-container>

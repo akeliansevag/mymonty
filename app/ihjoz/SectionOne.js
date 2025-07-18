@@ -11,7 +11,7 @@ const SectionOne = () => {
                         <TextBlock title="Book Smart, Pay Fast" description="Pay for your ihjoz ticket easily with the ihjoz feature on MyMonty! Just enter your reference number and complete your payment quickly, without the fuss. No stress, no extra steps!" button={true} buttonColor="dark" />
                     </div>
                     <div className="lg:w-1/2">
-                        <img className='' src='/book-smart.webp' alt=""/>
+                        <img className='' src='/book-smart.webp' alt="Girl using her phone" width="1124" height="732" />
                     </div>
                 </div>
             </div>

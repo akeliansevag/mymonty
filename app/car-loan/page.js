@@ -46,27 +46,27 @@ const CarLoan = () => {
           <div className="grid lg:grid-cols-3 gap-8 mt-12">
             <div className="flex flex-col gap-8">
               <div className="flex flex-col justify-center center bg-[#F7F7F7] py-12 p-4 lg:p-12 rounded-3xl text-center h-full">
-                <img src="/loan-amount.svg" className="flex-shrink-0 mx-auto" alt="" width="50" height="50" />
+                <img src="/loan-amount.svg" className="flex-shrink-0 mx-auto" alt="Loan Amount" width="50" height="50" />
                 <h2 className="uppercase font-black text-2xl leading-none mt-6">Loan Amount</h2>
                 <p>From $5,000 to $25,000</p>
               </div>
               <div className="flex flex-col justify-center center bg-[#F7F7F7] py-12 p-4 lg:p-12 rounded-3xl text-center h-full">
-                <img src="/all-risk-insurance.svg" className="flex-shrink-0 mx-auto" alt="" width="50" height="50" />
+                <img src="/all-risk-insurance.svg" className="flex-shrink-0 mx-auto" alt="All-Risk Insurance & Life Insurance Included" width="50" height="50" />
                 <h2 className="uppercase font-black text-2xl leading-none mt-6">All-Risk Insurance & Life Insurance Included</h2>
               </div>
             </div>
             <div className="flex flex-col justify-between bg-[#F7F7F7] pt-12 p-4 lg:pt-12 pb-0 rounded-3xl text-center h-full">
               <h2 className="uppercase font-black text-2xl leading-none">Domiciliate Your Salary</h2>
-              <img src="/personal/domiciliate-your-salary.webp" className="w-1/2 lg:w-full mx-auto mt-12" alt="" width="50" height="50" />
+              <img src="/personal/domiciliate-your-salary.webp" className="w-1/2 lg:w-full mx-auto mt-12" alt="Domiciliate Your Salary" width="50" height="50" />
             </div>
             <div className="flex flex-col gap-8">
               <div className="flex flex-col justify-center center bg-[#F7F7F7] py-12 p-4 lg:p-12 rounded-3xl text-center h-full">
-                <img src="/flexible-tenure.svg" className="flex-shrink-0 mx-auto" alt="" width="50" height="50" />
+                <img src="/flexible-tenure.svg" className="flex-shrink-0 mx-auto" alt="Flexible Tenure" width="50" height="50" />
                 <h2 className="uppercase font-black text-2xl leading-none mt-6">Flexible Tenure</h2>
                 <p>1 to 4 years</p>
               </div>
               <div className="flex flex-col justify-center center bg-[#F7F7F7] py-12 p-4 lg:p-12 rounded-3xl text-center h-full">
-                <img src="/transparent-terms.svg" className="flex-shrink-0 mx-auto" alt="" width="50" height="50" />
+                <img src="/transparent-terms.svg" className="flex-shrink-0 mx-auto" alt="Transparent Terms of services, Quick Approvals" width="50" height="50" />
                 <h2 className="uppercase font-black text-2xl leading-none mt-6">Transparent Terms of services, Quick Approvals</h2>
               </div>
             </div>
@@ -129,7 +129,7 @@ const CarLoan = () => {
               </div>
             </div>
             <div className='lg:w-1/2'>
-              <img className='w-fll rounded-3xl' src='/personal/who-can-apply.webp'/>
+              <img className='w-fll rounded-3xl' src='/personal/who-can-apply.webp' alt='' width='860' height='1286' />
             </div>
           </div>
         </div>
@@ -139,7 +139,7 @@ const CarLoan = () => {
         <div className='max-w-[1060px] mx-auto w-full'>
           <div className='container text-center'>
             <TextBlock buttonColor="dark" center={true} title="Your dream car is now just a few steps away." description="Car loans are finally accessible with MyMonty. Whether you’re looking to fund your very first car or upgrade your current ride, prefer a sleek sedan or a bold SUV, MyMonty Car Loans are fast, fully digital, and designed to make your life easier." button={true} />
-            <Image className='mx-auto mt-14' alt="Wallets" src={sectionFourImage} />
+            <Image className='mx-auto mt-14' alt="Wallets" src={sectionFourImage} width='1660' height='1165' />
           </div>
         </div>
       </Section>

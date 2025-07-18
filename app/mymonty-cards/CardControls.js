@@ -13,7 +13,7 @@ const CardControls = () => {
             <Section>
                 <div className='container flex flex-col md:flex-row gap-10 items-center'>
                     <TextBlock buttonColor="dark" title="LOCK YOUR CARD ON THE GO" description="Lost your card or suspect fraud? Instantly lock your card within the app to protect your funds." button={true} />
-                    <Image ref={anim} className='md:w-1/2' src={sectionFourImage} alt='People' />
+                    <Image ref={anim} className='md:w-1/2' src={sectionFourImage} alt='People' width='1071' height='826' />
                 </div>
             </Section>
         </div>

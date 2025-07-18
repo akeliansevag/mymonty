@@ -26,7 +26,7 @@ const Section3 = () => {
 
                     <button onClick={handleButtonClick} className='mm-button !bg-white !text-black w-max mt-5'>Get Started Today!</button>
 
-                    <Image alt='Growth Oriented Environmemt' placeholder='blur' className='mt-10' src={earlySalary} />
+                    <Image alt='Growth Oriented Environmemt' placeholder='blur' className='mt-10' src={earlySalary} width="1670" height="976" />
 
                     <p className='leading-8 mt-10 text-center w-full lg:w-4/5'>By offering Early Salary, we’re not just providing a financial service; we’re investing in the well-being and satisfaction of your employees.<br />
                         Join us in empowering your workforce to manage their finances more effectively. </p>

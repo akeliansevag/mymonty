@@ -227,7 +227,7 @@ const Contact = () => {
                                                     {selectedCountry && (
                                                         <>
                                                             <div className="text-lg">
-                                                                <img src={`/flags/${selectedCountry.iso2}.svg`} alt={selectedCountry.name} />
+                                                                <img src={`/flags/${selectedCountry.iso2}.svg`} alt={selectedCountry.name} width="" height="" />
                                                             </div>
                                                             <div className='text-black'>
                                                                 +{selectedCountry.code}

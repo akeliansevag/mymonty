@@ -29,7 +29,7 @@ const SectionForex = () => {
                 <div id="forex" className="container">
                     <div className="text-center">
                         <TextBlock buttonColor="dark" center={true} subTitle="Quick, Transparent, Reliable" title="Forex on the Go" description="Enjoy real-time currency exchange right in the palm of your hand." button={false} />
-                        <Image className="w-full lg:w-3/4 mx-auto mt-10" alt="Forex" src={sectionForexImage1} />
+                        <Image className="w-full lg:w-3/4 mx-auto mt-10" alt="Forex" src={sectionForexImage1} width="1562" height="1064" />
                         <TextBlock buttonColor="dark" center={true} subTitle="Convert & Transfer Instantly" title="Stay in Control" description="Need to transfer money between currencies? From LBP to USD or the other way around, with our Forex Manual Transfers, you can quickly move money between your wallets at real-time exchange rates." button={false} />
                     </div>
                     <div className="my-10 py-10">

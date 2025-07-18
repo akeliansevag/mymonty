@@ -33,7 +33,7 @@ const SectionTwo = () => {
         </div>
         <div className='flex max-lg:flex-col lg:items-center gap-10 max-lg:mt-10 lg:mt-24 max-w-[1000px] mx-auto'>
           <div className='lg:w-1/2'>
-            <img src='/transaction-fee.webp' />
+            <img src='/transaction-fee.webp' width='930' height='514' alt='A person using his phone' />
           </div>
           <div className='lg:w-1/2'>
             <h3 className='uppercase font-black text-4xl max-lg:text-center'>TransactioN fee</h3>

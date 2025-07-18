@@ -25,7 +25,7 @@ const Section1 = () => {
 
                 <button onClick={handleButtonClick} className='mm-button white mt-8'>Learn More</button>
 
-                <Image className='mt-10' alt='Growth Oriented Environmemt' placeholder='blur' quality={100} src={salary} />
+                <Image className='mt-10' alt='Growth Oriented Environmemt' placeholder='blur' quality={100} src={salary} width="1662" height="755" />
 
                 <p className='leading-8 mt-10 text-center w-full lg:w-2/3 mx-auto'>Enhance employee retention with timely payments, allowing effective planning and reducing errors through minimized manual intervention. Accurate salary disbursements contribute to a more satisfied workforce.</p>
             </div>

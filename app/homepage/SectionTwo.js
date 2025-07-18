@@ -12,7 +12,7 @@ const SectionTwo = () => {
                         Download the app, create your account, and you're good to go. Simple as that.</p>
                 </div>
                 <div className='text-center'>
-                    <Image alt="Section Image" src={sectionImage} className='mx-auto mt-14' />
+                    <Image alt="Section Image" src={sectionImage} className='mx-auto mt-14' wdtih="2120" height="983" />
                 </div>
 
             </div>

@@ -13,7 +13,7 @@ const VirtualCard = () => {
             <Section>
                 <div className='container text-center'>
                     <TextBlock buttonColor="dark" center={true} title="ACCESS YOUR MONEY ANYTIME, ANYWHERE!" description="Your MyMonty virtual prepaid card gives you access to funds online or at cordless ATMs within our network, with great exchange rates for spending abroad." button={true} />
-                    <Image ref={anim} className='mx-auto mt-14' alt="Wallets" src={sectionTwoImage} />
+                    <Image ref={anim} className='mx-auto mt-14' alt="Wallets" src={sectionTwoImage} width="2122" height="900" />
                 </div>
             </Section>
         </div>

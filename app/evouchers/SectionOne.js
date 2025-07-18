@@ -45,7 +45,7 @@ const SectionOne = () => {
                                 <TextBlock title={item.title} description={item.description} button={true} buttonColor="dark" />
                             </div>
                             <div className={`${item.smallerImage ? 'max-w-[500px]' : ''} lg:w-1/2`}>
-                                <img className='' src={item.image} alt={item.title}/>
+                                <img className='' src={item.image} alt={item.title} width='100%' height='100%' />
                             </div>
                         </div>
                     )

@@ -31,7 +31,7 @@ const CardsSlider = () => {
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((card, index) => {
                     return (
                         <swiper-slide key={index}>
-                            <img src={`/diverse/card-${card}.webp`} />
+                            <img src={`/diverse/card-${card}.webp`} alt="Cards" width="766" height="483" />
                         </swiper-slide>
                     )
 

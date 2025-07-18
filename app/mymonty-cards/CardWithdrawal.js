@@ -55,7 +55,7 @@ const CardWithdrawal = () => {
             </div>
             {data && data.map((item, index) => {
                 return (
-                    <Image className={`${index !== imageIndex ? 'hidden' : ''} object-cover -z-10`} key={index} alt="Background image" src={item.bg} fill priority sizes="100vw" />
+                    <Image className={`${index !== imageIndex ? 'hidden' : ''} object-cover -z-10`} key={index} alt="Background image" src={item.bg} fill priority sizes="100vw" width="" height="" />
                 )
             })}
 
