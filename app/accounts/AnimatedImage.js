@@ -54,7 +54,7 @@ const AnimatedImage = () => {
     return (
         <div className='flex md:justify-end'>
             <div className='h-[500px] relative flex justify-center'>
-                <img onLoad={handleImageLoaded} ref={imageElement} width="100" height="100" src="/animated/accounts-banner.webp" sizes='100%' alt='Image' className='w-full h-full -z-1' />
+                <img onLoad={handleImageLoaded} ref={imageElement} width="100" height="100" src="/animated/accounts-banner.webp" sizes='100%' alt='Accounts Banner' className='w-full h-full -z-1' />
                 {/* <img src='/animated/accounts-banner.webp' className='block absolute -z-1 top-0 h-full' /> */}
                 <div ref={whiteBox} className='opacity-50 scale-0 absolute translate-y-[calc(100%+30px)] bottom-[30px] rounded-[30px] bg-white w-[80%] h-[115px] z-1'>
                     <div ref={blueCircle} className='flex items-center justify-center w-[68px] h-[68px] rounded-full bg-[#2657D4] absolute translate-y-[-50%] left-3 scale-0'>

@@ -2,21 +2,18 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import SmallBanner from '@/app/components/SmallBanner';
 import FooterBanner from '@/app/components/FooterBanner';
-import Head from 'next/head';
 
 export const metadata = {
-    title: websiteName + 'Personal eWallet Account',
-    description: ''
+    title: 'Platinum Credit Card | Key Facts & Features' + websiteName,
+    description: 'Key facts & statements for the MyMonty Platinum Credit Card in Lebanon. Find essential details about benefits, fees & terms. Get informed.'
 };
 
 const pea = () => {
 
     return (
         <div>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/key-facts-statements/platinum-credit-card/" />
-            </Head>
-            <FooterBanner downloadURL="/platinum-credit-card-kfs.pdf" title="Platinum Credit Card" />
+         
+            <FooterBanner downloadURL="/platinum-credit-card-kfs.pdf" title="MyMonty Platinum Credit Card: Key Facts & Disclosures" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PLATINUM CREDIT CARD - KEY FACTS STATEMENT  <br />

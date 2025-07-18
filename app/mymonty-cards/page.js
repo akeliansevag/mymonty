@@ -2,7 +2,6 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
 import banner from '@/public/personal/cards-banner-2.webp';
-import Head from 'next/head';
 
 import Carousel from '@/app/components/Carousel';
 
@@ -14,7 +13,7 @@ import CardControls from './CardControls';
 import Monitor from './Monitor';
 
 export const metadata = {
-    title: websiteName + 'Prepaid Card you can use Globally',
+    title: 'Prepaid Card you can use Globally' + websiteName,
     description: 'Download the My Monty app today and access your money wherever you are whenever you want with the virtual prepaid card for easy, quick, and secure payments.',
 };
 
@@ -85,9 +84,7 @@ const MyMontyCards = () => {
     };
     return (
         <>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/mymonty-cards/" />
-            </Head>
+
 
             <Banner data={data} AnimatedImage={AnimatedBanner} />
             <VirtualCard />

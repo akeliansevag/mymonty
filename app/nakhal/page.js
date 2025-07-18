@@ -6,7 +6,6 @@ import bannerMobile from '@/public/nakhal-bg-mobile.webp';
 import TextBlock from '../components/TextBlock';
 import Section from '../components/Section';
 import Documents from './Documents';
-import Head from 'next/head';
 
 import image1 from '@/public/dreaming-of-your-next-vacation-1.webp';
 import image2 from '@/public/dreaming-of-your-next-vacation-2.webp';
@@ -16,8 +15,8 @@ import image5 from '@/public/card-features.webp';
 import image6 from '@/public/already-booked-with-nakhal.webp';
 
 export const metadata = {
-    title: websiteName + 'MyMonty X Nakhal',
-    description: '',
+    title: 'MyMonty X Nakhal' + websiteName,
+    description: 'MyMonty partners with Nakhal to bring you exclusive offers. Enjoy special benefits on travel & more with your MyMonty account. Discover offers!',
 };
 
 const nakhal = () => {
@@ -107,10 +106,6 @@ const nakhal = () => {
 
     return (
         <>
-
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/nakhal/" />
-            </Head>
             <section className="bg-black relative min-h-screen flex md:items-center">
                 <Image alt='Airplane' placeholder='blur' quality={100} sizes='100vw' src={banner} className='absolute top-0 max-md:hidden object-cover w-full h-full' priority width='3456' height='1780' />
                 <Image alt='Airplane' placeholder='blur' quality={100} sizes='100vw' src={bannerMobile} className='absolute top-0 md:hidden object-cover w-full h-full' priority width='780' height='1240'  />
@@ -184,7 +179,7 @@ const nakhal = () => {
                         {
                             eligibility.map((item,index)=>(
                                 <div className="flex items-center gap-10 p-8 bg-white rounded-3xl relative">
-                                    <img className="flex-shrink-0" alt="eligibility" src={`${item.icon}.svg`} width="64" height="64" />
+                                    <img className="flex-shrink-0" alt="Eligibility" src={`${item.icon}.svg`} width="64" height="64" />
                                     <p className="text-xl font-[700]" dangerouslySetInnerHTML={{ __html: item.description }}></p>
                                 </div>
                             ))

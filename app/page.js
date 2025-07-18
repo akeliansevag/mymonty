@@ -6,10 +6,11 @@ import SectionSix from './homepage/SectionSix';
 import SectionSeven from './homepage/SectionSeven';
 import HomeBanner from './homepage/HomeBanner';
 import Head from 'next/head';
+import { websiteName } from './config';
 
 export const metadata = {
-  title: 'YOUR SUPER DIGITAL WALLET',
-  description: 'Explore innovative to manage your finances with My Monty, your super digital wallet. Get the app now to enjoy a full mobile banking experience!',
+  title: 'YOUR SUPER DIGITAL WALLET' + websiteName,
+  description: 'Experience seamless digital banking in Lebanon with MyMonty. Manage e-wallets, send money, apply for loans & more, all from your phone. Download the app today!',
 }
 
 

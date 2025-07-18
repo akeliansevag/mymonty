@@ -28,6 +28,16 @@ const nextConfig = {
                 destination: '/platinum-prepaid-card',
                 permanent: true, // Set to `false` if it's a temporary redirect
             },
+            {
+                source: '/key-facts-statements/blogs',
+                destination: '/blogs',
+                permanent: true, // Set to `false` if it's a temporary redirect
+            },
+            {
+                source: '/legal/blogs',
+                destination: '/blogs',
+                permanent: true, // Set to `false` if it's a temporary redirect
+            },
         ]
     },
     images: {

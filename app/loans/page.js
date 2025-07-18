@@ -5,7 +5,6 @@ import Image from 'next/image';
 import banner from '@/public/personal/loans-banner.webp';
 import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
-import Head from 'next/head';
 
 
 import bnpl from '@/public/personal/bnpl.webp';
@@ -13,8 +12,8 @@ import Carousel from '@/app/components/Carousel';
 import SectionOne from './SectionOne';
 
 export const metadata = {
-    title: websiteName + 'Personal Loans Online',
-    description: 'Download the My Monty app today and apply for personal loans that allows you to spend and repay at your convenience, with three flexible options.',
+    title: 'Digital Loan Applications | Personal Loans' + websiteName,
+    description: 'Need a loan in Lebanon? MyMonty offers flexible digital loan solutions tailored to your needs. Apply for personal loans online today!',
 };
 
 const loans = () => {
@@ -87,10 +86,6 @@ const loans = () => {
     };
     return (
         <div>
-
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/loans/" />
-            </Head>
 
             <Banner data={data} />
             <SectionOne />

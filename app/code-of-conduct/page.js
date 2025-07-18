@@ -3,10 +3,9 @@ import { websiteName } from '@/app/config';
 import Banner from '../components/Banner';
 import Image from 'next/image';
 import codeOfConduct from '@/public/personal/code-of-conduct-new.webp';
-import Head from 'next/head';
 export const metadata = {
-  title: websiteName + 'Code of Conduct',
-  description: 'Learn more about the code of conduct rules at My Monty and how we\'re committed to revolutionizing the global approach to money and enrich everyone\'s experience.',
+  title: 'Code of Conduct' + websiteName,
+  description: 'Discover MyMonty\'s code of conduct. Our commitment to ethical practices, transparency & integrity in digital banking services in Lebanon. Learn more.',
 };
 
 const data = {
@@ -62,9 +61,6 @@ const CodeOfConduct = () => {
   ];
   return (
     <div>
-      <Head>
-        <link rel="canonical" href="https://mymonty.com.lb/code-of-conduct/" />
-      </Head>
 
       <Banner data={data} />
 

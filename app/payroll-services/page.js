@@ -7,14 +7,13 @@ import Section from '@/app/components/Section';
 import TextBlock from '@/app/components/TextBlock';
 import { faqData } from './data';
 import Accordion from './Accordion';
-import Head from 'next/head';
 
 import bnpl from '@/public/personal/bnpl.webp';
 import Carousel from '@/app/components/Carousel';
 import SectionOne from './SectionOne';
 
 export const metadata = {
-    title: websiteName + 'Payroll Services',
+    title: 'Payroll Services' + websiteName,
     description: '',
 };
 
@@ -71,9 +70,6 @@ const loans = () => {
     };
     return (
         <div>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/payroll-services/" />
-            </Head>
             <section className="flex items-center relative min-h-[calc(100vh-var(--header-height))] w-full bg-[#1965a8]">
                 <Image alt='Coins' placeholder='blur' quality={100} sizes='100vw' src={banner} className='max-md:hidden object-cover w-full h-full' priority width="3456" height="1590" />
                 <Image alt='Coins' placeholder='blur' quality={100} sizes='100vw' src={bannerMobile} className='md:hidden object-cover w-full h-full' priority width="390" height="457" />

@@ -2,21 +2,18 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import SmallBanner from '@/app/components/SmallBanner';
 import FooterBanner from '@/app/components/FooterBanner';
-import Head from 'next/head';
 
 export const metadata = {
-    title: websiteName + 'Personal eWallet Account',
-    description: ''
+    title: 'Physical Prepaid Card | Key Facts & Terms' + websiteName,
+    description: 'Important details for your MyMonty Physical Prepaid Card in Lebanon. Access key facts & essential statements for secure usage. View now.'
 };
 
 const pea = () => {
 
     return (
         <div>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/key-facts-statements/prepaid-card-physical/" />
-            </Head>
-            <FooterBanner downloadURL="/KFS Physical card.pdf" title="Prepaid Card (Physical)" />
+       
+            <FooterBanner downloadURL="/KFS Physical card.pdf" title="MyMonty Physical Prepaid Card: Key Facts & Statements" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PLATINUM PREPAID CARD (PHYSICAL) - KEY FACTS STATEMENT  <br />

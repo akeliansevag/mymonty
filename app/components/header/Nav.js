@@ -35,7 +35,7 @@ const Nav = ({ handleMenuOpen, menuOpen }) => {
                                                                 return (
                                                                     <li className='mb-2' key={index3}>
                                                                         {c?.url ?
-                                                                            <Link onClick={() => handleMenuOpen(false)} href={c.url}>
+                                                                            <Link rel={c?.noIndex ? 'nofollow' : ''} onClick={() => handleMenuOpen(false)} href={c.url}>
                                                                                 {c?.title}
                                                                             </Link>
                                                                             : c.title

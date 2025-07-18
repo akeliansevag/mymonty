@@ -6,10 +6,9 @@ import termsImage from '@/public/personal/terms-and-conditions.webp';
 import SmallBanner from '../components/SmallBanner';
 import FooterBanner from '../components/FooterBanner';
 
-import Head from 'next/head';
 export const metadata = {
-    title: websiteName + 'Data Protection Policy',
-    description: ''
+    title: 'Data Protection Policy' + websiteName,
+    description: 'MyMonty\'s commitment to your data protection in Lebanon. Learn how we secure your personal & financial information with advanced measures. Read policy.'
 };
 
 const terms = () => {
@@ -28,9 +27,6 @@ const terms = () => {
 
     return (
         <div className={styles.terms}>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/data-protection/" />
-            </Head>
             <FooterBanner downloadURL="/DataProtectionPolicy.pdf" title="Data Protection Policy" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content' dangerouslySetInnerHTML={{ __html: htmlData }} />

@@ -7,9 +7,8 @@ import sectionFourImage from '@/public/personal/your-dream-car.webp';
 import TextBlock from '../components/TextBlock';
 import Section from '@/app/components/Section';
 import Contact from './Contact';
-import Head from 'next/head';
 export const metadata = {
-  title: websiteName + 'Car Loan',
+  title: 'Car Loan' + websiteName,
   description: '',
 };
 
@@ -33,9 +32,7 @@ const data = {
 const CarLoan = () => {
   return (
     <div>
-      <Head>
-        <link rel="canonical" href="https://mymonty.com.lb/car-loan/" />
-      </Head>
+
 
       <Banner data={data} />
 

@@ -38,7 +38,7 @@ const MobileMenuAccordion = ({ data, handleMobileMenuToggle }) => {
                             return (
                                 <li key={index} className='py-1 first:pt-4 last:pb-4'>
                                     {child.url && (
-                                        <Link onClick={handleMobileMenuToggle} href={child.url}>{child.title}</Link>
+                                        <Link rel={child?.noIndex ? 'nofollow' : ''} onClick={handleMobileMenuToggle} href={child.url}>{child.title}</Link>
                                     )}
                                     {!child.url && (
                                         child.title

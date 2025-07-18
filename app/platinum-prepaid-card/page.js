@@ -3,7 +3,6 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
 import banner from '@/public/personal/cards-banner-2.webp';
-import Head from 'next/head';
 
 import AnimatedBanner from './AnimatedBanner';
 import AnimatedBannerOld from './AnimatedBannerOld';
@@ -13,8 +12,8 @@ import Content from '../components/cards/Content';
 
 
 export const metadata = {
-    title: websiteName + 'Platinum Prepaid Card',
-    description: '',
+    title: 'Platinum Prepaid Card' + websiteName,
+    description: 'Get the MyMonty Platinum Prepaid Card in Lebanon. Enjoy premium features, secure spending & easy top-ups for your daily needs. Apply now!',
 };
 
 const cards = () => {
@@ -44,9 +43,7 @@ const cards = () => {
 
     return (
         <>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/platinum-prepaid-card/" />
-            </Head>
+          
             <Banner terms={terms} data={data} AnimatedImage={AnimatedBannerOld} />
             <VirtualCard />
             <div className="py-10 lg:py-20">

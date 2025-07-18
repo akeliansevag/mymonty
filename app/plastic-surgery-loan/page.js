@@ -6,10 +6,9 @@ import plasticSurgery1 from '@/public/plastic-surgery-loan-banner.webp';
 import plasticSurgery2 from '@/public/personal/plastic-surgery-loan2.webp';
 import plasticSurgery3 from '@/public/personal/plastic-surgery-loan3.webp';
 import LoanSlider from "../components/LoanSlider";
-import Head from 'next/head';
 
 export const metadata = {
-  title: websiteName + 'Plastic Surgery',
+  title: 'Plastic Surgery' + websiteName,
   description: '',
 };
 
@@ -35,9 +34,7 @@ const data = {
 const PlasticSurgeryLoan = () => {
   return (
     <div>
-      <Head>
-        <link rel="canonical" href="https://mymonty.com.lb/plastic-surgery-loan/" />
-      </Head>
+
       <Banner data={data} />
 
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>

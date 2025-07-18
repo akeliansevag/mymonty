@@ -2,20 +2,17 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import SmallBanner from '@/app/components/SmallBanner';
 import FooterBanner from '@/app/components/FooterBanner';
-import Head from 'next/head';
 
 export const metadata = {
-    title: websiteName + 'Individual eWallet Account',
-    description: ''
+    title: 'Individual eWallet Account' + websiteName,
+    description: 'Key facts & statements for your MyMonty Personal E-wallet Account in Lebanon. Understand features, limits & how to manage your digital funds. View details.'
 };
 
 const pea = () => {
 
     return (
         <div>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/key-facts-statements/personal-ewallet-account" />
-            </Head>
+    
             
             <FooterBanner downloadURL="/KFS - Personal eWallet Account (006)2.pdf" title="Individual eWallet Account" />
             <div className='container py-10 lg:py-20 relative'>

@@ -7,11 +7,10 @@ import travel2 from '@/public/personal/travel-loan2.webp';
 import travel3 from '@/public/personal/travel-loan3.webp';
 import LoanSlider from "../components/LoanSlider";
 
-import Head from 'next/head';
 
 
 export const metadata = {
-  title: websiteName + 'Travel Loan - Apply Online',
+  title: 'Travel Loan - Apply Online' + websiteName,
   description: 'Apply for your travel loan with MyMonty today and begin your journey to fulfilling your travel aspirations! Download the app and get ready to explore the world!',
 };
 
@@ -38,9 +37,7 @@ const data = {
 const TravelLoan = () => {
   return (
     <div>
-      <Head>
-        <link rel="canonical" href="https://mymonty.com.lb/travel-loan/" />
-      </Head>
+      
       
       <Banner data={data} />
 

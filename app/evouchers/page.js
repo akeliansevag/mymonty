@@ -6,12 +6,11 @@ import SectionOne from './SectionOne';
 import SectionTwo from './SectionTwo';
 import SectionThree from './SectionThree';
 import SectionFour from './SectionFour';
-import Head from 'next/head';
 
 
 export const metadata = {
-    title: websiteName + 'eVouchers',
-    description: '',
+    title: 'eVouchers' + websiteName,
+    description: 'Explore MyMonty e-Vouchers for seamless digital payments & gifts. Purchase & send vouchers instantly for various services & brands. Get yours today!',
 };
 
 const accounts = () => {
@@ -33,9 +32,6 @@ const accounts = () => {
     };
     return (
         <div>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/evouchers/" />
-            </Head>
             <Banner data={data} />
             <SectionOne />
             <SectionTwo />

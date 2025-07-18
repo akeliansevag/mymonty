@@ -5,13 +5,12 @@ import banner from '@/public/atm-bg.webp';
 import bannerMobile from '@/public/atm-receipt-mobile.webp';
 import TextBlock from '../components/TextBlock';
 import Section from '../components/Section';
-import Head from 'next/head';
 import image2 from '@/public/instant-payment-access.webp';
 import image3 from '@/public/mymonty-iphone.webp';
 import image4 from '@/public/fees-section.webp';
 import image5 from '@/public/mymonty-bills.webp';
 export const metadata = {
-    title: websiteName + 'ATM Receipt',
+    title: 'ATM Receipt' + websiteName,
     description: '',
 };
 
@@ -29,9 +28,6 @@ const ATMReceipt = () => {
     ];
     return (
         <>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/atm-receipt/" />
-            </Head>
 
             <section className="bg-black relative min-h-screen flex md:items-center">
                 <Image alt='Phone' placeholder='blur' quality={100} sizes='100vw' src={banner} className='absolute top-0 max-md:hidden object-cover w-full h-full' priority width="3456" height="1782" />

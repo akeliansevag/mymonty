@@ -3,14 +3,13 @@ import { websiteName } from '@/app/config';
 import Banner from '../components/Banner';
 import blogs from '@/public/news.webp';
 import Blogs from './Blogs';
-import Head from 'next/head';
 export const metadata = {
-  title: websiteName + 'Blog',
-  description: '',
+  title: 'Blog' + websiteName,
+  description: 'Stay informed with MyMonty\'s blog. Get the latest insights on digital banking, fintech trends & financial tips for Lebanon. Read our articles.',
 };
 
 const data = {
-  title: 'What’s Happening at Mymonty?',
+  title: 'MyMonty Blog: Insights into Digital Finance',
   subtitle: 'Blogs',
   desc: 'Stay updated with the latest blogs, innovations, and milestones from MyMonty - your go-to source for everything shaping our fintech world',
   image: {
@@ -30,9 +29,6 @@ const page = () => {
  
   return (
     <div>
-      <Head>
-        <link rel="canonical" href="https://mymonty.com.lb/moneytalks-with-mona/" />
-      </Head>
       <Banner data={data} />
 
       <Blogs />

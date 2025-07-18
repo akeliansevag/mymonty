@@ -7,10 +7,9 @@ import Image from 'next/image';
 import careers from '@/public/personal/careers.webp';
 import growthOriented from '@/public/company/growth-oriented-environment.png';
 import embark from '@/public/embark.webp';
-import Head from 'next/head';
 export const metadata = {
-  title: websiteName + 'Explore Different Careers',
-  description: 'Explore the diverse range of career opportunities at My Monty and join a team that values your growth and aspirations. Check out our vacancies on LinkedIn now!',
+  title: 'Explore Different Careers' + websiteName,
+  description: 'Join the MyMonty team in Lebanon! Explore career opportunities in fintech, digital banking & innovation. Build your future with us. Apply today!',
 };
 
 const data = {
@@ -169,10 +168,6 @@ const positions = {
 const Careers = () => {
   return (
     <div>
-
-      <Head>
-        <link rel="canonical" href="https://mymonty.com.lb/careers/" />
-      </Head>
       
       <Banner data={data} />
 

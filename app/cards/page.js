@@ -5,7 +5,6 @@ import TextBlock from '../components/TextBlock';
 import PlatinumCardRed from '@/public/platinum-card-red.webp';
 import PlatinumCardWhiteLuckyEye from '@/public/platinum-card-white-lucky-eye.webp';
 import PlatinumCardGreen from '@/public/platinum-card-green.webp';
-import Head from 'next/head';
 import PhysicalPlatinumCardBlack from '@/public/physical-platinum-card-black.webp';
 import PhysicalPlatinumCardBlueLuckyEye from '@/public/physical-platinum-card-blue-lucky-eye.webp';
 
@@ -17,8 +16,8 @@ import EuroCardGreen from '@/public/euro-card-green.webp';
 import Link from 'next/link';
 
 export const metadata = {
-    title: websiteName + 'MyMonty\'s Cards',
-    description: '',
+    title: 'MyMonty\'s Cards' + websiteName,
+    description: 'Explore MyMonty\'s range of digital & physical cards in Lebanon. From prepaid to credit, find the perfect card for your spending needs. Get your card!',
 };
 
 // Combined card data
@@ -91,9 +90,6 @@ const allCards = [
 const Cards = () => {
     return (
         <>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/cards/" />
-            </Head>
             <section className='bg-[#F7F7F7] pt-14 pb-14 lg:mt-28 lg:pt-20 lg:pb-20'> 
                 <div className='container text-center'>
                     <h2>MyMonty's Cards</h2>

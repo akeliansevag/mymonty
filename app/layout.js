@@ -8,6 +8,9 @@ import App from './App';
 import { GoogleTagManager } from '@next/third-parties/google';
 import Script from 'next/script';
 
+import Canonical from './components/Canonical';
+
+
 
 
 const Aeonik = localFont({
@@ -57,6 +60,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${Aeonik.variable}`}>
       <body className='font-aeonik'>
+        <Canonical />
         <AppProvider>
           <App children={children} />
         </AppProvider>

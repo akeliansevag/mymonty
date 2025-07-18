@@ -22,7 +22,7 @@ const SectionTwo = () => {
     ];
     return (
         <section className='lg:py-24 max-lg:py-10 bg-black relative'>
-            <img src='/donations-bg.webp'  className='absolute w-full h-full top-0 left-0 object-cover' width="5184" height="2037" />
+            <img src='/donations-bg.webp' alt='Donation background' className='absolute w-full h-full top-0 left-0 object-cover' width="5184" height="2037" />
             <div className='container relative  text-center text-white'>
                 <TextBlock center={true} title="From Your eWallet to the Community" />
                 <div className='relative'>

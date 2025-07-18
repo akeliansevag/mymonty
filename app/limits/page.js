@@ -5,11 +5,10 @@ import styles from './page.module.css';
 import termsImage from '@/public/personal/terms-and-conditions.webp';
 import SmallBanner from '../components/SmallBanner';
 import FooterBanner from '../components/FooterBanner';
-import Head from 'next/head';
 
 export const metadata = {
-    title: websiteName + 'Limits',
-    description: ''
+    title: 'Limits' + websiteName,
+    description: 'Understand the daily & transactional limits for your MyMonty accounts & services in Lebanon. Manage your finances with clarity. Check limits now.'
 };
 
 const terms = () => {
@@ -17,9 +16,7 @@ const terms = () => {
 
     return (
         <div className={styles.terms}>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/limits/" />
-            </Head>
+    
             <FooterBanner downloadURL="/List of Limits 2.7.2025.pdf" title="Personal Account and Cards Limits" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content'>

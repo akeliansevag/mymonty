@@ -6,11 +6,10 @@ import personal1 from '@/public/personal-loan-banner.webp';
 import personal2 from '@/public/personal/personal-loan2.webp';
 import personal3 from '@/public/personal/personal-loan3.webp';
 import LoanSlider from "../components/LoanSlider";
-import Head from 'next/head';
 
 
 export const metadata = {
-  title: websiteName + 'Personal Loan - Apply Online',
+  title: 'Personal Loan - Apply Online' + websiteName,
   description: 'Apply for your personal loan with MyMonty today and embark on a journey to seize every moment! At MyMonty, we\'re committed to empowering your dreams.',
 };
 
@@ -38,9 +37,6 @@ const PersonalLoan = () => {
   return (
     <div>
 
-      <Head>
-        <link rel="canonical" href="https://mymonty.com.lb/personal-loan/" />
-      </Head>
       <Banner data={data} />
 
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>

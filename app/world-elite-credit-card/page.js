@@ -3,7 +3,6 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
 import banner from '@/public/world-elite-credit-card-banner.webp';
-import Head from 'next/head';
 
 import VirtualCard from './VirtualCard';
 import TextBlock from '../components/TextBlock';
@@ -11,8 +10,8 @@ import Content from './cards/Content';
 import Contact from './Contact';
 
 export const metadata = {
-    title: websiteName + 'Cards',
-    description: '',
+    title: 'World Elite Credit Card' + websiteName,
+    description: 'Discover the MyMonty World Elite Credit Card in Lebanon. Unlock exclusive privileges, premium rewards & unparalleled global benefits. Apply now!',
 };
 
 const worldEliteCards = () => {
@@ -39,9 +38,7 @@ const worldEliteCards = () => {
 
     return (
         <>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/world-elite-credit-card/" />
-            </Head>
+           
 
             <Banner terms={terms} data={data} />
             <VirtualCard />

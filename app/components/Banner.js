@@ -29,8 +29,8 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
             {
                 data?.image?.layout === 'full' && (
                     <>
-                        <Image alt='Girl holding a phone' fill placeholder='blur' quality={100} sizes='100vw' src={data.image.url} className='hidden md:block object-cover custom-object-position md:object-center' priority />
-                        <Image alt='Girl holding a phone' fill placeholder='blur' quality={100} sizes='100vw' src={data.image.urlMobile} className='block md:hidden object-cover' priority />
+                        <Image alt={data.title} placeholder='blur' quality={100} sizes='100vw' src={data.image.url} className='hidden md:block object-cover custom-object-position md:object-center' priority width='' height=''  />
+                        <Image alt={data.title} placeholder='blur' quality={100} sizes='100vw' src={data.image.urlMobile} className='block md:hidden object-cover' priority width='' height='' />
                     </>
                 )
             }
@@ -45,7 +45,7 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
                                         {
                                             data?.subtitle && (
                                                 <div className='flex gap-5 items-center'>
-                                                    <h2>{data.subtitle}</h2>
+                                                    <p>{data.subtitle}</p>
                                                     {data?.comingSoon && (
                                                         <div className='rounded-xl inline-block text-base py-2 px-4 bg-gradient-to-r from-[#E73E3E] to-[#F02CC2] font-bold italic text-white'>
                                                             Coming soon
@@ -74,7 +74,7 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
                                 {
                                     data?.image?.layout === 'half' && !AnimatedImage && (
                                         <div className='w-full md:w-1/2'>
-                                            <Image alt='Girl holding a phone' placeholder='blur' quality={100} sizes='100vw' src={data.image.url} className='w-full md:w-[50%] 4xl:w-[60%] ml-auto' priority />
+                                            <Image alt={data.title} placeholder='blur' quality={100} sizes='100vw' src={data.image.url} className='w-full md:w-[50%] 4xl:w-[60%] ml-auto' priority width='660' height='920' />
                                         </div>
                                     )
 
@@ -97,7 +97,7 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
                                             {
                                                 data?.subtitle && (
                                                     <div className='flex gap-5 items-center'>
-                                                        <h2>{data.subtitle}</h2>
+                                                        <p>{data.subtitle}</p>
                                                         {data?.comingSoon && (
                                                             <div className='rounded-xl inline-block text-base py-2 px-4 bg-gradient-to-r from-[#E73E3E] to-[#F02CC2] font-bold italic text-white'>
                                                                 Coming soon
@@ -129,7 +129,7 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
                             <div className='max-md:container mt-10'>
                                 <div className='md:absolute flex h-full w-full md:w-5/12 top-0 right-[5%] justify-end items-center'>
                                     {data?.image?.url && (
-                                        <Image alt='Girl holding a phone' placeholder='blur' quality={100} sizes='100vw' src={data.image?.url} className='w-full' priority />
+                                        <Image alt={data.title} placeholder='blur' quality={100} sizes='100vw' src={data.image?.url} className='w-full' priority width='660' height='920' />
                                     )}
                                 </div>
                             </div>

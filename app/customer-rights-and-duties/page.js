@@ -6,10 +6,9 @@ import termsImage from '@/public/personal/terms-and-conditions.webp';
 import SmallBanner from '../components/SmallBanner';
 import FooterBanner from '../components/FooterBanner';
 
-import Head from 'next/head';
 export const metadata = {
-    title: websiteName + 'Customer Rights & Duties',
-    description: ''
+    title: 'Customer Rights & Duties' + websiteName,
+    description: 'Learn about your customer rights & duties with MyMonty. We ensure transparency & fair practices for all our digital banking users in Lebanon. Read more.'
 };
 
 const terms = () => {
@@ -18,9 +17,6 @@ const terms = () => {
 
     return (
         <div className={styles.terms}>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/customer-rights-and-duties/" />
-            </Head>
             <FooterBanner downloadURL="/CustomerRightsAndDuties.pdf" title="Customer Rights & Duties" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content' dangerouslySetInnerHTML={{ __html: htmlData }} />

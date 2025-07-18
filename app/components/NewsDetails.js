@@ -16,7 +16,7 @@ const NewsDetails = ({params}) => {
                 {data && (
                     <div className='rounded-3xl overflow-hidden bg-[#f7f7f7] mt-12'>
                         <div className='w-full relative'>
-                            <Image className='w-full' src={data.data[0].image} width={1200} height={900} />
+                            <Image className='w-full' src={data.data[0].image} width={1200} height={900} alt={data.data[0].title} />
                         </div>
                         <div className='px-10 py-14'>
                             <p>

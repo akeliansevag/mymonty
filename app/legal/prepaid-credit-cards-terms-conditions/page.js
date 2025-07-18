@@ -1,11 +1,10 @@
 import React from 'react';
 import { websiteName } from '@/app/config';
 import FooterBanner from '@/app/components/FooterBanner';
-import Head from 'next/head';
 
 export const metadata = {
-    title: websiteName + 'Prepaid Credit Cards Terms and Conditions',
-    description: ''
+    title: 'Prepaid Credit Cards Terms and Conditions' + websiteName,
+    description: 'Find the full terms & conditions for MyMonty Prepaid & Credit Cards in Lebanon. Ensure you understand card policies. Read all terms.'
 };
 
 const pterms = () => {
@@ -16,9 +15,7 @@ const pterms = () => {
 
     return (
         <div>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/legal/prepaid-credit-cards-terms-conditions/" />
-            </Head>
+        
             <FooterBanner downloadURL="/PrepaidCardsTermsAndConditions.pdf" title="Prepaid Credit Cards Terms and Conditions" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content' dangerouslySetInnerHTML={{ __html: htmlData }} />

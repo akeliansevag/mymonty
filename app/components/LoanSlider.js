@@ -64,7 +64,7 @@ const LoanSlider = ({ data }) => {
                     <SwiperSlide key={key} className='overflow-hidden rounded-[1.875rem] bg-gray-100'>
                         <div className='min-h-[400px] px-10 py-5'>
                             <div className='flex items-center justify-center w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] rounded-full border-2 border-black'>
-                                <Image src={item.icon} className='max-lg:w-[25px] max-lg:h-[25px] w-[45px] h-[45px]' alt='Car Loan' />
+                                <Image src={item.icon} className='max-lg:w-[25px] max-lg:h-[25px] w-[45px] h-[45px]' alt='Car Loan' width='56' height='56' />
                             </div>
                             <h3 className='text-2xl md:text-3xl font-black mt-4 md:mt-4'>{item.title}</h3>
                             <p className='mt-4'>{item.description}</p>

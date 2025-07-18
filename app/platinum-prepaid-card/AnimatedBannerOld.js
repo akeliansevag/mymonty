@@ -20,7 +20,7 @@ const AnimatedBannerOld = () => {
                 </video>
 
                 <div className='absolute top-10 -right-10 lg:-left-20'>
-                    <img src='cachback-0.5.svg' alt='0.5% Cachback' />
+                    <img src='cachback-0.5.svg' alt='0.5% Cachback' width="133" height="133" />
                 </div>
 
                 <div className='absolute right-0 translate-x-2/4 flex flex-col gap-3 bottom-1/4 translate-y-1/2'>

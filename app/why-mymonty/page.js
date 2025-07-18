@@ -9,11 +9,10 @@ import highEnd from '@/public/personal/one-stop-shop.webp';
 import oneStop from '@/public/personal/high-end.webp';
 import friendlySupport from '@/public/personal/friendly-support.webp';
 import noHiddenFees from '@/public/personal/no-hidden-fees.webp';
-import Head from 'next/head';
 
 export const metadata = {
-  title: websiteName + 'Monty Club Onboarding Process',
-  description: 'Download the My Monty app today to gain access to a comprehensive range of financial services and benefit from an eWallet account in just a few minutes.',
+  title: 'Monty Club Onboarding Process' + websiteName,
+  description: 'Discover why MyMonty is Lebanon\'s preferred digital banking app. Experience secure, easy & inclusive financial solutions designed for you. Join MyMonty!',
 };
 
 const data = {
@@ -36,9 +35,7 @@ const data = {
 const WhyMyMonty = () => {
   return (
     <div>
-      <Head>
-        <link rel="canonical" href="https://mymonty.com.lb/why-mymonty/" />
-      </Head>
+
       
       <Banner data={data} />
 

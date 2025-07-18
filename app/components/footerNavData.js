@@ -10,22 +10,27 @@ export const data = [
                     {
                         title: 'Dual Currency Wallet',
                         url: '/accounts?s=dual-currency-wallet',
+                        noIndex: true
                     },
                     {
                         title: 'Top Up',
                         url: '/accounts?s=top-up',
+                        noIndex: true
                     },
                     {
                         title: 'Request Top Up',
                         url: '/accounts?s=top-up',
+                        noIndex: true
                     },
                     {
                         title: 'Cash Out',
                         url: '/accounts?s=top-up',
+                        noIndex: true
                     },
                     {
                         title: 'Cash Out Via ATM/BANK',
                         url: '/accounts?s=top-up',
+                        noIndex: true
                     },
 
                 ]
@@ -60,28 +65,33 @@ export const data = [
                 children: [
                     {
                         title: 'Borderless Transfers',
-                        url: '/transfers?s=borderless-transfers'
+                        url: '/transfers?s=borderless-transfers',
+                        noIndex: true
                     },
-
                     {
                         title: 'Send',
-                        url: '/transfers?s=send'
+                        url: '/transfers?s=send',
+                        noIndex: true
                     },
                     {
                         title: 'Receive',
-                        url: '/transfers?s=send'
+                        url: '/transfers?s=send',
+                        noIndex: true
                     },
                     {
                         title: 'Request',
-                        url: '/transfers?s=send'
+                        url: '/transfers?s=send',
+                        noIndex: true
                     },
                     {
                         title: 'Recurring transfers',
-                        url: '/transfers?s=recurring-transfers'
+                        url: '/transfers?s=recurring-transfers',
+                        noIndex: true
                     },
                     {
                         title: 'Streamline Transfers',
-                        url: '/transfers?s=streamline-transfers'
+                        url: '/transfers?s=streamline-transfers',
+                        noIndex: true
                     },
                 ]
             },
@@ -119,10 +129,12 @@ export const data = [
                     {
                         title: 'Advance on Salary',
                         url: '/loans?s=advance-on-salary',
+                        noIndex: true
                     },
                     {
                         title: 'BNPL',
                         url: '/loans?s=bnpl',
+                        noIndex: true
                     },
 
                 ]
@@ -164,7 +176,6 @@ export const data = [
                         title: 'Contact us',
                         url: '/contact-us'
                     },
-        
                     {
                         title: 'FAQ',
                         url: '/faq/personal/onboarding'

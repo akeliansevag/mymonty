@@ -3,15 +3,14 @@ import { websiteName } from '@/app/config';
 import Banner from '../components/Banner';
 import news from '@/public/news.webp';
 import News from './News';
-import Head from 'next/head';
 
 export const metadata = {
-  title: websiteName + 'News',
-  description: '',
+  title: 'News' + websiteName,
+  description: 'Get the latest news & updates from MyMonty. Stay informed about new features, partnerships & digital finance developments in Lebanon. Read our news.',
 };
 
 const data = {
-  title: 'What’s Happening at Mymonty?',
+  title: 'MyMonty News: Latest Updates & Announcements',
   subtitle: 'News',
   desc: 'Stay updated with the latest news, innovations, and milestones from MyMonty - your go-to source for everything shaping our fintech world',
   image: {
@@ -31,9 +30,7 @@ const page = () => {
  
   return (
     <div>
-      <Head>
-        <link rel="canonical" href="https://mymonty.com.lb/news/" />
-      </Head>
+\
       
       <Banner data={data} />
 

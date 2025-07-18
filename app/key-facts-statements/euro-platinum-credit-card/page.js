@@ -2,10 +2,9 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import SmallBanner from '@/app/components/SmallBanner';
 import FooterBanner from '@/app/components/FooterBanner';
-import Head from 'next/head';
 
 export const metadata = {
-    title: websiteName + 'Personal eWallet Account',
+    title: 'Euro Platinum Credit Card' + websiteName,
     description: ''
 };
 
@@ -13,9 +12,7 @@ const pea = () => {
 
     return (
         <div>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/key-facts-statements/platinum-credit-card/" />
-            </Head>
+       
             <FooterBanner downloadURL="/Euro Credit Card KFS 2.7.25.pdf" title="Euro PLATINUM Credit Card" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>

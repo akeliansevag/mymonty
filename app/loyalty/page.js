@@ -1,6 +1,5 @@
 import Banner from '@/app/components/Banner';
 import { websiteName } from '@/app/config';
-import Head from 'next/head';
 
 import React from 'react';
 import banner from '@/public/personal/loyalty-banner.webp';
@@ -12,7 +11,7 @@ import sectionFive from '@/public/personal/loyalty-img.webp';
 import Image from 'next/image';
 
 export const metadata = {
-    title: websiteName + 'Loyalty',
+    title: 'Loyalty' + websiteName,
     description: '',
 };
 
@@ -38,9 +37,7 @@ const loyalty = () => {
 
     return (
         <>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/loyalty/" />
-            </Head>
+
             <Banner data={data} />
             <div id="cashback">
                 <section className='bg-black text-white pt-14 md:pt-28'>

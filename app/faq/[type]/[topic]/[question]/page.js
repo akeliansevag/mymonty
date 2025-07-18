@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
     // Extract the title from the API response
     const title = data?.data?.[0]?.title;
     return {
-        title: `${websiteName} ${title}`, // Set the meta title dynamically
+        title: `${title} ${websiteName}`, // Set the meta title dynamically
         description: 'Frequently Asked Questions',
     };
 }

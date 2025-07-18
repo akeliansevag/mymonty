@@ -1,6 +1,5 @@
 import Banner from '@/app/components/Banner';
 import { websiteName } from '@/app/config';
-import Head from 'next/head';
 
 import React from 'react';
 import banner from '@/public/personal/payments-banner.webp';
@@ -15,8 +14,8 @@ import topUp from '@/public/top-up.webp';
 import Image from 'next/image';
 
 export const metadata = {
-    title: websiteName + 'Online Payment Apps',
-    description: 'Download the My Monty app today and feel the ease and speed of simple and secure payments guaranteed to provide you with a seamless banking experience.',
+    title: 'Online Payment Apps' + websiteName,
+    description: 'Make secure & instant payments with MyMonty in Lebanon. Pay bills, send money & manage all your transactions digitally. Start paying smart!',
 };
 
 
@@ -59,10 +58,6 @@ const payments = () => {
 
     return (
         <>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/payments/" />
-            </Head>
-
             <Banner data={data} />
             <section id="pos" className='flex items-end py-14 md:py-20 relative min-h-[calc(100vh-var(--mobile-header-height))]'>
                 <div className="absolute -z-[9] w-full h-full top-0 left-0 bg-black opacity-20"></div>

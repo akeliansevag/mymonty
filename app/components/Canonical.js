@@ -1,34 +1,25 @@
-'use client'
-// components/Canonical.js
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
-import Head from 'next/head';
+'use client';
 
-const Canonical = () => {
-  const router = useRouter();
-  const [canonicalUrl, setCanonicalUrl] = useState('');
+import { usePathname } from 'next/navigation';
+import { useEffect } from 'react';
+
+export default function Canonical() {
+  const pathname = usePathname();
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mymonty.com.lb';
 
   useEffect(() => {
-    if (!router.isReady) return;
+    const fullUrl = baseUrl + (pathname.endsWith('/') ? pathname : pathname + '/');
 
-    const baseUrl = 'https://yourdomain.com'; // Replace with real domain
-    let path = router.asPath.split('?')[0].split('#')[0];
-
-    // Ensure trailing slash
-    if (!path.endsWith('/')) {
-      path += '/';
+    let canonicalTag = document.querySelector("link[rel='canonical']");
+    if (canonicalTag) {
+      canonicalTag.setAttribute('href', fullUrl);
+    } else {
+      canonicalTag = document.createElement('link');
+      canonicalTag.setAttribute('rel', 'canonical');
+      canonicalTag.setAttribute('href', fullUrl);
+      document.head.appendChild(canonicalTag);
     }
+  }, [pathname]);
 
-    setCanonicalUrl(`${baseUrl}${path}`);
-  }, [router.isReady, router.asPath]);
-
-  if (!canonicalUrl) return null;
-
-  return (
-    <Head>
-      <link rel="canonical" href={canonicalUrl} />
-    </Head>
-  );
-};
-
-export default Canonical;
+  return null;
+}

@@ -7,10 +7,9 @@ import student2 from '@/public/personal/student-loan2.webp';
 import student3 from '@/public/personal/student-loan3.webp';
 import LoanSlider from "../components/LoanSlider";
 
-import Head from 'next/head';
 
 export const metadata = {
-  title: websiteName + 'Student Loan',
+  title: 'Student Loan' + websiteName,
   description: '',
 };
 
@@ -38,9 +37,6 @@ const StudentLoan = () => {
   return (
     <div>
 
-      <Head>
-        <link rel="canonical" href="https://mymonty.com.lb/student-loan/" />
-      </Head>
       <Banner data={data} />
 
       <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>

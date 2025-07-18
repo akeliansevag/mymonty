@@ -3,19 +3,16 @@ import { websiteName } from '@/app/config';
 import styles from './page.module.css';
 import SmallBanner from '../components/SmallBanner';
 
-import Head from 'next/head';
 export const metadata = {
-    title: websiteName + 'Key Facts Statements',
-    description: ''
+    title: 'Key Facts Statements | Transparent Banking' + websiteName,
+    description: 'Access MyMonty\'s essential key facts statements. Find transparent information about our digital banking products & services in Lebanon. View details.'
 };
 
 const KeyFactsStatements = () => {
 
     return (
         <>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/key-facts-statements/" />
-            </Head>
+
             <div className={styles.terms}>
                 <SmallBanner title="Key Facts Statements" />
                 <div className='container py-10 lg:py-20 relative'>

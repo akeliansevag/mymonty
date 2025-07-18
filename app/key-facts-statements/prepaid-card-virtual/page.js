@@ -2,21 +2,18 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import SmallBanner from '@/app/components/SmallBanner';
 import FooterBanner from '@/app/components/FooterBanner';
-import Head from 'next/head';
 
 export const metadata = {
-    title: websiteName + 'Personal eWallet Account',
-    description: ''
+    title: 'Virtual Prepaid Card | Key Facts & Terms' + websiteName,
+    description: 'Essential details for your MyMonty Virtual Prepaid Card in Lebanon. Access key facts & statements for secure online spending. Learn more.'
 };
 
 const pea = () => {
 
     return (
         <div>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/key-facts-statements/prepaid-card-virtual/" />
-            </Head>
-            <FooterBanner downloadURL="/KFS - Prepaid Virtual Card.pdf" title="Prepaid Card (Physical)" />
+           
+            <FooterBanner downloadURL="/KFS - Prepaid Virtual Card.pdf" title="MyMonty Virtual Prepaid Card: Key Facts & Statements" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PREPAID CARD (VIRTUAL) - KEY FACTS STATEMENT  <br />

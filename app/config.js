@@ -1,1 +1,1 @@
-export const websiteName = 'MyMonty - ';
+export const websiteName = ' | MyMonty Lebanon';

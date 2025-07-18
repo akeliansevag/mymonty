@@ -6,10 +6,9 @@ import { COOKIE_API } from '../api/api';
 import Legals from '../components/Legals';
 import privacyImage from '@/public/personal/privacy.webp';
 import SmallBanner from '../components/SmallBanner';
-import Head from 'next/head';
 export const metadata = {
-    title: websiteName + 'Cookie Policy',
-    description: '',
+    title: 'Cookie Policy' + websiteName,
+    description: 'Understand MyMonty\'s cookie policy. Learn how we use cookies to enhance your Browse experience & data privacy on our website. View policy.',
 };
 
 const cookie = () => {
@@ -27,9 +26,6 @@ const cookie = () => {
 
     return (
         <div className={styles.privacyPolicy}>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/cookie-policy/" />
-            </Head>
             <SmallBanner title="our Cookie Policy at Mymonty" />
             <Legals api={COOKIE_API} />
         </div>

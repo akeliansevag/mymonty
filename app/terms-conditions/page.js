@@ -2,11 +2,10 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import termsImage from '@/public/personal/terms-and-conditions.webp';
 import FooterBanner from '../components/FooterBanner';
-import Head from 'next/head';
 
 export const metadata = {
-    title: websiteName + 'Terms and Conditions',
-    description: 'Read My Monty\'s terms and conditions along with our privacy and cookie policy carefully before accessing any information and services from our website.'
+    title: 'Terms and Conditions' + websiteName,
+    description: 'Understand MyMonty\'s full terms & conditions for digital banking services in Lebanon. Get clarity on our policies & legal agreements. Learn more.'
 };
 
 const terms = () => {
@@ -25,10 +24,7 @@ const terms = () => {
 
     return (
         <div>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/terms-conditions/" />
-            </Head>
-
+        
             <FooterBanner downloadURL="/WebsiteTermsAndConditions.pdf" title="Website Terms & Conditions" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content' dangerouslySetInnerHTML={{ __html: htmlData }} />

@@ -1,6 +1,5 @@
 import Banner from '@/app/components/Banner';
 import { websiteName } from '@/app/config';
-import Head from 'next/head';
 
 import React from 'react';
 import banner from '@/public/personal/transfer-couple-1.webp';
@@ -13,15 +12,15 @@ import Image from 'next/image';
 import Carousel from '../components/Carousel';
 
 export const metadata = {
-    title: websiteName + 'Transfers',
-    description: '',
+    title: 'Money Transfers | Send & Receive Funds' + websiteName,
+    description: 'Send money effortlessly within Lebanon or globally with MyMonty. Enjoy fast, secure & low-fee digital transfers. Start sending now!',
 };
 
 
 
 const transfers = () => {
     const data = {
-        title: 'Safely transfer money ',
+        title: 'Safely transfer money',
         subtitle: 'Transfers',
         desc: 'Stay connected with loved ones by sending them funds effortlessly and securely.',
         image: {
@@ -111,9 +110,7 @@ const transfers = () => {
 
     return (
         <>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/tansfers/" />
-            </Head>
+           
 
             <Banner data={data} />
             <div id="borderless-transfers">
@@ -121,7 +118,7 @@ const transfers = () => {
                     <div className='container'>
                         <div className='flex-col-reverse flex lg:flex-row gap-10 items-center'>
                             <div>
-                                <img className='md:w-full' src="/personal/borderless-transfers.webp" alt='Image' width="1044" height="1441" />
+                                <img className='md:w-full' src="/personal/borderless-transfers.webp" alt='Borderless transfers' width="1044" height="1441" />
                             </div>
                             <TextBlock buttonColor="dark" title="Borderless transfers" description="Swift and direct peer-to-peer (P2P) transfers are just a tap away with MyMonty. Enjoy hassle-free cross-border transactions without the usual banking delays." button={true} />
                         </div>

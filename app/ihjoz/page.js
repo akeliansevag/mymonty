@@ -7,11 +7,9 @@ import SectionThree from './SectionThree';
 import SectionFour from './SectionFour';
 import SectionTwo from './SectionTwo';
 
-import Head from 'next/head';
-
 export const metadata = {
-    title: websiteName + 'ihjoz',
-    description: '',
+    title: 'ihjoz' + websiteName,
+    description: 'Unlock special benefits with MyMonty and IhJjoz. Discover exclusive deals & seamless digital experiences for [relevant service/product]. Explore now!',
 };
 
 const accounts = () => {
@@ -33,9 +31,6 @@ const accounts = () => {
     };
     return (
         <div>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/ihjoz/" />
-            </Head>
             <Banner data={data} />
             <SectionOne />
             <SectionTwo />

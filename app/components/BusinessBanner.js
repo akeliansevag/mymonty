@@ -29,7 +29,7 @@ const BusinessBanner = () => {
                             </div>
                         </div>
                         <div className="w-full md:w-2/3">
-                            <Image alt='Girl holding a phone' placeholder='blur' quality={100} sizes='100vw' src={business} className='w-full md:w-2/3 ml-auto' priority />
+                            <Image alt='Plant Coin' placeholder='blur' quality={100} sizes='100vw' src={business} className='w-full md:w-2/3 ml-auto' priority width='549' height='821' />
                         </div>
                     </div>
                 </div>

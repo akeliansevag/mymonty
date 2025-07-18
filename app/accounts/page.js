@@ -2,7 +2,6 @@ import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
 import banner from '@/public/personal/accounts-banner.webp';
-import Head from 'next/head';
 import Carousel from '@/app/components/Carousel';
 import AnimatedImage from './AnimatedImage';
 import SectionOne from './SectionOne';
@@ -10,8 +9,8 @@ import SectionThree from './SectionThree';
 import SectionForex from './SectionForex';
 
 export const metadata = {
-    title: websiteName + 'Accounts',
-    description: '',
+    title: 'Digital Bank Accounts | Manage Finances' + websiteName,
+    description: ' Experience seamless digital banking in Lebanon with MyMonty. Manage e-wallets, send money, apply for loans & more, all from your phone. Download the app today!',
 };
 
 const accounts = () => {
@@ -96,10 +95,6 @@ const accounts = () => {
     };
     return (
         <div>
-            
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/accounts/" />
-            </Head>
 
             <Banner terms={terms} data={data} AnimatedImage={AnimatedImage} />
             <SectionOne />

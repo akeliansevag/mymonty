@@ -5,20 +5,16 @@ import styles from './page.module.css';
 import termsImage from '@/public/personal/terms-and-conditions.webp';
 import SmallBanner from '../components/SmallBanner';
 import FooterBanner from '../components/FooterBanner';
-import Head from 'next/head';
 
 export const metadata = {
-    title: websiteName + 'Fees & Charges',
-    description: ''
+    title: 'Fees & Charges' + websiteName,
+    description: ' Understand MyMonty\'s transparent fees & charges for digital banking services in Lebanon. No hidden costs, just clear pricing. View details.'
 };
 
 const terms = () => {
 
     return (
         <div className={styles.terms}>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/fees-and-charges/" />
-            </Head>
             <FooterBanner downloadURL="/List of Fees and Charges 2.7.25.pdf" title="Personal Fees & Charges" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content'>

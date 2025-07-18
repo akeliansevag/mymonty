@@ -28,7 +28,7 @@ const layout = ({ children }) => {
             <Section>
                 <div className='container max-w-5xl'>
                     {/* <Types /> */}
-                    <h1 className='text-center text-3xl'>Personal</h1>
+                    <h2 className='text-center text-3xl'>Personal</h2>
                     <div className='mt-10'>
                         {children}
                     </div>

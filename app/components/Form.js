@@ -181,9 +181,7 @@ const Form = () => {
 
                 <p>Scan the QR code to download the app</p>
 
-                <img src="/qr-code.svg" className='w-1/2' alt='Car Loan' />
-
-
+                <img src="/qr-code.svg" className='w-1/2' alt='Car Loan' width='150' height='150' />
 
                 {loading && <div className='text-gray-600 mt-4 text-base'>Submitting...</div>}
 

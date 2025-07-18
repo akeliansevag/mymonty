@@ -12,19 +12,15 @@ import christmasBG from '@/public/christmas-bg.webp';
 import mobile from '@/public/khoury-mobile.webp';
 import santa from '@/public/santa-kids.webp';
 import Link from 'next/link';
-import Head from 'next/head';
 
 export const metadata = {
-    title: websiteName + 'Khoury Home',
+    title: 'Khoury Home' + websiteName,
     description: '',
 };
 
 const KhouryHome = () => {
     return (
         <>
-            <Head>
-                <link rel="canonical" href="https://mymonty.com.lb/khoury-home/" />
-            </Head>
             <section className="bg-black relative text-white">
                 <Image className="w-full max-md:hidden" alt="Santa" src={banner} placeholder='blur' quality={100} width="3456" height="1802" />
                 <Image className="w-full md:hidden" alt="Santa" src={bannerMobile} placeholder='blur' quality={100} width="780" height="1434" />

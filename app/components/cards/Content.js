@@ -204,7 +204,7 @@ const Content = () => {
                                     </ul>
                                 </div>
                                 <div className="relative lg:w-2/5 overflow-hidden">
-                                    <img alt="2 mobile phones" src='/how-to-use-2.webp' />
+                                    <img alt="2 mobile phones" src='/how-to-use-2.webp' width='680' height='534' />
                                 </div>
                             </div>
                         </div>
@@ -222,7 +222,7 @@ const Content = () => {
                                 </div>
                             </div>
                             <div className='lg:w-2/5 aspect-[5/4] relative w-full overflow-hidden rounded-[40px] flex justify-center items-end p-5'>
-                                <img className='absolute w-full h-full object-cover top-0 left-0' src='/cleartrip2.webp' />
+                                <img className='absolute w-full h-full object-cover top-0 left-0' src='/cleartrip2.webp' width='1000' height='666' />
                                 <Promo code="MCPLATINUM" />
                             </div>
                         </div>
@@ -233,7 +233,7 @@ const Content = () => {
                                 <p>Enjoy <strong>up to 30% off</strong> at leading hotel chains worldwide and access unparalleled hotel benefits through their <a href="https://hotelbookings.priceless.com/" target="_blank" className="text-[var(--mm-blue)]">website</a> using the 6-digit Mastercard BIN.</p>
                             </div>
                             <div className="lg:w-2/5">
-                                <img src="/mastercard2.webp" alt="Hotel Bookings" />
+                                <img src="/mastercard2.webp" alt="Hotel Bookings" width="680" height="534" />
                             </div>
                         </div>
 
@@ -244,7 +244,7 @@ const Content = () => {
                                 <p>When booking through their <a target="_blank" className="text-[var(--mm-blue)]" href="https://www.ihg.com/hotels/gb/en/reservation?fromRedirect=true&qSrt=sAV&setPMCookies=true&dp=true&gclid=CjwKCAjwpbi4BhByEiwAMC8JnSKGU1pK2JvmPQGdy6dYXU-Avkms3WDYhqMkwPW7uCt-9_Vm0x6O3RoCHf0QAvD_BwE&cm_mmc=PDSEA-_-G_F-IMEA_FS-MEA_H-IMEA_HS-MEA_6C_BSF_EXM_CORE-IHG_EN&srb_u=1">website</a>, you get a <strong>15% discount</strong> and exclusive offers on IHG Hotels & Resorts across Europe, Maldives, India, the Middle East & Africa. </p>
                             </div>
                             <div className="lg:w-2/5">
-                                <img src="/hotel-resorts2.webp" alt="Hotel Bookings" />
+                                <img src="/hotel-resorts2.webp" alt="Hotel Bookings" width="680" height="534" />
                             </div>
 
                         </div>
@@ -256,7 +256,7 @@ const Content = () => {
 
                             </div>
                             <div className="lg:aspect-[16/5] max-lg:aspect-[16/12] relative flex items-end justify-end">
-                                <img className="absolute rounded-3xl object-cover w-full h-full top-0" src="/booking-com-2.webp" alt="booking" />
+                                <img className="absolute rounded-3xl object-cover w-full h-full top-0" src="/booking-com-2.webp" alt="booking" width="1200" height="799" />
                                 <div className='absolute right-9 -top-6'>
                                     <svg width="98" height="96" viewBox="0 0 98 96" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clipPath="url(#clip0_4972_8653)">
@@ -290,7 +290,7 @@ const Content = () => {
                                 <p>Enjoy <strong>20% off</strong> your next car rental and a complimentary upgrade with Avis through their <a target="_blank" className="text-[var(--mm-blue)]" href="https://avisworld.com/">website</a>.</p>
                             </div>
                             <div>
-                                <img src="/avis.webp" alt="booking" />
+                                <img src="/avis.webp" alt="booking" width="1740" height="814" />
                             </div>
                             <div className="text-center">
                                 <p>
@@ -306,7 +306,7 @@ const Content = () => {
                             </div>
 
                             <div className="lg:w-2/5 relative aspect-video rounded-[40px] overflow-hidden">
-                                <img className="absolute w-full h-full object-cover top-0" src="/rental-cars.webp" alt="RentalCars" />
+                                <img className="absolute w-full h-full object-cover top-0" src="/rental-cars.webp" alt="RentalCars" width="722" height="530" />
                             </div>
                         </div>
 
@@ -328,11 +328,11 @@ const Content = () => {
                                     <p>Enjoy exclusive access to dining, travel,
                                         and entertainment experiences in over 40 cities and countries through <a href="https://priceless.com" target="_blank" className="text-[var(--mm-blue)]">Priceless.com.</a>
                                     </p>
-                                    <img className='mt-3' src='/mastercard-logo.webp' />
+                                    <img className='mt-3' src='/mastercard-logo.webp' width='100' heigiht='66' />
                                 </div>
                             </div>
                             <div className='lg:w-2/5 aspect-video relative overflow-hidden rounded-[40px]'>
-                                <img className='absolute top-0 left-0 w-full h-full object-cover' src="/priceless-cities2.webp" />
+                                <img className='absolute top-0 left-0 w-full h-full object-cover' src="/priceless-cities2.webp" width='1000' height='666' />
                             </div>
                         </div>
 
@@ -370,7 +370,7 @@ const Content = () => {
                                     </div>
                                 </div>
                                 <div className="lg:w-2/5 aspect-[5/4] rounded-[40px] relative overflow-hidden">
-                                    <img src='/costa.webp' className="absolute object-cover w-full h-full" alt="Costa Coffee" />
+                                    <img src='/costa.webp' className="absolute object-cover w-full h-full" alt="Costa Coffee" width='800' height='800' />
                                 </div>
                             </div>
                         </div>
@@ -399,7 +399,7 @@ const Content = () => {
                                 </p>
                             </div>
                             <div className="lg:w-2/5">
-                                <img src="/purchase-protection.webp" alt="Purchase Protection" />
+                                <img src="/purchase-protection.webp" alt="Purchase Protection" width='596' height='845' />
                             </div>
 
                         </div>
@@ -432,7 +432,7 @@ const Content = () => {
                                 </p>
                             </div>
                             <div className="lg:w-2/5 rounded-[40px] relative overflow-hidden">
-                                <img src="/bicester.webp" alt="Bicester" className="absolute h-full w-full object-cover" />
+                                <img src="/bicester.webp" alt="Bicester" className="absolute h-full w-full object-cover" width='580' height='1448' />
                             </div>
                         </div>
 
@@ -479,7 +479,7 @@ const Content = () => {
                                 <p>Visit their <a className="text-[var(--mm-blue)]" target="_blank" href="https://www.myus.com/welcome/mastercardpremium/">website</a> to register and use your TIER Mastercard® on the payment page.</p>
                             </div>
                             <div className="lg:w-2/5">
-                                <img src="/myus2.webp" alt="MyUS" />
+                                <img src="/myus2.webp" alt="MyUS" width='1000' height='1561' />
                             </div>
                         </div>
 
@@ -509,7 +509,7 @@ const Content = () => {
                             </div>
 
                             <div className="lg:w-2/5">
-                                <img src="/go-gamers2.webp" alt="Go Gamers image" />
+                                <img src="/go-gamers2.webp" alt="Go Gamers image" width='800' height='1582' />
                             </div>
 
                         </div>
@@ -538,7 +538,7 @@ const Content = () => {
                             </div>
 
                             <div className="lg:w-2/5">
-                                <img src="/medical-tourism-concierge2.webp" alt="Go Gamers image" />
+                                <img src="/medical-tourism-concierge2.webp" alt="Go Gamers image" width='1000' height='1513'/>
                             </div>
 
                         </div>
@@ -567,7 +567,7 @@ const Content = () => {
                             </div>
 
                             <div className="lg:w-2/5 relative aspect-[5/4] rounded-[40px] overflow-hidden">
-                                <img src="/fiit2.webp" alt="Go Gamers image" className='absolute w-full h-full object-cover left-0 top-0' />
+                                <img src="/fiit2.webp" alt="Go Gamers image" className='absolute w-full h-full object-cover left-0 top-0' width='1000' height='666' />
 
                             </div>
 
@@ -605,7 +605,7 @@ const Content = () => {
                                     <a href="/Shahid-T&Cs - May 2025.pdf" target="_blank" className="mm-button blue mt-1">View Full Terms & Conditions</a>
                                 </div>
                                 <div className="lg:w-2/5 aspect-[5/4] rounded-[40px] relative overflow-hidden">
-                                    <img src='/shahed.webp' className="absolute object-cover w-full h-full" alt="Shahed"/>
+                                    <img src='/shahed.webp' className="absolute object-cover w-full h-full" alt="Shahed" width='666' height='590' />
                                 </div>                                       
                             </div>
                         </div>
@@ -662,7 +662,7 @@ const Content = () => {
                             </div>
 
                             <div className='lg:w-2/5 relative max-lg:aspect-[5/4] lg:aspect-[9/13] rounded-[40px] overflow-hidden'>
-                                <img className="w-full h-full absolute object-cover" src="/lingo2.webp" alt="Lingo Kids" />
+                                <img className="w-full h-full absolute object-cover" src="/lingo2.webp" alt="Lingo Kids" width='1000' height='666' />
                                 <div className="px-5 mt-4 flex items-end justify-center pb-10 h-full">
                                     <Promo code="MASTERCARD50" />
                                 </div>

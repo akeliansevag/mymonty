@@ -57,7 +57,7 @@ const SectionFive = () => {
                         ></div>
 
                         <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[300px]">
-                            <img src='/sectionfive.webp' alt='Section Six Image' width="640" height="726" />
+                            <img src='/sectionfive.webp' alt='Section Image' width="640" height="726" />
                         </div>
                     </div>
                 </div>
