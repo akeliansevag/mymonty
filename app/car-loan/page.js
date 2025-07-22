@@ -49,7 +49,7 @@ const CarLoan = () => {
               </div>
               <div className="flex flex-col justify-center center bg-[#F7F7F7] py-12 p-4 lg:p-12 rounded-3xl text-center h-full">
                 <img src="/all-risk-insurance.svg" className="flex-shrink-0 mx-auto" alt="All-Risk Insurance & Life Insurance Included" width="50" height="50" />
-                <h2 className="uppercase font-black text-2xl leading-none mt-6">All-Risk Insurance & Life Insurance Included</h2>
+                <h2 className="uppercase font-black text-2xl leading-none mt-6">All-Risk Insurance Included</h2>
               </div>
             </div>
             <div className="flex flex-col justify-between bg-[#F7F7F7] pt-12 p-4 lg:pt-12 pb-0 rounded-3xl text-center h-full">
@@ -60,11 +60,11 @@ const CarLoan = () => {
               <div className="flex flex-col justify-center center bg-[#F7F7F7] py-12 p-4 lg:p-12 rounded-3xl text-center h-full">
                 <img src="/flexible-tenure.svg" className="flex-shrink-0 mx-auto" alt="Flexible Tenure" width="50" height="50" />
                 <h2 className="uppercase font-black text-2xl leading-none mt-6">Flexible Tenure</h2>
-                <p>1 to 4 years</p>
+                <p>1 to 5 years</p>
               </div>
               <div className="flex flex-col justify-center center bg-[#F7F7F7] py-12 p-4 lg:p-12 rounded-3xl text-center h-full">
                 <img src="/transparent-terms.svg" className="flex-shrink-0 mx-auto" alt="Transparent Terms of services, Quick Approvals" width="50" height="50" />
-                <h2 className="uppercase font-black text-2xl leading-none mt-6">Transparent Terms of services, Quick Approvals</h2>
+                <h2 className="uppercase font-black text-2xl leading-none mt-6">Transparent Terms, Quick Approvals</h2>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ const CarLoan = () => {
       <Section>
         <div className='max-w-[1060px] mx-auto w-full'>
           <div className='container text-center'>
-            <TextBlock buttonColor="dark" center={true} title="Your dream car is now just a few steps away." description="Car loans are finally accessible with MyMonty. Whether you’re looking to fund your very first car or upgrade your current ride, prefer a sleek sedan or a bold SUV, MyMonty Car Loans are fast, fully digital, and designed to make your life easier." button={true} />
+            <TextBlock buttonColor="dark" center={true} title="Your dream car is now just a few steps away." description="Car loans are finally accessible with MyMonty. Whether you’re looking to fund your very first car or upgrade your current ride, prefer a sleek sedan or a bold SUV, MyMonty Car Loans are fast and designed to make your life easier." button={true} />
             <Image className='mx-auto mt-14' alt="Wallets" src={sectionFourImage} width='1660' height='1165' />
           </div>
         </div>

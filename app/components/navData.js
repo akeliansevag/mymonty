@@ -133,15 +133,20 @@ export const data = [
                 url: '/loans',
                 children: [
                     {
-                        title: 'Advance on Salary',
-                        url: '/loans?s=advance-on-salary',
+                        title: 'Car Loan',
+                        url: '/car-loan',
                         noIndex: true,
                     },
-                    {
-                        title: 'BNPL',
-                        url: '/loans?s=bnpl',
-                        noIndex: true,
-                    },
+                    // {
+                    //     title: 'Advance on Salary',
+                    //     url: '/loans?s=advance-on-salary',
+                    //     noIndex: true,
+                    // },
+                    // {
+                    //     title: 'BNPL',
+                    //     url: '/loans?s=bnpl',
+                    //     noIndex: true,
+                    // },
 
                 ]
             },
