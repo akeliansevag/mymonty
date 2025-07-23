@@ -132,22 +132,21 @@ export const data = [
                 title: 'Loans',
                 url: '/loans',
                 children: [
+                    // {
+                    //     title: 'Car Loan',
+                    //     url: '/car-loan',
+                    //     noIndex: true,
+                    // },
                     {
-                        title: 'Car Loan',
-                        url: '/car-loan',
+                        title: 'Advance on Salary',
+                        url: '/loans?s=advance-on-salary',
                         noIndex: true,
                     },
-                    // {
-                    //     title: 'Advance on Salary',
-                    //     url: '/loans?s=advance-on-salary',
-                    //     noIndex: true,
-                    // },
-                    // {
-                    //     title: 'BNPL',
-                    //     url: '/loans?s=bnpl',
-                    //     noIndex: true,
-                    // },
-
+                    {
+                        title: 'BNPL',
+                        url: '/loans?s=bnpl',
+                        noIndex: true,
+                    },
                 ]
             },
             // {
