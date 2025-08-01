@@ -116,7 +116,7 @@ export const data = [
                     {
                         title: 'eVouchers',
                         url: '/evouchers'
-                    },
+                    }, 
                     {
                         title: 'Touch - Alfa',
                         url: '/touch-alfa'
