@@ -13,17 +13,17 @@ const pea = () => {
     return (
         <div>
            
-            <FooterBanner downloadURL="/KFS - Prepaid Virtual Card.pdf" title="MyMonty Virtual Prepaid Card: Key Facts & Statements" />
+            <FooterBanner downloadURL="/Virtual Prepaid Card KFS.pdf" title="MyMonty Virtual Prepaid Card: Key Facts & Statements" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PREPAID CARD (VIRTUAL) - KEY FACTS STATEMENT  <br />
-                        (V.1.3 – 23 May 2025)</strong> </p>
+                        (V.1.4 – 23 July 2025)</strong> </p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Virtual Prepaid Card offered by Monty Finance SAL (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the Prepaid Cards Terms and Conditions. </p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the Virtual Prepaid Mastercard offered by Monty Finance SAL (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the Virtual Prepaid Mastercard Terms. </p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
-                    <p>The Card is a virtual (non-physical) reloadable Mastercard prepaid card linked to your MyMonty eWallet Account and exists digitally in your MyMonty App. It only allows purchases to be made online. Money must be loaded to the Card before the Card is used. You can top-up the Card from your MyMonty eWallet only. The Card is not a credit or a debit Card, and the Card balance does not earn any interest.  </p>
+                    <p>The Card is a virtual (non-physical) reloadable Mastercard prepaid card linked to your MyMonty eWallet Account and exists digitally in your MyMonty App. It only allows purchases to be made online. Money must be loaded to the Card before the Card is used. You can top-up the Card from your MyMonty eWallet only. The Card is not a credit or a debit Card, and the Card balance does not earn any interest.</p>
                     <table className='mm-table'>
                         <tbody>
                             <tr>
@@ -49,7 +49,7 @@ const pea = () => {
                     <table className='mm-table'>
                         <tbody>
                             <tr>
-                                <td className='table-heading' colSpan={4}>Card Issue, Delivery, Replacement and Cancellation</td>
+                                <td className='table-heading' colSpan={4}>Card Issue, Replacement and Cancellation</td>
                             </tr>
                             <tr>
                                 <td><strong>Card Issuance Fee</strong></td>
