@@ -4,7 +4,7 @@ import SmallBanner from '@/app/components/SmallBanner';
 import FooterBanner from '@/app/components/FooterBanner';
 
 export const metadata = {
-    title: 'Individual eWallet Account' + websiteName,
+    title: 'Personal eWallet Account' + websiteName,
     description: 'Key facts & statements for your MyMonty Personal E-wallet Account in Lebanon. Understand features, limits & how to manage your digital funds. View details.'
 };
 
@@ -14,13 +14,13 @@ const pea = () => {
         <div>
     
             
-            <FooterBanner downloadURL="/KFS - Personal eWallet Account (006)2.pdf" title="Individual eWallet Account" />
+            <FooterBanner downloadURL="/KFS - Personal eWallet Account 16.7.25.pdf" title="Personal eWallet Account" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
-                    <strong>INDIVIDUAL MYMONTY eWALLET ACCOUNT - KEY FACTS STATEMENT  <br />
-                        (V.1.7 – 23 May 2025)</strong> </p>
+                    <strong>PERSONAL eWALLET ACCOUNT - KEY FACTS STATEMENT  <br />
+                        (V.1.9 – 16 July 2025)</strong> </p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the individual MyMonty eWallet Account offered by Monty Finance SAL to individual clients (“eWallet Account”). This KFS does not contain all the terms and conditions governing the eWallet Account and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Customer Agreement </a>.</p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the personal eWallet account offered by Monty Finance SAL to individual clients (“eWallet Account”). This KFS does not contain all the terms and conditions governing the eWallet Account and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Customer Agreement </a>.</p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
@@ -172,7 +172,7 @@ const pea = () => {
                                 <td><strong>Touch Postpaid</strong></td>
                                 <td>Transaction Fee: LBP 50,000 / USD 0.7</td>
                                 <td><strong>Alfa Postpaid</strong></td>
-                                <td>Transaction Fee: LBP 50,000</td>
+                                <td>Transaction Fee: LBP 50,000 / USD 0.7</td>
                             </tr>
 
                             <tr>

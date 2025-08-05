@@ -18,7 +18,7 @@ const KeyFactsStatements = () => {
                 <div className='container py-10 lg:py-20 relative'>
                     <div className='flex flex-col gap-4'>
                         <a href='/key-facts-statements/personal-ewallet-account' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
-                            KFS Individual eWallet Account
+                            KFS Personal eWallet Account
                         </a>
                         <a href='/key-facts-statements/prepaid-card-physical' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                             KFS Prepaid Card (Physical)
