@@ -74,15 +74,10 @@ const VirtualMastercard = () => {
     ]
     const terms = {
         termsAndConditions: '/Virtual Prepaid Card Terms.pdf', 
-        kfs: '/Virtual Prepaid Card KFS.pdf'
+        kfs: '/KFS - Business Virtual Prepaid Card.pdf'
     }
     return (
         <>
-            
-            
-
-            
-
             <Banner terms={terms} data={data} />
             <section className="bg-white text-center py-28 max-lg:py-14">
                 <div className="container flex flex-col gap-8">
