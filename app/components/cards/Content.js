@@ -209,7 +209,7 @@ const Content = () => {
                             </div>
                         </div>
 
-                        <div className='flex max-lg:flex-col lg:justify-between lg:items-center gap-10'>
+                        {/* <div className='flex max-lg:flex-col lg:justify-between lg:items-center gap-10'>
                             <div className='lg:w-3/5'>
                                 <h2 className="smaller-title text-balance">Cleartrip Flight & Hotel Bookings</h2>
                                 <div>
@@ -225,7 +225,7 @@ const Content = () => {
                                 <img className='absolute w-full h-full object-cover top-0 left-0' src='/cleartrip2.webp' width='1000' height='666' />
                                 <Promo code="MCPLATINUM" />
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="flex max-lg:flex-col max-lg:gap-10 gap-10 lg:items-center">
                             <div className="lg:w-3/5">
