@@ -14,13 +14,13 @@ const pea = () => {
         <div>
     
             
-            <FooterBanner downloadURL="/KFS - Business Wallet Account.pdf" title="Personal eWallet Account" />
+            <FooterBanner downloadURL="KFS - Individual eWallet Account 16.7.25" title="Personal eWallet Account" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>PERSONAL eWALLET ACCOUNT - KEY FACTS STATEMENT  <br />
                         (V.2.0 – 07 August 2025)</strong> </p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the Business eWallet Account offered by Monty Finance SAL to commercial companies (“Account”). This KFS does not contain all the terms and conditions governing the Account and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Customer Agreement Terms</a>.</p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the the personal eWallet account offered by Monty Finance SAL to commercial companies (“Account”). This KFS does not contain all the terms and conditions governing the Account and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Customer Agreement Terms</a>.</p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
