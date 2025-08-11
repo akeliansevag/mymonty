@@ -14,7 +14,7 @@ const pea = () => {
         <div>
     
             
-            <FooterBanner downloadURL="KFS - Individual eWallet Account 16.7.25" title="Personal eWallet Account" />
+            <FooterBanner downloadURL="KFS - Individual eWallet Account 16.7.25.pdf" title="Personal eWallet Account" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>PERSONAL eWALLET ACCOUNT - KEY FACTS STATEMENT  <br />
