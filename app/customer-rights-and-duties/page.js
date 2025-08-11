@@ -17,7 +17,7 @@ const terms = () => {
 
     return (
         <div className={styles.terms}>
-            <FooterBanner downloadURL="/Customer Rights and Duties.pdf" title="Customer Rights & Duties" />
+            <FooterBanner downloadURL="/Customer-Rights-and-Duties.pdf" title="Customer Rights & Duties" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content' dangerouslySetInnerHTML={{ __html: htmlData }} />
             </div>

@@ -13,7 +13,7 @@ const pea = () => {
     return (
         <div>
        
-            <FooterBanner downloadURL="/KFS - Business Platinum Prepaid Card (002).pdf" title="MyMonty Physical Prepaid Card: Key Facts & Statements" />
+            <FooterBanner downloadURL="/KFS-Business-Platinum-Prepaid-Card.pdf" title="MyMonty Physical Prepaid Card: Key Facts & Statements" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PLATINUM PREPAID CARD (PHYSICAL) - KEY FACTS STATEMENT  <br />

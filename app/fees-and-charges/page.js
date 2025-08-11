@@ -15,7 +15,7 @@ const terms = () => {
 
     return (
         <div className={styles.terms}>
-            <FooterBanner downloadURL="/List of Fees and Charges 29.7.25.pdf" title="Personal Fees & Charges" />
+            <FooterBanner downloadURL="/List-of-Fees-and-Charges-29.7.25.pdf" title="Personal Fees & Charges" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content'>
                     <p>(effective as of 29 July 2025)</p><br />
