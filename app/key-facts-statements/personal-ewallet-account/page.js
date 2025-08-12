@@ -16,34 +16,32 @@ const pea = () => {
             
             <FooterBanner downloadURL="/KFS-Individual-eWallet-Account-16.7.25.pdf" title="Personal eWallet Account" />
             <div className='container py-10 lg:py-20 relative'>
-                <p>
-                    <strong>PERSONAL eWALLET ACCOUNT - KEY FACTS STATEMENT  <br />
-                        (V.2.0 – 07 August 2025)</strong> </p>
+                <p><strong>PERSONAL eWALLET ACCOUNT - KEY FACTS STATEMENT  <br /> (V.1.9 – 16 July 2025)</strong></p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the the personal eWallet account offered by Monty Finance SAL to commercial companies (“Account”). This KFS does not contain all the terms and conditions governing the Account and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Customer Agreement Terms</a>.</p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“<strong>KFS</strong>”) provides you with information on the key features, limits, fees and charges of the personal eWallet account offered by Monty Finance SAL to individual clients (“<strong>eWallet Account</strong>”). This KFS does not contain all the terms and conditions governing the eWallet Account and it should be read along with the  <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Customer Agreement Terms</a>.</p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
                     <table className='mm-table'>
                         <tbody>
                             <tr>
-                                <td className='w-1/5'>The Account</td>
-                                <td><p>The Account is a payment account for your business payments needs. It is not a deposit nor a savings account and does not entitle you to interest. </p></td>
+                                <td><strong>Payment Account</strong></td>
+                                <td><p>The eWallet Account is a payment account for your payments needs. It is not a deposit nor a savings account and does not entitle you to interest. </p></td>
                             </tr>
                             <tr>
-                                <td>Account Currency</td>
-                                <td><p>The Account is a dual currency account split into two distinct balances, one designated in Lebanese Pounds (LBP) and the other in United States Dollars (USD).</p></td>
+                                <td><strong>Account Currency</strong></td>
+                                <td><p>The eWallet Account is a dual currency account split into two distinct balances, one designated in Lebanese Pounds (LBP) and the other in United States Dollars (USD).</p></td>
                             </tr>
                             <tr>
-                                <td>Transactions Currency</td>
+                                <td><strong>Transactions Currency</strong></td>
                                 <td><p>The transactions are limited to the respective currencies: LBP transactions can only be made using the LBP balance, and USD transactions can only be made using the USD balance.</p></td>
                             </tr>
                             <tr>
-                                <td>Eligibility</td>
-                                <td><p>To be eligible for an Account you must be a registered commercial company.</p></td>
+                                <td><strong>Eligibility</strong></td>
+                                <td><p>To be eligible for an eWallet Account you must be a Lebanese Citizen or a holder of a valid Lebanese residency permit and be aged 18 years or above.</p></td>
                             </tr>
                             <tr>
-                                <td>Minimum Balance</td>
+                                <td><strong>Minimum Balance</strong></td>
                                 <td><p>No minimum balance is required to open or maintain the Account.</p></td>
                             </tr>
                         </tbody>
@@ -56,7 +54,7 @@ const pea = () => {
                     <table className='mm-table'>
                         <tbody>
                             <tr>
-                                <td className='table-heading' colSpan={4}>Opening, Keeping and Closing the Account</td>
+                                <td className='table-heading' colSpan={4}>Opening, Keeping and Closing the eWallet Account</td>
                             </tr>
                             <tr>
                                 <td><strong>Account Opening</strong></td>
@@ -77,21 +75,12 @@ const pea = () => {
                                 <td>Free of charge</td>
                             </tr>
                             <tr>
-                                <td className='table-heading' colSpan={4}>B2B (Business-to-Business)</td>
+                                <td className='table-heading' colSpan={4}>P2P (Person to Person)</td>
                             </tr>
                             <tr>
-                                <td><strong>Send Money (to another Business eWallet Holder)</strong></td>
+                                <td><strong>Send Money (to another MyMonty eWallet Holder)</strong></td>
                                 <td>Free of charge</td>
-                                <td><strong>Receive Money (from another Business eWallet Holder)</strong></td>
-                                <td>Free of charge</td>
-                            </tr>
-                            <tr>
-                                <td className='table-heading' colSpan={4}>B2C (Business-to-Consumer)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Send Money (to an individual MyMonty eWallet Holder)</strong></td>
-                                <td>Free of charge</td>
-                                <td><strong>Receive Money (from an individual MyMonty eWallet Holder)</strong></td>
+                                <td><strong>Receive Money (from another MyMonty eWallet Holder)</strong></td>
                                 <td>Free of charge</td>
                             </tr>
                             <tr>
@@ -106,46 +95,54 @@ const pea = () => {
                                 <td className='table-heading' colSpan={4}>Top-up and Withdrawals</td>
                             </tr>
                             <tr>
-                                <td><strong>Add Money to your Account (at MyMonty branch)</strong></td>
-                                <td>Cash in USD: Free of charge <br /> Cash in LBP: Free of charge</td>
-                                <td><strong>Add Money to your Account (at MyMonty Self-Service Terminal)</strong></td>
-                                <td>Cash in USD: Free of charge <br /> Cash in LBP: Free of charge</td>
+                                <td><strong>Add Money</strong> (through MyMonty branch)</td>
+                                <td>Free of charge</td>
+                                <td><strong>Withdraw Money</strong> (through MyMonty branch)</td>
+                                <td>Free of charge</td>
                             </tr>
 
                             <tr>
-                                <td><strong>Add Money to your Account (at our Appointed Agent locations)</strong></td>
+                                <td><strong>Add Money to your Account</strong> (through our Appointed Agent)</td>
                                 <td>Cash in USD: Free of charge <br /> Cash in LBP: Free of charge</td>
-                                <td><strong>Withdraw Money from your Account (at MyMonty branch)</strong></td>
-                                <td> USD: Free of charge <br /> LBP: Free of charge</td>
+                                <td><strong>Withdraw Money</strong> (through our Appointed Agent)</td>
+                                <td>Cash USD 1.5% <br /> Cash LBP 1.5% </td>
                             </tr>
 
                             <tr>
-                                <td><strong>Withdraw Money from your Account (at MyMonty Self-Service Terminal)</strong></td>
-                                <td>USD: 0.75% / Minimum USD 1 <br /> LBP: 0.75% / Minimum LBP 100,000</td>
-                                <td><strong>Withdraw Money from your Account (at Integrated ATMs)</strong></td>
-                                <td>USD: 0.75% / Minimum USD 1 <br /> LBP: 0.75% / Minimum LBP 100,000</td>
+                                <td><strong>Add Money to your Account</strong> (through our integrated ATMs)</td>
+                                <td>Cash in USD: Free of charge <br /> Cash in LBP: Free of charge</td>
+                                <td><strong>Withdraw Money</strong> (through our integrated ATMs)</td>
+                                <td>Cash USD: 0.75% / Minimum USD 1 <br /> Cash LBP: 0.75% / Minimum LBP 100,000 </td>
                             </tr>
-                            
+
+                            <tr>
+                                <td colspan="2"><strong>Add Money to your Account</strong>  (by using your local or international card)</td>
+                                <td colspan="2">LBP card: 3 % Foreign currency card: 3%</td>
+                            </tr>
 
                             <tr>
                                 <td className='table-heading' colSpan={4}>Miscellaneous</td>
                             </tr>
                             <tr>
-                                <td><strong>Currency Exchange</strong></td>
+                                <td><strong>SMS Notifications</strong></td>
                                 <td colSpan={3}>Free of charge</td>
                             </tr>
 
                             <tr>
-                                <td><strong>Alfa Postpaid</strong></td>
-                                <td>Transaction Fee: LBP 50,000 / USD 0.7</td>
                                 <td><strong>Touch Postpaid</strong></td>
                                 <td>Transaction Fee: LBP 50,000 / USD 0.7</td>
+                                <td><strong>Alfa Postpaid</strong></td>
+                                <td>Transaction Fee: LBP 50,000 / USD 0.7</td>
                             </tr>
-
                             <tr>
-                                <td colSpan={4}>All other available e-services are provided with no transaction fees.</td>
+                                <td><strong>IHJOZ</strong></td>
+                                <td>Transaction Fee: 1% of the transaction amount</td>
+                                <td colspan="2"><strong>All other available e-services are provided with no transaction fees.</strong></td>
                             </tr>
-
+                            <tr>
+                                <td colspan="3"><strong>Currency Exchange:</strong> Through our partnered exchange house and based on the real market rate adopted at the time of conversion between LBP and USD balances. </td>
+                                <td>Free of charge</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -157,113 +154,68 @@ const pea = () => {
                                 <td className='table-heading' colSpan={4}>Account Balance</td>
                             </tr>
                             <tr>
-                                <td>
-                                    Account Maximum Balance
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>Your Account balance may not exceed USD 30,000 (or its equivalent in other currencies) at any time</li>
-                                    </ul>
-                                </td>
+                                <td><strong>Maximum Balance at any one time</strong></td>
+                                <td colspan="3">Your account balance may not exceed USD 3,000 or its equivalent in other currencies at any time</td>
                             </tr>
                             <tr>
-                                <td>
-                                    Maximum Credit Balance per month 
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>The total monthly credit balance on your Account (whether from top-ups or incoming transfers) cannot exceed USD 50,000 (or its equivalent in other currencies).</li>
-                                    </ul>
-                                </td>
+                                <td><strong>Maximum Credit Balance per month</strong></td>
+                                <td colspan="3">The total monthly credit balance on your account (whether from top-ups or incoming transfers) cannot exceed USD 9,999 or its equivalent in other currencies.</td>
                             </tr>
 
                             <tr>
-                                <td className='table-heading' colSpan={4}>B2B (Business-to-Business)</td>
+                                <td className='table-heading' colSpan={4}>P2P (Person to Person)</td>
                             </tr>
                             <tr>
-                                <td>
-                                    Send Money (to another Business eWallet Holder)
-                                </td>
-                                <td>
-                                    Up to the available balance (as long as the Recipient’s account balance does not exceed the maximum account balance and monthly credit limits).
-                                </td>
+                                <td><strong>Send Money</strong> (to another MyMonty eWallet Holder(s))</td>
+                                <td colspan="3">Up to the available balance (as long as the Recipient’s account balance does not exceed the maximum account balance and monthly credit limits).</td>
                             </tr>
                             <tr>
-                                <td>
-                                    Receive Money (from another Business eWallet Holder)
-                                </td>
-                                <td>
-                                    Any amount (as long as the Account balance does not exceed the maximum account balance and monthly credit limits).
-                                </td>
+                                <td><strong>Receive Money</strong> (from another MyMonty eWallet Holder(s))</td>
+                                <td colspan="3">Any amount (as long as the account balance does not exceed the maximum account balance and monthly credit limits).</td>
                             </tr>
-
-                            <tr>
-                                <td className='table-heading' colSpan={4}>B2C (Business-to-Consumer)</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Send Money (to an individual MyMonty eWallet Holder)
-                                </td>
-                                <td>
-                                    Up to the available balance (as long as the Recipient’s account balance does not exceed the maximum account balance and monthly credit limits).
-                                </td>
-                            </tr>
-
-                           
 
                             <tr>
                                 <td className='table-heading' colSpan={4}>Payments</td>
                             </tr>
                             <tr>
-                                <td>Pay to a Merchant by QR</td>
+                                <td><strong>Pay to a Merchant by QR</strong></td>
                                 <td colspan="3">Available balance in the Account.</td>
                             </tr>
 
                             <tr>
-                                <td className='table-heading' colSpan={4}>Top-up and Withdrawals (subject to ATM transaction limits)</td>
+                                <td className='table-heading' colSpan={4}>Top-up and Withdrawals</td>
                             </tr>
                             <tr>
-                                <td><strong>Add Money to your Account</strong> (at MyMonty branch)</td>
-                                <td colspan="3">Per Transaction: USD 30,000 (or its equivalent in other currencies) / Monthly: USD 50,000 (or its equivalent in other currencies)</td>
+                                <td><strong>Add Money to your Account</strong> (through MyMonty branch)</td>
+                                <td colspan="3">Any amount (as long as the account balance does not exceed the maximum account balance and monthly credit limits).</td>
                             </tr>
                             <tr>
-                                <td><strong>Add Money to your Account</strong> (at Self-Service Terminal)</td>
-                                <td>Per Transaction: USD 3,000 / LBP 30,000,000</td>
-                                <td>Daily: USD 50,000 (or its equivalent in other currencies)</td>
-                                <td>Monthly: USD 50,000 (or its equivalent in other currencies)</td>
+                                <td><strong>Add Money to your Account</strong> (through our Appointed Agent)</td>
+                                <td colspan="3">Any amount (as long as the account balance does not exceed the maximum account balance and monthly credit limits). <br /> *Limit of LBP 15,000,000 per top-up transaction.</td>
                             </tr>
-
                             <tr>
-                                <td><strong>Add Money to your Account</strong> (at our Appointed Agent locations)</td>
-                                <td>Per Transaction: USD 3,000 / LBP 15,000,000</td>
-                                <td>Daily: USD 9,000 (or its equivalent in other currencies)</td>
-                                <td>Monthly: USD 50,000 (or its equivalent in other currencies)</td>
+                                <td><strong>Add Money to your Account</strong> (through our integrated ATMs)</td>
+                                <td colspan="3">Any amount (as long as the account balance does not exceed the maximum account balance and monthly credit limits). <br /> *Subject to ATM transaction limit.</td>
                             </tr>
-                           
                             <tr>
-                                <td><strong>Withdraw Money from your Account</strong> (at MyMonty branch)</td>
-                                <td colspan="3">Per Transaction: USD 30,000 (or its equivalent in other currencies) / Monthly: USD 50,000 (or its equivalent in other currencies)</td>
+                                <td><strong>Add Money to your Account</strong> (by using your local or international card)</td>
+                                <td colspan="3">Any amount (as long as the account balance does not exceed the maximum account balance and monthly credit limits).</td>
                             </tr>
-
                             <tr>
-                                <td><strong>Withdraw Money from your Account</strong> (at MyMonty Self-Service Terminal)</td>
-                                <td>Per Transaction: USD 3,000 / LBP 30,000,000</td>
-                                <td>Daily: USD 50,000 (or its equivalent in other currencies)</td>
-                                <td>Monthly: USD 50,000 (or its equivalent in other currencies)</td>
+                                <td><strong>Withdraw Money from your Account</strong> (through MyMonty Branch)</td>
+                                <td colspan="3">Up to the available balance.</td>
                             </tr>
-
                             <tr>
-                                <td><strong>Withdraw Money from your Account</strong> (at integrated ATMs)</td>
-                                <td>Per Transaction: USD 2,000 / LBP 3,000,000</td>
-                                <td>Daily: USD 9,000 (or its equivalent in other currencies)</td>
-                                <td>Monthly: USD 50,000 (or its equivalent in other currencies)</td>
+                                <td><strong>Withdraw Money from your Account</strong> (through our Appointed Agent)</td>
+                                <td colspan="3">Up to the available balance. <br /> *Limit of LBP 15,000,000 per withdrawal transaction.</td>
                             </tr>
-
+                            <tr>
+                                <td><strong>Withdraw Money from your Account</strong> (through our integrated ATMs)</td>
+                                <td colspan="3">* Maximum of USD 2,000 per transaction, up to the available USD balance. <br /> * Maximum of LBP 3,000,000 per transaction, up to the available LBP balance.</td>
+                            </tr>
                             <tr>
                                 <td><strong>E-Services</strong></td>
-                                <td>
-                                    Up to the available balance in your account.
-                                </td>
+                                <td colspan="3">Up to the available balance in your account.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -276,36 +228,26 @@ const pea = () => {
                     <table className='mm-table'>
                         <tbody>
                             <tr>
-                                <td>
-                                    <strong>Appointed Agent</strong>
-                                </td>
-                                <td>
-                                    Our Appointed Agent for adding money with cash to your eWallet Account, is “Online Money Transfer SAL (OMT). You can add money in cash at any OMT location in Lebanon. 
-                                </td>
+                                <td><strong>Using a card to add money</strong></td>
+                                <td>You can add money to your eWallet Account by using any accepted debit, credit or payment card regardless of the card’s currency (whether in Euro, GBP or otherwise).</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <strong>Integrated ATMs</strong>
-                                </td>
-                                <td>
-                                    You can withdraw money from your Account at any Fransabank SAL and BLC Bank SAL ATMs in Lebanon.
-                                </td>
+                                <td><strong>Appointed Agent</strong></td>
+                                <td>Our Appointed Agent for adding money with cash to your eWallet Account and withdrawing money in cash from your eWallet Account, is “Online Money Transfer SAL (OMT)”. You can add and withdraw money in cash at any OMT location in Lebanon. </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <strong>Our fees</strong>
-                                </td>
-                                <td>
-                                    All the percentages (%) stated in Section 2 above are based on transaction amount. If you come across any fees, commissions, or charges in this list that go over 0.5% for a particular transaction, just know they include the fees of our partners that we are collecting on their behalf.
-                                </td>
+                                <td><strong>Integrated ATMs</strong></td>
+                                <td>You can perform cash withdrawals and deposits through cardless transactions at any Fransabank SAL’s ATM in Lebanon.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Our fees</strong></td>
+                                <td>All the percentages (%) stated in Section 2 above are based on transaction amount. If you come across any fees, commissions, or charges in this list that go over 0.5% for a particular transaction, just know they include the fees of our partners that we are collecting on their behalf.</td>
                             </tr>
                             <tr>
                                 <td>
                                     <strong>Amendment</strong>
                                 </td>
-                                <td>
-                                    We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website <a className='text-blue-500 hover:underline' href="https://mymonty.com.lb" target='_blank'>www.mymonty.com.lb</a>  or App.
-                                </td>
+                                <td>We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website <a className='text-blue-500 hover:underline' href="https://mymonty.com.lb" target='_blank'>www.mymonty.com.lb</a> or App.</td>
                             </tr>
                         </tbody>
                     </table>
