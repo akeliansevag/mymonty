@@ -161,7 +161,7 @@ const Content = () => {
 
     const howToRedeem = [
         {
-            title: 'Visit the <a target="_blank" href="https://lingokids.com/mastercardmea" style="color:#2657d4">Lingokids Mastercard page</a>, enter the promo code, and click <strong>Redeem</strong>.'
+            title: 'Visit the <a target="_blank" href="https://lingokids.com/mastercardmea" style="color:#2657d4">Lingokids Mastercard page</a>, enter the promo code MASTERCARD50, and click <strong>Redeem</strong>.'
         },
         {
             title: 'Enter your email and complete payment.'
@@ -209,7 +209,7 @@ const Content = () => {
                             </div>
                         </div>
 
-                        <div className='flex max-lg:flex-col lg:justify-between lg:items-center gap-10'>
+                        {/* <div className='flex max-lg:flex-col lg:justify-between lg:items-center gap-10'>
                             <div className='lg:w-3/5'>
                                 <h2 className="smaller-title text-balance">Cleartrip Flight & Hotel Bookings</h2>
                                 <div>
@@ -225,7 +225,7 @@ const Content = () => {
                                 <img className='absolute w-full h-full object-cover top-0 left-0' src='/cleartrip2.webp' width='1000' height='666' />
                                 <Promo code="MCPLATINUM" />
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="flex max-lg:flex-col max-lg:gap-10 gap-10 lg:items-center">
                             <div className="lg:w-3/5">
@@ -241,7 +241,7 @@ const Content = () => {
 
                             <div className="lg:w-3/5">
                                 <h2 className="smaller-title">IHG Hotels And Resorts</h2>
-                                <p>When booking through their <a target="_blank" className="text-[var(--mm-blue)]" href="https://www.ihg.com/hotels/gb/en/reservation?fromRedirect=true&qSrt=sAV&setPMCookies=true&dp=true&gclid=CjwKCAjwpbi4BhByEiwAMC8JnSKGU1pK2JvmPQGdy6dYXU-Avkms3WDYhqMkwPW7uCt-9_Vm0x6O3RoCHf0QAvD_BwE&cm_mmc=PDSEA-_-G_F-IMEA_FS-MEA_H-IMEA_HS-MEA_6C_BSF_EXM_CORE-IHG_EN&srb_u=1">website</a>, you get a <strong>15% discount</strong> and exclusive offers on IHG Hotels & Resorts across Europe, Maldives, India, the Middle East & Africa. </p>
+                                <p>When booking through their <a target="_blank" className="text-[var(--mm-blue)]" href="http://www.ihg.com/mastercardoffer">website</a>, you get a <strong>15% discount</strong> and exclusive offers on IHG Hotels & Resorts across Europe, Maldives, India, the Middle East & Africa. </p>
                             </div>
                             <div className="lg:w-2/5">
                                 <img src="/hotel-resorts2.webp" alt="Hotel Bookings" width="680" height="534" />
@@ -252,7 +252,7 @@ const Content = () => {
                         <div className="flex flex-col gap-10">
                             <div className="text-center">
                                 <h2 className="smaller-title">Booking.com</h2>
-                                <p>Get <strong>10% money back</strong> on your next stay through <a href="https://booking.com" target="_blank" className="text-[--mm-blue]">Booking.com</a>!</p>
+                                <p>Get <strong>10% money back</strong> on your next stay through <a href="https://www.booking.com/gating/authkey?aid=2439504&key=mjB3VcxhAl" target="_blank" className="text-[--mm-blue]">Booking.com</a>!</p>
 
                             </div>
                             <div className="lg:aspect-[16/5] max-lg:aspect-[16/12] relative flex items-end justify-end">
@@ -287,7 +287,7 @@ const Content = () => {
                         <div className="flex flex-col gap-5">
                             <div className="text-center">
                                 <h2 className="smaller-title">AVIS Car Rental</h2>
-                                <p>Enjoy <strong>20% off</strong> your next car rental and a complimentary upgrade with Avis through their <a target="_blank" className="text-[var(--mm-blue)]" href="https://avisworld.com/">website</a>.</p>
+                                <p>Enjoy <strong>20% off</strong> your next car rental and a complimentary upgrade with Avis through their <a target="_blank" className="text-[var(--mm-blue)]" href="https://avisworld.com/mastercardmea">website</a>.</p>
                             </div>
                             <div>
                                 <img src="/avis.webp" alt="booking" width="1740" height="814" />
@@ -302,7 +302,7 @@ const Content = () => {
                         <div className="flex max-lg:flex-col lg:justify-between gap-10">
                             <div className='lg:w-3/5'>
                                 <h2 className="smaller-title">Rentalcars.com</h2>
-                                <p className='lg:w-1/2'>Enjoy 10% off car rentals when booking through <a target="_blank" className="text-[var(--mm-blue)]" href="https://rentalcars.com">Rentalcars.com</a>.</p>
+                                <p className='lg:w-1/2'>Enjoy 10% off car rentals when booking through <a target="_blank" className="text-[var(--mm-blue)]" href="https://www.rentalcars.com/?affiliateCode=mastercard047&enabler=mastercardme">Rentalcars.com</a>.</p>
                             </div>
 
                             <div className="lg:w-2/5 relative aspect-video rounded-[40px] overflow-hidden">
@@ -313,7 +313,7 @@ const Content = () => {
                         <div className="flex max-lg:flex-col lg:justify-between gap-10">
                             <div className='lg:w-3/5'>
                                 <h2 className="smaller-title">Budget Truck & Car Rental</h2>
-                                <p className='lg:w-1/2'>Get <strong>up to 10%</strong> off on your next car or truck rental with Budget through their <a className="text-[var(--mm-blue)]" target="_blank" href="https://one.budgetinternational.com/en_GB/Budget-MastercardMEA/">website</a>. </p>
+                                <p className='lg:w-1/2'>Get <strong>up to 10%</strong> off on your next car or truck rental with Budget through their <a className="text-[var(--mm-blue)]" target="_blank" href="www.budgetinternational.com/mastercard">website</a>. </p>
 
                             </div>
                             <div className='lg:w-2/5'>
@@ -395,7 +395,7 @@ const Content = () => {
                                 </ul>
                                 <p className="mt-8">
                                     In case of damage, you can either get a new item to replace the damaged one or receive compensation for the item’s total value, as per the store receipt. <br />
-                                    Simply visit their <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com/">website</a> to file a claim.
+                                    Simply visit their <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com/platinum">website</a> to file a claim.
                                 </p>
                             </div>
                             <div className="lg:w-2/5">
@@ -428,7 +428,7 @@ const Content = () => {
                                     }
                                 </ul>
                                 <p className="mt-8">
-                                    Visit their <a target="_blank" className="text-[var(--mm-blue)]" href="https://www.thebicestercollection.com/en/destinations">website</a> to avail these offers.
+                                    Visit their <a target="_blank" className="text-[var(--mm-blue)]" href="https://thebicestervillageshoppingcollection.com/mastercard-mea">website</a> to avail these offers.
                                 </p>
                             </div>
                             <div className="lg:w-2/5 rounded-[40px] relative overflow-hidden">
@@ -563,7 +563,7 @@ const Content = () => {
                                         ))
                                     }
                                 </div>
-                                <a href="https://www.vaidam.com/mastercard-offers" target='_blank' className='mm-button blue'>Subscribe Now</a>
+                                <a href="https://getfiit.tv/mastercard" target='_blank' className='mm-button blue'>Subscribe Now</a>
                             </div>
 
                             <div className="lg:w-2/5 relative aspect-[5/4] rounded-[40px] overflow-hidden">

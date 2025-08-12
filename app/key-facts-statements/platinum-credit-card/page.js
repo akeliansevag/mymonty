@@ -13,15 +13,13 @@ const pea = () => {
     return (
         <div>
          
-            <FooterBanner downloadURL="/platinum-credit-card-kfs.pdf" title="MyMonty Platinum Credit Card: Key Facts & Disclosures" />
+            <FooterBanner downloadURL="/Credit Card KFS (Offline)_ 2.7.25.pdf" title="MyMonty Platinum Credit Card: Key Facts & Disclosures" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PLATINUM CREDIT CARD - KEY FACTS STATEMENT  <br />
-                        (V.1.6 – 23 May 2025)</strong> </p>
+                        (V.1.7 – 02 July 2025)</strong> </p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty
-                    Mastercard Platinum Credit Card offered by Monty Finance S.A.L. (“Card”). This KFS does not contain all the terms and conditions
-                    governing the Card and it should be read along with the Credit Cards Terms and Conditions and the Credit Card Application Form. </p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Platinum Credit Card offered by Monty Finance S.A.L. (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the Credit Cards Terms and Conditions and the Credit Card Application Form of which it forms an integral part. </p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
@@ -113,14 +111,14 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td><strong>Primary Card Annual Fee</strong></td>
-                                <td>USD 150</td>
+                                <td>USD 75</td>
                                 <td><strong>Card Delivery (local)</strong></td>
                                 <td>Free of Charge</td>
                             </tr>
 
                             <tr>
                                 <td><strong>Supplementary Card Annual Fee</strong></td>
-                                <td>USD 100</td>
+                                <td>USD 50</td>
                                 <td><strong>Card Delivery (international)</strong></td>
                                 <td>Pass-Through Cost</td>
                             </tr>
@@ -141,15 +139,12 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td><strong>Monthly Interest Rate on outstanding balance </strong></td>
-                                <td colSpan={3}>
-                                    <ul>
-                                        <li>POS and Online transactions: 1.99%</li>
-                                        <li>
-                                            ATMs transactions*: 2.5%
-                                            <p className='text-sm'>* Interest Rate is applicable as from the transaction date</p>
-                                        </li>
-
-                                    </ul>
+                                <td colSpan={2}>
+                                    POS and Online transactions: 1.99%
+                                </td>
+                                <td colSpan={2}>
+                                    ATMs transactions*: 2.5%
+                                    <p className='text-sm'>* Interest Rate is applicable as from the transaction date</p>
                                 </td>
                             </tr>
 
@@ -172,17 +167,17 @@ const pea = () => {
                                 <td colSpan={4} className='table-heading'>Transactions (Point of Sale [POS] and Online)</td>
                             </tr>
                             <tr>
-                                <td><strong>Transaction Fee (when you use your Card for the purchase of goods or services in Lebanon)</strong></td>
+                                <td><strong>Transaction Fee</strong> (when you use your Card for the purchase of goods or services in Lebanon)</td>
                                 <td colSpan={3}>Free of Charge</td>
                             </tr>
 
                             <tr>
-                                <td><strong>Foreign currency conversion fee (if the Card is used for purchases in a currency other than USD)</strong></td>
+                                <td><strong>Foreign currency conversion fee</strong> (if the Card is used for purchases in a currency other than USD)</td>
                                 <td colSpan={3}>4% of the transaction amount</td>
                             </tr>
 
                             <tr>
-                                <td><strong>Cross border fee (if the Card is used for USD purchases with any merchant located outside Lebanon)</strong></td>
+                                <td><strong>Cross border fee</strong> (if the Card is used for USD purchases with any merchant located outside Lebanon)</td>
                                 <td colSpan={3}>1.5% with a minimum of USD 0.5 per transaction</td>
                             </tr>
 
@@ -190,19 +185,19 @@ const pea = () => {
                                 <td colSpan={4} className='table-heading'>ATM Withdrawals</td>
                             </tr>
                             <tr>
-                                <td><strong>ATM Withdrawal (when using Integrated ATMs)</strong></td>
+                                <td><strong>ATM Withdrawal</strong> (when using Integrated ATMs)</td>
                                 <td colSpan={3}>USD 7 per transaction</td>
                             </tr>
                             <tr>
-                                <td><strong>ATM Withdrawal (when using other Local ATMs) </strong></td>
-                                <td colSpan={3}>USD 10 per transaction</td>
-                            </tr>
-                            <tr>
-                                <td><strong>ATM Withdrawal (when using an ATM outside Lebanon) </strong></td>
+                                <td><strong>ATM Withdrawal</strong> (when using other Local ATMs)</td>
                                 <td colSpan={3}>USD 10 per transaction (some banks may apply additional fees)</td>
                             </tr>
                             <tr>
-                                <td><strong>Foreign currency conversion fee (if the Card is used for withdrawals in any currency other than USD)</strong></td>
+                                <td><strong>ATM Withdrawal</strong> (when using an ATM outside Lebanon)</td>
+                                <td colSpan={3}>USD 10 per transaction (some banks may apply additional fees)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Foreign currency conversion fee</strong> (if the Card is used for withdrawals in any currency other than USD)</td>
                                 <td colSpan={3}>4% of the transaction amount</td>
                             </tr>
 
@@ -308,25 +303,19 @@ const pea = () => {
                     <h2>5. USEFUL INFORMATION</h2>
                     <table className='mm-table'>
                         <tbody>
-
                             <tr>
-                                <td><strong>Withdrawing money in cash from your Card in Lebanon at Integrated
-                                    ATMs</strong></td>
-                                <td colSpan={3}>You can withdraw money in cash at any Fransabank SAL s ATM in Lebanon.</td>
+                                <td><strong>ATM Withdrawal in Lebanon</strong></td>
+                                <td colSpan={3}>
+                                    <ul class="list-disc list-inside">
+                                        <li>Issuer’s ATM refers to Fransabank SAL ATMs</li>
+                                        <li>Withdrawals from other local ATMs are limited to BLC Bank SAL ATMs at this stage.</li>
+                                    </ul>
+                                </td>
                             </tr>
                             <tr>
-                                <td><strong>Withdrawing money in cash from your Card in Lebanon at Local ATMs</strong></td>
-                                <td colSpan={3}>You can withdraw money in cash at any BLC SAL’s ATM in Lebanon.</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Reward Program </strong></td>
+                                <td><strong>Reward Program</strong></td>
                                 <td colSpan={3}>1% Cashback on any amount spent at Points of Sale or Online</td>
                             </tr>
-
-
-
-
-
                         </tbody>
 
                     </table>

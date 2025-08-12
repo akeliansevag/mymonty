@@ -118,7 +118,6 @@ const SectionFour = () => {
                                 <img className='w-1/2 mx-auto' alt='Logo' src={logo.logo} width='100%' height='100%' />
                             </div>
                         </SwiperSlide>
-                        
                     )
                 })}
             </Swiper>

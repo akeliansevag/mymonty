@@ -109,7 +109,7 @@ const Footer = () => {
                                 <span className='mb-0 sm:mb-5 block' >
                                     {item?.url && (
                                         <div className='flex justify-between item cursor-pointer' onClick={() => handleClick(index)}>
-                                            <Link href={item.url}  className='has-children' rel={item?.noIndex ? 'nofollow' : ''}>
+                                            <Link href={item.url}  className='has-children' {...(item?.noIndex ? { rel: 'nofollow' } : {})}>
                                                 {item?.title}
                                             </Link>
                                             <div className='md:hidden'>
@@ -138,7 +138,7 @@ const Footer = () => {
                                             return (
                                                 <li key={index2} className='mt-2 text-base opacity-60 hover:opacity-100'>
                                                     {child?.url && (
-                                                        <Link rel={child?.noIndex ? 'nofollow' : ''} href={child.url}>{child.title}</Link>
+                                                        <Link {...(child?.noIndex ? { rel: 'nofollow' } : {})} href={child.url}>{child.title}</Link>
                                                     )}
                                                     {!child?.url && (
                                                         child.title

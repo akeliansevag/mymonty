@@ -13,11 +13,11 @@ const pea = () => {
     return (
         <div>
      
-            <FooterBanner downloadURL="/world-elite-kfs.pdf" title="MyMonty World Elite Credit Card: Key Facts & Disclosures" />
+            <FooterBanner downloadURL="/World-Elite-V.02.pdf" title="MyMonty World Elite Credit Card: Key Facts & Disclosures" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC WORLD ELITE CREDIT CARD - KEY FACTS STATEMENT  <br />
-                        (V.1.2 – 23 May 2025)</strong> </p>
+                        (V.1.2 – 04 June 2025)</strong> </p>
 
                 <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard World Elite Credit Card offered by Monty Finance S.A.L. (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the Credit Cards Terms and Conditions and the Credit Card Application Form. </p>
 
@@ -244,13 +244,13 @@ const pea = () => {
                             </tr>
 
                             <tr>
-                                <td colSpan={2}><strong>ATM Withdrawal (when using Integrated ATMs)</strong></td>
+                                <td colSpan={2}><strong>ATM Withdrawal (when using issuer’s ATMs)</strong></td>
                                 <td colSpan={2}>USD 7 per transaction</td>
                             </tr>
 
                             <tr>
-                                <td colSpan={2}><strong>ATM Withdrawal (when using other Local ATMs)</strong></td>
-                                <td colSpan={2}>USD 10 per transaction</td>
+                                <td colSpan={2}><strong>ATM Withdrawal (when using other local ATMs)</strong></td>
+                                <td colSpan={2}>USD 10 per transaction (some banks may apply additional fees)</td>
                             </tr>
                             <tr>
                                 <td colSpan={2}><strong>ATM Withdrawal (when using an ATM outside Lebanon)</strong></td>
@@ -326,14 +326,29 @@ const pea = () => {
                                 <td><strong>Maximum Withdrawal Limit</strong></td>
                                 <td>USD 2,000 Monthly</td>
                             </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <div className='table-wrapper'>
+                    <h2>5. USEFUL INFORMATION</h2>
+                    <table className='mm-table'>
+                        <tbody>
                             <tr>
-                                <td><strong>Withdrawing money in cash from your Card in Lebanon at Integrated ATMs</strong></td>
-                                <td>You can withdraw money in cash at any Fransabank SAL s ATM in Lebanon.</td>
+                                <td><strong>ATM Withdrawal in Lebanon</strong></td>
+                                <td>
+                                    <ul class="list-disc list-inside">
+                                        <li>
+                                            Issuer’s ATM refers to Fransabank SAL ATMs
+                                        </li>
+                                        <li>
+                                            Withdrawals from other local ATMs are limited to BLC Bank SAL ATMs at this stage.
+                                        </li>
+                                    </ul>
+                                </td>
                             </tr>
-                            <tr>
-                                <td><strong>Withdrawing money in cash from your Card in Lebanon at Local ATMs</strong></td>
-                                <td>You can withdraw money in cash at any BLC SAL s ATM in Lebanon.</td>
-                            </tr>
+                           
                             <tr>
                                 <td><strong>Reward Program</strong></td>
                                 <td>1% Cashback on any amount spent at Points of Sale or Online</td>
@@ -342,7 +357,6 @@ const pea = () => {
 
                     </table>
                 </div>
-
 
             </div>
 

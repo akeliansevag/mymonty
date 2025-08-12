@@ -13,17 +13,17 @@ const pea = () => {
     return (
         <div>
        
-            <FooterBanner downloadURL="/KFS Physical card.pdf" title="MyMonty Physical Prepaid Card: Key Facts & Statements" />
+            <FooterBanner downloadURL="/KFS-Business-Platinum-Prepaid-Card.pdf" title="MyMonty Physical Prepaid Card: Key Facts & Statements" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PLATINUM PREPAID CARD (PHYSICAL) - KEY FACTS STATEMENT  <br />
-                        (V.1.5 – 23 May 2025)</strong> </p>
+                        (V.1.0 – 07 August 2025)</strong> </p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Platinum Physical Prepaid Card offered by Monty Finance SAL (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the Prepaid Cards Terms and Conditions. </p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Business Platinum Prepaid Mastercard offered by Monty Finance SAL (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Business Prepaid Mastercard Terms</a>.</p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
-                    <p>The Card is a physical, reloadable Mastercard prepaid card linked to your MyMonty eWallet Account on the MyMonty App. Funds must be loaded onto the Card before use. You can top up the Card exclusively from your MyMonty eWallet USD balance. The Card allows cash withdrawals at ATMs and purchases wherever Mastercard Prepaid Cards are accepted, provided there is sufficient available balance for the transaction amount. The Card is neither a credit nor a debit card, and the balance on the Card does not accrue any interest.</p>
+                    <p>The Card is a physical, reloadable Mastercard prepaid card linked to your MyMonty eWallet Account on the MyMonty App. Funds must be loaded onto the Card before use. You can top up the Card exclusively from your MyMonty eWallet USD balance. The Card allows cash withdrawals at ATMs and purchases wherever Mastercard Prepaid Cards are accepted, provided there is sufficient available balance for the transaction amount. The Card is made available to your team members for business purposes only, and may not be used for personal, family or household purposes. The Card is neither a credit, a debit, nor a gift card, and the balance on the Card does not accrue any interest.</p>
                     <table className='mm-table'>
                         <tbody>
                             <tr>
@@ -69,16 +69,16 @@ const pea = () => {
                                 <td>Pass-Through Cost</td>
                             </tr>
                             <tr>
-                                <td><strong>Replacement Card Fee (Lost, stolen, fraud or damaged)</strong></td>
+                                <td><strong>Replacement Card Fee</strong> (Lost, stolen, fraud or damaged)</td>
                                 <td>USD 9</td>
-                                <td><strong>Card Termination </strong></td>
+                                <td><strong>Card Cancellation </strong></td>
                                 <td>Free of charge</td>
                             </tr>
                             <tr>
                                 <td className='table-heading' colSpan={4}>Card Top-up</td>
                             </tr>
                             <tr>
-                                <td colSpan={2}><strong>Adding money to your Card (from your MyMonty eWallet)</strong></td>
+                                <td colSpan={2}><strong>Adding money to your Card</strong> (from your MyMonty eWallet)</td>
                                 <td colSpan={2}>Free of charge</td>
                             </tr>
 
@@ -86,7 +86,7 @@ const pea = () => {
                                 <td className='table-heading' colSpan={4}>eWallet Top-up</td>
                             </tr>
                             <tr>
-                                <td colSpan={2}><strong>Adding money to your MyMonty eWallet (from your Card)</strong></td>
+                                <td colSpan={2}><strong>Adding money to your MyMonty eWallet</strong> (from your Card)</td>
                                 <td colSpan={2}>Free of charge</td>
 
                             </tr>
@@ -95,22 +95,16 @@ const pea = () => {
                                 <td className='table-heading' colSpan={4}>Transactions (Point of Sale [POS] and Online)</td>
                             </tr>
                             <tr>
-                                <td colSpan={2}><strong>Transaction Fee (when you use your Card for the purchase of goods or services)
-                                </strong></td>
-                                <td colSpan={2}>Free of charge
-                                </td>
+                                <td colSpan={2}><strong>Transaction Fee</strong> (when you use your Card for the purchase of goods or services)</td>
+                                <td colSpan={2}>Free of charge</td>
                             </tr>
                             <tr>
-                                <td colSpan={2}><strong>Foreign currency conversion fee (if the Card is used for purchases in a currency other than USD)
-                                </strong></td>
-                                <td colSpan={2}>4% of the transaction amount
-                                </td>
+                                <td colSpan={2}><strong>Foreign currency conversion fee</strong> (if the Card is used for purchases in a currency other than USD)</td>
+                                <td colSpan={2}>4% of the transaction amount</td>
                             </tr>
                             <tr>
-                                <td colSpan={2}><strong>Cross border fee (if the Card is used for USD purchases with any merchant located outside Lebanon)
-                                </strong></td>
-                                <td colSpan={2}>1.5% with a minimum of USD 0.50 per transaction
-                                </td>
+                                <td colSpan={2}><strong>Cross border fee</strong> (if the Card is used for USD purchases with any merchant located outside Lebanon)</td>
+                                <td colSpan={2}>1.5% with a minimum of USD 0.50 per transaction</td>
                             </tr>
 
 
@@ -118,19 +112,19 @@ const pea = () => {
                                 <td className='table-heading' colSpan={4}>ATM Withdrawals</td>
                             </tr>
                             <tr>
-                                <td colSpan={2}><strong>When using Integrated ATMs in Lebanon</strong></td>
+                                <td colSpan={2}><strong>ATM Withdrawal</strong> (when using Issuer’s ATMs)</td>
                                 <td colSpan={2}>1% of the transaction amount, with a minimum of USD 1</td>
                             </tr>
                             <tr>
-                                <td colSpan={2}><strong>When using Local ATMs in Lebanon</strong></td>
-                                <td colSpan={2}>1% of the transaction amount, with a minimum of USD 1</td>
+                                <td colSpan={2}><strong>ATM Withdrawal</strong> (when using other local ATMs)</td>
+                                <td colSpan={2}>1% of the transaction amount, with a minimum of USD 1 (some banks may apply additional fees)</td>
                             </tr>
                             <tr>
-                                <td colSpan={2}><strong>ATM Withdrawal (when using an ATM outside Lebanon)</strong></td>
+                                <td colSpan={2}><strong>ATM Withdrawal</strong> (when using an ATM outside Lebanon)</td>
                                 <td colSpan={2}>USD 3.75 + 2% of the transaction amount (some banks may apply additional fees)</td>
                             </tr>
                             <tr>
-                                <td colSpan={2}><strong>Foreign currency conversion fee (if the Card is used for withdrawals in any currency other than USD)</strong></td>
+                                <td colSpan={2}><strong>Foreign currency conversion fee</strong> (if the Card is used for withdrawals in any currency other than USD)</td>
                                 <td colSpan={2}>4% of the transaction amount</td>
                             </tr>
 
@@ -177,7 +171,7 @@ const pea = () => {
                                 <td>
                                     Maximum Card Balance at any time
                                 </td>
-                                <td>
+                                <td colspan={3}>
                                     USD 9,999
 
                                 </td>
@@ -287,26 +281,21 @@ const pea = () => {
                         <tbody>
                             <tr>
                                 <td>
-                                    <strong>Withdrawing money in cash from your Card in Lebanon at Integrated ATMs</strong>
+                                    <strong>ATM Withdrawal in Lebanon</strong>
                                 </td>
                                 <td>
-                                    You can withdraw money in cash at any Fransabank SAL’s ATM in Lebanon.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <strong>Withdrawing money in cash from your Card in Lebanon at Local ATMs</strong>
-                                </td>
-                                <td>
-                                    You can withdraw money in cash at any BLC SAL ’s ATM in Lebanon.
+                                    <ul class="list-disc list-inside">
+                                        <li>Issuer refers to Fransabank SAL.</li>
+                                        <li>Withdrawal from other local ATMs is currently limited to BLC Bank SAL.</li>
+                                    </ul>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <strong>Card Balance Reimbursement upon Expiry or Termination</strong>
+                                    <strong>Card Balance Reimbursement upon Expiry</strong>
                                 </td>
                                 <td>
-                                    If your card is expired or terminated, you can request a reimbursement within 2 months from the expiry or termination date. After 2 months, any remaining balance will be forfeited.
+                                    If your card expires, you can request the reimbursement of the balance within 2 months from the expiry date. After 2 months, any remaining balance will be forfeited.
                                 </td>
                             </tr>
                             <tr>

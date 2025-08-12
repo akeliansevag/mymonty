@@ -73,6 +73,34 @@ const Content = () => {
         }
     ];
 
+    const howToUseVaidam = [
+        {
+            title: 'Step 1: Go to www.vaidam.com/mastercard-offers'
+        },
+        {
+            title: 'Step 2: Select Between a complimentary second opinion or a treatment'
+        },
+        {
+            title: 'Step 3: Fill up the inquiry form with the needed information'
+        },
+         {
+            title: 'Step 4: Follow the step to redeem the benefit'
+        },
+        {
+            title: 'Step 5: Enjoy the medical services.'
+        },
+
+    ];
+
+    const howToUseConcierge = [
+        {
+            title: 'First call the Mastercard Travel & Lifestyle Concierge +1-332-600-6813'
+        },
+        {
+            title: 'Text the Mastercard Travel & Lifestyle Concierge WhatsApp line in Arabic or English.'
+        },
+    ];
+
   return (
     <div className="container py-10 lg:py-20">
         <div className="flex max-md:flex-col gap-x-5">
@@ -104,7 +132,7 @@ const Content = () => {
                                     {
                                         howToUse.map((item, index) => 
                                             (
-                                                <li key={index+1} className="flex gap-3 mb-3 text-lg">
+                                                <li key={index+1} className="flex gap-3 mb-3">
                                                     <span className="bg-transparent">{index+1}</span> 
                                                     <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
                                                 </li>
@@ -128,7 +156,7 @@ const Content = () => {
                                     {
                                         howToUse.map((item, index) => 
                                             (
-                                                <li key={index+1} className="flex gap-3 mb-3 text-lg">
+                                                <li key={index+1} className="flex gap-3 mb-3">
                                                     <span className="bg-transparent">{index+1}</span> 
                                                     <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
                                                 </li>
@@ -143,7 +171,7 @@ const Content = () => {
                         </div>    
                     </div>       
                     
-                    <div className='flex max-lg:flex-col lg:justify-between lg:items-center gap-10'>
+                    {/* <div className='flex max-lg:flex-col lg:justify-between lg:items-center gap-10'>
                         <div className='lg:w-3/5'>
                             <h2 className="smaller-title text-balance">Cleartrip Flight & Hotel Bookings</h2>
                             <div>
@@ -159,7 +187,7 @@ const Content = () => {
                             <img className='absolute w-full h-full object-cover top-0 left-0' src='/cleartrip2.webp' width="1000" height="666"  />
                             <Promo code="MCWORLDELITE"/>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="flex max-lg:flex-col gap-10">
                         <div className="lg:w-3/5">
@@ -170,7 +198,7 @@ const Content = () => {
                                 {
                                     howToUseCosta.map((item, index) => 
                                         (
-                                            <li key={index+1} className="flex gap-3 mb-3 text-lg">
+                                            <li key={index+1} className="flex gap-3 mb-3">
                                                 <span className="flex">{index+1}</span> 
                                                 <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
                                             </li>
@@ -204,7 +232,7 @@ const Content = () => {
                         
                         <div className="lg:w-3/5">
                             <h2 className="smaller-title">IHG Hotels And Resorts</h2>
-                            <p>When booking through their <a target="_blank" className="text-[var(--mm-blue)]" href="https://www.ihg.com/hotels/gb/en/reservation?fromRedirect=true&qSrt=sAV&setPMCookies=true&dp=true&gclid=CjwKCAjwpbi4BhByEiwAMC8JnSKGU1pK2JvmPQGdy6dYXU-Avkms3WDYhqMkwPW7uCt-9_Vm0x6O3RoCHf0QAvD_BwE&cm_mmc=PDSEA-_-G_F-IMEA_FS-MEA_H-IMEA_HS-MEA_6C_BSF_EXM_CORE-IHG_EN&srb_u=1">website</a>, you get a <strong>15% discount</strong> and exclusive offers on IHG Hotels & Resorts across Europe, Maldives, India, the Middle East & Africa. </p>
+                            <p>When booking through their <a target="_blank" className="text-[var(--mm-blue)]" href="http://www.ihg.com/mastercardoffer">website</a>, you get a <strong>15% discount</strong> and exclusive offers on IHG Hotels & Resorts across Europe, Maldives, India, the Middle East & Africa. </p>
                         </div>
                         <div className="lg:w-2/5">
                             <img src="/hotel-resorts2.webp" alt="Hotel Bookings" width="680" height="534" />
@@ -215,7 +243,7 @@ const Content = () => {
                     <div className="flex flex-col gap-10">
                         <div className="text-center">
                             <h2 className="smaller-title">Booking.com</h2>
-                            <p>Get <strong>10% money back</strong> on your next stay through <a href="https://booking.com" target="_blank" className="text-[--mm-blue]">Booking.com</a></p>
+                            <p>Get <strong>10% money back</strong> on your next stay through <a href="https://www.booking.com/gating/authkey?aid=2439504&key=mjB3VcxhAl" target="_blank" className="text-[--mm-blue]">Booking.com</a></p>
                             
                         </div>
                         <div className="lg:aspect-[16/5] max-lg:aspect-[16/12] relative flex items-end justify-end">
@@ -250,7 +278,7 @@ const Content = () => {
                     <div className="flex flex-col gap-5">
                         <div className="text-center">
                             <h2 className="smaller-title">AVIS Car Rental</h2>
-                            <p>Enjoy <strong>35% off</strong> your next car rental and a complimentary upgrade with Avis through their <a target="_blank" className="text-[var(--mm-blue)]" href="https://avisworld.com/">website</a>.</p>
+                            <p>Enjoy <strong>35% off</strong> your next car rental and a complimentary upgrade with Avis through their <a target="_blank" className="text-[var(--mm-blue)]" href="www.avisworld.com/mastercardmea">website</a>.</p>
                         </div>
                         <div>
                             <img src="/avis.webp" alt="booking" width="1740" height="814" />
@@ -272,7 +300,7 @@ const Content = () => {
                     <div className="flex max-lg:flex-col lg:justify-between gap-10">
                         <div className='lg:w-3/5'>
                             <h2 className="smaller-title">Budget Truck & Car Rental</h2>
-                            <p className='lg:w-2/3'>Get <strong>up to 10% off</strong> on your next car or truck rental. Simply visit <a className="text-[var(--mm-blue)]" target="_blank" href="https://one.budgetinternational.com/en_GB/Budget-MastercardMEA/">Budget’s website</a> and reserve your vehicle using your eligible Mastercard®.</p>
+                            <p className='lg:w-2/3'>Get <strong>up to 10% off</strong> on your next car or truck rental. Simply visit <a className="text-[var(--mm-blue)]" target="_blank" href="www.budgetinternational.com/mastercard">Budget’s website</a> and reserve your vehicle using your eligible Mastercard®.</p>
                             
                         </div>
                         <div className='lg:w-2/5'>
@@ -283,7 +311,7 @@ const Content = () => {
                     <div className="flex flex-col gap-5">
                         <div className="text-center">
                             <h2 className="smaller-title">Global Blue VIP Services</h2>
-                            <p>Present your Mastercard® at the entrance & get <strong>Complimentary access</strong> to <strong>Global Blue City VIP Lounges</strong> for VAT refund assistance & to <strong>Global Blue Airport VIP Fast Lanes</strong>. Register at <a target="_blank" className="text-[var(--mm-blue)]" href="https://registration.globalblue.com/gb/splash?flow=ncpt&sourceCode=OTPNS001MEAXXXXXX001">Global Blue's website</a> to set your eligible Mastercard® as the preferred refund target.</p>
+                            <p>Present your Mastercard® at the entrance & get <strong>Complimentary access</strong> to <strong>Global Blue City VIP Lounges</strong> for VAT refund assistance & to <strong>Global Blue Airport VIP Fast Lanes</strong>. Register at <a target="_blank" className="text-[var(--mm-blue)]" href="https://www.globalblue.com/mastercardmea">Global Blue's website</a> to set your eligible Mastercard® as the preferred refund target.</p>
                         </div>
                         
                         <div>
@@ -306,7 +334,7 @@ const Content = () => {
                     <div className="flex max-lg:flex-col lg:justify-between gap-10">
                         <div className='lg:w-3/5'>
                             <h2 className="smaller-title">Rentalcars.com</h2>
-                            <p className='lg:w-2/3'>Enjoy an exclusive <strong>10% discount</strong> when you book with your Mastercard on <a className="text-[var(--mm-blue)]" target="_blank" href="https://rentalcars.com">Rentalcars.com</a>.</p>
+                            <p className='lg:w-2/3'>Enjoy an exclusive <strong>10% discount</strong> when you book with your Mastercard on <a className="text-[var(--mm-blue)]" target="_blank" href="https://www.rentalcars.com/?affiliateCode=mastercard047&enabler=mastercardme">Rentalcars.com</a>.</p>
                             
                         </div>
                         <div className='lg:w-2/5'>
@@ -339,13 +367,12 @@ const Content = () => {
                                     <ul className="">
                                         {
                                             howToUseCosta.map((item, index) => 
-                                                    (
-                                                        <li key={index+1} className="flex gap-3 mb-3 text-lg">
-                                                            <span className="flex">{index+1}</span> 
-                                                            <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
-                                                        </li>
-                                                    )
-                                                    
+                                                (
+                                                    <li key={index+1} className="flex gap-3 mb-3">
+                                                        <span className="flex">{index+1}</span> 
+                                                        <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
+                                                    </li>
+                                                )
                                             )
                                         }
                                     </ul>
@@ -405,7 +432,7 @@ const Content = () => {
                     <div className="flex max-lg:flex-col gap-10 lg:justify-between">
                         <div className="lg:w-2/5">
                             <h2 className="smaller-title">Travel Insurance Confirmation Letter</h2>
-                            <p>Get your official Travel Insurance Confirmation Letter with World Elite Mastercard®.<br />Ensure visa requirements are met with coverage for parents and children.<br />Visit <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com/worldelite">asd</a> to generate your letter effortlessly!</p>
+                            <p>Get your official Travel Insurance Confirmation Letter with World Elite Mastercard®.<br />Ensure visa requirements are met with coverage for parents and children.<br />Visit <a target="_blank" className="text-[var(--mm-blue)]" href="https://mcpeaceofmind.com/worldelite">mcpeaceofmind.com/worldelite</a> to generate your letter effortlessly!</p>
                         </div>
                         <div className="lg:w-2/5">
                             <img src="/travel-insurance-confirmation-letter.webp" alt="Travel Insurance Confirmation Letter" width="680" height="501" />
@@ -418,7 +445,19 @@ const Content = () => {
                     <div className="flex max-lg:flex-col gap-10 lg:justify-between">
                         <div className="lg:w-2/5">
                             <h2 className="smaller-title">Mastercard Concierge</h2>
-                            <p>Access 24/7 VIP service with your World Elite Mastercard®. From booking travel to finding last-minute reservations, help is always a call or a message away.<br /><br />Chat anytime on WhatsApp or call your dedicated concierge number.<br /><br />For Arabic: +44 7418 368707<br />For English: +44 7418 368708</p>
+                            <p>Access 24/7 VIP service with your World Elite Mastercard®. From booking travel to finding last-minute reservations, help is always a call or a message away.<br /><br />Chat anytime on WhatsApp or call your dedicated concierge number.<br /><br />For Arabic: +44 7418 368707<br />For English: +44 7418 368708<br /><br /></p>
+                            <ul className="">
+                                {
+                                    howToUseConcierge.map((item, index) => 
+                                        (
+                                            <li key={index+1} className="flex gap-3 mb-3">
+                                                <span className="flex">{index+1}</span> 
+                                                <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
+                                            </li>
+                                        )
+                                    )
+                                }
+                            </ul>
                         </div>
                         <div className="lg:w-2/5 rounded-[40px] relative overflow-hidden">
                             <img src="/mastercard-concierge.webp" alt="Mastercard Concierge" width="680" height="689" />
@@ -427,11 +466,11 @@ const Content = () => {
 
                     <div className="flex max-lg:flex-col gap-10 lg:justify-between">
                         <div className="lg:w-2/5">
-                            <h2 className="smaller-title">European Shopping Collection</h2>
+                            <h2 className="smaller-title">Bicester Village Shopping Collection</h2>
                             <p>Up to <strong>15% off</strong> shopping packages, transfers, and more at Europe’s top designer outlets.<br />Get an extra 10% off with your VIP Card when you pay with your eligible Mastercard®. Unlock your benefits <a href="https://thebicestervillageshoppingcollection.com/mastercard-mea" target="_blank" className="text-[var(--mm-blue)]">here</a>.</p>
                         </div>
                         <div className="lg:w-2/5 rounded-[40px] relative overflow-hidden">
-                            <img src="/european-shopping-collection.webp" alt="European Shopping Collection" width="680" height="575" />
+                            <img src="/european-shopping-collection.webp" alt="Bicester Village Shopping Collection" width="680" height="575" />
                         </div>
                     </div>
 
@@ -459,8 +498,19 @@ const Content = () => {
 
                     <div className='flex max-lg:flex-col gap-10 lg:justify-between'>
                         <div className='lg:w-3/5'>
-                            <h2 className="smaller-title">Vaidam</h2>
-                            <p>Get world-class medical care with Vaidam and your Mastercard®.<br />Enjoy up to 10% off service fees, free second opinions, and concierge support in select countries.<br />Just visit <a target="_blank" className="text-[var(--mm-blue)]" href="https://www.vaidam.com/mastercard-offers">www.vaidam.com/mastercard-offers</a> to redeem your benefits.</p>
+                            <h2 className="smaller-title">Medical Tourism Concierge</h2>
+                            <p>Get world-class medical care with Vaidam and your Mastercard®.<br />Enjoy up to 10% off service fees, free second opinions, and concierge support in select countries.<br /><br /></p>
+                            <ul className="">
+                                {
+                                    howToUseVaidam.map((item, index) => 
+                                        (
+                                            <li key={index+1} className="flex gap-3 mb-3">
+                                                <span dangerouslySetInnerHTML={{ __html: item.title }}></span>
+                                            </li>
+                                        )
+                                    )
+                                }
+                            </ul>
                         </div>
                         
                         <div className="lg:w-2/5">
@@ -473,7 +523,7 @@ const Content = () => {
                         <div className="lg:w-2/5">
                             <div>
                                 <h2 className="smaller-title">Lingokids</h2>
-                                <p>1 week of complimentary Lingokids Plus access, 50% off all future monthly subscriptions for life & full access to premium content, even offline.<br /><br />Visit the <a target="_blank" className="text-[var(--mm-blue)]" href="https://lingokids.com/mastercardmea">Lingokids Mastercard page</a>, enter promo code, and click Redeem.</p>
+                                <p>1 week of complimentary Lingokids Plus access, 50% off all future monthly subscriptions for life & full access to premium content, even offline.<br /><br />Visit the <a target="_blank" className="text-[var(--mm-blue)]" href="https://lingokids.com/mastercardmea">Lingokids Mastercard page</a>, enter promo code MASTERCARD50, and click Redeem.</p>
                             </div>
                         </div>
                         
@@ -507,19 +557,19 @@ const Content = () => {
                                 
                                 <h3 className="mt-5 font-bold mb-3 max-md:mt-1 uppercase">to get your discount:</h3>
                                 <ul className="">
-                                    <li className="flex gap-3 mb-3 text-lg">
+                                    <li className="flex gap-3 mb-3">
                                         <span className="flex">1</span> 
                                         <span>Go to www.shahid.net/Mastercard</span>
                                     </li>
-                                    <li className="flex gap-3 mb-3 text-lg">
+                                    <li className="flex gap-3 mb-3">
                                         <span className="flex">2</span> 
                                         <span>Login or sign up for a Shahid account</span>
                                     </li> 
-                                    <li className="flex gap-3 mb-3 text-lg">
+                                    <li className="flex gap-3 mb-3">
                                         <span className="flex">3</span> 
                                         <span>Add your eligible MyMonty Mastercard® details</span>
                                     </li> 
-                                    <li className="flex gap-3 mb-3 text-lg">
+                                    <li className="flex gap-3 mb-3">
                                         <span className="flex">4</span> 
                                         <span>Redeem and enjoy streaming at half the price!</span>
                                     </li> 

@@ -8,7 +8,7 @@ import Modal from './components/Modal';
 import { useAppContext } from './AppContext';
 import Form from './components/Form';
 import { usePathname } from 'next/navigation';
-import NakhalBannerAd from './components/NakhalBannerAd';
+import BannerAd from './components/BannerAd';
 
 const App = ({ children }) => {
     const { handleOpenModal, handleCloseModal, openModal, setFormComponent, formComponent, largeWidth, setLargeWidth } = useAppContext();
@@ -21,9 +21,7 @@ const App = ({ children }) => {
                 <KhouryHome />
             )} */}
 
-            {pathname != '/nakhal' && (
-                <NakhalBannerAd />
-            )}
+            <BannerAd />
 
             <Modal formComponent={formComponent || dynamicFormComponent} isOpen={openModal} handleOpenModal={handleOpenModal} handleCloseModal={handleCloseModal} largeWidth={largeWidth} />
             <Header />
