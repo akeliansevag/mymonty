@@ -82,7 +82,7 @@ const NewCarousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                                 ? 'opacity-1'
                                 : 'opacity-0 -z-10';
                         return (
-                            <div key={index} className={`absolute py-14 lg:py-10 xl:py-10 transition-opacity ease-in duration-[400ms] h-full w-full ${contentClasses}`}>
+                            <div key={index} className={`absolute py-14 lg:pb-10 xl:pb-10 lg:pt-16  transition-opacity ease-in duration-[400ms] h-full w-full ${contentClasses}`}>
                                 <div className='container gap-6 flex flex-col h-full overflow-hidden text-center relative'>
                                     <div>
                                         {item.comingSoon && (
@@ -100,8 +100,8 @@ const NewCarousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                                     </div>
                                     {
                                         item?.contentImage && (
-                                            <div className='flex-1 relative flex justify-center'>
-                                                <img className={`scale-0 ${selectedIndex === index ? '!scale-100 ' : ''} pb-10 max-w-[250px] md:max-w-[350px] object-contain absolute h-full w-full block transition-all delay-500`} src={item.contentImage} width="536" height="656" alt="Image" />
+                                            <div className='flex-1 relative flex justify-center items-center'>
+                                                <img className={`scale-0 ${selectedIndex === index ? '!scale-100 ' : ''} pb-10 object-contain absolute h-[60%] w-full block transition-all delay-500`} src={item.contentImage} width="536" height="656" alt="Image" />
                                             </div>
                                         )
                                     }
@@ -116,7 +116,7 @@ const NewCarousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                     })
                 )
             }
-            <div className='absolute bottom-[20px] md:bottom-[20px] lg:bottom-[20px] w-full overflow-auto pb-4'>
+            <div className='absolute bottom-[20px] md:bottom-[30px] lg:bottom-[30px] w-full overflow-auto pb-4'>
                 <div className='container justify-left flex gap-5 md:justify-center'>
                     {data && data?.filters.map((filter, index2) => {
                         let buttonClasses = index2 === selectedIndex ? ' !bg-[#2657D4] !border-[#2657D4]' : '';

@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from '../components/Carousel';
+import NewCarousel from '../components/NewCarousel';
 
 const Benefits = () => {
     const carouselData = {
@@ -50,7 +50,7 @@ const Benefits = () => {
     };
   return (
     <div>
-      <Carousel data={carouselData} />
+      <NewCarousel data={carouselData} />
     </div>
   )
 }

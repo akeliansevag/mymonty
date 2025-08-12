@@ -3,6 +3,7 @@ import { websiteName } from '@/app/config';
 import Banner from './Banner';
 import Features from './Features';
 import Benefits from './Benefits';
+import Perks from './Perks';
 
 
 export const metadata = {
@@ -18,6 +19,7 @@ const Business = () => {
       <Banner />
       <Features />
       <Benefits />
+      <Perks />
     </div>
   );
 };
