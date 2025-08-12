@@ -9,7 +9,7 @@ export function NavigationEvents() {
     const searchParams = useSearchParams();
 
     useEffect(() => {
-        if (pathname == '/business') {
+        if (pathname == '/business' || pathname=='/salary-domiciliation') {
             document.body.classList.add('dark');
         } else {
             document.body.classList.remove('dark');

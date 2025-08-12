@@ -556,6 +556,10 @@ spline-viewer canvas {
   height: 140% !important;
 }
 
+.section-title {
+  @apply uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none;
+}
+
 @media (min-width: 0px) {
   .ml-container-align {
     margin-left: calc((100vw - 100%) / 2 + 1rem);
