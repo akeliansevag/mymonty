@@ -13,17 +13,15 @@ const pea = () => {
     return (
         <div>
            
-            <FooterBanner downloadURL="/KFS-Business-Virtual-Prepaid-Card.pdf" title="MyMonty Virtual Prepaid Card: Key Facts & Statements" />
+            <FooterBanner downloadURL="/KFS-Prepaid-Virtual-Card-16.7.25.pdf" title="MyMonty Virtual Prepaid Card: Key Facts & Statements" />
             <div className='container py-10 lg:py-20 relative'>
-                <p>
-                    <strong>MYMONTY MC PREPAID CARD (VIRTUAL) - KEY FACTS STATEMENT  <br />
-                        (V.1.0 – 07 August 2025)</strong> </p>
+                <p><strong>VIRTUAL PREPAID MASTERCARD - KEY FACTS STATEMENT <br /> (V.1.4 – 16 July 2025)</strong></p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Business Virtual Prepaid Mastercard offered by Monty Finance SAL (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Business Prepaid Mastercard Terms</a>.</p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“<strong>KFS</strong>”) provides you with information on the key features, limits, fees and charges of the Virtual Prepaid Mastercard offered by Monty Finance SAL (“<strong>Card</strong>”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the  <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Business Prepaid Mastercard Terms</a>.</p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
-                    <p>The Card is a virtual (non-physical) reloadable Mastercard prepaid card linked to your MyMonty eWallet Account and exists digitally in your MyMonty App. It only allows purchases to be made online. Money must be loaded to the Card before the Card is used. You can top-up the Card from your MyMonty eWallet only. The Card is made available to you for business purposes only, and may not be used for personal, family or household purposes. The Card is neither a credit, a debit or a gift Card, and the Card balance does not earn any interest.</p>
+                    <p>The Card is a virtual (non-physical) reloadable Mastercard prepaid card linked to your MyMonty eWallet Account and exists digitally in your MyMonty App. It only allows purchases to be made online. Money must be loaded to the Card before the Card is used. You can top-up the Card from your MyMonty eWallet only. The Card is not a credit or a debit Card, and the Card balance does not earn any interest.</p>
                     <table className='mm-table'>
                         <tbody>
                             <tr>
@@ -37,10 +35,6 @@ const pea = () => {
                             <tr>
                                 <td><strong>Eligibility</strong></td>
                                 <td><p>To be eligible for the Card you must have and maintain an eWallet Account with MyMonty.</p></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Reward Program</strong></td>
-                                <td><p>0.5% cashback of the purchase transaction amount spent at a Point of Sale or online.</p></td>
                             </tr>
                         </tbody>
 
@@ -64,7 +58,7 @@ const pea = () => {
                             <tr>
                                 <td><strong>Replacement Card Fee</strong></td>
                                 <td>Free of Charge</td>
-                                <td><strong>Card Cancellation</strong></td>
+                                <td><strong>Card Termination</strong></td>
                                 <td>Free of charge</td>
                             </tr>
                             <tr>
@@ -140,12 +134,8 @@ const pea = () => {
                                 <td className='table-heading' colSpan={4}>Card Top-up and Balance</td>
                             </tr>
                             <tr>
-                                <td>
-                                    Maximum Card Balance at any one time
-                                </td>
-                                <td colspan="3">
-                                    USD 5,000
-                                </td>
+                                <td>Maximum Card Balance at any one time</td>
+                                <td colspan="3">USD 5,000</td>
                             </tr>
 
 
@@ -154,32 +144,16 @@ const pea = () => {
                                 <td className='table-heading' colSpan={4}>Online Usage</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <strong>Maximum per Transaction</strong>
-                                </td>
-                                <td>
-                                    Up to the available balance
-                                </td>
-                                <td>
-                                    <strong>Maximum Weekly Usage</strong>
-                                </td>
-                                <td>
-                                    Up to the available balance
-                                </td>
+                                <td><strong>Maximum per Transaction</strong></td>
+                                <td>Up to the available balance</td>
+                                <td><strong>Maximum Weekly Usage</strong></td>
+                                <td>Up to the available balance</td>
                             </tr>
                             <tr>
-                                <td>
-                                    <strong>Maximum Daily Usage</strong>
-                                </td>
-                                <td>
-                                    Up to the available balance
-                                </td>
-                                <td>
-                                    <strong>Maximum Monthly Usage </strong>
-                                </td>
-                                <td>
-                                    Up to the available balance
-                                </td>
+                                <td><strong>Maximum Daily Usage</strong></td>
+                                <td>Up to the available balance</td>
+                                <td><strong>Maximum Monthly Usage</strong></td>
+                                <td>Up to the available balance</td>
                             </tr>
 
                         </tbody>
@@ -191,20 +165,8 @@ const pea = () => {
                     <table className='mm-table'>
                         <tbody>
                             <tr>
-                                <td>
-                                    <strong>Card Balance Reimbursement upon Expiry</strong>
-                                </td>
-                                <td>
-                                    If your card expires, you can request the reimbursement of the balance within 2 months from the expiry date. After 2 months, any remaining balance will be forfeited.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <strong>Amendment</strong>
-                                </td>
-                                <td>
-                                    We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website <a href="https://mymonty.com.lb" className='text-blue-500 hover:underline' target='_blank'>www.mymonty.com.lb</a> or App.
-                                </td>
+                                <td><strong>Amendment</strong></td>
+                                <td>We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website <a href="https://mymonty.com.lb" className='text-blue-500 hover:underline' target='_blank'>www.mymonty.com.lb</a> or App.</td>
                             </tr>
 
                         </tbody>
