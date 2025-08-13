@@ -36,10 +36,8 @@ const cards = () => {
 
     const terms = {
         termsAndConditions: false, 
-        kfs: 'KFS-Business-Platinum-Prepaid-Card.pdf'
+        kfs: 'KFS-Prepaid-Card-(Physical)-with-Supp-(003).pdf'
     }
-    
-
 
     return (
         <>

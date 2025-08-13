@@ -13,13 +13,13 @@ const pea = () => {
     return (
         <div>
        
-            <FooterBanner downloadURL="/KFS-Business-Platinum-Prepaid-Card.pdf" title="MyMonty Physical Prepaid Card: Key Facts & Statements" />
+            <FooterBanner downloadURL="/KFS-Prepaid-Card-(Physical)-with-Supp-(003).pdf" title="MyMonty Physical Prepaid Card: Key Facts & Statements" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PLATINUM PREPAID CARD (PHYSICAL) - KEY FACTS STATEMENT  <br />
-                        (V.1.0 – 07 August 2025)</strong> </p>
+                        (V.1.6 – 04 June 2025)</strong> </p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Business Platinum Prepaid Mastercard offered by Monty Finance SAL (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Business Prepaid Mastercard Terms</a>.</p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“<strong>KFS</strong>”) provides you with information on the key features, limits, fees and charges of the MyMonty Business Platinum Prepaid Mastercard offered by Monty Finance SAL (“<strong>Card</strong>”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Business Prepaid Mastercard Terms</a>.</p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
@@ -71,7 +71,7 @@ const pea = () => {
                             <tr>
                                 <td><strong>Replacement Card Fee</strong> (Lost, stolen, fraud or damaged)</td>
                                 <td>USD 9</td>
-                                <td><strong>Card Cancellation </strong></td>
+                                <td><strong>Card Termination</strong></td>
                                 <td>Free of charge</td>
                             </tr>
                             <tr>
@@ -88,7 +88,6 @@ const pea = () => {
                             <tr>
                                 <td colSpan={2}><strong>Adding money to your MyMonty eWallet</strong> (from your Card)</td>
                                 <td colSpan={2}>Free of charge</td>
-
                             </tr>
 
                             <tr>
@@ -112,7 +111,7 @@ const pea = () => {
                                 <td className='table-heading' colSpan={4}>ATM Withdrawals</td>
                             </tr>
                             <tr>
-                                <td colSpan={2}><strong>ATM Withdrawal</strong> (when using Issuer’s ATMs)</td>
+                                <td colSpan={2}><strong>ATM Withdrawal</strong> (when using issuer’s ATMs)</td>
                                 <td colSpan={2}>1% of the transaction amount, with a minimum of USD 1</td>
                             </tr>
                             <tr>
@@ -173,7 +172,6 @@ const pea = () => {
                                 </td>
                                 <td colspan={3}>
                                     USD 9,999
-
                                 </td>
                             </tr>
 
@@ -285,8 +283,8 @@ const pea = () => {
                                 </td>
                                 <td>
                                     <ul class="list-disc list-inside">
-                                        <li>Issuer refers to Fransabank SAL.</li>
-                                        <li>Withdrawal from other local ATMs is currently limited to BLC Bank SAL.</li>
+                                        <li>Issuer’s ATM refers to Fransabank SAL ATMs</li>
+                                        <li>Withdrawals from other local ATMs are limited to BLC Bank SAL ATMs at this stage.</li>
                                     </ul>
                                 </td>
                             </tr>
@@ -295,7 +293,7 @@ const pea = () => {
                                     <strong>Card Balance Reimbursement upon Expiry</strong>
                                 </td>
                                 <td>
-                                    If your card expires, you can request the reimbursement of the balance within 2 months from the expiry date. After 2 months, any remaining balance will be forfeited.
+                                    If your card is expired or terminated, you can request a reimbursement within 2 months from the expiry or termination date. After 2 months, any remaining balance will be forfeited.
                                 </td>
                             </tr>
                             <tr>
