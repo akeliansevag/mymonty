@@ -40,7 +40,7 @@ const cards = () => {
     
     const terms = {
         termsAndConditions: '/credit-cards-terms-and-conditions.pdf', 
-        kfs: '/Credit Card KFS (Offline)_ 2.7.25.pdf'
+        kfs: '/Credit-Card-KFS-(Offline)-2.7.25.pdf'
     }
 
     return (
