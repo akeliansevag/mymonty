@@ -1,5 +1,5 @@
 import React from 'react';
-import NewCarousel from '../components/NewCarousel';
+import NewCarousel from './NewCarousel';
 
 const Benefits = () => {
     const carouselData = {

@@ -5,6 +5,7 @@ import Features from './Features';
 import Benefits from './Benefits';
 import Perks from './Perks';
 import ContactUs from './ContactUs';
+import GlobalScrollHandler from "./GlobalScrollHandler";
 
 
 export const metadata = {
@@ -17,6 +18,7 @@ const Business = () => {
 
   return (
     <div className='text-white'>
+      <GlobalScrollHandler />
       <Banner />
       <Features />
       <Benefits />

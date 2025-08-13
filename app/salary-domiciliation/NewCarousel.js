@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
-import TextBlock from './TextBlock';
+import TextBlock from '../components/TextBlock';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useAppContext } from '../AppContext';
@@ -92,7 +92,7 @@ const NewCarousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                                         )}
                                         <TextBlock center={true} textColor="white" title={item.title} description={item.description} button={false} />
                                         {item.button && !item?.button?.modal && (
-                                            <Link className='mm-button !bg-white !text-black mt-4' href={item.button?.url}>{item.button.text}</Link>
+                                            <button data-to="contact-us" className='mm-button !bg-white !text-black mt-4' href={item.button?.url}>{item.button.text}</button>
                                         )}
                                         {item.button && item?.button?.modal && (
                                             <button onClick={handleOpenModal} className='mm-button white mt-4' href={item.button?.url}>{item.button.text}</button>

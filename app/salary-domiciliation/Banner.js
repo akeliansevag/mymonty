@@ -11,7 +11,7 @@ const Banner = () => {
                     <h1 className='text-balance font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase mt-6'>Simplify Payroll with MyMonty</h1>
                     <p className='text-balance'>Simplify salary disbursements and empower your team with instant access to loans and credit cards.</p>
                     <div>
-                        <button className="mm-button white">Book Your Demo</button>
+                        <button data-to="contact-us" className="mm-button white">Book Your Demo</button>
                     </div>
                     
                 </div>

@@ -83,7 +83,7 @@ const [searchTerm, setSearchTerm] = useState('');
       console.log("API Response:", data);
 
       if (res.ok) {
-        setStatusMessage("Form submitted successfully!");
+        setStatusMessage("We’ve received your details and will be in touch soon!");
         setFormData({
           first_name: "",
           last_name: "",
@@ -142,7 +142,7 @@ const [searchTerm, setSearchTerm] = useState('');
     );
 
   return (
-    <section className='lg:py-32 max-lg:py-16 bg-[#091111]'>
+    <section id="contact-us" className='lg:py-32 max-lg:py-16 bg-[#091111]'>
         
         <div className="container">
             <h2 className="section-title text-balance text-center">Kindly share your information AND our team will contact you</h2>
@@ -310,9 +310,7 @@ const [searchTerm, setSearchTerm] = useState('');
                 </form>
                 {statusMessage && (
                     <p
-                        className={`mt-5 text-base text-center ${
-                        statusMessage.startsWith("✅") ? "text-green-500" : "text-red-500"
-                        }`}
+                        className={`mt-5 text-base text-center text-white`}
                     >
                         {statusMessage}
                     </p>
