@@ -146,7 +146,7 @@ const [searchTerm, setSearchTerm] = useState('');
         
         <div className="container">
             <h2 className="section-title text-balance text-center">Kindly share your information AND our team will contact you</h2>
-            <div className="bg-black rounded-2xl p-8 mt-10">
+            <div className="lg:bg-black lg:rounded-2xl lg:p-8 mt-10">
 
                 <form onSubmit={handleSubmit} className="space-y-10 max-lg:space-y-6">
                     {/* Row 1 */}
