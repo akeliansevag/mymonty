@@ -73,8 +73,6 @@ const Contact = () => {
   }, [dropdownRef]);
 
   const handleChange = (e) => {
-
-
     const { id, value } = e.target;
     const sanitizedValue = id === 'mobile' ? value.replace(/[^\d]/g, '') : value;
 
