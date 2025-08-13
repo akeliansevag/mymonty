@@ -5,7 +5,7 @@ const Perks = () => {
     <section className='lg:py-32 max-lg:py-16 bg-[#091111]'>
       <div className='container'>
         <div className=''>
-            <div className='flex max-lg:flex-col lg:gap-32 items-center justify-between '>
+            <div className='flex max-lg:flex-col max-lg:gap-10 lg:gap-32 items-center justify-between '>
                 <div className='w-full'>
                     <h2 className='section-title text-balance'>The Smarter Way to Pay Your Team</h2>
                     <div className='flex flex-col gap-5 my-7'>
@@ -28,7 +28,7 @@ const Perks = () => {
                 </div>
             </div>
 
-            <div className='flex max-lg:flex-col lg:gap-32 justify-between lg:mt-32 max-lg:mt-16 items-center'>
+            <div className='flex max-lg:flex-col-reverse max-lg:gap-10 lg:gap-32 justify-between lg:mt-32 max-lg:mt-16 items-center'>
                 <div className='w-full'>
                     <img src='/prepaid-card-benefits.webp' />
                 </div>
