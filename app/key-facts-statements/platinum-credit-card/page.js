@@ -13,7 +13,7 @@ const pea = () => {
     return (
         <div>
          
-            <FooterBanner downloadURL="/Credit Card KFS (Offline)_ 2.7.25.pdf" title="MyMonty Platinum Credit Card: Key Facts & Disclosures" />
+            <FooterBanner downloadURL="/Credit-Card-KFS-(Offline)-2.7.25.pdf" title="MyMonty Platinum Credit Card: Key Facts & Disclosures" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PLATINUM CREDIT CARD - KEY FACTS STATEMENT  <br />
