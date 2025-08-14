@@ -6,6 +6,8 @@ import nakhaldesktop from '@/public/nakhal-banner-desktop.webp';
 import nakhalmobile from '@/public/nakhal-banner-mobile.webp';
 import mastercarddesktop from '@/public/mastercard-banner-desktop.webp';
 import mastercardmobile from '@/public/mastercard-banner-mobile.webp';
+import forexdesktop from '@/public/forex-desktop.webp';
+import forexmobile from '@/public/forex-mobile.webp';
 
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -24,6 +26,11 @@ const banners = [
   //   bannerMobile: mastercardmobile,
   //   link: '/mc-bdf-areeba-terms-and-conditions',
   // },
+  {
+    bannerDesktop: forexdesktop,
+    bannerMobile: forexmobile,
+    link: false,
+  },
 ];
 
 const BannerAd = () => {
@@ -43,10 +50,24 @@ const BannerAd = () => {
         {banners.map((banner, index)=>{
           return (
             <SwiperSlide key={index}>
-              <Link href={banner.link}>
-                <Image className='max-sm:hidden w-full' quality={100} sizes='100vw' priority placeholder='blur' alt='Banner Desktop' src={banner.bannerDesktop} width='3000' height='157' />
-                <Image className='sm:hidden w-full' quality={100} sizes='100vw' priority placeholder='blur' alt='Banner Mobile' src={banner.bannerMobile} width='800' height='150'  />
-              </Link>
+              {
+                banner.link && (
+                  <Link href={banner.link}>
+                    <Image className='max-sm:hidden w-full' quality={100} sizes='100vw' priority placeholder='blur' alt='Banner Desktop' src={banner.bannerDesktop} width='3000' height='157' />
+                    <Image className='sm:hidden w-full' quality={100} sizes='100vw' priority placeholder='blur' alt='Banner Mobile' src={banner.bannerMobile} width='800' height='150'  />
+                  </Link>
+                )
+              }
+
+              {
+                !banner.link && (
+                  <div>
+                    <Image className='max-sm:hidden w-full' quality={100} sizes='100vw' priority placeholder='blur' alt='Banner Desktop' src={banner.bannerDesktop} width='3000' height='157' />
+                    <Image className='sm:hidden w-full' quality={100} sizes='100vw' priority placeholder='blur' alt='Banner Mobile' src={banner.bannerMobile} width='800' height='150'  />
+                  </div>
+                )
+              }
+              
             </SwiperSlide>
           )
         })}
