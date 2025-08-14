@@ -19,11 +19,11 @@ const banners = [
     bannerMobile: nakhalmobile,
     link: '/nakhal',
   },
-  {
-    bannerDesktop: mastercarddesktop,
-    bannerMobile: mastercardmobile,
-    link: '/mc-bdf-areeba-terms-and-conditions',
-  },
+  // {
+  //   bannerDesktop: mastercarddesktop,
+  //   bannerMobile: mastercardmobile,
+  //   link: '/mc-bdf-areeba-terms-and-conditions',
+  // },
 ];
 
 const BannerAd = () => {
