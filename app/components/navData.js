@@ -179,39 +179,63 @@ export const data = [
         title: 'Company',
         url: null,
         children: [
+            {
+                title: 'About MyMonty',
+                url: null,
+                children: [
+                    {
+                        title: 'Who we are',
+                        url: '/who-we-are'
+                    },
+                    {
+                        title: 'Why MyMonty',
+                        url: '/why-mymonty'
+                    },
+                    {
+                        title: 'FAQ',
+                        url: '/faq/personal/onboarding'
+                    },
+                    {
+                        title: 'Contact us',
+                        url: '/contact-us'
+                    },
+                ]
+            },
+            {
+                title: 'Media',
+                url: null,
+                children: [
+                    {
+                        title: 'News',
+                        url: '/news'
+                    },
+                    {
+                        title: 'Blogs',
+                        url: '/blogs'
+                    },
+                ]
+            },
+            {
+                title: 'Working at MyMonty',
+                url: null,
+                children: [
+                    {
+                        title: 'Careers',
+                        url: '/careers'
+                    },
+                    {
+                        title: 'Code of Conduct',
+                        url: '/code-of-conduct'
+                    },
+                ]
+            },
 
-            {
-                title: 'Who we are',
-                url: '/who-we-are'
-            },
-            {
-                title: 'Why MyMonty',
-                url: '/why-mymonty'
-            },
-            {
-                title: 'Careers',
-                url: '/careers'
-            },
-            {
-                title: 'Code of Conduct',
-                url: '/code-of-conduct'
-            },
-            {
-                title: 'News',
-                url: '/news'
-            },
-            {
-                title: 'Blogs',
-                url: '/blogs'
-            },
-            {
-                title: 'Contact us',
-                url: '/contact-us'
-            },
-            {
-                title: 'FAQ',
-                url: '/faq/personal/onboarding'
-            }
+            
+            
+            
+            
+            
+            
 
         ]
     }
