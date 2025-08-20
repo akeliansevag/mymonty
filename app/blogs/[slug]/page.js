@@ -17,11 +17,11 @@ export async function generateMetadata({ params }) {
     const blogItem = jsonData.data[0];
 
     return {
-        title: websiteName + blogItem.title,
-        description: websiteName + blogItem.description.replace(/<[^>]*>?/gm, ''), // Remove HTML tags
+        title: blogItem.title,
+        description: blogItem.description.replace(/<[^>]*>?/gm, ''), // Remove HTML tags
         openGraph: {
-            title: websiteName + blogItem.title,
-            description: websiteName + blogItem.description.replace(/<[^>]*>?/gm, ''),
+            title: blogItem.title,
+            description: blogItem.description.replace(/<[^>]*>?/gm, ''),
             images: [
                 {
                     url: blogItem.image,
