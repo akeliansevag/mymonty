@@ -11,7 +11,7 @@ const NewsDetails = ({params}) => {
         <section className='py-32'>
             <div className='container'>
                 <div>
-                    <Link href={`/news`} className='mm-button mt-8'>Back to News</Link>
+                    <Link href={`/blogs`} className='mm-button mt-8'>Back to Blogs</Link>
                 </div>
                 {data && (
                     <div className='rounded-3xl overflow-hidden bg-[#f7f7f7] mt-12'>
