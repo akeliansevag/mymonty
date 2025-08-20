@@ -1,4 +1,4 @@
-import NewsDetails from '@/app/components/NewsDetails';
+import BlogDetails from '@/app/components/BlogDetails';
 import React from 'react';
 import { BLOGS_API } from '@/app/api/api';
 import { websiteName } from '@/app/config';
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }) {
 const page = ({params}) => {
   return (
     <>
-      <NewsDetails params={params} />
+      <BlogDetails params={params} />
     </>
   );
 }
