@@ -2,7 +2,7 @@ import React from 'react';
 
 const Promo = ({code,black,full}) => {
   return (
-    <div className={`${black ? `bg-black text-white` : `bg-white text-black`} relative ${full ? `w-full` : `w-[230px]`} h-[108px] my-4 p-5 flex text-center items-center justify-center`}>
+    <div className={`${black ? `bg-black text-white` : `bg-white text-black`} relative ${full ? `w-full` : `max-lg:w-full lg:w-[280px]`} h-[108px] my-4 p-5 flex text-center items-center justify-center`}>
       <div className="absolute left-[1px] -translate-x-full">
         <svg width="15" height="108" viewBox="0 0 15 108" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clipPath="url(#clip0_3486_5594)">
