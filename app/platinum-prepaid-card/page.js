@@ -18,7 +18,7 @@ export const metadata = {
 
 const cards = () => {
     const data = {
-        title: 'Platinum Prepaid Card',
+        title: 'Physical PLATINUM mastercard',
         subtitle: 'Cards',
         desc: 'World-class. Unique. Boundless.',
         image: {
@@ -46,7 +46,7 @@ const cards = () => {
             <VirtualCard />
             <div className="py-10 lg:py-20">
                 <div className="container text-center">
-                    <TextBlock center={true} title="Mastercard Platinum Prepaid Card Benefits" description="" />
+                    <TextBlock center={true} title="Physical Platinum Mastercard Benefits" description="" />
                 </div>
                 
                 <Content />
