@@ -58,7 +58,7 @@ const cards = () => {
                     </div>
                     
                     <div className='mt-20 lg:mt-40'>
-                        <TextBlock center={true} title="Mastercard Platinum Credit Card Benefits" description="" />
+                        <TextBlock center={true} title="Platinum Credit Card Benefits" description="" />
                     </div>
                 </div>
                 

@@ -62,6 +62,10 @@ export const data = [
                         title: 'World Elite Credit Card',
                         url: '/world-elite-credit-card'
                     },
+                    {
+                        title: 'World Elite Prepaid Card',
+                        url: '/world-elite-prepaid-card'
+                    },
                 ]
             },
             {

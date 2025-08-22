@@ -2,7 +2,7 @@ import React from 'react';
 
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
-import banner from '@/public/world-elite-credit-card-banner.webp';
+import banner from '@/public/world-elite-prepaid-card-banner.webp';
 
 import VirtualCard from './VirtualCard';
 import TextBlock from '../components/TextBlock';
@@ -10,15 +10,15 @@ import Content from '../components/elite-cards/Content';
 import Contact from '../components/elite-cards/Contact';
 
 export const metadata = {
-    title: 'World Elite Credit Card' + websiteName,
-    description: 'Discover the MyMonty World Elite Credit Card in Lebanon. Unlock exclusive privileges, premium rewards & unparalleled global benefits. Apply now!',
+    title: 'World Elite Prepaid Card' + websiteName,
+    description: 'Experience Luxury without limits with the world elite prepaid card.',
 };
 
 const worldEliteCards = () => {
     const data = {
-        title: 'World Elite Credit Card',
+        title: 'World Elite Prepaid Card',
         subtitle: 'Cards',
-        desc: 'Live Big. Travel Like Royalty. <br /><strong>APR 26.68% (Variable)</strong>',
+        desc: 'Welcome to the Elite Lifestyle',
         image: {
             inGrid: true,
             layout: 'half',
@@ -44,7 +44,7 @@ const worldEliteCards = () => {
             <VirtualCard />
             <div className="py-10 lg:py-20">
                 <div className="container text-center">
-                    <TextBlock center={true} title="Mastercard World Elite Credit Card Benefits" description="" />
+                    <TextBlock center={true} title="World elite Prepaid Card Benefits" description="" />
                 </div>
 
                 <Content />

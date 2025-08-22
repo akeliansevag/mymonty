@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
-import { useAppContext } from '../AppContext';
+import { useAppContext } from '../../AppContext';
 
 const Contact = () => {
 
