@@ -141,7 +141,7 @@ const Content = () => {
                     <div>
                         <div>
                             <h2>Trip.com</h2>
-                            <p>Get up to <strong>20% off</strong> flights and hotels bookings on Trip.com with your Mastercard card and enjoy your next trip! <a href="https://trip.com/mastercard" target='_blank'>www.trip.com/mastercard</a></p>
+                            <p>Get up to <strong>20% OFF</strong> flights and hotels bookings on Trip.com with your Mastercard card and enjoy your next trip! <a href="https://trip.com/mastercard" target='_blank'>www.trip.com/mastercard</a></p>
                         </div>
 
                         <div className='image-wrapper flex max-lg:flex-col lg:justify-end items-center'>
@@ -225,7 +225,7 @@ const Content = () => {
                 
                     </div>
 
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>HERTZ</h2>
                             <p>Become a Hertz Gold Plus Rewards® Presidents Circle Member for great rates on rentals, upgrades and no queues with <strong>World Elite Mastercard</strong>. Simply click <a href='https://hertz.com/worldelite' target='_blank'>hertz.com/worldelite</a> and add <strong>CDP1795034</strong>.</p>
@@ -237,7 +237,7 @@ const Content = () => {
                             
                         </div>
                 
-                    </div>
+                    </div> */}
 
                     <div>
                         <div>
@@ -346,7 +346,7 @@ const Content = () => {
                 
                     </div>
 
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>Thriwe</h2>
                             <p>Get <strong>30% OFF</strong> or 1 complimentary guest to your next golf game with Thriwe when using your World Elite Mastercard® card! Click mastercard.thriwe.com to know more</p>
@@ -370,9 +370,9 @@ const Content = () => {
                             </ul>
                         </div>
                         
-                    </div>
+                    </div> */}
 
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>Express VPN</h2>
                             <p>Get 30-Days of complimentary trial from Express VPN and enjoy either <strong>51% OFF</strong> a 12-month plan with 4 extra months complimentary or <strong>61% OFF</strong> a 24-month plan with 4 extra months complimentary!</p>
@@ -396,7 +396,7 @@ const Content = () => {
                             </ul>
                         </div>
                         
-                    </div>
+                    </div> */}
 
                     <div>
                         <div>
