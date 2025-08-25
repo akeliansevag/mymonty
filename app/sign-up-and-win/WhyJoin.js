@@ -31,9 +31,9 @@ const WhyJoin = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className='max-lg:mb-16 lg:mb-24'>
+    <div className='max-lg:mb-16 lg:mb-36'>
       <div className='container mt-10'>
-        <div className='flex max-lg:flex-col gap-10'>
+        <div className='flex max-lg:flex-col max-lg:gap-10 lg:gap-24'>
           {/* LEFT: Text Thumbnails */}
           <div className='lg:w-1/2 flex flex-col gap-6'>
           <h2 className='section-title'>Why Join MyMonty?</h2>
