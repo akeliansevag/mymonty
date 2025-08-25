@@ -12,8 +12,9 @@ const Banner = () => {
         handleOpenModal();
     }
   return (
-    <section className='text-white lg:py-32 max-lg:py-16 bg-black relative min-h-[calc(100vh-127px)] flex flex-col justify-center'>
-        <img src='/mymonty-car-banner.webp' className='absolute top-0 left-0 object-cover w-full h-full'/>
+    <section className='text-white lg:py-32 max-lg:py-16 bg-black relative min-h-[calc(100vh-127px)] flex flex-col lg:justify-center'>
+        <img src='/mymonty-car-banner.webp' className='max-sm:hidden absolute top-0 left-0 object-cover w-full h-full'/>
+        <img src='/mymonty-car-banner-mobile.webp' className='sm:hidden absolute top-0 left-0 object-cover w-full h-full'/>
         <div className='container relative z-10'>
             <div>
                 <div className='max-lg:w-full lg:w-1/2 flex flex-col gap-5'>

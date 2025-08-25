@@ -24,6 +24,7 @@ const WhensTheDraw = () => {
                 <div>
                     <button onClick={handleOriginalOpenModal} className='mm-button'>Download MyMonty Now</button>
                 </div>
+                <p className='text-base'>Terms and Conditions apply</p>
             </div>
             
        </div>
