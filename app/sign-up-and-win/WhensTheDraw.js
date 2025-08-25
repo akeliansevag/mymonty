@@ -17,7 +17,7 @@ const WhensTheDraw = () => {
             <div className='flex flex-col gap-5'>
                 {/* <img src='/kia-logo.webp' className='max-w-[166px]' /> */}
                 <h2 className='section-title'>When’s the draw?</h2>
-                <p>The official draw takes place on <strong>October 3, 2025</strong> under the supervision of the Lebanese National Lottery, authorized by Minster of Finance.Winners will be announced on LBCI. Stay tuned!</p>
+                <p>The official draw takes place on <strong>October 3, 2025</strong> under the supervision of the Lebanese National Lottery, authorized by Minster of Finance. <br />Winners will be announced on LBCI. Stay tuned!</p>
                 <div className='rounded-full bg-[rgb(239,239,239)] text-[#D25788] lg:text-center sm:w-max px-4 py-1 text-pretty'>
                     <strong>Promotion ends September 23, 2025</strong>
                 </div>
