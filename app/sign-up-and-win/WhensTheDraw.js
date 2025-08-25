@@ -13,12 +13,12 @@ const WhensTheDraw = () => {
         }   
   return (
     <div className='bg-[#f7f7f7] w-full rounded-3xl overflow-hidden flex max-lg:flex-col bg-[linear-gradient(110.67deg,#E65C23_-3.89%,#E8609E_35.6%,#1898BD_81.31%)] text-white'>
-       <div className='w-full lg:p-16 max-lg:p-10 flex items-center'>
+       <div className='w-full lg:p-16 max-lg:py-10 max-lg:px-5 flex items-center'>
             <div className='flex flex-col gap-5'>
                 {/* <img src='/kia-logo.webp' className='max-w-[166px]' /> */}
                 <h2 className='section-title'>When’s the draw?</h2>
                 <p>The official draw takes place on <strong>October 3, 2025</strong> under the supervision of the Lebanese National Lottery, authorized by Minster of Finance. <br />Winners will be announced on LBCI. Stay tuned!</p>
-                <div className='rounded-full bg-[rgb(239,239,239)] text-[#D25788] lg:text-center sm:w-max px-4 py-1 text-pretty'>
+                <div className='rounded-full bg-[rgb(239,239,239)] text-[#D25788] lg:text-center sm:w-max px-4 py-1 text-pretty max-lg:text-base'>
                     <strong>Promotion ends September 23, 2025</strong>
                 </div>
                 <div>
@@ -28,8 +28,8 @@ const WhensTheDraw = () => {
             </div>
             
        </div>
-       <div className='w-full flex flex-col max-lg:pl-10 lg:items-center justify-end lg:pt-20'>
-        <div className='rounded-3xl lg:mt-2220 bg-[rgba(247,247,247,0.3)] lg:ml-5222 w-[240px] flex flex-col gap-3 items-center justify-center px-3 py-4'>
+       <div className='w-full flex flex-col max-lg:pl-5 lg:items-center justify-end lg:pt-20'>
+        <div className='rounded-3xl bg-[rgba(247,247,247,0.3)] w-[240px] flex flex-col gap-3 items-center justify-center px-3 py-4'>
             <div className='rounded-full bg-[var(--mm-blue)] w-[50px] h-[50px] text-center flex items-center justify-center'>
                 <svg width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22.764 11.3409H1.19531V19.703C1.19531 21.6543 1.19531 22.63 1.58712 23.3753C1.93177 24.0309 2.4817 24.5639 3.1581 24.8979C3.92707 25.2777 4.9337 25.2777 6.94697 25.2777H17.0124C19.0256 25.2777 20.0323 25.2777 20.8012 24.8979C21.4776 24.5639 22.0276 24.0309 22.3722 23.3753C22.764 22.63 22.764 21.6543 22.764 19.703V11.3409Z" fill="white"/>
