@@ -8,6 +8,9 @@ import mastercarddesktop from '@/public/mastercard-banner-desktop.webp';
 import mastercardmobile from '@/public/mastercard-banner-mobile.webp';
 import forexdesktop from '@/public/forex-desktop.webp';
 import forexmobile from '@/public/forex-mobile.webp';
+import kiadesktop from '@/public/kia-ad.webp';
+import kiamobile from '@/public/kia-ad-mobile.webp';
+
 
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -16,6 +19,11 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 
 const banners = [
+  {
+    bannerDesktop: kiadesktop,
+    bannerMobile: kiamobile,
+    link: '/sign-up-and-win',
+  },
   {
     bannerDesktop: nakhaldesktop,
     bannerMobile: nakhalmobile,
