@@ -25,7 +25,7 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
     }
 
     return (
-        <section className={`pb-14 md:pb-20 md:pt-26 max-md:pt-[calc(var(--header-height)+20px)] flex flex-col justify-center min-h-[calc(100vh-var(--header-height))] w-full relative ${theme == 'dark' ? 'bg-black' : 'bg-gray-100'} ${data.image.layout !== 'full' || !data.image.inGrid ? 'max-md:pb-14' : ''}`}>
+        <section className={`pb-14 md:pb-20 md:pt-26 max-md:pt-[calc(var(--header-height)+20px)] flex flex-col justify-center min-h-[calc(100vh-var(--header-height))] w-full relative ${theme == 'dark' ? 'bg-black' : theme == 'dark-green' ? 'bg-[#0A0C0C]' : 'bg-gray-100'} ${data.image.layout !== 'full' || !data.image.inGrid ? 'max-md:pb-14' : ''}`}>
             {
                 data?.image?.layout === 'full' && (
                     <>
@@ -60,11 +60,11 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
                                         {
                                             data.cta && (
                                                 data.cta.type === 'link' ? (
-                                                    <Link className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`} href={data.cta.link.url} target={target}>{data.cta.link.name}</Link>
+                                                    <Link className={`mm-button mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`} href={data.cta.link.url} target={target}>{data.cta.link.name}</Link>
                                                 ) : salaryForm ? (
-                                                    <button onClick={handleGetClick} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                    <button onClick={handleGetClick} className={`mm-button mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                 ) : (
-                                                    <button onClick={handleOriginalOpenModal} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                    <button onClick={handleOriginalOpenModal} className={`mm-button mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                 )
                                             )
                                         }
@@ -113,11 +113,11 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
                                             {
                                                 data.cta && (
                                                     data.cta.type === 'link' ? (
-                                                        <Link className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`} href={data.cta.link.url} target={target}>{data.cta.link.name}</Link>
+                                                        <Link className={`mm-button mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`} href={data.cta.link.url} target={target}>{data.cta.link.name}</Link>
                                                     ) : salaryForm ? (
-                                                        <button onClick={handleGetClick} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                        <button onClick={handleGetClick} className={`mm-button mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                     ) : (
-                                                        <button onClick={handleOriginalOpenModal} className={`mm-button mt-8 ${theme == 'dark' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                        <button onClick={handleOriginalOpenModal} className={`mm-button mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                     )
                                                 )
                                             }
