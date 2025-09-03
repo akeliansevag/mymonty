@@ -171,7 +171,7 @@ const Form = () => {
         Kindly share your information AND our team will contact you
       </h2>
       <form onSubmit={handleSubmit}>
-        <div className='flex flex-col max-lg:gap-6 gap-10 max-lg:px-5 px-10 max-lg:mt-10 max-lg:py-10 py-20 mt-20 rounded-[1.875rem]'>
+        <div className='flex flex-col max-lg:gap-6 gap-10 max-lg:px-5 px-10 mt-12 rounded-[1.875rem]'>
           <div className='flex flex-col md:flex-row gap-10 max-lg:gap-6'>
             <div className='flex flex-col gap-1 w-full'>
               <label htmlFor='first_name'>First Name</label>
