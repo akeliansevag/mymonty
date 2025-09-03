@@ -91,7 +91,7 @@ const Business1 = () => {
         <Cards />
       </section>
 
-      <section className='container my-14 py-14 space-y-12 lg:space-y-24'>
+      <section className='container my-14 py-14 space-y-20 lg:space-y-44'>
         <div className='flex max-lg:flex-col max-lg:gap-4 lg:gap-32 items-center justify-between'>
           <div className='lg:w-1/3 order-2 lg:order-1'>
             <img src='/business1/smarter-cash.webp' />
