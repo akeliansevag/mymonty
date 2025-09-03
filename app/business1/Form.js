@@ -92,7 +92,7 @@ const Form = () => {
       try {
         setLoading(true);
 
-        const response = await fetch(`${apiUrl}/contact-us`, {
+        const response = await fetch(`${apiUrl}/contact-us-business`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
