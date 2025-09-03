@@ -85,10 +85,10 @@ const Business1 = () => {
             <Link href="/cards" className='mm-button white mt-8 mx-auto'>Contact Us</Link>
           </div>
         </div>
-      </section>
 
-      <section className='ml-container-align'>
-        <Cards />
+        <div className='ml-container-align'>
+          <Cards />
+        </div>
       </section>
 
       <section className='container my-14 py-14 space-y-20 lg:space-y-44'>
@@ -163,7 +163,7 @@ const Business1 = () => {
       </section> */}
 
       <section className="py-24">
-          <Form />
+        <Form />
       </section>
     </div>
   );

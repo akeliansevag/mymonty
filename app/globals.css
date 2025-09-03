@@ -424,13 +424,12 @@ body.menu-hidden .sticky-filters {
 }
 
 .swiper-pagination-bullet {
-  border: 1px solid black;
-  background-color: transparent !important;
+  background-color: grey !important;
   opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: black !important;
+  background-color: white !important;
 }
 
 .join-us-overlay {

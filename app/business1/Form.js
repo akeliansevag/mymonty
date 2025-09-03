@@ -167,7 +167,7 @@ const Form = () => {
 
   return (
     <div className='container'>
-      <h2 className='text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>
+      <h2 className='md:w-2/3 mx-auto text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>
         Kindly share your information AND our team will contact you
       </h2>
       <form onSubmit={handleSubmit}>
