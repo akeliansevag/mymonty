@@ -158,13 +158,13 @@ const Header = () => {
                         <Nav menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
                     </div>
                     <div className='hidden md:block'>
-                        {pathname == '/business' || pathname == '/business1' && (
+                        {(pathname === '/business' && pathname === '/business1') && (
                             <Link href="https://corporate.mymonty.com/" target='_blank' rel='noopener noreferrer nofollow' className='mm-button whitespace-nowrap'>
                                 Login
                             </Link>
                         )}
 
-                        {pathname != '/business' && (
+                        {pathname !== '/business' && pathname !== '/business1' && (
                             <button onClick={handleOpenModal} className='mm-button whitespace-nowrap'>
                                 Download App
                             </button>
