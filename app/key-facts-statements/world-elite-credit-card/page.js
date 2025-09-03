@@ -169,7 +169,7 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td><strong>Primary Card Annual Fee</strong></td>
-                                <td>USD 200</td>
+                                <td>USD 250</td>
                                 <td><strong>Card Delivery (local)</strong></td>
                                 <td>Free of Charge</td>
                             </tr>
