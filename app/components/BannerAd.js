@@ -24,21 +24,21 @@ const banners = [
     bannerMobile: kiamobile,
     link: '/sign-up-and-win',
   },
-  {
-    bannerDesktop: nakhaldesktop,
-    bannerMobile: nakhalmobile,
-    link: '/nakhal',
-  },
+  // {
+  //   bannerDesktop: nakhaldesktop,
+  //   bannerMobile: nakhalmobile,
+  //   link: '/nakhal',
+  // },
   // {
   //   bannerDesktop: mastercarddesktop,
   //   bannerMobile: mastercardmobile,
   //   link: '/mc-bdf-areeba-terms-and-conditions',
   // },
-  {
-    bannerDesktop: forexdesktop,
-    bannerMobile: forexmobile,
-    link: false,
-  },
+  // {
+  //   bannerDesktop: forexdesktop,
+  //   bannerMobile: forexmobile,
+  //   link: false,
+  // },
 ];
 
 const BannerAd = () => {
