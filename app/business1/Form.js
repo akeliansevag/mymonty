@@ -166,12 +166,12 @@ const Form = () => {
   );
 
   return (
+
     <div className='container'>
-      <h2 className='md:w-2/3 mx-auto text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>
-        Kindly share your information AND our team will contact you
-      </h2>
-      <form onSubmit={handleSubmit}>
-        <div className='flex flex-col max-lg:gap-6 gap-10 max-lg:px-5 px-10 mt-12 rounded-[1.875rem]'>
+      <h2 className='section-title text-balance text-center mb-14'>Kindly share your information AND our team will contact you</h2>
+      <div className=' bg-[#F7F7F7] rounded-3xl px-5 py-10'>
+        <form onSubmit={handleSubmit}>
+        <div className='flex flex-col max-lg:gap-6 gap-10 max-lg:px-5 px-10 rounded-[1.875rem] text-black'>
           <div className='flex flex-col md:flex-row gap-10 max-lg:gap-6'>
             <div className='flex flex-col gap-1 w-full'>
               <label htmlFor='first_name'>First Name</label>
@@ -337,6 +337,8 @@ const Form = () => {
           )}
         </div>
       </form>
+      </div>
+      
     </div>
   );
 };

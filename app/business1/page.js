@@ -39,39 +39,6 @@ const Business1 = () => {
       }
     }
   };
-
-  const items = [
-    {
-      title: 'Effortless Experience',
-      description: 'One dashboard, intuitive workflows, zero friction.',
-      icon: effortlessExperience,
-    },
-    {
-      title: 'Full Control',
-      description: 'Real-time card issuance, spending limits.',
-      icon: fullControl,
-    },
-    {
-      title: 'Unwavering Security',
-      description: 'Regulatory compliance.',
-      icon: unwaveringSecurity,
-    },
-    {
-      title: '24/7 Support',
-      description: 'Always-on customer care.',
-      icon: support,
-    },
-    {
-      title: 'Live Transparency',
-      description: 'One dashboard, intuitive workflows, zero friction.',
-      icon: liveTransparency,
-    },
-    {
-      title: 'Continuous Innovation',
-      description: 'Evolving features in lending, commerce, and rewards.',
-      icon: continuousInnovation,
-    },
-  ]
     
   return (
     <div className='bg-black text-white'>
@@ -79,7 +46,7 @@ const Business1 = () => {
 
       <section className='text-center my-14 py-14'>
         <div className='container'>
-          <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>One Account, All Your Processes</h2>
+          <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>One Account, All Your ProcessesSSSSSSSSSSSSSSSSSS</h2>
           <div className='lg:w-1/2 mx-auto'>
             <p className='leading-8 mt-8'>Manage your business financials. Move your money smoothly. All in one place, and on your terms.</p>
             <Link href="/cards" className='mm-button white mt-8 mx-auto'>Contact Us</Link>
@@ -91,76 +58,98 @@ const Business1 = () => {
         </div>
       </section>
 
-      <section className='container my-14 py-14 space-y-20 lg:space-y-44'>
-        <div className='flex max-lg:flex-col max-lg:gap-4 lg:gap-32 items-center justify-between'>
-          <div className='lg:w-1/3 order-2 lg:order-1'>
-            <img src='/business1/smarter-cash.webp' />
-          </div>
-
-          <div className='lg:w-2/3 order-1 lg:order-2'>
-            <h2 className='section-title text-balance uppercase'>Smarter cash AND Currency management</h2>
-            <ul className='flex flex-col gap-5 mt-7 list-disc pl-4'>
-              <li>Manage transactions seamlessly in both local (LBP) and foreign (USD) currencies.</li>
-              <li>Access liquidity efficiently to support cash-intensive operations.</li>
-              <li>Process payroll, reimbursements, and supplier payments with ease.</li>
-              <li>Optimize cash flow and enhance overall financial operations.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className='flex max-lg:flex-col max-lg:gap-4 lg:gap-32 items-center justify-between'>
-          <div className='lg:w-2/3 order-1 lg:order-2'>
-            <h2 className='section-title text-balance uppercase'>Simpler AND faster business operations</h2>
-            <ul className='flex flex-col gap-5 mt-7 list-disc pl-4'>
-              <li>Simplifies accounting, tax reporting, and auditing.</li>
-              <li>Enables clearer financial tracking and transparency.</li>
-              <li>Reduces reliance on traditional banking hours or locations.</li>
-              <li>Saves time by automating routine payments (like salaries).</li>
-              <li>Reduces errors and ensure timely disbursements.</li>
-            </ul>
-          </div>
-          <div className='lg:w-1/3 order-1 lg:order-2'>
-            <img src='/business1/simpler-and-faster.webp' />
-          </div>
-        </div>
-
-        <div className='flex max-lg:flex-col max-lg:gap-4 lg:gap-32 items-center justify-between'>
-          <div className='lg:w-1/3 order-2 lg:order-1'>
-            <img src='/business1/secure-and-regulated.webp' />
-          </div>
-
-          <div className='lg:w-2/3 order-1 lg:order-2'>
-            <h2 className='section-title text-balance uppercase'>Secure & Regulated</h2>
-            <p className='mt-7'>Monty Finance is a licensed financial institution regulated by Banque du Liban, so your funds are always protected by law.</p>
-            
-            <h2 className='section-title text-balance uppercase mt-14'>24/7 Customer Support</h2>
-            <p className='mt-7'>Need help? We're right here, anytime, to answer your questions and sort things out for you quickly.</p>
-          </div>
-        </div>
-      </section>
-
-      <section className='my-24 py-24 bg-[#0A0C0C]'>
-        <div className='container text-center'>
-          <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>MyMonty Business Account</h2>
-          <Link href="/cards" className='mm-button white mt-8 mx-auto'>Start Your Business Account</Link>
-
-          <div className='grid max-lg:grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 mt-12'>
-            {items.map((item, index)=>{
-              return (
-                <div className='flex flex-col justify-center items-center gap-2 bg-[#1C1F21] rounded-3xl px-8 py-12'>
-                  <Image src={item.icon} alt={item.title} width='35' height='35' />
-                  <h2 className='text-2xl font-black uppercase'>{ item.title }</h2>
-                  <p className='lg:w-1/2 text-white/70' dangerouslySetInnerHTML={{ __html: item.description }}></p>
+      <section className='py-14 my-14'>
+        <div className='container space-y-10'>
+            <h2 className='section-title text-center text-balance'>SAY GOODBYE TO PAYDAY STRESS.</h2>
+            <p className='text-center'>Manage payroll easily on the MyMonty Business web portal to save time, money, and effort each month.</p>
+            <div className='flex max-lg:flex-col gap-5'>
+              <div className='text-center flex flex-col items-center justify-center gap-5 border border-white/50 rounded-2xl p-10 w-full'>
+                <div>
+                  <svg width="62" height="56" viewBox="0 0 62 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32.9304 51.1143H7.5845C5.9449 51.1143 4.60983 49.7792 4.60983 48.1396V42.6116C4.60983 37.2867 8.94244 32.9543 14.2672 32.9543H31.2903C32.4122 32.9543 33.3208 32.0457 33.3208 30.9238C33.3208 29.8019 32.4122 28.8933 31.2903 28.8933H14.2672C6.70336 28.8933 0.548828 35.0483 0.548828 42.6116V48.1396C0.548828 52.0204 3.70628 55.1752 7.58444 55.1752H32.9303C34.0522 55.1752 34.9608 54.2666 34.9608 53.1447C34.9608 52.0228 34.0522 51.1143 32.9304 51.1143Z" fill="white"/>
+                    <path d="M26.406 25.5049C33.2284 25.5049 38.7768 19.9565 38.7768 13.1341C38.7768 6.31176 33.2284 0.763428 26.406 0.763428C19.5835 0.763428 14.0352 6.31176 14.0352 13.1341C14.0352 19.9565 19.5835 25.5049 26.406 25.5049ZM26.406 4.82441C30.9873 4.82441 34.7157 8.55037 34.7157 13.1341C34.7157 17.718 30.9898 21.4439 26.406 21.4439C21.8221 21.4439 18.0962 17.7179 18.0962 13.1341C18.0962 8.55031 21.8221 4.82441 26.406 4.82441Z" fill="white"/>
+                    <path d="M47.3909 27.1191C39.6393 27.1191 33.332 33.4263 33.332 41.1779C33.332 48.9295 39.6393 55.2367 47.3909 55.2367C55.1426 55.2367 61.4498 48.9295 61.4498 41.1779C61.4498 33.4263 55.1426 27.1191 47.3909 27.1191ZM47.3909 51.1751C41.8781 51.1751 37.393 46.6903 37.393 41.1773C37.393 35.6643 41.8779 31.1795 47.3909 31.1795C52.9037 31.1795 57.3888 35.6643 57.3888 41.1773C57.3888 46.6903 52.9039 51.1751 47.3909 51.1751Z" fill="white"/>
+                    <path d="M47.3906 32.4453C48.3744 32.4453 49.1718 33.2419 49.1719 34.2256V34.8467H50.3711C51.3548 34.8468 52.1514 35.6432 52.1514 36.627C52.1513 37.6106 51.3548 38.4071 50.3711 38.4072H46.6855C46.447 38.4072 46.2481 38.5767 46.2021 38.8018L46.1914 38.9014L46.2021 39C46.248 39.2251 46.4469 39.3945 46.6855 39.3945H48.0967C50.3317 39.3945 52.1513 41.2142 52.1514 43.4492C52.1514 45.2443 50.9696 46.7565 49.3438 47.2881L49.1719 47.3438V48.127C49.1719 49.1108 48.3744 49.9072 47.3906 49.9072C46.407 49.907 45.6104 49.1106 45.6104 48.127V47.5068H44.4111C43.4274 47.5067 42.6309 46.7093 42.6309 45.7256C42.6311 44.742 43.4276 43.9454 44.4111 43.9453H48.0967C48.3692 43.9453 48.5906 43.7246 48.5908 43.4521C48.5908 43.1796 48.3693 42.958 48.0967 42.958H46.6855C44.4505 42.958 42.6309 41.1384 42.6309 38.9033C42.6309 37.1083 43.8127 35.597 45.4385 35.0654L45.6104 35.0088V34.2256C45.6105 33.242 46.4071 32.4456 47.3906 32.4453Z" fill="white" stroke="black" stroke-width="0.5"/>
+                  </svg>
                 </div>
-              )
-            })}
+                <h4 className='uppercase font-black'>No more manual, slow payroll</h4>
+              </div>
+              <div className='text-center flex flex-col items-center justify-center gap-5 border border-white/50 rounded-2xl p-10 w-full'>
+                <div>
+                  <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.00293 0.780273H31.9404C36.4409 0.780416 40.0907 4.43016 40.0908 8.93066V17.6768C40.0908 19.0107 39.0079 20.0918 37.6729 20.0918C36.3379 20.0917 35.2549 19.0107 35.2549 17.6768V8.93066C35.2548 7.09923 33.7718 5.61541 31.9404 5.61523H9.00293C7.1714 5.61527 5.68758 7.09914 5.6875 8.93066V49.0693C5.6875 50.9009 7.17135 52.3847 9.00293 52.3848H31.9404C33.7719 52.3846 35.2549 50.9008 35.2549 49.0693V40.4688C35.2549 39.1343 36.3384 38.0509 37.6729 38.0508C39.0074 38.0508 40.0908 39.1342 40.0908 40.4688V49.0693C40.0908 53.5699 36.441 57.2196 31.9404 57.2197H9.00293C4.50234 57.2197 0.852539 53.5699 0.852539 49.0693V8.93066C0.852615 4.43012 4.50239 0.780349 9.00293 0.780273ZM44.5654 18.6904C45.5076 17.746 47.0392 17.746 47.9814 18.6904L47.9824 18.6914L56.4395 27.1455V27.1465C57.3235 28.0326 57.3791 29.4325 56.6055 30.3828L56.4395 30.5664L47.9814 39.0244C47.0391 39.9664 45.5077 39.9665 44.5654 39.0244C43.6204 38.0794 43.6204 36.5495 44.5654 35.6045L48.752 31.418H34.8057C33.4716 31.418 32.3906 30.3351 32.3906 29C32.3907 27.6649 33.4717 26.582 34.8057 26.582H49.04L48.2715 25.8145L44.5654 22.1074H44.5645C43.6201 21.1652 43.6202 19.6336 44.5645 18.6914L44.5654 18.6904ZM18.0537 41.4922L17.7178 41.4043C16.4836 41.0798 15.4291 40.5179 14.5742 39.7334C13.2522 38.5167 12.6466 36.9743 12.4629 35.5723L12.4316 35.293C12.3071 33.966 13.2857 32.7874 14.6133 32.665H14.6143C15.9441 32.5406 17.1218 33.5196 17.2441 34.8467C17.2953 35.4033 17.5005 35.8556 17.8467 36.1758L17.8496 36.1787C18.1804 36.4788 18.9014 36.9033 20.4717 36.9033C22.8565 36.9033 23.6412 35.4758 23.6992 34.8467C23.7593 34.1977 23.789 33.7874 23.7871 33.5117C23.7852 33.231 23.7496 33.0384 23.6494 32.8516H23.6504C23.6492 32.8492 23.6468 32.8473 23.6455 32.8447C23.6435 32.8411 23.6427 32.8366 23.6406 32.833H23.6387C23.5063 32.5926 22.8755 31.829 20.0928 31.3887C16.602 30.8355 14.2429 29.6103 13.0791 27.5156H13.0781C12.1012 25.7611 12.3076 23.8269 12.4072 22.9385L12.4062 22.9375C12.4173 22.8517 12.4258 22.7729 12.4316 22.7061C12.6794 20.0255 14.6743 17.5843 17.7344 16.6562L18.0537 16.5586V15.8115C18.0537 14.4775 19.1366 13.3965 20.4717 13.3965C21.8068 13.3965 22.8896 14.4775 22.8896 15.8115V16.5078L23.2246 16.5957C24.3046 16.8797 25.2468 17.345 26.0381 17.9824L26.3682 18.2666C27.6908 19.4837 28.2969 21.0263 28.4805 22.4287L28.5117 22.707C28.6363 24.0339 27.6576 25.2126 26.3301 25.335H26.3291C25.0822 25.4517 23.9693 24.5983 23.7344 23.3975L23.6992 23.1533C23.6544 22.6662 23.4916 22.2589 23.2197 21.9502L23.0967 21.8242L23.0938 21.8213L22.9502 21.7041C22.5692 21.4219 21.8457 21.0967 20.4717 21.0967C18.0867 21.0967 17.3022 22.5241 17.2441 23.1533C17.184 23.8024 17.1544 24.2126 17.1562 24.4883C17.1582 24.7684 17.1932 24.961 17.293 25.1475V25.1484C17.294 25.1505 17.2958 25.1522 17.2969 25.1543C17.2991 25.1583 17.3005 25.163 17.3027 25.167L17.3037 25.166C17.4347 25.4052 18.063 26.1703 20.8496 26.6113C24.3406 27.1645 26.7004 28.3896 27.8643 30.4844H27.8652C28.84 32.235 28.637 34.1646 28.5371 35.0557C28.5258 35.1459 28.5167 35.2273 28.5107 35.2959C28.2622 37.9756 26.2682 40.4159 23.209 41.3438L22.8896 41.4414V42.1885C22.8896 43.5224 21.8067 44.6034 20.4717 44.6035C19.1366 44.6035 18.0537 43.5225 18.0537 42.1885V41.4922Z" fill="white" stroke="black" stroke-width="0.9"/>
+                  </svg>
+
+                </div>
+                <h4 className='uppercase font-black'>Fast ANd Reliable Disbursement</h4>
+              </div>
+              <div className='text-center flex flex-col items-center justify-center gap-5 border border-white/50 rounded-2xl p-10 w-full'>
+                <div>
+                  <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.38158 38.0309H6.76678C7.2091 38.0309 7.59685 38.3222 7.73605 38.742C8.10294 39.8486 8.5489 40.9279 9.07071 41.9727C9.26787 42.3675 9.19933 42.8462 8.88741 43.1584L5.789 46.2591C5.24599 46.8021 5.24599 47.6816 5.789 48.2246L13.7669 56.2019C14.3099 56.7449 15.1895 56.7449 15.7325 56.2019L18.832 53.1034C19.1441 52.7915 19.6227 52.7228 20.0175 52.9199C21.0631 53.4417 22.1427 53.8877 23.2485 54.2547C23.6682 54.3939 23.9593 54.7816 23.9593 55.2238V59.6099C23.9593 60.3773 24.5819 61 25.3493 61H36.6384C36.6437 61 36.6477 61 36.6516 61C37.4204 61 38.0417 60.3773 38.0417 59.6099C38.0417 59.5693 38.0401 59.5288 38.0367 59.4887C38.0326 59.4407 38.0284 59.3926 38.0284 59.3444L38.0273 55.2225C38.0272 54.7803 38.3182 54.3925 38.7379 54.2533C39.847 53.8853 40.9262 53.4397 41.9674 52.9201C42.3623 52.723 42.8411 52.7916 43.1532 53.1036L46.2526 56.2019C46.7956 56.7449 47.6752 56.7449 48.2182 56.2019L56.198 48.224C56.4589 47.9631 56.6049 47.6093 56.6049 47.2415C56.6049 46.8718 56.4582 46.5193 56.198 46.2591L53.098 43.159C52.7856 42.8466 52.7171 42.3671 52.9147 41.9719C53.4358 40.9299 53.8812 39.8507 54.2484 38.7421C54.3875 38.3222 54.7753 38.0309 55.2176 38.0309H59.5928C59.6016 38.0309 59.6105 38.0309 59.6194 38.0309C60.3868 38.0309 61.0094 37.4082 61.0094 36.6409C61.0094 36.5745 61.0041 36.5101 60.9962 36.4477L60.9935 25.3591C60.9935 24.5917 60.3708 23.9691 59.6035 23.9691H55.2182C54.7759 23.9691 54.3882 23.6778 54.249 23.258C53.8816 22.1493 53.4356 21.0692 52.9139 20.0255C52.7163 19.6303 52.785 19.1508 53.0975 18.8385L56.196 15.7423C56.4569 15.4814 56.603 15.1276 56.603 14.7598C56.603 14.392 56.4563 14.0376 56.196 13.7773L48.2168 5.79748C47.6957 5.27637 46.7723 5.27637 46.2512 5.79748L43.154 8.89582C42.8415 9.20843 42.3618 9.27687 41.9665 9.07902C40.923 8.55668 39.8434 8.11062 38.7352 7.74316C38.3155 7.60401 38.0244 7.21643 38.0242 6.77428L38.0231 2.38873C38.0231 1.62134 37.4004 1 36.6331 1H25.348C24.5806 1 23.9579 1.62134 23.9579 2.38873L23.9568 6.77539C23.9567 7.21732 23.6658 7.60478 23.2464 7.74408C22.1401 8.11151 21.0613 8.55742 20.0181 9.07905C19.623 9.27658 19.1437 9.20807 18.8314 8.89574L15.7325 5.79681C15.2114 5.27571 14.288 5.27571 13.7669 5.79681L5.789 13.7773C5.24732 14.319 5.24732 15.1999 5.789 15.7429L8.88695 18.8409C9.19911 19.153 9.26773 19.632 9.07056 20.027C8.55061 21.0686 8.10496 22.148 7.73728 23.2576C7.59819 23.6773 7.21058 23.9685 6.7684 23.9686L2.38091 23.9697C1.61353 23.9697 0.992188 24.5924 0.992188 25.3598V36.6415C0.992188 37.4089 1.61419 38.0309 2.38158 38.0309ZM3.77163 27.7489C3.77163 27.1967 4.21918 26.7491 4.77135 26.7489L8.57376 26.7479C9.21037 26.7479 9.76532 26.3137 9.92066 25.6964C10.4391 23.6285 11.2523 21.6603 12.3377 19.8441C12.6629 19.2971 12.576 18.5981 12.1266 18.148L9.44489 15.4668C9.05433 15.0764 9.05426 14.4432 9.44474 14.0526L14.0442 9.45213C14.4347 9.06153 15.068 9.0615 15.4585 9.45205L18.1415 12.135C18.5916 12.5851 19.2899 12.6721 19.8376 12.3448C21.6604 11.2555 23.6274 10.4429 25.6852 9.92648C26.3039 9.77247 26.7381 9.21619 26.7381 8.57958L26.7391 4.7785C26.7393 4.22633 27.1869 3.77878 27.7391 3.77878H34.2453C34.7974 3.77878 35.2451 4.22633 35.2453 4.7785L35.2463 8.57958C35.2463 9.21619 35.6805 9.77247 36.3005 9.92648C38.3597 10.4409 40.3273 11.2541 42.1495 12.3448C42.6965 12.6714 43.3968 12.5844 43.8469 12.135L46.5286 9.45225C46.9191 9.0616 47.5524 9.06153 47.9429 9.45211L52.5421 14.0512C52.9326 14.4418 52.9326 15.0751 52.5419 15.4656L49.8591 18.1473C49.4077 18.5974 49.3208 19.2971 49.6494 19.8447C50.7374 21.6636 51.5512 23.6318 52.0677 25.6957C52.2217 26.3157 52.778 26.7485 53.4159 26.7485H57.2157C57.7679 26.7485 58.2155 27.196 58.2157 27.7482L58.2177 34.2505C58.2179 34.8029 57.7701 35.2508 57.2177 35.2508H53.4146C52.7767 35.2508 52.2204 35.6836 52.0664 36.3023C51.5492 38.3675 50.7361 40.3357 49.6494 42.1533C49.3228 42.7003 49.4084 43.3993 49.8591 43.8494L52.5434 46.5336C52.934 46.9242 52.9339 47.5575 52.5432 47.948L47.9427 52.5465C47.5522 52.9368 46.9192 52.9368 46.5287 52.5465L43.8455 49.8643C43.3941 49.4142 42.6958 49.3259 42.1495 49.6545C40.3372 50.7386 38.3676 51.5511 36.2985 52.0715C35.6798 52.2255 35.247 52.7818 35.247 53.4198L35.2491 57.22C35.2494 57.7725 34.8016 58.2205 34.2491 58.2205H27.7387C27.1864 58.2205 26.7387 57.7728 26.7387 57.2205V53.4184C26.7387 52.7805 26.3046 52.2242 25.6859 52.0702C23.6333 51.5584 21.6651 50.7452 19.8356 49.6532C19.2873 49.3266 18.5909 49.4149 18.1395 49.8643L15.4564 52.5463C15.0659 52.9367 14.4328 52.9366 14.0424 52.5462L9.44389 47.9477C9.05347 47.5573 9.05335 46.9243 9.44361 46.5337L12.1259 43.8494C12.576 43.3993 12.6629 42.7009 12.337 42.1546C11.2463 40.3278 10.4338 38.3595 9.92 36.3036C9.76599 35.685 9.2097 35.2508 8.57176 35.2508H4.77163C4.21935 35.2508 3.77163 34.8031 3.77163 34.2508V27.7489Z" fill="white" stroke="white" stroke-width="0.5"/>
+                    <path d="M27.7216 45.4929C28.9786 45.8318 30.2543 46 31.5215 46C34.0248 46 36.495 45.3451 38.7237 44.0647C42.0802 42.1342 44.4837 39.0129 45.492 35.2751C46.8055 30.4125 45.5364 25.3042 42.097 21.6114C41.6241 21.1019 40.8273 21.0749 40.319 21.5483C39.8107 22.0218 39.7824 22.8179 40.2559 23.3262C43.0993 26.3785 44.149 30.6006 43.0632 34.6195C42.2298 37.7097 40.2445 40.289 37.4696 41.8837C34.6966 43.4783 31.4669 43.8989 28.3778 43.0643C22.0006 41.3441 18.2121 34.7559 19.9312 28.3811C20.7646 25.291 22.7511 22.7116 25.526 21.1169C28.299 19.5223 31.5288 19.1011 34.6179 19.9363C35.2878 20.1148 35.9795 19.7206 36.1609 19.0489C36.3418 18.3777 35.9452 17.6874 35.2734 17.5071C31.5354 16.4977 27.6273 17.006 24.2707 18.9353C20.9142 20.8646 18.5095 23.9859 17.5013 27.7249C15.421 35.4397 20.0063 43.4116 27.7216 45.4929Z" fill="white" stroke="white" stroke-width="0.5"/>
+                    <path d="M31.0098 22.25C31.9935 22.25 32.7909 23.0466 32.791 24.0303V24.6514H33.9902C34.9739 24.6515 35.7705 25.4479 35.7705 26.4316C35.7705 27.4153 34.9739 28.2118 33.9902 28.2119H30.3047C30.0661 28.2119 29.8673 28.3814 29.8213 28.6064L29.8105 28.7061L29.8213 28.8047C29.8672 29.0298 30.066 29.1992 30.3047 29.1992H31.7158C33.9508 29.1992 35.7705 31.0189 35.7705 33.2539C35.7705 35.049 34.5888 36.5612 32.9629 37.0928L32.791 37.1484V37.9316C32.791 38.9154 31.9936 39.7119 31.0098 39.7119C30.0262 39.7117 29.2295 38.9153 29.2295 37.9316V37.3115H28.0303C27.0466 37.3114 26.25 36.514 26.25 35.5303C26.2502 34.5467 27.0467 33.7501 28.0303 33.75H31.7158C31.9883 33.75 32.2098 33.5293 32.21 33.2568C32.21 32.9842 31.9884 32.7627 31.7158 32.7627H30.3047C28.0696 32.7627 26.25 30.943 26.25 28.708C26.2501 26.913 27.4318 25.4017 29.0576 24.8701L29.2295 24.8135V24.0303C29.2296 23.0467 30.0262 22.2503 31.0098 22.25Z" fill="white" stroke="black" stroke-width="0.5"/>
+                  </svg>
+
+                </div>
+                <h4 className='uppercase font-black'>Eliminate cash management problems</h4>
+              </div>
+              <div className='text-center flex flex-col items-center justify-center gap-5 border border-white/50 rounded-2xl p-10 w-full'>
+                <div>
+                  <svg width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M54.6835 8.68267L46.5858 0.585025C46.2108 0.210006 45.7008 0 45.1708 0H10.8217C10.2917 0 9.78166 0.210006 9.40667 0.585025L1.31159 8.68267C0.936569 9.05769 0.726562 9.5677 0.726562 10.0977V19.5631C0.726562 37.0839 11.1219 52.892 27.2078 59.835C27.4603 59.945 27.7303 60 28.0003 60C28.2703 60 28.5403 59.945 28.7929 59.835C44.8787 52.892 55.274 37.0839 55.274 19.5631V10.0977C55.274 9.56769 55.064 9.05766 54.689 8.68267H54.6835ZM51.2683 19.5632C51.2683 35.1965 42.1626 49.3296 27.9975 55.8099C13.8292 49.3296 4.72672 35.1965 4.72672 19.5632V10.9253L11.6518 4.00022H44.3432L51.2683 10.9253V19.5632Z" fill="white"/>
+                  <path d="M35.1465 30.699H25.2638L26.2438 29.8465C27.0789 29.1215 27.1664 27.8589 26.4413 27.0239C25.7163 26.1888 24.4537 26.1013 23.6212 26.8264L18.6035 31.1866C18.166 31.5666 17.916 32.1166 17.916 32.6966C17.916 33.2767 18.166 33.8267 18.6035 34.2067L23.6212 38.5669C23.9987 38.8969 24.4663 39.0569 24.9313 39.0569C25.4913 39.0569 26.0464 38.8244 26.4414 38.3694C27.1664 37.5344 27.0789 36.2719 26.2439 35.5468L25.2639 34.6942H35.1466C36.2516 34.6942 37.1466 33.7992 37.1466 32.6942C37.1466 31.5891 36.2516 30.6941 35.1466 30.6941L35.1465 30.699Z" fill="white"/>
+                  <path d="M32.3769 14.806C31.5444 14.0809 30.2793 14.1709 29.5568 15.0035C28.8318 15.8385 28.9193 17.101 29.7543 17.8261L30.7343 18.6787H20.8517C19.7466 18.6787 18.8516 19.5737 18.8516 20.6787C18.8516 21.7838 19.7466 22.6788 20.8517 22.6788H30.7369L29.7569 23.5338C28.9243 24.2589 28.8368 25.5215 29.5594 26.3539C29.9544 26.809 30.5094 27.0415 31.0695 27.0415C31.5345 27.0415 32.002 26.8815 32.382 26.5514L37.3997 22.1888C37.8372 21.8087 38.0873 21.2587 38.0873 20.6787C38.0873 20.0986 37.8372 19.5486 37.3997 19.1686L32.382 14.8084L32.3769 14.806Z" fill="white"/>
+                  </svg>
+
+
+                </div>
+                <h4 className='uppercase font-black'>Secure digital transfers</h4>
+              </div>
+            </div>
+            <div className='text-center'>
+              <a href='#' className='mm-button blue'>Learn More</a>
+            </div>
+        </div>
+      </section>
+
+      <section className='bg-[#f7f7f7] max-lg:my-14 max-lg:py-14 lg:py-24 text-black'>
+        <div className='container space-y-10'>
+          <h2 className='section-title text-center'>Prefer to use a computer?</h2>
+          <p className='text-center'>No problem, mymonty business is for all your devices.</p>
+          <div>
+            <img src='/macbook.webp' />
+            <div className='flex max-lg:flex-col gap-5'>
+              <div className='text-center bg-[#E3E9ED]  rounded-2xl p-10 backdrop-blur-[104px] w-full'>
+                <h4 className='font-black uppercase'>A unified dashboard</h4>
+                <p>One smart hub to manage revenues, expenses, and cash flow</p>
+              </div>
+              <div className='text-center bg-[#E3E9ED]  rounded-2xl p-10 backdrop-blur-[104px] w-full'>
+                <h4 className='font-black uppercase'>Seamless Payroll Solution</h4>
+                <p>One click. Unlimited salary payouts</p>
+              </div>
+              <div className='text-center bg-[#E3E9ED]  rounded-2xl p-10 backdrop-blur-[104px] w-full'>
+                <h4 className='font-black uppercase'>Mass Payments</h4>
+                <p>Disburse bulk payments in one go—one file, multiple beneficiaries</p>
+              </div>
+              
+            </div>
+
+            <div className='flex max-lg:flex-col gap-5 mt-5'>
+              <div className='text-center bg-[#E3E9ED]  rounded-2xl p-10 backdrop-blur-[104px] w-full'>
+                <h4 className='font-black uppercase'>Wallet transfers</h4>
+                <p>Pay businesses and customers instantly</p>
+              </div>
+              <div className='text-center bg-[#E3E9ED]  rounded-2xl p-10 backdrop-blur-[104px] w-full'>
+                <h4 className='font-black uppercase'>Real-Time Overview</h4>
+                <p>Always-on visibility of balances and transactions</p>
+              </div>
+              
+              
+            </div>
           </div>
         </div>
       </section>
-      
-      {/* <section className="py-24 ">
-        <FAQs />
-      </section> */}
 
       <section className="py-24">
         <Form />
