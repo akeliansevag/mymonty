@@ -32,8 +32,8 @@ const worldEliteCards = () => {
         }
     };
     const terms = {
-        termsAndConditions: '/credit-cards-terms-and-conditions-world-elite-credit-card-v1-15.04.2025.pdf',
-        kfs: '/World-Elite-V.02.pdf'
+        termsAndConditions: '/World Elite Prepaid Cards Terms.pdf',
+        kfs: '/World Elite Prepaid Card KFS.pdf'
     }
 
     return (
