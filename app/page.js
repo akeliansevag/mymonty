@@ -23,7 +23,7 @@ export default function Home() {
       <HomeBanner />
       <SectionTwo />
       <SectionThree />
-      <SectionFour />
+      {/* <SectionFour /> */}
       <SectionFive />
       <SectionSix />
       <SectionSeven />
