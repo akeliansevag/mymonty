@@ -9,7 +9,7 @@ const Contact = () => {
 
   const [selectedCountry, setSelectedCountry] = useState(null);
   const initialFormData = {
-    full_name: '',
+    name: '',
     email: '',
     code: selectedCountry ? selectedCountry.code : '', // Default code value based on selected country
     mobile: '',
@@ -30,7 +30,7 @@ const Contact = () => {
     const newErrors = {};
 
     // Required fields validation
-    const requiredFields = ['full_name', 'email', 'code', 'mobile', 'message'];
+    const requiredFields = ['name', 'email', 'code', 'mobile', 'message'];
     requiredFields.forEach((field) => {
       if (!formData[field].trim()) {
         newErrors[field] = 'This field is required';
@@ -171,15 +171,15 @@ const Contact = () => {
         <div className='flex flex-col md:flex-row gap-10 max-lg:gap-6'>
           <div className='flex flex-col gap-1 w-full'>
             <input
-              id='full_name'
-              name='full_name'
-              value={formData.full_name}
+              id='name'
+              name='name'
+              value={formData.name}
               onChange={handleChange}
               placeholder='Full Name'
-              className={`px-3.5 py-2.5 border w-full border-[#EBEBEB] bg-[#F2F2F2] rounded-xl ${errors.full_name ? 'border-red-500' : ''
+              className={`px-3.5 py-2.5 border w-full border-[#EBEBEB] bg-[#F2F2F2] rounded-xl ${errors.name ? 'border-red-500' : ''
                 }`}
             />
-            <span className='self-start text-red-500'>{errors.full_name}</span>
+            <span className='self-start text-red-500'>{errors.name}</span>
           </div>
         </div>
 
