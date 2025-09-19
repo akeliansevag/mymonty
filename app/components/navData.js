@@ -134,7 +134,7 @@ export const data = [
             },
             {
                 title: 'Loans',
-                url: '/loans',
+                url: null,
                 children: [
                     {
                         title: 'Car Loan',
