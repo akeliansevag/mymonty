@@ -22,7 +22,7 @@ const Nav = ({ handleMenuOpen, menuOpen }) => {
                             </span>
                             {items.children && (
                                 <div className={`${menuOpen ? 'group-hover:block' : null} min-h-[40vh] submenu fixed py-10 bg-[#f7f7f7] w-full top-full left-0 hidden`}>
-                                    <div className='container flex lg:gap-16 max-lg:gap-10'>
+                                    <div className='container flex lg:gap-24 max-lg:gap-10'>
                                         {items.children.map((child, index2) => {
                                             return (
                                                 <div key={index2}>
