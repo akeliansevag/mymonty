@@ -26,7 +26,9 @@ const Nav = ({ handleMenuOpen, menuOpen }) => {
                                         {items.children.map((child, index2) => {
                                             return (
                                                 <div key={index2}>
-                                                    <span className='font-bold block mb-[15px] text-xl sub-title'>
+                                                    <span  className={`font-bold block mb-[15px] text-xl sub-title ${
+                                                        child?.url ? "cursor-pointer" : "cursor-default"
+                                                    }`}>
                                                         {child?.url ? <Link onClick={(e) => handleMenuOpen(false)} href={child.url}>{child.title}</Link> : child.title}
                                                     </span>
                                                     {child?.children && (
