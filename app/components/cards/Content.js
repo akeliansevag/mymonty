@@ -507,7 +507,7 @@ const Content = () => {
                         
                     </div>
 
-                    <div id="shahid">
+                    {/* <div id="shahid">
                         <div>
                             <h2>Get All the Drama for Half the Price</h2>
                             <p>Get <strong>50% OFF Shahid VIP with Your MyMonty Card</strong>. Your favorite shows just got more affordable. Enjoy <strong>50% OFF your Shahid VIP monthly plan</strong> when you use an eligible <strong>MyMonty Mastercard®</strong>.
@@ -536,7 +536,7 @@ const Content = () => {
                             <a href='/Shahid-T&Cs - May 2025.pdf' target='_blank' className='mm-button blue'>View Full Terms & Conditions</a>
                         </div>
                         
-                    </div>
+                    </div> */}
 
                     <div>
                         <div>
