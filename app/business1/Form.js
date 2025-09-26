@@ -168,7 +168,7 @@ const Form = () => {
   return (
 
     <div className='container'>
-      <h2 className='section-title text-balance text-center mb-14'>Kindly share your information AND our team will contact you</h2>
+      <h2 className='section-title text-balance text-center mb-14'>FILL YOUR INFORMATION AND <br /> OUR TEAM WILL CONTACT YOU</h2>
       <div className=' bg-[#F7F7F7] rounded-3xl px-5 py-10'>
         <form onSubmit={handleSubmit}>
         <div className='flex flex-col max-lg:gap-6 gap-10 max-lg:px-5 px-10 rounded-[1.875rem] text-black'>

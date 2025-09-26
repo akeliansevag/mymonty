@@ -13,13 +13,13 @@ const pea = () => {
     return (
         <div>
        
-            <FooterBanner downloadURL="/KFS-Prepaid-Card-(Physical)-with-Supp-(003).pdf" title="MyMonty Physical Prepaid Card: Key Facts & Statements" />
+            <FooterBanner downloadURL="/VIRTUAL-PREPAID-ASTERCARD-KFS-12-9-25.pdf" title="MyMonty Physical Prepaid Card: Key Facts & Statements" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PLATINUM PREPAID CARD (PHYSICAL) - KEY FACTS STATEMENT  <br />
-                        (V.1.6 – 04 June 2025)</strong> </p>
+                        (V.1.6 – 12 September 2025)</strong> </p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“<strong>KFS</strong>”) provides you with information on the key features, limits, fees and charges of the MyMonty Business Platinum Prepaid Mastercard offered by Monty Finance SAL (“<strong>Card</strong>”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Business Prepaid Mastercard Terms</a>.</p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“<strong>KFS</strong>”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Platinum Physical Prepaid Card offered by Monty Finance SAL (“<strong>Card</strong>”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the <a className='text-blue-500 hover:underline' href="/Platinum-Prepaid-Cards-Terms-(V.1.0---NPY).pdf" target="_blank">Prepaid Cards Terms and Conditions</a>.</p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
@@ -99,7 +99,7 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td colSpan={2}><strong>Foreign currency conversion fee</strong> (if the Card is used for purchases in a currency other than USD)</td>
-                                <td colSpan={2}>4% of the transaction amount</td>
+                                <td colSpan={2}>2% of the transaction amount</td>
                             </tr>
                             <tr>
                                 <td colSpan={2}><strong>Cross border fee</strong> (if the Card is used for USD purchases with any merchant located outside Lebanon)</td>
@@ -124,7 +124,7 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td colSpan={2}><strong>Foreign currency conversion fee</strong> (if the Card is used for withdrawals in any currency other than USD)</td>
-                                <td colSpan={2}>4% of the transaction amount</td>
+                                <td colSpan={2}>2% of the transaction amount</td>
                             </tr>
 
                             <tr>

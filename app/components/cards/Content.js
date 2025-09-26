@@ -50,8 +50,8 @@ const Content = () => {
                 <div ref={travelRef} data-name="travel" className="content-category">
                     <div className='!pt-0'>
                         <div>
-                            <h2>World Elite Mastercard® Lounge Program</h2>
-                            <p>Enjoy <strong>FREE</strong> unlimited access with one guest to over 1,200 airport lounges in 450+ cities across 135+ countries through DragonPass, including business amenities, Wi-Fi, and complimentary refreshments.</p>
+                            <h2>Platinum Mastercard® Lounge Program</h2>
+                            <p>Enjoy <strong>FREE</strong> access with one guest to over 1,200 airport lounges in 450+ cities across 135+ countries through DragonPass, including business amenities, Wi-Fi, and complimentary refreshments.</p>
                         </div>
                         
                         <div className='image-wrapper flex max-lg:flex-col lg:justify-between lg:items-end max-lg:items-center gap-10 p-5'>

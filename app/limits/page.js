@@ -17,10 +17,10 @@ const terms = () => {
     return (
         <div className={styles.terms}>
     
-            <FooterBanner downloadURL="/List-of-Limits-16.7.2025.pdf" title="Personal Account and Cards Limits" />
+            <FooterBanner downloadURL="/List-of-Limits-12-9-25.pdf" title="Personal Account and Cards Limits" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content'>
-                    <p className='mb-10'>(effective as of 16 July 2025)</p><br />
+                    <p className='mb-10'>(effective as of 12 September 2025)</p><br />
 
                     <h2>Personal eWallet Account</h2>
 
@@ -39,11 +39,13 @@ const terms = () => {
 
                     <h3 className="font-bold underline">Adding money to your Account</h3>
                     <p><strong>Through MyMonty branch:</strong> Any amount (as long as the account balance does not exceed the maximum account balance and monthly credit limits)</p><br />
+                    <p><strong>Through SST (cardless) *Subject to SST transaction limit:</strong> Any amount (as long as the account balance does not exceed the maximum account balance and monthly credit limits)</p><br />
                     <p><strong>Through ATM (cardless)</strong> *Subject to ATM transaction limit:<br />Any amount (as long as the account balance does not exceed the maximum account balance and monthly credit limits)</p><br />
                     <p><strong>Through our Appointed Agent:</strong> Any amount (as long as the account balance does not exceed the maximum account balance and monthly credit limits) <em>*Limit of LBP 15,000,000 per top-up transaction.</em></p><br />
 
                     <h3 className="font-bold underline">Withdrawing Money from your Account</h3>
                     <p><strong>Through MyMonty Branch:</strong> In USD - up to the available USD balance / In LBP - up to the available LBP balance.</p><br />
+                    <p><strong>Through SST (cardless):</strong> In USD- 3,000 per transaction up to the available USD balance / In LBP- 30,000,000 per withdrawal transaction, up to the full available LBP balance</p><br />
                     <p><strong>Through ATM (cardless):</strong> In USD - 2,000 per transaction up to the available USD balance / In LBP - 3,000,000 per withdrawal transaction, up to the full available LBP balance</p><br />
                     <p><strong>Through our Appointed Agent:</strong> In USD - up to the available USD balance / In LBP - 15,000,000 per withdrawal transaction, up to the full available LBP balance</p><br />
 

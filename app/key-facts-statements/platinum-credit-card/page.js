@@ -13,11 +13,11 @@ const pea = () => {
     return (
         <div>
          
-            <FooterBanner downloadURL="/Credit-Card-KFS-(Offline)-2.7.25.pdf" title="MyMonty Platinum Credit Card: Key Facts & Disclosures" />
+            <FooterBanner downloadURL="/Credit-Card-KFS-(Offline)-12-9-25.pdf" title="MyMonty Platinum Credit Card: Key Facts & Disclosures" />
             <div className='container py-10 lg:py-20 relative'>
                 <p>
                     <strong>MYMONTY MC PLATINUM CREDIT CARD - KEY FACTS STATEMENT  <br />
-                        (V.1.7 – 02 July 2025)</strong> </p>
+                        (V.1.8 – 12 September 2025)</strong> </p>
 
                 <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Platinum Credit Card offered by Monty Finance S.A.L. (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the Credit Cards Terms and Conditions and the Credit Card Application Form of which it forms an integral part. </p>
 
@@ -173,7 +173,7 @@ const pea = () => {
 
                             <tr>
                                 <td><strong>Foreign currency conversion fee</strong> (if the Card is used for purchases in a currency other than USD)</td>
-                                <td colSpan={3}>4% of the transaction amount</td>
+                                <td colSpan={3}>2% of the transaction amount</td>
                             </tr>
 
                             <tr>
@@ -198,7 +198,7 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td><strong>Foreign currency conversion fee</strong> (if the Card is used for withdrawals in any currency other than USD)</td>
-                                <td colSpan={3}>4% of the transaction amount</td>
+                                <td colSpan={3}>2% of the transaction amount</td>
                             </tr>
 
                             <tr>

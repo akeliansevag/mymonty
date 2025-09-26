@@ -13,11 +13,11 @@ const pea = () => {
     return (
         <div>
            
-            <FooterBanner downloadURL="/KFS-Prepaid-Virtual-Card-16.7.25.pdf" title="MyMonty Virtual Prepaid Card: Key Facts & Statements" />
+            <FooterBanner downloadURL="/VIRTUAL-PREPAID-MASTERCARD-KFS-12-9-25.pdf" title="MyMonty Virtual Prepaid Card: Key Facts & Statements" />
             <div className='container py-10 lg:py-20 relative'>
-                <p><strong>VIRTUAL PREPAID MASTERCARD - KEY FACTS STATEMENT <br /> (V.1.4 – 16 July 2025)</strong></p>
+                <p><strong>VIRTUAL PREPAID MASTERCARD - KEY FACTS STATEMENT <br /> (V.1.5 – 12 September 2025)</strong></p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“<strong>KFS</strong>”) provides you with information on the key features, limits, fees and charges of the Virtual Prepaid Mastercard offered by Monty Finance SAL (“<strong>Card</strong>”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the  <a className='text-blue-500 hover:underline' href="/legal/customer-agreement">Business Prepaid Mastercard Terms</a>.</p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“<strong>KFS</strong>”) provides you with information on the key features, limits, fees and charges of the Virtual Prepaid Mastercard offered by Monty Finance SAL (“<strong>Card</strong>”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the <a className='text-blue-500 hover:underline' href="/Virtual Prepaid Card Terms.pdf" target="_blank">Virtual Prepaid Mastercard Terms</a>.</p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
@@ -86,7 +86,7 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td colSpan={2}><strong>Foreign currency conversion fee</strong> (if the Card is used for purchases in a currency other than USD)</td>
-                                <td colSpan={2}>4% of the transaction amount</td>
+                                <td colSpan={2}>2% of the transaction amount</td>
                             </tr>
                             <tr>
                                 <td colSpan={2}><strong>Cross border fee</strong> (if the Card is used for USD purchases with any merchant located outside Lebanon)</td>

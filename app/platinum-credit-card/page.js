@@ -15,13 +15,13 @@ import Section from '@/app/components/Section';
 import Image from 'next/image';
 
 export const metadata = {
-    title: 'Platinum Credit Card' + websiteName,
-    description: 'Discover the MyMonty Platinum Credit Card in Lebanon. Unlock exclusive privileges, premium rewards & unparalleled global benefits. Apply now!',
+    title: 'Mastercard Platinum Credit Card' + websiteName,
+    description: 'Discover the MyMonty Mastercard Platinum Credit Card in Lebanon. Unlock exclusive privileges, premium rewards & unparalleled global benefits. Apply now!',
 };
 
 const cards = () => {
     const data = {
-        title: 'Platinum credit card',
+        title: 'Mastercard Platinum Credit Card',
         subtitle: 'Cards',
         desc: '<strong>1% Cashback</strong> on any amount spent using the MyMonty Credit Card at Points of Sale or online.',
         image: {
@@ -40,7 +40,7 @@ const cards = () => {
     
     const terms = {
         termsAndConditions: '/credit-cards-terms-and-conditions.pdf', 
-        kfs: '/Credit-Card-KFS-(Offline)-2.7.25.pdf'
+        kfs: '/Credit-Card-KFS-(Offline)-12-9-25.pdf'
     }
 
     return (
@@ -58,7 +58,7 @@ const cards = () => {
                     </div>
                     
                     <div className='mt-20 lg:mt-40'>
-                        <TextBlock center={true} title="Platinum Credit Card Benefits" description="" />
+                        <TextBlock center={true} title="Mastercard Platinum Credit Card Benefits" description="" />
                     </div>
                 </div>
                 

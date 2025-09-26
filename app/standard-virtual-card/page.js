@@ -74,7 +74,7 @@ const VirtualMastercard = () => {
     ]
     const terms = {
         termsAndConditions: '/Virtual Prepaid Card Terms.pdf', 
-        kfs: '/KFS-Prepaid-Virtual-Card-16.7.25.pdf'
+        kfs: '/VIRTUAL-PREPAID-MASTERCARD-KFS-12-9-25.pdf'
     }
     return (
         <>

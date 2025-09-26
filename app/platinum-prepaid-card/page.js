@@ -12,13 +12,13 @@ import Content from '../components/cards/Content';
 
 
 export const metadata = {
-    title: 'Platinum Prepaid Card' + websiteName,
+    title: 'Mastercard Platinum Prepaid Card' + websiteName,
     description: 'Get the MyMonty Platinum Prepaid Card in Lebanon. Enjoy premium features, secure spending & easy top-ups for your daily needs. Apply now!',
 };
 
 const cards = () => {
     const data = {
-        title: 'Physical PLATINUM mastercard',
+        title: 'Mastercard Platinum Prepaid Card',
         subtitle: 'Cards',
         desc: 'World-class. Unique. Boundless.',
         image: {
@@ -35,8 +35,8 @@ const cards = () => {
     };
 
     const terms = {
-        termsAndConditions: false, 
-        kfs: 'KFS-Prepaid-Card-(Physical)-with-Supp-(003).pdf'
+        termsAndConditions: 'Platinum-Prepaid-Cards-Terms-(V.1.0---NPY).pdf', 
+        kfs: 'KFS-Platinum-Card-(Physical)-with-Supp-12-9-25.pdf'
     }
 
     return (
@@ -46,7 +46,7 @@ const cards = () => {
             <VirtualCard />
             <div className="py-10 lg:py-20">
                 <div className="container text-center">
-                    <TextBlock center={true} title="Physical Platinum Mastercard Benefits" description="" />
+                    <TextBlock center={true} title="Mastercard Platinum Prepaid Card Benefits" description="" />
                 </div>
                 
                 <Content />

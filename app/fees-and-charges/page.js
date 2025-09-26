@@ -15,10 +15,10 @@ const terms = () => {
 
     return (
         <div className={styles.terms}>
-            <FooterBanner downloadURL="/List-of-Fees-and-Charges-16.7.25.pdf" title="Personal Fees & Charges" />
+            <FooterBanner downloadURL="/List-of-Fees-and-Charges-12-9-25.pdf" title="Personal Fees & Charges" />
             <div className='container py-10 lg:py-20 relative'>
                 <div className='text-base html-content'>
-                    <p>(effective as of 16 July 2025)</p><br />
+                    <p>(effective as of 12 September 2025)</p><br />
                     
                     <h2>Personal eWallet Account</h2>
                     <br />
@@ -36,12 +36,14 @@ const terms = () => {
 
                     <h3 className="font-bold underline">Add money to your Account through:</h3>
                     <p><strong>MyMonty branch:</strong><br />Free of charge</p><br />
+                    <p><strong>Self-Service Terminal (SST):</strong><br />Free of charge</p><br />
                     <p><strong>ATM (cardless):</strong><br />Free of charge</p><br />
                     <p><strong>Our Appointed Agent:</strong><br />Free of charge</p><br />
                     <p><strong>By using any accepted card:</strong><br />LBP Local card: 3%<br />Foreign currency local or international card: 3%</p><br />
 
                     <h3 className="font-bold underline">Withdraw money from your Account through:</h3>
                     <p><strong>MyMonty Branch:</strong><br />Free of charge</p><br />
+                    <p><strong>Self-Service Terminal (SST):</strong><br />Free of charge</p><br />
                     <p><strong>ATM (cardless):</strong><br />LBP: 0.75% *minimum of LBP 100,000 / USD: 0.75% *minimum of USD 1</p><br />
                     <p><strong>Our Appointed Agent:</strong><br />1.5%</p><br />
 
@@ -81,14 +83,14 @@ const terms = () => {
 
                     <h3 className="font-bold underline">Transactions (Point of Sale [POS] and Online)</h3>
                     <p><strong>Transaction Fee (Local purchase transactions in USD):</strong><br />Free of charge</p><br />
-                    <p><strong>Foreign currency conversion fee (purchase transactions in a currency other than USD):</strong><br />4% of the transaction amount</p><br />
+                    <p><strong>Foreign currency conversion fee (purchase transactions in a currency other than USD):</strong><br />2% of the transaction amount</p><br />
                     <p><strong>Cross border fee (if the Card is used for USD purchases with any merchant located outside Lebanon):</strong><br />1.5% *minimum of 0.5 USD</p><br />
 
                     <h3 className="font-bold underline">ATM Withdrawals</h3>
                     <p><strong>ATM Withdrawal (when using issuer’s ATMs):</strong><br />1% of the transaction amount, with a minimum of USD 1</p><br />
                     <p><strong>ATM Withdrawal (when using other local ATMs):</strong><br />1% of the transaction amount, with a minimum of USD 1<br />(some banks may apply additional fees)</p><br />
                     <p><strong>ATM Withdrawal (when using an ATM outside Lebanon):</strong><br />USD 3.75 + 2% of the transaction amount<br />(some banks may apply additional fees)</p><br />
-                    <p><strong>Foreign currency conversion fee (if the Card is used for withdrawals in any currency other than USD):</strong><br />4% of the transaction amount</p><br />
+                    <p><strong>Foreign currency conversion fee (if the Card is used for withdrawals in any currency other than USD):</strong><br />2% of the transaction amount</p><br />
 
                     <h3 className="font-bold underline">Online Servicing</h3>
                     <p><strong>Available balance, transaction history:</strong><br />Free of Charge</p><br />
@@ -122,7 +124,7 @@ const terms = () => {
 
                     <h3 className="font-bold underline">Online Transactions</h3>
                     <p><strong>Transaction Fee (for local online purchase transaction in USD):</strong><br />Free of charge</p><br />
-                    <p><strong>Foreign currency conversion fee (if the Card is used for purchases in a currency other than USD):</strong><br />4% of the transaction amount</p><br />
+                    <p><strong>Foreign currency conversion fee (if the Card is used for purchases in a currency other than USD):</strong><br />2% of the transaction amount</p><br />
                     <p><strong>Cross border fee (if the Card is used for USD purchases with any merchant located outside Lebanon):</strong><br />1.5% *minimum of 0.5 USD</p><br />
 
                     <h3 className="font-bold underline">Online Servicing</h3>
@@ -161,14 +163,14 @@ const terms = () => {
 
                     <h3 className="font-bold underline">Transactions (Point of Sale [POS] and Online)</h3>
                     <p><strong>Transaction Fee (when you use your Card for the purchase of goods or services in Lebanon):</strong><br />Free of Charge</p><br />
-                    <p><strong>Foreign currency conversion fee (if the Card is used for purchases in a currency other than USD):</strong><br />4% of the transaction amount</p><br />
+                    <p><strong>Foreign currency conversion fee (if the Card is used for purchases in a currency other than USD):</strong><br />2% of the transaction amount</p><br />
                     <p><strong>Cross border fee (if the Card is used for USD purchases with any merchant located outside Lebanon):</strong><br />1.5% with a minimum of USD 0.5 per transaction</p><br />
 
                     <h3 className="font-bold underline">ATM Transactions</h3>
                     <p><strong>ATM Withdrawal (when using issuer’s ATMs):</strong><br />USD 7 per transaction</p><br />
                     <p><strong>ATM Withdrawal (when using other Local ATMs):</strong><br />USD 10 per transaction (some banks may apply additional fees)</p><br />
                     <p><strong>ATM Withdrawal (when using an ATM outside Lebanon):</strong><br />USD 10 per transaction (some banks may apply additional fees)</p><br />
-                    <p><strong>ATM Withdrawal (in any currency other than USD):</strong><br />4% of the transaction amount</p><br />
+                    <p><strong>ATM Withdrawal (in any currency other than USD):</strong><br />2% of the transaction amount</p><br />
                     <p><strong>ATM Online Services (available balance and transactions history):</strong><br />Free of Charge</p><br />
 
                     <h3 className="font-bold underline">Miscellaneous</h3>
