@@ -99,8 +99,8 @@ const Business1 = () => {
           <p className='text-center'>Your business, connected across all devices.</p>
 
           <div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8'>
-              <div className='col-span-1 flex flex-col gap-4 md:gap-8'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8 w-full'>
+              <div className='lg:col-span-1 flex flex-col gap-4 md:gap-8'>
                 <div className='flex flex-col justify-center gap-6 text-center bg-[#E3E9ED] rounded-2xl p-4 md:p-8 backdrop-blur-[104px] w-full h-full'>
                   <h4 className='font-black uppercase text-2xl'>A unified dashboard</h4>
                   <p>One smart hub to manage revenues, expenses, and cash flow</p>
@@ -111,7 +111,7 @@ const Business1 = () => {
                 </div>
               </div>
 
-              <div className='col-span-2'>
+              <div className='lg:col-span-2'>
                 <div className='flex flex-col text-center bg-[#E3E9ED] rounded-2xl p-4 lg:p-24 pb-0 lg:pb-0 backdrop-blur-[104px] w-full h-full'>
                   <img src='/business/business-wallet/one-seamless-experience.webp' className='mt-auto' alt='Laptop & Iphone' width='1180' height='718' />
                 </div>
