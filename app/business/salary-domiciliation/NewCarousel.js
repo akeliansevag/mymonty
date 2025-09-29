@@ -1,9 +1,9 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
-import TextBlock from '../components/TextBlock';
+import TextBlock from '../../components/TextBlock';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useAppContext } from '../AppContext';
+import { useAppContext } from '../../AppContext';
 
 const NewCarousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
     const [selectedIndex, setSelectedIndex] = useState(null);

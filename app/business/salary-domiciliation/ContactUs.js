@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { useAppContext } from '../AppContext';
+import { useAppContext } from '../../AppContext';
 
 export default function ContactUs() {
     const { geoData } = useAppContext();
@@ -73,7 +73,7 @@ const [searchTerm, setSearchTerm] = useState('');
     setIsSubmitting(true);
 
     try {
-      const res = await fetch("https://leb-backend.mymonty.com/api/salary", {
+      const res = await fetch("https://leb-backend.mymonty.com/api/business/salary", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
@@ -145,7 +145,7 @@ const [searchTerm, setSearchTerm] = useState('');
     <section id="contact-us" className='lg:py-32 max-lg:py-16 bg-[#091111]'>
         
         <div className="container">
-            <h2 className="section-title text-balance text-center">Kindly share your information AND our team will contact you</h2>
+            <h2 className="section-title text-balance text-center">Fill your information</h2>
             <div className="lg:bg-black lg:rounded-2xl lg:p-8 mt-10">
 
                 <form onSubmit={handleSubmit} className="space-y-10 max-lg:space-y-6">

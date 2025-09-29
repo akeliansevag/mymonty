@@ -92,7 +92,7 @@ const Contact = () => {
             try {
                 setLoading(true);
 
-                const response = await fetch(`${apiUrl}/salary-domiciliation`, {
+                const response = await fetch(`${apiUrl}/business/salary-domiciliation`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

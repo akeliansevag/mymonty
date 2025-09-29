@@ -42,7 +42,7 @@ const Benefits = () => {
                     text: 'Contact Sales Team',
                     url: '#',
                 },
-                contentImage: '/smart-tracking-graphic.webp',
+                contentImage: '/smart-tracking-graphic.svg',
                 backgroundImage: '/smart-tracking.webp'
             },
 

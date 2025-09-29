@@ -176,8 +176,17 @@ export const data = [
     },
     {
         title: 'Business',
-        url: '/business',
-        children: null
+        url: null,
+        children: [
+            {
+                title: 'Business Wallet',
+                url: '/business/business-wallet'
+            },
+            {
+                title: 'Salary Domiciliation',
+                url: '/business/salary-domiciliation'
+            },
+        ]
     },
     {
         title: 'Company',

@@ -38,6 +38,11 @@ const nextConfig = {
                 destination: '/blogs',
                 permanent: true, // Set to `false` if it's a temporary redirect
             },
+            {
+                source: '/business',
+                destination: '/business/business-wallet',
+                permanent: true, // Set to `false` if it's a temporary redirect
+            },
         ]
     },
     images: {

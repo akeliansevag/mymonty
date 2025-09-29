@@ -150,7 +150,7 @@ const Header = () => {
                         </svg>
                     </Link>
                     <svg onClick={handleRegionToggle} className='cursor-pointer dropdown-logo' width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                        <path d='M6 9L12 15L18 9' stroke={(pathname == '/business' || pathname == '/business1' || pathname == '/sign-up-and-win') ? '#FFFFFF' : '#000000'} strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'></path>
+                        <path d='M6 9L12 15L18 9' stroke={(pathname == '/business' || pathname == '/business/business-wallet' || pathname == '/sign-up-and-win') ? '#FFFFFF' : '#000000'} strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'></path>
                     </svg>
                 </div>
                 <div className='flex-1 flex justify-end gap-3 items-center'>
@@ -158,13 +158,13 @@ const Header = () => {
                         <Nav menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
                     </div>
                     <div className='hidden md:block'>
-                        {(pathname === '/business' && pathname === '/business1') && (
+                        {(pathname === '/business' && pathname === '/business/business-wallet') && (
                             <Link href="https://corporate.mymonty.com/" target='_blank' rel='noopener noreferrer nofollow' className='mm-button whitespace-nowrap'>
                                 Login
                             </Link>
                         )}
 
-                        {pathname !== '/business' && pathname !== '/business1' && (
+                        {pathname !== '/business' && pathname !== '/business/business-wallet' && (
                             <button onClick={handleOpenModal} className='mm-button whitespace-nowrap'>
                                 Download App
                             </button>

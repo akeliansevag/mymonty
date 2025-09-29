@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
-import { useAppContext } from '../AppContext';
+import { useAppContext } from '../../AppContext';
 
 const Form = () => {
 
@@ -92,7 +92,7 @@ const Form = () => {
       try {
         setLoading(true);
 
-        const response = await fetch(`${apiUrl}/contact-us-business`, {
+        const response = await fetch(`${apiUrl}/business/contact-us`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

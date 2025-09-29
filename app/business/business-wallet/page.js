@@ -1,7 +1,7 @@
 import React from 'react';
 import { websiteName } from '@/app/config';
-import Banner from '../components/Banner';
-import businessBanner from '@/public/business1/business-banner.webp';
+import Banner from '../../components/Banner';
+import businessBanner from '@/public/business/business-wallet/business-banner.webp';
 import Link from 'next/link';
 
 import Cards from './Cards';
@@ -113,7 +113,7 @@ const Business1 = () => {
 
               <div className='col-span-2'>
                 <div className='flex flex-col text-center bg-[#E3E9ED] rounded-2xl p-4 lg:p-24 pb-0 lg:pb-0 backdrop-blur-[104px] w-full h-full'>
-                  <img src='/business1/one-seamless-experience.webp' className='mt-auto' alt='Laptop & Iphone' width='1180' height='718' />
+                  <img src='/business/business-wallet/one-seamless-experience.webp' className='mt-auto' alt='Laptop & Iphone' width='1180' height='718' />
                 </div>
               </div>
             </div>
@@ -139,7 +139,7 @@ const Business1 = () => {
       <section className="py-24">
         <div className='container space-y-24'>
           <div className='flex flex-col md:flex-row gap-10 items-center'>
-            <img className='md:w-1/2' src='/business1/secure-and-regulated.webp' alt='Secure And Regulated' width='' height='' />
+            <img className='md:w-1/2' src='/business/business-wallet/secure-and-regulated.webp' alt='Secure And Regulated' width='' height='' />
             <div>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>Secure And Regulated</h2>
               <p className='leading-8 mt-8'>Monty Finance SAL is a licensed financial institution regulated by Banque du Liban, so your funds are always protected by law.</p>
@@ -150,7 +150,7 @@ const Business1 = () => {
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>24/7 Customer Support</h2>
               <p className='leading-8 mt-8'>Need help?<br />We're right here, anytime, to answer your questions and sort things out for you quickly.</p>
             </div>
-            <img className='md:w-1/2' src='/business1/customer-support.webp' alt='24/7 Customer Support' width='' height='' />
+            <img className='md:w-1/2' src='/business/business-wallet/customer-support.webp' alt='24/7 Customer Support' width='' height='' />
           </div>
         </div>
       </section>

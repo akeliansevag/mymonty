@@ -7,12 +7,12 @@ import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
-import usdLbpCurrencies from '@/public/business1/dual-currency-account.webp';
-import transfers from '@/public/business1/transfers.webp';
-import cardsBusiness from '@/public/business1/cards.webp';
-import foreignExchange from '@/public/business1/foreign-exchange.webp';
-import multiuserAccess from '@/public/business1/multi-user-access.webp';
-import smartPayrollSolution from '@/public/business1/smart-payroll-solution.webp';
+import usdLbpCurrencies from '@/public/business/business-wallet/dual-currency-account.webp';
+import transfers from '@/public/business/business-wallet/transfers.webp';
+import cardsBusiness from '@/public/business/business-wallet/cards.webp';
+import foreignExchange from '@/public/business/business-wallet/foreign-exchange.webp';
+import multiuserAccess from '@/public/business/business-wallet/multi-user-access.webp';
+import smartPayrollSolution from '@/public/business/business-wallet/smart-payroll-solution.webp';
 
 export default function Cards() {
   // keep only one open at a time
