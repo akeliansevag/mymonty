@@ -47,7 +47,7 @@ const allCards = [
                 title: 'Euro Credit Card',
                 color: 'Green',
                 image: EuroCardGreen,
-                link: '/cards',
+                link: '/platinum-credit-card',
             },
         ],
     },
