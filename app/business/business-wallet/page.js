@@ -138,7 +138,7 @@ const Business1 = () => {
 
       <section className="py-24">
         <div className='container space-y-24'>
-          <div className='flex flex-col md:flex-row gap-10 items-center'>
+          <div className='flex max-md:flex-col-reverse md:flex-row gap-10 items-center'>
             <img className='md:w-1/2' src='/business/business-wallet/secure-and-regulated.webp' alt='Secure And Regulated' width='' height='' />
             <div>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>Secure And Regulated</h2>
