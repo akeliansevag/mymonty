@@ -19,11 +19,11 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 
 const banners = [
-  {
-    bannerDesktop: kiadesktop,
-    bannerMobile: kiamobile,
-    link: '/sign-up-and-win',
-  },
+  // {
+  //   bannerDesktop: kiadesktop,
+  //   bannerMobile: kiamobile,
+  //   link: '/sign-up-and-win',
+  // },
   // {
   //   bannerDesktop: nakhaldesktop,
   //   bannerMobile: nakhalmobile,
