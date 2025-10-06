@@ -200,7 +200,7 @@ const SalaryAdvance = () => {
           <div className='flex flex-col items-center gap-10'>
             <h2 className='text-center uppercase font-black text-3xl sm:text-5xl lg:text-[2.875rem] w-full lg:w-2/3 leading-none'>Enjoy exclusive perks and benefits that fit your lifestyle, all through one simple app.</h2>
           </div>
-          <div className='flex max-md:flex-col gap-5 justify-center max-md:mt-14 md:mt-40 '>
+          <div className='flex max-md:flex-col gap-5 justify-center max-md:mt-14 md:mt-24 '>
             <div className='w-full rounded-xl bg-[linear-gradient(240.38deg,#1C1F21_11.65%,#0A0C0C_77.83%,#000000_134.99%)] p-4 md:p-8'>
               <h2 className='uppercase font-black text-3xl sm:text-5xl lg:text-[2.875rem] w-full lg:w-2/3 leading-none'>Not on MyMonty Salary Domiciliation Yet?</h2>
             </div>
