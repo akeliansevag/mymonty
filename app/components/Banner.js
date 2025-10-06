@@ -54,17 +54,17 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
                                                 </div>
                                             )
                                         }
-                                        <h1 className={`text-balance font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase ${data.image.layout !== 'full' ? 'mt-6' : ''}`}>{data.title}</h1>
-                                        <p dangerouslySetInnerHTML={{ __html: data.desc }} className='text-xl text-pretty mt-8'></p>
+                                        <h1 className={`text-balance font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase ${data.image.layout !== 'full' ? 'max-md:mt-4 mt-6' : ''}`}>{data.title}</h1>
+                                        <p dangerouslySetInnerHTML={{ __html: data.desc }} className='text-xl text-pretty max-md:mt-4 max-md:mt-4 mt-8'></p>
 
                                         {
                                             data.cta && (
                                                 data.cta.type === 'link' ? (
-                                                    <Link className={`mm-button mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`} href={data.cta.link.url} target={target}>{data.cta.link.name}</Link>
+                                                    <Link className={`mm-button max-md:mt-4 mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`} href={data.cta.link.url} target={target}>{data.cta.link.name}</Link>
                                                 ) : salaryForm ? (
-                                                    <button onClick={handleGetClick} className={`mm-button mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                    <button onClick={handleGetClick} className={`mm-button max-md:mt-4 mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                 ) : (
-                                                    <button onClick={handleOriginalOpenModal} className={`mm-button mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                    <button onClick={handleOriginalOpenModal} className={`mm-button max-md:mt-4 mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                 )
                                             )
                                         }
@@ -108,16 +108,16 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
                                                 )
                                             }
                                             <h1 className={`font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase ${data.image.layout !== 'full' ? 'mt-6' : ''}`}>{data.title}</h1>
-                                            <p className='text-xl text-pretty mt-8'>{data.desc}</p>
+                                            <p className='text-xl text-pretty max-md:mt-4 mt-8'>{data.desc}</p>
 
                                             {
                                                 data.cta && (
                                                     data.cta.type === 'link' ? (
-                                                        <Link className={`mm-button mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`} href={data.cta.link.url} target={target}>{data.cta.link.name}</Link>
+                                                        <Link className={`mm-button max-md:mt-4 mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`} href={data.cta.link.url} target={target}>{data.cta.link.name}</Link>
                                                     ) : salaryForm ? (
-                                                        <button onClick={handleGetClick} className={`mm-button mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                        <button onClick={handleGetClick} className={`mm-button max-md:mt-4 mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                     ) : (
-                                                        <button onClick={handleOriginalOpenModal} className={`mm-button mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
+                                                        <button onClick={handleOriginalOpenModal} className={`mm-button max-md:mt-4 mt-8 ${theme == 'dark' || theme == 'dark-green' ? 'white' : 'blue'}`}>{data.cta.button.name}</button>
                                                     )
                                                 )
                                             }
