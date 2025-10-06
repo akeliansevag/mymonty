@@ -78,9 +78,12 @@ const SalaryAdvance = () => {
       </section>
 
       <section className='py-24 max-md:py-14 bg-white text-black'>
-        <div className='container space-y-10'>
-            <h2 className='section-title text-center text-balance'>Are You Eligible to apply?</h2>
-            <p className='text-center'>You can request a Salary Advance if:</p>
+        <div className='container space-y-8 md:space-y-24'>
+            <div className='space-y-4'>
+              <h2 className='section-title text-center text-balance'>Are You Eligible to apply?</h2>
+              <p className='text-center'>You can request a Salary Advance if:</p>
+            </div>
+            
             <div className='flex max-lg:flex-col gap-5'>
               <div className='text-center flex flex-col items-center justify-center gap-5 bg-[#F7F7F7] rounded-2xl p-10 w-full'>
                 <div>
@@ -122,10 +125,12 @@ const SalaryAdvance = () => {
       </section>
 
       <section className='py-24 bg-white text-black max-md:py-14'>
-        <div className='container space-y-4 md:space-y-8'>
-          <h2 className='section-title text-center'>How It Works</h2>
-          <p className='text-center max-w-2xl mx-auto'>*Only one active advance allowed at a time.</p>
-
+        <div className='container space-y-8 md:space-y-24'>
+          <div className='space-y-4'> 
+            <h2 className='section-title text-center'>How It Works</h2>
+            <p className='text-center max-w-2xl mx-auto'>*Only one active advance allowed at a time.</p>
+          </div>
+         
           <div className="flex max-lg:flex-col gap-4 md:gap-8">
             <div className="flex flex-col items-center gap-4 text-center bg-[#F7F7F7] rounded-2xl p-4 md:p-8 w-full">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
