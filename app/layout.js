@@ -82,6 +82,8 @@ export default function RootLayout({ children }) {
 
         <Script src="https://analytics.ahrefs.com/analytics.js" data-key="3X26HJzNYSURzYfp+MSXKw" async></Script>
 
+        <Script src='//uae.fw-cdn.com/40305316/189078.js' chat='true'> </Script>
+
         <noscript>
           <img
             height="1"

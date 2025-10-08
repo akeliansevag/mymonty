@@ -20,7 +20,7 @@ export default function Home() {
       <Head>
         <link rel="canonical" href="https://mymonty.com.lb/" />
       </Head>
-      {/* <HomeBanner /> */}
+      <HomeBanner />
       <SectionTwo />
       <SectionThree />
       {/* <SectionFour /> */}
