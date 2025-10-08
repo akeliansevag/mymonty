@@ -52,6 +52,7 @@ const Content = () => {
                         <div>
                             <h2>World Elite Mastercard® Lounge Program</h2>
                             <p>Enjoy <strong>FREE</strong> unlimited access with one guest to over 1,200 airport lounges in 450+ cities across 135+ countries through DragonPass, including business amenities, Wi-Fi, and complimentary refreshments.</p>
+                            <p>Make a <strong>minimum $1 international transaction</strong> (POS or online) to unlock <strong>3 months of unlimited complimentary lounge access with a guest</strong>. Complimentary access is renewed by spending the required amount.</p>
                         </div>
                         
                         <div className='image-wrapper flex max-lg:flex-col lg:justify-between lg:items-end max-lg:items-center gap-10 p-5'>
@@ -81,11 +82,12 @@ const Content = () => {
                                     <li>Present the app QR code to the lounge receptionist</li>
                                     <li>Enjoy your lounge access</li>
                                 </ul>
+                                
                             </div>
                         </div>     
                     </div> 
 
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>Cleartrip Flights and Hotel Bookings </h2>
                             <p><strong>GET 12% OFF</strong> through Cleartrip’s <a href="https://www.cleartrip.ae/offers/uae/choose-your-country" target='_blank'>website</a> or app from <a href='https://apps.apple.com/us/app/cleartrip-flights-hotels-bus/id531324961' target='_blank'>App Store</a> or <a href="https://play.google.com/store/apps/details?id=com.cleartrip.android&hl=en&gl=US&pli=1" target='_blank'>Google Play</a></p>
@@ -98,7 +100,7 @@ const Content = () => {
                             </div>
                             
                         </div>
-                    </div> 
+                    </div>  */}
 
                     <div>
                         <div>
@@ -182,7 +184,7 @@ const Content = () => {
                     <div>
                         <div>
                             <h2>IHG Hotels & Resorts</h2>
-                            <p>Booking through their <a href='https://www.ihg.com/hotels/gb/en/reservation?fromRedirect=true&qSrt=sAV&setPMCookies=true&dp=true&gclid=CjwKCAjwpbi4BhByEiwAMC8JnSKGU1pK2JvmPQGdy6dYXU-Avkms3WDYhqMkwPW7uCt-9_Vm0x6O3RoCHf0QAvD_BwE&cm_mmc=PDSEA-_-G_F-IMEA_FS-MEA_H-IMEA_HS-MEA_6C_BSF_EXM_CORE-IHG_EN&srb_u=1' target='_blank'>website</a> and pay with your Mastercard® for exclusive perks at IHG Hotels & Resorts worldwide, including <strong>15% OFF</strong> the Best Available Rate, a complimentary welcome drink, and late checkout until 4 pm.</p>
+                            <p>Booking through their <a href='https://www.ihg.com/content/gb/en/deals/partner-offers/mastercard-imea?qCpid=787056394&srb_u=1&cm_mmc=WEB-_-6C-_-IMEA-_-QE-_-PTR-_-MastercardIMEA_645200-_-vanity' target='_blank'>website</a> and pay with your Mastercard® for exclusive perks at IHG Hotels & Resorts worldwide, including <strong>15% OFF</strong> the Best Available Rate, a complimentary welcome drink, and late checkout until 4 pm.</p>
                         </div>
                         <div className='image-wrapper'>
                             <img src='/ihg-hotes-and-resorts.webp' className='image-bg'/>
@@ -193,20 +195,20 @@ const Content = () => {
                     <div>
                         <div>
                             <h2>Booking.com</h2>
-                            <p>Get up to 10% money back on your next stay through <a href="https://booking.com" target='_blank'>Booking.com</a>.</p>
+                            <p>Get up to 7% wallet credit on your next stay when booking it on  <a href="https://www.booking.com/gating/authkey?aid=2439504&key=mjB3VcxhAl " target='_blank'>Booking.com</a>.</p>
                         </div>
 
                         <div className='image-wrapper flex max-lg:flex-col lg:justify-end items-center'>
                             <img src='/booking.webp' className='image-bg' />
                             <div className='lg:mr-5 relative z-10 flex flex-col items-center'>
                                 <img className='w-[165px] translate-y-8 z-10' src='/booking-logo.webp' />
-                                <Promo code="MCBKG"/>
+                                {/* <Promo code="MCBKG"/> */}
                             </div>
                             
                         </div>
 
                         <div>
-                            <p>Use your World Elite Mastercard at checkout, and your cashback will be credited to your Booking.com wallet within 70 days after your stay.</p>
+                            <p>Use your World Elite Mastercard at checkout, and your Cashback is credited to your Booking.com wallet within 70 days.</p>
                             
                         </div>
                     </div>
@@ -214,7 +216,7 @@ const Content = () => {
                     <div>
                         <div>
                             <h2>AVIS Car Rental</h2>
-                            <p>Enjoy up to <strong>35% OFF</strong> your next car rental and a complimentary upgrade with Avis through their <a href="https://avisworld.com/" target='_blank'>website</a>.</p>
+                            <p>Enjoy up to <strong>35% OFF</strong> your next car rental and a complimentary upgrade with Avis through their <a href="https://one.avisworld.com/en_GB/Avis-MastercardMEA/" target='_blank'>website</a>.</p>
                         </div>
 
                         <div className='image-wrapper flex max-lg:flex-col lg:justify-end items-center'>
@@ -242,7 +244,7 @@ const Content = () => {
                     <div>
                         <div>
                             <h2>Budget Truck And Car Rental</h2>
-                            <p>Get <strong>UP TO 10%</strong> off on your next car or truck rental. Simply visit Budget’s <a href="https://budget.com" target='_blank'>website</a> and reserve your vehicle using your eligible Mastercard®.</p>
+                            <p>Get <strong>UP TO 10%</strong> off on your next car or truck rental. Simply visit Budget’s <a href="https://one.budgetinternational.com/en_GB/Budget-MastercardMEA/" target='_blank'>website</a> and reserve your vehicle using your eligible Mastercard®.</p>
                         </div>
 
                         <div className='image-wrapper flex items-center justify-center'>
@@ -286,7 +288,7 @@ const Content = () => {
                     <div>
                         <div>
                             <h2>Rentalcars.com </h2>
-                            <p>Enjoy an exclusive <strong>10% DISCOUNT</strong> when you book with your Mastercard on <a href='https://www.rentalcars.com/' target='_blank'>Rentalcars.com</a>.</p>
+                            <p>Enjoy an exclusive <strong>10% DISCOUNT</strong> when you book with your Mastercard on <a href='https://www.rentalcars.com/?affiliateCode=%20mastercard047&enabler=mastercardme' target='_blank'>Rentalcars.com</a>.</p>
                         </div>
 
                         <div className='image-wrapper'>
@@ -349,7 +351,7 @@ const Content = () => {
                     <div>
                         <div>
                             <h2>Thriwe</h2>
-                            <p>Get <strong>30% OFF</strong> or 1 complimentary guest to your next golf game with Thriwe when using your World Elite Mastercard® card! Click mastercard.thriwe.com to know more</p>
+                            <p>Get <strong>30% OFF</strong> or 1 complimentary guest to your next golf game with Thriwe when using your World Elite Mastercard® card! Click <a href='https://mastercard.thriwe.com/' target='_blank'>mastercard.thriwe.com</a> to know more</p>
                         </div>
 
                         <div className='image-wrapper flex justify-end items-end'>
@@ -390,7 +392,7 @@ const Content = () => {
                             <h3>HOW TO USE:</h3>
                             <ul>
                                 <li>Download the ExpressVPN app from Google Play or the App store</li>
-                                <li>Visit expressvpn.com/go/mastercard-mea to activate your 30-day complimentary trial. Pay nothing today, then enjoy 51% off a 12-month plan with 4 extra months complimentary or 61% discount on a 24-month plan including 4 extra complimentary months!</li>
+                                <li>Visit <a href='https://www.expressvpn.com/go/mastercard-mea' target='_blank'>expressvpn.com/go/mastercard-mea</a> to activate your 30-day complimentary trial. Pay nothing today, then enjoy 51% off a 12-month plan with 4 extra months complimentary or 61% discount on a 24-month plan including 4 extra complimentary months!</li>
                                 <li>Log in and use your Mastercard card to redeem the discount.</li>
                                 <li>To use the service; tap once to connect to ExpressVPN’s global network of ultra-fast servers across 105 countries.</li>
                             </ul>
@@ -398,7 +400,7 @@ const Content = () => {
                         
                     </div>
 
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>European Shopping Collection</h2>
                             <p>Up to <strong>15% OFF</strong> shopping packages, transfers, and more at Europe’s top designer outlets.
@@ -410,7 +412,7 @@ const Content = () => {
                            
                         </div>
                         
-                    </div>
+                    </div> */}
 
                     <div>
                         <div>
@@ -596,7 +598,7 @@ const Content = () => {
                             <h2>Travel Insurance Confirmation Letter</h2>
                             <p>
                                 Get your official Travel Insurance Confirmation Letter with World Elite Mastercard®.
-Ensure visa requirements are met with coverage for parents and children. Visit c/[TIER] to generate your letter effortlessly!
+Ensure visa requirements are met with coverage for parents and children. Visit <a href='https://mcpeaceofmind.com/' target='_blank'>https://mcpeaceofmind.com/</a> to generate your letter effortlessly!
                             </p>
                         </div>
 

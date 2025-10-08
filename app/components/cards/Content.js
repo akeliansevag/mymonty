@@ -85,7 +85,7 @@ const Content = () => {
                         </div>     
                     </div> 
 
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>Cleartrip Flights and Hotel Bookings </h2>
                             <p><strong>GET 12% OFF</strong> through Cleartrip’s <a href="https://www.cleartrip.ae/offers/uae/choose-your-country" target='_blank'>website</a> or app from <a href='https://apps.apple.com/us/app/cleartrip-flights-hotels-bus/id531324961' target='_blank'>App Store</a> or <a href="https://play.google.com/store/apps/details?id=com.cleartrip.android&hl=en&gl=US&pli=1" target='_blank'>Google Play</a></p>
@@ -98,7 +98,7 @@ const Content = () => {
                             </div>
                             
                         </div>
-                    </div> 
+                    </div>  */}
 
                     <div>
                         <div>
@@ -141,14 +141,14 @@ const Content = () => {
                     <div>
                         <div>
                             <h2>Trip.com</h2>
-                            <p>Get up to <strong>20% OFF</strong> flights and hotels bookings on Trip.com with your Mastercard card and enjoy your next trip! <a href="https://trip.com/mastercard" target='_blank'>www.trip.com/mastercard</a></p>
+                            <p>Get up to <strong>10% OFF</strong> flights and hotels bookings on Trip.com with your Mastercard card and enjoy your next trip! <a href="https://trip.com/mastercard" target='_blank'>www.trip.com/mastercard</a></p>
                         </div>
 
                         <div className='image-wrapper flex max-lg:flex-col lg:justify-end items-center'>
                             <img src='/tripcom.webp' className='image-bg' />
                             <div className='lg:mr-5 relative z-10 flex flex-col items-center'>
                                 <img className='w-[165px] translate-y-8 z-10' src='/trip-logo.webp' />
-                                <Promo code="MCTRIP20"/>
+                                <Promo code="MCTRIP10"/>
                             </div>
                             
                         </div>
@@ -165,7 +165,7 @@ const Content = () => {
                         </div>
                     </div>
 
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>Global Hotel Alliance Titanium Membership</h2>
                             <p>Complimentary Titanium membership in the Global Hotel Alliance DISCOVERY program, offering VIP perks at 500+ hotels worldwide, including guaranteed room availability, double upgrades, early check-in, late check-out, and Discovery Dollar rewards.</p>
@@ -177,12 +177,12 @@ const Content = () => {
                             <p>To activate, call World Elite Mastercard® Concierge to enroll, then create an account 
                              at <strong><span className='text-[var(--mm-blue)]'>GHA DISCOVERY</span></strong> or download the app.</p>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div>
                         <div>
                             <h2>IHG Hotels & Resorts</h2>
-                            <p>Booking through their <a href='https://www.ihg.com/hotels/gb/en/reservation?fromRedirect=true&qSrt=sAV&setPMCookies=true&dp=true&gclid=CjwKCAjwpbi4BhByEiwAMC8JnSKGU1pK2JvmPQGdy6dYXU-Avkms3WDYhqMkwPW7uCt-9_Vm0x6O3RoCHf0QAvD_BwE&cm_mmc=PDSEA-_-G_F-IMEA_FS-MEA_H-IMEA_HS-MEA_6C_BSF_EXM_CORE-IHG_EN&srb_u=1' target='_blank'>website</a> and pay with your Mastercard® for exclusive perks at IHG Hotels & Resorts worldwide, including <strong>15% OFF</strong> the Best Available Rate, a complimentary welcome drink, and late checkout until 4 pm.</p>
+                            <p>Booking through their <a href='https://www.ihg.com/content/gb/en/deals/partner-offers/mastercard-imea?qCpid=787056394&srb_u=1&cm_mmc=WEB-_-6C-_-IMEA-_-QE-_-PTR-_-MastercardIMEA_645200-_-vanity' target='_blank'>website</a> and pay with your Mastercard® for exclusive perks at IHG Hotels & Resorts worldwide, including <strong>15% OFF</strong> the Best Available Rate, a complimentary welcome drink, and late checkout until 4 pm.</p>
                         </div>
                         <div className='image-wrapper'>
                             <img src='/ihg-hotes-and-resorts.webp' className='image-bg'/>
@@ -193,7 +193,7 @@ const Content = () => {
                     <div>
                         <div>
                             <h2>Booking.com</h2>
-                            <p>Get up to 10% money back on your next stay through <a href="https://booking.com" target='_blank'>Booking.com</a>.</p>
+                            <p>Get up to 7% wallet credit on your next stay when booking it on <a href="https://www.booking.com/gating/authkey?aid=2439504&key=mjB3VcxhAl" target='_blank'>Booking.com</a>.</p>
                         </div>
 
                         <div className='image-wrapper flex max-lg:flex-col lg:justify-end items-center'>
@@ -214,7 +214,8 @@ const Content = () => {
                     <div>
                         <div>
                             <h2>AVIS Car Rental</h2>
-                            <p>Enjoy up to <strong>35% OFF</strong> your next car rental and a complimentary upgrade with Avis through their <a href="https://avisworld.com/" target='_blank'>website</a>.</p>
+                            <p>Up to 20% off your next car rental • A complimentary upgrade with every rental 
+                                through their <a href="https://secure-one.avisworld.com/en_GB/Avis-MastercardMEA/AvisPreferred" target='_blank'>website</a>.</p>
                         </div>
 
                         <div className='image-wrapper flex max-lg:flex-col lg:justify-end items-center'>
@@ -242,7 +243,7 @@ const Content = () => {
                     <div>
                         <div>
                             <h2>Budget Truck And Car Rental</h2>
-                            <p>Get <strong>UP TO 10%</strong> off on your next car or truck rental. Simply visit Budget’s <a href="https://budget.com" target='_blank'>website</a> and reserve your vehicle using your eligible Mastercard®.</p>
+                            <p>Get <strong>UP TO 10%</strong> off on your next car or truck rental. Simply visit Budget’s <a href="https://one.budgetinternational.com/en_GB/Budget-MastercardMEA/" target='_blank'>website</a> and reserve your vehicle using your eligible Mastercard®.</p>
                         </div>
 
                         <div className='image-wrapper flex items-center justify-center'>
@@ -255,7 +256,7 @@ const Content = () => {
                 
                     </div>
 
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>Global Blue VIP Services</h2>
                             <p>Present your Mastercard® at the entrance & get <strong>Complimentary access</strong> to <strong>Global Blue City VIP Lounges</strong> for VAT refund assistance & to <strong>Global Blue Airport VIP Fast Lanes</strong>. Register at Global Blue's <a href='https://registration.globalblue.com/gb?flow=ncpt&sourceCode=OTPNS001MEAXXXXXX001' target='_blank'>website</a> to set your eligible Mastercard® as the preferred refund target.</p>
@@ -279,7 +280,7 @@ const Content = () => {
                            
                         </div>
                 
-                    </div>
+                    </div> */}
                 </div>     
 
                 <div ref={lifestyleRef} data-name="lifestyle" className="content-category">
@@ -318,7 +319,7 @@ const Content = () => {
                 
                     </div>
 
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>Mastercard Concierge</h2>
                             <p>Access 24/7 VIP service with your World Elite Mastercard®. From booking travel to finding last-minute reservations, help is always a call or a message away.</p>
@@ -344,7 +345,7 @@ const Content = () => {
                             <p>For English: +44 7418 368708</p>
                         </div>
                 
-                    </div>
+                    </div> */}
 
                     {/* <div>
                         <div>
@@ -398,7 +399,7 @@ const Content = () => {
                         
                     </div> */}
 
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>European Shopping Collection</h2>
                             <p>Up to <strong>15% OFF</strong> shopping packages, transfers, and more at Europe’s top designer outlets.
@@ -410,7 +411,7 @@ const Content = () => {
                            
                         </div>
                         
-                    </div>
+                    </div> */}
 
                     <div>
                         <div>
@@ -538,7 +539,7 @@ const Content = () => {
                         
                     </div> */}
 
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>Medical Insurance</h2>
                             <p>Travel with peace of mind! your Mastercard® covers you automatically. 
@@ -569,9 +570,9 @@ const Content = () => {
                             
                         </div>
                         
-                    </div>
+                    </div> */}
 
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>Rental Collision and Loss Damage Waiver</h2>
                             <p>
@@ -606,7 +607,7 @@ Ensure visa requirements are met with coverage for parents and children. Visit c
                             
                         </div>
                         
-                    </div>
+                    </div> */}
                 </div>
 
                 
