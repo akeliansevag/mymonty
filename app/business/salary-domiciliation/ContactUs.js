@@ -145,7 +145,7 @@ const [searchTerm, setSearchTerm] = useState('');
     <section id="contact-us" className='lg:py-32 max-lg:py-16 bg-[#091111]'>
         
         <div className="container">
-            <h2 className="section-title text-balance text-center">Fill your information</h2>
+            <h2 className="section-title text-balance text-center">Contact Us</h2>
             <div className="lg:bg-black lg:rounded-2xl lg:p-8 mt-10">
 
                 <form onSubmit={handleSubmit} className="space-y-10 max-lg:space-y-6">

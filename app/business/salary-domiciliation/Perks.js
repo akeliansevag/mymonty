@@ -22,12 +22,15 @@ const Perks = () => {
                         </p>
                     </div>
                 </div>
-                <div className='w-full'>
+                <div className='w-full lg:w-3/4'>
                     <img src='/mymonty-transfer.webp' />
                 </div>
             </div>
 
-            <div className='flex max-lg:flex-col max-lg:gap-10 lg:gap-32 justify-between items-center lg:mt-32 max-lg:mt-16'>
+            <div className='flex max-lg:flex-col-reverse max-lg:gap-10 lg:gap-32 justify-between items-center lg:mt-32 max-lg:mt-16'>
+                <div className='w-full lg:w-3/4'>
+                    <img src='/prepaid-card-benefits.webp' />
+                </div>
                 <div className='w-full'>
                     <div className='flex flex-col gap-5'>
                         <p className='mt-5'>
@@ -38,9 +41,7 @@ const Perks = () => {
                         </p>
                     </div>
                 </div>
-                <div className='w-full'>
-                    <img src='/prepaid-card-benefits.webp' />
-                </div>
+                
             </div>
         </div>
         

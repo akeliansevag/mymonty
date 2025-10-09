@@ -16,7 +16,7 @@ const Benefits = () => {
         ],
         content: [
             {
-                title: 'Domicile Salaries with MyMonty. Give your employees access to financial benefits.',
+                title: 'Give your employees access to financial benefits.',
                 description: 'Keep your team happy. Boost satisfaction and retention.',
                 button: {
                     text: 'Contact Sales Team',
@@ -26,7 +26,7 @@ const Benefits = () => {
                 backgroundImage: '/salary-advance.webp'
             },
             {
-                title: 'Domicile Salaries with MyMonty. Give your employees access to financial benefits.',
+                title: 'Give your employees access to financial benefits.',
                 description: 'Keep your team happy. Boost satisfaction and retention.',
                 button: {
                     text: 'Contact Sales Team',
@@ -36,7 +36,7 @@ const Benefits = () => {
                 backgroundImage: '/credit-cards.webp'
             },
             {
-                title: 'Domicile Salaries with MyMonty. Give your employees access to financial benefits.',
+                title: 'Give your employees access to financial benefits.',
                 description: 'Keep your team happy. Boost satisfaction and retention.',
                 button: {
                     text: 'Contact Sales Team',
