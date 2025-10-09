@@ -52,7 +52,6 @@ const Content = () => {
                         <div>
                             <h2>World Elite Mastercard® Lounge Program</h2>
                             <p>Enjoy <strong>FREE</strong> unlimited access with one guest to over 1,200 airport lounges in 450+ cities across 135+ countries through DragonPass, including business amenities, Wi-Fi, and complimentary refreshments.</p>
-                            <p>Make a <strong>minimum $1 international transaction</strong> (POS or online) to unlock <strong>3 months of unlimited complimentary lounge access with a guest</strong>. Complimentary access is renewed by spending the required amount.</p>
                         </div>
                         
                         <div className='image-wrapper flex max-lg:flex-col lg:justify-between lg:items-end max-lg:items-center gap-10 p-5'>
@@ -83,6 +82,13 @@ const Content = () => {
                                     <li>Enjoy your lounge access</li>
                                 </ul>
                                 
+                            </div>
+                        </div>     
+                        <div>
+                            <div>
+                                <h3 className='uppercase'>Access rules:</h3>
+                                <p>Make a minimum <strong>$1 international transaction</strong> (POS or online) to unlock <strong>3 months of unlimited complimentary lounge access with a guest.</strong> </p>
+                                <p><strong>Complimentary access is renewed by spending the required amount.</strong></p>
                             </div>
                         </div>     
                     </div> 
@@ -397,6 +403,15 @@ const Content = () => {
                                 <li>To use the service; tap once to connect to ExpressVPN’s global network of ultra-fast servers across 105 countries.</li>
                             </ul>
                         </div>
+                        
+                    </div>
+
+                    <div>
+                        <div>
+                            <h2>BICESTER VILLAGE SHOPPING COLLECTION</h2>
+                            
+                        </div>
+                        
                         
                     </div>
 
