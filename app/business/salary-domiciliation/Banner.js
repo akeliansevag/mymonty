@@ -6,8 +6,8 @@ const Banner = () => {
   return (
     <section className='lg:py-32 max-lg:py-16 bg-black'>
         <div className='container'>
-            <div className='flex gap-10 items-center max-lg:flex-col'>
-                <div className='max-lg:w-full lg:w-2/3 flex flex-col gap-5'>
+            <div className='flex justify-between gap-10 items-center max-lg:flex-col'>
+                <div className='max-lg:w-full lg:w-1/2 flex flex-col gap-5'>
                     <h1 className='text-balance font-black text-4xl sm:text-5xl md:text-6xl fhd:text-[5.4rem] leading-none uppercase mt-6'>Simplify Payroll with MyMonty</h1>
                     <p className='text-balance'>Simplify salary disbursements and empower your team with instant access to Financial Benefits.</p>
                     <div>

@@ -49,7 +49,7 @@ const Business1 = () => {
 
       <section className='py-14 my-14'>
         <div className='container space-y-10'>
-            <h2 className='section-title text-center text-balance'>PAYROLL MADE SIMPLER.</h2>
+            <h2 className='section-title text-center text-balance'>PAYROLL MADE SIMPLER</h2>
             <p className='text-center'>Manage payroll easily on the MyMonty Business web portal to save time, money, and effort each month.</p>
             <div className='flex max-lg:flex-col gap-5'>
               <div className='text-center flex flex-col items-center justify-center gap-5 border border-white/50 rounded-2xl p-10 w-full'>
@@ -107,7 +107,7 @@ const Business1 = () => {
                 </div>
                 <div className='flex flex-col justify-center gap-6 text-center bg-[#E3E9ED] rounded-2xl p-4 md:p-8 backdrop-blur-[104px] w-full h-full'>
                   <h4 className='font-black uppercase text-2xl'>Seamless Payroll Solution</h4>
-                  <p>One click. Unlimited salary payouts</p>
+                  <p>One click. Multiple salary payouts</p>
                 </div>
               </div>
 
