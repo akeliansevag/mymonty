@@ -141,6 +141,11 @@ export const data = [
                         url: '/car-loan',
                         noIndex: true,
                     },
+                    {
+                        title: 'Salary advance',
+                        url: '/loans/salary-advance',
+                        noIndex: true,
+                    },
                     // {
                     //     title: 'Advance on Salary',
                     //     url: '/loans?s=advance-on-salary',
@@ -184,7 +189,14 @@ export const data = [
             },
             {
                 title: 'Salary Domiciliation',
-                url: '/business/salary-domiciliation'
+                url: '/business/salary-domiciliation',
+                children: [
+                    {
+                        title: 'Salary advance',
+                        url: '/business/salary-advance',
+                        noIndex: true,
+                    },
+                ]
             },
         ]
     },

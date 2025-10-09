@@ -1,6 +1,6 @@
 import React from 'react';
 import { websiteName } from '@/app/config';
-import Banner from '../components/Banner';
+import Banner from '../../components/Banner';
 import salaryAdvanceBanner from '@/public/salary-advance-banner.webp';
 import Benefits from './Benefits';
 

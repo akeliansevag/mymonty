@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { useAppContext } from '../AppContext';
+import { useAppContext } from '../../AppContext';
 import AppForm from '@/app/components/Form';
 
 const Benefits = () => {

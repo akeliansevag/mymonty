@@ -6,6 +6,7 @@ import Benefits from './Benefits';
 import Perks from './Perks';
 import ContactUs from './ContactUs';
 import GlobalScrollHandler from "./GlobalScrollHandler";
+import Form from '../business-wallet/Form';
 
 
 export const metadata = {
@@ -23,7 +24,10 @@ const Business = () => {
       <Features />
       <Benefits />
       <Perks />
-      <ContactUs />
+      {/* <ContactUs /> */}
+      <section className="max-lg:py-14 lg:py-24 bg-black">
+        <Form />
+      </section>
     </div>
   );
 };
