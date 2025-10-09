@@ -182,10 +182,10 @@ export const data = [
                 title: 'Business Wallet',
                 url: '/business/business-wallet'
             },
-            {
-                title: 'Salary Domiciliation',
-                url: '/business/salary-domiciliation'
-            },
+            // {
+            //     title: 'Salary Domiciliation',
+            //     url: '/business/salary-domiciliation'
+            // },
         ]
     },
     {
