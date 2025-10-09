@@ -80,7 +80,7 @@ export default function Cards() {
       >
         {cards.map((card, index)=>{
           return (
-            <SwiperSlide key={index} className={`rounded-3xl bg-[linear-gradient(160.77deg,#091111_11.72%,#040606_39.8%)] mt-12 overflow-hidden !h-auto flex flex-col items-start text-start relative ${openIndex === index ? "" : "justify-between"}`}>
+            <SwiperSlide key={index} className={`rounded-3xl bg-[linear-gradient(160.77deg,#2b3333_11.72%,#040606_39.8%)] mt-12 overflow-hidden !h-auto flex flex-col items-start text-start relative ${openIndex === index ? "" : "justify-between"}`}>
               <div className='p-4 lg:p-8'>
                 <h2 className='text-2xl font-black uppercase'>{ card.title }</h2>
                 <button className='text-sm border border-white rounded-full py-2 px-4 mt-8' onClick={() => toggleItem(index)}>Learn More</button>

@@ -47,7 +47,7 @@ const Business1 = () => {
         </div>
       </section>
 
-      <section className='py-14 my-14'>
+      <section className='lg:py-14 lg:my-14'>
         <div className='container space-y-10'>
             <h2 className='section-title text-center text-balance'>PAYROLL MADE SIMPLER</h2>
             <p className='text-center'>Manage payroll easily on the MyMonty Business web portal to save time, money, and effort each month.</p>
@@ -88,7 +88,7 @@ const Business1 = () => {
               </div>
             </div>
             <div className='text-center'>
-              <a href='#' className='mm-button blue'>Learn More</a>
+              <Link href='/business/salary-domiciliation' className='mm-button blue'>Learn More</Link>
             </div>
         </div>
       </section>
@@ -136,7 +136,7 @@ const Business1 = () => {
         </div>
       </section>
 
-      <section className="py-24">
+      <section className="max-lg:py-14 lg:py-24">
         <div className='container space-y-24'>
           <div className='flex max-md:flex-col-reverse md:flex-row gap-10 items-center'>
             <img className='md:w-1/2' src='/business/business-wallet/secure-and-regulated.webp' alt='Secure And Regulated' width='' height='' />
@@ -155,7 +155,7 @@ const Business1 = () => {
         </div>
       </section>
 
-      <section className='py-24'>
+      <section className='max-lg:py-14 lg:py-24'>
         <div className='container space-y-4 md:space-y-8'>
           <h2 className='section-title text-center'>UNLOCK OUR BENEFITS</h2>
           <div className='text-center'>
@@ -218,7 +218,7 @@ const Business1 = () => {
         </div>
       </section>
       
-      <section className="py-24">
+      <section className="max-lg:py-14 lg:py-24">
         <Form />
       </section>
     </div>
