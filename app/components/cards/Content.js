@@ -420,32 +420,32 @@ const Content = () => {
                                 <img src='/bicester-village.png' className='max-w-[300px]' />
                                 <div className='flex max-lg:flex-col gap-8'>
                                     <div className='w-full lg:w-1/2 mt-6'>
-                                        <h3 className='text-sm'>About:</h3>
-                                        <p className='text-sm'>The European Shopping Collection is a collection of 11 shopping destinations across Europe and China offering designer clothing and accessories for the discerning shopper. Located within an hour of major international transport hubs, the European Shopping Collection includes the Bicester Village Shopping Collection and many other exclusive retail stores.</p>
-                                        <h3 className="text-sm mt-3">Description:</h3>
-                                        <p className='text-sm'>The Bicester Village Shopping Collection is defined by it’s luxury bands, charming open-air ‘village’ settings, a welcoming and superior service, a calendar of events and, not least, exceptional value for money. World-leading brands offer savings of up to 60% , and sometimes more, on the recommended retail price, in their own luxuriously appointed boutiques, all year round.  As a TIER Mastercard cardholder you get access to:</p>
+                                        <h3 className='text-lg'>About:</h3>
+                                        <p className='text-lg'>The European Shopping Collection is a collection of 11 shopping destinations across Europe and China offering designer clothing and accessories for the discerning shopper. Located within an hour of major international transport hubs, the European Shopping Collection includes the Bicester Village Shopping Collection and many other exclusive retail stores.</p>
+                                        <h3 className="text-lg mt-3">Description:</h3>
+                                        <p className='text-lg'>The Bicester Village Shopping Collection is defined by it’s luxury bands, charming open-air ‘village’ settings, a welcoming and superior service, a calendar of events and, not least, exceptional value for money. World-leading brands offer savings of up to 60% , and sometimes more, on the recommended retail price, in their own luxuriously appointed boutiques, all year round.  As a TIER Mastercard cardholder you get access to:</p>
                                         <ul className='!list-disc list-outside bg-[#F7F7F7] p-4 rounded-3xl mt-2'>
-                                            <li className='!text-sm'>VIP invitation (to be exchanged for a VIP card that offers all of this and more is available at the following village* an additional 10% discount on purchases in participating boutiques)</li>
-                                            <li className='!text-sm'>15% discount on shopping packages</li>
-                                            <li className='!text-sm'>15% discount on chauffeur drive experiences at participating villages</li>
-                                            <li className='!text-sm'>15% discount on Shopping Express</li>
-                                            <li className='!text-sm'>Access to VIP lounges (subject to availability)</li>
+                                            <li className='!text-lg'>VIP invitation (to be exchanged for a VIP card that offers all of this and more is available at the following village* an additional 10% discount on purchases in participating boutiques)</li>
+                                            <li className='!text-lg'>15% discount on shopping packages</li>
+                                            <li className='!text-lg'>15% discount on chauffeur drive experiences at participating villages</li>
+                                            <li className='!text-lg'>15% discount on Shopping Express</li>
+                                            <li className='!text-lg'>Access to VIP lounges (subject to availability)</li>
                                         </ul>
                                     </div>
                                     <div className='bg-[#F7F7F7] p-4 lg:p-8 rounded-3xl w-full lg:w-1/2 mt-6'>
-                                        <h3 className="text-sm mt-6">Eligibility:</h3>
-                                        <p className='text-sm'>Eligible cards issued in Middle East & Africa</p>
-                                        <h3 className="text-sm mt-6">Destinations:</h3>
-                                        <p className='text-sm'>UK, Italy, Germany, Ireland, Spain, France, Belgium.</p>
-                                        <h3 className="text-sm mt-6">Validity:</h3>
-                                        <p className='text-sm'>Evergreen: Until the end of the year and beyond</p>
-                                        <h3 className="text-sm mt-6">SMS/Short Promo:</h3>
-                                        <p className='text-sm'>Shop luxury in style with VIP discounts at the Bicester Village Shopping Collection across Europe with your Mastercard. Visit <a href='thebicestervillagehappeningcollection.com/mastercard-mea' target='_blank'>thebicestervillagehappeningcollection.com/mastercard-mea</a> for more</p>
-                                        <h3 className="text-sm mt-6">How to use:</h3>
-                                        <p className='text-sm'>Simply visit <a href='thebicestervillagehappeningcollection.com/mastercard-mea' target='_blank'>thebicestervillagehappeningcollection.com/mastercard-mea</a> to avail these offers</p>
+                                        <h3 className="text-lg mt-6">Eligibility:</h3>
+                                        <p className='text-lg'>Eligible cards issued in Middle East & Africa</p>
+                                        <h3 className="text-lg mt-6">Destinations:</h3>
+                                        <p className='text-lg'>UK, Italy, Germany, Ireland, Spain, France, Belgium.</p>
+                                        <h3 className="text-lg mt-6">Validity:</h3>
+                                        <p className='text-lg'>Evergreen: Until the end of the year and beyond</p>
+                                        <h3 className="text-lg mt-6">SMS/Short Promo:</h3>
+                                        <p className='text-lg'>Shop luxury in style with VIP discounts at the Bicester Village Shopping Collection across Europe with your Mastercard. Visit <a href='thebicestervillagehappeningcollection.com/mastercard-mea' target='_blank'>thebicestervillagehappeningcollection.com/mastercard-mea</a> for more</p>
+                                        <h3 className="text-lg mt-6">How to use:</h3>
+                                        <p className='text-lg'>Simply visit <a href='thebicestervillagehappeningcollection.com/mastercard-mea' target='_blank'>thebicestervillagehappeningcollection.com/mastercard-mea</a> to avail these offers</p>
                                     </div>
                                 </div>
-                                <p className='mt-4 text-sm'><span className="text-[#A90527]">*</span> Bicester Village - London, UK; Fidenza Village - Milan, Italy; Ingolstadt Village - Munich, Germany; Kildare Village - Dublin, Ireland; La Roca Village - Barcelona, Spain; Los Rozos Village - Madrid, Spain; La Vallee Village - Paris, France; Maasmechelen Village - Brussels, Belgium, Wertheim Village - Frankfurt, Germany</p>
+                                <p className='mt-4 text-lg'><span className="text-[#A90527]">*</span> Bicester Village - London, UK; Fidenza Village - Milan, Italy; Ingolstadt Village - Munich, Germany; Kildare Village - Dublin, Ireland; La Roca Village - Barcelona, Spain; Los Rozos Village - Madrid, Spain; La Vallee Village - Paris, France; Maasmechelen Village - Brussels, Belgium, Wertheim Village - Frankfurt, Germany</p>
                             </div>
                         </div>
                     </div>
@@ -545,77 +545,50 @@ const Content = () => {
                     </div>
 
                     <div>
-                        <h2>Express VPN</h2>
-                        <div className='bg-white p-4 lg:p-8 rounded-3xl'>
-                            <img src='/express-vpn.png' className='max-w-[300px]' />
-                            <div className='flex max-lg:flex-col gap-8'>
-                                <div className='w-full lg:w-1/2 mt-6'>
-                                    <h3 className='text-sm'>About:</h3>
-                                    <p className='text-sm'>ExpressVPN is a leading consumer privacy and online security company.<br />Our vision is simple: a world where everyone has the right to digital privacy, security, and freedom—including the freedom to access your favorite content and streaming services from abroad.<br />To achieve this, we develop and distribute best-in-class VPN solutions and partner with brands who share our vision.</p>
-                                    <h3 className="text-sm mt-3">Description:</h3>
-                                    <p className='text-sm'>Get 30-Days of complimentary trial from ExpressVPN and enjoy either 51% off a 12-month plan with 4 extra months complimentary or 61% off a 24-month plan with 4 extra months complimentary!<br />Mastercard® customers can now enjoy enhanced digital privacy with ExpressVPN, by enjoying these features:</p>
-                                    <ul className='!list-disc list-outside bg-[#F7F7F7] p-4 rounded-3xl mt-2'>
-                                        <li className='!text-sm'>30-days complimentary trial.</li>
-                                        <li className='!text-sm'>An exclusive 51% discount on a 12-month plan, including 4 extra complimentary months or 61% discount on a 24-month plan including 4 extra complimentary months.</li>
-                                    </ul>
-                                    <p className='text-sm mt-3'>Connect instantly to a secure, ultra-fast global server network and browse, stream, and shop online with total peace of mind, all with one tap through ExpressVPN.<br />Offer available for a limited time.</p>
-                                </div>
-                                <div className='bg-[#F7F7F7] p-4 lg:p-8 rounded-3xl w-full lg:w-1/2 mt-6'>
-                                    <h3 className="text-sm mt-6">Eligibility:</h3>
-                                    <p className='text-sm'>Debit and Credit: Standard, Gold, Titanium, Platinum, World and World Elite Mastercard and Prepaid: Standard, Gold, Platinum and World Mastercard. Eligible cards issued in the Middle East, Africa and Pakistan.</p>
-                                    <h3 className="text-sm mt-6">Destinations:</h3>
-                                    <p className='text-sm'>Worldwide</p>
-                                    <h3 className="text-sm mt-6">Validity:</h3>
-                                    <p className='text-sm'><span className='block font-bold blue-text'>Starting on June 1st, 2025.</span>Evergreen until year end and beyond</p>
-                                    <h3 className="text-sm mt-6">SMS/Short Promo:</h3>
-                                    <p className='text-sm'>Get a 30-day complimentary trial and subsequent discounts on ExpressVPN and enjoy real digital peace of mind today <a href='www.expressvpn.com/eg/mastercard-mea' target='_blank'>www.expressvpn.com/eg/mastercard-mea</a>.</p>
-                                    <h3 className="text-sm mt-6">Main Terms & Conditions:</h3>
-                                    <p className='text-sm'>This offer is valid for new and returning customers only. Existing subscribers are not eligible to redeem this promotion.<br />To claim the offer, users must be Mastercard Cardholders. ExpressVPN T&Cs apply.</p>
-                                </div>
-                            </div>
-                            <h3 className="text-sm mt-4">How to use:</h3>
-                            <ul className='text-sm'>
-                                <li className='!text-sm'>Download the ExpressVPN app from <a href='https://play.google.com/store/apps/details?id=com.expressvpn.vpn&hl=en_IE' target='_blank'>Google Play</a> or the <a href='https://apps.apple.com/us/app/expressvpn-fast-secure-vpn/id886492891' target='_blank'>App Store</a></li>
-                                <li className='!text-sm'>Visit <a href='www.expressvpn.com/eg/mastercard-mea' target='_blank'>www.expressvpn.com/eg/mastercard-mea</a> to activate your 30-day complimentary trial. Pay nothing today, then enjoy 51% off a 12-month plan with 4 extra months complimentary or 61% discount on a 24-month plan including 4 extra complimentary months!</li>
-                                <li className='!text-sm'>Log in and use your Mastercard card to redeem the discount.</li>
-                                <li className='!text-sm'>To ensure the service, tap once to connect to ExpressVPN’s global network of ultra-fast servers across 105 countries.</li>
+                        <div>
+                            <h2>Express VPN</h2>
+                            <p>
+                                Connect instantly to a secure, ultra-fast global server network and browse, stream, and shop online with total peace of mind, all with one tap through ExpressVPN. <br />
+                                <strong>Get 30-Days of complimentary trial</strong> from ExpressVPN and enjoy either <strong>51% off a 12-month plan with 4 extra months complimentary or 61% off a 24-month plan with 4 extra months complimentary!</strong>
+                            </p>
+                        </div>
+
+                        <div>
+                            <img className='rounded-3xl' src='/expressvpn.webp' />
+                        </div>
+
+                        <div>
+                            <h3 className="text-lg mt-4 uppercase">How to use:</h3>
+                            <ul className='text-lg'>
+                                <li className='!text-lg'>Download the ExpressVPN app from <a href='https://play.google.com/store/apps/details?id=com.expressvpn.vpn&hl=en_IE' target='_blank'>Google Play</a> or the <a href='https://apps.apple.com/us/app/expressvpn-fast-secure-vpn/id886492891' target='_blank'>App Store</a></li>
+                                <li className='!text-lg'>Visit <a href='www.expressvpn.com/eg/mastercard-mea' target='_blank'>www.expressvpn.com/eg/mastercard-mea</a> to activate your 30-day complimentary trial. Pay nothing today, then enjoy 51% off a 12-month plan with 4 extra months complimentary or 61% discount on a 24-month plan including 4 extra complimentary months!</li>
+                                <li className='!text-lg'>Log in and use your Mastercard card to redeem the discount.</li>
+                                <li className='!text-lg'>To use the service; tap once to connect to ExpressVPN’s global network of ultra-fast servers across 105 countries.</li>
                             </ul>
                         </div>
+                        
                     </div>
 
                     <div>
-                        <h2>Purchase Protection</h2>
-                        <div className='bg-white p-4 lg:p-8 rounded-3xl'>
-                            <div className='flex max-lg:flex-col gap-8'>
-                                <div className='w-full lg:w-1/2 mt-6'>
-                                    <h3 className='text-sm'>About:</h3>
-                                    <p className='text-sm'>Purchase Protection helps you claim your money back if you use your eligible Mastercard® to buy something and there is a problem with it. It allows you to get a full refund on single purchases up to $2,000 with your Platinum Mastercard®.</p>
-                                    <h3 className="text-sm mt-3">Description:</h3>
-                                    <p className='text-sm'>Purchase Protection helps you claim your money back if you use your eligible Mastercard® to buy something and there is a problem with it. It allows you to get a full refund on single purchases up to $2,000 with your Platinum Mastercard®.</p>
-                                    <ul className='!list-disc list-outside bg-[#F7F7F7] p-4 rounded-3xl mt-2'>
-                                        <li className='!text-sm'>Protected in case of theft or accidental damage up to 180 days from date of purchase.</li>
-                                        <li className='!text-sm'>Covered for up to USD 2,000 per claim and a maximum of USD 5,000 over a 12-month period.</li>
-                                    </ul>
-                                    <p className='text-sm mt-3'>In case of damage, you can either get a new item to replace the damaged one or receive compensation for the item’s total value, as per the store receipt.</p>
-                                    <h3 className="text-sm mt-4">How to use:</h3>
-                                    <p className='text-sm mt-3'>Simply visit <a href='mcpeaceofmind.com/platinum' target='_blank'>mcpeaceofmind.com/platinum</a> to file a claim.</p>
-                                </div>
-                                <div className='bg-[#F7F7F7] p-4 lg:p-8 rounded-3xl w-full lg:w-1/2 mt-6'>
-                                    <h3 className="text-sm mt-6">Eligibility:</h3>
-                                    <p className='text-sm'>Eligible credit cards issued in UAE, KSA, Qatar, Oman, Kuwait, Bahrain, Lebanon, Jordan, Egypt, Morocco, Tunisia, Pakistan, Algeria, Nigeria, Kenya, Tanzania, Uganda, Ghana, Côte D’Ivoire, Senegal, Rwanda, South Africa, Mauritius</p>
-                                    <h3 className="text-sm mt-6">Destinations:</h3>
-                                    <p className='text-sm'>Worldwide</p>
-                                    <h3 className="text-sm mt-6">Validity:</h3>
-                                    <p className='text-sm'>Evergreen: Until the end of the year and beyond</p>
-                                    <h3 className="text-sm mt-6">SMS/Short Promo:</h3>
-                                    <p className='text-sm'>Automatically protect your purchases from theft or accident for 180 days with Purchase Protection from your Platinum Mastercard®.<br />Visit <a href='mcpeaceofmind.com' target='_blank'>mcpeaceofmind.com</a> to claim online.</p>
-                                    <h3 className="text-sm mt-6">Main Terms & Conditions:</h3>
-                                    <p className='text-sm'><a href='mcpeaceofmind.com' target='_blank'>Link to T&Cs</a></p>
-                                </div>
-                            </div>
+                        <div>
+                            <h2>Purchase Protection</h2>
+                            <p>
+                                Automatically protect your purchases from theft or accident for 180 days with Purchase Protection from your Platinum Mastercard®. Visit mcpeaceofmind.com to claim online.
+                            </p>
                         </div>
+
+                        <div>
+                            <img className='rounded-3xl' src='/purchase-protection.webp' />
+                        </div>
+
+                        <div>
+                            <h3 className="text-lg mt-4 uppercase">How to use:</h3>
+                            <p className='text-lg mt-3'>Visit <a href='https://mcpeaceofmind.com/platinum' target='_blank'>mcpeaceofmind.com</a> to claim online.</p>
+                        </div>
+                        
                     </div>
 
+            
                     {/* <div id="shahid">
                         <div>
                             <h2>Get All the Drama for Half the Price</h2>
