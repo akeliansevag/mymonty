@@ -545,7 +545,7 @@ const Content = () => {
                     </div>
 
                     <div>
-                        <h2>BICESTER VILLAGE SHOPPING COLLECTION</h2>
+                        <h2>Express VPN</h2>
                         <div className='bg-white p-4 lg:p-8 rounded-3xl'>
                             <img src='/express-vpn.png' className='max-w-[300px]' />
                             <div className='flex max-lg:flex-col gap-8'>
