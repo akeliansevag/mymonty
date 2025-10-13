@@ -573,7 +573,7 @@ const Content = () => {
                         <div>
                             <h2>Purchase Protection</h2>
                             <p>
-                                Automatically protect your purchases from theft or accident for 180 days with Purchase Protection from your Platinum Mastercard®. Visit mcpeaceofmind.com to claim online.
+                                Automatically protect your purchases from theft or accident for 180 days with Purchase Protection from your Platinum Mastercard®. Visit <a href='https://mcpeaceofmind.com'>mcpeaceofmind.com</a> to claim online.
                             </p>
                         </div>
 
