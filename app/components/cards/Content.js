@@ -569,7 +569,7 @@ const Content = () => {
                         
                     </div>
 
-                    <div>
+                    <div className='!pb-0 !border-b-0'>
                         <div>
                             <h2>Purchase Protection</h2>
                             <p>

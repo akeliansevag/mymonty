@@ -632,7 +632,7 @@ const Content = () => {
                         
                     </div>
 
-                    <div className='!pb-0'>
+                    <div className='!pb-0 !border-b-0'>
                         <div>
                             <h2>Travel Insurance Confirmation Letter</h2>
                             <p>
