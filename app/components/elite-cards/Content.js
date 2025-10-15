@@ -183,7 +183,7 @@ const Content = () => {
                         </div>
                         <div>
                             <p>To activate, call World Elite Mastercard® Concierge to enroll, then create an account 
-                             at <strong><span className='text-[var(--mm-blue)]'>GHA DISCOVERY</span></strong> or download the app.</p>
+                             at <strong><a href='https://www.ghadiscovery.com/gha-discovery-benefits' target='_blank'>GHA DISCOVERY</a></strong> or download the app.</p>
                         </div>
                     </div>
 
@@ -263,7 +263,7 @@ const Content = () => {
                 
                     </div>
 
-                    <div>
+                    {/* <div>
                         <div>
                             <h2>Global Blue VIP Services</h2>
                             <p>Present your Mastercard® at the entrance & get <strong>Complimentary access</strong> to <strong>Global Blue City VIP Lounges</strong> for VAT refund assistance & to <strong>Global Blue Airport VIP Fast Lanes</strong>. Register at Global Blue's <a href='https://registration.globalblue.com/gb?flow=ncpt&sourceCode=OTPNS001MEAXXXXXX001' target='_blank'>website</a> to set your eligible Mastercard® as the preferred refund target.</p>
@@ -274,7 +274,7 @@ const Content = () => {
                            
                         </div>
                 
-                    </div>
+                    </div> */}
 
                     <div>
                         <div>

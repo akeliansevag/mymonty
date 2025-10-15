@@ -1,7 +1,7 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
-import Sidebar from './Sidebar'
-import Promo from './Promo';
+import Sidebar from '../components/cards/Sidebar'
+import Promo from '../components/cards/Promo';
 
 
 
@@ -50,8 +50,8 @@ const Content = () => {
                 <div ref={travelRef} data-name="travel" className="content-category">
                     <div className='!pt-0'>
                         <div>
-                            <h2>Platinum Mastercard® Lounge Program</h2>
-                            <p>Enjoy <strong>FREE</strong> access with one guest to over 1,200 airport lounges in 450+ cities across 135+ countries through DragonPass, including business amenities, Wi-Fi, and complimentary refreshments.</p>
+                            <h2>Platinum Credit Card Lounge Program</h2>
+                            <p>Enjoy airport lounge access to over 25 regional & international lounges with your Platinum Credit Card.</p>
                         </div>
                         
                         <div className='image-wrapper flex max-lg:flex-col lg:justify-between lg:items-end max-lg:items-center gap-10 p-5'>
@@ -69,20 +69,29 @@ const Content = () => {
                                 
                             </div>
                         </div>
+                        
+                        <div>
+                            <h3>HOW TO USE:</h3>
+                            <ul className="lg:columns-2">
+                                <li>Download <a href="https://apps.apple.com/lb/app/mastercard-travel-pass/id1493489553" target='_blank'>Mastercard Travel Pass App</a></li>
+                                <li>Register your MyMonty Mastercard card</li>
+                                <li>Use the app to locate lounges near you</li>
+                                <li>Confirm complimentary visits eligibility</li>
+                                <li>Present the app QR code to the lounge receptionist</li>
+                                <li>Enjoy your lounge access</li>
+                            </ul>
+                        </div>
 
                         <div>
-                            <div>
-                                <h3>HOW TO USE:</h3>
-                                <ul className="lg:columns-2">
-                                    <li>Download <a href="https://apps.apple.com/lb/app/mastercard-travel-pass/id1493489553" target='_blank'>Mastercard Travel Pass App</a></li>
-                                    <li>Register your MyMonty Mastercard card</li>
-                                    <li>Use the app to locate lounges near you</li>
-                                    <li>Confirm complimentary visits eligibility</li>
-                                    <li>Present the app QR code to the lounge receptionist</li>
-                                    <li>Enjoy your lounge access</li>
-                                </ul>
-                            </div>
-                        </div>     
+                            <h3 className='uppercase'>Access rules:</h3>
+                            <p>Make a minimum <strong>$1 international transaction</strong> (POS or online) to unlock <strong>3 months of complimentary lounge access</strong>.</p>
+                            <p><strong>Complimentary access is renewed by spending the required amount.</strong></p>
+                            <ul className="!list-disc mt-4">
+                                <li>Annual ceiling on complimentary visits</li>
+                                <li><strong>Platinum</strong>: Up to 8 visits per calendar year</li>
+                                <li><strong>Initial complimentary access</strong> (one-time courtesy)</li>
+                            </ul>
+                        </div>
                     </div> 
 
                     {/* <div>

@@ -8,7 +8,7 @@ import AnimatedBanner from './AnimatedBanner';
 import AnimatedBannerOld from './AnimatedBannerOld';
 import VirtualCard from './VirtualCard';
 import TextBlock from '../components/TextBlock';
-import Content from '../components/cards/Content';
+import Content from './Content';
 
 
 export const metadata = {

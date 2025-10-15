@@ -10,7 +10,7 @@ import image3 from '@/public/euro-platinum.webp';
 import AnimatedBanner from './AnimatedBanner';
 import VirtualCard from './VirtualCard';
 import TextBlock from '../components/TextBlock';
-import Content from '../components/cards/Content';
+import Content from './Content';
 import Section from '@/app/components/Section';
 import Image from 'next/image';
 

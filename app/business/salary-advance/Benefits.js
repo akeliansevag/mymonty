@@ -16,7 +16,7 @@ const Benefits = () => {
     return (
         <section className='py-24'>
             <div className='container space-y-8 md:space-y-24'>
-                <h2 className='section-title text-center text-balance'>MyMonty Salary Advance, your instant solution to any cash emergency.</h2>
+                <h2 className='section-title text-center text-balance'>MyMonty Salary Advance, your instant solution to any cash emergency</h2>
                 <div className="flex max-lg:flex-col gap-4 md:gap-8">
                     <div className="flex flex-col items-center text-center border gap-3 border-white/40 rounded-2xl p-4 md:p-8 w-full">
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
