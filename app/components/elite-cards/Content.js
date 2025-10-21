@@ -236,20 +236,6 @@ const Content = () => {
                             
                         </div>
                     </div>
-                    
-                    <div>
-                        <div>
-                            <h2>AVIS Car Rental</h2>
-                            <p>Enjoy up to <strong>35% OFF</strong> your next car rental and a complimentary upgrade with Avis through their <a href="https://one.avisworld.com/en_GB/Avis-MastercardMEA/" target='_blank'>website</a>.</p>
-                        </div>
-
-                        <div className='image-wrapper flex max-lg:flex-col lg:justify-end items-center'>
-                            <img src='/avis-2.webp' className='image-bg' />
-                        
-                            
-                        </div>
-                
-                    </div>
 
                     <div>
                         <div>
@@ -265,6 +251,21 @@ const Content = () => {
                 
                     </div>
 
+                    <div>
+                        <div>
+                            <h2>AVIS Car Rental</h2>
+                            <p>Enjoy up to <strong>35% OFF</strong> your next car rental and a complimentary upgrade with Avis through their <a href="https://one.avisworld.com/en_GB/Avis-MastercardMEA/" target='_blank'>website</a>.</p>
+                        </div>
+
+                        <div className='image-wrapper flex max-lg:flex-col lg:justify-end items-center'>
+                            <img src='/avis-2.webp' className='image-bg' />
+                        
+                            
+                        </div>
+                
+                    </div>
+
+                    
                     <div>
                         <div>
                             <h2>Budget Truck And Car Rental</h2>
@@ -293,6 +294,18 @@ const Content = () => {
                         </div>
                 
                     </div> */}
+                    <div>
+                        <div>
+                            <h2>Rentalcars.com </h2>
+                            <p>Enjoy an exclusive <strong>10% DISCOUNT</strong> when you book with your Mastercard on <a href='https://www.rentalcars.com/?affiliateCode=%20mastercard047&enabler=mastercardme' target='_blank'>Rentalcars.com</a>.</p>
+                        </div>
+
+                        <div className='image-wrapper'>
+                            <img src='/rentalcars.webp' className='image-bg' />
+                           
+                        </div>
+                
+                    </div>
 
                     <div>
                         <div>
@@ -302,21 +315,6 @@ const Content = () => {
 
                         <div className='image-wrapper'>
                             <img src='/flexiroam-2.webp' className='image-bg' />
-                           
-                        </div>
-                
-                    </div>
-                </div>     
-
-                <div ref={lifestyleRef} data-name="lifestyle" className="content-category">
-                    <div>
-                        <div>
-                            <h2>Rentalcars.com </h2>
-                            <p>Enjoy an exclusive <strong>10% DISCOUNT</strong> when you book with your Mastercard on <a href='https://www.rentalcars.com/?affiliateCode=%20mastercard047&enabler=mastercardme' target='_blank'>Rentalcars.com</a>.</p>
-                        </div>
-
-                        <div className='image-wrapper'>
-                            <img src='/rentalcars.webp' className='image-bg' />
                            
                         </div>
                 
@@ -343,7 +341,9 @@ const Content = () => {
                         </div>
                 
                     </div>
+                </div>     
 
+                <div ref={lifestyleRef} data-name="lifestyle" className="content-category">
                     <div>
                         <div>
                             <h2>Mastercard Concierge</h2>
@@ -399,25 +399,37 @@ const Content = () => {
 
                     <div>
                         <div>
-                            <h2>Express VPN</h2>
-                            <p>Get 30-Days of complimentary trial from Express VPN and enjoy either <strong>51% OFF</strong> a 12-month plan with 4 extra months complimentary or <strong>61% OFF</strong> a 24-month plan with 4 extra months complimentary!</p>
+                            <h2>Mastercard® Gamer Pass with Go Gamers</h2>
+                            <p>Mastercard® Gamer Pass with Go Gamers Get <strong>50% OFF</strong> Premium Membership. Join global tournaments, win prizes, and access expert coaching to sharpen your skills. Start now at <a href='https://gogamers.tech' target='_blank'>www.gogamers.tech</a> and game like a pro with Mastercard.
+
+                            </p>
                         </div>
 
-                        <div className='image-wrapper flex justify-end items-end'>
-                            <img src='/express-vpn.webp' className='image-bg' />
+                        <div className='image-wrapper flex items-center justify-center'>
+                            <img src='/gogamers2.webp' className='image-bg' />
+                            <div className='w-full h-full bg-[rgba(0,0,0,0.5)] top-0 left-0 absolute z-10'></div>
                             <div className='relative z-10'>
-                                <img src='/express-vpn-logo.webp' className='max-w-[100px]' />
+                                <img src='/gogamers.svg' />
                             </div>
+                            
                         </div>
                         
+                    </div>
+
+                    <div>
                         <div>
-                            <h3>HOW TO USE:</h3>
-                            <ul>
-                                <li>Download the ExpressVPN app from Google Play or the App store</li>
-                                <li>Visit <a href='https://www.expressvpn.com/go/mastercard-mea' target='_blank'>expressvpn.com/go/mastercard-mea</a> to activate your 30-day complimentary trial. Pay nothing today, then enjoy 51% off a 12-month plan with 4 extra months complimentary or 61% discount on a 24-month plan including 4 extra complimentary months!</li>
-                                <li>Log in and use your Mastercard card to redeem the discount.</li>
-                                <li>To use the service; tap once to connect to ExpressVPN’s global network of ultra-fast servers across 105 countries.</li>
-                            </ul>
+                            <h2>Vaidam</h2>
+                            <p>Get world-class medical care with Vaidam and your Mastercard®. Enjoy up to <strong>10% OFF</strong> service fees, free second opinions, and concierge support in select countries. Just visit <a href='https://www.vaidam.com/mastercard-offers' target='_blank'>www.vaidam.com/mastercard-offers</a> to redeem your benefits.
+                            </p>
+                        </div>
+
+                        <div className='image-wrapper flex items-center justify-center'>
+                            <img src='/vaidam-2.webp' className='image-bg' />
+                            <div className='w-full h-full bg-[rgba(0,79,148,0.5)] top-0 left-0 absolute z-10'></div>
+                            <div className='relative z-10'>
+                                <img className='w-[230px]' src='/vaidam-logo.webp' />
+                            </div>
+                            
                         </div>
                         
                     </div>
@@ -457,20 +469,6 @@ const Content = () => {
                         </div>
                     </div>
 
-                    {/* <div>
-                        <div>
-                            <h2>European Shopping Collection</h2>
-                            <p>Up to <strong>15% OFF</strong> shopping packages, transfers, and more at Europe’s top designer outlets.
-                                Get an extra 10% off with your VIP Card when you pay with your eligible Mastercard®. Unlock your benefits <a href='https://thebicestervillageshoppingcollection.com/mastercard-mea' target='_blank'>here</a>.</p>
-                        </div>
-
-                        <div className='image-wrapper'>
-                            <img src='/european-shopping-collection-2.webp' className='image-bg' />
-                           
-                        </div>
-                        
-                    </div> */}
-
                     <div>
                         <div>
                             <h2>MyUS Premium Membership	</h2>
@@ -493,38 +491,14 @@ const Content = () => {
 
                     <div>
                         <div>
-                            <h2>Mastercard® Gamer Pass with Go Gamers</h2>
-                            <p>Mastercard® Gamer Pass with Go Gamers Get <strong>50% OFF</strong> Premium Membership. Join global tournaments, win prizes, and access expert coaching to sharpen your skills. Start now at <a href='https://gogamers.tech' target='_blank'>www.gogamers.tech</a> and game like a pro with Mastercard.
-
+                            <h2>Fiit ®</h2>
+                            <p>Crush your fitness goals with Fiit. Get a 14-day free trial and <strong>25% OFF</strong> your first payment. Visit <a href="https://getfiit.tv/mastercard" target='_blank'>getfiit.tv/mastercard</a>, choose your plan & pay with your Mastercard to unlock your benefits.
                             </p>
                         </div>
 
-                        <div className='image-wrapper flex items-center justify-center'>
-                            <img src='/gogamers2.webp' className='image-bg' />
-                            <div className='w-full h-full bg-[rgba(0,0,0,0.5)] top-0 left-0 absolute z-10'></div>
-                            <div className='relative z-10'>
-                                <img src='/gogamers.svg' />
-                            </div>
+                        <div className='image-wrapper'>
+                            <img src='/fiitbg.webp' className='image-bg' />
                             
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <div ref={peaceRef} data-name="peace" className="content-category">
-                    <div>
-                        <div>
-                            <h2>Vaidam</h2>
-                            <p>Get world-class medical care with Vaidam and your Mastercard®. Enjoy up to <strong>10% OFF</strong> service fees, free second opinions, and concierge support in select countries. Just visit <a href='https://www.vaidam.com/mastercard-offers' target='_blank'>www.vaidam.com/mastercard-offers</a> to redeem your benefits.
-                            </p>
-                        </div>
-
-                        <div className='image-wrapper flex items-center justify-center'>
-                            <img src='/vaidam-2.webp' className='image-bg' />
-                            <div className='w-full h-full bg-[rgba(0,79,148,0.5)] top-0 left-0 absolute z-10'></div>
-                            <div className='relative z-10'>
-                                <img className='w-[230px]' src='/vaidam-logo.webp' />
-                            </div>
                             
                         </div>
                         
@@ -553,50 +527,32 @@ const Content = () => {
 
                     <div>
                         <div>
-                            <h2>Fiit ®</h2>
-                            <p>Crush your fitness goals with Fiit. Get a 14-day free trial and <strong>25% OFF</strong> your first payment. Visit <a href="https://getfiit.tv/mastercard" target='_blank'>getfiit.tv/mastercard</a>, choose your plan & pay with your Mastercard to unlock your benefits.
-                            </p>
+                            <h2>Express VPN</h2>
+                            <p>Get 30-Days of complimentary trial from Express VPN and enjoy either <strong>51% OFF</strong> a 12-month plan with 4 extra months complimentary or <strong>61% OFF</strong> a 24-month plan with 4 extra months complimentary!</p>
                         </div>
 
-                        <div className='image-wrapper'>
-                            <img src='/fiitbg.webp' className='image-bg' />
-                            
-                            
+                        <div className='image-wrapper flex justify-end items-end'>
+                            <img src='/express-vpn.webp' className='image-bg' />
+                            <div className='relative z-10'>
+                                <img src='/express-vpn-logo.webp' className='max-w-[100px]' />
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3>HOW TO USE:</h3>
+                            <ul>
+                                <li>Download the ExpressVPN app from Google Play or the App store</li>
+                                <li>Visit <a href='https://www.expressvpn.com/go/mastercard-mea' target='_blank'>expressvpn.com/go/mastercard-mea</a> to activate your 30-day complimentary trial. Pay nothing today, then enjoy 51% off a 12-month plan with 4 extra months complimentary or 61% discount on a 24-month plan including 4 extra complimentary months!</li>
+                                <li>Log in and use your Mastercard card to redeem the discount.</li>
+                                <li>To use the service; tap once to connect to ExpressVPN’s global network of ultra-fast servers across 105 countries.</li>
+                            </ul>
                         </div>
                         
                     </div>
+                </div>
 
-                    {/* <div id="shahid">
-                        <div>
-                            <h2>Get All the Drama for Half the Price</h2>
-                            <p>Get <strong>50% OFF Shahid VIP with Your MyMonty Card</strong>. Your favorite shows just got more affordable. Enjoy <strong>50% OFF your Shahid VIP monthly plan</strong> when you use an eligible <strong>MyMonty Mastercard®</strong>.
-                            </p>
-                        </div>
-
-                        <div className='image-wrapper flex max-lg:flex-col !p-0'>
-                            <div className='w-full relative h-full'>
-                                <img className='absolute w-full h-full object-cover' src='/shahidbg.webp' />
-                            </div>
-                            <div className='w-full relative h-full'>
-                                <img src='/shahidlogo.webp' className='absolute w-full h-full object-cover'/>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h4 className='text-[#AEAEAE] font-bold text-lg'>Offer is valid for newly registered MyMonty Mastercard cards on the Shahid platform only.</h4>
-                            <h3 className='mt-4'>TO GET YOUR DISCOUNT:</h3>
-                            <ul className='lg:columns-2'>
-                                <li>Go to <a href="https://shahid.net/Mastercard" target='_blank'>www.shahid.net/Mastercard</a></li>
-                                <li>Login or sign up for a Shahid account</li>
-                                <li>Add your eligible MyMonty Mastercard® details</li>
-                                <li>Redeem and enjoy streaming at half the price!</li>
-                            </ul>
-                            <h3 className='mt-4'>TERMS & CONDITIONS:</h3>
-                            <a href='/Shahid-T&Cs - May 2025.pdf' target='_blank' className='mm-button blue'>View Full Terms & Conditions</a>
-                        </div>
-                        
-                    </div> */}
-
+                <div ref={peaceRef} data-name="peace" className="content-category">
+                    
                     <div>
                         <div>
                             <h2>Medical Insurance</h2>
@@ -613,7 +569,29 @@ const Content = () => {
                         </div>
                         
                     </div>
+                    
+                    <div>
+                        <div>
+                            <h2>Rental Collision and Loss Damage Waiver</h2>
+                            <p>
+                                Get up to USD 50,000 for physical damage, theft, and more.
+                               
+                            </p>
+                            <p>
+                                 Visit <a href="https://mcpeaceofmind.com/worldelite" target='_blank'>mcpeaceofmind.com/worldelite</a> or call Concierge to file a claim.
+                            </p>
+                        </div>
 
+                        <div className='image-wrapper'>
+                            <img src='/rental-collision.webp' className='image-bg' />
+            
+                        </div>
+                        
+                    </div>
+
+                    
+
+                    
                     <div>
                         <div>
                             <h2>Travel Inconvenience Insurance</h2>
@@ -629,26 +607,7 @@ const Content = () => {
                         </div>
                         
                     </div>
-
-                    <div>
-                        <div>
-                            <h2>Rental Collision and Loss Damage Waiver</h2>
-                            <p>
-                                Get up to USD 50,000 for physical damage, theft, and more.
-                               
-                            </p>
-                            <p>
-                                 Visit <a href="https://mcpeaceofmind.com/worldelite" target='_blank'>mcpeaceofmind.com/worldelite</a> or call Concierge to file a claim.
-                            </p>
-                        </div>
-
-                        <div className='image-wrapper'>
-                            <img src='/rental-collision.webp' className='image-bg' />
-                            
-                            
-                        </div>
-                        
-                    </div>
+                    
 
                     <div className='!pb-0 !border-b-0'>
                         <div>
