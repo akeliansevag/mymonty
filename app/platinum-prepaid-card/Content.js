@@ -207,15 +207,15 @@ const Content = () => {
 
                         <div className='image-wrapper flex max-lg:flex-col lg:justify-end items-center'>
                             <img src='/booking.webp' className='image-bg' />
-                            <div className='lg:mr-5 relative z-10 flex flex-col items-center'>
+                            {/* <div className='lg:mr-5 relative z-10 flex flex-col items-center'>
                                 <img className='w-[165px] translate-y-8 z-10' src='/booking-logo.webp' />
                                 <Promo code="MCBKG"/>
-                            </div>
+                            </div> */}
                             
                         </div>
 
                         <div>
-                            <p>Use your World Elite Mastercard at checkout, and your cashback will be credited to your Booking.com wallet within 70 days after your stay.</p>
+                            <p>Use your Platinum Mastercard at checkout, and your cashback will be credited to your Booking.com wallet within 70 days after your stay.</p>
                             
                         </div>
                     </div>
@@ -410,7 +410,7 @@ const Content = () => {
 
                     <div>
                         <div>
-                            <h2>European Shopping Collection</h2>
+                            <h2>Bicester Village Shopping Collection</h2>
                             <p>Up to <strong>15% OFF</strong> shopping packages, transfers, and more at Europe’s top designer outlets. <br /> 
                                 Get an extra 10% off with your VIP Card when you pay with your eligible Mastercard®. Unlock your benefits <a href='https://www.thebicestercollection.com/en/destinations/' target='_blank'>here</a>.</p>
                         </div>

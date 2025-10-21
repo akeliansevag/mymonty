@@ -110,6 +110,24 @@ const Content = () => {
 
                     <div>
                         <div>
+                            <h2>Airport Security Fast Track Services</h2>
+                            <p>Airport Fast Track service across top Europe, Turkey & Asia destinations with your World Elite Mastercard card. Download Mastercard Travel Pass App now and book your complimentary fast track pass.</p>
+                        </div>
+                        <div className='image-wrapper'>
+                            <img src='/airport-fast-track.webp' className='image-bg' />
+                        </div>
+                        <div>
+                            <h3>HOW TO USE:</h3>
+                            <ul>
+                                <li>Download <strong>Mastercard Travel Pass</strong> App from <a href="https://apps.apple.com/lb/app/mastercard-travel-pass/id1493489553" target='_blank'>App Store</a> or <a href='https://play.google.com/store/apps/details?id=com.dragonpass.en.mcmea&hl=en_US&pli=1' target='_blank'>Google Pay</a> or click on the website and enter the Airport’s name into airport search bar</li>
+                                <li>Book your Fast Track Pass and receive it in the app or by email</li>
+                                <li>Go to the Fast Track zone in your terminal and present your Fast Track pass to enter the priority lane</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
                             <h2>Costa at Dubai Airports</h2>
                             <p>Get freshly prepared food and beverages at Costa outlets in Dubai’s airports for <strong>FREE</strong>.</p>
                         </div>
