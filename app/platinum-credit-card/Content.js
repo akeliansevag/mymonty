@@ -299,45 +299,20 @@ const Content = () => {
 
                     <div>
                         <div>
-                            <h2>Bicester Village Shopping Collection</h2>
-                            <p>Up to <strong>15% OFF</strong> shopping packages, transfers, and more at Europe’s top designer outlets. <br /> 
-                                Get an extra 10% off with your VIP Card when you pay with your eligible Mastercard®. Unlock your benefits <a href='https://www.thebicestercollection.com/en/destinations/' target='_blank'>here</a>.</p>
+                            <h2>BICESTER VILLAGE SHOPPING COLLECTION</h2>
+                            <p>Shop luxury in style with VIP discounts at the Bicester Village Shopping Collection across Europe with your Mastercard. <br />Visit <a href='https://thebicestervillageshoppingcollection.com/mastercard-mea' target='_blank'>https://thebicestervillageshoppingcollection.com/mastercard-mea</a> for more.</p>
                         </div>
 
-                        <div className='image-wrapper'>
-                            <img src='/european-shopping-collection-3.webp' className='image-bg' />
-                           
-                        </div>
-                        <div className='bg-white p-4 lg:p-8 rounded-3xl'>
-                            <img src='/bicester-village.png' className='max-w-[300px]' />
-                            <div className='flex max-lg:flex-col gap-8'>
-                                <div className='w-full lg:w-1/2 mt-6'>
-                                    <h3 className='text-lg'>About:</h3>
-                                    <p className='text-lg'>The European Shopping Collection is a collection of 11 shopping destinations across Europe and China offering designer clothing and accessories for the discerning shopper. Located within an hour of major international transport hubs, the European Shopping Collection includes the Bicester Village Shopping Collection and many other exclusive retail stores.</p>
-                                    <h3 className="text-lg mt-3">Description:</h3>
-                                    <p className='text-lg'>The Bicester Village Shopping Collection is defined by it’s luxury bands, charming open-air ‘village’ settings, a welcoming and superior service, a calendar of events and, not least, exceptional value for money. World-leading brands offer savings of up to 60% , and sometimes more, on the recommended retail price, in their own luxuriously appointed boutiques, all year round.  As a TIER Mastercard cardholder you get access to:</p>
-                                    <ul className='!list-disc list-outside bg-[#F7F7F7] p-4 rounded-3xl mt-2'>
-                                        <li className='!text-lg'>VIP invitation (to be exchanged for a VIP card that offers all of this and more is available at the following village* an additional 10% discount on purchases in participating boutiques)</li>
-                                        <li className='!text-lg'>15% discount on shopping packages</li>
-                                        <li className='!text-lg'>15% discount on chauffeur drive experiences at participating villages</li>
-                                        <li className='!text-lg'>15% discount on Shopping Express</li>
-                                        <li className='!text-lg'>Access to VIP lounges (subject to availability)</li>
-                                    </ul>
-                                </div>
-                                <div className='bg-[#F7F7F7] p-4 lg:p-8 rounded-3xl w-full lg:w-1/2 mt-6'>
-                                    <h3 className="text-lg mt-6">Eligibility:</h3>
-                                    <p className='text-lg'>Eligible cards issued in Middle East & Africa</p>
-                                    <h3 className="text-lg mt-6">Destinations:</h3>
-                                    <p className='text-lg'>UK, Italy, Germany, Ireland, Spain, France, Belgium.</p>
-                                    <h3 className="text-lg mt-6">Validity:</h3>
-                                    <p className='text-lg'>Evergreen: Until the end of the year and beyond</p>
-                                    <h3 className="text-lg mt-6">SMS/Short Promo:</h3>
-                                    <p className='text-lg'>Shop luxury in style with VIP discounts at the Bicester Village Shopping Collection across Europe with your Mastercard. Visit <a href='thebicestervillagehappeningcollection.com/mastercard-mea' target='_blank'>thebicestervillagehappeningcollection.com/mastercard-mea</a> for more</p>
-                                    <h3 className="text-lg mt-6">How to use:</h3>
-                                    <p className='text-lg'>Simply visit <a href='thebicestervillagehappeningcollection.com/mastercard-mea' target='_blank'>thebicestervillagehappeningcollection.com/mastercard-mea</a> to avail these offers</p>
-                                </div>
+                        <div className='image-wrapper flex justify-end items-end'>
+                            <img src='/bicester-village.webp' className='image-bg' />
+                            <div className='relative z-10'>
+                                <img src='/thriwe-logo.webp' className='max-w-[100px]' />
                             </div>
-                            <p className='mt-4 text-lg'><span className="text-[#A90527]">*</span> Bicester Village - London, UK; Fidenza Village - Milan, Italy; Ingolstadt Village - Munich, Germany; Kildare Village - Dublin, Ireland; La Roca Village - Barcelona, Spain; Los Rozos Village - Madrid, Spain; La Vallee Village - Paris, France; Maasmechelen Village - Brussels, Belgium, Wertheim Village - Frankfurt, Germany</p>
+                        </div>
+                        
+                        <div>
+                            <h3>HOW TO USE:</h3>
+                            <p>Simply visit <a href='https://thebicestervillageshoppingcollection.com/mastercard-mea' target='_blank'>https://thebicestervillageshoppingcollection.com/mastercard-mea</a> to avail these offers.</p>
                         </div>
                     </div>
 
