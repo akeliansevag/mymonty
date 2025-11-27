@@ -94,7 +94,7 @@ export const data = [
                         noIndex: true,
                     },
                     {
-                        title: 'Recurring transfers',
+                        title: 'Recurring Transfers',
                         url: '/transfers?s=recurring-transfers',
                         noIndex: true,
                     },
@@ -142,7 +142,7 @@ export const data = [
                         noIndex: true,
                     },
                     {
-                        title: 'Salary advance',
+                        title: 'Salary Advance',
                         url: '/loans/salary-advance',
                         noIndex: true,
                     },
@@ -192,7 +192,7 @@ export const data = [
                 url: '/business/salary-domiciliation',
                 children: [
                     {
-                        title: 'Salary advance',
+                        title: 'Salary Advance',
                         url: '/business/salary-advance',
                         noIndex: true,
                     },
@@ -221,7 +221,7 @@ export const data = [
                         url: '/faq/personal/onboarding'
                     },
                     {
-                        title: 'Contact us',
+                        title: 'Contact Us',
                         url: '/contact-us'
                     },
                 ]
@@ -254,14 +254,6 @@ export const data = [
                     },
                 ]
             },
-
-            
-            
-            
-            
-            
-            
-
         ]
     }
 ];

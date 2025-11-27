@@ -32,7 +32,11 @@ export const data = [
                         url: '/accounts?s=top-up',
                         noIndex: true
                     },
-
+                    {
+                        title: 'Forex',
+                        url: '/accounts?s=forex',
+                        noIndex: true
+                    },
                 ]
             },
             {
@@ -88,7 +92,7 @@ export const data = [
                         noIndex: true
                     },
                     {
-                        title: 'Recurring transfers',
+                        title: 'Recurring Transfers',
                         url: '/transfers?s=recurring-transfers',
                         noIndex: true
                     },
@@ -131,13 +135,13 @@ export const data = [
                 url: '/loans',
                 children: [
                     {
-                        title: 'Advance on Salary',
-                        url: '/loans?s=advance-on-salary',
+                        title: 'Car Loan',
+                        url: '/car-loan',
                         noIndex: true
                     },
                     {
-                        title: 'BNPL',
-                        url: '/loans?s=bnpl',
+                        title: 'Salary Advance',
+                        url: '/loans/salary-advance',
                         noIndex: true
                     },
 
@@ -177,7 +181,7 @@ export const data = [
                         url: '/blogs'
                     },
                     {
-                        title: 'Contact us',
+                        title: 'Contact Us',
                         url: '/contact-us'
                     },
                     {
