@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
 import { useAppContext } from '../AppContext';
+import Link from 'next/link';
 
-
-const TextBlock = ({noMaxWidth, subTitle, title, description, button, textColor, buttonColor, center, bold }) => {
+const TextBlock = ({noMaxWidth, subTitle, title, description, button, textColor, buttonColor, center, bold, link }) => {
     const { handleOpenModal } = useAppContext();
     return (
         <div className={`md:max-w-full ${!noMaxWidth ? 'lg:max-w-[60vw] fhd:max-w-[45vw]' : ''} ${center ? 'mx-auto' : ''} ${textColor ? 'text-' + textColor : ''}`}>
@@ -21,6 +21,13 @@ const TextBlock = ({noMaxWidth, subTitle, title, description, button, textColor,
             {
                 button && (
                     <button onClick={handleOpenModal} className={`mm-button mt-8 ${buttonColor === 'dark' ? '!bg-black !text-white' : '!bg-white !text-black'}`} href="#">Download App</button>
+                )
+            }
+            {
+                link && (
+                    <div className='mt-8'>
+                        <Link href={link} className={`mm-button ${buttonColor === 'dark' ? 'text-black' : 'text-white'}`}>Learn More</Link>
+                    </div>
                 )
             }
         </div >

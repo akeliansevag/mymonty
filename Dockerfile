@@ -1,6 +1,6 @@
 FROM node:22-alpine
 
-WORKDIR /frontend
+WORKDIR /mymonty-frontend-new
 
 COPY package.json .
 COPY package-lock.json .

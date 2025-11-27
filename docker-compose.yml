@@ -1,0 +1,23 @@
+services:
+  mymonty-frontend:
+    container_name: mymonty-frontend-new
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    networks:
+      - npm
+      - mymonty-network
+    volumes:
+      - node_modules:/mymonty-frontend-new/node_modules
+      - next:/mymonty-frontend-new/.next
+      - ./:/mymonty-frontend-new
+networks:
+  mymonty-network:
+    driver: bridge
+  npm:
+    external: true
+    name: npm
+volumes:
+  node_modules:
+  next:
