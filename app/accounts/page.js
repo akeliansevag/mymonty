@@ -89,21 +89,21 @@ Get your USD, LBP and EUR wallets instantly as soon as you complete onboarding."
 
         <Carousel data={carouselData}/>
         <section className="bg-white py-28 max-lg:py-14">
-            <div className='container'>
+            <div className='container '>
                 <div className='flex flex-col gap-20'>
-                    <div className='flex items-center max-lg:gap-10 lg:gap-32 max-lg:flex-col'>
+                    <div className='flex items-center justify-between max-lg:gap-10 lg:gap-52 max-lg:flex-col'>
                         <div className='w-full'>
                             <TextBlock buttonColor="dark" title="Forex" description="Experience seamless banking with MyMonty. Enjoy instant transfers, zero fees, and 24/7 access to your funds. Your money, your way." link="/accounts/forex-exchange" />
                         </div>
                         <div className='w-full'>
-                            <img src='/accounts-forex.webp' className='max-w-[575px] w-full' alt='Forex Image'/>
+                            <img src='/accounts-forex.webp' className='w-full' alt='Forex Image'/>
                         </div>
                         
                     </div>
 
-                    <div className='flex items-center max-lg:gap-10 lg:gap-32 max-lg:flex-col-reverse'>
+                    <div className='flex items-center justify-between max-lg:gap-10 lg:gap-52 max-lg:flex-col-reverse'>
                         <div className='w-full'>
-                            <img src='/accounts-statement.webp' alt='Statement Image' className='max-w-[575px] w-full'/>
+                            <img src='/accounts-statement.webp' alt='Statement Image' className='w-full'/>
                         </div>
                         <div className='w-full'>
                             <TextBlock buttonColor="dark" title="Statement of Account" description="Prove you’ve got the funds It only takes a few taps!" link="/accounts/forex-exchange"/>
@@ -112,12 +112,12 @@ Get your USD, LBP and EUR wallets instantly as soon as you complete onboarding."
                         
                     </div>
 
-                    <div className='flex items-center max-lg:gap-10 lg:gap-32 max-lg:flex-col'>
+                    <div className='flex items-center justify-between max-lg:gap-10 lg:gap-52 max-lg:flex-col'>
                         <div className='w-full'>
                             <TextBlock buttonColor="dark" title="Pay with QR Code" description="Just Scan & Pay. It’s that simple! MyMonty makes your life easier!" link="/accounts/forex-exchange" />
                         </div>
                         <div className='w-full'>
-                            <img src='/accounts-qr.webp' alt='QR Image' className='max-w-[575px] w-full' />
+                            <img src='/accounts-qr.webp' alt='QR Image' className='w-full' />
                         </div>
                         
                     </div>

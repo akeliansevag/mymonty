@@ -122,7 +122,7 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                         let buttonClasses = index2 === selectedIndex ? ' !bg-[#2657D4] !border-[#2657D4]' : '';
                         let widthClass = (index2 === selectedIndex && !filterClicked) ? '!w-full transition-all' : 'transition-none w-0';
                         return (
-                            <div onClick={() => handleSelect(index2)} key={index2} className={`shrink-0 whitespace-nowrap mm-button default hover:bg-[#2657D4] hover:border-[#2657D4] cursor-pointer ${buttonClasses} relative overflow-hidden z-1`}>
+                            <div onClick={() => handleSelect(index2)} key={index2} className={`shrink-0 whitespace-nowrap mm-button default hover:bg-[#2657D4] hover:border-[#2657D4] cursor-pointer ${buttonClasses} relative overflow-hidden z-1 min-w-[110px]`}>
                                 <div className={`bg-[#1a3e96] w-0 opacity-80 absolute h-full top-0 left-0 duration-[8s] ease-linear ${widthClass}`}></div>
                                 <div className='z-10 block relative'>
                                     {filter.title}

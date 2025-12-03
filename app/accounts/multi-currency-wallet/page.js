@@ -45,14 +45,14 @@ Do it all with MyMonty." />
                     <div className='flex gap-10 max-lg:flex-col'>
                         <div className='bg-[#F7F7F7] rounded-2xl p-10 flex flex-col gap-5 w-full'>
                             <div>
-                                <svg className='mx-auto' width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg className='mx-auto' width="67" height="67" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M51.818 16.3639V43.6366C51.818 54.5457 49.0907 57.273 38.1816 57.273H21.818C10.9089 57.273 8.18164 54.5457 8.18164 43.6366V16.3639C8.18164 5.45481 10.9089 2.72754 21.818 2.72754H38.1816C49.0907 2.72754 51.818 5.45481 51.818 16.3639Z" stroke="black" strokeWidth="4.09091" strokeLinecap="round" strokeLinejoin="round"/>
                                     <path d="M35.454 12.2725H24.5449" stroke="black" strokeWidth="4.09091" strokeLinecap="round" strokeLinejoin="round"/>
                                     <path d="M39.4831 28.1515C40.1723 27.4306 40.1723 26.2617 39.4831 25.5407C38.7939 24.8198 37.6768 24.8198 36.9876 25.5407L26.4706 36.5429L23.0125 32.9254C22.3234 32.2045 21.206 32.2045 20.5169 32.9254C19.8277 33.6464 19.8277 34.8152 20.5169 35.5362L25.2228 40.4593C25.912 41.1802 27.0292 41.1802 27.7184 40.4593L39.4831 28.1515Z" fill="#091111"/>
                                 </svg>
                             </div>
                             <div>
-                                <h3 className='text-2xl font-bold'>Send & Receive Money Easily</h3>
+                                <h3 className='text-2xl font-bold text-balance'>Send & Receive <br /> Money Easily</h3>
                             </div>
                             <p className='text-lg'>
                                 Move funds between USD and LBP and EUR easily.
@@ -70,7 +70,7 @@ Do it all with MyMonty." />
 
                             </div>
                             <div>
-                                <h3 className='text-2xl font-bold'>Keep track effortlessly</h3>
+                                <h3 className='text-2xl font-bold text-balance'>Keep <br /> track effortlessly</h3>
                             </div>
                             <p className='text-lg'>
                                 Move funds between USD and LBP and EUR easily.
@@ -79,7 +79,7 @@ Do it all with MyMonty." />
 
                         <div className='bg-[#F7F7F7] rounded-2xl p-10 flex flex-col gap-5 w-full'>
                             <div>
-                                <svg className='mx-auto' width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg className='mx-auto' width="67" height="67" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M47.2484 7.46554C44.5935 7.1086 41.0939 7.10449 36.168 7.10449C35.098 7.10449 34.2305 6.23704 34.2305 5.16699C34.2305 4.09695 35.098 3.22949 36.168 3.22949H36.3137C41.0613 3.22944 44.8216 3.22942 47.7646 3.6251C50.7935 4.03229 53.2448 4.89027 55.1782 6.82353C56.9462 8.59167 57.9119 10.2733 58.365 12.8705C58.7724 15.2051 58.7724 18.3536 58.7721 23.0015V23.2503C58.7721 24.3204 57.9046 25.1878 56.8346 25.1878C55.7646 25.1878 54.8971 24.3204 54.8971 23.2503C54.8971 18.2927 54.8896 15.4967 54.5476 13.5366C54.2443 11.7975 53.6964 10.822 52.4381 9.56357C51.3448 8.47028 49.8472 7.81499 47.2484 7.46554Z" fill="#091111"/>
                                     <path d="M7.1055 38.75C7.1055 37.68 6.23804 36.8125 5.168 36.8125C4.09793 36.8125 3.2305 37.68 3.2305 38.75L3.23047 38.9988C3.23034 43.6467 3.23027 46.7953 3.63766 49.1298C4.09083 51.7269 5.0564 53.4086 6.82454 55.1769C8.7578 57.11 11.2093 57.9679 14.238 58.3753C17.181 58.7708 20.9414 58.7708 25.6889 58.7708H25.8346C26.9047 58.7708 27.7721 57.9033 27.7721 56.8333C27.7721 55.7633 26.9047 54.8958 25.8346 54.8958C20.9087 54.8958 17.4091 54.8917 14.7543 54.5347C12.1553 54.1854 10.6579 53.53 9.56457 52.4368C8.30613 51.1784 7.75841 50.2027 7.45497 48.4639C7.11294 46.5036 7.1055 43.7077 7.1055 38.75Z" fill="#091111"/>
                                     <path d="M58.7721 38.75C58.7721 37.68 57.9046 36.8125 56.8346 36.8125C55.7646 36.8125 54.8971 37.68 54.8971 38.75C54.8971 43.7077 54.8896 46.5036 54.5476 48.4639C54.2443 50.2027 53.6964 51.1784 52.4381 52.4368C51.3448 53.53 49.8472 54.1854 47.2484 54.5347C44.5935 54.8917 41.0939 54.8958 36.168 54.8958C35.098 54.8958 34.2305 55.7633 34.2305 56.8333C34.2305 57.9033 35.098 58.7708 36.168 58.7708H36.3137C41.0613 58.7708 44.8216 58.7708 47.7646 58.3753C50.7935 57.9679 53.2448 57.11 55.1782 55.1769C56.9462 53.4086 57.9119 51.7269 58.365 49.1298C58.7724 46.7953 58.7724 43.6467 58.7721 38.9988V38.75Z" fill="#091111"/>
@@ -90,7 +90,7 @@ Do it all with MyMonty." />
 
                             </div>
                             <div>
-                                <h3 className='text-2xl font-bold'>Safe And Secure</h3>
+                                <h3 className='text-2xl font-bold text-balance'>Safe <br /> And Secure</h3>
                             </div>
                             <p className='text-lg'>
                                 Your money is protected, always.

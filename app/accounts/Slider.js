@@ -18,22 +18,22 @@ export default function Slider() {
   
   const cards = [
     {
-      title: 'STEP 1:',
-      description: 'Download the app',
+      title: 'STEP 1',
+      description: 'Download <br /> the app',
       image: s1,
     },
     {
-      title: 'STEP 2:',
-      description: 'Enter your number & verify',
+      title: 'STEP 2',
+      description: 'Enter your <br /> number & verify',
       image: s2,
     },
     {
-      title: 'STEP 3:',
-      description: 'Set a passcode (add fingerprint/Face ID if you want)',
+      title: 'STEP 3',
+      description: 'Set a passcode <br /> (add fingerprint/Face ID if you want)',
       image: s3,
     },
     {
-      title: 'STEP 4:',
+      title: 'STEP 4',
       description: 'This is Step 4',
       image: s4,
     }
