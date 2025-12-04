@@ -10,7 +10,9 @@ import 'swiper/css/autoplay';
 import s1 from '@/public/sign-up-1.webp';
 import s2 from '@/public/sign-up-2.webp';
 import s3 from '@/public/sign-up-3.webp';
-import s4 from '@/public/sign-up-3.webp';
+import s4 from '@/public/sign-up-4.webp';
+import s5 from '@/public/sign-up-5.webp';
+import s6 from '@/public/sign-up-6.webp';
 
 export default function Slider() {
   // keep only one open at a time
@@ -34,9 +36,19 @@ export default function Slider() {
     },
     {
       title: 'STEP 4',
-      description: 'This is Step 4',
+      description: 'Verify email & scan ID',
       image: s4,
-    }
+    },
+    {
+      title: 'STEP 5',
+      description: 'Selfie verification',
+      image: s5,
+    },
+    {
+      title: 'STEP 6',
+      description: 'Add your info & confirm OTP',
+      image: s6,
+    },
   ];
 
   

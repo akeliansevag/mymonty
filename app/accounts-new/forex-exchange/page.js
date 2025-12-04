@@ -84,6 +84,9 @@ const page = () => {
         <section>
             <div className='container text-center lg:mb-28 max-lg:mb-14'>
                 <TextBlock buttonColor="dark" center={true} title="Powered by Srour Company for Exchange S.A.R.L." button={true}/>
+                <div className='w-full mt-12'>
+                    <img src='/powered-by.webp' className='w-full md:w-4/5 mx-auto' alt='Powered by'/>
+                </div>
             </div>
         </section>
     </>

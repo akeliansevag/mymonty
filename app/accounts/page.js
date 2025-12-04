@@ -1,23 +1,23 @@
 import React from 'react';
 import { websiteName } from '@/app/config';
 import Banner from '@/app/components/Banner';
-import banner from '@/public/accounts-banner.webp';
-import TextBlock from '../components/TextBlock';
-import Image from 'next/image';
-import img2 from '@/public/accounts-section-2.webp';
-import Carousel from './Carousel';
-import Slider from './Slider';
-import DownloadApp from '../components/DownloadApp';
+import banner from '@/public/personal/accounts-banner.webp';
+import Carousel from '@/app/components/Carousel';
+import AnimatedImage from './AnimatedImage';
+import SectionOne from './SectionOne';
+import SectionThree from './SectionThree';
+import SectionForex from './SectionForex';
 
 export const metadata = {
-    title: 'Accounts' + websiteName,
-    description: 'Open your Free MyMonty account',
+    title: 'Digital Bank Accounts | Manage Finances' + websiteName,
+    description: ' Experience seamless digital banking in Lebanon with MyMonty. Manage e-wallets, send money, apply for loans & more, all from your phone. Download the app today!',
 };
-const page = () => {
+
+const accounts = () => {
     const data = {
-        title: 'Open your Free MyMonty account',
+        title: 'ACCOUNT ACCESS MADE SIMPLE',
         subtitle: 'Accounts',
-        desc: 'Money transfers, E-Services, Prepaid Cards, Credit Cards, Salary Advances, Loans and much more.',
+        desc: 'Unlock your account with unparalleled ease and say goodbye to hassle!',
         image: {
             inGrid: true,
             layout: 'half',
@@ -26,7 +26,7 @@ const page = () => {
         cta: {
             type: 'button',
             button: {
-                name: 'Download app'
+                name: 'Download App'
             }
         }
     };
@@ -35,111 +35,77 @@ const page = () => {
         termsAndConditions: false, 
         kfs: 'KFS-Individual-eWallet-Account-16.7.25.pdf'
     }
-
     const carouselData = {
         filters: [
             {
-                title: 'Top Up'
+                title: 'Top Up Your Wallet'
             },
             {
-                title: 'Withdraw'
+                title: 'Request a TOP-UP'
+            },
+            {
+                title: 'Top Up or Cash Out With Our Partners'
+            },
+            {
+                title: 'Top Up or Cash Out Via Our ATM/BANK Network'
             }
         ],
         content: [
             {
-                title: 'Top Up',
-                description: 'Add your cash, in a flash. No hidden fees. Choose your way:',
+                title: 'TOP UP YOUR WALLET',
+                description: 'Instant Boost with Your Card. <br /> Update your wallet balance instantly with no hidden fees using any Fresh USD/LBP bank card. <br /> It’s free with your MyMonty card.',
                 button: {
-                    text: 'Learn More',
-                    url: '/accounts/top-up',
-                    modal: false,
+                    text: 'Choose your card',
+                    url: '/cards'
                 },
-                contentImage: '/top-up-carousel-content.webp',
-                backgroundImage: '/top-up-carousel.webp'
+                contentImage: '/personal/accounts-carousel-1-content.png',
+                backgroundImage: '/personal/accounts-carousel-1.jpg'
             },
             {
-                title: 'Withdraw',
-                description: 'Your money, whenever and wherever you need it. Choose your nearest option:',
-                button: {
-                    text: 'Learn More',
-                    url: '/accounts/withdraw',
-                    modal: false,
-                },
-                contentImage: '/withdraw-carousel-content.webp',
-                backgroundImage: '/withdraw-carousel.webp'
+                title: 'REQUEST A TOP-UP',
+                description: 'Top Up by Request <br /> Get money from anyone by selecting them from your contact list, or via a link or QR code.',
+                // button: {
+                //     text: 'Choose your card',
+                //     url: '/cards'
+                // },
+                contentImage: '/personal/accounts-carousel-2-content.png',
+                backgroundImage: '/personal/accounts-carousel-2.jpg'
             },
-
+            {
+                title: 'TOP UP OR CASH OUT WITH OUR PARTNERS',
+                description: '1400+ Locations, Instant Convenience.<br /> Deposit money, cash out personally or send a code for someone else to cash out on your behalf at over 1400 OMT locations across Lebanon. <br /> Your funds reflect instantly in your wallet for ultimate convenience.',
+                // button: {
+                //     text: 'Choose your card',
+                //     url: '/cards'
+                // },
+                contentImage: '/personal/accounts-carousel-3-content.png',
+                backgroundImage: '/personal/accounts-carousel-3.jpg'
+            },
+            {
+                title: 'TOP UP OR CASH OUT VIA OUR ATM/BANK NETWORK',
+                description: 'Flexible Finances at Your Fingertips <br />Top up your wallet effortlessly or withdraw cash seamlessly at our partner bank ATMs and see it instantly in your wallet. Enjoy a flexible and accessible financial experience.',
+                // button: {
+                //     text: 'Choose your card',
+                //     url: '/cards'
+                // },
+                contentImage: '/personal/accounts-carousel-4-content.png',
+                backgroundImage: '/personal/accounts-carousel-4.jpg'
+            }
         ]
     };
-  return (
-    <>
-        <Banner data={data} terms={terms}/>
-        <section className="bg-white text-center py-28 max-lg:py-14">
-            <div className="container flex flex-col gap-8">
-                <TextBlock buttonColor="dark" title="MULTI-CURRENCY WALLET" center={true} button={true} description="One Wallet, All Your Currencies.
-Get your USD, LBP and EUR wallets instantly as soon as you complete onboarding." />
-                
-                <div className="relative">
-                    <Image src={img2} alt="Girls Looking at the phone" width="2120" height="982" />
-                </div>
-                
+    return (
+        <div>
+
+            <Banner terms={terms} data={data} AnimatedImage={AnimatedImage} />
+            <SectionOne />
+
+            <div id="top-up">
+                <Carousel data={carouselData} />
             </div>
-            
-        </section> 
-
-        <Carousel data={carouselData}/>
-        <section className="bg-white py-28 max-lg:py-14">
-            <div className='container '>
-                <div className='flex flex-col gap-20'>
-                    <div className='flex items-center justify-between max-lg:gap-10 lg:gap-52 max-lg:flex-col'>
-                        <div className='w-full'>
-                            <TextBlock buttonColor="dark" title="Forex" description="Experience seamless banking with MyMonty. Enjoy instant transfers, zero fees, and 24/7 access to your funds. Your money, your way." link="/accounts/forex-exchange" />
-                        </div>
-                        <div className='w-full'>
-                            <img src='/accounts-forex.webp' className='w-full' alt='Forex Image'/>
-                        </div>
-                        
-                    </div>
-
-                    <div className='flex items-center justify-between max-lg:gap-10 lg:gap-52 max-lg:flex-col-reverse'>
-                        <div className='w-full'>
-                            <img src='/accounts-statement.webp' alt='Statement Image' className='w-full'/>
-                        </div>
-                        <div className='w-full'>
-                            <TextBlock buttonColor="dark" title="Statement of Account" description="Prove you’ve got the funds It only takes a few taps!" link="/accounts/forex-exchange"/>
-                        </div>
-                        
-                        
-                    </div>
-
-                    <div className='flex items-center justify-between max-lg:gap-10 lg:gap-52 max-lg:flex-col'>
-                        <div className='w-full'>
-                            <TextBlock buttonColor="dark" title="Pay with QR Code" description="Just Scan & Pay. It’s that simple! MyMonty makes your life easier!" link="/accounts/forex-exchange" />
-                        </div>
-                        <div className='w-full'>
-                            <img src='/accounts-qr.webp' alt='QR Image' className='w-full' />
-                        </div>
-                        
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <section className="bg-white text-center py-28 max-lg:py-14">
-            <div className='container'>
-                <TextBlock title="Sign Up on MyMonty" center={true} description="Takes less than making your morning coffee." />    
-            </div> 
-            <Slider />
-            <div className='container'>
-                <DownloadApp />
-            </div>
-                
-        </section>
-        
-        
-    </>
-  )
+            <SectionForex />
+            <SectionThree />
+        </div>
+    )
 }
 
-export default page;
+export default accounts;

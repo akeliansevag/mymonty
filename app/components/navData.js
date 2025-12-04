@@ -50,6 +50,10 @@ export const data = [
                         url: '/standard-virtual-card'
                     },
                     {
+                        title: 'Gold Prepaid Card',
+                        url: '/gold-prepaid-card'
+                    },
+                    {
                         title: 'Platinum Prepaid Card',
                         // url: '/physical-platinum-mastercard'
                         url: '/platinum-prepaid-card'
@@ -62,10 +66,10 @@ export const data = [
                         title: 'World Elite Credit Card',
                         url: '/world-elite-credit-card'
                     },
-                    // {
-                    //     title: 'World Elite Prepaid Card',
-                    //     url: '/world-elite-prepaid-card'
-                    // },
+                    {
+                        title: 'World Elite Prepaid Card',
+                        url: '/world-elite-prepaid-card'
+                    },
                 ]
             },
             {
