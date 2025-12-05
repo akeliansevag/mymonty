@@ -22,17 +22,17 @@ export const metadata = {
 
 // Combined card data
 const allCards = [
-    {
-        sectionTitle: 'Mastercard Gold prepaid card',
-        cards: [
-            {
-                title: 'Gold Prepaid Card',
-                color: 'Red',
-                image: PlatinumCardRed,
-                link: '/platinum-credit-card',
-            },
-        ],
-    },
+    // {
+    //     sectionTitle: 'Mastercard Gold prepaid card',
+    //     cards: [
+    //         {
+    //             title: 'Gold Prepaid Card',
+    //             color: 'Red',
+    //             image: PlatinumCardRed,
+    //             link: '/platinum-credit-card',
+    //         },
+    //     ],
+    // },
     {
         sectionTitle: 'Mastercard Platinum credit card',
         cards: [
