@@ -2,11 +2,15 @@ import React from 'react';
 import Image from 'next/image';
 import { websiteName } from '@/app/config';
 import TextBlock from '../components/TextBlock';
+import GoldCard from '@/public/gold-card.webp';
+
 import PlatinumCardRed from '@/public/platinum-card-red.webp';
 import PlatinumCardWhiteLuckyEye from '@/public/platinum-card-white-lucky-eye.webp';
 import PlatinumCardGreen from '@/public/platinum-card-green.webp';
+
 import PhysicalPlatinumCardBlack from '@/public/physical-platinum-card-black.webp';
 import PhysicalPlatinumCardBlueLuckyEye from '@/public/physical-platinum-card-blue-lucky-eye.webp';
+import PhysicalPlatinumCreditCardBlue from '@/public/physical-platinum-credit-card-blue.webp';
 
 import WorldEliteCardBlack from '@/public/world-elite-card-black.webp';
 import WorldEliteCardCredit from '@/public/world-elite-card-credit.webp';
@@ -22,17 +26,17 @@ export const metadata = {
 
 // Combined card data
 const allCards = [
-    // {
-    //     sectionTitle: 'Mastercard Gold prepaid card',
-    //     cards: [
-    //         {
-    //             title: 'Gold Prepaid Card',
-    //             color: 'Red',
-    //             image: PlatinumCardRed,
-    //             link: '/platinum-credit-card',
-    //         },
-    //     ],
-    // },
+    {
+        sectionTitle: 'Mastercard Gold prepaid card',
+        cards: [
+            {
+                title: 'Gold Prepaid Card',
+                color: 'Gold',
+                image: GoldCard,
+                link: '/gold-prepaid-card',
+            },
+        ],
+    },
     {
         sectionTitle: 'Mastercard Platinum credit card',
         cards: [
@@ -55,7 +59,7 @@ const allCards = [
                 link: '/platinum-credit-card',
             },
             {
-                title: 'Euro Credit Card',
+                title: 'Euro Platinum Credit Card',
                 color: 'Green',
                 image: EuroCardGreen,
                 link: '/platinum-credit-card',
@@ -77,25 +81,37 @@ const allCards = [
                 image: PhysicalPlatinumCardBlueLuckyEye,
                 link: '/physical-platinum-mastercard',
             },
+            {
+                title: 'Euro Platinum Prepaid Card',
+                color: 'Blue',
+                image: PhysicalPlatinumCreditCardBlue,
+                link: '/physical-platinum-mastercard#euro-platinum',
+            },
         ]
+    },
+    {
+        sectionTitle: 'Mastercard World Elite Prepaid Card',
+        cards: [
+            {
+                title: 'World Elite Prepaid Card',
+                color: 'Black',
+                image: WorldEliteCardBlack,
+                link: '/world-elite-prepaid-card',
+            },
+        ],
     },
     {
         sectionTitle: 'Mastercard World Elite Credit Card',
         cards: [
-            // {
-            //     title: 'World Elite Card',
-            //     color: 'Black',
-            //     image: WorldEliteCardBlack,
-            //     link: '/world-elite-credit-card',
-            // },
             {
                 title: 'World Elite Credit Card',
-                color: 'Credit',
+                color: 'Black',
                 image: WorldEliteCardCredit,
                 link: '/world-elite-credit-card',
             },
         ],
     },
+    
 ]
 
 const Cards = () => {

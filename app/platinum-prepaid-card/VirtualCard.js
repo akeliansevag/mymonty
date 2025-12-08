@@ -32,7 +32,7 @@ const VirtualCard = () => {
         
                         <Image ref={anim} className='mx-auto mt-14' alt="Wallets" src={sectionTwoImage} width='2120' height='860' />
 
-                        <div className="md:max-w-full lg:max-w-[60vw] fhd:max-w-[45vw] mx-auto mt-24">
+                        <div id="euro-platinum" className="md:max-w-full lg:max-w-[60vw] fhd:max-w-[45vw] mx-auto mt-24">
                             <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>Top up and go.</h2>
                             <p className="leading-8 mt-8">First, load your Euro Wallet at any MyMonty branch. <br /> Then, order your Euro Prepaid Card in the app and you’re all set for your next trip!</p>
                             <p className="leading-8 mt-8">The MyMonty Euro Prepaid Card is the first and only euro prepaid card offered by an eWallet in Lebanon, designed exclusively for travelers and frequent spenders in Europe</p>
