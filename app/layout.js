@@ -79,9 +79,14 @@ export default function RootLayout({ children }) {
             fbq('track', 'PageView');
           `}
         </Script>
-
+        
         <Script src="https://analytics.ahrefs.com/analytics.js" data-key="3X26HJzNYSURzYfp+MSXKw" async></Script>
-
+        <Script
+          id="fw-chat"
+          src="//uae.fw-cdn.com/40305316/189078.js"
+          strategy="afterInteractive"
+          chat="true"
+        />
         <noscript>
           <img
             height="1"
