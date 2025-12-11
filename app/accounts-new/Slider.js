@@ -86,7 +86,7 @@ export default function Slider() {
                 <h2 className='text-2xl font-black uppercase mt-7' dangerouslySetInnerHTML={{ __html: card.description }}></h2>
               </div>
               <div className='relative'>
-                <Image className='max-w-[250px] mx-auto w-full' alt='Growth Oriented Environmemt' placeholder='blur' quality={100} src={card.image} />    
+                <Image className='max-w-[300px] mx-auto w-full' alt='Growth Oriented Environmemt' placeholder='blur' quality={100} src={card.image} />    
               </div>
             </SwiperSlide>
           )
