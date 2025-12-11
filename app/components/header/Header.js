@@ -158,11 +158,6 @@ const Header = () => {
                         <Nav menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
                     </div>
                     <div className='hidden md:block'>
-                        {(pathname === '/business' && pathname === '/business/business-wallet') && (
-                            <Link href="https://corporate.mymonty.com/" target='_blank' rel='noopener noreferrer nofollow' className='mm-button whitespace-nowrap'>
-                                Login
-                            </Link>
-                        )}
 
                         {pathname !== '/business' && pathname !== '/business/business-wallet' && pathname !== '/business/salary-advance' && pathname !== '/business/salary-domiciliation' && (
                             <button onClick={handleOpenModal} className='mm-button whitespace-nowrap'>
@@ -202,7 +197,7 @@ const Header = () => {
                 )}
             </div>
             <div className='md:hidden'>
-                <MobileNav handleMobileMenuToggle={handleMobileMenuToggle} open={mobileMenuToggle} scrolling={scrolling} />
+                <MobileNav pathname={pathname} handleMobileMenuToggle={handleMobileMenuToggle} open={mobileMenuToggle} scrolling={scrolling} />
             </div>
         </header>
     )
