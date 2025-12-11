@@ -164,10 +164,16 @@ const Header = () => {
                             </Link>
                         )}
 
-                        {pathname !== '/business' && pathname !== '/business/business-wallet' && (
+                        {pathname !== '/business' && pathname !== '/business/business-wallet' && pathname !== '/business/salary-advance' && pathname !== '/business/salary-domiciliation' && (
                             <button onClick={handleOpenModal} className='mm-button whitespace-nowrap'>
                                 Download App
                             </button>
+                        )}
+
+                        {(pathname == '/business' || pathname == '/business/business-wallet' || pathname == '/business/salary-advance' || pathname == '/business/salary-domiciliation') && (
+                            <a target="_blank" href='https://corporate.mymonty.com/auth/login' className='mm-button whitespace-nowrap'>
+                                Log in
+                            </a>
                         )}
 
                     </div>
