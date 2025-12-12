@@ -39,13 +39,13 @@ const page = () => {
         <section className='max-lg:py-14 lg:py-28 bg-white'>
             <div className='container text-center'>
                 <TextBlock title="Switch Between USD and LBP" description="Get the daily market rate instantly. <br /> No queues. No Waiting. It’s all on your app." center={true} />
-                <img src='/switch-between.webp' className='w-full mt-16'/>
+                <img src='/switch-between.webp' className='w-full max-lg:mt-5 lg:mt-16'/>
             </div>
         </section>
 
         <section className="bg-white py-28 max-lg:py-14">
             <div className='container'>
-                <div className='flex flex-col gap-20'>
+                <div className='flex flex-col max-lg:gap-10 lg:gap-20'>
                     <div className='flex items-center max-lg:gap-10 lg:gap-32 max-lg:flex-col'>
                         <div className='w-full'>
                             <TextBlock buttonColor="dark" title="Fast AND Transparent" description="See exactly what you get before you confirm. Your money, your control." />
@@ -84,7 +84,7 @@ const page = () => {
         <section>
             <div className='container text-center lg:mb-28 max-lg:mb-14'>
                 <TextBlock buttonColor="dark" center={true} title="Powered by Srour Company for Exchange S.A.R.L." button={true}/>
-                <div className='w-full mt-12'>
+                <div className='w-full max-lg:mt-5 lg:mt-12'>
                     <img src='/powered-by.webp' className='w-full md:w-4/5 mx-auto' alt='Powered by'/>
                 </div>
             </div>

@@ -26,7 +26,7 @@ const ATMs = ({title,description,bgColor}) => {
         <div className="text-center">
             <TextBlock title={title} description={description} center={true}/>
         </div>
-        <div className='grid max-lg:grid-cols-1 lg:grid-cols-2 mt-12 max-lg:gap-10 lg:gap-24'>
+        <div className='grid max-lg:grid-cols-1 lg:grid-cols-2 max-lg:mt-5 lg:mt-12 max-lg:gap-10 lg:gap-24'>
             <div className={`max-md:h-[300px] relative rounded-2xl overflow-hidden w-full bg-[${bgColor}]`}>
                 <img src='/mymonty-atms.webp' className='w-full absolute bottom-0 h-full object-contain'/>
             </div>

@@ -40,7 +40,7 @@ const page = () => {
         <section className='max-lg:py-14 lg:py-28 bg-white'>
             <div className='container text-center'>
                 <TextBlock title="Withdraw via Agent Partners" description="Cash out anywhere, anytime. <br /> Visit any of the <strong>1,400+ OMT locations </strong> across Lebanon. Give them your ID transaction number, grab your cash, and watch your wallet balance adjust instantly." center={true} />
-                <img src='/top-up-via-agent-partners.webp' className='w-full mt-16'/>
+                <img src='/top-up-via-agent-partners.webp' className='w-full max-lg:mt-5 lg:mt-16'/>
             </div>
         </section>
 
