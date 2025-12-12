@@ -93,7 +93,7 @@ Get your USD, LBP and EUR wallets instantly as soon as you complete onboarding."
                 <div className='flex flex-col gap-20'>
                     <div className='flex items-center justify-between max-lg:gap-10 lg:gap-52 max-lg:flex-col'>
                         <div className='w-full'>
-                            <TextBlock buttonColor="dark" title="Forex" description="Experience seamless banking with MyMonty. Enjoy instant transfers, zero fees, and 24/7 access to your funds. Your money, your way." link="/accounts/forex-exchange" />
+                            <TextBlock buttonColor="dark" title="Forex" description="Exchange on the go Quick. Transparent. Reliable. Get USD and LBP at the daily market rate, anytime and anywhere." link="/accounts/forex-exchange" />
                         </div>
                         <div className='w-full'>
                             <img src='/accounts-forex.webp' className='w-full' alt='Forex Image'/>

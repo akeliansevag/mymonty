@@ -14,7 +14,7 @@ const page = () => {
     const data = {
         title: 'One Wallet, All Your Currencies',
         subtitle: 'Accounts',
-        desc: 'Get your USD, LBP and EUR wallets as soon as you complete onboarding.',
+        desc: 'Get your USD, and LBP wallets as soon as you complete onboarding.',
         image: {
             inGrid: true,
             layout: 'half',
@@ -105,7 +105,7 @@ Do it all with MyMonty." />
 
         <section className="bg-white text-center py-28 max-lg:py-14">
             <div className="container flex flex-col gap-8">
-                <TextBlock buttonColor="dark" title="Send & Receive Money in All Your Currencies" center={true} description="Move funds in USD, LBP, and EUR instantly with zero fees.
+                <TextBlock buttonColor="dark" title="Send & Receive Money in All Your Currencies" center={true} description="Move funds in USD and LBP instantly with zero fees.
 Transfer and receive money on the go. Skip extra charges and save time!" />
                 
                 <div className="relative">
@@ -121,7 +121,7 @@ Transfer and receive money on the go. Skip extra charges and save time!" />
                 <div className='flex flex-col gap-20'>
                     <div className='flex items-center max-lg:gap-10 lg:gap-32 max-lg:flex-col'>
                         <div className='w-full'>
-                            <TextBlock buttonColor="dark" title="Load Your Cards in a Tap" description="Top up your USD and EUR cards directly from your wallets. Funds are added in seconds, so you can spend online or in-store without worry." link="/accounts/forex-exchange" />
+                            <TextBlock buttonColor="dark" title="Load Your Cards in a Tap" description="Top up your USD cards directly from your wallets. Funds are added in seconds, so you can spend online or in-store without worry." link="/accounts/forex-exchange" />
                         </div>
                         <div className='w-full'>
                             <img src='/load-your-cards.webp' className='max-w-[575px] w-full' alt='Forex Image'/>
