@@ -38,7 +38,7 @@ const Business1 = () => {
           <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>ONE ACCOUNT TO POWER YOUR BUSINESS</h2>
           <div className='lg:w-1/2 mx-auto'>
             <p className='leading-8 mt-8'>Your all-in-one online account for payments, expenses, and cash management.</p>
-            <Link href="/cards" className='mm-button white mt-8 mx-auto'>Contact Us</Link>
+            <Link href="#contact-us" className='mm-button white mt-8 mx-auto'>Contact Us</Link>
           </div>
         </div>
 
@@ -159,7 +159,7 @@ const Business1 = () => {
         <div className='container space-y-4 md:space-y-8'>
           <h2 className='section-title text-center'>UNLOCK OUR BENEFITS</h2>
           <div className='text-center'>
-            <a href='#' className='mm-button blue'>Start Your Business Account</a>
+            <a href='#contact-us' className='mm-button blue'>Start Your Business Account</a>
           </div>
 
           <div className="flex flex-col items-center text-center border border-white/40 rounded-2xl p-4 md:p-8 w-full">
@@ -218,7 +218,7 @@ const Business1 = () => {
         </div>
       </section>
       
-      <section className="max-lg:py-14 lg:py-24">
+      <section id="contact-us" className="max-lg:py-14 lg:py-24">
         <Form />
       </section>
     </div>
