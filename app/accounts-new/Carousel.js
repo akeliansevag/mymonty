@@ -84,15 +84,10 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                         return (
                             <div key={index} className={`absolute py-14 lg:py-10 xl:py-10 transition-opacity ease-in duration-[400ms] h-full w-full ${contentClasses}`}>
                                 <div className='container gap-6 flex flex-col h-full overflow-hidden text-center relative'>
-                                    <div>
-                                        {item.comingSoon && (
-                                            <div className='rounded-xl mb-5 inline-block text-base py-2 px-4 bg-gradient-to-r from-[#E73E3E] to-[#F02CC2] font-bold italic text-white'>
-                                                Coming soon
-                                            </div>
-                                        )}
+                                    <div className='md:mt-10'>
                                         <TextBlock center={true} textColor="white" title={item.title} description={item.description} button={false} />
                                         {item.button && !item?.button?.modal && (
-                                            <Link className='mm-button !bg-white !text-black mt-4' href={item.button?.url}>{item.button.text}</Link>
+                                            <Link className='mm-button !bg-white !text-black mt-10' href={item.button?.url}>{item.button.text}</Link>
                                         )}
                                         {item.button && item?.button?.modal && (
                                             <button onClick={handleOpenModal} className='mm-button white mt-4' href={item.button?.url}>{item.button.text}</button>
@@ -101,7 +96,7 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                                     {
                                         item?.contentImage && (
                                             <div className='flex-1 relative flex justify-center'>
-                                                <img className={`scale-0 ${selectedIndex === index ? '!scale-100 ' : ''} w-full max-w-[650px] pb-10 object-contain block transition-all delay-500`} src={item.contentImage} alt="Image" />
+                                                <img className={`scale-0 ${selectedIndex === index ? '!scale-100 ' : ''} w-full h-[300px] lg:mt-14 object-contain block transition-all delay-500`} src={item.contentImage} alt="Image" />
                                             </div>
                                         )
                                     }
@@ -116,7 +111,7 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
                     })
                 )
             }
-            <div className='absolute bottom-[20px] md:bottom-[20px] lg:bottom-[20px] w-full overflow-auto pb-4'>
+            <div className='absolute bottom-[20px] md:bottom-[30px] lg:bottom-[40px] w-full overflow-auto pb-4'>
                 <div className='container justify-center flex gap-5 md:justify-center'>
                     {data && data?.filters.map((filter, index2) => {
                         let buttonClasses = index2 === selectedIndex ? ' !bg-[#2657D4] !border-[#2657D4]' : '';

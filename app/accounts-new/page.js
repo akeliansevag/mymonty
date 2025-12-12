@@ -65,7 +65,7 @@ const page = () => {
                     url: '/accounts/withdraw',
                     modal: false,
                 },
-                contentImage: '/withdraw-carousel-content.webp',
+                contentImage: '/withdraw-carousel-content-2.webp',
                 backgroundImage: '/withdraw-carousel.webp'
             },
 
@@ -90,7 +90,7 @@ Get your USD, LBP and EUR wallets instantly as soon as you complete onboarding."
         <Carousel data={carouselData}/>
         <section className="bg-white py-28 max-lg:py-14">
             <div className='container '>
-                <div className='flex flex-col gap-20'>
+                <div className='flex flex-col gap-20 max-w-[1200px] mx-auto'>
                     <div className='flex items-center justify-between max-lg:gap-10 lg:gap-52 max-lg:flex-col'>
                         <div className='w-full'>
                             <TextBlock buttonColor="dark" title="Forex" description="Exchange on the go Quick. Transparent. Reliable. Get USD and LBP at the daily market rate, anytime and anywhere." link="/accounts/forex-exchange" />

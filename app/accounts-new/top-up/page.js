@@ -55,20 +55,20 @@ Our ATMs are available at the following locations:" bgColor="#2657D4" />
 
         <section className="bg-white py-28 max-lg:py-14">
             <div className='container'>
-                <div className='flex flex-col gap-20'>
+                <div className='flex flex-col max-lg:gap-20 lg:gap-32'>
                     <div className='flex items-center max-lg:gap-10 lg:gap-32 max-lg:flex-col'>
                         <div className='w-full'>
                             <TextBlock buttonColor="dark" title="Top Up via Integrated ATMs" description="You only need your phone! <br /> No card. No ID. No teller. <br /> Just head to any Fransabank ATM, choose “MyMonty”, and follow the steps. <br /> Cardless deposits. Simple. Fast. Secure. <br />" link="/accounts/top-up" />
                         </div>
                         <div className='w-full'>
-                            <img src='/top-up-via-integrated-atms.webp' className='max-w-[575px] w-full' alt='Forex Image'/>
+                            <img src='/top-up-via-integrated-atms.webp' className='max-w-[400px] w-full lg:ml-auto' alt='Forex Image'/>
                         </div>
                         
                     </div>
 
                     <div className='flex items-center max-lg:gap-10 lg:gap-32 max-lg:flex-col-reverse'>
                         <div className='w-full'>
-                            <img src='/top-up-via-money-request.webp' alt='Statement Image' className='max-w-[575px] w-full'/>
+                            <img src='/top-up-via-money-request.webp' alt='Statement Image' className='max-w-[400px] w-full'/>
                         </div>
                         <div className='w-full'>
                             <TextBlock buttonColor="dark" title="Top Up via Money Request" description="Here’s your modern, polite way to ask for money. <br /> Make a money request to top up your wallet via mobile number or QR code. <br /> Send a payment link via SMS, WhatsApp or QR Code and let someone top up your wallet in seconds. <br /> They click, pay by card on a secure platform, and boom, your balance updates instantly." link="/accounts/top-up"/>
@@ -82,7 +82,7 @@ Our ATMs are available at the following locations:" bgColor="#2657D4" />
                             <TextBlock buttonColor="dark" title="Top Up via QR Code" description="Need to load your wallet on the spot? <br /> Top up instantly from any MyMonty user! <br /> Just let them scan your QR code, enter the amount, and your wallet is updated in seconds! <br />" link="/accounts/top-up" />
                         </div>
                         <div className='w-full'>
-                            <img src='/top-up-via-qr-code.webp' className='max-w-[575px] w-full' alt='Forex Image'/>
+                            <img src='/top-up-via-qr-code.webp' className='max-w-[400px] lg:ml-auto w-full' alt='Forex Image'/>
                         </div>
                         
                     </div>
