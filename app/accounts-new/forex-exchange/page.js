@@ -51,14 +51,14 @@ const page = () => {
                             <TextBlock buttonColor="dark" title="Fast AND Transparent" description="See exactly what you get before you confirm. Your money, your control." />
                         </div>
                         <div className='w-full'>
-                            <img src='/fast-and-transparent.webp' className='max-w-[575px] w-full' alt='Forex Image'/>
+                            <img src='/fast-and-transparent.webp' className='max-w-[450px] w-full ml-auto' alt='Forex Image'/>
                         </div>
                         
                     </div>
 
                     <div className='flex items-center max-lg:gap-10 lg:gap-32 max-lg:flex-col-reverse'>
                         <div className='w-full'>
-                            <img src='/safe-and-secure.webp' alt='Statement Image' className='max-w-[575px] w-full'/>
+                            <img src='/safe-and-secure.webp' alt='Statement Image' className='max-w-[450px] w-full'/>
                         </div>
                         <div className='w-full'>
                             <TextBlock buttonColor="dark" title="Safe AND Secure" description="All transactions are protected by MyMonty’s top-notch security, so you can exchange with confidence."/>
@@ -72,7 +72,7 @@ const page = () => {
                             <TextBlock buttonColor="dark" title="Exchange money like a pro" description="Skip the exchange office and forget asking friends or colleagues for change. Your wallet handles it all." />
                         </div>
                         <div className='w-full'>
-                            <img src='/exchange-money.webp' className='max-w-[575px] w-full' alt='Forex Image'/>
+                            <img src='/exchange-money.webp' className='max-w-[450px] w-full ml-auto' alt='Forex Image'/>
                         </div>
                         
                     </div>

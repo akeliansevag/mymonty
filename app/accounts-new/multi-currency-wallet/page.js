@@ -124,14 +124,14 @@ Transfer and receive money on the go. Skip extra charges and save time!" />
                             <TextBlock buttonColor="dark" title="Load Your Cards in a Tap" description="Top up your USD cards directly from your wallets. Funds are added in seconds, so you can spend online or in-store without worry." link="/accounts/forex-exchange" />
                         </div>
                         <div className='w-full'>
-                            <img src='/load-your-cards.webp' className='w-full ml-auto' alt='Forex Image'/>
+                            <img src='/load-your-cards.webp' className='w-full max-w-[450px] ml-auto' alt='Forex Image'/>
                         </div>
                         
                     </div>
 
                     <div className='flex items-center max-lg:gap-10 lg:gap-32 max-lg:flex-col-reverse'>
                         <div className='w-full'>
-                            <img src='/link-wallet-to-card.webp' alt='Statement Image' className='w-full'/>
+                            <img src='/link-wallet-to-card.webp' alt='Statement Image' className='w-full max-w-[450px]' />
                         </div>
                         <div className='w-full'>
                                 <TextBlock buttonColor="dark" title="Link Card to Wallet" description="Activate “Link Card to Wallet” so your card always pulls money directly from your wallet. No more manual top-ups. No more “payment declined.”" link="/accounts/forex-exchange"/>                           

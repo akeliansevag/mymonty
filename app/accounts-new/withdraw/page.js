@@ -54,7 +54,7 @@ const page = () => {
                             <TextBlock buttonColor="dark" title="Withdraw via Integrated ATMs" description="Contactless withdrawals, a little magic that puts cash in your hands. <br /> Head to your nearest Fransabank or BLC ATM, select MyMonty, follow the steps, and voilà, your money is ready. <br /> Don’t forget your phone… who would anyway? " link="/accounts/top-up" />
                         </div>
                         <div className='w-full'>
-                            <img src='/top-up-via-integrated-atms.webp' className='max-w-[575px] w-full' alt='Forex Image'/>
+                            <img src='/top-up-via-integrated-atms.webp' className='max-w-[400px] w-full ml-auto' alt='Forex Image'/>
                         </div>
                         
                     </div>
