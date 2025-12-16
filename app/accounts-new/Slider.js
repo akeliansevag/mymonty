@@ -31,22 +31,22 @@ export default function Slider() {
     },
     {
       title: 'STEP 3',
-      description: 'Set a passcode <br /> (add fingerprint/Face ID if you want)',
+      description: 'Set a passcode <br /> (add fingerprint/Face ID)',
       image: s3,
     },
     {
       title: 'STEP 4',
-      description: 'Verify email & scan ID',
+      description: 'Verify email <br /> & scan ID',
       image: s4,
     },
     {
       title: 'STEP 5',
-      description: 'Selfie verification',
+      description: 'Selfie <br /> verification',
       image: s5,
     },
     {
       title: 'STEP 6',
-      description: 'Add your info & confirm OTP',
+      description: 'Add your info <br /> & confirm OTP',
       image: s6,
     },
   ];
@@ -81,7 +81,7 @@ export default function Slider() {
         {cards.map((card, index)=>{
           return (
             <SwiperSlide key={index} className={`rounded-3xl bg-[#F7F7F7] mt-12 overflow-hidden !h-auto flex flex-col text-center relative ${openIndex === index ? "" : "justify-between"}`}>
-              <div className='p-4 lg:p-8 text-center'>
+              <div className='py-4 lg:px-4 max-lg:px-2  lg:p-8 text-center'>
                 <h2 className='text-2xl font-black uppercase'>{ card.title }</h2>
                 <h2 className='text-2xl font-black uppercase mt-7' dangerouslySetInnerHTML={{ __html: card.description }}></h2>
               </div>
