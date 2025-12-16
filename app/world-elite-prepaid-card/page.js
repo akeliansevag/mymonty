@@ -32,8 +32,8 @@ const worldEliteCards = () => {
         }
     };
     const terms = {
-        termsAndConditions: '/World Elite Prepaid Cards Terms.pdf',
-        kfs: '/World Elite Prepaid Card KFS.pdf'
+        termsAndConditions: '/World-Elite-Prepaid-Card-Terms.pdf',
+        kfs: '/World-Elite-Prepaid-Card-KFS.pdf'
     }
 
     return (

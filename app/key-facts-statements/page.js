@@ -26,17 +26,14 @@ const KeyFactsStatements = () => {
                         <a href='/key-facts-statements/prepaid-card-virtual' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                             KFS Prepaid Card (Virtual)
                         </a>
-
                         <a href='/key-facts-statements/platinum-credit-card' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                             KFS Platinum Credit Card
                         </a>
-
                         <a href='/key-facts-statements/world-elite-credit-card' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                             KFS World Elite Credit Card
                         </a>
-
                         <a href='/key-facts-statements/euro-platinum-credit-card' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
-                            Euro Platinum Credit Card
+                            KFS Euro Platinum Credit Card
                         </a>
                     </div>
 
