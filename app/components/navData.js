@@ -46,7 +46,6 @@ export const data = [
                 children: [
                     {
                         title: 'Standard Virtual Card',
-                        // url: '/virtual-mastercard'
                         url: '/standard-virtual-card'
                     },
                     {
@@ -55,7 +54,6 @@ export const data = [
                     },
                     {
                         title: 'Platinum Prepaid Card',
-                        // url: '/physical-platinum-mastercard'
                         url: '/platinum-prepaid-card'
                     },
                     {
