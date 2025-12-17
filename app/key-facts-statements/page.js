@@ -20,14 +20,17 @@ const KeyFactsStatements = () => {
                         <a href='/key-facts-statements/personal-ewallet-account' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                             KFS Personal eWallet Account
                         </a>
+                        <a href='/key-facts-statements/prepaid-card-standard' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                            KFS Standard Prepaid Card
+                        </a>
                         <a href='/key-facts-statements/prepaid-card-gold' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
-                            KFS Prepaid Card Gold
+                            KFS Gold Prepaid Card
                         </a>
                         <a href='/key-facts-statements/prepaid-card-physical' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
-                            KFS Prepaid Card (Physical)
+                            KFS Platinum Prepaid Card
                         </a>
                         <a href='/key-facts-statements/prepaid-card-virtual' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
-                            KFS Prepaid Card (Virtual)
+                            KFS Virtual Prepaid Card
                         </a>
                         <a href='/key-facts-statements/platinum-credit-card' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                             KFS Platinum Credit Card
@@ -40,6 +43,9 @@ const KeyFactsStatements = () => {
                         </a>
                         <a href='/key-facts-statements/euro-platinum-credit-card' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                             KFS Euro Platinum Credit Card
+                        </a>
+                        <a href='/key-facts-statements/euro-platinum-prepaid-card' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                            KFS Euro Platinum Prepaid Card
                         </a>
                     </div>
 

@@ -224,31 +224,23 @@ const pea = () => {
                             <tr>
                                 <td><strong>ATM Withdrawal in Lebanon</strong></td>
                                 <td>
-                                <ul className="list-disc list-inside">
-                                    <li>Issuer’s ATM refers to Fransabank SAL ATMs</li>
-                                    <li>Withdrawals from other local ATMs are currently only available at BLC Bank SAL ATMs</li>
-                                </ul>
+                                    <ul className="list-disc list-inside">
+                                        <li>Issuer’s ATM refers to Fransabank SAL ATMs</li>
+                                        <li>Withdrawals from other local ATMs are currently only available at BLC Bank SAL ATMs</li>
+                                    </ul>
                                 </td>
                             </tr>
                             <tr>
                                 <td><strong>Card Balance Reimbursement upon Expiry or Termination</strong></td>
-                                <td>
-                                If your card is expired or terminated, you can request a reimbursement within 2 months from the expiry or termination date. After 2 months, any remaining balance will be forfeited.
-                                </td>
+                                <td>If your card is expired or terminated, you can request a reimbursement within 2 months from the expiry or termination date. After 2 months, any remaining balance will be forfeited.</td>
                             </tr>
                             <tr>
                                 <td><strong>Amendment</strong></td>
-                                <td>
-                                We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website{" "}
-                                <a href="https://www.mymonty.com.lb" className='text-blue-500 hover:underline' target='_blank' rel="noopener noreferrer">
-                                    www.mymonty.com.lb
-                                </a>{" "}or App.
-                                </td>
+                                <td>We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website <a href="https://www.mymonty.com.lb" className='text-blue-500 hover:underline' target='_blank' rel="noopener noreferrer">www.mymonty.com.lb</a> or App.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
             </div>
         </div >
     )

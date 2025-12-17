@@ -4,8 +4,8 @@ import SmallBanner from '@/app/components/SmallBanner';
 import FooterBanner from '@/app/components/FooterBanner';
 
 export const metadata = {
-    title: 'MC Gold Prepaid Card | Key Facts & Terms' + websiteName,
-    description: 'Important details for your MyMonty MC Gold Prepaid Card in Lebanon. Access key facts & essential statements for secure usage. View now.'
+    title: 'Physical Prepaid Card | Key Facts & Terms' + websiteName,
+    description: 'Important details for your MyMonty Physical Prepaid Card in Lebanon. Access key facts & essential statements for secure usage. View now.'
 };
 
 const pea = () => {
@@ -13,29 +13,34 @@ const pea = () => {
     return (
         <div>
        
-            <FooterBanner downloadURL="/Gold-Prepaid-Card-KFS.pdf" title="MyMonty MC Gold Prepaid Card: Key Facts & Statements" />
+            <FooterBanner downloadURL="/Standard-Prepaid-Card-KFS.pdf" title="MyMonty Physical Prepaid Card: Key Facts & Statements" />
             <div className='container py-10 lg:py-20 relative'>
-                <p><strong>MYMONTY MC GOLD PREPAID CARD (PHYSICAL) - KEY FACTS STATEMENT <br /> (V.1.1 – 12 September 2025)</strong></p>
+                <p><strong>MYMONTY MC STANDARD PREPAID CARD (PHYSICAL) - KEY FACTS STATEMENT <br /> (V.1.1 – 17 November 2025)</strong></p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“<strong>KFS</strong>”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Platinum Physical Prepaid Card offered by Monty Finance SAL (“<strong>Card</strong>”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the <a className='text-blue-500 hover:underline' href="/MyMonty Prepaid MasterCard Terms.pdf" target="_blank">Prepaid MasterCard Terms</a>.</p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“<strong>KFS</strong>”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard Platinum Physical Prepaid Card offered by Monty Finance SAL (“<strong>Card</strong>”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the <a className='text-blue-500 hover:underline' href="/.pdf" target="_blank">Prepaid Cards Terms and Conditions</a>.</p>
 
                 <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
-                    <p>The Card is a physical, reloadable Mastercard prepaid card linked to your MyMonty eWallet Account on the MyMonty App. Funds must be loaded onto the Card before use. You can top up the Card exclusively from your MyMonty eWallet USD balance. The Card allows cash withdrawals at ATMs and purchases wherever Mastercard Prepaid Cards are accepted, provided there is sufficient available balance for the transaction amount. The Card is neither a credit nor a debit card, and the balance on the Card does not accrue any interest.</p>
-                    
+                    <p>
+                        The Card is a physical, reloadable Mastercard prepaid card linked to your MyMonty eWallet Account on the MyMonty App.
+                        Funds must be loaded onto the Card before use. You can top up the Card exclusively from your MyMonty eWallet USD balance.
+                        The Card allows cash withdrawals at ATMs and purchases wherever Mastercard Prepaid Cards are accepted, provided there is sufficient
+                        available balance for the transaction amount. The Card is neither a credit nor a debit card, and the balance on the Card does not accrue any interest.
+                    </p>
+
                     <table className='mm-table'>
                         <tbody>
                             <tr>
                                 <td className='w-1/5'><strong>Card Currency</strong></td>
-                                <td><p>Fresh Funds USD.</p></td>
+                                <td>Fresh Funds USD.</td>
                             </tr>
                             <tr>
                                 <td><strong>Validity</strong></td>
-                                <td><p>The Card is valid until the expiry date shown on it (which is 5 years from the issuance date).</p></td>
+                                <td>The Card is valid until the expiry date shown on it (which is 5 years from the issuance date).</td>
                             </tr>
                             <tr>
                                 <td><strong>Eligibility</strong></td>
-                                <td><p>To be eligible for the Card you must have and maintain an eWallet Account with MyMonty.</p></td>
+                                <td>To be eligible for the Card you must have and maintain an eWallet Account with MyMonty.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -50,19 +55,19 @@ const pea = () => {
                             </tr>
                             <tr>
                                 <td><strong>Primary Card Annual Fee</strong></td>
-                                <td>USD 7</td>
+                                <td>USD 5</td>
                                 <td><strong>Card Delivery (Local)</strong></td>
-                                <td>Free of Charge</td>
+                                <td>USD 4</td>
                             </tr>
                             <tr>
                                 <td><strong>Supplementary Card Annual Fee</strong></td>
-                                <td>USD 7</td>
+                                <td>USD 5</td>
                                 <td><strong>Card Delivery (International)</strong></td>
                                 <td>Pass-Through Cost</td>
                             </tr>
                             <tr>
                                 <td><strong>Replacement Card Fee</strong> (Lost, stolen, fraud or damaged)</td>
-                                <td>USD 7</td>
+                                <td>USD 5</td>
                                 <td><strong>Card Termination</strong></td>
                                 <td>Free of Charge</td>
                             </tr>
@@ -149,9 +154,8 @@ const pea = () => {
                         </tbody>
                     </table>
                 </div>
-
-
-               <div className='table-wrapper'>
+                
+                <div className='table-wrapper'>
                     <h2>3. LIMITS</h2>
                     <table className='mm-table'>
                         <tbody>
@@ -214,7 +218,6 @@ const pea = () => {
                     </table>
                 </div>
 
-
                 <div className='table-wrapper'>
                     <h2>4. USEFUL INFORMATION</h2>
                     <table className='mm-table'>
@@ -224,14 +227,16 @@ const pea = () => {
                                 <td>
                                     <ul className="list-disc list-inside">
                                         <li>Issuer’s ATM refers to Fransabank SAL ATMs</li>
-                                        <li>Withdrawals from other local ATMs are currently only available at BLC Bank SAL ATMs</li>
+                                        <li>Withdrawals from other local ATMs are limited to BLC Bank SAL ATMs at this stage.</li>
                                     </ul>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td><strong>Card Balance Reimbursement upon Expiry or Termination</strong></td>
                                 <td>If your card is expired or terminated, you can request a reimbursement within 2 months from the expiry or termination date. After 2 months, any remaining balance will be forfeited.</td>
                             </tr>
+
                             <tr>
                                 <td><strong>Amendment</strong></td>
                                 <td>We may amend this KFS or any part thereof at any time with immediate effect and without prior notice by posting a new KFS on our website <a href="https://www.mymonty.com.lb" className='text-blue-500 hover:underline' target='_blank' rel="noopener noreferrer">www.mymonty.com.lb</a> or App.</td>
