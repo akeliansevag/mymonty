@@ -83,6 +83,14 @@ input[type="submit"] {
   background-color: var(--mm-black) !important;
 }
 
+.mm-button.red {
+  background-color: #e2282b;
+}
+
+.mm-button.red:hover {
+  background-color: black !important;
+}
+
 /* .mm-button.blue:hover{
     background-color: #2657D4;
     border-color: #2657D4;
