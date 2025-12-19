@@ -5,7 +5,7 @@ const ATMs = ({title,description,bgColor}) => {
   const data = [
     {
         location: 'Gefinor, Hamra',
-        time: '9:30 AM to 4 PM, Monday to Friday'
+        time: '8:00 AM to 8:00 PM, Monday to Friday'
     },
     {
         location: 'Beirut Souks',

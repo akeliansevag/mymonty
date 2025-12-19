@@ -38,7 +38,7 @@ const page = () => {
         <Banner data={data} terms={terms}/>
         <section className='max-lg:py-14 lg:py-28 bg-white'>
             <div className='container text-center'>
-                <TextBlock title="Switch Between USD and LBP" description="Get the daily market rate instantly. <br /> No queues. No Waiting. It’s all on your app." center={true} />
+                <TextBlock title="Switch Between USD, EUR, and LBP" description="Get the daily market rate instantly. <br /> No queues. No Waiting. It’s all on your app." center={true} />
                 <img src='/switch-between.webp' className='w-full max-lg:mt-5 lg:mt-16'/>
             </div>
         </section>

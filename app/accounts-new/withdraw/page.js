@@ -39,7 +39,7 @@ const page = () => {
         <Branches title="Withdraw via MyMonty Branch" description="We’d love to meet you! Visit us at:" info="Our staff at the counter are always ready to support you!" />
         <section className='max-lg:py-14 lg:py-28 bg-white'>
             <div className='container text-center'>
-                <TextBlock title="Withdraw via Agent Partners" description="Cash out anywhere, anytime. <br /> Visit any of the <strong>1,400+ OMT locations </strong> across Lebanon. Give them your ID transaction number, grab your cash, and watch your wallet balance adjust instantly." center={true} />
+                <TextBlock title="Withdraw via Agent Partners" description="Cash out anywhere, anytime. <br /> Visit any of the <strong>1,400+ OMT locations </strong> across Lebanon. Give them your transaction ID, grab your cash, and watch your wallet balance adjust instantly." center={true} />
                 <img src='/top-up-via-agent-partners.webp' className='w-full max-lg:mt-5 lg:mt-16'/>
             </div>
         </section>
@@ -51,7 +51,7 @@ const page = () => {
                 <div className='flex flex-col gap-20'>
                     <div className='flex items-center max-lg:gap-10 lg:gap-32 max-lg:flex-col'>
                         <div className='w-full'>
-                            <TextBlock buttonColor="dark" title="Withdraw via Integrated ATMs" description="Contactless withdrawals, a little magic that puts cash in your hands. <br /> Head to your nearest Fransabank or BLC ATM, select MyMonty, follow the steps, and voilà, your money is ready. <br /> Don’t forget your phone… who would anyway? " link="/accounts/top-up" />
+                            <TextBlock buttonColor="dark" title="Withdraw Via Partner ATMs" description="Contactless withdrawals, a little magic that puts cash in your hands. <br /> Head to your nearest Fransabank or BLC ATM, select MyMonty, follow the steps, and voilà, your money is ready. <br /> Don’t forget your phone… who would anyway? " />
                         </div>
                         <div className='w-full'>
                             <img src='/top-up-via-integrated-atms.webp' className='max-w-[400px] w-full ml-auto' alt='Forex Image'/>

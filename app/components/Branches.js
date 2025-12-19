@@ -16,7 +16,7 @@ const Branches = ({title,description,info}) => {
                         <h3 className='font-black text-3xl mb-4 uppercase'>GEFINOR, HAMRA</h3>
                         <h4 className='text-bold text-lg'>9:30 AM to 4 PM,</h4>
                         <h4 className='text-bold text-lg'>Monday to Friday</h4>
-                        <a href='' className='mm-button white mt-5'>Learn More</a>
+                        {/* <a href='' className='mm-button white mt-5'>Learn More</a> */}
                     </div>
                 </div>
                 <div className='rounded-2xl relative overflow-hidden w-full p-10'>
@@ -26,7 +26,7 @@ const Branches = ({title,description,info}) => {
                         <h3 className='font-black text-3xl mb-4 uppercase'>Beirut Souks</h3>
                         <h4 className='text-bold text-lg'>10 AM to 10 PM,</h4>
                         <h4 className='text-bold text-lg'>Seven Days a Week</h4>
-                        <a href='' className='mm-button white mt-5'>Learn More</a>
+                        {/* <a href='' className='mm-button white mt-5'>Learn More</a> */}
                     </div>
                 </div>
                 <div className='rounded-2xl relative overflow-hidden w-full p-10'>
@@ -36,7 +36,7 @@ const Branches = ({title,description,info}) => {
                         <h3 className='font-black text-3xl mb-4 uppercase'>ABC Verdun</h3>
                         <h4 className='text-bold text-lg'>10 AM to 10 PM,</h4>
                         <h4 className='text-bold text-lg'>Seven Days a Week</h4>
-                        <a href='' className='mm-button white mt-5'>Learn More</a>
+                        {/* <a href='' className='mm-button white mt-5'>Learn More</a> */}
                     </div>
                 </div>
                 <div className='rounded-2xl relative overflow-hidden w-full p-10'>
@@ -46,7 +46,7 @@ const Branches = ({title,description,info}) => {
                         <h3 className='font-black text-3xl mb-4 uppercase'>ABC Dbayeh</h3>
                         <h4 className='text-bold text-lg'>10 AM to 10 PM,</h4>
                         <h4 className='text-bold text-lg'>Seven Days a Week</h4>
-                        <a href='' className='mm-button white mt-5'>Learn More</a>
+                        {/* <a href='' className='mm-button white mt-5'>Learn More</a> */}
                     </div>
                 </div>
                 

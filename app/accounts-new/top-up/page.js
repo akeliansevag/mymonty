@@ -46,7 +46,7 @@ const page = () => {
 
         <section className='max-lg:py-5 lg:py-28 bg-white'>
             <div className='container text-center'>
-                <TextBlock title="Top Up by Card" description="Add funds to your wallet using any accepted card. <br /> Instant. Secure. No hidden fees. <br /> Choose between USD or LBP and get your balance updated in seconds." center={true} />
+                <TextBlock title="Top Up by Card" description="Add funds to your wallet using any accepted card. <br /> Instant. Secure. No hidden fees. <br /> Choose between USD, LBP, or EUR and get your balance updated in seconds." center={true} />
                 <img src='/top-up-by-card.webp' className='w-full max-lg:mt-5 lg:mt-16'/>
             </div>
         </section>
@@ -58,7 +58,7 @@ Our ATMs are available at the following locations:" bgColor="#2657D4" />
                 <div className='flex flex-col max-lg:gap-14 lg:gap-32'>
                     <div className='flex items-center max-lg:gap-10 lg:gap-32 max-lg:flex-col'>
                         <div className='w-full'>
-                            <TextBlock buttonColor="dark" title="Top Up via Integrated ATMs" description="You only need your phone! <br /> No card. No ID. No teller. <br /> Just head to any Fransabank ATM, choose “MyMonty”, and follow the steps. <br /> Cardless deposits. Simple. Fast. Secure. <br />" />
+                            <TextBlock buttonColor="dark" title="Top Up Via Partner ATMs" description="You only need your phone! <br /> No card. No ID. No teller. <br /> Just head to any Fransabank ATM, choose “MyMonty”, and follow the steps. <br /> Cardless deposits. Simple. Fast. Secure. <br />" />
                         </div>
                         <div className='w-full'>
                             <img src='/top-up-via-integrated-atms.webp' className='max-w-[450px] w-full lg:ml-auto' alt='Forex Image'/>
