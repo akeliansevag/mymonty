@@ -13,6 +13,7 @@ import s3 from '@/public/sign-up-3.webp';
 import s4 from '@/public/sign-up-4.webp';
 import s5 from '@/public/sign-up-5.webp';
 import s6 from '@/public/sign-up-6.webp';
+import s7 from '@/public/sign-up-7.webp';
 
 export default function Slider() {
   // keep only one open at a time
@@ -26,7 +27,7 @@ export default function Slider() {
     },
     {
       title: 'STEP 2',
-      description: 'Enter your <br /> number & verify',
+      description: 'Verify Your <br /> Number & Email',
       image: s2,
     },
     {
@@ -36,7 +37,7 @@ export default function Slider() {
     },
     {
       title: 'STEP 4',
-      description: 'Verify email <br /> & scan ID',
+      description: 'Scan Your <br /> ID',
       image: s4,
     },
     {
@@ -46,9 +47,14 @@ export default function Slider() {
     },
     {
       title: 'STEP 6',
-      description: 'Add your info <br /> & confirm OTP',
+      description: 'Enter your information and <br /> sign the required documents',
       image: s6,
     },
+    {
+      title: 'STEP 7',
+      description: 'Wait for <br /> approval/reconciliation',
+      image: s7,
+    }
   ];
 
   

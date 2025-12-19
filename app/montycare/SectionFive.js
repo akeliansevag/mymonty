@@ -2,7 +2,7 @@ import React from 'react';
 
 const SectionFive = () => {
   return (
-    <section className='py-14 bg-white'> 
+    <section className='py-14 lg:pb-28 bg-white'> 
         <div className='container'>
             <h2 className='section-title text-center'>A Better Way to Grow Your Clinic</h2>
             <p className='text-center mt-5 text-pretty'>Offer your patients flexible financing and grow your practice with Lebanon’s first Health & Beauty credit card.</p>

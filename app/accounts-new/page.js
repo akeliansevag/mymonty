@@ -17,7 +17,7 @@ const page = () => {
     const data = {
         title: 'Open your Free MyMonty account',
         subtitle: 'Accounts',
-        desc: 'Money transfers, E-Services, Prepaid Cards, Credit Cards, Salary Advances, Loans and much more.',
+        desc: 'Money transfers, E-Services, Payments, Prepaid Cards, Credit Cards, & Salary Advances - All in one app',
         image: {
             inGrid: true,
             layout: 'half',
@@ -76,7 +76,7 @@ const page = () => {
         <Banner data={data} terms={terms}/>
         <section className="bg-white text-center py-28 max-lg:py-14">
             <div className="container flex flex-col gap-8">
-                <TextBlock buttonColor="dark" title="MULTI-CURRENCY WALLET" center={true} button={true} description="One Wallet, All Your Currencies.
+                <TextBlock buttonColor="dark" title="MULTI-CURRENCY WALLET" center={true} button={true} description="One Account. All Your Currencies.
 Get your USD, LBP and EUR wallets instantly as soon as you complete onboarding." />
                 
                 <div className="relative">
@@ -93,7 +93,7 @@ Get your USD, LBP and EUR wallets instantly as soon as you complete onboarding."
                 <div className='flex flex-col gap-20'>
                     <div className='flex items-center justify-between max-lg:gap-10 lg:gap-52 max-lg:flex-col'>
                         <div className='w-full'>
-                            <TextBlock buttonColor="dark" title="Forex" description="Exchange on the go Quick. Transparent. Reliable. Get USD and LBP at the daily market rate, anytime and anywhere." link="/accounts/forex-exchange" />
+                            <TextBlock buttonColor="dark" title="Forex" description="Exchange on the go. Quick. Transparent. Reliable. Get USD, EUR, and LBP at the daily market rate, anytime and anywhere." link="/accounts/forex-exchange" />
                         </div>
                         <div className='w-full'>
                             <img src='/accounts-forex.webp' className='w-full max-w-[450px] lg:ml-auto' alt='Forex Image'/>

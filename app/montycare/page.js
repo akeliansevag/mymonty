@@ -41,12 +41,13 @@ const page = () => {
       <SectionThree />
       <SectionFour />
       <SectionFive />
-      <Contact />
+      
       <BeforeAfterSlider
         beforeSrc="/before.webp"
         afterSrc="/after.webp"
         className='!h-[80vh]'
       /> 
+      <Contact />
       <section className='bg-[#f7f7f7] max-lg:py-14 lg:py-28'>
         <div className='container'>
           <FaqTwoColumns />

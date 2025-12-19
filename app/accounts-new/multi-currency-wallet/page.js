@@ -14,7 +14,7 @@ const page = () => {
     const data = {
         title: 'One Wallet, All Your Currencies',
         subtitle: 'Accounts',
-        desc: 'Get your USD, and LBP wallets as soon as you complete onboarding.',
+        desc: 'Get your USD, LBP and EUR wallets as soon as you complete onboarding.',
         image: {
             inGrid: true,
             layout: 'half',
@@ -73,7 +73,7 @@ Do it all with MyMonty." />
                                 <h3 className='text-2xl font-bold text-balance'>Keep <br /> track effortlessly</h3>
                             </div>
                             <p className='text-lg'>
-                                Move funds between USD and LBP and EUR easily.
+                                See your balances and transactions in real time.
                             </p>
                         </div>
 
@@ -93,7 +93,7 @@ Do it all with MyMonty." />
                                 <h3 className='text-2xl font-bold text-balance'>Safe <br /> And Secure</h3>
                             </div>
                             <p className='text-lg'>
-                                Your money is protected, always.
+                                Your money is protected.
                             </p>
                         </div>
                     </div>
@@ -105,8 +105,7 @@ Do it all with MyMonty." />
 
         <section className="bg-white text-center py-28 max-lg:py-14">
             <div className="container flex flex-col gap-8">
-                <TextBlock buttonColor="dark" title="Send & Receive Money in All Your Currencies" center={true} description="Move funds in USD and LBP instantly with zero fees.
-Transfer and receive money on the go. Skip extra charges and save time!" />
+                <TextBlock buttonColor="dark" title="Send & Receive Money in All Your Currencies" center={true} description="Move funds in USD, EUR and LBP instantly with zero fees. Transfer and receive money on the go. Skip extra charges and save time!" />
                 
                 <div className="relative">
                     <Image src={img2} alt="Girls Looking at the phone" width="2120" height="982" />

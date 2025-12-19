@@ -170,7 +170,7 @@ const Contact = () => {
 
   return (
     <div>
-      <section className='pt-14 pb-14 lg:pt-28 lg:pb-20'>
+      <section className='pt-14 pb-14 lg:pt-28 lg:pb-28'>
         <div className='container'>
           <h2 className='text-center uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>
           FILL OUT THIS FORM TO REACH US.
