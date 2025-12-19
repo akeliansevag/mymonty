@@ -66,15 +66,6 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
         <section className={`${center ? 'flex flex-col justify-center' : ''} relative  min-h-[calc(100vh-(var(--mobile-header-height)))]`
         }>
             {
-                video && videoMP4URL && videoWEBMURL && (
-                    <video className='w-full h-full object-cover absolute top-0 left-0' width="100%" playsInline autoPlay muted loop controls={false}>
-                        <source src={videoWEBMURL} type="video/webm" />
-                        <source src={videoMP4URL} type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                )
-            }
-            {
                 data && data?.content && (
                     data.content.map((item, index) => {
                         let contentClasses =
