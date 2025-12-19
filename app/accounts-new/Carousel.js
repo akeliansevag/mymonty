@@ -63,7 +63,7 @@ const Carousel = ({ data, video, videoMP4URL, videoWEBMURL, center }) => {
         setSelectedIndex(0);
     }, [])
     return (
-        <section className={`${center ? 'flex flex-col justify-center' : ''} relative  min-h-[calc(100vh-(var(--mobile-header-height)))]`
+        <section className={`${center ? 'flex flex-col justify-center' : ''} relative max-md:min-h-[740px] md:min-h-[850px]`
         }>
             {
                 data && data?.content && (
