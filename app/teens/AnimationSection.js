@@ -55,9 +55,9 @@ export default function AnimationSection() {
                 <div className="flex max-lg:flex-col lg:justify-center gap-8">
                     {/* Left section with text */}
                     <div className="lg:w-1/3 flex flex-col gap-8 lg:mt-12">
-                        <h1 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] leading-none uppercase">
+                        <h2 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] leading-none uppercase">
                             For Teens
-                        </h1>
+                        </h2>
                         <p className="text-xl">
                             You get the freedom to manage your money your way, with a safety net to keep you on track. <br />
                             <br />

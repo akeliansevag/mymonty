@@ -431,6 +431,10 @@ body.menu-hidden .sticky-filters {
   margin-top: 25px;
 }
 
+.custom-pagination1 {
+  margin-top: 25px;
+}
+
 .swiper-pagination-bullet {
   background-color: grey !important;
   opacity: 1 !important;
