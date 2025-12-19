@@ -65,7 +65,7 @@ export default function BeforeAfterSlider({
       aria-label={alt}
     >
       <div className="container z-10 relative text-center max-md:mt-[50px] md:mt-[100px]">
-        <h2 className="text-center text-white section-title">It’s time for you</h2>
+        <h2 className="text-center text-white section-title">IF YOU CAN’T WAIT FOR YOUR “AFTER”</h2>
         <button onClick={handleOpenModal} className="mm-button white mt-7">Download MyMonty</button>
       </div>
       {/* AFTER (base) */}

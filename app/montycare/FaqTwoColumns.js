@@ -156,7 +156,7 @@ function MinusIcon() {
 const DEFAULT_LEFT = [
   {
     q: "What is Montycare?",
-    a: "Montycare is a Platinum USD Credit Card designed exclusively for Health & Beauty spending. It provides a flexible revolving credit line, powered by MyMonty Wallet, and accepted only via MontyPay POS at partner clinics across Lebanon.",
+    a: "Montycare is a Platinum USD Credit Card designed exclusively for Health & Beauty spending. It provides a flexible revolving credit line, powered by MyMonty App.",
   },
   { q: "What can I use Montycare for?", a: "Answer goes here." },
   { q: "Where can I use Montycare?", a: "Answer goes here." },
@@ -170,7 +170,7 @@ const DEFAULT_LEFT = [
 const DEFAULT_RIGHT = [
   {
     q: "What is Montycare?",
-    a: "Montycare is Lebanon’s first Health & Beauty Platinum credit card, offering patients a USD revolving credit line dedicated to medical, cosmetic, dental, dermatology, and wellness procedures. It is powered by MyMonty wallet and accepted exclusively through MontyPay POS.",
+    a: "Montycare is Lebanon’s first Health & Beauty Platinum credit card, offering patients a USD revolving credit line dedicated to medical, cosmetic, dental, dermatology, and wellness procedures.",
   },
   { q: "How does Montycare benefit my clinic?", a: "Answer goes here." },
   {

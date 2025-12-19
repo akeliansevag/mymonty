@@ -21,7 +21,7 @@ const SectionOne = () => {
                             </svg>
                         </div>
                     
-                        <h3 className='uppercase font-black mt-3 text-balance'>0% Interest for 3 Months at partner clinics</h3>
+                        <h3 className='uppercase font-black mt-3 text-balance'>3-Months interest free period</h3>
                     </div>
                     
                 </div>
@@ -40,7 +40,7 @@ const SectionOne = () => {
 
                         </div>
                     
-                        <h3 className='uppercase font-black mt-3 text-balance'>Revolving Credit Limit</h3>
+                        <h3 className='uppercase font-black mt-3 text-balance'>up to usd 5,000 credit limit</h3>
                     </div>
                     
                 </div>
@@ -98,7 +98,7 @@ const SectionOne = () => {
 
                         </div>
                     
-                        <h3 className='uppercase font-black mt-3 text-balance'>Fully digital journey with MyMonty</h3>
+                        <h3 className='uppercase font-black mt-3 text-balance'>Fully digital APPLICATION VIA MyMonty APP</h3>
                     </div>
                     
                 </div>                

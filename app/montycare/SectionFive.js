@@ -12,7 +12,7 @@ const SectionFive = () => {
                         <h4 className='text-center text-pretty text-[22px]'>Zero financial risk. We manage all collections.</h4>
                     </div>
                     <div className='bg-[#f7f7f7] rounded-2xl p-8 flex items-center justify-center'>
-                        <h4 className='text-center text-pretty text-[22px]'>Boost patient conversion with 0% interest for 3 months.</h4>
+                        <h4 className='text-center text-pretty text-[22px]'>Boost patient conversion with interest free for 3 months.</h4>
                     </div>
                     <div className='bg-[#f7f7f7] rounded-2xl p-8 flex items-center justify-center'>
                         <h4 className='text-center text-pretty text-[22px]'>Increase procedure volumes and attract new clients.</h4>
