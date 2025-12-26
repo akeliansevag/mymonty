@@ -28,20 +28,6 @@ const platinumImages = [
   "platinum-4",
 ];
 
-const faqData = [
-  {
-    question: 'How do I open a MyMonty Business account?',
-    answer: 'How do I open a MyMonty Business account'
-  },
-  {
-    question: 'Am I eligible for a MyMonty Business account?',
-    answer: 'How do I open a MyMonty Business account'
-  },
-  {
-    question: 'Is MyMonty Business account the right choice for my business?',
-    answer: 'How do I open a MyMonty Business account'
-  }
-];
 
 const Teens = () => {
 
@@ -61,8 +47,8 @@ const Teens = () => {
             <section className='relative py-20 overflow-x-hidden'>
                 <div className='container'>
                     <div className='text-center'>
-                        <h2 className='font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase'>The Teen Prepaid Card Your <span className='text-[#2657D4]'>Teen</span> Will Love!</h2>
-                        <p className='text-xl mt-8'>The Teen Prepaid Card Your Teen Will Love!</p>
+                        <h2 className='max-w-[980px] mx-auto font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase'>The Teen Prepaid Card You’ll Love!</h2>
+                       
                         <button className='mm-button mt-8'>Get The App</button>
                     </div>
                     
@@ -127,8 +113,7 @@ const Teens = () => {
                         <div className='md:w-1/2'>
                             <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Ready to start?</h2>
                             <p className='leading-8 mt-4'>Set your teen up for smart spending with your guidance and full visibility.</p>
-                            <button className='mm-button !bg-[#2657D4] mt-8'>Get A Teen Card</button>
-                            <button className='mm-button mt-8 ml-4'>Download MyMonty</button>
+                            <button className='mm-button mt-8'>Download MyMonty</button>
                         </div>
                         <div className='md:w-1/2'>
                             <img className="w-full" src="/ready-to-start.webp" alt="Ready to Start" width="100%" height="100%" />

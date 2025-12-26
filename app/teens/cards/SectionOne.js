@@ -32,9 +32,9 @@ const SectionOne = () => {
     ];
 
   return (
-    <section className="py-20">
+    <section className="max-lg:py-14 lg:py-20">
         <div className='container'>
-            <h2 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase text-center">YOUR TEEN’S FIRST STEP TO FINANCIAL INDEPENDENCE</h2>
+            <h2 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] lg:mt-6 leading-none uppercase text-center">YOUR TEEN’S FIRST STEP TO FINANCIAL INDEPENDENCE</h2>
             
             <div className="flex max-lg:flex-col gap-12 mt-16 items-center justify-between">
                 <div className="grid grid-cols-1 sm:grid-cols-2 max-md:gap-6 md:gap-12">
@@ -54,7 +54,7 @@ const SectionOne = () => {
                         </div>
                     ))}
                 </div>
-                <div className='w-full relative max-md:h-[300px] md:h-[600px]'>
+                <div className='w-full relative max-md:h-[300px] md:h-[600px] max-md:hidden'>
                     {
                         features.map((feature, index)=>
                             (
