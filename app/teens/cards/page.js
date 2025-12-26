@@ -54,15 +54,15 @@ const Teens = () => {
                     
                     <div className="grid max-lg:grid-cols-1 lg:grid-cols-3 gap-5 mt-10 text-center">
                         <div className='text-center border-[6px] border-white shadow-md bg-[#F7F7F7] rounded-3xl py-8 px-4'>
-                            <h2 className="smaller-title">Top up anytime from your MyMonty wallet.</h2>
-                            <img className="w-full mt-20" src="/top-up-anytime.webp" alt="Top up" width="100%" height="100%" />
-                        </div>
-                        <div className='text-center border-[6px] border-white shadow-md bg-[#F7F7F7] rounded-3xl py-8 px-4'>
-                            <h2 className="smaller-title">Track spending with live balance and history.</h2>
+                            <h2 className="smaller-title">Track spending with live balance and history</h2>
                             <img className="w-full mt-20" src="/track-spending.webp" alt="Top up" width="100%" height="100%" />
                         </div>
                         <div className='text-center border-[6px] border-white shadow-md bg-[#F7F7F7] rounded-3xl py-8 px-4'>
-                            <h2 className="smaller-title">Support smart habits by loading pocket money on a schedule.</h2>
+                            <h2 className="smaller-title">Top up anytime from your MyMonty wallet</h2>
+                            <img className="w-full mt-20" src="/top-up-anytime.webp" alt="Top up" width="100%" height="100%" />
+                        </div>
+                        <div className='text-center border-[6px] border-white shadow-md bg-[#F7F7F7] rounded-3xl py-8 px-4'>
+                            <h2 className="smaller-title">Stay informed with instant push notifications</h2>
                             <img className="w-full mt-20" src="/support-smart-habits.webp" alt="Support smart habits" width="100%" height="100%" />
                         </div>
                     </div>

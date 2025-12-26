@@ -125,7 +125,7 @@ const Header = () => {
     return (
         <header className={headerClasses}>
             <div className='container relative h-full flex justify-between items-center'>
-                <div className='flex gap-2 flex-1'>
+                <div className='flex gap-2'>
                     <Link onClick={() => { setMenuOpen(false); setMobileMenuToggle(false); }} href='/' className='logo'>
                         {/* <Image priority alt="MyMonty Logo" src={logo} /> */}
                         <svg width="133" height="27" viewBox="0 0 133 27" fill="none" xmlns="http://www.w3.org/2000/svg">
