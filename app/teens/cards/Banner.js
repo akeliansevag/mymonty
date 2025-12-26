@@ -12,7 +12,7 @@ const Banner = () => {
                         <p className='text-balance'>Guided by the parents.</p>
                         <div>
                             <button className="mm-button mt-8">Download MyMonty</button>
-                            <button className="mm-button !bg-[#2657D4] mt-8 ml-4">Get a Teen Card</button>
+                            {/* <button className="mm-button !bg-[#2657D4] mt-8 ml-4">Get a Teen Card</button> */}
                         </div>
                     </div>
                     <div className='max-lg:w-full lg:w-1/3'>
