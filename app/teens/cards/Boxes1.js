@@ -20,7 +20,7 @@ const Boxes1 = () => {
     ];
 
     return (
-        <section className="lg:h-[100vh] flex flex-col lg:justify-center relative py-20 bg-black text-white overflow-hidden">
+        <section className="flex flex-col lg:justify-center relative py-20 bg-black text-white overflow-hidden">
             <img src="/shape-16.svg" alt="Shape" className="absolute top-0 left-0 w-full z-10" width="1728" height="177" />
             
             <div className="container lg:mt-52">
