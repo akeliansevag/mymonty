@@ -7,6 +7,7 @@ import Boxes1 from './Boxes1';
 import Slider from './Slider';
 import Faqs from './Faqs';
 import SectionOne from './SectionOne';
+import Boxes from './Boxes';
 
 export const metadata = {
     title: 'Cards | Teens' + websiteName,
@@ -53,7 +54,7 @@ const Teens = () => {
 
             <SectionOne />
 
-            <SectionTwo />
+            <Boxes />
 
             <AnimationSection />
 
