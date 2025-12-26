@@ -8,9 +8,9 @@ const MobileNavParents = ({ data, setSelectedParentIndex, handleMobileMenuToggle
         setSelectedIndex(index);
         setSelectedParentIndex(index);
     }
-    let liClasses = 'transition-all py-[5px] px-[15px] rounded-full hover:bg-black cursor-pointer hover:text-white';
+    let liClasses = 'transition-all py-[5px] px-[15px] rounded-full hover:bg-black cursor-pointer hover:text-white whitespace-nowrap';
     return (
-        <ul className={`flex gap-3 py-10`}>
+        <ul className={`flex gap-3 w-full overflow-auto mb-5 pb-4`}>
             {data && data.map((parent, index) => {
                 let selectedClasses = index === selectedIndex ? 'bg-black text-white' : null;
                 return (
