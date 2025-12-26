@@ -2,34 +2,18 @@ import React from 'react'
 import { websiteName } from '@/app/config';
 import Banner from './Banner';
 import AnimationSection from './AnimationSection';
-import Boxes from './Boxes';
+import SectionTwo from './SectionTwo';
 import Boxes1 from './Boxes1';
 import Slider from './Slider';
 import Faqs from './Faqs';
+import SectionOne from './SectionOne';
 
 export const metadata = {
     title: 'Cards | Teens' + websiteName,
     description: '',
 };
 
-const features = [
-    {
-        title: "TOP UP IN SECONDS",
-        description: "Add money instantly and stay on top of every transaction your teen makes.",
-    },
-    {
-        title: "SEE EVERYTHING, ANYTIME",
-        description: "Track spending and balance changes directly from your MyMonty app.",
-    },
-    {
-        title: "YOUR TEEN STAYS INFORMED TOO",
-        description: "They’ll receive real-time SMS notifications for every purchase, so they’re always aware of their balance.",
-    },
-    {
-        title: "SIMPLER MONEY MANAGEMENT",
-        description: "Send money instantly whenever your teen needs it and guide their spending.",
-    },
-];
+
 
 const standardImages = [
   "standard-1",
@@ -67,26 +51,9 @@ const Teens = () => {
         <>
             <Banner />
 
-            <section className="py-20">
-                <div className='container'>
-                    <h2 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase text-center">YOUR TEEN’S FIRST STEP TO FINANCIAL INDEPENDENCE</h2>
-                    
-                    <div className="flex max-lg:flex-col gap-12 items-center mt-16 justify-between">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-24">
-                            {features.map((feature, index) => (
-                                <div key={index}>
-                                    <h3 className="font-black text-2xl">{feature.title}</h3>
-                                    <p className="mt-2">{feature.description}</p>
-                                </div>
-                            ))}
-                        </div>
+            <SectionOne />
 
-                        <img src="/teens-first-step.webp" className='w-full max-w-[500px]' alt="Teen first step" width="" height="" />
-                    </div>
-                </div>
-            </section>
-
-            <Boxes />
+            <SectionTwo />
 
             <AnimationSection />
 

@@ -2,24 +2,22 @@
 import React, {useState} from 'react'
 
 const Boxes = () => {
-    const [openIndex, setOpenIndex] = useState(0);
-
-    const toggleBox = (index) => {
-        setOpenIndex(openIndex === index ? null : index);
-    };
 
     const boxes = [
         {
             title: "FREEDOM WITH A SAFETY NET",
             description: "They learn smart money habits while you supervise every step.",
+            bg: '#066E63'
         },
         {
             title: "USE IT ANYWHERE",
             description: "You can use your teen card in stores, online, or ATMs worldwide.",
+            bg: '#DFBD76'
         },
         {
             title: "PICK YOUR STYLE",
             description: "Choose a card design that reflects your teen’s personality.",
+            bg: '#6745CF'
         },
     ];
 
@@ -32,26 +30,11 @@ const Boxes = () => {
                 <button className="mm-button !bg-[#DFBD76CC] !text-[#066E63] font-medium mt-8">Get A Teen Card</button>
 
                 <div className="flex max-lg:flex-col gap-12 items-center mt-16">
-                    <img src="/teen-card-parents-support.webp" className="w-full max-w-[500px]" alt="Teen holding card" width="" height="" />
+                    <div className='w-full'>
+                        <img src="/teen-card-parents-support.webp" className="w-full max-w-[500px]" alt="Teen holding card" width="" height="" />
+                    </div>
+                    <div className='w-full'>
 
-                    <div className="w-full space-y-8">
-                        {boxes.map((box, index) => {
-                            const isActive = openIndex === index;
-                            return (
-                            <div
-                                key={index}
-                                onClick={() => toggleBox(index)}
-                                className={`${
-                                isActive
-                                    ? "bg-[#066E63] text-white py-20 px-6 shadow-md"
-                                    : "bg-white py-6 px-6 shadow-md"
-                                } w-full text-black rounded-2xl cursor-pointer transition-all duration-300 ease-in-out overflow-hidden`}
-                            >
-                                <h3 className="font-black text-2xl">{box.title}</h3>
-                                {isActive && <p className="mt-2">{box.description}</p>}
-                            </div>
-                            );
-                        })}
                     </div>
                 </div>
             </div>
