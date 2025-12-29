@@ -21,9 +21,7 @@ const Boxes1 = () => {
 
     return (
         <section className="flex flex-col lg:justify-center relative py-20 bg-black text-white overflow-hidden">
-            <img src="/shape-16.svg" alt="Shape" className="absolute top-0 left-0 w-full z-10" width="1728" height="177" />
-            
-            <div className="container lg:mt-52">
+            <div className="container">
                 <h2 className="font-black text-white text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase">Who can get it?</h2>
 
                 <div className="flex max-lg:flex-col gap-12 items-center mt-16">
@@ -42,7 +40,7 @@ const Boxes1 = () => {
                                     : "bg-white py-6 px-6 shadow-md"
                                 } w-full text-black rounded-2xl cursor-pointer transition-all duration-300 ease-in-out overflow-hidden`}
                             >
-                                <h3 className="font-black text-2xl">{box.title}</h3>
+                                <h3 className="font-black text-2xl uppercase">{box.title}</h3>
                                 {isActive && <p className="mt-2">{box.description}</p>}
                             </div>
                             );

@@ -44,29 +44,31 @@ const Teens = () => {
 
             <AnimationSection />
 
-            <section className='relative py-20 overflow-x-hidden'>
+            <section className='relative pt-20 overflow-x-hidden'>
                 <div className='container'>
                     <div className='text-center'>
                         <h2 className='max-w-[980px] mx-auto font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase'>The Teen Prepaid Card You’ll Love!</h2>
                        
-                        <button className='mm-button mt-8'>Get The App</button>
+                        <button className='mm-button mt-8 !px-10'>Get The App</button>
                     </div>
                     
                     <div className="grid max-lg:grid-cols-1 lg:grid-cols-3 gap-5 mt-10 text-center">
-                        <div className='text-center border-[6px] border-white shadow-md bg-[#F7F7F7] rounded-3xl py-8 px-4'>
+                        <div className='flex flex-col justify-between gap-12 text-center border-[6px] border-white shadow-md bg-[#F7F7F7] rounded-3xl py-8 px-4'>
+                            <img className="w-full" src="/track-spending.webp" alt="Track Spending" width="100%" height="100%" />
                             <h2 className="smaller-title">Track spending with live balance and history</h2>
-                            <img className="w-full mt-20" src="/track-spending.webp" alt="Top up" width="100%" height="100%" />
                         </div>
-                        <div className='text-center border-[6px] border-white shadow-md bg-[#F7F7F7] rounded-3xl py-8 px-4'>
+                        <div className='flex flex-col justify-between gap-12 text-center border-[6px] border-white shadow-md bg-[#F7F7F7] rounded-3xl py-8 px-4'>
+                            <img className="w-full" src="/top-up-anytime.webp" alt="Top up" width="100%" height="100%" />
                             <h2 className="smaller-title">Top up anytime from your MyMonty wallet</h2>
-                            <img className="w-full mt-20" src="/top-up-anytime.webp" alt="Top up" width="100%" height="100%" />
                         </div>
-                        <div className='text-center border-[6px] border-white shadow-md bg-[#F7F7F7] rounded-3xl py-8 px-4'>
-                            <h2 className="smaller-title">Stay informed with instant push notifications</h2>
-                            <img className="w-full mt-20" src="/support-smart-habits.webp" alt="Support smart habits" width="100%" height="100%" />
+                        <div className='flex flex-col justify-between gap-12 text-center border-[6px] border-white shadow-md bg-[#F7F7F7] rounded-3xl py-8 px-4'>
+                            <img className="w-full" src="/stay-informed.webp" alt="Stay informed" width="100%" height="100%" />
+                            <h2 className="smaller-title">Stay informed with instant push notifications</h2>
                         </div>
                     </div>
                 </div>
+                <img src="/shape-18.svg" alt="Shape" className="w-full mt-20" width="1728" height="177" />
+
             </section>
 
             <Boxes1 />
@@ -75,9 +77,9 @@ const Teens = () => {
                 <div className='container'>
                     <div className='flex flex-col md:flex-row md:items-center text-start gap-10 md:gap-60 relative'>
                         <div className='md:w-1/2'>
-                            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-[#483EB2]'>Fees & limits</h2>
+                            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Fees & limits</h2>
                             <p className='leading-8 mt-4'>Teen card fees and limits are the same as MyMonty physical prepaid cards.</p>
-                            <button className='mm-button !bg-[#483EB2] mt-8'>View Fees & Limits</button>
+                            <button className='mm-button !bg-[#2657D4] mt-8'>View Fees & Limits</button>
                         </div>
                         <div className='md:w-1/2'>
                             <img className="w-full mt-20" src="/fees-and-limits.webp" alt="Fees And Limits" width="100%" height="100%" />
@@ -93,12 +95,12 @@ const Teens = () => {
                     <div className="grid max-lg:grid-cols-1 lg:grid-cols-2 gap-5 mt-10 text-center">
                         <div className='text-center border-[6px] border-[#F7F7F7] shadow-md bg-white rounded-3xl py-16 px-8 md:px-24'>
                             <h2 className="smaller-title">Standard</h2>
-                            <p className="text-xl mt-4 text-center md:px-16">Everything your teen needs to get started.</p>
+                            <p className="text-xl mt-4 text-center">Everything your teen needs to get started.</p>
                             <Slider images={standardImages} />
                         </div>
                         <div className='text-center border-[6px] border-[#F7F7F7] shadow-md bg-white rounded-3xl py-16 px-8 md:px-24'>
                             <h2 className="smaller-title">Platinum</h2>
-                            <p className="text-xl mt-4 text-center md:px-16">Upgraded look and feel. Pick the style that fits your teen.</p>
+                            <p className="text-xl mt-4 text-center">Pick the style that fits your teen.</p>
                             <Slider images={platinumImages} />
                         </div>
                     </div>
@@ -113,7 +115,8 @@ const Teens = () => {
                         <div className='md:w-1/2'>
                             <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Ready to start?</h2>
                             <p className='leading-8 mt-4'>Set your teen up for smart spending with your guidance and full visibility.</p>
-                            <button className='mm-button mt-8'>Download MyMonty</button>
+                            <button className='mm-button mt-8 !bg-[#2657D4]'>Get A Teen Card</button>
+                            <button className='mm-button mt-8 ml-8'>Download MyMonty</button>
                         </div>
                         <div className='md:w-1/2'>
                             <img className="w-full" src="/ready-to-start.webp" alt="Ready to Start" width="100%" height="100%" />
