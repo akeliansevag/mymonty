@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useRef, useState, Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react'
-import Form from './Form';
+import QrCode from './QrCode';
 
 const Modal = ({ isOpen, handleOpenModal, handleCloseModal, formComponent, largeWidth }) => {
   const cancelButtonRef = useRef(null);

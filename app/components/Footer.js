@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { data } from './footerNavData';
 import Link from 'next/link';
-import Form from './Form';
+import QrCode from './QrCode';
 import { usePathname } from 'next/navigation';
 
 import { useAppContext } from '../AppContext';
@@ -24,7 +24,7 @@ const Footer = () => {
     };
 
     const handleGetClick = () => {
-        setFormComponent(<Form />);
+        setFormComponent(<QrCode />);
         setLargeWidth(false);
         handleOpenModal();
     }

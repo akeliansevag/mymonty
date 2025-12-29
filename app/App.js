@@ -6,14 +6,14 @@ import { NavigationEvents } from './components/navigation-events';
 import { Suspense } from 'react';
 import Modal from './components/Modal';
 import { useAppContext } from './AppContext';
-import Form from './components/Form';
+import QrCode from './components/QrCode';
 import { usePathname } from 'next/navigation';
 import BannerAd from './components/BannerAd';
 
 const App = ({ children }) => {
     const { handleOpenModal, handleCloseModal, openModal, setFormComponent, formComponent, largeWidth, setLargeWidth } = useAppContext();
 
-    const dynamicFormComponent = <Form />;
+    const dynamicFormComponent = <QrCode />;
     const pathname = usePathname();
     return (
         <>

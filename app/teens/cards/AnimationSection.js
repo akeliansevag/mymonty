@@ -4,6 +4,9 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
+import { useAppContext } from '../../AppContext';
+import QrCode from '@/app/components/QrCode';
+
 export default function AnimationSection() {
     // Card data
     const cards = [
@@ -14,6 +17,15 @@ export default function AnimationSection() {
         { image: "how-to-order-5" },
         { image: "how-to-order-6" },
     ];
+
+    const { handleOpenModal } = useAppContext();
+    const { setFormComponent, setLargeWidth } = useAppContext();
+
+    const handleOriginalOpenModal = () => {
+        setFormComponent(<QrCode />);
+        setLargeWidth(false);
+        handleOpenModal();
+    }
 
     return (
         <section className="flex flex-col lg:justify-center relative pt-20 md:pt-96 bg-[linear-gradient(214.74deg,_#000000_-28%,_#2657D4_61.08%)] text-white overflow-hidden">
@@ -27,7 +39,7 @@ export default function AnimationSection() {
                         </h2>
                         <p className="text-xl">For existing users, order  your teen’s card directly from MyMonty app.</p>
                         <div>
-                            <button className="mm-button !bg-[#F8EA00] !text-black !px-12">Get The App</button>
+                            <button onClick={handleOriginalOpenModal} className="mm-button !bg-[#F8EA00] hover:!bg-white hover:!text-black !text-black !px-12">Get The App</button>
                         </div>
                     </div>
 

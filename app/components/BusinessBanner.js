@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { useAppContext } from '../AppContext';
-import AppForm from '@/app/components/Form';
+import QrCode from '@/app/components/QrCode';
 import business from '@/public/business/business4.webp';
 
 const BusinessBanner = () => {
@@ -11,7 +11,7 @@ const BusinessBanner = () => {
     const { setFormComponent, setLargeWidth } = useAppContext();
 
     const handleOriginalOpenModal = () => {
-        setFormComponent(<AppForm />);
+        setFormComponent(<QrCode />);
         setLargeWidth(false);
         handleOpenModal();
     }

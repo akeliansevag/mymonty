@@ -1,5 +1,7 @@
 'use client'
 import React, {useState} from 'react'
+import { useAppContext } from '../../AppContext';
+import QrCode from '@/app/components/QrCode';
 
 const Boxes = () => {
     const [openIndex, setOpenIndex] = useState(0);
@@ -23,13 +25,22 @@ const Boxes = () => {
         },
     ];
 
+    const { handleOpenModal } = useAppContext();
+    const { setFormComponent, setLargeWidth } = useAppContext();
+
+    const handleOriginalOpenModal = () => {
+        setFormComponent(<QrCode />);
+        setLargeWidth(false);
+        handleOpenModal();
+    }
+
     return (
         <section className="flex flex-col lg:justify-center relative py-20 bg-[rgb(249,244,238)] text-white overflow-hidden">
             <img src="/shape-16.svg" alt="Shape" className="absolute top-0 left-0 w-full z-10" width="1728" height="177" />
             
             <div className="container lg:mt-52">
                 <h2 className="font-black text-[#066E63] text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-[4rem] mt-6 leading-none uppercase">TEEN CARD, <br /> PARENT’S SUPPORT</h2>
-                <button className="mm-button !bg-[#DFBD76CC] !text-[#066E63] font-medium mt-8">Get A Teen Card</button>
+                <button onClick={handleOriginalOpenModal} className="mm-button !bg-[#DFBD76CC] !text-[#066E63] hover:!bg-[#066E63] font-medium mt-8">Get A Teen Card</button>
 
                 <div className="flex max-lg:flex-col gap-12 items-center mt-16">
                     <img src="/teen-card-parents-support.webp" className="w-full max-w-[500px]" alt="Teen holding card" width="" height="" />

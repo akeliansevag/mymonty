@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { useAppContext } from '../AppContext';
 import Form from '@/app/business/Form';
-import AppForm from '@/app/components/Form';
+import QrCode from '@/app/components/QrCode';
 
 const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
     let target = data.cta?.link?.target ? data.cta.link.target : '';
@@ -19,7 +19,7 @@ const Banner = ({ data, theme, salaryForm, AnimatedImage, terms }) => {
     }
 
     const handleOriginalOpenModal = () => {
-        setFormComponent(<AppForm />);
+        setFormComponent(<QrCode />);
         setLargeWidth(false);
         handleOpenModal();
     }

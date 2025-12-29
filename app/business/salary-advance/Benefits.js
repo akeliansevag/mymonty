@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { useAppContext } from '../../AppContext';
-import AppForm from '@/app/components/Form';
+import QrCode from '@/app/components/QrCode';
 
 const Benefits = () => {
 
@@ -9,7 +9,7 @@ const Benefits = () => {
     const { setFormComponent, setLargeWidth } = useAppContext();
 
     const handleOriginalOpenModal = () => {
-        setFormComponent(<AppForm />);
+        setFormComponent(<QrCode />);
         setLargeWidth(false);
         handleOpenModal();
     }

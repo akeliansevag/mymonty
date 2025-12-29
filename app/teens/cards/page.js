@@ -1,6 +1,5 @@
 import React from 'react'
 import { websiteName } from '@/app/config';
-import Banner from './Banner';
 import AnimationSection from './AnimationSection';
 import SectionTwo from './SectionTwo';
 import Boxes1 from './Boxes1';
@@ -8,13 +7,14 @@ import Slider from './Slider';
 import Faqs from './Faqs';
 import SectionOne from './SectionOne';
 import Boxes from './Boxes';
+import Banner from './Banner';
+import ReadyToStart from './ReadyToStart';
+
 
 export const metadata = {
     title: 'Cards | Teens' + websiteName,
     description: '',
 };
-
-
 
 const standardImages = [
   "standard-1",
@@ -30,10 +30,6 @@ const platinumImages = [
 
 
 const Teens = () => {
-
-    
-
-
     return (
         <>
             <Banner />
@@ -109,21 +105,7 @@ const Teens = () => {
         
             <Faqs />
 
-            <section className='relative py-20 overflow-x-hidden'>
-                <div className='container'>
-                    <div className='flex flex-col md:flex-row md:items-center text-start gap-10 md:gap-60 relative'>
-                        <div className='md:w-1/2'>
-                            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none'>Ready to start?</h2>
-                            <p className='leading-8 mt-4'>Set your teen up for smart spending with your guidance and full visibility.</p>
-                            <button className='mm-button mt-8 !bg-[#2657D4]'>Get A Teen Card</button>
-                            <button className='mm-button mt-8 ml-8'>Download MyMonty</button>
-                        </div>
-                        <div className='md:w-1/2'>
-                            <img className="w-full" src="/ready-to-start.webp" alt="Ready to Start" width="100%" height="100%" />
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <ReadyToStart />
         </>
     )
 }
