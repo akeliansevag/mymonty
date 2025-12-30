@@ -14,14 +14,20 @@ const Boxes = () => {
         {
             title: "FREEDOM WITH A SAFETY NET",
             description: "They learn smart money habits while you supervise every step.",
+            image: "/teen-card-freedom.webp",
+            bgColor: "bg-[#066E63]",
         },
         {
             title: "USE IT ANYWHERE",
             description: "You can use your teen card in stores, online, or ATMs worldwide.",
+            image: "/use-it-anywhere.webp",
+            bgColor: "bg-[#DFBD76]",
         },
         {
             title: "PICK YOUR STYLE",
             description: "Choose a card design that reflects your teen’s personality.",
+            image: "/pick-your-style.webp",
+            bgColor: "bg-[#F98BB0]",
         },
     ];
 
@@ -43,24 +49,26 @@ const Boxes = () => {
                 <button onClick={handleOriginalOpenModal} className="mm-button !bg-[#DFBD76CC] !text-[#066E63] hover:!bg-[#066E63] font-medium mt-8">Get A Teen Card</button>
 
                 <div className="flex max-lg:flex-col gap-12 items-center mt-16">
-                    <img src="/teen-card-parents-support.webp" className="w-full max-w-[500px]" alt="Teen holding card" width="" height="" />
+                    <img 
+                        src={openIndex !== null ? boxes[openIndex].image : "/teen-card-parents-support.webp"} 
+                        className="w-full max-w-[500px] transition-all duration-500" 
+                        alt="Teen holding card" 
+                    />
 
                     <div className="w-full space-y-8">
                         {boxes.map((box, index) => {
                             const isActive = openIndex === index;
                             return (
-                            <div
-                                key={index}
-                                onClick={() => toggleBox(index)}
-                                className={`${
-                                isActive
-                                    ? "bg-[#066E63] text-white py-20 px-6 shadow-md"
-                                    : "bg-white py-6 px-6 shadow-md"
-                                } w-full text-black rounded-2xl cursor-pointer transition-all duration-300 ease-in-out overflow-hidden`}
-                            >
-                                <h3 className="font-black text-2xl">{box.title}</h3>
-                                {isActive && <p className="mt-2">{box.description}</p>}
-                            </div>
+                                <div
+                                    key={index}
+                                    onClick={() => toggleBox(index)}
+                                    className={`${
+                                        isActive ? `${box.bgColor} text-white py-20 px-6 shadow-md` : "bg-white py-6 px-6 shadow-md text-black"
+                                    } w-full rounded-2xl cursor-pointer transition-all duration-300 ease-in-out overflow-hidden`}
+                                >
+                                    <h3 className="font-black text-2xl">{box.title}</h3>
+                                    {isActive && <p className="mt-2">{box.description}</p>}
+                                </div>
                             );
                         })}
                     </div>
