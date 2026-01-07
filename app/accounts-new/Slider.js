@@ -42,7 +42,7 @@ export default function Slider() {
     },
     {
       title: 'STEP 5',
-      description: 'Selfie <br /> verification',
+      description: 'Take a quick selfie',
       image: s5,
     },
     {
@@ -50,11 +50,11 @@ export default function Slider() {
       description: 'Enter your information and <br /> sign the required documents',
       image: s6,
     },
-    {
-      title: 'STEP 7',
-      description: 'Wait for <br /> approval/reconciliation',
-      image: s7,
-    }
+    // {
+    //   title: 'STEP 7',
+    //   description: 'Wait for <br /> approval/reconciliation',
+    //   image: s7,
+    // }
   ];
 
   

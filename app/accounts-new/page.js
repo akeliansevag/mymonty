@@ -76,8 +76,7 @@ const page = () => {
         <Banner data={data} terms={terms}/>
         <section className="bg-white text-center py-28 max-lg:py-14">
             <div className="container flex flex-col gap-8">
-                <TextBlock buttonColor="dark" title="MULTI-CURRENCY WALLET" center={true} button={true} description="One Account. All Your Currencies.
-Get your USD, LBP and EUR wallets instantly as soon as you complete onboarding." />
+                <TextBlock buttonColor="dark" title="MULTI-CURRENCY WALLET" center={true} button={true} description="One Wallet, All Your Currencies. <br /> Get your USD, LBP, and EUR wallets instantly as soon as you complete onboarding." />
                 
                 <div className="relative">
                     <Image src={img2} alt="Girls Looking at the phone" width="2120" height="982" />

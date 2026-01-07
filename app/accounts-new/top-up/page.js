@@ -46,7 +46,7 @@ const page = () => {
 
         <section className='max-lg:py-5 lg:py-28 bg-white'>
             <div className='container text-center'>
-                <TextBlock title="Top Up by Card" description="Add funds to your wallet using any accepted card. <br /> Instant. Secure. No hidden fees. <br /> Choose between USD, LBP, or EUR and get your balance updated in seconds." center={true} />
+                <TextBlock title="Top Up by Card" description="Add funds to your wallet using any accepted card. <br /> Instant. Secure. No hidden fees.<br /> Choose between USD or LBP and get your balance updated in seconds." center={true} />
                 <img src='/top-up-by-card.webp' className='w-full max-lg:mt-5 lg:mt-16'/>
             </div>
         </section>

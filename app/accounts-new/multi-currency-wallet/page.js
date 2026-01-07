@@ -14,7 +14,7 @@ const page = () => {
     const data = {
         title: 'One Wallet, All Your Currencies',
         subtitle: 'Accounts',
-        desc: 'Get your USD, LBP and EUR wallets as soon as you complete onboarding.',
+        desc: 'Get your USD, LBP, and EUR wallets as soon as you complete onboarding.',
         image: {
             inGrid: true,
             layout: 'half',
