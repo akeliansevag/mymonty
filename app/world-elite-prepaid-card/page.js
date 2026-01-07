@@ -32,7 +32,7 @@ const worldEliteCards = () => {
         }
     };
     const terms = {
-        termsAndConditions: '/World-Elite-Prepaid-Card-Terms.pdf',
+        termsAndConditions: '/world-elite-prepaid-cards-terms-(v.1.0-npy).pdf',
         kfs: '/World-Elite-Prepaid-Card-KFS.pdf'
     }
 

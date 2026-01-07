@@ -17,7 +17,7 @@ const pea = () => {
             <div className='container py-10 lg:py-20 relative'>
                 <p><strong>WORLD ELITE PREPAID MASTERCARD - KEY FACTS STATEMENT  <br /> (V.1.1 – 04 June 2025)</strong> </p>
 
-                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard World Elite Credit Card offered by Monty Finance S.A.L. (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the <a className='text-blue-500 hover:underline' href="/World-Elite-Prepaid-Card-Terms.pdf" target="_blank">World Elite Prepaid MasterCard Terms</a>.</p>
+                <p className='mt-5 mb-10'>This Key Facts Statement (“KFS”) provides you with information on the key features, limits, fees and charges of the MyMonty Mastercard World Elite Credit Card offered by Monty Finance S.A.L. (“Card”). This KFS does not contain all the terms and conditions governing the Card and it should be read along with the <a className='text-blue-500 hover:underline' href="/world-elite-prepaid-cards-terms-(v.1.0-npy).pdf" target="_blank">World Elite Prepaid MasterCard Terms</a>.</p>
 
               <div className='table-wrapper'>
                     <h2>1. PRODUCT DESCRIPTION</h2>
