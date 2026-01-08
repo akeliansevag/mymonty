@@ -125,7 +125,7 @@ const SalaryAdvance = () => {
       </section>
 
       <section className='py-24 bg-white text-black max-md:py-14'>
-        <div className='container space-y-8 md:space-y-24'>
+        <div className='container space-y-8 md:space-y-8'>
           <div className='space-y-4'> 
             <h2 className='section-title text-center'>How It Works</h2>
             <p className='text-center max-w-2xl mx-auto'>*Only one active advance allowed at a time.</p>
