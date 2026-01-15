@@ -16,7 +16,7 @@ const Banner = () => {
 
     return (
         <>
-            <section className='lg:py-32 max-lg:py-16 bg-[#F7F7F7]'>
+            <section className='pb-14 md:pb-20 md:pt-26 max-md:pt-[calc(var(--header-height)+20px)] flex flex-col justify-center min-h-[calc(100vh-var(--header-height))] w-full relative bg-gray-100 max-md:pb-14'>
                 <div className='container'>
                     <div className='flex justify-between gap-10 items-center max-lg:flex-col'>
                         <div className='max-lg:w-full lg:w-1/2 flex flex-col gap-5'>
@@ -32,6 +32,13 @@ const Banner = () => {
                                 <Image alt='Salary' placeholder='blur' quality={100} sizes='100vw' src={bannerImage} className='w-full' priority width='1000' height='1266' />
                             </div>
                         </div>
+
+                    </div>
+                </div>
+
+                <div className='container'>
+                    <div className="md:absolute md:bottom-10 text-base underline text-[#2657D4]">
+                        <a className="block uppercase" href="/Teen-Standard-Prepaid-Card-7.1.26.pdf" target="_blank">Key Facts Statement (KFS)</a>
                     </div>
                 </div>
             </section>

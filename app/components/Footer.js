@@ -183,16 +183,30 @@ const Footer = () => {
                     <div>
                         <ul>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/terms-conditions">Website Terms and Conditions</Link></li>
-
-                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/key-facts-statements">Key Facts Statements</Link></li>
-                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/fees-and-charges">Fees and Charges</Link></li>
+                            { pathname === '/business/business-wallet' && (
+                                <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/business/key-facts-statements">Key Facts Statements</Link></li>
+                            )}
+                            { pathname !== '/business/business-wallet' && (
+                                <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/key-facts-statements">Key Facts Statements</Link></li>
+                            )}
+                            { pathname === '/business/business-wallet' && (
+                                <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/business/fees-and-charges">Fees and Charges</Link></li>
+                            )}
+                            { pathname !== '/business/business-wallet' && (
+                                <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/fees-and-charges">Fees and Charges</Link></li>
+                            )}
                         </ul>
                     </div>
                     <div>
                         <ul>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/legal">Legal</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/data-protection">Data Protection</Link></li>
-                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/limits">Limits</Link></li>
+                            { pathname === '/business/business-wallet' && (
+                                <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/business/limits">Limits</Link></li>
+                            )}
+                            { pathname !== '/business/business-wallet' && (
+                                <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/limits">Limits</Link></li>
+                            )}
                         </ul>
                     </div>
                     <div>

@@ -33,7 +33,7 @@ const page = () => {
 
     const terms = {
         termsAndConditions: false, 
-        kfs: 'KFS-Individual-eWallet-Account-16.7.25.pdf'
+        kfs: '/KFS-Individual-eWallet-Account-30.10.25.pdf'
     }
 
     const carouselData = {

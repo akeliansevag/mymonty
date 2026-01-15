@@ -283,7 +283,7 @@ const pea = () => {
                                     <strong>ATM Withdrawal in Lebanon</strong>
                                 </td>
                                 <td>
-                                    <ul class="list-disc list-inside">
+                                    <ul className="list-disc list-inside">
                                         <li>Issuer’s ATM refers to Fransabank SAL ATMs</li>
                                         <li>Withdrawals from other local ATMs are limited to BLC Bank SAL ATMs at this stage.</li>
                                     </ul>

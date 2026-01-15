@@ -33,7 +33,7 @@ const HowTo = () => {
                   </div>
                 </div>
                 <div className='w-full bg-black relative'>
-                    <div class="absolute left-[-1px] top-[-1px] z-10 w-[100px] h-full bg-gradient-to-r from-black to-transparent"></div>
+                    <div className="absolute left-[-1px] top-[-1px] z-10 w-[100px] h-full bg-gradient-to-r from-black to-transparent"></div>
                     <img src='/youve-entered-a-draw-bg.webp' className='w-full'/>
                 </div>
             </div>

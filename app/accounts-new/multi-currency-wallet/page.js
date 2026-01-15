@@ -30,7 +30,7 @@ const page = () => {
 
     const terms = {
         termsAndConditions: false, 
-        kfs: 'KFS-Individual-eWallet-Account-16.7.25.pdf'
+        kfs: '/KFS-Individual-eWallet-Account-30.10.25.pdf'
     }
 
   return (
@@ -38,8 +38,7 @@ const page = () => {
         <Banner data={data} terms={terms}/>
         <section className="bg-white text-center py-28 max-lg:py-14">
             <div className="container flex flex-col gap-8">
-                <TextBlock buttonColor="dark" title="Your Money, Your Way" center={true} description="Stop running to the exchange office or begging for change!
-Do it all with MyMonty." />
+                <TextBlock buttonColor="dark" title="Your Money, Your Way" center={true} description="Stop running to the exchange office or begging for change! Do it all with MyMonty." />
                 
                 <div className="relative">
                     <div className='flex gap-10 max-lg:flex-col'>

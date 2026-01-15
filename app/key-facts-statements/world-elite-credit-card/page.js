@@ -338,7 +338,7 @@ const pea = () => {
                             <tr>
                                 <td><strong>ATM Withdrawal in Lebanon</strong></td>
                                 <td>
-                                    <ul class="list-disc list-inside">
+                                    <ul className="list-disc list-inside">
                                         <li>
                                             Issuer’s ATM refers to Fransabank SAL ATMs
                                         </li>

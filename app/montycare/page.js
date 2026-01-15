@@ -19,7 +19,7 @@ export const metadata = {
 
 
 const data = {
-  title: 'Because <span class="text-[#E2282B]">Care</span> Cannot Wait.',
+  title: 'Because <span className="text-[#E2282B]">Care</span> Cannot Wait.',
   subtitle: 'Loans',
   desc: 'Your gateway to simple, flexible, and affordable wellness financing; designed for both users and partner clinics.',
   image: {

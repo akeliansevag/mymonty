@@ -9,10 +9,8 @@ export const metadata = {
 };
 
 const KeyFactsStatements = () => {
-
     return (
         <>
-
             <div className={styles.terms}>
                 <SmallBanner title="Key Facts Statements" />
                 <div className='container py-10 lg:py-20 relative'>
@@ -47,8 +45,14 @@ const KeyFactsStatements = () => {
                         <a href='/key-facts-statements/euro-platinum-prepaid-card' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                             KFS Euro Platinum Prepaid Card
                         </a>
-                    </div>
 
+                        <a href='/key-facts-statements/teen-standard-prepaid-card' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                            KFS Teens Standard Prepaid Card
+                        </a>
+                        <a href='/key-facts-statements/teen-platinum-prepaid-card' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                            KFS Teens Platinum Prepaid Card
+                        </a>
+                    </div>
                 </div>
             </div>
         </>
