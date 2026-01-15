@@ -9,19 +9,19 @@ export const data = [
                 children: [
                     {
                         title: 'Forex Exchange',
-                        url: '/forex-exchange'
+                        url: '/accounts/forex-exchange'
                     },
                     {
                         title: 'Multi-Currency Wallet',
-                        url: '/multi-currency-wallet'
+                        url: '/accounts/multi-currency-wallet'
                     },
                     {
                         title: 'Top Up',
-                        url: '/top-up'
+                        url: '/accounts/top-up'
                     },
                     {
                         title: 'Withdraw',
-                        url: '/withdraw'
+                        url: '/accounts/withdraw'
                     },
                 ]
             },
