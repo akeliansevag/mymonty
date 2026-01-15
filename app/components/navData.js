@@ -8,10 +8,6 @@ export const data = [
                 url: '/accounts',
                 children: [
                     {
-                        title: 'Forex Exchange',
-                        url: '/accounts/forex-exchange'
-                    },
-                    {
                         title: 'Multi-Currency Wallet',
                         url: '/accounts/multi-currency-wallet'
                     },
@@ -22,6 +18,10 @@ export const data = [
                     {
                         title: 'Withdraw',
                         url: '/accounts/withdraw'
+                    },
+                    {
+                        title: 'Forex Exchange',
+                        url: '/accounts/forex-exchange'
                     },
                 ]
             },
