@@ -6,36 +6,22 @@ export const data = [
             {
                 title: 'Accounts',
                 url: '/accounts',
-                children: [
+                 children: [
                     {
-                        title: 'Dual Currency Wallet',
-                        url: '/accounts?s=dual-currency-wallet',
-                        noIndex: true
+                        title: 'Forex Exchange',
+                        url: '/forex-exchange'
+                    },
+                    {
+                        title: 'Multi-Currency Wallet',
+                        url: '/multi-currency-wallet'
                     },
                     {
                         title: 'Top Up',
-                        url: '/accounts?s=top-up',
-                        noIndex: true
+                        url: '/top-up'
                     },
                     {
-                        title: 'Request Top Up',
-                        url: '/accounts?s=top-up',
-                        noIndex: true
-                    },
-                    {
-                        title: 'Cash Out',
-                        url: '/accounts?s=top-up',
-                        noIndex: true
-                    },
-                    {
-                        title: 'Cash Out Via ATM/BANK',
-                        url: '/accounts?s=top-up',
-                        noIndex: true
-                    },
-                    {
-                        title: 'Forex',
-                        url: '/accounts?s=forex',
-                        noIndex: true
+                        title: 'Withdraw',
+                        url: '/withdraw'
                     },
                 ]
             },
