@@ -28,10 +28,15 @@ const Business1 = () => {
       }
     }
   };
+
+  const terms = {
+    termsAndConditions: '/Business-Customer-Terms-(Commercial-Companies)-V.2.0-(Web).pdf', 
+    kfs: false
+  }
     
   return (
     <div className='bg-black text-white'>
-      <Banner theme="dark-green" data={data} />
+      <Banner theme="dark-green" data={data} terms={terms} />
 
       <section className='text-center my-14 py-14'>
         <div className='container'>

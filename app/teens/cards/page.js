@@ -28,7 +28,6 @@ const platinumImages = [
   "platinum-4",
 ];
 
-
 const Teens = () => {
     return (
         <>
@@ -93,11 +92,17 @@ const Teens = () => {
                             <h2 className="smaller-title">Standard</h2>
                             <p className="text-xl mt-4 text-center">Everything your teen needs to get started.</p>
                             <Slider images={standardImages} />
+                            <div className="text-base underline text-[#2657D4]">
+                                <a className="block uppercase" href="/kfs/Under-18-Standard-Card.pdf" target="_blank">Standard Card Key Facts Statement (KFS)</a>
+                            </div>
                         </div>
                         <div className='text-center border-[6px] border-[#F7F7F7] shadow-md bg-white rounded-3xl py-16 px-8 md:px-24'>
                             <h2 className="smaller-title">Platinum</h2>
                             <p className="text-xl mt-4 text-center">Pick the style that fits your teen.</p>
                             <Slider images={platinumImages} />
+                            <div className="text-base underline text-[#2657D4]">
+                                <a className="block uppercase" href="/kfs/Under-18-Platinum-Card.pdf" target="_blank">Platinum Card Key Facts Statement (KFS)</a>
+                            </div>
                         </div>
                     </div>
                 </div>

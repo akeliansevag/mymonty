@@ -39,6 +39,10 @@ const VirtualCard = () => {
                         </div >
         
                         <Image className='mx-auto mt-14' alt="platinum Prepaid Card" src={platinumPrepaidCard} width='2120' height='860' />
+
+                        <div className='text-base underline text-[#2657D4] mt-12'>
+                            <a className='block uppercase' href='/kfs/Euro-Platinum-Prepaid-Card-KFS.pdf' target='_blank'>Euro Prepaid Key Facts Statement (KFS)</a>
+                        </div>
                     </div>
                 </div>
             </Section>

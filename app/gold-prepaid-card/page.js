@@ -34,7 +34,7 @@ const cards = () => {
 
     const terms = {
         termsAndConditions: 'MyMonty Prepaid MasterCard Terms.pdf', 
-        kfs: 'Gold-Prepaid-Card-KFS.pdf'
+        kfs: '/kfs/Gold-Prepaid-Card-KFS.pdf'
     }
 
     return (

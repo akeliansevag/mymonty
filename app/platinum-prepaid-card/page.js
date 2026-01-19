@@ -36,7 +36,7 @@ const cards = () => {
 
     const terms = {
         termsAndConditions: 'Platinum-Prepaid-Cards-Terms-(V.1.0---NPY).pdf', 
-        kfs: 'KFS-Platinum-Card-(Physical)-with-Supp-12-9-25.pdf'
+        kfs: '/kfs/Platinum-Prepaid-Card-KFS.pdf'
     }
 
     return (

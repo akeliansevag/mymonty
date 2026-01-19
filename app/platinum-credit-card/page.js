@@ -40,7 +40,7 @@ const cards = () => {
     
     const terms = {
         termsAndConditions: '/credit-cards-terms-and-conditions.pdf', 
-        kfs: '/Credit-Card-KFS-(Offline)-12-9-25.pdf'
+        kfs: '/kfs/Platinum-credit-Card-KFS-Offline.pdf'
     }
 
     return (
@@ -55,7 +55,12 @@ const cards = () => {
                             <p className='leading-8 mt-8'>The MyMonty Euro Platinum Credit Card is the first and only euro credit card offered by an eWallet in Lebanon, designed exclusively for travelers and frequent spenders in Europe.</p>
                             <Image className='w-full mt-16' alt="Girls Eating Ice Cream" src={image1} width='1575' height='546' />
                         </div>
+
+                        <div className='text-base underline text-[#2657D4] mt-12'>
+                            <a className='block uppercase' href='/kfs/Euro-Credit-Card-KFS-Offline.pdf' target='_blank'>Euro Credit Key Facts Statement (KFS)</a>
+                        </div>
                     </div>
+                    
                     
                     <div className='mt-20 lg:mt-40'>
                         <TextBlock center={true} title="Mastercard Platinum Credit Card Benefits" description="" />

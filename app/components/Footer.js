@@ -35,6 +35,16 @@ const Footer = () => {
         headingText = 'Take your first step towards financial independence.';
     }
 
+    
+    const isNotBusiness =
+        pathname !== '/business' &&
+        !pathname.startsWith('/business/');
+
+
+    const isBusiness =
+        pathname === '/business' ||
+        pathname.startsWith('/business/');
+
     return (
         <section className='bg-black text-white max-lg:pb-10 lg:pb-20'>
             <div className='container text-center pt-10 pb-10 lg:pt-20' id="download-now">
@@ -183,17 +193,17 @@ const Footer = () => {
                     <div>
                         <ul>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/terms-conditions">Website Terms and Conditions</Link></li>
-                            { pathname === '/business/business-wallet' && (
+                            { isBusiness && (
                                 <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/business/key-facts-statements">Key Facts Statements</Link></li>
                             )}
-                            { pathname !== '/business/business-wallet' && (
+                            { isNotBusiness && (
                                 <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/key-facts-statements">Key Facts Statements</Link></li>
                             )}
-                            { pathname === '/business/business-wallet' && (
-                                <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/business/fees-and-charges">Fees and Charges</Link></li>
+                            { isBusiness && (
+                                <li className='mb-2'><a className='text-base opacity-60 hover:opacity-100' target="_blank" href="/fees-and-charges/Business-List-of-Fees-and-Charges-29.7.25.pdf">Fees and Charges</a></li>
                             )}
-                            { pathname !== '/business/business-wallet' && (
-                                <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/fees-and-charges">Fees and Charges</Link></li>
+                            { isNotBusiness && (
+                                <li className='mb-2'><a className='text-base opacity-60 hover:opacity-100' target="_blank" href="/fees-and-charges/List-of-Fees-and-Charges.pdf">Fees and Charges</a></li>
                             )}
                         </ul>
                     </div>
@@ -201,11 +211,11 @@ const Footer = () => {
                         <ul>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/legal">Legal</Link></li>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/data-protection">Data Protection</Link></li>
-                            { pathname === '/business/business-wallet' && (
-                                <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/business/limits">Limits</Link></li>
+                            { isBusiness && (
+                                <li className='mb-2'><a className='text-base opacity-60 hover:opacity-100' target="_blank" href="/limits/Business-List-of-Limits-29.7.25.pdf">Limits</a></li>
                             )}
-                            { pathname !== '/business/business-wallet' && (
-                                <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/limits">Limits</Link></li>
+                            { isNotBusiness && (
+                                <li className='mb-2'><a className='text-base opacity-60 hover:opacity-100' target="_blank" href="/limits/List-of-Limits.pdf">Limits</a></li>
                             )}
                         </ul>
                     </div>

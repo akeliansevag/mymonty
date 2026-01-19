@@ -8,6 +8,7 @@ import img2 from '@/public/accounts-section-2.webp';
 import Carousel from './Carousel';
 import Slider from './Slider';
 import DownloadApp from '../components/DownloadApp';
+import Link from 'next/link';
 
 export const metadata = {
     title: 'Accounts' + websiteName,
@@ -33,7 +34,7 @@ const page = () => {
 
     const terms = {
         termsAndConditions: false, 
-        kfs: '/KFS-Individual-eWallet-Account-30.10.25.pdf'
+        kfs: '/kfs/Individual-eWallet-Account-KFS.pdf'
     }
 
     const carouselData = {
@@ -75,10 +76,14 @@ const page = () => {
     <>
         <Banner data={data} terms={terms}/>
         <section className="bg-white text-center py-28 max-lg:py-14">
-            <div className="container flex flex-col gap-8">
-                <TextBlock buttonColor="dark" title="MULTI-CURRENCY WALLET" center={true} button={true} description="One Wallet, All Your Currencies. <br /> Get your USD, LBP, and EUR wallets instantly as soon as you complete onboarding." />
-                
-                <div className="relative">
+            <div className="container">
+                <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>MULTI-CURRENCY WALLET</h2>
+                <p className="leading-8 mt-8">One Wallet, All Your Currencies. <br /> Get your USD, LBP, and EUR wallets instantly as soon as you complete onboarding.</p>
+                <Link href="/accounts/multi-currency-wallet">
+                    <button className="mm-button mt-8 !text-white">Learn More</button>
+                </Link>
+
+                <div className="relative mt-8">
                     <Image src={img2} alt="Girls Looking at the phone" width="2120" height="982" />
                 </div>
                 

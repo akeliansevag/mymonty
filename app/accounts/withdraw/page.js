@@ -30,17 +30,24 @@ const page = () => {
 
     const terms = {
         termsAndConditions: false, 
-        kfs: 'KFS-Individual-eWallet-Account-16.7.25.pdf'
+        kfs: '/kfs/Individual-eWallet-Account-KFS.pdf'
     }
 
   return (
     <>
         <Banner data={data} terms={terms}/>
         <Branches title="Withdraw via MyMonty Branch" description="We’d love to meet you! Visit us at:" info="Our staff at the counter are always ready to support you!" />
-        <section className='max-lg:py-14 lg:py-28 bg-white'>
-            <div className='container text-center'>
-                <TextBlock title="Withdraw via Agent Partners" description="Cash out anywhere, anytime. <br /> Visit any of the <strong>1,400+ OMT locations </strong> across Lebanon. Give them your transaction ID, grab your cash, and watch your wallet balance adjust instantly." center={true} />
-                <img src='/top-up-via-agent-partners.webp' className='w-full max-lg:mt-5 lg:mt-16'/>
+
+        <section className='bg-white py-28 max-lg:py-14'>
+            <div className='container'>
+                <div className='flex items-center max-lg:gap-10 lg:gap-32 max-lg:flex-col'>
+                    <div className='w-full'>
+                        <TextBlock buttonColor="dark" button={true} title="Withdraw via Agent Partners" description="Cash out anywhere, anytime. <br /> Visit any of the <strong>1,400+ OMT locations </strong> across Lebanon. Give them your transaction ID, grab your cash, and watch your wallet balance adjust instantly." />
+                    </div>
+                    <div className='w-full'>
+                        <img src='/top-up-via-agent-partners.webp' className='max-w-[450px] lg:ml-auto w-full' alt='Forex Image'/>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -51,16 +58,13 @@ const page = () => {
                 <div className='flex flex-col gap-20'>
                     <div className='flex items-center max-lg:gap-10 lg:gap-32 max-lg:flex-col'>
                         <div className='w-full'>
-                            <TextBlock buttonColor="dark" title="Withdraw Via Partner ATMs" description="Contactless withdrawals, a little magic that puts cash in your hands. <br /> Head to your nearest Fransabank or BLC ATM, select MyMonty, follow the steps, and voilà, your money is ready. <br /> Don’t forget your phone… who would anyway? " />
+                            <TextBlock buttonColor="dark" button={true} title="Withdraw Via Partner ATMs" description="Contactless withdrawals, a little magic that puts cash in your hands. <br /> Head to your nearest Fransabank or BLC ATM, select MyMonty, follow the steps, and voilà, your money is ready. <br /> Don’t forget your phone… who would anyway? " />
                         </div>
                         <div className='w-full'>
                             <img src='/top-up-via-integrated-atms.webp' className='max-w-[400px] w-full ml-auto' alt='Forex Image'/>
                         </div>
-                        
                     </div>
-
                 </div>
-                
             </div>
         </section>       
     </>

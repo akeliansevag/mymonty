@@ -53,7 +53,12 @@ const Faqs = () => {
 
                 <div className="w-[24px] h-[24px] shrink-0 rounded-full flex items-center justify-center border-[2px] border-[#98A2B3]">
                   <span className="text-[#98A2B3] font-bold leading-none">
-                    {isOpen ? '−' : '+'}
+                    {isOpen && (
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6l-6 6z"/></svg>
+                    )}
+                    {!isOpen && (
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6z"/></svg>
+                    )}
                   </span>
                 </div>
               </button>

@@ -38,7 +38,7 @@ const Banner = () => {
 
                 <div className='container'>
                     <div className="md:absolute md:bottom-10 text-base underline text-[#2657D4]">
-                        <a className="block uppercase" href="/Teen-Standard-Prepaid-Card-7.1.26.pdf" target="_blank">Key Facts Statement (KFS)</a>
+                        <a className="block uppercase" href="/key-facts-statements">Key Facts Statement (KFS)</a>
                     </div>
                 </div>
             </section>

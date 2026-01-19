@@ -46,12 +46,12 @@ export const data = [
                         url: '/platinum-credit-card'
                     },
                     {
-                        title: 'World Elite Credit Card',
-                        url: '/world-elite-credit-card'
-                    },
-                    {
                         title: 'World Elite Prepaid Card',
                         url: '/world-elite-prepaid-card'
+                    },
+                    {
+                        title: 'World Elite Credit Card',
+                        url: '/world-elite-credit-card'
                     },
                 ]
             },

@@ -1,19 +1,25 @@
+'use client';
 import React from 'react';
-import { websiteName } from '@/app/config';
 import styles from './page.module.css';
-import SmallBanner from '../components/SmallBanner';
+import { usePathname } from 'next/navigation';
 
-export const metadata = {
-    title: 'Key Facts Statements | Transparent Banking' + websiteName,
-    description: 'Access MyMonty\'s essential key facts statements. Find transparent information about our digital banking products & services in Lebanon. View details.'
-};
+const KFS = () => {
 
-const KeyFactsStatements = () => {
+    const pathname = usePathname();
+
+    const isNotBusiness =
+        pathname !== '/business' &&
+        !pathname.startsWith('/business/');
+
+
+    const isBusiness =
+        pathname === '/business' ||
+        pathname.startsWith('/business/');
+
     return (
         <>
-            <div className={styles.terms}>
-                <SmallBanner title="Key Facts Statements" />
-                <div className='container py-10 lg:py-20 relative'>
+            <div className='container py-10 lg:py-20 relative'>
+                { isNotBusiness && (
                     <div className='flex flex-col gap-4'>
                         <a href='/kfs/Individual-eWallet-Account-KFS.pdf' target="_blank" className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                             KFS Personal eWallet Account
@@ -52,10 +58,27 @@ const KeyFactsStatements = () => {
                             KFS Teens Platinum Prepaid Card
                         </a>
                     </div>
-                </div>
+                ) }
+
+                { isBusiness && (
+                    <div className='flex flex-col gap-4'>
+                        <a href='/kfs/BUSINESS-eWALLET-05.12.25-KFS.pdf' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                            KFS Business eWallet Account
+                        </a>
+                        <a href='/kfs/Business-Platinum-Prepaid-Card-KFS.pdf' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                            KFS Platinum Prepaid Card
+                        </a>
+                        <a href='/kfs/Business-Virtual-Prepaid-Card-KFS.pdf' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                            KFS Virtual Prepaid Card
+                        </a>
+                        <a href='/kfs/.pdf' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                            KFS World Elite Prepaid Card
+                        </a>
+                    </div>
+                ) }
             </div>
         </>
     )
 }
 
-export default KeyFactsStatements;
+export default KFS;
