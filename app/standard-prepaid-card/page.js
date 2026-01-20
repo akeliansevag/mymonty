@@ -14,7 +14,7 @@ export const metadata = {
 };
 
 
-const physicalCard = () => {
+const standardCard = () => {
     const data = {
         title: 'Your Everyday Card',
         subtitle: 'Cards',
@@ -226,4 +226,4 @@ const physicalCard = () => {
     )
 }
 
-export default physicalCard;
+export default standardCard;

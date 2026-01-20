@@ -38,6 +38,10 @@ export const data = [
                         url: '/gold-prepaid-card'
                     },
                     {
+                        title: 'Standard Prepaid Card',
+                        url: '/standard-prepaid-card'
+                    },
+                    {
                         title: 'Platinum Prepaid Card',
                         url: '/platinum-prepaid-card'
                     },
