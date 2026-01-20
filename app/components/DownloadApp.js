@@ -3,11 +3,11 @@ import React from 'react';
 import { useAppContext } from '../AppContext';
 
 
-const DownloadApp = () => {
+const DownloadApp = ({ title = 'Download App' }) => {
   const { handleOpenModal } = useAppContext();
   return (
-    <button onClick={handleOpenModal} className='mm-button my-16'>
-      Download App
+    <button onClick={handleOpenModal} className='mm-button my-12 w-max mx-auto'>
+      { title }
     </button>
   )
 }

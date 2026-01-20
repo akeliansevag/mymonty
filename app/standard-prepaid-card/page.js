@@ -7,6 +7,7 @@ import banner from '@/public/standard-physical-card.webp';
 import Image from 'next/image';
 import TextBlock from '../components/TextBlock';
 import cardThatWorks from '@/public/a-card-that-works.webp';
+import DownloadApp from '../components/DownloadApp';
 
 export const metadata = {
     title: 'Standard Prepaid Card' + websiteName,
@@ -89,7 +90,7 @@ const standardCard = () => {
                             </div>
                         </div>   
                     </div>  
-                    <button className='mm-button w-max mx-auto'>Order Your Standard Card</button>
+                    <DownloadApp title='Order Your Standard Card' />
                 </div>
             </section> 
 
@@ -127,7 +128,7 @@ const standardCard = () => {
                                     Full visibility through the MyMonty app
                                 </li>
                             </ul>
-                            <button className='mm-button w-max mx-auto'>Order Your Standard Card</button>
+                            <DownloadApp title='Order Your Standard Card' />
                         </div>
                     </div>
                 </div>
@@ -142,7 +143,7 @@ const standardCard = () => {
                             <div>
                                 <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>A Card That just Works.</h2>
                                 <p className="leading-8 mt-8">Your Standard Card is linked to your MyMonty USD wallet.</p>
-                                <button className="mm-button mt-8 blue !text-white">Order Your Standard Card</button>
+                                <DownloadApp title='Order Your Standard Card' />
                             </div>
 
                             <div className="grid lg:grid-cols-3 gap-8 mt-24">
@@ -196,7 +197,7 @@ const standardCard = () => {
                 <div className='container'>
                     <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>How to Order Your Standard Card</h2>
                     <p className="leading-8 mt-8">Getting your Standard Card takes just a few taps: </p>
-                    <button className="mm-button mt-8 blue !text-white">Order Your Standard Card</button>
+                    <DownloadApp title='Order Your Standard Card' />
                     <div className='max-w-[950px] mx-auto relative mt-16'>
                         <>
                             <div className='max-lg:hidden border-t-[2px] left-1/2 -translate-x-1/2 h-[1px] absolute top-[43px] w-[80%]'></div>
