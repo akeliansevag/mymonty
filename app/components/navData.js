@@ -34,12 +34,12 @@ export const data = [
                         url: '/standard-virtual-card'
                     },
                     {
-                        title: 'Gold Prepaid Card',
-                        url: '/gold-prepaid-card'
-                    },
-                    {
                         title: 'Standard Prepaid Card',
                         url: '/standard-prepaid-card'
+                    },
+                    {
+                        title: 'Gold Prepaid Card',
+                        url: '/gold-prepaid-card'
                     },
                     {
                         title: 'Platinum Prepaid Card',
