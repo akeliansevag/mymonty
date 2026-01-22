@@ -4,6 +4,7 @@ import SectionFour from './homepage/SectionFour';
 import SectionFive from './homepage/SectionFive';
 import SectionSix from './homepage/SectionSix';
 import SectionSeven from './homepage/SectionSeven';
+import SectionEight from './homepage/SectionEight';
 import HomeBanner from './homepage/HomeBanner';
 import Head from 'next/head';
 import { websiteName } from './config';
@@ -23,10 +24,11 @@ export default function Home() {
       <HomeBanner />
       <SectionTwo />
       <SectionThree />
-      {/* <SectionFour /> */}
+      <SectionFour />
       <SectionFive />
       <SectionSix />
       <SectionSeven />
+      <SectionEight />
     </main>
   )
 }

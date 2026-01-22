@@ -1,69 +1,32 @@
 'use client';
-
-import React, { useEffect, useState } from 'react';
-import backgroundImage from '@/public/dream-home.webp';
-import Link from 'next/link';
+import React from 'react';
+import sectionImage from '@/public/section5bg.webp';
+import Image from 'next/image';
+import { useAppContext } from '@/app/AppContext';
 
 const SectionFive = () => {
-    const [offsetY, setOffsetY] = useState(0);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollY = window.scrollY;
-            const section = document.getElementById('section-five');
-            if (!section) return;
-
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
-
-            // Only trigger parallax effect when scrolling in this section's range
-            if (scrollY >= sectionTop - window.innerHeight && scrollY <= sectionTop + sectionHeight) {
-                setOffsetY((scrollY - sectionTop) * 0.1); // Adjusted for subtle movement
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
+    const { handleOpenModal } = useAppContext();
+    
     return (
         <section
-            id="section-five"
-            className="bg-white pt-14 pb-14 lg:pt-28 lg:pb-20"
+            className="relative min-h-[calc(80vh-var(--mobile-header-height))] lg:min-h-[calc(100vh-var(--mobile-header-height))] flex justify-center overflow-hidden py-14"
         >
-            {/* Content */}
-            <div className="relative z-10 text-center px-4 h-full">
-                <div className='lg:w-1/2 mx-auto'>
-                    <h2 className="uppercase text-black font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none">
-                    TURN YOUR DREAM HOME INTO REALITY
-                    </h2>
-                    <p className="leading-8 mt-8 text-black">
-                    With MyMonty's house loans, your dream of owning a home is within reach. 
-                    Get the financial foundation you need for your perfect <span className="font-bold">HOME</span>.
-                    </p>
-                    <Link href="/loans" className="mm-button mt-8 mx-auto">
-                        Learn More
-                    </Link>
-                </div>
-                <div className='container'>
-                    <div className="relative bg-black h-[500px] overflow-hidden rounded-3xl mt-12">
-                        <div
-                            className="absolute w-full h-[130%] bg-bottom z-0 will-change-transform"
-                            style={{
-                                backgroundImage: `url(${backgroundImage.src})`,
-                                transform: `translateY(${offsetY}px) scale(1.2)`,  // Parallax movement
-                                transition: 'transform 0.1s ease-out',
-                            }}
-                        ></div>
+            <img className="absolute bottom-0 left-0 w-full h-full object-cover" src='/section5bg.webp' width="" height="" />
 
-                        <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[300px]">
-                            <img src='/sectionfive.webp' alt='Section Image' width="640" height="726" />
-                        </div>
-                    </div>
+            {/* Content */}
+            <div className="pt-8 lg:pt-16 container relative z-10 text-center px-4">
+                <div className='lg:w-1/3 mx-auto'>
+                    <h2 className="uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none">
+                        prepaid Cards 
+                    </h2>
+                    <p className="leading-8 mt-8">
+                        Designed to fit your lifestyle. Euro & World Elite available. Spend in-store, online, or overseas.
+                    </p>
+                    <button onClick={handleOpenModal} className='mm-button mt-8'>Find Your Card</button>
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
 export default SectionFive;
