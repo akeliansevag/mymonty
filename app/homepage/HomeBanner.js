@@ -32,7 +32,7 @@ const HomeBanner = () => {
                     loop
                     muted
                     playsInline
-                    poster="/banner-poster.webp"
+                    poster="/home-banner-new.webp"
                 >
                     <source src="/home-banner-video.mp4" type="video/mp4" />
                     <Image quality={100} sizes='100vw' priority placeholder='blur' alt='Mymonty App' src={banner} className='custom-object-position md:object-center object-cover -z-9 w-full h-full' width="3456" height="1864" />

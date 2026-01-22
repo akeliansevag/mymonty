@@ -2,42 +2,42 @@
     <rect width="494" height="626" fill="url(#pattern0_10856_22551)"/>
     <rect x="79" y="280" width="226" height="77" fill="url(#pattern1_10856_22551)"/>
     <!-- BACKGROUND BAR -->
-<rect
-  x="81"
-  y="332"
-  width="221"
-  height="10"
-  r5="8"
-  fill="#1f1f1f"
-/>
+    <rect
+        x="81"
+        y="332"
+        width="221"
+        height="10"
+        r5="8"
+        fill="#1f1f1f"
+    />
 
-<defs>
-  <clipPath id="barClip">
-    <rect x="0" y="0" width="221" height="10" rx="5" />
-  </clipPath>
-</defs>
+    <defs>
+        <clipPath id="barClip">
+            <rect x="0" y="0" width="221" height="10" rx="5" />
+        </clipPath>
+    </defs>
 
-<g transform="translate(81 332)">
-  <g clip-path="url(#barClip)">
-    <g transform="scale(0 1)">
-      <animateTransform
-        attributeName="transform"
-        type="scale"
-        from="0 1"
-        to="1 1"
-        dur="0.8s"
-        begin="0s"
-        fill="freeze"
-      />
+    <g transform="translate(81 332)">
+        <g clip-path="url(#barClip)">
+            <g transform="scale(0 1)">
+            <animateTransform
+                attributeName="transform"
+                type="scale"
+                from="0 1"
+                to="1 1"
+                dur="0.8s"
+                begin="0s"
+                fill="freeze"
+            />
 
-      <rect x="0" y="0" width="88.4" height="10" fill="#F5C542" />
-      <rect x="88.4" y="0" width="33.2" height="10" fill="#2EC4B6" />
-      <rect x="121.6" y="0" width="22.1" height="10" fill="#9B5DE5" />
-      <rect x="143.7" y="0" width="44.2" height="10" fill="#EF476F" />
-      <rect x="187.9" y="0" width="33.1" height="10" fill="#FFD6A5" />
+            <rect x="0" y="0" width="88.4" height="10" fill="#F5C542" />
+            <rect x="88.4" y="0" width="33.2" height="10" fill="#2EC4B6" />
+            <rect x="121.6" y="0" width="22.1" height="10" fill="#9B5DE5" />
+            <rect x="143.7" y="0" width="44.2" height="10" fill="#EF476F" />
+            <rect x="187.9" y="0" width="33.1" height="10" fill="#FFD6A5" />
+            </g>
+        </g>
     </g>
-  </g>
-</g>
 
     <defs>
     <pattern id="pattern0_10856_22551" patternContentUnits="objectBoundingBox" width="1" height="1">
