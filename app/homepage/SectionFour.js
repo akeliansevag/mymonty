@@ -11,7 +11,7 @@ const SectionFour = () => {
 
     return (
         <section
-            className="relative min-h-[calc(80vh-var(--mobile-header-height))] lg:min-h-[calc(100vh-var(--mobile-header-height))] flex justify-center text-white overflow-hidden py-14 lg:py-28"
+            className="relative min-h-[calc(80vh-var(--mobile-header-height))] lg:min-h-[calc(120vh-var(--mobile-header-height))] flex justify-center text-white overflow-hidden py-14 lg:py-28"
         >
             <video
                 className="absolute bottom-0 left-0 w-full h-full object-cover"
@@ -24,7 +24,7 @@ const SectionFour = () => {
                 <source src="/section4video.mp4" type="video/mp4" />
             </video>
             {/* Content */}
-            <div className="pt-8 lg:pt-16 container relative z-10 text-center px-4">
+            <div className="container relative z-10 text-center px-4">
                 <div className='lg:w-1/2 mx-auto'>
                     <h2 className="uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none">
                         Virtual Cards

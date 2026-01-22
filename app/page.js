@@ -22,8 +22,8 @@ export default function Home() {
         <link rel="canonical" href="https://mymonty.com.lb/" />
       </Head>
       <HomeBanner />
-      <SectionTwo />
       <SectionThree />
+      <SectionTwo />
       <SectionFour />
       <SectionFive />
       <SectionSix />

@@ -39,7 +39,7 @@ const HomeBanner = () => {
                 </video>
             </div>
 
-            <div className='flex-1 flex-col lg:flex-row container flex gap-20'>
+            <div className='flex-1 flex-col lg:flex-row container flex gap-10'>
                 <div className='flex-1 self-center sm:-mt-16'>
                     <h1 className='flex flex-col font-black text-[42px]  sm:text-5xl md:text-6xl lg:text-[5.4rem] xl:text-[5rem] max-lg:mt-24 mt-6 leading-none uppercase'>
                         <span>YOUR
