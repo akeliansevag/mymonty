@@ -1,12 +1,28 @@
 'use client';
+import { useEffect, useState } from 'react';
 import React from 'react';
 import Image from 'next/image';
 import banner from '@/public/home-banner-new.webp';
-import bannerM from '@/public/mymonty-app1.webp';
+import bannerM from '@/public/mymonty-app1.svg';
 import { useAppContext } from '@/app/AppContext';
 
 const HomeBanner = () => {
     const { handleOpenModal } = useAppContext();
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        // trigger animation after mount
+        requestAnimationFrame(() => setAnimate(true));
+    }, []);
+    
+    const expenses = [
+        { color: '#F5C542', percent: 40 },
+        { color: '#2EC4B6', percent: 15 },
+        { color: '#9B5DE5', percent: 10 },
+        { color: '#EF476F', percent: 20 },
+        { color: '#FFD6A5', percent: 15 },
+    ];
+
     return (
         <section className='flex flex-col relative min-h-[100dvh] pt-[var(--header-height)] overflow-hidden'>
             <div className='absolute w-full h-full top-0 left-0 -z-10 bg-[#d8f1fb]'>
@@ -47,7 +63,13 @@ const HomeBanner = () => {
                     <button onClick={handleOpenModal} className='mm-button mt-8'>Download MyMonty</button>
                 </div>
                 <div className='flex-1 flex items-end'>
-                    <Image alt="M Logo" src={bannerM} className='w-full sm:pr-20 -mb-[5px]' width="956" height="638" />
+                    {/* <Image alt="M Logo" src={bannerM} className='w-full sm:pr-20 -mb-[5px]' width="956" height="638" /> */}
+
+                    
+                    <object
+                        data="/mymonty-app1.svg"
+                        type="image/svg+xml"
+                    ></object>
                 </div>
             </div>
         </section>
