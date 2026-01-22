@@ -1,12 +1,7 @@
 import React from "react";
 import { websiteName } from "@/app/config";
 import Banner from "../components/Banner";
-import Image from 'next/image';
 import whoWeAre from '@/public/cultures.webp';
-import diversity from '@/public/diversity-and-inclusion.webp';
-import innovation from '@/public/personal/innovation.webp';
-import dedication from '@/public/dedication.webp';
-import integrity from '@/public/integrity.webp';
 
 export const metadata = {
   title: "Who We Are" + websiteName,
