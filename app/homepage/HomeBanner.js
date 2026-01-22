@@ -40,7 +40,7 @@ const HomeBanner = () => {
             </div>
 
             <div className='flex-1 flex-col lg:flex-row container flex gap-10'>
-                <div className='flex-1 self-center sm:-mt-16'>
+                <div className='w-[58%] self-center sm:-mt-16'>
                     <h1 className='flex flex-col font-black text-[42px]  sm:text-5xl md:text-6xl lg:text-[5.4rem] xl:text-[5rem] max-lg:mt-24 mt-6 leading-none uppercase'>
                         <span>YOUR
                             <svg className='w-[100px] sm:w-[150px] md:w-[200px] lg:w-[200px] xl:w-[250px] ml-2 sm:ml-3 md:ml-4 lg:ml-5 xl:ml-6 -mt-6 inline' viewBox="0 0 240 115" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -62,13 +62,11 @@ const HomeBanner = () => {
                     <p className='text-xl mt-8'>Transfer Money, Access Credit Cards, Salary Advances, Loans & more. </p>
                     <button onClick={handleOpenModal} className='mm-button mt-8'>Download MyMonty</button>
                 </div>
-                <div className='flex-1 flex items-end'>
-                    {/* <Image alt="M Logo" src={bannerM} className='w-full sm:pr-20 -mb-[5px]' width="956" height="638" /> */}
-
-                    
+                <div className='w-[42%] flex items-end'>
                     <object
                         data="/mymonty-app1.svg"
                         type="image/svg+xml"
+                        className='w-full'
                     ></object>
                 </div>
             </div>
