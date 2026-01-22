@@ -30,11 +30,12 @@
                 fill="freeze"
             />
 
-            <rect x="0" y="0" width="88.4" height="10" fill="#F5C542" />
-            <rect x="88.4" y="0" width="33.2" height="10" fill="#2EC4B6" />
-            <rect x="121.6" y="0" width="22.1" height="10" fill="#9B5DE5" />
-            <rect x="143.7" y="0" width="44.2" height="10" fill="#EF476F" />
-            <rect x="187.9" y="0" width="33.1" height="10" fill="#FFD6A5" />
+            <rect x="0" y="0" width="88.4" height="10" fill="#FFBA00" />
+            <rect x="88.4" y="0" width="33.2" height="10" fill="#00A693" />
+            <rect x="121.6" y="0" width="22.1" height="10" fill="#93264D" />
+            <rect x="143.7" y="0" width="44.2" height="10" fill="#DC3545" />
+            <rect x="187.9" y="0" width="16.55" height="10" fill="#4169E1" />
+            <rect x="204.45" y="0" width="16.55" height="10" fill="#F9A190" />
             </g>
         </g>
     </g>
