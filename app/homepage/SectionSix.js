@@ -95,7 +95,7 @@ const SectionSix = () => {
                     <img
                         src={cardMedia[selectedCard].image}
                         alt="Credit Card"
-                        className="absolute top-1/2 right-0 lg:right-[100px] -translate-y-1/2 w-2/5 transition-all duration-300"
+                        className="absolute top-1/2 right-0 lg:right-[100px] -translate-y-1/2 w-[45%] transition-all duration-300"
                     />
 
                     {/* Buttons */}
