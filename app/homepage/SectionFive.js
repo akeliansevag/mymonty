@@ -1,7 +1,5 @@
 'use client';
 import React from 'react';
-import sectionImage from '@/public/section5bg.webp';
-import Image from 'next/image';
 import { useAppContext } from '@/app/AppContext';
 
 const SectionFive = () => {
