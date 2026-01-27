@@ -62,7 +62,7 @@ const HomeBanner = () => {
                     <p className='text-xl mt-8'>Transfer Money, Access Credit Cards, Salary Advances, Loans & more. </p>
                     <button onClick={handleOpenModal} className='mm-button mt-8'>Download MyMonty</button>
                 </div>
-                <div className='w-full lg:w-[42%] lg:w-1/2 flex items-end'>
+                <div className='w-full lg:w-[42%] xl:w-1/2  flex items-end'>
                     <object
                         data="/mymonty-app1.svg"
                         type="image/svg+xml"
