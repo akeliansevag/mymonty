@@ -1,6 +1,6 @@
 'use client'
 import { useAppContext } from '../../AppContext';
-import bannerImage from '@/public/teen-card-banner.webp';
+import bannerImage from '@/public/teens-cards-banner.webp';
 import Image from 'next/image';
 import QrCode from '@/app/components/QrCode';
 
