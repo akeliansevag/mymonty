@@ -28,7 +28,7 @@ const Banner = () => {
                             </div>
                         </div>
                         <div className='max-lg:w-full lg:w-1/3'>
-                            <div className='w-full rounded-3xl overflow-hidden'>
+                            <div className='w-full rounded-3xl overflow-hidden lg:mt-28'>
                                 <Image alt='Salary' placeholder='blur' quality={100} sizes='100vw' src={bannerImage} className='w-full' priority width='1000' height='1266' />
                             </div>
                         </div>
