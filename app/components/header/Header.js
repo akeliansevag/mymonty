@@ -104,7 +104,7 @@ const Header = () => {
         };
       }, [isScrollingDown]); // This effect runs whenever isScrollingDown changes
 
-    let headerClasses = 'flex items-center fixed top-0 left-0 z-10 w-full z-50 transition-transform  h-[var(--mobile-header-height)] md:h-[var(--header-height)] ' + styles.header;
+    let headerClasses = 'flex items-center fixed top-0 left-0 z-10 w-full z-50 transition-transform  h-[var(--mobile-header-height)] lg:h-[var(--header-height)] ' + styles.header;
     headerClasses += scrolling ? ' ' + styles.scrolling + ' scrolling' : '';
     headerClasses += menuOpen || mobileMenuToggle ? ' ' + styles.menuOpen + ' menu-open' : '';
     headerClasses += isScrollingDown ? ' -translate-y-full' : ' -translate-y-0';
@@ -154,10 +154,10 @@ const Header = () => {
                     </svg>
                 </div>
                 <div className='flex-1 flex justify-end gap-3 items-center'>
-                    <div className='hidden md:block'>
+                    <div className='hidden lg:block'>
                         <Nav menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
                     </div>
-                    <div className='hidden md:block'>
+                    <div className='hidden lg:block'>
 
                         {pathname !== '/business' && pathname !== '/business/business-wallet' && pathname !== '/business/salary-advance' && pathname !== '/business/salary-domiciliation' && (
                             <button onClick={handleOpenModal} className='mm-button whitespace-nowrap'>
@@ -173,7 +173,7 @@ const Header = () => {
 
                     </div>
 
-                    <div className='md:hidden mobile-burger cursor-pointer' onClick={handleMobileMenuToggle}>
+                    <div className='lg:hidden mobile-burger cursor-pointer' onClick={handleMobileMenuToggle}>
                         {!mobileMenuToggle && (
                             <div>
                                 <div className='w-[20px] h-[2px] bg-black mb-1'></div>
@@ -196,7 +196,7 @@ const Header = () => {
                     <a href="https://mymonty.com/en-EU" target="_blank" className='absolute top-full left-0 p-5 ml-4 w-40 bg-white text-base font-bold rounded-b-[20px] leading-none'>Europe</a>
                 )}
             </div>
-            <div className='md:hidden'>
+            <div className='lg:hidden'>
                 <MobileNav pathname={pathname} handleMobileMenuToggle={handleMobileMenuToggle} open={mobileMenuToggle} scrolling={scrolling} />
             </div>
         </header>
