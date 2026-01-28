@@ -7,7 +7,7 @@ const SectionFive = () => {
     
     return (
         <section className="relative overflow-hidden">
-            <img className="w-full max-lg:aspect-[3/5] object-cover" src='/section5bg.webp' width="" height="" />
+            <img className="w-full h-screen object-cover" src='/section5bg.webp' width="" height="" />
 
             {/* Content */}
             <div className="container absolute z-10 left-1/2 top-16 -translate-x-1/2 text-center px-4">

@@ -16,12 +16,12 @@ const SectionEight = () => {
                         <p className='leading-8 mt-8'>Get instant access to our dedicated support team directly from the web. Whether you have a question, need assistance, or suspect unusual activity. We’re always here to help.</p>
                     </div>
                     <div className='w-full lg:w-1/2 flex flex-col gap-4'>
-                        <div className='flex items-center gap-8 bg-[#20242A] rounded-3xl py-8 px-8 lg:px-14'>
-                            <img className='' src='/phone-black.svg' />
+                        <div className='flex items-center gap-4 lg:gap-8 bg-[#20242A] rounded-3xl py-8 px-8 lg:px-14'>
+                            <img className='max-lg:w-1/3' src='/phone-black.svg' />
                             <p>Call us on <br /><a className="text-2xl lg:text-5xl font-bold" href='callto:01734020'>+961 1 734020</a></p>
                         </div>
-                        <div className='flex items-center gap-8 bg-[#20242A] rounded-3xl py-8 px-8 lg:px-14'>
-                            <img className='' src='/message-black.svg' />
+                        <div className='flex items-center gap-4 lg:gap-8 bg-[#20242A] rounded-3xl py-8 px-8 lg:px-14'>
+                            <img className='max-lg:w-1/3' src='/message-black.svg' />
                             <p>Chat on Whatsapp <br /><a className="text-2xl lg:text-5xl font-bold" href='https://wa.me/71871871'>+961 71 871871</a></p>
                         </div>
                     </div>
