@@ -193,12 +193,7 @@ const Footer = () => {
                     <div>
                         <ul>
                             <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/terms-conditions">Website Terms and Conditions</Link></li>
-                            { isBusiness && (
-                                <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/business/key-facts-statements">Key Facts Statements</Link></li>
-                            )}
-                            { isNotBusiness && (
-                                <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/key-facts-statements">Key Facts Statements</Link></li>
-                            )}
+                            <li className='mb-2'><Link className='text-base opacity-60 hover:opacity-100' href="/key-facts-statements">Key Facts Statements</Link></li>
                             { isBusiness && (
                                 <li className='mb-2'><a className='text-base opacity-60 hover:opacity-100' target="_blank" href="/fees-and-charges/Business-List-of-Fees-and-Charges-29.7.25.pdf">Fees and Charges</a></li>
                             )}
