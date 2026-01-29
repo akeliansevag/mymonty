@@ -57,17 +57,17 @@ export default function BeforeAfterSlider({
   return (
     <div
       ref={containerRef}
-      className={`relative w-full overflow-hidden select-none touch-none ${className}`}
+      className={`relative w-full bg-black overflow-hidden select-none touch-none ${className}`}
       style={{ height }}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       role="group"
       aria-label={alt}
     >
-      {/* <div className="container z-10 relative text-center max-md:mt-[50px] md:mt-[100px]">
+      <div className="container z-10 absolute bottom-16 left-1/2 -translate-x-1/2 text-center max-md:mt-[50px] md:mt-[100px]">
         <h2 className="text-center text-white section-title">IF YOU CAN’T WAIT FOR YOUR “AFTER”</h2>
         <button onClick={handleOpenModal} className="mm-button white mt-7">Download MyMonty</button>
-      </div> */}
+      </div>
       {/* AFTER (base) */}
       <img
         src={afterSrc}

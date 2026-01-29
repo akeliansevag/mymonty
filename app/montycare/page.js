@@ -1,6 +1,6 @@
 import React from 'react';
 import { websiteName } from '@/app/config';
-import banner from '@/public/montycare-banner.webp';
+import banner from '@/public/montycare-banner-2.webp';
 import Banner from '../components/Banner';
 import SectionOne from './SectionOne';
 import SectionTwo from './SectionTwo';
@@ -19,8 +19,8 @@ export const metadata = {
 
 
 const data = {
-  title: 'Because <span className="text-[#E2282B]">Care</span> Cannot Wait.',
-  subtitle: 'Loans',
+  title: 'Because <span class="text-[#E2282B]">Care</span> Cannot Wait.',
+  subtitle: 'Cards',
   desc: 'Your gateway to simple, flexible, and affordable wellness financing; designed for both users and partner clinics.',
   image: {
     inGrid: true,
@@ -43,11 +43,11 @@ const page = () => {
       <SectionFive />
       
       <BeforeAfterSlider
-        beforeSrc="/before.webp"
-        afterSrc="/after.webp"
+        beforeSrc="/before-3.webp"
+        afterSrc="/after-3.webp"
         className='!h-[80vh]'
       /> 
-      <Contact />
+      {/* <Contact /> */}
       <section className='bg-[#f7f7f7] max-lg:py-14 lg:py-28'>
         <div className='container'>
           <FaqTwoColumns />

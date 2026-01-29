@@ -40,7 +40,7 @@ const SectionOne = () => {
 
                         </div>
                     
-                        <h3 className='uppercase font-black mt-3 text-balance'>up to usd 5,000 credit limit</h3>
+                        <h3 className='uppercase font-black mt-3 text-balance'>REVolving credit limit</h3>
                     </div>
                     
                 </div>
@@ -51,12 +51,13 @@ const SectionOne = () => {
                         <div className='inline-block mx-auto'>
                             <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="34" cy="34" r="34" fill="white"/>
-                                <path d="M20.6667 47.333H47.3334" stroke="#091111" strokeWidth="4" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                                <path d="M40.6667 20.667H27.3333C23.3333 20.667 22 23.0537 22 26.0003V47.3337H46V26.0003C46 23.0537 44.6667 20.667 40.6667 20.667Z" stroke="#091111" strokeWidth="3" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                                <path d="M36.7466 38H31.2399C30.5599 38 29.9866 38.56 29.9866 39.2533V47.3333H37.9866V39.2533C37.9999 38.56 37.4399 38 36.7466 38Z" stroke="#091111" strokeWidth="3" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                                <path d="M34 26V32.6667" stroke="#091111" strokeWidth="3" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                                <path d="M30.6667 29.333H37.3334" stroke="#091111" strokeWidth="3" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
+                                <path d="M30.0013 43.3337C26.2561 43.3337 24.3834 43.3337 23.0383 42.4349C22.4559 42.0457 21.9559 41.5457 21.5668 40.9634C20.668 39.6182 20.668 37.7455 20.668 34.0003C20.668 30.2551 20.668 28.3825 21.5668 27.0373C21.9559 26.4549 22.4559 25.9549 23.0383 25.5658C24.3834 24.667 26.2561 24.667 30.0013 24.667H38.0013C41.7465 24.667 43.6192 24.667 44.9644 25.5658C45.5466 25.9549 46.0466 26.4549 46.4358 27.0373C47.3346 28.3825 47.3346 30.2551 47.3346 34.0003C47.3346 37.7455 47.3346 39.6182 46.4358 40.9634C46.0466 41.5457 45.5466 42.0457 44.9644 42.4349C43.6192 43.3337 41.7465 43.3337 38.0013 43.3337H30.0013Z" stroke="#091111" stroke-width="3"/>
+                                <path d="M30 30C27.7909 30 26 31.7908 26 34C26 36.2092 27.7909 38 30 38" stroke="#091111" stroke-width="3"/>
+                                <path d="M38 30C40.2092 30 42 31.7908 42 34C42 36.2092 40.2092 38 38 38" stroke="#091111" stroke-width="3"/>
+                                <path d="M30 24.667V42.667" stroke="#091111" stroke-width="3" stroke-linecap="round"/>
+                                <path d="M38 24.667V42.667" stroke="#091111" stroke-width="3" stroke-linecap="round"/>
                             </svg>
+
                         </div>
                     
                         <h3 className='uppercase font-black mt-3 text-balance'>1% Cashback on eligible transactions</h3>
