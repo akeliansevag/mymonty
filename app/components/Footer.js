@@ -109,7 +109,7 @@ const Footer = () => {
             </div>
 
             <div className='container pt-16 pb-10 lg:pb-10'>
-                <div className="nav grid grid-cols-1 flex-wrap flex-col md:grid-cols-6 justify-between">
+                <div className="nav grid grid-cols-1 flex-wrap flex-col md:grid-cols-7 justify-between gap-2">
                     {data && data[0].children?.map((item, index) => {
                         const isOpen = openIndexes.includes(index);
                         let toggleClasses = isOpen ? 'max-md:max-h-96' : 'max-md:max-h-0'

@@ -26,7 +26,7 @@ export const data = [
                 ]
             },
             {
-                title: 'Cards',
+                title: 'Prepaid Cards',
                 url: '/cards',
                 children: [
                     {
@@ -46,12 +46,18 @@ export const data = [
                         url: '/platinum-prepaid-card'
                     },
                     {
-                        title: 'Platinum Credit Card',
-                        url: '/platinum-credit-card'
-                    },
-                    {
                         title: 'World Elite Prepaid Card',
                         url: '/world-elite-prepaid-card'
+                    },
+                ]
+            },
+            {
+                title: 'Credit Cards',
+                url: '/cards',
+                children: [
+                    {
+                        title: 'Platinum Credit Card',
+                        url: '/platinum-credit-card'
                     },
                     {
                         title: 'World Elite Credit Card',
