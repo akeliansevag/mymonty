@@ -14,7 +14,7 @@ const SectionThree = () => {
                     <div className='bg-[#00000040] w-full h-full absolute top-0 left-0'></div>
                     <div className='flex justify-center flex-col z-10'>
                         <h3 className='uppercase font-black mt-3 text-balance text-center'>MYMONTY USER?</h3>
-                        <button className='mm-button red mt-3'>Request your card</button>
+                        <button onClick={handleOpenModal} className='mm-button red mt-3'>Request your card</button>
                     </div>
                 </div>
 
