@@ -14,8 +14,7 @@ const Branches = ({title,description,info}) => {
                     <div className='bg-[#00000060] absolute top-0 left-0 w-full h-full'></div>
                     <div className='relative z-10 text-center text-white'>
                         <h3 className='font-black text-3xl mb-4 uppercase'>GEFINOR, HAMRA</h3>
-                        <h4 className='text-bold text-lg'>9:30 AM to 4 PM,</h4>
-                        <h4 className='text-bold text-lg'>Monday to Friday</h4>
+                        <h4 className='text-bold text-lg'>Available 24/7</h4>
                         {/* <a href='' className='mm-button white mt-5'>Learn More</a> */}
                     </div>
                 </div>

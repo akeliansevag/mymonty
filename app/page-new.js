@@ -1,10 +1,11 @@
-import SectionTwo from './homepage/SectionTwo';
-import SectionThree from './homepage/SectionThree';
-import SectionFour from './homepage/SectionFour';
-import SectionFive from './homepage/SectionFive';
-import SectionSix from './homepage/SectionSix';
-import SectionSeven from './homepage/SectionSeven';
-import HomeBanner from './homepage/HomeBanner';
+import SectionTwo from './homepage-new/SectionTwo';
+import SectionThree from './homepage-new/SectionThree';
+import SectionFour from './homepage-new/SectionFour';
+import SectionFive from './homepage-new/SectionFive';
+import SectionSix from './homepage-new/SectionSix';
+import SectionSeven from './homepage-new/SectionSeven';
+import SectionEight from './homepage-new/SectionEight';
+import HomeBanner from './homepage-new/HomeBanner';
 import Head from 'next/head';
 import { websiteName } from './config';
 
@@ -21,12 +22,13 @@ export default function Home() {
         <link rel="canonical" href="https://mymonty.com.lb/" />
       </Head>
       <HomeBanner />
-      <SectionTwo />
       <SectionThree />
-      {/* <SectionFour /> */}
+      <SectionTwo />
+      <SectionFour />
       <SectionFive />
       <SectionSix />
       <SectionSeven />
+      <SectionEight />
     </main>
   )
 }
