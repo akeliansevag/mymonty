@@ -31,7 +31,7 @@ const SectionSix = () => {
                 <div className="lg:w-1/2 mx-auto">
                     <p className="leading-8 mt-8">
                         Freedom to spend. Power to choose. <br />
-                        Issued in Eur and USD.
+                        Issued in EUR and USD.
                     </p>
 
                     <button

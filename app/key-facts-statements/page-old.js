@@ -15,7 +15,7 @@ const KeyFactsStatements = () => {
                 <SmallBanner title="Key Facts Statements" />
                 <div className='container py-10 lg:py-20 relative'>
                     <div className='flex flex-col gap-4'>
-                        <a href='/kfs/Individual-eWallet-Account-KFS.pdf' target="_blank" className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                        <a href='/kfs/Individual-eWallet-Account-27.1.26-KFS.pdf' target="_blank" className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                             KFS Personal eWallet Account
                         </a>
                         <a href='/kfs/Standard-Prepaid-Card-KFS.pdf' target="_blank" className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>

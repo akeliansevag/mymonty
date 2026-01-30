@@ -21,7 +21,7 @@ const KFS = () => {
             <div className='container py-10 lg:py-20 relative'>
                 { isNotBusiness && (
                     <div className='flex flex-col gap-4'>
-                        <a href='/kfs/Individual-eWallet-Account-KFS.pdf' target="_blank" className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                        <a href='/kfs/Individual-eWallet-Account-27.1.26-KFS.pdf' target="_blank" className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                             KFS Personal eWallet Account
                         </a>
                         <a href='/kfs/Standard-Prepaid-Card-KFS.pdf' target="_blank" className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
@@ -62,7 +62,7 @@ const KFS = () => {
 
                 { isBusiness && (
                     <div className='flex flex-col gap-4'>
-                        <a href='/kfs/BUSINESS-eWALLET-05.12.25-KFS.pdf' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
+                        <a href='/kfs/BUSINESS-eWALLET-26.01.26-KFS.pdf' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>
                             KFS Business eWallet Account
                         </a>
                         <a href='/kfs/Business-Platinum-Prepaid-Card-KFS.pdf' className='p-7 bg-gray-100 rounded-xl w-full block text-xl'>

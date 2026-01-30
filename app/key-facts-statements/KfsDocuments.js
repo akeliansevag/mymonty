@@ -8,7 +8,7 @@ const TABS = ["Personal", "Teens", "Business"];
 
 const DATA = {
     Personal: [
-        { title: "KFS Personal eWallet Account", pdf: "/kfs/Individual-eWallet-Account-KFS.pdf" },
+        { title: "KFS Personal eWallet Account", pdf: "/kfs/Individual-eWallet-Account-27.1.26-KFS.pdf" },
         { title: "KFS Standard Prepaid Card", pdf: "/kfs/Standard-Prepaid-Card-KFS.pdf" },
         { title: "KFS Gold Prepaid Card", pdf: "/kfs/Gold-Prepaid-Card-KFS.pdf" },
         { title: "KFS Platinum Prepaid Card", pdf: "/kfs/Platinum-Prepaid-Card-KFS.pdf" },
@@ -24,7 +24,7 @@ const DATA = {
         { title: "KFS Teens Platinum Prepaid Card", pdf: "/kfs/Under-18-Platinum-Card.pdf" },
     ],
     Business: [
-        { title: "KFS Business eWallet Account", pdf: "/kfs/BUSINESS-eWALLET-05.12.25-KFS.pdf" },
+        { title: "KFS Business eWallet Account", pdf: "/kfs/BUSINESS-eWALLET-26.01.26-KFS.pdf" },
         { title: "KFS Platinum Prepaid Card", pdf: "/kfs/Business-Platinum-Prepaid-Card-KFS.pdf" },
         { title: "KFS Virtual Prepaid Card", pdf: "/kfs/Business-Virtual-Prepaid-Card-KFS.pdf" },
         { title: "KFS World Elite Prepaid Card", pdf: null },
