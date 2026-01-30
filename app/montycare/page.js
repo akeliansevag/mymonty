@@ -1,7 +1,7 @@
 import React from 'react';
 import { websiteName } from '@/app/config';
-import banner from '@/public/montycare-banner-2.webp';
-import Banner from '../components/Banner';
+import banner from '@/public/montycare-banner-3.webp';
+import Banner from './Banner';
 import SectionOne from './SectionOne';
 import SectionTwo from './SectionTwo';
 import SectionThree from './SectionThree';
@@ -35,7 +35,7 @@ const data = {
 const page = () => {
   return (
     <div>
-      <Banner data={data} />
+      <Banner />
       <SectionOne />
       <SectionTwo />
       <SectionThree />
@@ -43,9 +43,9 @@ const page = () => {
       <SectionFive />
       
       <BeforeAfterSlider
-        beforeSrc="/before-3.webp"
-        afterSrc="/after-3.webp"
-        className='!h-[80vh]'
+        beforeSrc="/before-5.webp"
+        afterSrc="/after-5.webp"
+        className='!h-[85vh]'
       /> 
       {/* <Contact /> */}
       <section className='bg-[#f7f7f7] max-lg:py-14 lg:py-28'>
