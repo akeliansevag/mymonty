@@ -119,7 +119,7 @@ const page = () => {
                 <div className='flex flex-col gap-20'>
                     <div className='flex items-center max-lg:gap-10 lg:gap-40 max-lg:flex-col'>
                         <div className='w-full'>
-                            <TextBlock buttonColor="dark" button={true} title="Load Your Cards in a Tap" description="Top up your USD cards directly from your wallets. Funds are added in seconds, so you can spend online or in-store without worry." />
+                            <TextBlock buttonColor="dark" button={true} title="Load Your Cards in a Tap" description="Top up your USD and EUR cards directly from your wallets. Funds are added in seconds, so you can spend online or in-store without worry." />
                         </div>
                         <div className='w-full'>
                             <img src='/load-your-cards.webp' className='w-full max-w-[450px] ml-auto' alt='Forex Image'/>
