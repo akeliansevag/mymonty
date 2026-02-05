@@ -32,7 +32,7 @@ const SectionFour = () => {
                     <p className="leading-8 mt-8">
                         Pay securely online, anytime. Instant & free. <br /> Perfect for Netflix, Amazon or any online payment.
                     </p>
-                    <button onClick={handleOpenModal} className='mm-button white mt-8'>Download App</button>
+                    <a href="/standard-virtual-card" className="mm-button whiter mt-8">Find Your Card</a>
                 </div>
             </div>
         </section>
