@@ -27,7 +27,7 @@ export const data = [
             },
             {
                 title: 'Prepaid Cards',
-                url: '/cards',
+                url: '/prepaid-cards',
                 children: [
                     {
                         title: 'Standard Virtual Card',
@@ -53,7 +53,7 @@ export const data = [
             },
             {
                 title: 'Credit Cards',
-                url: '/cards',
+                url: '/credit-cards',
                 children: [
                     {
                         title: 'Platinum Credit Card',

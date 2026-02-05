@@ -2,17 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import { websiteName } from '@/app/config';
 import TextBlock from '../components/TextBlock';
-import GoldCard from '@/public/gold-card.webp';
 
 import PlatinumCardRed from '@/public/platinum-card-red.webp';
 import PlatinumCardWhiteLuckyEye from '@/public/platinum-card-white-lucky-eye.webp';
 import PlatinumCardGreen from '@/public/platinum-card-green.webp';
 
-import PhysicalPlatinumCardBlack from '@/public/physical-platinum-card-black.webp';
-import PhysicalPlatinumCardBlueLuckyEye from '@/public/physical-platinum-card-blue-lucky-eye.webp';
-import PhysicalPlatinumCreditCardBlue from '@/public/physical-platinum-credit-card-blue.webp';
-
-import WorldEliteCardBlack from '@/public/world-elite-card-black.webp';
 import WorldEliteCardCredit from '@/public/world-elite-card-credit.webp';
 
 import EuroCardGreen from '@/public/euro-card-green.webp';
@@ -26,17 +20,6 @@ export const metadata = {
 
 // Combined card data
 const allCards = [
-    {
-        sectionTitle: 'Mastercard Gold prepaid card',
-        cards: [
-            {
-                title: 'Gold Prepaid Card',
-                color: 'Gold',
-                image: GoldCard,
-                link: '/gold-prepaid-card',
-            },
-        ],
-    },
     {
         sectionTitle: 'Mastercard Platinum credit card',
         cards: [
@@ -67,40 +50,6 @@ const allCards = [
         ],
     },
     {
-        sectionTitle: 'Mastercard Platinum Prepaid Card',
-        cards: [
-            {
-                title: 'Platinum Prepaid Card',
-                color: 'Black',
-                image: PhysicalPlatinumCardBlack,
-                link: '/physical-platinum-mastercard',
-            },
-            {
-                title: 'Platinum Prepaid Card',
-                color: 'Lucky Eye',
-                image: PhysicalPlatinumCardBlueLuckyEye,
-                link: '/physical-platinum-mastercard',
-            },
-            {
-                title: 'Euro Platinum Prepaid Card',
-                color: 'Blue',
-                image: PhysicalPlatinumCreditCardBlue,
-                link: '/physical-platinum-mastercard#euro-platinum',
-            },
-        ]
-    },
-    {
-        sectionTitle: 'Mastercard World Elite Prepaid Card',
-        cards: [
-            {
-                title: 'World Elite Prepaid Card',
-                color: 'Black',
-                image: WorldEliteCardBlack,
-                link: '/world-elite-prepaid-card',
-            },
-        ],
-    },
-    {
         sectionTitle: 'Mastercard World Elite Credit Card',
         cards: [
             {
@@ -117,9 +66,9 @@ const allCards = [
 const Cards = () => {
     return (
         <>
-            <section className='bg-[#F7F7F7] pt-14 pb-14 lg:mt-28 lg:pt-20 lg:pb-20'> 
-                <div className='container text-center'>
-                    <h2>MyMonty's Cards</h2>
+            <section className='bg-[#F7F7F7]'> 
+                <div className='container text-center pt-14 pb-14 lg:pt-28 lg:pb-28'>
+                    <h2>MyMonty's Credit Cards</h2>
                     <h1 className="font-black text-xl sm:text-2xl md:text-4xl fhd:text-5xl leading-none uppercase mt-4">All You Need to Know About Your Card</h1>
 
                     {allCards.map((section, index) => (

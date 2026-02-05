@@ -18,7 +18,7 @@ const SectionFive = () => {
                     <p className="leading-8 mt-8">
                         Designed to fit your lifestyle. Euro & World Elite available. Spend in-store, online, or overseas.
                     </p>
-                    <button onClick={handleOpenModal} className='mm-button mt-8'>Find Your Card</button>
+                    <a href="/prepaid-cards" className="mm-button mt-8">Find Your Card</a>
                 </div>
             </div>
         </section>

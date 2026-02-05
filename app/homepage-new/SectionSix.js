@@ -34,12 +34,14 @@ const SectionSix = () => {
                         Issued in EUR and USD.
                     </p>
 
-                    <button
+                    {/* <button
                         onClick={handleOpenModal}
                         className="mm-button mt-8"
                     >
                         Explore Credit Cards
-                    </button>
+                    </button> */}
+                    <a href="/credit-cards" className="mm-button mt-8">Explore Credit Cards</a>
+
                 </div>
 
                 {/* Video Section */}
