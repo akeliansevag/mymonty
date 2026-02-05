@@ -15,7 +15,7 @@ const SectionThree = () => {
             <img src="/pink-blue-bg.webp" className="h-full w-full top-0 left-0 object-cover absolute" />
             <div className="relative z-10 flex flex-col h-full">
               <div className="p-10 pb-0 flex-1">
-                <h3 className="font-black uppercase text-3xl">Join 50k+ Users </h3>
+                <h3 className="font-black uppercase text-3xl">Join Thousands of Users</h3>
                 <p className="mt-4">MyMonty makes daily life easier for thousands of users in Lebanon. </p>
               </div>
               <div className="flex-1">
