@@ -70,8 +70,7 @@ const Cards = () => {
     return (
         <>
             <section className='bg-[#F7F7F7]'> 
-                <div className='container text-center pt-14 pb-14 lg:pt-28 lg:pb-28'>
-                    <h2>MyMonty's Prepaid Cards</h2>
+                <div className='container text-center py-28'>
                     <h1 className="font-black text-xl sm:text-2xl md:text-4xl fhd:text-5xl leading-none uppercase mt-4">All You Need to Know About Your Card</h1>
 
                     {allCards.map((section, index) => (
