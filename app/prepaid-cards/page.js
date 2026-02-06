@@ -54,7 +54,7 @@ const allCards = [
             },
             {
                 title: 'Platinum Prepaid Card',
-                color: 'Heart',
+                color: 'Love',
                 image: PhysicalPlatinumCardHeart,
                 link: '/physical-platinum-mastercard',
             },
