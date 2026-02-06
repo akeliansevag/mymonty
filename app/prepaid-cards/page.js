@@ -34,7 +34,7 @@ const allCards = [
                 title: 'Standard Prepaid Card',
                 color: 'Einstein',
                 image: StandardCard,
-                link: '/einstein-prepaid-card',
+                link: '/standard-prepaid-card',
             },
         ],
     },
