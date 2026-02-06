@@ -8,6 +8,8 @@ import mastercarddesktop from '@/public/mastercard-banner-desktop.webp';
 import mastercardmobile from '@/public/mastercard-banner-mobile.webp';
 import forexdesktop from '@/public/forex-desktop.webp';
 import forexmobile from '@/public/forex-mobile.webp';
+import valentinesdesktop from '@/public/valentines-desktop.webp';
+import valentinesmobile from '@/public/valentines-mobile.webp';
 import kiadesktop from '@/public/kia-ad.webp';
 import kiamobile from '@/public/kia-ad-mobile.webp';
 
@@ -39,6 +41,11 @@ const banners = [
   //   bannerMobile: forexmobile,
   //   link: false,
   // },
+  {
+    bannerDesktop: valentinesdesktop,
+    bannerMobile: valentinesmobile,
+    link: false,
+  },
 ];
 
 const BannerAd = () => {

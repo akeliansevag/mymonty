@@ -60,7 +60,6 @@ const allCards = [
             },
         ],
     },
-    
 ]
 
 const Cards = () => {

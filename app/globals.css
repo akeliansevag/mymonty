@@ -644,3 +644,13 @@ spline-viewer canvas {
     margin-left: calc((100vw - 1400px) / 2 + 1rem);
   }
 }
+
+
+/* globals.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

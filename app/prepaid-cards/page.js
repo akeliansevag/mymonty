@@ -3,10 +3,12 @@ import Image from 'next/image';
 import { websiteName } from '@/app/config';
 import TextBlock from '../components/TextBlock';
 import GoldCard from '@/public/gold-card.webp';
+import StandardCard from '@/public/standard-card.webp';
 
-import PhysicalPlatinumCardBlack from '@/public/physical-platinum-card-black.webp';
-import PhysicalPlatinumCardBlueLuckyEye from '@/public/physical-platinum-card-blue-lucky-eye.webp';
-import PhysicalPlatinumCreditCardBlue from '@/public/physical-platinum-credit-card-blue.webp';
+import PhysicalPlatinumCardBlack from '@/public/physical-platinum-usd-prepaid-card-black.webp';
+import PhysicalPlatinumCardBlueLuckyEye from '@/public/physical-platinum-usd-prepaid-card-blue-lucky-eye.webp';
+import PhysicalPlatinumCreditCardBlue from '@/public/physical-platinum-eur-prepaid-card-blue.webp';
+import PhysicalPlatinumCardHeart from '@/public/physical-platinum-usd-prepaid-card-heart.webp';
 
 import WorldEliteCardBlack from '@/public/world-elite-card-black.webp';
 
@@ -28,6 +30,12 @@ const allCards = [
                 image: GoldCard,
                 link: '/gold-prepaid-card',
             },
+            {
+                title: 'Standard Prepaid Card',
+                color: 'Einstein',
+                image: StandardCard,
+                link: '/einstein-prepaid-card',
+            },
         ],
     },
     {
@@ -37,6 +45,12 @@ const allCards = [
                 title: 'Platinum Prepaid Card',
                 color: 'Black',
                 image: PhysicalPlatinumCardBlack,
+                link: '/physical-platinum-mastercard',
+            },
+            {
+                title: 'Platinum Prepaid Card',
+                color: 'Heart',
+                image: PhysicalPlatinumCardHeart,
                 link: '/physical-platinum-mastercard',
             },
             {
