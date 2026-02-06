@@ -2,7 +2,7 @@ import { websiteName } from '@/app/config';
 import Banner from '../components/Banner';
 import Image from 'next/image';
 import RewardsClient from './RewardsClient';
-import BenefitsAndOffers from '@/public/personal/careers.webp';
+import BenefitsAndOffersImage from '@/public/personal/careers.webp';
 
 export const metadata = {
   title: 'Benefits and Offers' + websiteName,
@@ -16,7 +16,7 @@ const data = {
   image: {
     inGrid: true,
     layout: 'half',
-    url: BenefitsAndOffers,
+    url: BenefitsAndOffersImage,
   },
   cta: {
     type: 'button',
