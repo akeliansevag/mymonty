@@ -13,100 +13,494 @@ const categories = [
   'Food & Beverage',
 ];
 
-const rewards = [
-  {
-    id: 1,
-    title: 'MEDCO',
-    description:
-      'Premium fuel savings for your entire fleet at over 2,000 stations nationwide.',
-    category: 'Fuel & Automotive',
-    badge: 'Win a YOYO Car',
-    image: '/images/medco.png',
-    link: '/benefits/medco',
-  },
-  {
-    id: 2,
-    title: 'Anghami Plus',
-    description: 'Get 4 months free subscription and 15% off.',
-    category: 'Entertainment & Media',
-    badge: '4 Months On Us • 15% OFF',
-    image: '/images/anghami.png',
-    link: '/benefits/anghami',
-  },
-];
-
 const RewardsClient = () => {
   const [activeCategory, setActiveCategory] = useState('All');
 
-  const filteredRewards =
-    activeCategory === 'All'
-      ? rewards
-      : rewards.filter(r => r.category === activeCategory);
+  const isVisible = (category) => activeCategory === 'All' || activeCategory === category;
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12">
-      {/* Search + Date */}
-      <div className="flex flex-col md:flex-row gap-4 mb-6">
-        <input
-          type="text"
-          placeholder="Search keyword..."
-          className="flex-1 rounded-full border px-5 py-3 outline-none"
-        />
-
-        <button className="rounded-full bg-blue-600 text-white px-6 py-3">
-          Valid from January 1 – 31
-        </button>
-      </div>
-
-      {/* Categories */}
-      <div className="flex gap-2 overflow-x-auto pb-3 scrollbar-hide">
-        {categories.map(cat => (
-          <button
-            key={cat}
-            onClick={() => setActiveCategory(cat)}
-            className={`whitespace-nowrap px-4 py-2 rounded-full text-sm border transition
-              ${
-                activeCategory === cat
+    <section className="container my-12">
+      {/* ================= CATEGORIES ================= */}
+      <div className="flex justify-center mb-10">
+        <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+          {categories.map(cat => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`px-4 py-2 rounded-full text-sm border whitespace-nowrap transition
+                ${activeCategory === cat
                   ? 'bg-black text-white border-black'
                   : 'bg-white text-gray-700 border-gray-300'
-              }`}
-          >
-            {cat}
-          </button>
-        ))}
+                }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
       </div>
 
-      {/* Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-        {filteredRewards.map(item => (
-          <Link
-            key={item.id}
-            href={item.link}
-            className="rounded-2xl bg-white p-4 shadow-sm hover:shadow-md transition flex flex-col gap-3"
+      {/* ================= GRID ================= */}
+      <div className="grid grid-cols-12 gap-6">
+
+        {/* ===== MEDCO ===== */}
+        {isVisible('Fuel & Automotive') && (
+          <div
+            className="col-span-12 md:col-span-4 bg-[#F7F7F7] rounded-3xl p-12 flex justify-center"
           >
-            <div className="relative rounded-xl overflow-hidden">
-              <Image
-                src={item.image}
-                alt={item.title}
-                width={500}
-                height={300}
-                className="w-full h-44 object-cover"
-              />
-              {item.badge && (
-                <span className="absolute top-3 right-3 bg-black text-white text-xs px-3 py-1 rounded-full">
-                  {item.badge}
+            <div className="bg-white rounded-2xl shadow-lg w-full max-w-sm overflow-hidden">
+              <div className="bg-orange-400 p-4 flex items-center justify-between">
+                <Image src="/medco.webp" alt="Medco" width={48} height={48} />
+                <span className="bg-white text-xs px-4 py-2 rounded-full font-bold">
+                  Win a YOYO Car
                 </span>
-              )}
+              </div>
+
+              <div className="p-6 space-y-4">
+                <h3 className="text-xl font-bold">MEDCO</h3>
+                <p className="text-sm text-gray-700">
+                  Premium fuel savings for your entire fleet at over 2,000 stations nationwide.
+                </p>
+
+                <div className="flex justify-between items-end">
+                  <span className="text-xs px-4 py-2 rounded-full bg-gray-100 font-bold">
+                    FUEL & AUTOMOTIVE
+                  </span>
+                  <Image src="/car.webp" alt="Car" width={100} height={100} />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ===== ANGHAMI (WIDE) ===== */}
+        {isVisible('Entertainment & Media') && (
+          <div
+            className="col-span-12 md:col-span-8 bg-[#DEE6FA] rounded-3xl p-4 lg:py-12 lg:px-24 flex items-center"
+          >
+            <div className="relative bg-[#EEF2FF] rounded-2xl p-8 flex items-center gap-8 w-full">
+              <div className="flex-1 space-y-12">
+                <div className="flex items-start gap-3">
+                  <Image src="/anghami.webp" alt="Anghami" width={52} height={52} />
+                  <div className='w-2/3'>
+                    <h3 className="text-2xl font-bold">Anghami Plus</h3>
+                    <p className="text-gray-800">
+                      Get <strong>4 months free subscription</strong> on Anghami Plus and an
+                      ongoing 15% off when paying with your MyMonty card.
+                    </p>
+                  </div>
+                  <span className="w-1/3 ml-auto bg-black text-white text-xs px-4 py-2 rounded-full font-bold">
+                    4 Months on US + 15% OFF
+                  </span>
+                </div>
+                <span className="inline-block text-xs px-4 py-2 rounded-full bg-gray-200 font-bold">
+                  ENTERTAINMENT & MEDIA
+                </span>
+              </div>
+
+              <Image
+                src="/anghami-girl.webp"
+                alt=""
+                width={200}
+                height={200}
+                className="absolute right-0 bottom-0"
+              />
+            </div>
+          </div>
+        )}
+
+        {/* ===== OSN ===== */}
+        {isVisible('Entertainment & Media') && (
+          <div
+            className="col-span-12 md:col-span-4 bg-black rounded-3xl p-8"
+          >
+            <div className="h-full flex flex-col">
+              <div className="flex justify-between items-center mb-6">
+                <Image src="/osn.webp" alt="OSN" width={150} height={150} />
+                <span className="bg-purple-600 text-white text-xs px-4 py-2 rounded-full font-bold">
+                  4 Months on US + 15% OFF
+                </span>
+              </div>
+
+              <div className="bg-white rounded-2xl p-6 h-full flex flex-col space-y-12">
+                <p className="text-gray-800">
+                  Get <strong>4 months OSN+</strong> subscription on us and an ongoing 15%
+                  off when paying with your MyMonty Mastercard.
+                </p>
+
+                <div className="mt-auto text-xs px-4 py-2 rounded-full bg-gray-100 w-fit font-bold">
+                  ENTERTAINMENT & MEDIA
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+
+        <div className="grid grid-cols-12 gap-8 col-span-6 md:col-span-4 overflow-hidden">
+          {/* ===== IMAGE CARD ===== */}
+          {isVisible('Fuel & Automotive') && (
+            <div className="col-span-6 md:col-span-6 rounded-3xl bg-gray-100 overflow-hidden aspect-square">
+              <Image src="/mymonty-logo.webp" alt="" width={300} height={300} className="w-full h-full object-cover" />
+            </div>
+          )}
+
+          {/* ===== PHONE CARD ===== */}
+          {isVisible('Fuel & Automotive') && (
+            <div className="col-span-6 md:col-span-6 rounded-3xl overflow-hidden aspect-square">
+              <Image className="w-full" src="/benefits-phone.webp" alt="" width={200} height={400} />
+            </div>
+          )}
+
+          {isVisible('Fuel & Automotive') && (
+            <div className="col-span-6 md:col-span-12 rounded-3xl">
+              <Image className="w-full" src="/girl-using-phone.webp" alt="" width={200} height={400} />
+            </div>
+          )}
+        </div>
+
+        {/* ===== KETTANEH ===== */}
+          {isVisible('Fuel & Automotive') && (
+          <div
+            className="col-span-12 md:col-span-4 bg-[#EEF3F7] rounded-3xl p-8 relative overflow-hidden"
+          >
+            <div className="h-full flex flex-col z-10 relative">
+              <div className="flex justify-between items-center mb-6">
+                <Image src="/kettaneh.webp" alt="OSN" width={52} height={52} />
+                <span className="bg-black text-white text-xs px-4 py-2 rounded-full font-bold">
+                  Special Interest Rate
+                </span>
+              </div>
+
+              <div className="h-full flex flex-col space-y-12 mt-14">
+                <div>
+                  <h3 className="font-bold text-3xl">Ets. F.A Kettaneh S.A</h3>
+                  <p className="text-gray-800">
+                    Get <strong>4.99%</strong> interest <strong>instead of 7%</strong> on car loans on Audi A3 cars, for employees receiving their salary on MyMonty.
+                  </p>
+                </div>
+                <div className="mt-auto text-xs px-4 py-2 rounded-full bg-gray-100 w-fit font-bold">
+                  ENTERTAINMENT & MEDIA
+                </div>
+              </div>
             </div>
 
-            <h3 className="font-semibold text-lg">{item.title}</h3>
-            <p className="text-sm text-gray-600">{item.description}</p>
+            <Image
+              src="/car-benefits.webp"
+              alt=""
+              width={260}
+              height={160}
+              className="absolute top-0 right-0 w-full h-full object-cover object-[35%] opacity-20"
+            />
+          </div>
+        )}
 
-            <span className="mt-auto text-xs px-3 py-1 rounded-full bg-gray-100 w-fit">
-              {item.category}
+        {/* ================= A.N. BOUKHATHER (WIDE) ================= */}
+        {isVisible('Entertainment & Media') && (
+          <div
+            className="col-span-12 bg-[#EAF0FB] rounded-[40px] p-10"
+          >
+            <div className="relative bg-white rounded-[32px] p-10 flex items-center gap-10">
+              {/* Left */}
+              <div className="flex-1 space-y-12">
+                <div className="flex items-start gap-3">
+                  <Image
+                    src="/an-boukhather.webp"
+                    alt="A.N. Boukhather"
+                    width={44}
+                    height={44}
+                  />
+                  <div className='w-2/3'>
+                    <h3 className="text-2xl font-bold">A.N. Boukhather SAL</h3>
+                    <p className="text-gray-800 max-w-xl">
+                      Exclusive <strong>car loan deal on Mazda</strong> and{' '}
+                      <strong>Ford</strong> cars for employees receiving their salary on
+                      MyMonty.
+                    </p>
+                  </div>
+                  <span className="absolute top-8 right-6 ml-auto bg-black text-white text-xs px-4 py-2 rounded-full">
+                    4.99% Interest instead of 7%
+                  </span>
+                </div>
+                <span className="inline-block text-xs px-4 py-2 rounded-full bg-gray-200 font-bold">
+                  ENTERTAINMENT & MEDIA
+                </span>
+              </div>
+
+              {/* Right */}
+              <div className="flex-1 w-full">
+                <Image
+                  className="w-full mt-auto"
+                  src="/ford-mazda.webp"
+                  alt="Ford & Mazda"
+                  width={260}
+                  height={160}
+                />
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ================= PRENATAL ================= */}
+        {isVisible('Babies & Family') && (
+          <div
+            className="col-span-12 md:col-span-4 bg-[#EEF6E8] rounded-[32px] p-8 relative overflow-hidden"
+          >
+            <div className="flex items-center justify-between mb-6">
+              <Image
+                src="/logos/prenatal.svg"
+                alt="Prenatal"
+                width={42}
+                height={42}
+              />
+              <span className="bg-black text-white text-xs px-4 py-1 rounded-full">
+                10% Discount
+              </span>
+            </div>
+
+            <h3 className="text-xl font-bold mb-2">Prenatal</h3>
+            <p className="text-gray-800">
+              Get <strong>10% discount</strong> by paying with your MyMonty card.
+              Offer is excluding discounted items.
+            </p>
+
+            <span className="inline-block mt-6 text-xs px-4 py-1 rounded-full bg-gray-100">
+              BABIES & FAMILY
             </span>
-          </Link>
-        ))}
+
+            <Image
+              src="/pregnant.webp"
+              alt=""
+              width={200}
+              height={300}
+              className="absolute bottom-0 right-0 opacity-20"
+            />
+          </div>
+        )}
+
+        {/* ================= TOY STORE (PHONE) ================= */}
+        {isVisible('Babies & Family') && (
+          <div
+            className="col-span-12 md:col-span-4 bg-[#F2F8FA] rounded-[32px] flex justify-center items-end pt-8"
+          >
+            <div className="relative">
+              <Image
+                src="/iphone-frame.webp"
+                alt="Phone"
+                width={260}
+                height={520}
+              />
+
+              <div className="absolute inset-0 flex flex-col justify-center px-8">
+                <div className="bg-white rounded-2xl p-4 space-y-3">
+                  <div className="flex justify-between items-center">
+                    <Image
+                      src="/logos/toystore.svg"
+                      alt="Toy Store"
+                      width={36}
+                      height={36}
+                    />
+                    <span className="bg-black text-white text-xs px-3 py-1 rounded-full">
+                      10% Discount
+                    </span>
+                  </div>
+
+                  <h3 className="text-lg font-bold">Toy Store</h3>
+                  <p className="text-sm text-gray-700">
+                    Get <strong>15% discount</strong> by paying with your MyMonty card.
+                    Offer is excluding discounted items.
+                  </p>
+
+                  <span className="inline-block text-xs px-3 py-1 rounded-full bg-gray-100">
+                    BABIES & FAMILY
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ================= ADI ================= */}
+        {isVisible('Food & Beverage') && (
+          <div
+            className="col-span-12 md:col-span-4 bg-[#F7F7F7] rounded-[32px] p-8"
+          >
+            <div className="bg-white rounded-2xl overflow-hidden">
+              <div className="bg-[#E6B84C] p-4 flex items-center justify-between">
+                <Image
+                  src="/logos/adi.svg"
+                  alt="ADI"
+                  width={40}
+                  height={40}
+                />
+                <span className="bg-black text-white text-xs px-4 py-1 rounded-full">
+                  10% Discount
+                </span>
+              </div>
+
+              <div className="p-6 space-y-4">
+                <h3 className="text-xl font-bold">ADI</h3>
+                <p className="text-gray-800">
+                  Get <strong>10% discount</strong> by paying with your MyMonty card.
+                </p>
+
+                <span className="inline-block text-xs px-4 py-1 rounded-full bg-gray-100">
+                  FOOD & BEVERAGE
+                </span>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ================= GRAND CINEMAS (WIDE) ================= */}
+        {isVisible('Cinema') && (
+          <div
+            className="col-span-12 bg-[#E7E2EC] rounded-[40px] p-10"
+          >
+            <div className="bg-white rounded-[32px] p-10 grid grid-cols-12 gap-6 items-center">
+
+              {/* Text */}
+              <div className="col-span-12 md:col-span-7 space-y-4">
+                <div className="flex items-center gap-3">
+                  <Image
+                    src="/logos/grand-cinemas.svg"
+                    alt="Grand Cinemas"
+                    width={44}
+                    height={44}
+                  />
+                  <h3 className="text-2xl font-bold">Grand Cinemas</h3>
+                  <span className="ml-auto bg-black text-white text-xs px-4 py-1 rounded-full">
+                    10% Discount
+                  </span>
+                </div>
+
+                <p className="text-gray-800 max-w-xl">
+                  Get 10% discount on tickets for all MyMonty cardholders
+                  (excluding public holidays).
+                </p>
+
+                <span className="inline-block text-xs px-4 py-1 rounded-full bg-gray-100">
+                  ENTERTAINMENT & MEDIA
+                </span>
+              </div>
+
+              {/* Card Image */}
+              <div className="col-span-6 md:col-span-2 flex justify-center">
+                <Image
+                  src="/mymonty-card.webp"
+                  alt="MyMonty Card"
+                  width={140}
+                  height={90}
+                />
+              </div>
+
+              {/* Cinema Image */}
+              <div className="col-span-6 md:col-span-3 rounded-2xl overflow-hidden">
+                <Image
+                  src="/cinema-seats.webp"
+                  alt="Cinema"
+                  width={300}
+                  height={200}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ================= DUNKIN ================= */}
+        {isVisible('Food & Beverage') && (
+          <div
+            className="col-span-12 md:col-span-6 bg-[#FFF1E5] rounded-[32px] p-8"
+          >
+            <div className="grid grid-cols-12 gap-6 items-center h-full">
+
+              {/* Text */}
+              <div className="col-span-6 space-y-4">
+                <Image
+                  src="/logos/dunkin.svg"
+                  alt="Dunkin"
+                  width={48}
+                  height={48}
+                />
+
+                <h3 className="text-2xl font-bold">DUNKIN’</h3>
+
+                <p className="text-gray-800">
+                  When paying with MyMonty card.
+                </p>
+
+                <span className="inline-block text-xs px-4 py-1 rounded-full bg-gray-100">
+                  FOOD & BEVERAGE
+                </span>
+              </div>
+
+              {/* Image */}
+              <div className="col-span-6 relative">
+                <span className="absolute top-2 right-2 bg-black text-white text-xs px-4 py-1 rounded-full z-10">
+                  10% Discount
+                </span>
+
+                <div className="rounded-2xl overflow-hidden">
+                  <Image
+                    src="/dunkin-donuts.webp"
+                    alt="Dunkin Donuts"
+                    width={300}
+                    height={300}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ================= THE CASK & BARREL ================= */}
+        {isVisible('Food & Beverage') && (
+          <div
+            className="col-span-12 md:col-span-6 bg-[#F6F6F6] rounded-[32px] p-8"
+          >
+            <div className="grid grid-cols-12 gap-6 items-center h-full">
+
+              {/* Text */}
+              <div className="col-span-7 space-y-4">
+                <Image
+                  src="/logos/cask-barrel.svg"
+                  alt="The Cask & Barrel"
+                  width={48}
+                  height={48}
+                />
+
+                <h3 className="text-2xl font-bold">The Cask & Barrel</h3>
+
+                <p className="text-gray-800">
+                  Get <strong>20% discount</strong> by paying with your MyMonty card.
+                  Offer is valid during lunch time from 1pm to 4:30pm.
+                </p>
+
+                <span className="inline-block text-xs px-4 py-1 rounded-full bg-gray-100">
+                  FOOD & BEVERAGE
+                </span>
+              </div>
+
+              {/* Image */}
+              <div className="col-span-5 relative">
+                <span className="absolute top-2 right-2 bg-black text-white text-xs px-4 py-1 rounded-full z-10">
+                  10% Discount
+                </span>
+
+                <div className="rounded-2xl overflow-hidden">
+                  <Image
+                    src="/cask-barrel.webp"
+                    alt="The Cask & Barrel"
+                    width={300}
+                    height={300}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
