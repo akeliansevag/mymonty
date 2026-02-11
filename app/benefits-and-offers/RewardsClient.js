@@ -45,7 +45,7 @@ const RewardsClient = () => {
         {/* ===== MEDCO ===== */}
         {isVisible('Fuel & Automotive') && (
           <div
-            className="col-span-12 md:col-span-4 bg-[#F7F7F7] rounded-3xl p-12 flex justify-center"
+            className="col-span-12 lg:col-span-4 bg-[#F7F7F7] rounded-3xl p-12 flex justify-center"
           >
             <div className="bg-white rounded-2xl shadow-lg w-full max-w-sm overflow-hidden">
               <div className="bg-orange-400 p-4 flex items-center justify-between">
@@ -75,7 +75,7 @@ const RewardsClient = () => {
         {/* ===== ANGHAMI (WIDE) ===== */}
         {isVisible('Entertainment & Media') && (
           <div
-            className="col-span-12 md:col-span-8 bg-[#DEE6FA] rounded-3xl p-4 lg:py-12 lg:px-24 flex items-center"
+            className="col-span-12 lg:col-span-8 bg-[#DEE6FA] rounded-3xl p-4 lg:py-12 lg:px-24 flex items-center"
           >
             <div className="relative bg-[#EEF2FF] rounded-2xl p-8 flex items-center gap-8 w-full">
               <div className="flex-1 space-y-12">
@@ -111,7 +111,7 @@ const RewardsClient = () => {
         {/* ===== OSN ===== */}
         {isVisible('Entertainment & Media') && (
           <div
-            className="col-span-12 md:col-span-4 bg-black rounded-3xl p-8"
+            className="col-span-12 lg:col-span-4 bg-black rounded-3xl p-8"
           >
             <div className="h-full flex flex-col">
               <div className="flex justify-between items-center mb-6">
@@ -136,23 +136,23 @@ const RewardsClient = () => {
         )}
 
 
-        <div className="grid grid-cols-12 gap-8 col-span-6 md:col-span-4 overflow-hidden">
+        <div className="grid grid-cols-12 gap-8 col-span-6 lg:col-span-4 overflow-hidden">
           {/* ===== IMAGE CARD ===== */}
           {isVisible('Fuel & Automotive') && (
-            <div className="col-span-6 md:col-span-6 rounded-3xl bg-gray-100 overflow-hidden aspect-square">
+            <div className="col-span-6 lg:col-span-6 rounded-3xl bg-gray-100 overflow-hidden aspect-square">
               <Image src="/mymonty-logo.webp" alt="" width={300} height={300} className="w-full h-full object-cover" />
             </div>
           )}
 
           {/* ===== PHONE CARD ===== */}
           {isVisible('Fuel & Automotive') && (
-            <div className="col-span-6 md:col-span-6 rounded-3xl overflow-hidden aspect-square">
+            <div className="col-span-6 lg:col-span-6 rounded-3xl overflow-hidden aspect-square">
               <Image className="w-full" src="/benefits-phone.webp" alt="" width={200} height={400} />
             </div>
           )}
 
           {isVisible('Fuel & Automotive') && (
-            <div className="col-span-6 md:col-span-12 rounded-3xl">
+            <div className="col-span-6 lg:col-span-12 rounded-3xl">
               <Image className="w-full" src="/girl-using-phone.webp" alt="" width={200} height={400} />
             </div>
           )}
@@ -161,7 +161,7 @@ const RewardsClient = () => {
         {/* ===== KETTANEH ===== */}
           {isVisible('Fuel & Automotive') && (
           <div
-            className="col-span-12 md:col-span-4 bg-[#EEF3F7] rounded-3xl p-8 relative overflow-hidden"
+            className="col-span-12 lg:col-span-4 bg-[#EEF3F7] rounded-3xl p-8 relative overflow-hidden"
           >
             <div className="h-full flex flex-col z-10 relative">
               <div className="flex justify-between items-center mb-6">
@@ -217,7 +217,7 @@ const RewardsClient = () => {
                       MyMonty.
                     </p>
                   </div>
-                  <span className="absolute top-8 right-6 ml-auto bg-black text-white text-xs px-4 py-2 rounded-full">
+                  <span className="absolute top-8 right-6 ml-auto bg-black text-white text-xs px-4 py-2 rounded-full font-bold">
                     4.99% Interest instead of 7%
                   </span>
                 </div>
@@ -243,63 +243,60 @@ const RewardsClient = () => {
         {/* ================= PRENATAL ================= */}
         {isVisible('Babies & Family') && (
           <div
-            className="col-span-12 md:col-span-4 bg-[#EEF6E8] rounded-[32px] p-8 relative overflow-hidden"
+            className="col-span-12 lg:col-span-4 bg-[#EEF6E8] rounded-[32px] relative overflow-hidden"
           >
-            <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center justify-between ml-6 my-6 bg-[#DEEBD6] p-4 rounded-full rounded-r-none">
               <Image
-                src="/logos/prenatal.svg"
+                src="/prenatal.webp"
                 alt="Prenatal"
-                width={42}
-                height={42}
+                width={51}
+                height={51}
               />
-              <span className="bg-black text-white text-xs px-4 py-1 rounded-full">
+              <span className="bg-black text-white text-xs px-4 py-2 rounded-full font-bold">
                 10% Discount
               </span>
             </div>
 
-            <h3 className="text-xl font-bold mb-2">Prenatal</h3>
-            <p className="text-gray-800">
-              Get <strong>10% discount</strong> by paying with your MyMonty card.
-              Offer is excluding discounted items.
-            </p>
+            <div className='p-8'>
+              <h3 className="text-xl font-bold mb-2">Prenatal</h3>
+              <p className="text-gray-800">
+                Get <strong>10% discount</strong> by paying with your MyMonty card.
+                Offer is excluding discounted items.
+              </p>
 
-            <span className="inline-block mt-6 text-xs px-4 py-1 rounded-full bg-gray-100">
-              BABIES & FAMILY
-            </span>
+              <span className="inline-block mt-6 text-xs px-4 py-2 rounded-full bg-gray-100 font-bold">
+                BABIES & FAMILY
+              </span>
 
-            <Image
-              src="/pregnant.webp"
-              alt=""
-              width={200}
-              height={300}
-              className="absolute bottom-0 right-0 opacity-20"
-            />
+              <Image
+                src="/prenatal-woman.webp"
+                alt=""
+                width={300}
+                height={400}
+                className="absolute bottom-0 right-0 opacity-20"
+              />
+            </div>
           </div>
         )}
 
         {/* ================= TOY STORE (PHONE) ================= */}
         {isVisible('Babies & Family') && (
           <div
-            className="col-span-12 md:col-span-4 bg-[#F2F8FA] rounded-[32px] flex justify-center items-end pt-8"
+            className="col-span-12 overflow-hidden lg:col-span-4 bg-[#F2F8FA] rounded-[32px] px-8 flex justify-center items-end pt-8"
           >
             <div className="relative">
-              <Image
-                src="/iphone-frame.webp"
-                alt="Phone"
-                width={260}
-                height={520}
-              />
+              <img src='/iphone-frame.webp' className='w-full'/>
 
-              <div className="absolute inset-0 flex flex-col justify-center px-8">
+              <div className="absolute top-[20%] flex flex-col justify-center px-8">
                 <div className="bg-white rounded-2xl p-4 space-y-3">
                   <div className="flex justify-between items-center">
-                    <Image
-                      src="/logos/toystore.svg"
+                    <img
+                      src="/toystore.webp"
                       alt="Toy Store"
                       width={36}
                       height={36}
                     />
-                    <span className="bg-black text-white text-xs px-3 py-1 rounded-full">
+                    <span className="bg-black text-white text-xs px-3 py-1 rounded-full font-bold">
                       10% Discount
                     </span>
                   </div>
@@ -310,7 +307,7 @@ const RewardsClient = () => {
                     Offer is excluding discounted items.
                   </p>
 
-                  <span className="inline-block text-xs px-3 py-1 rounded-full bg-gray-100">
+                  <span className="inline-block text-xs px-3 py-1 rounded-full bg-gray-100 font-bold">
                     BABIES & FAMILY
                   </span>
                 </div>
@@ -322,17 +319,17 @@ const RewardsClient = () => {
         {/* ================= ADI ================= */}
         {isVisible('Food & Beverage') && (
           <div
-            className="col-span-12 md:col-span-4 bg-[#F7F7F7] rounded-[32px] p-8"
+            className="col-span-12 lg:col-span-4 bg-[#F7F7F7] rounded-[32px] p-8"
           >
             <div className="bg-white rounded-2xl overflow-hidden">
               <div className="bg-[#E6B84C] p-4 flex items-center justify-between">
                 <Image
-                  src="/logos/adi.svg"
+                  src="/adi.webp"
                   alt="ADI"
                   width={40}
                   height={40}
                 />
-                <span className="bg-black text-white text-xs px-4 py-1 rounded-full">
+                <span className="bg-black text-white text-xs px-4 py-2 rounded-full font-bold">
                   10% Discount
                 </span>
               </div>
@@ -343,7 +340,7 @@ const RewardsClient = () => {
                   Get <strong>10% discount</strong> by paying with your MyMonty card.
                 </p>
 
-                <span className="inline-block text-xs px-4 py-1 rounded-full bg-gray-100">
+                <span className="inline-block text-xs px-4 py-2 rounded-full bg-gray-100 font-bold">
                   FOOD & BEVERAGE
                 </span>
               </div>
@@ -354,53 +351,48 @@ const RewardsClient = () => {
         {/* ================= GRAND CINEMAS (WIDE) ================= */}
         {isVisible('Cinema') && (
           <div
-            className="col-span-12 bg-[#E7E2EC] rounded-[40px] p-10"
+            className="col-span-12 bg-[#EAF0FB] rounded-[40px] p-10"
           >
-            <div className="bg-white rounded-[32px] p-10 grid grid-cols-12 gap-6 items-center">
-
-              {/* Text */}
-              <div className="col-span-12 md:col-span-7 space-y-4">
-                <div className="flex items-center gap-3">
+            <div className="h-full flex max-lg:flex-col items-center gap-10">
+              {/* Left */}
+              <div className="relative flex-1 rounded-[32px] p-10 bg-white h-full space-y-12 w-full">
+                <div className="flex items-start gap-3">
                   <Image
-                    src="/logos/grand-cinemas.svg"
-                    alt="Grand Cinemas"
+                    src="/grand-cinemas.webp"
+                    alt="A.N. Boukhather"
                     width={44}
                     height={44}
                   />
-                  <h3 className="text-2xl font-bold">Grand Cinemas</h3>
-                  <span className="ml-auto bg-black text-white text-xs px-4 py-1 rounded-full">
+                  <div className='w-2/3'>
+                    <h3 className="text-2xl font-bold">Grand Cinemas</h3>
+                    <p className="text-gray-800 max-w-xl">
+                      Get 10% discount on tickets for all MyMonty cardholders (excluding public holidays).
+                    </p>
+                  </div>
+                  <span className="absolute top-8 right-6 ml-auto bg-black text-white text-xs px-4 py-2 rounded-full font-bold">
                     10% Discount
                   </span>
                 </div>
-
-                <p className="text-gray-800 max-w-xl">
-                  Get 10% discount on tickets for all MyMonty cardholders
-                  (excluding public holidays).
-                </p>
-
-                <span className="inline-block text-xs px-4 py-1 rounded-full bg-gray-100">
+                <span className="inline-block text-xs px-4 py-2 rounded-full bg-gray-200 font-bold">
                   ENTERTAINMENT & MEDIA
                 </span>
               </div>
 
-              {/* Card Image */}
-              <div className="col-span-6 md:col-span-2 flex justify-center">
+              {/* Right */}
+              <div className="flex gap-8 flex-1 w-full">
                 <Image
-                  src="/mymonty-card.webp"
-                  alt="MyMonty Card"
-                  width={140}
-                  height={90}
+                  className="w-full aspect-[3.5/4] object-cover mt-auto rounded-3xl"
+                  src="/grand-cinemas-img2.webp"
+                  alt="Grand Cinema"
+                  width={260}
+                  height={160}
                 />
-              </div>
-
-              {/* Cinema Image */}
-              <div className="col-span-6 md:col-span-3 rounded-2xl overflow-hidden">
                 <Image
-                  src="/cinema-seats.webp"
-                  alt="Cinema"
-                  width={300}
-                  height={200}
-                  className="w-full h-full object-cover"
+                  className="w-full aspect-[3.5/4] object-cover mt-auto rounded-3xl"
+                  src="/grand-cinemas-img1.webp"
+                  alt="Grand Cinema"
+                  width={260}
+                  height={160}
                 />
               </div>
             </div>
@@ -410,14 +402,14 @@ const RewardsClient = () => {
         {/* ================= DUNKIN ================= */}
         {isVisible('Food & Beverage') && (
           <div
-            className="col-span-12 md:col-span-6 bg-[#FFF1E5] rounded-[32px] p-8"
+            className="col-span-12 lg:col-span-5 bg-[#FFF1E5] rounded-[32px] p-8"
           >
             <div className="grid grid-cols-12 gap-6 items-center h-full">
 
               {/* Text */}
-              <div className="col-span-6 space-y-4">
+              <div className="col-span-5 space-y-4">
                 <Image
-                  src="/logos/dunkin.svg"
+                  src="/dunkin.webp"
                   alt="Dunkin"
                   width={48}
                   height={48}
@@ -429,23 +421,21 @@ const RewardsClient = () => {
                   When paying with MyMonty card.
                 </p>
 
-                <span className="inline-block text-xs px-4 py-1 rounded-full bg-gray-100">
+                <span className="inline-block text-xs px-4 py-2 rounded-full bg-gray-100 font-bold">
                   FOOD & BEVERAGE
                 </span>
               </div>
 
               {/* Image */}
-              <div className="col-span-6 relative">
-                <span className="absolute top-2 right-2 bg-black text-white text-xs px-4 py-1 rounded-full z-10">
+              <div className="col-span-7 relative h-full">
+                <span className="absolute top-4 bg-black text-white text-xs px-4 py-2 rounded-full z-10 font-bold left-1/2 -translate-x-1/2 text-center whitespace-nowrap">
                   10% Discount
                 </span>
 
-                <div className="rounded-2xl overflow-hidden">
-                  <Image
-                    src="/dunkin-donuts.webp"
+                <div className="rounded-3xl h-full overflow-hidden">
+                  <img
+                    src="/dunkin-img.webp"
                     alt="Dunkin Donuts"
-                    width={300}
-                    height={300}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -457,14 +447,14 @@ const RewardsClient = () => {
         {/* ================= THE CASK & BARREL ================= */}
         {isVisible('Food & Beverage') && (
           <div
-            className="col-span-12 md:col-span-6 bg-[#F6F6F6] rounded-[32px] p-8"
+            className="col-span-12 lg:col-span-7 bg-[#F6F6F6] rounded-[32px] p-8"
           >
             <div className="grid grid-cols-12 gap-6 items-center h-full">
 
               {/* Text */}
               <div className="col-span-7 space-y-4">
                 <Image
-                  src="/logos/cask-barrel.svg"
+                  src="/the-cask-and-barrel.webp"
                   alt="The Cask & Barrel"
                   width={48}
                   height={48}
@@ -477,20 +467,20 @@ const RewardsClient = () => {
                   Offer is valid during lunch time from 1pm to 4:30pm.
                 </p>
 
-                <span className="inline-block text-xs px-4 py-1 rounded-full bg-gray-100">
+                <span className="inline-block text-xs px-4 py-2 rounded-full bg-gray-100 font-bold">
                   FOOD & BEVERAGE
                 </span>
               </div>
 
               {/* Image */}
               <div className="col-span-5 relative">
-                <span className="absolute top-2 right-2 bg-black text-white text-xs px-4 py-1 rounded-full z-10">
+                <span className="absolute top-4 bg-black left-1/2 -translate-x-1/2 text-center text-white text-xs px-4 py-2 rounded-full z-10 font-bold">
                   10% Discount
                 </span>
 
                 <div className="rounded-2xl overflow-hidden">
                   <Image
-                    src="/cask-barrel.webp"
+                    src="/the-cask-and-barrel-img.webp"
                     alt="The Cask & Barrel"
                     width={300}
                     height={300}
