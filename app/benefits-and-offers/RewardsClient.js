@@ -359,21 +359,26 @@ const RewardsClient = () => {
               </div>
 
               {/* Right */}
-              <div className="flex gap-8 flex-1 w-full">
-                <Image
-                  className="w-full aspect-[3.5/4] object-cover mt-auto rounded-3xl"
-                  src="/grand-cinemas-img2.webp"
-                  alt="Grand Cinema"
-                  width={260}
-                  height={160}
-                />
-                <Image
-                  className="w-full aspect-[3.5/4] object-cover mt-auto rounded-3xl"
-                  src="/grand-cinemas-img1.webp"
-                  alt="Grand Cinema"
-                  width={260}
-                  height={160}
-                />
+              <div className="flex gap-8 max-lg:flex-col flex-1 w-full">
+                <div className='w-full aspect-[3.5/4] relative'>
+                  <Image
+                    className="object-cover w-full h-full absolute mt-auto rounded-3xl"
+                    src="/grand-cinemas-img2.webp"
+                    alt="Grand Cinema"
+                    width={260}
+                    height={160}
+                  />
+                </div>
+                <div className='w-full aspect-[3.5/4] relative'>
+                  <Image
+                    className="object-cover w-full h-full absolute mt-auto rounded-3xl"
+                    src="/grand-cinemas-img1.webp"
+                    alt="Grand Cinema"
+                    width={260}
+                    height={160}
+                  />
+                </div>
+                
               </div>
             </div>
           </div>
