@@ -70,7 +70,7 @@ const SalaryAdvance = () => {
           <div className='flex flex-col md:flex-row max-lg:gap-10 lg:gap-32 items-center'>
             <div>
               <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>Cash When You Need It </h2>
-              <p className='leading-8 mt-8'>MyMonty’s Salary Advance gives you fast access to your money when you need it most. Only a flat $2 fee, APR 29.2% and a 2% commission that won’t be applied if you repay within 3 days. No paperwork, no credit checks, no hassle. Just quick cash straight from your app.</p>
+              <p className='leading-8 mt-8'>MyMonty’s Salary Advance gives you fast access to your money when you need it most. Only a flat $2 fee, and a 2% commission that won’t be applied if you repay within 3 days. No paperwork, no credit checks, no hassle. Just quick cash straight from your app.</p>
             </div>
             <img className='md:w-1/2' src='/salary-advance-2.webp' alt='Advance Amount' width='' height='' />
           </div>
