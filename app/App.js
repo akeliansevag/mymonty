@@ -21,7 +21,7 @@ const App = ({ children }) => {
                 <KhouryHome />
             )} */}
 
-            <BannerAd />
+            {/* <BannerAd /> */}
 
             <Modal formComponent={formComponent || dynamicFormComponent} isOpen={openModal} handleOpenModal={handleOpenModal} handleCloseModal={handleCloseModal} largeWidth={largeWidth} />
             <Header />
