@@ -23,7 +23,6 @@ const RewardsClient = () => {
       <div className="container text-center">
         <div className='w-full max-w-[1060px] mx-auto'>
           <div className='container text-center'>
-            <h2 className='uppercase font-black text-3xl sm:text-5xl md:text-[2.875rem] leading-none text-balance'>Rewards & Spending</h2>
             <p className='leading-8 mt-8'>Filter through our partner network and track your spending across key business categories.</p>
           </div>
         </div>

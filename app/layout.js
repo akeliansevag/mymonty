@@ -81,20 +81,20 @@ export default function RootLayout({ children }) {
         </Script>
         
         <Script src="https://analytics.ahrefs.com/analytics.js" data-key="3X26HJzNYSURzYfp+MSXKw" async></Script>
-        {/* <Script
+        <Script
           id="fw-chat"
           src="//uae.fw-cdn.com/40305316/189078.js"
           strategy="afterInteractive"
           chat="true"
-        /> */}
+        />
 
-        <Script
+        {/* <Script
           id="fw-chat-new"
           src="//uae.fw-cdn.com/40305316/189078.js"
           strategy="afterInteractive"
           chat="true"
           widgetId='25f4496f-dc05-4ae0-9d52-9c9706538c08'
-        />
+        /> */}
         <noscript>
           <img
             height="1"

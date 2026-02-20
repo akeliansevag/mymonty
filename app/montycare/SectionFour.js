@@ -2,9 +2,20 @@
 import React from 'react';
 import { useAppContext } from '../AppContext';
 import TextBlock from '../components/TextBlock';
+import Marquee from './Marquee';
 
 const SectionFour = () => {
   const { handleOpenModal } = useAppContext();
+
+  const items = [
+    { name: "HealthPlus", icon: "🩺" },
+    { name: "VitalClinic", icon: "🧬" },
+    { name: "MediPro", icon: "➕" },
+    { name: "CareFirst", icon: "🩹" },
+    { name: "PrimeHealth", icon: "✨" },
+  ];
+
+
   return (
     <section className='bg-white max-lg:py-14 lg:py-28'>
       <div className='container'>
@@ -17,7 +28,9 @@ const SectionFour = () => {
             <img src='/montycare-9.webp' className='max-w-[450px] w-full'/>
           </div>
         </div>
+        {/* <Marquee items={items} speed={35} /> */}
       </div>
+      
     </section>
   )
 }
