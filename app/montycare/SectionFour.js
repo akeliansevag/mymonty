@@ -15,7 +15,6 @@ const SectionFour = () => {
     { name: "PrimeHealth", icon: "✨" },
   ];
 
-
   return (
     <section className='bg-white max-lg:py-14 lg:py-28'>
       <div className='container'>
@@ -28,7 +27,7 @@ const SectionFour = () => {
             <img src='/montycare-9.webp' className='max-w-[450px] w-full'/>
           </div>
         </div>
-        {/* <Marquee items={items} speed={35} /> */}
+        <Marquee items={items} speed={35} />
       </div>
       
     </section>
