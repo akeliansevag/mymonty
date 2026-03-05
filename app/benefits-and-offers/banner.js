@@ -7,8 +7,8 @@ import Image from 'next/image';
 function Banner() {
     const { handleOpenModal } = useAppContext();
     return (
-        <section className='flex flex-col relative min-h-[100dvh] pt-[var(--header-height)] overflow-hidden'>
-            <div className='flex-1 flex-col sm:flex-row container flex gap-20'>
+        <section className='flex flex-col relative lg:min-h-[100dvh] pt-[var(--header-height)] overflow-hidden'>
+            <div className='flex-1 flex-col sm:flex-row container flex gap-10 lg:gap-20'>
                 <div className='lg:w-1/2 self-center sm:-mt-16'>
 
                     <p>Cards</p>

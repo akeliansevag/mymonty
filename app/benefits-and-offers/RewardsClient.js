@@ -125,7 +125,7 @@ const RewardsClient = () => {
           </div>
         )}
 
-        {isVisible('Electronics & Tech') && (
+        {isVisible('Stationery') && (
           <div className="bg-[#F2F8FA] rounded-3xl px-4 2xl:px-8 pt-8">
             <div className="relative">
               <img
@@ -136,7 +136,7 @@ const RewardsClient = () => {
                 className='w-full h-[500px]'
               />
 
-              <div className="absolute inset-0 flex flex-col justify-end px-12 lg:px-8">
+              <div className="absolute inset-0 flex flex-col justify-end px-8 lg:px-8">
                 <div className="bg-[#EBF4F6] h-4/5 mb-4 rounded-2xl p-4">
                   <div className="flex justify-between items-center">
                     <img
@@ -149,7 +149,7 @@ const RewardsClient = () => {
                   <h2 className="text-2xl font-extrabold mt-8">Mario's Stationery</h2>
                   <p className="mt-4">Stock up on everyday essentials for work, school, and creativity with <strong>10% discount</strong> on everything except books when paying with your <strong>MyMonty Card</strong>.</p>
 
-                  <button className="rounded-full bg-[#ECE3A2] px-4 py-1 text-xs font-light mt-6 uppercase">Fashion</button>
+                  <button className="rounded-full bg-[#ECE3A2] px-4 py-1 text-xs font-light mt-6 uppercase">Stationery</button>
                 </div>
               </div>
             </div>
@@ -161,7 +161,7 @@ const RewardsClient = () => {
             <img
               src="/kh-bg.png"
               alt=""
-              className="absolute right-4 xl:right-8 bottom-8 h-[150px] object-contain pointer-events-none z-10"
+              className="absolute right-4 xl:right-8 bottom-8 h-[140px] object-contain pointer-events-none z-10"
             />
             <div className='relative z-10'>
               <div className='flex justify-between items-center gap-2'>
