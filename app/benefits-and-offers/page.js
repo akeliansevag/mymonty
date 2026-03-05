@@ -9,6 +9,7 @@ export const metadata = {
   description: '',
 };
 
+
 const BenefitsAndOffers = () => {
   return (
     <>

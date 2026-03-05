@@ -28,7 +28,7 @@ const RewardsClient = () => {
         </div>
       </div>
       {/* ================= CATEGORIES ================= */}
-      <div className="flex justify-center mt-24 mb-10">
+      <div className="flex justify-center mt-12 mb-10">
         <div className="flex gap-2 overflow-x-auto scrollbar-hide">
           {categories.map((cat) => (
             <button

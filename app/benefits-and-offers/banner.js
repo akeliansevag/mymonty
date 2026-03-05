@@ -1,6 +1,6 @@
 'use client';
 import React, { use } from 'react';
-import banner from '@/public/benefits-and-offers-banner.webp';
+import banner from '@/public/benefits-banner.webp';
 import { useAppContext } from '@/app/AppContext';
 import Image from 'next/image';
 
@@ -15,10 +15,10 @@ function Banner() {
                     <h1 className='font-black text-[42px]  sm:text-5xl md:text-6xl lg:text-[5.4rem] xl:text-[5rem] mt-6 leading-none uppercase'>
                         Feel good savings
                     </h1>
-                    <p className='text-xl mt-8'>Not a MyMonty client yet? Join today!</p>
+                    <p className='text-xl mt-8'>Pay with your MyMonty card and get special offers at selected shops.</p>
                     <button onClick={handleOpenModal} className='mm-button mt-8'>Download App</button>
                 </div>
-                <div className='lg:w-3/5 flex items-end'>
+                <div className='lg:w-3/5 flex items-center'>
                     <Image alt="M Logo" src={banner} className='w-full' width="956" height="638" />
                 </div>
             </div>
