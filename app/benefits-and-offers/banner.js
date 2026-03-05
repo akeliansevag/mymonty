@@ -9,7 +9,7 @@ function Banner() {
     return (
         <section className='flex flex-col relative min-h-[100dvh] pt-[var(--header-height)] overflow-hidden'>
             <div className='flex-1 flex-col sm:flex-row container flex gap-20'>
-                <div className='lg:w-2/5 self-center sm:-mt-16'>
+                <div className='lg:w-1/2 self-center sm:-mt-16'>
 
                     <p>Cards</p>
                     <h1 className='font-black text-[42px]  sm:text-5xl md:text-6xl lg:text-[5.4rem] xl:text-[5rem] mt-6 leading-none uppercase'>
