@@ -149,7 +149,7 @@ const RewardsClient = () => {
                   <h2 className="text-2xl font-extrabold mt-8">Mario's Stationery</h2>
                   <p className="mt-4">Stock up on everyday essentials for work, school, and creativity with <strong>10% discount</strong> on everything except books when paying with your <strong>MyMonty Card</strong>.</p>
 
-                  <button className="rounded-full bg-[#ECE3A2] px-4 py-1 text-xs font-light mt-6 uppercase">Stationery</button>
+                  <button className="rounded-full bg-[#D4E5E9] px-4 py-1 text-xs font-light mt-6 uppercase">Stationery</button>
                 </div>
               </div>
             </div>
