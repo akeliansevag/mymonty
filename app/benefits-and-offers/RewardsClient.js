@@ -75,7 +75,7 @@ const RewardsClient = () => {
                 <img src='/bonsai-logo.png' alt="logo" className='' />
                 <button className="rounded-full bg-black px-4 py-1 text-sm font-semibold text-white">10% Discount</button>
               </div>
-              <div className='xl:w-2/3'>
+              <div className='w-2/3'>
                 <h2 className="text-2xl font-extrabold">Bonsai Flowers</h2>
                 <p className="mt-4">Celebrate every moment with Bonsai Flowers. Pay with your MyMonty Card and get a <strong>10% discount</strong> on flowers and plants.</p>
                 <button className="rounded-full bg-[#CB026733] px-4 py-1 text-xs font-light mt-6 uppercase">Flowers & Gifts</button>
@@ -96,7 +96,7 @@ const RewardsClient = () => {
                 <img src='/hashtag-logo.png' alt="logo" className='' />
                 <button className="rounded-full bg-black px-4 py-1 text-sm font-semibold text-white">10% Discount</button>
               </div>
-              <div className='xl:w-2/3'>
+              <div className='w-2/3'>
                 <h2 className="mt-7 text-2xl font-extrabold">Hashtag</h2>
                 <p className="mt-4">Refresh your wardrobe with the latest styles. Pay with your <strong>MyMonty Card</strong> and get <strong>10% off</strong> on clothes.</p>
                 <button className="rounded-full bg-[#FFFFFF] px-4 py-1 text-xs font-light mt-6 uppercase">Fashion</button>
@@ -117,7 +117,7 @@ const RewardsClient = () => {
                 <h2 className='text-2xl font-extrabold'>20/20 Vision</h2>
                 <button className="rounded-full bg-black px-4 py-1 text-sm font-semibold text-white">10% Discount</button>
               </div>
-              <div className='xl:w-2/3'>
+              <div className='w-2/3'>
                 <p className="mt-4">See better and look sharper with quality eyewear and sunglasses. <br /> Get <strong>10% discount</strong> on all eyeglasses and sunglasses when paying with your <strong>MyMonty Card</strong>.</p>
                 <button className="rounded-full bg-[#ECE3A2] px-4 py-1 text-xs font-light mt-6 uppercase">Fashion</button>
               </div>
@@ -161,14 +161,14 @@ const RewardsClient = () => {
             <img
               src="/kh-bg.png"
               alt=""
-              className="absolute right-8 bottom-8 h-[150px] object-contain pointer-events-none z-10"
+              className="absolute right-4 xl:right-8 bottom-8 h-[150px] object-contain pointer-events-none z-10"
             />
             <div className='relative z-10'>
               <div className='flex justify-between items-center gap-2'>
                 <img src='/kh-logo.png' alt="logo" className='' />
                 <button className="rounded-full bg-black px-4 py-1 text-sm font-semibold text-white">10% Discount</button>
               </div>
-              <div className='w-full'>
+              <div className='w-2/3 xl:w-full'>
                 <h2 className="mt-7 text-2xl font-extrabold">Khoury Home</h2>
                 <p className="mt-4">Enhance your home with trusted appliances and lifestyle solutions with <strong>10% off</strong> storewide excluding discounted & IT items when paying with your <strong>MyMonty Card</strong>.</p>
                 <button className="rounded-full bg-[#CB020533] px-4 py-1 text-xs font-light mt-6 uppercase">Electronics & Tech</button>
