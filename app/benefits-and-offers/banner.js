@@ -18,7 +18,7 @@ function Banner() {
                     <p className='text-xl mt-8'>Pay with your MyMonty card and get special offers at selected shops.</p>
                     <button onClick={handleOpenModal} className='mm-button mt-8'>Download App</button>
                 </div>
-                <div className='lg:w-3/5 flex items-center'>
+                <div className='lg:w-1/2 flex items-center'>
                     <Image alt="M Logo" src={banner} className='w-full' width="956" height="638" />
                 </div>
             </div>
