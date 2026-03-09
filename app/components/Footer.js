@@ -198,7 +198,7 @@ const Footer = () => {
                                 <li className='mb-2'><a className='text-base opacity-60 hover:opacity-100' target="_blank" href="/fees-and-charges/Business-List-of-Fees-and-Charges-27.1.26.pdf">Fees and Charges</a></li>
                             )}
                             { isNotBusiness && (
-                                <li className='mb-2'><a className='text-base opacity-60 hover:opacity-100' target="_blank" href="/fees-and-charges/List-of-Fees-and-Charges-27.1.26.pdf">Fees and Charges</a></li>
+                                <li className='mb-2'><a className='text-base opacity-60 hover:opacity-100' target="_blank" href="/fees-and-charges/List-of-Fees-and-Charges.pdf">Fees and Charges</a></li>
                             )}
                         </ul>
                     </div>
@@ -210,7 +210,7 @@ const Footer = () => {
                                 <li className='mb-2'><a className='text-base opacity-60 hover:opacity-100' target="_blank" href="/limits/Business-List-of-Limits.pdf">Limits</a></li>
                             )}
                             { isNotBusiness && (
-                                <li className='mb-2'><a className='text-base opacity-60 hover:opacity-100' target="_blank" href="/limits/List-of-Limits-27.1.26.pdf">Limits</a></li>
+                                <li className='mb-2'><a className='text-base opacity-60 hover:opacity-100' target="_blank" href="/limits/List-of-Limits.pdf">Limits</a></li>
                             )}
                         </ul>
                     </div>
