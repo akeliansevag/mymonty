@@ -2,17 +2,9 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import nakhaldesktop from '@/public/nakhal-banner-desktop.webp';
-import nakhalmobile from '@/public/nakhal-banner-mobile.webp';
-import mastercarddesktop from '@/public/mastercard-banner-desktop.webp';
-import mastercardmobile from '@/public/mastercard-banner-mobile.webp';
-import forexdesktop from '@/public/forex-desktop.webp';
-import forexmobile from '@/public/forex-mobile.webp';
-import valentinesdesktop from '@/public/valentines-desktop.webp';
-import valentinesmobile from '@/public/valentines-mobile.webp';
-import kiadesktop from '@/public/kia-ad.webp';
-import kiamobile from '@/public/kia-ad-mobile.webp';
 
+import creditcarddesktop from '@/public/credit-card-banner-desktop.webp';
+import creditcardmobile from '@/public/credit-card-banner-mobile.webp';
 
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -36,14 +28,9 @@ const banners = [
   //   bannerMobile: mastercardmobile,
   //   link: '/mc-bdf-areeba-terms-and-conditions',
   // },
-  // {
-  //   bannerDesktop: forexdesktop,
-  //   bannerMobile: forexmobile,
-  //   link: false,
-  // },
   {
-    bannerDesktop: valentinesdesktop,
-    bannerMobile: valentinesmobile,
+    bannerDesktop: creditcarddesktop,
+    bannerMobile: creditcardmobile,
     link: false,
   },
 ];
