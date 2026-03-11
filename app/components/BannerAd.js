@@ -31,7 +31,7 @@ const banners = [
   {
     bannerDesktop: creditcarddesktop,
     bannerMobile: creditcardmobile,
-    link: false,
+    link: 'https://creditcard.mymonty.com.lb',
   },
 ];
 
@@ -54,10 +54,10 @@ const BannerAd = () => {
             <SwiperSlide key={index}>
               {
                 banner.link && (
-                  <Link href={banner.link}>
+                  <a href={banner.link} target='_blank'>
                     <Image className='max-sm:hidden w-full' quality={100} sizes='100vw' priority placeholder='blur' alt='Banner Desktop' src={banner.bannerDesktop} width='3000' height='157' />
                     <Image className='sm:hidden w-full' quality={100} sizes='100vw' priority placeholder='blur' alt='Banner Mobile' src={banner.bannerMobile} width='800' height='150'  />
-                  </Link>
+                  </a>
                 )
               }
 
@@ -82,4 +82,4 @@ const BannerAd = () => {
   )
 }
 
-export default BannerAd;
+export default BannerAd;  
