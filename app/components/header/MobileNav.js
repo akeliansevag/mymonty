@@ -31,12 +31,28 @@ const MobileNav = ({ open, handleMobileMenuToggle,pathname }) => {
                     })}
                 </div>
                 <div className='mb-[30px] mt-[15px]'>
-                    {pathname !== '/business' && pathname !== '/business/business-wallet' && pathname !== '/business/salary-advance' && pathname !== '/business/salary-domiciliation' && (
+                    {
+                        pathname !== '/business' && 
+                        pathname !== '/business/business-wallet' && 
+                        pathname !== '/business/salary-advance' && 
+                        pathname !== '/business/salary-domiciliation' && 
+                        pathname !== '/business/business-prepaid-card' &&
+                        pathname !== '/business/business-executive-credit-card' && 
+                        pathname !== '/business/business-world-elite-credit-card' &&
+                    (
                         <button onClick={handleOpenModal} className='w-full top-full mm-button white whitespace-nowrap'>
                             Download App
                         </button>
                     )}
-                    {(pathname == '/business' || pathname == '/business/business-wallet' || pathname == '/business/salary-advance' || pathname == '/business/salary-domiciliation') && (
+                    {(
+                        pathname == '/business' || 
+                        pathname == '/business/business-wallet' || 
+                        pathname == '/business/salary-advance' || 
+                        pathname == '/business/salary-domiciliation' ||
+                        pathname == '/business/business-prepaid-card' || 
+                        pathname == '/business/business-executive-credit-card' || 
+                        pathname == '/business/business-world-elite-credit-card'
+                    ) && (
                         <a target="_blank" href='https://corporate.mymonty.com/auth/login' className='w-full top-full mm-button white whitespace-nowrap'>
                             Log in
                         </a>

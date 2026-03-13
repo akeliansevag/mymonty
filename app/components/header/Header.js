@@ -150,7 +150,21 @@ const Header = () => {
                         </svg>
                     </Link>
                     <svg onClick={handleRegionToggle} className='cursor-pointer dropdown-logo' width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                        <path d='M6 9L12 15L18 9' stroke={(pathname == '/business' || pathname == '/business/business-wallet' || pathname == '/business/salary-advance' || pathname == '/business/salary-domiciliation' || pathname == '/sign-up-and-win') ? '#FFFFFF' : '#000000'} strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'></path>
+                        <path d='M6 9L12 15L18 9' 
+                        stroke={
+                            (
+                                pathname == '/business' || 
+                                pathname == '/business/business-wallet' || 
+                                pathname == '/business/salary-advance' || 
+                                pathname == '/business/salary-domiciliation' || 
+                                pathname == '/business/business-prepaid-card' || 
+                                pathname == '/business/business-executive-credit-card' || 
+                                pathname == '/business/business-world-elite-credit-card' || 
+                                pathname == '/sign-up-and-win'
+                            )
+                            ? '#FFFFFF' : '#000000'
+                        } 
+                        strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'></path>
                     </svg>
                 </div>
                 <div className='flex-1 flex justify-end gap-3 items-center'>
@@ -159,13 +173,29 @@ const Header = () => {
                     </div>
                     <div className='hidden lg:block'>
 
-                        {pathname !== '/business' && pathname !== '/business/business-wallet' && pathname !== '/business/salary-advance' && pathname !== '/business/salary-domiciliation' && (
+                        {
+                            pathname !== '/business' && 
+                            pathname !== '/business/business-wallet' && 
+                            pathname !== '/business/salary-advance' && 
+                            pathname !== '/business/salary-domiciliation' && 
+                            pathname !== '/business/business-prepaid-card' &&
+                            pathname !== '/business/business-executive-credit-card' && 
+                            pathname !== '/business/business-world-elite-credit-card' &&
+                        (
                             <button onClick={handleOpenModal} className='mm-button whitespace-nowrap'>
                                 Download App
                             </button>
                         )}
 
-                        {(pathname == '/business' || pathname == '/business/business-wallet' || pathname == '/business/salary-advance' || pathname == '/business/salary-domiciliation') && (
+                        {(
+                            pathname == '/business' || 
+                            pathname == '/business/business-wallet' || 
+                            pathname == '/business/salary-advance' || 
+                            pathname == '/business/salary-domiciliation' ||
+                            pathname == '/business/business-prepaid-card' || 
+                            pathname == '/business/business-executive-credit-card' || 
+                            pathname == '/business/business-world-elite-credit-card'
+                        ) && (
                             <a target="_blank" href='https://corporate.mymonty.com/auth/login' className='mm-button whitespace-nowrap'>
                                 Log in
                             </a>

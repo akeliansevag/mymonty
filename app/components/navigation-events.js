@@ -9,7 +9,16 @@ export function NavigationEvents() {
     const searchParams = useSearchParams();
 
     useEffect(() => {
-        if (pathname == '/business' || pathname == '/business/business-wallet' || pathname=='/business/salary-domiciliation' || pathname=='/business/salary-advance' || pathname=='/sign-up-and-win') {
+        if (
+            pathname == '/business' ||
+            pathname == '/business/business-wallet' || 
+            pathname == '/business/salary-domiciliation' || 
+            pathname == '/business/salary-advance' || 
+            pathname == '/business/business-prepaid-card' || 
+            pathname == '/business/business-executive-credit-card' || 
+            pathname == '/business/business-world-elite-credit-card' || 
+            pathname == '/sign-up-and-win') 
+        {
             document.body.classList.add('dark');
         } else {
             document.body.classList.remove('dark');
