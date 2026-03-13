@@ -45,7 +45,7 @@ const BannerAd = () => {
         autoplay={{ delay: 7000, disableOnInteraction: false }} // Optional: Adjust delay
         loop={true}
         allowTouchMove={false}
-        className="fixed z-30 bottom-0 left-0 w-full"
+        className="!fixed z-50 bottom-0 left-0 w-full"
         // disableOnInteraction={true}
       >
         
