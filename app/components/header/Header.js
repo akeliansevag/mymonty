@@ -159,7 +159,7 @@ const Header = () => {
                                 pathname == '/business/salary-domiciliation' || 
                                 pathname == '/business/business-prepaid-card' || 
                                 pathname == '/business/business-executive-credit-card' || 
-                                pathname == '/business/business-world-elite-credit-card' || 
+                                pathname == '/business/business-world-credit-card' || 
                                 pathname == '/sign-up-and-win'
                             )
                             ? '#FFFFFF' : '#000000'
@@ -180,7 +180,7 @@ const Header = () => {
                             pathname !== '/business/salary-domiciliation' && 
                             pathname !== '/business/business-prepaid-card' &&
                             pathname !== '/business/business-executive-credit-card' && 
-                            pathname !== '/business/business-world-elite-credit-card' &&
+                            pathname !== '/business/business-world-credit-card' &&
                         (
                             <button onClick={handleOpenModal} className='mm-button whitespace-nowrap'>
                                 Download App
@@ -194,7 +194,7 @@ const Header = () => {
                             pathname == '/business/salary-domiciliation' ||
                             pathname == '/business/business-prepaid-card' || 
                             pathname == '/business/business-executive-credit-card' || 
-                            pathname == '/business/business-world-elite-credit-card'
+                            pathname == '/business/business-world-credit-card'
                         ) && (
                             <a target="_blank" href='https://corporate.mymonty.com/auth/login' className='mm-button whitespace-nowrap'>
                                 Log in

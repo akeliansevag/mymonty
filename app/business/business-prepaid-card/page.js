@@ -81,27 +81,27 @@ export default function Page() {
         {
             title: "Business Subscriptions Management & Discount",
             description: "Enjoy up to <strong>30% discounts</strong> on software subscriptions by visiting <a href='https://mastercard.gonuclei.com/' target='_blank'>https://mastercard.gonuclei.com/</a>",
-            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
+            image: "business-subsricption",
         },
         {
             title: "Zoho One",
             description: "Get <strong>35% off</strong> on subscribing for Zoho’s annual license.",
-            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
+            image: "zoho-one",
         },
         {
             title: "Google Workspace",
             description: "Get <strong>25% off</strong> on the first year of the standard business plan.",
-            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
+            image: "google-workspace",
         },
         {
             title: "Notion",
             description: "Tasks, lists, wikis, roadmaps, pitch decks, and more Get <strong>6 months for free.</strong>",
-            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
+            image: "notion",
         },
         {
             title: "DocuSign",
             description: "Up to <strong>30% off</strong> on DocuSign plans.",
-            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80",
+            image: "docusign",
         },
     ];
 
@@ -109,17 +109,17 @@ export default function Page() {
         {
             title: "FISKL",
             description: "<strong>50% OFF</strong> for plans of global accounting solution.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "fiskl",
         },
         {
             title: "SOL.ONLINE",
             description: "<strong>20% OFF</strong> on different accounting solutions.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "sol-online",
         },
         {
             title: "GLOBAL TAX ASSISTANT",
             description: "<strong>20% DISCOUNT</strong> for Accounting. <strong>20% DISCOUNT</strong> on Tax Advisory services.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "global-tax-assistant",
         },
     ];
 
@@ -127,17 +127,17 @@ export default function Page() {
         {
             title: "META ADS BY MEDIGIT",
             description: "Get up to <strong>$300 OFF</strong> on management fees.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "meta-ads",
         },
         {
             title: "GOOGLE ADS",
             description: "Get credit up to <strong>$400</strong> when you spend your first <strong>$400</strong>.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "google-ads",
         },
         {
             title: "EMAIL MARKETING BY MAILCHIMP",
             description: "Flat <strong>50% OFF</strong> on MailChimp Essentials Plan.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "email-marketing",
         },
     ]
 
@@ -145,17 +145,17 @@ export default function Page() {
         {
             title: "MY US SHIPPING",
             description: 'Free Premium membership and <strong>20% DISCOUNT</strong> on shipping. Simply visit <a href="https://myus.com/welcome/Mastercardpremium" target="_blank" rel="noopener noreferrer">myus.com/welcome/Mastercardpremium</a> to register and use your TIER Mastercard® on the payment page.',
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "my-us-shipping",
         },
         {
             title: "DHL",
             description: 'Enjoy <strong>20%</strong> all year long with DHL by visiting <a href="https://DHL.com/" target="_blank" rel="noopener noreferrer">https://DHL.com/</a>',
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "dhl",
         },
         {
             title: "CAREEM",
             description: 'Book your ride with Careem and get <strong>20%</strong> on 3 rides/month. Use your Mastercard to enjoy discounts on your rides with Careem. Enter the relevant promo code to redeem the offer.',
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "careem",
         },
     ]
 
@@ -163,17 +163,17 @@ export default function Page() {
         {
             title: "MC BUSINESS ACADEMY",
             description: "Learn from 200+ experts across providing unparalleled industry insights.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "business-academy",
         },
         {
             title: "MASTERCARD TRUST CENTER",
             description: "Free of charge informational center created to defend business against cyberattacks.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "mc-trust-center",
         },
         {
             title: "HARVARD BUSINESS REVIEW",
             description: "Get <strong>15% DISCOUNT</strong> on an annual HBR Digital subscription.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "harvard-business-review",
         },
     ]
 
@@ -181,32 +181,32 @@ export default function Page() {
         {
             title: "TRAVEL INSURANCE BUNDLE",
             description: 'Discover the protection of your Debit Mastercard®, with our travel insurance for you and your peace of mind. Visit Mastercard <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com</a> to claim your insurance.',
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "travel-insurance-bundle",
         },
         {
             title: "TRAVEL INCONVENIENCE INSURANCE",
             description: 'Disrupted travel? Visit Mastercard <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com</a> to file a claim for the inconvenience with your [TIER] Mastercard® for baggage loss, flight delays, cancellations and more.',
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "travel-incovenience-insurance",
         },
         {
             title: "TRAVEL MEDICAL INSURANCE",
             description: 'Discover the protection of your [TIER] Mastercard®, with global health insurance for you and your peace of mind. Visit <a href="https://mcpeaceofmind.com/TIER" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com/TIER</a> to claim.',
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "travel-medical-insurance",
         },
         {
             title: "PURCHASE PROTECTION",
             description: 'Automatically protect your purchases from theft or accident for 180 days with Purchase Protection from your Executive Mastercard®. Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com</a> to claim online Up to 1,000USD.',
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "purchase-protection-business",
         },
         {
             title: "ECOMMERCE PROTECTION",
             description: 'Automatically protect your purchases from theft for 60 days with Ecommerce Protection from your Credit Mastercard®. Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com</a> to claim online Up to 1,000USD.',
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "ecommerce-protection",
         },
         {
             title: "CORPORATE LIABILITY WAIVER INSURANCE",
             description: "Waive any unauthorized use of corporate cards by your employees with the Corporate Liability Waiver Insurance from Mastercard. (Up to 25,000USD)",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "corporate-liability",
         },
     ]
 
@@ -214,17 +214,17 @@ export default function Page() {
         {
             title: "FREE LOUNGE ACCESS WITH DRAGONPASS",
             description: "MEL lounges access with your Mastercard. Download the Mastercard Travel Pass App and present the app QR code to the lounge receptionist.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "free-lounge-access",
         },
         {
             title: "HEATHROW EXPRESS OFFER",
             description: 'Travel smarter with Mastercard! Get <strong>12% OFF</strong> Heathrow Express tickets (Express & Business First). Tap to book <a href="http://www.heathrowexpress.com/mastercard" target="_blank" rel="noopener noreferrer">http://www.heathrowexpress.com/mastercard</a>',
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "heathrow-express-business",
         },
         {
             title: "PRICELESS CITIES",
             description: 'Enjoy exclusive dining, travel, and entertainment experiences worldwide with Mastercard’s Priceless Cities offers. Visit <a href="http://www.heathrowexpress.com/mastercard" target="_blank" rel="noopener noreferrer">priceless.com</a>, register, and choose your destination to get started.',
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "priceless-cities-business",
         },
     ]
 
@@ -232,7 +232,7 @@ export default function Page() {
         {
             title: "IHG HOTEL CHAIN",
             description: 'Get <strong>15% DISCOUNT</strong> on IHG Hotels & Resorts across Europe, Maldives, India, Middle East & Africa when you book at <a href="http://www.ihg.com/mastercardoffer" target="_blank" rel="noopener noreferrer">http://www.ihg.com/mastercardoffer</a>. T&Cs apply.',
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "ihg-hotel-chain",
         },
     ]
 
@@ -240,17 +240,17 @@ export default function Page() {
         {
             title: "RENTALCARS.COM DISCOUNT",
             description: 'Enjoy <strong>10% OFF</strong> car rental when booking on Rentalcars.com with your Mastercard. Simply go to <a href="https://www.rentalcars.com" target="_blank" rel="noopener noreferrer">www.rentalcars.com</a> to make a booking and enter your Mastercard details upon checkout.',
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "rentalcars-business",
         },
         {
             title: "BUDGET TRUCK & CAR RENTAL",
             description: 'Get up to <strong>10% OFF</strong> on your next car or truck rental with Budget. Visit <a href="https://www.budgetinternational.com/mastercard" target="_blank" rel="noopener noreferrer">www.budgetinternational.com/mastercard</a> and book with your Mastercard.',
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "budget-car",
         },
         {
             title: "SIXT",
             description: "Up to <strong>10% DISCOUNT</strong> worldwide.",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80",
+            image: "sixt",
         },
     ]
 

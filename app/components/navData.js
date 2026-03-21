@@ -216,8 +216,8 @@ export const data = [
                 url: null,
                 children: [
                     {
-                        title: 'World Elite Credit Card',
-                        url: '/business/business-world-elite-credit-card',
+                        title: 'World Credit Card',
+                        url: '/business/business-world-credit-card',
                         noIndex: true,
                     },
                     {

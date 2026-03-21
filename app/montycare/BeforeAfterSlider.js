@@ -64,6 +64,13 @@ export default function BeforeAfterSlider({
       role="group"
       aria-label={alt}
     >
+      <div className="absolute top-12 left-0 z-10 text-white w-full">
+        <div className="container flex justify-between">
+          <p className="font-extrabold text-4xl">Before</p>
+          <p className="font-extrabold text-4xl">After</p>
+        </div>
+      </div>
+
       <div className="container z-10 absolute bottom-16 left-1/2 -translate-x-1/2 text-center max-md:mt-[50px] md:mt-[100px]">
         <h2 className="text-center text-white section-title">IF YOU CAN’T WAIT FOR YOUR “AFTER”</h2>
         <button onClick={handleOpenModal} className="mm-button white mt-7">Download MyMonty</button>

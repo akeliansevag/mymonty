@@ -15,7 +15,7 @@ export default function OfferSection({ id, cards = [], className = "" }) {
 
 					<div className="">
 						<img
-							src={card.image}
+							src={`/${card.image}.webp`}
 							alt={card.title}
 							className="h-[150px] w-full object-cover md:h-[200px] rounded-2xl"
 						/>

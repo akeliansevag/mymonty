@@ -16,7 +16,7 @@ export function NavigationEvents() {
             pathname == '/business/salary-advance' || 
             pathname == '/business/business-prepaid-card' || 
             pathname == '/business/business-executive-credit-card' || 
-            pathname == '/business/business-world-elite-credit-card' || 
+            pathname == '/business/business-world-credit-card' || 
             pathname == '/sign-up-and-win') 
         {
             document.body.classList.add('dark');

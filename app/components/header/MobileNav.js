@@ -38,7 +38,7 @@ const MobileNav = ({ open, handleMobileMenuToggle,pathname }) => {
                         pathname !== '/business/salary-domiciliation' && 
                         pathname !== '/business/business-prepaid-card' &&
                         pathname !== '/business/business-executive-credit-card' && 
-                        pathname !== '/business/business-world-elite-credit-card' &&
+                        pathname !== '/business/business-world-credit-card' &&
                     (
                         <button onClick={handleOpenModal} className='w-full top-full mm-button white whitespace-nowrap'>
                             Download App
@@ -51,7 +51,7 @@ const MobileNav = ({ open, handleMobileMenuToggle,pathname }) => {
                         pathname == '/business/salary-domiciliation' ||
                         pathname == '/business/business-prepaid-card' || 
                         pathname == '/business/business-executive-credit-card' || 
-                        pathname == '/business/business-world-elite-credit-card'
+                        pathname == '/business/business-world-credit-card'
                     ) && (
                         <a target="_blank" href='https://corporate.mymonty.com/auth/login' className='w-full top-full mm-button white whitespace-nowrap'>
                             Log in

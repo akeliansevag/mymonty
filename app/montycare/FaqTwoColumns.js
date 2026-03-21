@@ -157,27 +157,76 @@ function MinusIcon() {
 const DEFAULT_LEFT = [
   {
     q: "What is Montycare?",
-    a: "<p>Montycare is a Platinum USD Credit Card designed exclusively for Health & Beauty spending. It provides a flexible revolving credit line, powered by MyMonty Wallet, and accepted only via MontyPay POS at partner clinics across Lebanon.</p>",
+    a: `<p>Montycare is a Platinum USD Credit Card designed exclusively for Health & Beauty spending. It provides a flexible revolving credit line, powered by MyMonty Wallet, and accepted via MontyPay POS at partner clinics across Lebanon, as well as all out-of-network merchant POS devices.</p>`,
   },
-  { q: "What can I use Montycare for?", a: "<p>You can use your Montycare for wellness and medical services, including:<ul class='list-disc pl-5 my-3'><li>Aesthetic and cosmetic treatments</li><li>Dermatology and laser</li><li>Dental care</li><li>Wellness and rejuvenation services</li></ul>With available credit, you can perform multiple procedures and earn cashback on eligible transactions.<p>" },
-  { q: "Where can I use Montycare?", a: "<p>Montycare is accepted exclusively at our partner clinics. You can check the list directly through MyMonty app or by asking your clinic directly.</p>" },
-  { q: "How do I apply for Montycare?", a: "<p>The process is fully digital:<ol class='list-decimal pl-5 my-3'><li>Download the MyMonty app (from the QR code at a partner clinic, from the Montycare landing page, or directly from the App Store).</li><li>Create your wallet account</li><li>Apply for the Montycare credit card</li><li>Our Credit Team reviews your application</li><li>You will receive an approval or rejection inside the app</li><li>Once approved, MyMonty will issue your physical card</li><li>Activate the card through MyMonty app</li><li>Pay at partner clinics via MontyPay POS and repay through MyMonty Wallet</li></ol></p>" },
+  {
+    q: "What can I use Montycare for?",
+    a: `<p>Montycare can be used at all Montycare partner health and beauty providers. At partner clinics, cardholders benefit from Montycare payment facilities, namely the grace period financing option.</p>
+        <p class="mt-3">The card can also be used at merchants outside the Montycare network wherever the card is accepted; however, Montycare financing benefits apply only at partner clinics.</p>
+        <p class="mt-3">All Montycare transactions earn cashback.</p>`,
+  },
+  {
+    q: "Where can I use Montycare?",
+    a: `<p>Montycare is accepted at all partner clinics, where exclusive benefits are unlocked. The card is also accepted at all merchants accepting Mastercard.</p>
+        <p class="mt-3">You can check the list of partners directly through the MyMonty app or by asking your clinic directly.</p>`,
+  },
+  {
+    q: "How do I apply for Montycare?",
+    a: `<p>Applying for Montycare is simple and fully digital:</p>
+        <ol class="list-decimal pl-5 my-3">
+          <li>Download the MyMonty app (via the Montycare landing page, partner clinics, or the App Store).</li>
+          <li>Create your MyMonty wallet account</li>
+          <li>Submit your Montycare credit card application in the app</li>
+          <li>Our Credit Team reviews your application</li>
+          <li>You will receive the approval decision directly in the app</li>
+          <li>Once approved, your Montycare card will be issued and activated through MyMonty</li>
+        </ol>`,
+  },
   {
     q: "What is the expected review time for my Montycare application?",
-    a: "<p>The standard review time is [48 hours], after which you will receive an approval or rejection notice through the MyMonty app.</p>",
+    a: `<p>The standard review time is up to 48 hours. You will receive the decision directly in the MyMonty app once the review is complete.</p>`,
   },
 ];
 
 const DEFAULT_RIGHT = [
   {
     q: "What is Montycare?",
-    a: "<p>Montycare is Lebanon’s first Health & Beauty Platinum credit card, offering patients a USD revolving credit line dedicated to medical, cosmetic, dental, dermatology, and wellness procedures. It is powered by MyMonty wallet and accepted exclusively through MontyPay POS.</p>",
+    a: `<p>Montycare is Lebanon’s first Health & Beauty Platinum credit card, designed to help patients finance medical, aesthetic, dental, dermatology, and wellness procedures.</p>
+        <p class="mt-3">It provides patients with a USD revolving credit line, allowing them to pay for treatments while the clinic receives payment through MontyPay POS, just like a standard card transaction.</p>`,
   },
-  { q: "How does Montycare benefit my clinic?", a: "<p><ul class='list-disc pl-5 my-3'><li>Higher acceptance of treatment plans</li><li>Reduced cancellations due to cost</li><li>Increased average treatment value</li><li>New patients seeking financed services</li><li>Zero repayment risk for the clinic, Monty Finance handles repayments</li></ul></p>" },
+  {
+    q: "How does Montycare benefit my clinic?",
+    a: `<ul class="list-disc pl-5 my-3">
+          <li>Higher acceptance of treatment plans</li>
+          <li>Reduced cancellations due to cost barriers</li>
+          <li>Increased average treatment value</li>
+          <li>Attracts new patients seeking financing options</li>
+          <li>No repayment risk for the clinic — Monty Finance manages patient repayment</li>
+        </ul>`,
+  },
   {
     q: "Why should my clinic accept Montycare if we accept other cards?",
-    a: "<p>Standard cards do not offer 0% interest for medical financing. Montycare helps patients say “yes” more easily and guarantees your payment.</p>",
+    a: `<p>Standard cards do not offer 0% interest financing for medical and aesthetic procedures.</p>
+        <p class="mt-3">Montycare helps patients say “yes” to treatments more easily, while your clinic receives settlement through MontyPay POS, with Monty Finance managing the patient repayment.</p>`,
   },
-  { q: "How do patients use Montycare card at our clinic?", a: "<p>Payments are processed through MontyPay POS terminal. Eligible transactions automatically qualify for 0% interest.</p>" },
-  { q: "How do we join the partner network?", a: "<p>Fill in the interest form (link to be added) or call <a href='tel:+9611734020' class='text-white underline'>+961 1 734 020</a></p>" },
+  {
+    q: "How do we join the partner network?",
+    a: `<p>Clinics and doctors can join the Montycare partner network by:</p>
+        <ul class="list-disc pl-5 my-3">
+          <li>Submitting the interest form on the Montycare website (link to be added)</li>
+          <li>Contacting the Montycare team directly at +961 1 734 020</li>
+          <li>Reaching out through MontyPay if your clinic already uses a MontyPay POS</li>
+        </ul>`,
+  },
+  {
+    q: "What clinics can join the network?",
+    a: `<p>Montycare partners with clinics and providers in the health and beauty sector, including:</p>
+        <ul class="list-disc pl-5 my-3">
+          <li>Aesthetics and cosmetic centers</li>
+          <li>Dermatology clinics</li>
+          <li>Dental clinics</li>
+          <li>Wellness and rejuvenation centers</li>
+          <li>Other approved health and beauty providers</li>
+        </ul>`,
+  },
 ];
