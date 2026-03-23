@@ -28,6 +28,9 @@ const SectionFive = () => {
                     <div className='bg-[#f7f7f7] h-full rounded-2xl p-8 flex items-center justify-center'>
                         <h4 className='text-center text-pretty text-[22px]'>Marketing support. In-clinic and digital promotional materials.</h4>
                     </div>
+                    <div className='bg-[#f7f7f7] h-full rounded-2xl p-8 flex items-center justify-center'>
+                        <h4 className='text-center text-pretty text-[22px]'>Collect payments through MyMonty Business wallet.</h4>
+                    </div>
                 </div>
             </div>
         </div>
