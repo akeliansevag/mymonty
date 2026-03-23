@@ -144,7 +144,7 @@ export default function Page() {
     const logisticsCards = [
         {
             title: "MY US SHIPPING",
-            description: 'Free Premium membership and <strong>20% DISCOUNT</strong> on shipping. Simply visit <a href="https://myus.com/welcome/Mastercardpremium" target="_blank" rel="noopener noreferrer">myus.com/welcome/Mastercardpremium</a> to register and use your TIER Mastercard® on the payment page.',
+            description: 'Free Premium membership and <strong>20% DISCOUNT</strong> on shipping. Simply visit <a href="https://myus.com/welcome/Mastercardpremium" target="_blank" rel="noopener noreferrer">myus.com/welcome/Mastercardpremium</a> to register and use your Business Executive Mastercard® on the payment page.',
             image: "my-us-shipping",
         },
         {
@@ -180,27 +180,27 @@ export default function Page() {
     const insuranceCards = [
         {
             title: "TRAVEL INSURANCE BUNDLE",
-            description: 'Discover the protection of your Debit Mastercard®, with our travel insurance for you and your peace of mind. Visit Mastercard <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com</a> to claim your insurance.',
+            description: 'Discover the protection of your Debit Mastercard®, with our travel insurance for you and your peace of mind. Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">Mastercard (mcpeaceofmind.com)</a> to claim your insurance.',
             image: "travel-insurance-bundle",
         },
         {
             title: "TRAVEL INCONVENIENCE INSURANCE",
-            description: 'Disrupted travel? Visit Mastercard <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com</a> to file a claim for the inconvenience with your [TIER] Mastercard® for baggage loss, flight delays, cancellations and more.',
+            description: 'Disrupted travel? Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">Mastercard (mcpeaceofmind.com)</a> to file a claim for the inconvenience with your Business Executive Mastercard® for baggage loss, flight delays, cancellations and more.',
             image: "travel-incovenience-insurance",
         },
         {
             title: "TRAVEL MEDICAL INSURANCE",
-            description: 'Discover the protection of your [TIER] Mastercard®, with global health insurance for you and your peace of mind. Visit <a href="https://mcpeaceofmind.com/TIER" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com/TIER</a> to claim.',
+            description: 'Discover the protection of your Business Executive Mastercard®, with global health insurance for you and your peace of mind. Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">Mastercard (mcpeaceofmind.com)</a> to claim.',
             image: "travel-medical-insurance",
         },
         {
             title: "PURCHASE PROTECTION",
-            description: 'Automatically protect your purchases from theft or accident for 180 days with Purchase Protection from your Executive Mastercard®. Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com</a> to claim online Up to 1,000USD.',
+            description: 'Automatically protect your purchases from theft or accident for 180 days with Purchase Protection from your Business Executive Mastercard®. Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">Mastercard (mcpeaceofmind.com)</a> to claim online Up to 1,000USD.',
             image: "purchase-protection-business",
         },
         {
             title: "ECOMMERCE PROTECTION",
-            description: 'Automatically protect your purchases from theft for 60 days with Ecommerce Protection from your Credit Mastercard®. Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com</a> to claim online Up to 1,000USD.',
+            description: 'Automatically protect your purchases from theft for 60 days with Ecommerce Protection from your Credit Mastercard®. Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">Mastercard (mcpeaceofmind.com)</a> to claim online Up to 1,000USD.',
             image: "ecommerce-protection",
         },
         {

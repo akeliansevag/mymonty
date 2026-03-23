@@ -144,7 +144,7 @@ export default function Page() {
     const logisticsCards = [
         {
             title: "MY US SHIPPING",
-            description: 'Free Premium membership and <strong>20% DISCOUNT</strong> on shipping. Simply visit <a href="https://myus.com/welcome/Mastercardpremium" target="_blank" rel="noopener noreferrer">myus.com/welcome/Mastercardpremium</a> to register and use your TIER Mastercard® on the payment page.',
+            description: 'Free Premium membership and <strong>20% DISCOUNT</strong> on shipping. Simply visit <a href="https://myus.com/welcome/Mastercardpremium" target="_blank" rel="noopener noreferrer">myus.com/welcome/Mastercardpremium</a> to register and use your Business World Mastercard® on the payment page.',
             image: "my-us-shipping",
         },
         {
@@ -154,7 +154,7 @@ export default function Page() {
         },
         {
             title: "CAREEM",
-            description: 'Book your ride with Careem and get <strong>20%</strong> on 3 rides/month. Use your Mastercard to enjoy discounts on your rides with Careem. Enter the relevant promo code to redeem the offer.',
+            description: 'Book your ride with Careem and get <strong>20%</strong> on 5 rides/month. Use your Mastercard to enjoy discounts on your rides with Careem. Enter the relevant promo code to redeem the offer.',
             image: "careem",
         },
     ]
@@ -180,27 +180,27 @@ export default function Page() {
     const insuranceCards = [
         {
             title: "TRAVEL INSURANCE BUNDLE",
-            description: 'Discover the protection of your Debit Mastercard®, with our travel insurance for you and your peace of mind. Visit Mastercard <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com</a> to claim your insurance.',
+            description: 'Discover the protection of your Debit Mastercard®, with our travel insurance for you and your peace of mind. Visit Mastercard <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">Mastercard (mcpeaceofmind.com)</a> to claim your insurance.',
             image: "travel-insurance-bundle",
         },
         {
             title: "TRAVEL INCONVENIENCE INSURANCE",
-            description: 'Disrupted travel? Visit Mastercard <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com</a> to file a claim for the inconvenience with your [TIER] Mastercard® for baggage loss, flight delays, cancellations and more.',
+            description: 'Disrupted travel? Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">Mastercard (mcpeaceofmind.com)</a> to file a claim for the inconvenience with your Business World Mastercard® for baggage loss, flight delays, cancellations and more.',
             image: "travel-incovenience-insurance",
         },
         {
             title: "TRAVEL MEDICAL INSURANCE",
-            description: 'Discover the protection of your [TIER] Mastercard®, with global health insurance for you and your peace of mind. Visit <a href="https://mcpeaceofmind.com/TIER" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com/TIER</a> to claim.',
+            description: 'Discover the protection of your Business World Mastercard®, with global health insurance for you and your peace of mind. Visit <a href="https://mcpeaceofmind.com/TIER" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com/TIER</a> to claim.',
             image: "travel-medical-insurance",
         },
         {
             title: "PURCHASE PROTECTION",
-            description: 'Automatically protect your purchases from theft or accident for 180 days with Purchase Protection from your Executive Mastercard®. Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com</a> to claim online Up to 1,000USD.',
+            description: 'Automatically protect your purchases from theft or accident for 180 days with Purchase Protection from your Executive Mastercard®. Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">Mastercard (mcpeaceofmind.com)</a> to claim online Up to 1,000USD.',
             image: "purchase-protection-business",
         },
         {
             title: "ECOMMERCE PROTECTION",
-            description: 'Automatically protect your purchases from theft for 60 days with Ecommerce Protection from your Credit Mastercard®. Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">mcpeaceofmind.com</a> to claim online Up to 1,000USD.',
+            description: 'Automatically protect your purchases from theft for 60 days with Ecommerce Protection from your Credit Mastercard®. Visit <a href="https://mcpeaceofmind.com" target="_blank" rel="noopener noreferrer">Mastercard (mcpeaceofmind.com)</a> to claim online Up to 1,000USD.',
             image: "ecommerce-protection",
         },
         {
@@ -218,7 +218,7 @@ export default function Page() {
         },
         {
             title: "HEATHROW EXPRESS OFFER",
-            description: 'Travel smarter with Mastercard! Get <strong>12% OFF</strong> Heathrow Express tickets (Express & Business First). Tap to book <a href="http://www.heathrowexpress.com/mastercard" target="_blank" rel="noopener noreferrer">http://www.heathrowexpress.com/mastercard</a>',
+            description: 'Travel smarter with Mastercard! Get <strong>12% OFF</strong> Heathrow Express tickets (Express & Business First). Tap to book <a href="heathrowexpress.com/mastercard" target="_blank" rel="noopener noreferrer">heathrowexpress.com/mastercard</a> and use your promocode Mcard12',
             image: "heathrow-express-business",
         },
         {
@@ -228,7 +228,7 @@ export default function Page() {
         },
         {
             title: "Costa Complimentary Food and/or Drink items in Dubai Airports",
-            description: 'Get up to 1 complimentary food and/or drink items from a pre-determined list at Costa when traveling from an airport in Dubai. Download the Mastercard Travel Pass App from <a href="http://www.heathrowexpress.com/mastercard" target="_blank" rel="noopener noreferrer">Google Play</a> or <a href="http://www.heathrowexpress.com/mastercard" target="_blank" rel="noopener noreferrer">Apple Store</a> and enjoy your complimentary coffee or food!',
+            description: 'Get up to 2 complimentary food and/or drink items from Costa when traveling from an airport in Dubai. Download the Mastercard Travel Pass App from <a href="heathrowexpress.com/mastercard" target="_blank" rel="noopener noreferrer">Google Play</a> or <a href="http://www.heathrowexpress.com/mastercard" target="_blank" rel="noopener noreferrer">Apple Store</a> and enjoy your complimentary coffee or food!',
             image: "costa-business",
         },
         {
