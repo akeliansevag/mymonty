@@ -13,7 +13,7 @@ export default function OfferSection({ id, cards = [], className = "" }) {
 
 					<p dangerouslySetInnerHTML={{ __html: card.description }}></p>
 
-					<div className="">
+					<div className="!border-0 !pb-0">
 						<img
 							src={`/${card.image}.webp`}
 							alt={card.title}
