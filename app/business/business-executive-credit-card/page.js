@@ -273,14 +273,14 @@ export default function Page() {
 
             <SectionScrollLayout title="Business Executive Credit Card Benefits" sections={sections}>
                 <OfferSection id="productivity" cards={productivityCards} />
-                <OfferSection id="accounting" cards={accoutingCards} className="mt-14" />
-                <OfferSection id="marketing" cards={marketingCards} className="mt-14" />
-                <OfferSection id="logistics" cards={logisticsCards} className="mt-14" />
-                <OfferSection id="education" cards={educationCards} className="mt-14" />
-                <OfferSection id="insurance" cards={insuranceCards} className="mt-14" />
-                <OfferSection id="travel" cards={travelCards} className="mt-14" />
-                <OfferSection id="hotel-and-tickets" cards={hotelAndTicketsCards} className="mt-14" />
-                <OfferSection id="car-rentals" cards={carRentalsCards} className="mt-14" />
+                <OfferSection id="accounting" cards={accoutingCards} />
+                <OfferSection id="marketing" cards={marketingCards} />
+                <OfferSection id="logistics" cards={logisticsCards} />
+                <OfferSection id="education" cards={educationCards} />
+                <OfferSection id="insurance" cards={insuranceCards} />
+                <OfferSection id="travel" cards={travelCards} />
+                <OfferSection id="hotel-and-tickets" cards={hotelAndTicketsCards} />
+                <OfferSection id="car-rentals" cards={carRentalsCards} />
             </SectionScrollLayout>
         </div>
     );
