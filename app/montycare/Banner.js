@@ -18,7 +18,7 @@ const Banner = () => {
         <>
             <section className='md:pt-5 max-md:pt-[calc(var(--header-height)+50px)] flex flex-col justify-center w-full relative bg-gray-100'>
                 <div className='container'>
-                    <div className=' md:h-screen flex justify-between gap-10 items-center max-lg:flex-col'>
+                    <div className='md:h-screen flex justify-between gap-10 items-center max-lg:flex-col'>
                         
                         <div className='max-lg:w-full lg:w-1/2 flex flex-col'>
                             <p className='text-[#091111]/50 font-bold'>Cards</p>
@@ -33,7 +33,7 @@ const Banner = () => {
                         </div>
                         <div className='max-lg:w-full lg:w-1/2 md:absolute md:bottom-0 md:right-0'>
                             <div className='w-full overflow-hidden lg:mt-28'>
-                                <Image alt='Salary' placeholder='blur' quality={100} sizes='100vw' src={bannerImage} className='w-full' priority width='1000' height='1266' />
+                                <Image alt='Salary' placeholder='blur' quality={100} sizes='100vw' src={bannerImage} className='w-full lg:w-4/5 3xl:w-full' priority width='1000' height='1266' />
                             </div>
                         </div>
 
