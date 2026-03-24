@@ -59,7 +59,7 @@ export default function SectionScrollLayout({
   );
 
   return (
-    <main ref={containerRef} className="min-h-screen bg-black px-4 py-8 text-white md:px-10 md:py-10">
+    <main ref={containerRef} className="min-h-screen bg-black text-white">
       <div className="container">
         {title ? (
           <h1 className="mb-8 text-center text-3xl font-extrabold uppercase tracking-tight md:mb-10 md:text-5xl">

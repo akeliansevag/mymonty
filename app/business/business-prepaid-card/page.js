@@ -66,9 +66,9 @@ export default function Page() {
             icon: "/travel.svg",
         },
         {
-            id: "hotel-and-tickets",
-            label: "Hotel & Tickets",
-            icon: "/hotel-and-tickets.svg",
+            id: "booking",
+            label: "Booking",
+            icon: "/booking.svg",
         },
         {
             id: "car-rentals",
@@ -223,7 +223,7 @@ export default function Page() {
         },
     ]
 
-    const hotelAndTicketsCards = [
+    const bookingsCards = [
         {
             title: "IHG HOTEL CHAIN",
             description: 'Get <strong>15% DISCOUNT</strong> on IHG Hotels & Resorts across Europe, Maldives, India, Middle East & Africa when you book at <a href="http://www.ihg.com/mastercardoffer" target="_blank" rel="noopener noreferrer">http://www.ihg.com/mastercardoffer</a>. T&Cs apply.',
@@ -269,7 +269,7 @@ export default function Page() {
                 <OfferSection id="education" cards={educationCards} />
                 <OfferSection id="insurance" cards={insuranceCards} />
                 <OfferSection id="travel" cards={travelCards} />
-                <OfferSection id="hotel-and-tickets" cards={hotelAndTicketsCards} />
+                <OfferSection id="booking" cards={bookingsCards} />
                 <OfferSection id="car-rentals" cards={carRentalsCards} />
             </SectionScrollLayout>
         </div>
