@@ -14,22 +14,23 @@ export default function SectionScrollLayout({
 
   const navRef = useRef(null);
   const buttonRefs = useRef({});
-	const containerRef = useRef(null);
+  const containerRef = useRef(null);
+  const hasMountedRef = useRef(false);
 
-	const scrollToContainer = () => {
-  if (!containerRef.current) return;
+  const scrollToContainer = () => {
+    if (!containerRef.current) return;
 
-  const yOffset = 120; // adjust depending on header height
-  const y =
-    containerRef.current.getBoundingClientRect().top +
-    window.pageYOffset -
-    yOffset;
+    const yOffset = 120;
+    const y =
+      containerRef.current.getBoundingClientRect().top +
+      window.pageYOffset -
+      yOffset;
 
-  window.scrollTo({
-    top: y,
-    behavior: "smooth",
-  });
-};
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
+  };
 
   useEffect(() => {
     if (!sections.length) return;
@@ -39,6 +40,11 @@ export default function SectionScrollLayout({
   }, [sections, defaultSection, activeSection]);
 
   useEffect(() => {
+    if (!hasMountedRef.current) {
+      hasMountedRef.current = true;
+      return;
+    }
+
     const activeButton = buttonRefs.current[activeSection];
     if (!activeButton) return;
 
@@ -84,9 +90,9 @@ export default function SectionScrollLayout({
                     }}
                     type="button"
                     onClick={() => {
-						setActiveSection(section.id);
-						scrollToContainer();
-					}}
+                      setActiveSection(section.id);
+                      scrollToContainer();
+                    }}
                     className={`shrink-0 whitespace-nowrap rounded-full px-5 py-3 text-sm font-medium transition-all duration-300 md:px-6 md:py-3.5 md:text-[15px] ${
                       isActive
                         ? "bg-[#2893FF] text-white shadow-[0_8px_20px_rgba(40,147,255,0.35)]"

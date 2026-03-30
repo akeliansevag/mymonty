@@ -87,8 +87,8 @@ export default function RootLayout({ children }) {
           strategy="afterInteractive"
           chat="true"
         />
-
-        {/* <Script
+{/* 
+        <Script
           id="fw-chat-new"
           src="//uae.fw-cdn.com/40305316/189078.js"
           strategy="afterInteractive"

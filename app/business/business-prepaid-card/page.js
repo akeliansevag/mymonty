@@ -3,8 +3,8 @@ import { websiteName } from '@/app/config';
 import SectionScrollLayout from "../SectionScrollLayout";
 import OfferSection from "../OfferSection";
 import Banner from '../../components/Banner';
-import businessPrepaidCardBanner from '@/public/salary-advance-banner.webp';
-import sectionTwoImage from '@/public/physical-platinum-mastercard-banner2.webp';
+import prepaidBanner from '@/public/business-prepaid-card-banner.webp';
+import sectionTwoImage from '@/public/business-prepaid-card-section2.webp';
 
 export const metadata = {
   title: 'Business Prepaid Card' + websiteName,
@@ -19,7 +19,7 @@ export default function Page() {
         image: {
             inGrid: true,
             layout: 'half',
-            url: businessPrepaidCardBanner,
+            url: prepaidBanner,
         },
         cta: {
             type: 'button',
