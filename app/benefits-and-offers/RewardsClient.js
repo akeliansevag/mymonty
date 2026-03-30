@@ -58,7 +58,7 @@ const RewardsClient = () => {
               </div>
               <h2 className="mt-7 text-2xl font-extrabold">Selfani Tech</h2>
               <p className="mt-4">Upgrade your tech and home appliances while enjoying exclusive savings up to <strong>20% discount</strong> on selected items when paying with your <strong>MyMonty Card</strong></p>
-              <button className="rounded-full bg-[#0080A533] px-4 py-1 text-xs font-light mt-6 uppercase">Electronics & Tech</button>
+              <button className="rounded-full bg-[#0080A533] px-4 py-1 text-xs font-light mt-6 uppercase cursor-auto">Electronics & Tech</button>
             </div>
           </div>
         )}
@@ -78,7 +78,7 @@ const RewardsClient = () => {
               <div className='w-2/3'>
                 <h2 className="text-2xl font-extrabold">Bonsai Flowers</h2>
                 <p className="mt-4">Celebrate every moment with Bonsai Flowers. Pay with your MyMonty Card and get a <strong>10% discount</strong> on flowers and plants.</p>
-                <button className="rounded-full bg-[#CB026733] px-4 py-1 text-xs font-light mt-6 uppercase">Flowers & Gifts</button>
+                <button className="rounded-full bg-[#CB026733] px-4 py-1 text-xs font-light mt-6 uppercase cursor-auto cursor-auto">Flowers & Gifts</button>
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ const RewardsClient = () => {
               <div className='w-2/3'>
                 <h2 className="mt-7 text-2xl font-extrabold">Hashtag</h2>
                 <p className="mt-4">Refresh your wardrobe with the latest styles. Pay with your <strong>MyMonty Card</strong> and get <strong>10% off</strong> on clothes.</p>
-                <button className="rounded-full bg-[#FFFFFF] px-4 py-1 text-xs font-light mt-6 uppercase">Fashion</button>
+                <button className="rounded-full bg-[#FFFFFF] px-4 py-1 text-xs font-light mt-6 uppercase cursor-auto">Fashion</button>
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@ const RewardsClient = () => {
               </div>
               <div className='w-2/3'>
                 <p className="mt-4">See better and look sharper with quality eyewear and sunglasses. <br /> Get <strong>10% discount</strong> on all eyeglasses and sunglasses when paying with your <strong>MyMonty Card</strong>.</p>
-                <button className="rounded-full bg-[#ECE3A2] px-4 py-1 text-xs font-light mt-6 uppercase">Fashion</button>
+                <button className="rounded-full bg-[#ECE3A2] px-4 py-1 text-xs font-light mt-6 uppercase cursor-auto">Fashion</button>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@ const RewardsClient = () => {
                   <h2 className="text-2xl font-extrabold mt-8">Mario's Stationery</h2>
                   <p className="mt-4">Stock up on everyday essentials for work, school, and creativity with <strong>10% discount</strong> on everything except books when paying with your <strong>MyMonty Card</strong>.</p>
 
-                  <button className="rounded-full bg-[#D4E5E9] px-4 py-1 text-xs font-light mt-6 uppercase">Stationery</button>
+                  <button className="rounded-full bg-[#D4E5E9] px-4 py-1 text-xs font-light mt-6 uppercase cursor-auto">Stationery</button>
                 </div>
               </div>
             </div>
@@ -171,7 +171,7 @@ const RewardsClient = () => {
               <div className='w-2/3 xl:w-full'>
                 <h2 className="mt-7 text-2xl font-extrabold">Khoury Home</h2>
                 <p className="mt-4">Enhance your home with trusted appliances and lifestyle solutions with <strong>10% off</strong> storewide excluding discounted & IT items when paying with your <strong>MyMonty Card</strong>.</p>
-                <button className="rounded-full bg-[#CB020533] px-4 py-1 text-xs font-light mt-6 uppercase">Electronics & Tech</button>
+                <button className="rounded-full bg-[#CB020533] px-4 py-1 text-xs font-light mt-6 uppercase cursor-auto">Electronics & Tech</button>
               </div>
             </div>
           </div>
