@@ -230,7 +230,6 @@ export const data = [
 
         ]
     },
-    
     {
         title: 'Company',
         url: null,
@@ -286,5 +285,10 @@ export const data = [
                 ]
             },
         ]
-    }
+    },
+    {
+        title: 'Benefits',
+        url: '/benefits-and-offers',
+        children: null
+    },
 ];
