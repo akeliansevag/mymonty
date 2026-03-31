@@ -81,13 +81,13 @@ export default function RootLayout({ children }) {
         </Script>
         
         <Script src="https://analytics.ahrefs.com/analytics.js" data-key="3X26HJzNYSURzYfp+MSXKw" async></Script>
-        <Script
+        {/* <Script
           id="fw-chat"
           src="//uae.fw-cdn.com/40305316/189078.js"
           strategy="afterInteractive"
           chat="true"
-        />
-        {/* 
+        /> */}
+        
         <Script
           id="fw-chat-new"
           src="//uae.fw-cdn.com/40305316/189078.js"
@@ -102,7 +102,7 @@ export default function RootLayout({ children }) {
             style={{ display: 'none' }}
             src="https://www.facebook.com/tr?id=798074558810216&ev=PageView&noscript=1"
           />
-        </noscript> */}
+        </noscript>
       </body>
       <GoogleTagManager gtmId="GTM-P934Z29H" />
     </html>

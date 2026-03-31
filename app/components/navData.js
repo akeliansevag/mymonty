@@ -200,33 +200,33 @@ export const data = [
                     },
                 ]
             },
-            // {
-            //     title: 'Prepaid Cards',
-            //     url: null,
-            //     children: [
-            //         {
-            //             title: 'Prepaid Card',
-            //             url: '/business/business-prepaid-card',
-            //             noIndex: true,
-            //         },
-            //     ]
-            // },
-            // {
-            //     title: 'Credit Cards',
-            //     url: null,
-            //     children: [
-            //         {
-            //             title: 'World Credit Card',
-            //             url: '/business/business-world-credit-card',
-            //             noIndex: true,
-            //         },
-            //         {
-            //             title: 'Executive Credit Card',
-            //             url: '/business/business-executive-credit-card',
-            //             noIndex: true,
-            //         },
-            //     ]
-            // },
+            {
+                title: 'Prepaid Cards',
+                url: null,
+                children: [
+                    {
+                        title: 'Prepaid Card',
+                        url: '/business/business-prepaid-card',
+                        noIndex: true,
+                    },
+                ]
+            },
+            {
+                title: 'Credit Cards',
+                url: null,
+                children: [
+                    {
+                        title: 'World Credit Card',
+                        url: '/business/business-world-credit-card',
+                        noIndex: true,
+                    },
+                    {
+                        title: 'Executive Credit Card',
+                        url: '/business/business-executive-credit-card',
+                        noIndex: true,
+                    },
+                ]
+            },
 
         ]
     },
