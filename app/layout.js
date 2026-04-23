@@ -104,7 +104,7 @@ export default function RootLayout({ children }) {
           />
         </noscript>
       </body>
-      <GoogleTagManager gtmId="GTM-P934Z29H" />
+      <GoogleTagManager gtmId="GTM-MXBDFZHD" />
     </html>
   )
 }
