@@ -104,6 +104,17 @@ const Form = () => {
 
         if (response.ok) {
           setSubmissionStatus('success');
+
+          // ✅ FIRE GTM EVENT HERE
+          if (typeof window !== 'undefined') {
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: 'form_success',
+              form_name: 'contact_us',
+              email: formData.email,
+            });
+          }
+
           setTimeout(() => {
             setFormData({
               ...initialFormData,
