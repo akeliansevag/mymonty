@@ -289,39 +289,6 @@ const Content = () => {
 
             <div>
               <div>
-                <h2>Booking.com</h2>
-                <p>
-                  Get up to 7% wallet credit on your next stay when booking it
-                  on{" "}
-                  <a
-                    href="https://www.booking.com/gating/authkey?aid=2439504&key=mjB3VcxhAl"
-                    target="_blank"
-                  >
-                    Booking.com
-                  </a>
-                  .
-                </p>
-              </div>
-
-              <div className="image-wrapper flex max-lg:flex-col lg:justify-end items-center">
-                <img src="/booking.webp" className="image-bg" />
-                {/* <div className='lg:mr-5 relative z-10 flex flex-col items-center'>
-                                <img className='w-[165px] translate-y-8 z-10' src='/booking-logo.webp' />
-                                <Promo code="MCBKG"/>
-                            </div> */}
-              </div>
-
-              <div>
-                <p>
-                  Use your Platinum Credit Card at checkout, and your cashback
-                  will be credited to your Booking.com wallet within 70 days
-                  after your stay.
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <div>
                 <h2>AVIS Car Rental</h2>
                 <p>
                   Up to 20% off your next car rental • A complimentary upgrade

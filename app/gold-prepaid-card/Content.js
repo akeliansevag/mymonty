@@ -120,32 +120,6 @@ const Content = () => {
 
             <div>
               <div>
-                <h2>Booking.com</h2>
-                <p>
-                  Use your Mastercard to book your next staycation or vacation on{" "}
-                  <a
-                    href="https://www.booking.com/index.en.html?aid=2439504"
-                    target="_blank"
-                  >
-                    Booking.com
-                  </a>
-
-                   &nbsp; and enjoy up to <strong>7% MONEY BACK</strong> across millions of properties locally and around the world.
-                </p>
-              </div>
-
-              <div className="image-wrapper flex max-lg:flex-col lg:justify-end items-center">
-                <img src="/booking.webp" className="image-bg" />
-                {/* <div className='lg:mr-5 relative z-10 flex flex-col items-center'>
-                                <img className='w-[165px] translate-y-8 z-10' src='/booking-logo.webp' />
-                                <Promo code="MCBKG"/>
-                            </div> */}
-              </div>
-
-            </div>
-
-            <div>
-              <div>
                 <h2>AVIS Car Rental</h2>
                 <p>
                   Enjoy <strong>20% OFF</strong> your next car rental with Avis. Visit{" "}
